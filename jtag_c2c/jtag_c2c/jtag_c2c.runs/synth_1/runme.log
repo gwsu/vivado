@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log jtag_axi_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source jtag_axi_wrapper.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source jtag_axi_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/Vivado/2016.4/data/ip'.
+add_files: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 404.656 ; gain = 165.336
+Command: synth_design -top jtag_axi_wrapper -part xc7z045ffv900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15308 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 486.340 ; gain = 276.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_wrapper' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:13]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_aurora_64b66b_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_aurora_64b66b_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_aurora_64b66b_0_0' (1#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_aurora_64b66b_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'aurora_64b66b_0' of module 'jtag_axi_aurora_64b66b_0_0' requires 35 connections, but only 23 given [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:234]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_axi_bram_ctrl_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_axi_bram_ctrl_0_0' (2#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_axi_chip2chip_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_chip2chip_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_axi_chip2chip_0_0' (3#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_chip2chip_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_chip2chip_0' of module 'jtag_axi_axi_chip2chip_0_0' requires 50 connections, but only 48 given [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:310]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_axi_hwicap_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_hwicap_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_axi_hwicap_0_0' (4#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_hwicap_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_axi_mem_intercon_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:695]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_JTZ97E' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1889]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_JTZ97E' (5#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1889]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1ANO9FF' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2147]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_auto_pc_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_auto_pc_0' (6#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'jtag_axi_auto_pc_0' requires 60 connections, but only 58 given [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2386]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1ANO9FF' (7#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2147]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_II2W9L' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2447]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_auto_pc_1' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_auto_pc_1' (8#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'jtag_axi_auto_pc_1' requires 60 connections, but only 58 given [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2686]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_II2W9L' (9#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2447]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1C9W94O' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2747]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1C9W94O' (10#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2747]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1GSIWPK' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2963]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1GSIWPK' (11#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2963]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_xbar_0' (12#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_arcache' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1813]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arlock' does not match port width (4) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1816]
+WARNING: [Synth 8-689] width (9) of port connection 'm_axi_arprot' does not match port width (12) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1817]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_arqos' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1818]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_arregion' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1820]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_awcache' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1825]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awlock' does not match port width (4) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1828]
+WARNING: [Synth 8-689] width (9) of port connection 'm_axi_awprot' does not match port width (12) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1829]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_awqos' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1830]
+WARNING: [Synth 8-689] width (12) of port connection 'm_axi_awregion' does not match port width (16) of module 'jtag_axi_xbar_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1832]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_axi_mem_intercon_0' (13#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:695]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_axi_perf_mon_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_perf_mon_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_axi_perf_mon_0_0' (14#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_axi_perf_mon_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_blk_mem_gen_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_blk_mem_gen_0_0' (15#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_clk_wiz_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_clk_wiz_0' (16#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_jtag_axi_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_jtag_axi_0_0' (17#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_rst_clk_wiz_100M_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_rst_clk_wiz_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_rst_clk_wiz_100M_0' (18#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_rst_clk_wiz_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_100M' of module 'jtag_axi_rst_clk_wiz_100M_0' requires 10 connections, but only 7 given [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:637]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:645]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_system_ila_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_system_ila_0_0' (19#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_vio_0_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_vio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_vio_0_0' (20#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/realtime/jtag_axi_vio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi' (21#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:13]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_wrapper' (22#1) [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1GSIWPK has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1GSIWPK has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1GSIWPK has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1GSIWPK has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1C9W94O has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1C9W94O has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1C9W94O has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1C9W94O has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_II2W9L has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_II2W9L has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ANO9FF has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m00_couplers_imp_JTZ97E has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_JTZ97E has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_JTZ97E has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_JTZ97E has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 523.766 ; gain = 313.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 523.766 ; gain = 313.863
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_aurora_64b66b_0_0' instantiated as 'jtag_axi_i/aurora_64b66b_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:234]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_auto_pc_0' instantiated as 'jtag_axi_i/axi_mem_intercon/m01_couplers/auto_pc' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2386]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_auto_pc_1' instantiated as 'jtag_axi_i/axi_mem_intercon/m02_couplers/auto_pc' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:2686]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_axi_bram_ctrl_0_0' instantiated as 'jtag_axi_i/axi_bram_ctrl_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:258]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_axi_chip2chip_0_0' instantiated as 'jtag_axi_i/axi_chip2chip_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:310]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_axi_hwicap_0_0' instantiated as 'jtag_axi_i/axi_hwicap_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:359]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_axi_perf_mon_0_0' instantiated as 'jtag_axi_i/axi_perf_mon_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:530]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_blk_mem_gen_0_0' instantiated as 'jtag_axi_i/blk_mem_gen_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:576]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_clk_wiz_0' instantiated as 'jtag_axi_i/clk_wiz' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:591]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_jtag_axi_0_0' instantiated as 'jtag_axi_i/jtag_axi_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:597]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_rst_clk_wiz_100M_0' instantiated as 'jtag_axi_i/rst_clk_wiz_100M' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:637]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_system_ila_0_0' instantiated as 'jtag_axi_i/system_ila_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:645]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_vio_0_0' instantiated as 'jtag_axi_i/vio_0' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:684]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jtag_axi_xbar_0' instantiated as 'jtag_axi_i/axi_mem_intercon/xbar' [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v:1808]
+INFO: [Device 21-403] Loading part xc7z045ffv900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp/jtag_axi_jtag_axi_0_0_in_context.xdc] for cell 'jtag_axi_i/jtag_axi_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp/jtag_axi_jtag_axi_0_0_in_context.xdc] for cell 'jtag_axi_i/jtag_axi_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_2/jtag_axi_axi_bram_ctrl_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_2/jtag_axi_axi_bram_ctrl_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_bram_ctrl_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_3/jtag_axi_blk_mem_gen_0_0_in_context.xdc] for cell 'jtag_axi_i/blk_mem_gen_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_3/jtag_axi_blk_mem_gen_0_0_in_context.xdc] for cell 'jtag_axi_i/blk_mem_gen_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc] for cell 'jtag_axi_i/clk_wiz'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc] for cell 'jtag_axi_i/clk_wiz'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_5/jtag_axi_rst_clk_wiz_100M_0_in_context.xdc] for cell 'jtag_axi_i/rst_clk_wiz_100M'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_5/jtag_axi_rst_clk_wiz_100M_0_in_context.xdc] for cell 'jtag_axi_i/rst_clk_wiz_100M'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_6/jtag_axi_vio_0_0_in_context.xdc] for cell 'jtag_axi_i/vio_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_6/jtag_axi_vio_0_0_in_context.xdc] for cell 'jtag_axi_i/vio_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_7/jtag_axi_axi_perf_mon_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_perf_mon_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_7/jtag_axi_axi_perf_mon_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_perf_mon_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_8/jtag_axi_axi_hwicap_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_hwicap_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_8/jtag_axi_axi_hwicap_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_hwicap_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_9/jtag_axi_xbar_0_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_9/jtag_axi_xbar_0_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/xbar'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_10/jtag_axi_system_ila_0_0_in_context.xdc] for cell 'jtag_axi_i/system_ila_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_10/jtag_axi_system_ila_0_0_in_context.xdc] for cell 'jtag_axi_i/system_ila_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_11/jtag_axi_axi_chip2chip_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_chip2chip_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_11/jtag_axi_axi_chip2chip_0_0_in_context.xdc] for cell 'jtag_axi_i/axi_chip2chip_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc] for cell 'jtag_axi_i/aurora_64b66b_0'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc] for cell 'jtag_axi_i/aurora_64b66b_0'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_13/jtag_axi_auto_pc_0_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/m01_couplers/auto_pc'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_13/jtag_axi_auto_pc_0_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/m01_couplers/auto_pc'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_14/jtag_axi_auto_pc_1_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/m02_couplers/auto_pc'
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_14/jtag_axi_auto_pc_1_in_context.xdc] for cell 'jtag_axi_i/axi_mem_intercon/m02_couplers/auto_pc'
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc]
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/jtag_axi_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/jtag_axi_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 867.723 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.480' specified during out-of-context synthesis of instance 'jtag_axi_i/axi_chip2chip_0' at clock pin 'axi_c2c_phy_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'jtag_axi_i/axi_hwicap_0' at clock pin 's_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'jtag_axi_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffv900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_4/jtag_axi_clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/.Xil/Vivado-12788-wsguo-PC/dcp_12/jtag_axi_aurora_64b66b_0_0_in_context.xdc, line 10).
+Applied set_property DONT_TOUCH = true for jtag_axi_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/aurora_64b66b_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_chip2chip_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_hwicap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_mem_intercon/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_mem_intercon/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/axi_perf_mon_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/jtag_axi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/rst_clk_wiz_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/system_ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for jtag_axi_i/vio_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:15 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design jtag_axi_axi_mem_intercon_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'jtag_axi_i/axi_bram_ctrl_0/bram_clk_a' to pin 'jtag_axi_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'jtag_axi_i/axi_bram_ctrl_0/bram_clk_b' to pin 'jtag_axi_i/axi_bram_ctrl_0/bbstub_bram_clk_b/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'jtag_axi_i/clk_wiz/clk_out1' to pin 'jtag_axi_i/clk_wiz/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'jtag_axi_i/aurora_64b66b_0/gt_refclk1_out' to pin 'jtag_axi_i/aurora_64b66b_0/bbstub_gt_refclk1_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'jtag_axi_i/aurora_64b66b_0/init_clk_out' to pin 'jtag_axi_i/aurora_64b66b_0/bbstub_init_clk_out/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |jtag_axi_aurora_64b66b_0_0  |         1|
+|2     |jtag_axi_axi_bram_ctrl_0_0  |         1|
+|3     |jtag_axi_axi_chip2chip_0_0  |         1|
+|4     |jtag_axi_axi_hwicap_0_0     |         1|
+|5     |jtag_axi_xbar_0             |         1|
+|6     |jtag_axi_auto_pc_0          |         1|
+|7     |jtag_axi_auto_pc_1          |         1|
+|8     |jtag_axi_axi_perf_mon_0_0   |         1|
+|9     |jtag_axi_blk_mem_gen_0_0    |         1|
+|10    |jtag_axi_clk_wiz_0          |         1|
+|11    |jtag_axi_jtag_axi_0_0       |         1|
+|12    |jtag_axi_rst_clk_wiz_100M_0 |         1|
+|13    |jtag_axi_system_ila_0_0     |         1|
+|14    |jtag_axi_vio_0_0            |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |jtag_axi_aurora_64b66b_0_0  |     1|
+|2     |jtag_axi_auto_pc_0          |     1|
+|3     |jtag_axi_auto_pc_1          |     1|
+|4     |jtag_axi_axi_bram_ctrl_0_0  |     1|
+|5     |jtag_axi_axi_chip2chip_0_0  |     1|
+|6     |jtag_axi_axi_hwicap_0_0     |     1|
+|7     |jtag_axi_axi_perf_mon_0_0   |     1|
+|8     |jtag_axi_blk_mem_gen_0_0    |     1|
+|9     |jtag_axi_clk_wiz_0          |     1|
+|10    |jtag_axi_jtag_axi_0_0       |     1|
+|11    |jtag_axi_rst_clk_wiz_100M_0 |     1|
+|12    |jtag_axi_system_ila_0_0     |     1|
+|13    |jtag_axi_vio_0_0            |     1|
+|14    |jtag_axi_xbar_0             |     1|
+|15    |IBUF                        |     2|
+|16    |OBUF                        |     4|
++------+----------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------------------+------+
+|      |Instance             |Module                      |Cells |
++------+---------------------+----------------------------+------+
+|1     |top                  |                            |  1659|
+|2     |  jtag_axi_i         |jtag_axi                    |  1653|
+|3     |    axi_mem_intercon |jtag_axi_axi_mem_intercon_0 |   986|
+|4     |      m01_couplers   |m01_couplers_imp_1ANO9FF    |   123|
+|5     |      m02_couplers   |m02_couplers_imp_II2W9L     |   155|
++------+---------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 867.723 ; gain = 112.324
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:34 . Memory (MB): peak = 867.723 ; gain = 657.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 871.031 ; gain = 466.375
+INFO: [Common 17-1381] The checkpoint 'F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/jtag_axi_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 871.031 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 10 21:33:26 2017...

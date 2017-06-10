@@ -1,0 +1,78 @@
+
+*** Running vivado
+    with args -log b2000t_c2c_bram_axi_bram_ctrl_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_axi_bram_ctrl_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source b2000t_c2c_bram_axi_bram_ctrl_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 341.840 ; gain = 131.883
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/synth/b2000t_c2c_bram_axi_bram_ctrl_0_0.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-638] synthesizing module 'full_axi' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:21844]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:17009]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:10215]
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (1#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:10215]
+INFO: [Synth 8-638] synthesizing module 'ua_narrow' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:9749]
+INFO: [Synth 8-256] done synthesizing module 'ua_narrow' (2#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:9749]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'FDR' [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-256] done synthesizing module 'FDR' (3#1) [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-638] synthesizing module 'MUXCY_L' [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21293]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY_L' (4#1) [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21293]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:45340]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (5#1) [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:45340]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (6#1) [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (7#1) [C:/Xilinx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (8#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (9#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:17009]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:11495]
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (10#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:11495]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (11#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:21844]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (12#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (13#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' (14#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/synth/b2000t_c2c_bram_axi_bram_ctrl_0_0.vhd:115]
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 457.613 ; gain = 247.656
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 457.613 ; gain = 247.656
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 1192.992 ; gain = 0.070
+Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:02:18 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:02:18 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:02:18 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:02:23 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:32 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:16 ; elapsed = 00:02:57 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Timing Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:03:04 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Technology Mapping : Time (s): cpu = 00:02:21 ; elapsed = 00:03:06 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished IO Insertion : Time (s): cpu = 00:02:23 ; elapsed = 00:03:08 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:23 ; elapsed = 00:03:08 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:23 ; elapsed = 00:03:09 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:23 ; elapsed = 00:03:09 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:23 ; elapsed = 00:03:09 . Memory (MB): peak = 1192.992 ; gain = 983.035
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:23 ; elapsed = 00:03:09 . Memory (MB): peak = 1192.992 ; gain = 983.035
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     2|
+|2     |LUT1    |     4|
+|3     |LUT2    |    23|
+|4     |LUT3    |    87|
+|5     |LUT4    |    51|
+|6     |LUT5    |    82|
+|7     |LUT6    |   200|
+|8     |MUXCY_L |     3|
+|9     |SRL16E  |     6|
+|10    |XORCY   |     4|
+|11    |FDR     |     1|
+|12    |FDRE    |   329|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:23 ; elapsed = 00:03:09 . Memory (MB): peak = 1192.992 ; gain = 983.035
+synth_design: Time (s): cpu = 00:02:24 ; elapsed = 00:03:06 . Memory (MB): peak = 1234.258 ; gain = 971.848

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Jun 10 19:57:22 2017
+# Process ID: 11228
+# Current directory: F:/GITHUB/vivado/zynq_c2c/zynq_c2c.runs/axi_chip2chip_0_synth_1
+# Command line: vivado.exe -log axi_chip2chip_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_chip2chip_0.tcl
+# Log file: F:/GITHUB/vivado/zynq_c2c/zynq_c2c.runs/axi_chip2chip_0_synth_1/axi_chip2chip_0.vds
+# Journal file: F:/GITHUB/vivado/zynq_c2c/zynq_c2c.runs/axi_chip2chip_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_chip2chip_0.tcl -notrace

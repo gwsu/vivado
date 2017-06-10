@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Jun 10 22:13:33 2017
+# Process ID: 14928
+# Current directory: F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_vio_0_0_synth_1
+# Command line: vivado.exe -log b2000t_c2c_bram_vio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_vio_0_0.tcl
+# Log file: F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_vio_0_0_synth_1/b2000t_c2c_bram_vio_0_0.vds
+# Journal file: F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_vio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source b2000t_c2c_bram_vio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 359.203 ; gain = 148.684
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_vio_0_0' [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/synth/b2000t_c2c_bram_vio_0_0.v:59]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_vio_0_0' (7#1) [f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/synth/b2000t_c2c_bram_vio_0_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 478.480 ; gain = 267.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 478.480 ; gain = 267.961
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1201.512 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:34 ; elapsed = 00:01:59 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:34 ; elapsed = 00:01:59 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:59 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:35 ; elapsed = 00:02:00 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:02 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:19 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:19 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:02:19 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     4|
+|3     |LUT3 |    21|
+|4     |LUT4 |    27|
+|5     |LUT5 |     6|
+|6     |LUT6 |    17|
+|7     |FDRE |   110|
+|8     |FDSE |     7|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:20 . Memory (MB): peak = 1201.512 ; gain = 990.992
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:11 . Memory (MB): peak = 1201.512 ; gain = 931.922

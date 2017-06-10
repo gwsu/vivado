@@ -1,0 +1,557 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Sat Jun 10 22:31:12 2017
+| Host         : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_clock_utilization -file b2000t_c2c_bram_wrapper_clock_utilization_routed.rpt
+| Design       : b2000t_c2c_bram_wrapper
+| Device       : 7v2000t-flg1925
+| Speed File   : -1  PRODUCTION 1.10 2014-09-11
+-----------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Clock Regions: Key Resource Utilization
+5. Clock Regions : Global Clock Summary
+6. Cell Type Counts per Global Clock: Region X1Y0
+7. Cell Type Counts per Global Clock: Region X0Y1
+8. Cell Type Counts per Global Clock: Region X1Y3
+9. Cell Type Counts per Global Clock: Region X1Y4
+10. Load Cell Placement Summary for Global Clock g0
+11. Load Cell Placement Summary for Global Clock g1
+12. Load Cell Placement Summary for Global Clock g2
+13. Load Cell Placement Summary for Global Clock g3
+14. Load Cell Placement Summary for Global Clock g4
+15. Load Cell Placement Summary for Global Clock g5
+16. Load Cell Placement Summary for Global Clock g6
+17. Load Cell Placement Summary for Global Clock g7
+18. Load Cell Placement Summary for Global Clock g8
+
+1. Clock Primitive Utilization
+------------------------------
+
++----------+------+-----------+-----+--------------+--------+
+| Type     | Used | Available | LOC | Clock Region | Pblock |
++----------+------+-----------+-----+--------------+--------+
+| BUFGCTRL |    9 |       128 |   0 |            0 |      0 |
+| BUFH     |    0 |       288 |   0 |            0 |      0 |
+| BUFIO    |    0 |        96 |   0 |            0 |      0 |
+| BUFMR    |    0 |        48 |   0 |            0 |      0 |
+| BUFR     |    0 |        96 |   0 |            0 |      0 |
+| MMCM     |    2 |        24 |   0 |            0 |      0 |
+| PLL      |    0 |        24 |   0 |            0 |      0 |
++----------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                                                                                                                                                | Driver Pin                                                                                                                                    | Net                                                                                                                                              |
++-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |      |                   |                 2 |        1724 |               0 |       10.666 | user_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i/O                                                                        | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |      |                   |                 2 |        1316 |               0 |       10.000 | clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf/O                                                                                                  | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g2        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y34 | n/a          |      |                   |                 2 |         605 |               0 |        5.333 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i/O | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |      |                   |                 2 |         361 |               0 |       33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                                                              | dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                                                                                             | dbg_hub/inst/itck_i                                                                                                                              |
+| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y48 | n/a          |      |                   |                 2 |         301 |               0 |              |                                                                                                                                                                                                                                      | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i/O                                                                        | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
+| g5        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |      |                   |                 1 |          34 |               0 |        5.333 | sync_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i/O                                                                      | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                               |
+| g6        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y37 | n/a          |      |                   |                 1 |           1 |               0 |        5.333 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i/O                                                                     | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/clk_in_i                                                                                   |
+| g7        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y49 | n/a          |      |                   |                 1 |           1 |               0 |       10.000 | clk_in1                                                                                                                                                                                                                              | b2000t_c2c_bram_i/clk_wiz/inst/clkin1_bufg1/O                                                                                                 | b2000t_c2c_bram_i/clk_wiz/inst/clk_in1_b2000t_c2c_bram_clk_wiz_0                                                                                 |
+| g8        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y6  | n/a          |      |                   |                 1 |           1 |               0 |       10.000 | clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkf_buf/O                                                                                                     | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_buf_b2000t_c2c_bram_clk_wiz_0                                                                            |
++-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+------------------------+------------+---------------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin        | Constraint | Site                | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                                                                                                                                                                                         | Driver Pin                                                                                                                                                                                                                           | Net                                                                                                                                                                                                                                     |
++-----------+-----------+------------------------+------------+---------------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| src0      | g5        | MMCME2_ADV/CLKOUT1     | None       | MMCME2_ADV_X0Y1     | X0Y1         |           1 |               0 |               5.333 | sync_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT1                                                                                                                                                          | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i                                                                                                                                                                        |
+| src0      | g0        | MMCME2_ADV/CLKOUT0     | None       | MMCME2_ADV_X0Y1     | X0Y1         |           1 |               0 |              10.666 | user_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT0                                                                                                                                                          | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i                                                                                                                                                                        |
+| src1      | g1        | MMCME2_ADV/CLKOUT0     | None       | MMCME2_ADV_X1Y0     | X1Y0         |           1 |               0 |              10.000 | clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0                                                                                                                                                                                 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |
+| src1      | g8        | MMCME2_ADV/CLKFBOUT    | None       | MMCME2_ADV_X1Y0     | X1Y0         |           1 |               0 |              10.000 | clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKFBOUT                                                                                                                                                                                | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |
+| src2      | g2        | GTXE2_CHANNEL/RXOUTCLK | None       | GTXE2_CHANNEL_X0Y16 | X1Y4         |           1 |               0 |               5.333 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/rxrecclk_from_gtx_i |
+| src2      | g6        | GTXE2_CHANNEL/TXOUTCLK | None       | GTXE2_CHANNEL_X0Y16 | X1Y4         |           1 |               0 |               5.333 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/tx_out_clk          |
+| src3      | g3        | BSCANE2/TCK            | None       | BSCAN_X0Y4          | X0Y3         |           1 |               0 |              33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                                                              | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                                                              | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                                                                                                                                                                                       |
+| src4      | g4        | IBUFDS/O               | None       | IOB_X1Y278          | X1Y5         |           1 |               0 |                     |                                                                                                                                                                                                                                      | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/IBUFDS_INIT_CLK/O                                                                                                                                                              | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_IN                                                                                                                                                                       |
+| src5      | g7        | IBUF/O                 | None       | IOB_X1Y276          | X1Y5         |           1 |               0 |              10.000 | clk_in1                                                                                                                                                                                                                              | b2000t_c2c_bram_i/clk_wiz/inst/clkin1_ibuf0/O                                                                                                                                                                                        | b2000t_c2c_bram_i/clk_wiz/inst/clk_in1_b2000t_c2c_bram_clk_wiz_0_buf                                                                                                                                                                    |
++-----------+-----------+------------------------+------------+---------------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+4. Clock Regions: Key Resource Utilization
+------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |    0 | 13150 |    0 |  3650 |    0 |   110 |    0 |    55 |    0 |    80 |
+| X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12600 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y3              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 | 2771 | 13300 |  967 |  3700 |    0 |   120 |    7 |    60 |    0 |    80 |
+| X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
+| X1Y4              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    1 |     4 |    0 |     1 |    0 |    50 |    0 |    50 | 1433 | 13150 |  480 |  3650 |    0 |   110 |    0 |    55 |    0 |    80 |
+| X0Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12600 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y7              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
+| X1Y7              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |    0 | 13150 |    0 |  3650 |    0 |   110 |    0 |    55 |    0 |    80 |
+| X0Y8              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12600 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y8              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y9              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y9              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
+| X0Y10             |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
+| X1Y10             |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |    0 | 13150 |    0 |  3650 |    0 |   110 |    0 |    55 |    0 |    80 |
+| X0Y11             |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12600 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
+| X1Y11             |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+5. Clock Regions : Global Clock Summary
+---------------------------------------
+
++-----+----+----+
+|     | X0 | X1 |
++-----+----+----+
+| Y11 |  0 |  0 |
+| Y10 |  0 |  0 |
+| Y9  |  0 |  0 |
+| Y8  |  0 |  0 |
+| Y7  |  0 |  0 |
+| Y6  |  0 |  0 |
+| Y5  |  0 |  0 |
+| Y4  |  0 |  6 |
+| Y3  |  0 |  5 |
+| Y2  |  0 |  0 |
+| Y1  |  1 |  0 |
+| Y0  |  0 |  2 |
++-----+----+----+
+
+
+6. Cell Type Counts per Global Clock: Region X1Y0
+-------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
+| g7        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_in1_b2000t_c2c_bram_clk_wiz_0      |
+| g8        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_buf_b2000t_c2c_bram_clk_wiz_0 |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+7. Cell Type Counts per Global Clock: Region X0Y1
+-------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                            |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------+
+| g6        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/clk_in_i |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+8. Cell Type Counts per Global Clock: Region X1Y3
+-------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                              |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        1545 |               0 | 1537 |      3 |    5 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
+| g1        | n/a   | BUFG/O          | None       |         888 |               0 |  876 |      6 |    6 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g2        | n/a   | BUFGCTRL/O      | None       |         381 |               0 |  339 |     41 |    1 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | n/a   | BUFG/O          | None       |           2 |               0 |    2 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
+| g4        | n/a   | BUFG/O          | None       |          17 |               0 |   17 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+9. Cell Type Counts per Global Clock: Region X1Y4
+-------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                              |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         179 |               0 | 178 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
+| g1        | n/a   | BUFG/O          | None       |         407 |               0 | 404 |      1 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g2        | n/a   | BUFGCTRL/O      | None       |         223 |               0 | 186 |     36 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | n/a   | BUFG/O          | None       |         356 |               0 | 356 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
+| g4        | n/a   | BUFG/O          | None       |         284 |               0 | 276 |      6 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
+| g5        | n/a   | BUFG/O          | None       |          34 |               0 |  33 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                               |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+10. Load Cell Placement Summary for Global Clock g0
+---------------------------------------------------
+
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                |
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+| g0        | BUFG/O          | n/a               | user_clk_i |      10.666 | {0.000 5.333} |          |        1723 |        0 |              0 |        1 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0 |
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+-------+
+|     | X0 | X1    |
++-----+----+-------+
+| Y11 |  0 |     0 |
+| Y10 |  0 |     0 |
+| Y9  |  0 |     0 |
+| Y8  |  0 |     0 |
+| Y7  |  0 |     0 |
+| Y6  |  0 |     0 |
+| Y5  |  0 |     0 |
+| Y4  |  0 |   179 |
+| Y3  |  0 |  1545 |
+| Y2  |  0 |     0 |
+| Y1  |  0 |     0 |
+| Y0  |  0 |     0 |
++-----+----+-------+
+
+
+11. Load Cell Placement Summary for Global Clock g1
+---------------------------------------------------
+
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                              | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                     |
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
+| g1        | BUFG/O          | n/a               | clk_out1_b2000t_c2c_bram_clk_wiz_0 |      10.000 | {0.000 5.000} |          |        1293 |        0 |              0 |        2 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1 |
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+------+
+|     | X0 | X1   |
++-----+----+------+
+| Y11 |  0 |    0 |
+| Y10 |  0 |    0 |
+| Y9  |  0 |    0 |
+| Y8  |  0 |    0 |
+| Y7  |  0 |    0 |
+| Y6  |  0 |    0 |
+| Y5  |  0 |    0 |
+| Y4  |  0 |  407 |
+| Y3  |  0 |  888 |
+| Y2  |  0 |    0 |
+| Y1  |  0 |    0 |
+| Y0  |  0 |    0 |
++-----+----+------+
+
+
+12. Load Cell Placement Summary for Global Clock g2
+---------------------------------------------------
+
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                                                                                                                                                                                                | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                              |
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| g2        | BUFGCTRL/O      | n/a               | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK |       5.333 | {0.000 2.666} |          |         603 |        0 |              0 |        1 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+------+
+|     | X0 | X1   |
++-----+----+------+
+| Y11 |  0 |    0 |
+| Y10 |  0 |    0 |
+| Y9  |  0 |    0 |
+| Y8  |  0 |    0 |
+| Y7  |  0 |    0 |
+| Y6  |  0 |    0 |
+| Y5  |  0 |    0 |
+| Y4  |  0 |  223 |
+| Y3  |  0 |  381 |
+| Y2  |  0 |    0 |
+| Y1  |  0 |    0 |
+| Y0  |  0 |    0 |
++-----+----+------+
+
+
+13. Load Cell Placement Summary for Global Clock g3
+---------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+---------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                                   | Period (ns) | Waveform (ns)  | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                 |
++-----------+-----------------+-------------------+-------------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+---------------------+
+| g3        | BUFG/O          | n/a               | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK |      33.000 | {0.000 16.500} |          |         358 |        0 |              0 |        0 | dbg_hub/inst/itck_i |
++-----------+-----------------+-------------------+-------------------------------------------------------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+---------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+------+
+|     | X0 | X1   |
++-----+----+------+
+| Y11 |  0 |    0 |
+| Y10 |  0 |    0 |
+| Y9  |  0 |    0 |
+| Y8  |  0 |    0 |
+| Y7  |  0 |    0 |
+| Y6  |  0 |    0 |
+| Y5  |  0 |    0 |
+| Y4  |  0 |  356 |
+| Y3  |  0 |    2 |
+| Y2  |  0 |    0 |
+| Y1  |  0 |    0 |
+| Y0  |  0 |    0 |
++-----+----+------+
+
+
+14. Load Cell Placement Summary for Global Clock g4
+---------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                              |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+| g4        | BUFG/O          | n/a               |       |             |               |          |         299 |        0 |              0 |        2 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+------+
+|     | X0 | X1   |
++-----+----+------+
+| Y11 |  0 |    0 |
+| Y10 |  0 |    0 |
+| Y9  |  0 |    0 |
+| Y8  |  0 |    0 |
+| Y7  |  0 |    0 |
+| Y6  |  0 |    0 |
+| Y5  |  0 |    0 |
+| Y4  |  0 |  284 |
+| Y3  |  0 |   17 |
+| Y2  |  0 |    0 |
+| Y1  |  0 |    0 |
+| Y0  |  0 |    0 |
++-----+----+------+
+
+
+15. Load Cell Placement Summary for Global Clock g5
+---------------------------------------------------
+
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                |
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+| g5        | BUFG/O          | n/a               | sync_clk_i |       5.333 | {0.000 2.666} |          |          33 |        0 |              0 |        1 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0 |
++-----------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+-----+
+|     | X0 | X1  |
++-----+----+-----+
+| Y11 |  0 |   0 |
+| Y10 |  0 |   0 |
+| Y9  |  0 |   0 |
+| Y8  |  0 |   0 |
+| Y7  |  0 |   0 |
+| Y6  |  0 |   0 |
+| Y5  |  0 |   0 |
+| Y4  |  0 |  34 |
+| Y3  |  0 |   0 |
+| Y2  |  0 |   0 |
+| Y1  |  0 |   0 |
+| Y0  |  0 |   0 |
++-----+----+-----+
+
+
+16. Load Cell Placement Summary for Global Clock g6
+---------------------------------------------------
+
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                                                                                                                                                                                                | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                            |
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------------+
+| g6        | BUFG/O          | n/a               | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK |       5.333 | {0.000 2.666} |          |           0 |        0 |              1 |        0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/clk_in_i |
++-----------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+----+
+|     | X0 | X1 |
++-----+----+----+
+| Y11 |  0 |  0 |
+| Y10 |  0 |  0 |
+| Y9  |  0 |  0 |
+| Y8  |  0 |  0 |
+| Y7  |  0 |  0 |
+| Y6  |  0 |  0 |
+| Y5  |  0 |  0 |
+| Y4  |  0 |  0 |
+| Y3  |  0 |  0 |
+| Y2  |  0 |  0 |
+| Y1  |  1 |  0 |
+| Y0  |  0 |  0 |
++-----+----+----+
+
+
+17. Load Cell Placement Summary for Global Clock g7
+---------------------------------------------------
+
++-----------+-----------------+-------------------+---------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock   | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                              |
++-----------+-----------------+-------------------+---------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+| g7        | BUFG/O          | n/a               | clk_in1 |      10.000 | {0.000 5.000} |          |           0 |        0 |              1 |        0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_in1_b2000t_c2c_bram_clk_wiz_0 |
++-----------+-----------------+-------------------+---------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+----+
+|     | X0 | X1 |
++-----+----+----+
+| Y11 |  0 |  0 |
+| Y10 |  0 |  0 |
+| Y9  |  0 |  0 |
+| Y8  |  0 |  0 |
+| Y7  |  0 |  0 |
+| Y6  |  0 |  0 |
+| Y5  |  0 |  0 |
+| Y4  |  0 |  0 |
+| Y3  |  0 |  0 |
+| Y2  |  0 |  0 |
+| Y1  |  0 |  0 |
+| Y0  |  0 |  1 |
++-----+----+----+
+
+
+18. Load Cell Placement Summary for Global Clock g8
+---------------------------------------------------
+
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                              | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                   |
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------+
+| g8        | BUFG/O          | n/a               | clkfbout_b2000t_c2c_bram_clk_wiz_0 |      10.000 | {0.000 5.000} |          |           0 |        0 |              1 |        0 | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_buf_b2000t_c2c_bram_clk_wiz_0 |
++-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++-----+----+----+
+|     | X0 | X1 |
++-----+----+----+
+| Y11 |  0 |  0 |
+| Y10 |  0 |  0 |
+| Y9  |  0 |  0 |
+| Y8  |  0 |  0 |
+| Y7  |  0 |  0 |
+| Y6  |  0 |  0 |
+| Y5  |  0 |  0 |
+| Y4  |  0 |  0 |
+| Y3  |  0 |  0 |
+| Y2  |  0 |  0 |
+| Y1  |  0 |  0 |
+| Y0  |  0 |  1 |
++-----+----+----+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y3 [get_cells dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck]
+set_property LOC BUFGCTRL_X0Y6 [get_cells b2000t_c2c_bram_i/clk_wiz/inst/clkf_buf]
+set_property LOC BUFGCTRL_X0Y1 [get_cells b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf]
+set_property LOC BUFGCTRL_X0Y49 [get_cells b2000t_c2c_bram_i/clk_wiz/inst/clkin1_bufg1]
+set_property LOC BUFGCTRL_X0Y0 [get_cells b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i]
+set_property LOC BUFGCTRL_X0Y4 [get_cells b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i]
+set_property LOC BUFGCTRL_X0Y37 [get_cells b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i]
+set_property LOC BUFGCTRL_X0Y48 [get_cells b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i]
+set_property LOC BUFGCTRL_X0Y34 [get_cells b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i]
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y277 [get_ports INIT_DIFF_CLK_clk_n]
+set_property LOC IOB_X1Y278 [get_ports INIT_DIFF_CLK_clk_p]
+set_property LOC IOB_X1Y276 [get_ports clk_in1]
+
+# Clock net "dbg_hub/inst/itck_i" driven by instance "dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock {CLKAG_dbg_hub/inst/itck_i}
+add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/itck_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/itck_i"}]]]
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/itck_i}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "b2000t_c2c_bram_i/clk_wiz/inst/clk_out1" driven by instance "b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_b2000t_c2c_bram_i/clk_wiz/inst/clk_out1}
+add_cells_to_pblock [get_pblocks  {CLKAG_b2000t_c2c_bram_i/clk_wiz/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="b2000t_c2c_bram_i/clk_wiz/inst/clk_out1"}]]]
+resize_pblock [get_pblocks {CLKAG_b2000t_c2c_bram_i/clk_wiz/inst/clk_out1}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0" driven by instance "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0"}]]]
+resize_pblock [get_pblocks {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0" driven by instance "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i" located at site "BUFGCTRL_X0Y4"
+#startgroup
+create_pblock {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0"}]]]
+resize_pblock [get_pblocks {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i" driven by instance "b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i" located at site "BUFGCTRL_X0Y48"
+#startgroup
+create_pblock {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}
+add_cells_to_pblock [get_pblocks  {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i"}]]]
+resize_pblock [get_pblocks {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
+
+# Clock net "b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i" driven by instance "b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i" located at site "BUFGCTRL_X0Y34"
+#startgroup
+create_pblock {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}
+add_cells_to_pblock [get_pblocks  {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i"}]]]
+resize_pblock [get_pblocks {CLKAG_b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+#endgroup
