@@ -61,7 +61,7 @@
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_________100.000____________0.010
+// __primary_____________100____________0.010
 
 `timescale 1ps/1ps
 
@@ -75,7 +75,8 @@ module b2000t_c2c_bram_clk_wiz_0
   input         reset,
   output        locked,
  // Clock in ports
-  input         clk_in1
+  input         clk_in1_p,
+  input         clk_in1_n
  );
 
   b2000t_c2c_bram_clk_wiz_0_clk_wiz inst
@@ -86,7 +87,8 @@ module b2000t_c2c_bram_clk_wiz_0
   .reset(reset), 
   .locked(locked),
  // Clock in ports
-  .clk_in1(clk_in1)
+  .clk_in1_p(clk_in1_p),
+  .clk_in1_n(clk_in1_n)
   );
 
 endmodule

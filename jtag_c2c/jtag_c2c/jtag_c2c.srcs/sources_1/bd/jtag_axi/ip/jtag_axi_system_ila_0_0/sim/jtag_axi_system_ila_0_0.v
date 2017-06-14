@@ -55,6 +55,8 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module jtag_axi_system_ila_0_0 (
   clk,
+  probe0,
+  probe1,
   SLOT_0_AXI_awid,
   SLOT_0_AXI_awaddr,
   SLOT_0_AXI_awlen,
@@ -96,6 +98,8 @@ module jtag_axi_system_ila_0_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
+input wire [0 : 0] probe0;
+input wire [0 : 0] probe1;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWID" *)
 input wire [0 : 0] SLOT_0_AXI_awid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWADDR" *)
@@ -173,6 +177,8 @@ input wire SLOT_0_AXI_rready;
 
   bd_3457 inst (
     .clk(clk),
+    .probe0(probe0),
+    .probe1(probe1),
     .SLOT_0_AXI_awid(SLOT_0_AXI_awid),
     .SLOT_0_AXI_awaddr(SLOT_0_AXI_awaddr),
     .SLOT_0_AXI_awlen(SLOT_0_AXI_awlen),

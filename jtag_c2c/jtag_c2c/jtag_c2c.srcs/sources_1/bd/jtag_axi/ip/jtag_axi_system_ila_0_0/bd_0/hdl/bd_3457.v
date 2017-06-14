@@ -1,15 +1,15 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-//Date        : Sat Jun 10 21:19:51 2017
-//Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+//Date        : Tue Jun 13 19:46:48 2017
+//Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_3457.bd
 //Design      : bd_3457
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_3457,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_3457,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "jtag_axi_system_ila_0_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_3457,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_3457,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "jtag_axi_system_ila_0_0.hwdef" *) 
 module bd_3457
    (SLOT_0_AXI_araddr,
     SLOT_0_AXI_arburst,
@@ -48,7 +48,9 @@ module bd_3457
     SLOT_0_AXI_wready,
     SLOT_0_AXI_wstrb,
     SLOT_0_AXI_wvalid,
-    clk);
+    clk,
+    probe0,
+    probe1);
   input [31:0]SLOT_0_AXI_araddr;
   input [1:0]SLOT_0_AXI_arburst;
   input [3:0]SLOT_0_AXI_arcache;
@@ -87,6 +89,8 @@ module bd_3457
   input [3:0]SLOT_0_AXI_wstrb;
   input SLOT_0_AXI_wvalid;
   input clk;
+  input [0:0]probe0;
+  input [0:0]probe1;
 
   wire [31:0]Conn_ARADDR;
   wire [1:0]Conn_ARBURST;
@@ -168,6 +172,8 @@ module bd_3457
   wire net_slot_0_axi_wready;
   wire [3:0]net_slot_0_axi_wstrb;
   wire net_slot_0_axi_wvalid;
+  wire [0:0]probe0_1;
+  wire [0:0]probe1_1;
 
   assign Conn_ARADDR = SLOT_0_AXI_araddr[31:0];
   assign Conn_ARBURST = SLOT_0_AXI_arburst[1:0];
@@ -207,6 +213,8 @@ module bd_3457
   assign Conn_WSTRB = SLOT_0_AXI_wstrb[3:0];
   assign Conn_WVALID = SLOT_0_AXI_wvalid;
   assign clk_1 = clk;
+  assign probe0_1 = probe0[0];
+  assign probe1_1 = probe1[0];
   bd_3457_g_inst_0 g_inst
        (.aclk(clk_1),
         .aresetn(1'b1),
@@ -286,36 +294,38 @@ module bd_3457
         .slot_0_axi_wvalid(Conn_WVALID));
   bd_3457_ila_lib_0 ila_lib
        (.clk(clk_1),
-        .probe0(net_slot_0_axi_araddr),
-        .probe1(net_slot_0_axi_arburst),
-        .probe10(net_slot_0_axi_awburst),
-        .probe11(net_slot_0_axi_awcache),
-        .probe12(net_slot_0_axi_awid),
-        .probe13(net_slot_0_axi_awlen),
-        .probe14(net_slot_0_axi_awlock),
-        .probe15(net_slot_0_axi_awprot),
-        .probe16(net_slot_0_axi_awqos),
-        .probe17(net_slot_0_axi_awsize),
-        .probe18(net_slot_0_axi_bid),
-        .probe19(net_slot_0_axi_bresp),
-        .probe2(net_slot_0_axi_arcache),
-        .probe20(net_slot_0_axi_rdata),
-        .probe21(net_slot_0_axi_rid),
-        .probe22(net_slot_0_axi_rresp),
-        .probe23(net_slot_0_axi_wdata),
-        .probe24(net_slot_0_axi_wstrb),
-        .probe25(net_slot_0_axi_aw_ctrl),
-        .probe26(net_slot_0_axi_w_ctrl),
-        .probe27(net_slot_0_axi_b_ctrl),
-        .probe28(net_slot_0_axi_ar_ctrl),
-        .probe29(net_slot_0_axi_r_ctrl),
-        .probe3(net_slot_0_axi_arid),
-        .probe4(net_slot_0_axi_arlen),
-        .probe5(net_slot_0_axi_arlock),
-        .probe6(net_slot_0_axi_arprot),
-        .probe7(net_slot_0_axi_arqos),
-        .probe8(net_slot_0_axi_arsize),
-        .probe9(net_slot_0_axi_awaddr));
+        .probe0(probe0_1),
+        .probe1(probe1_1),
+        .probe10(net_slot_0_axi_arsize),
+        .probe11(net_slot_0_axi_awaddr),
+        .probe12(net_slot_0_axi_awburst),
+        .probe13(net_slot_0_axi_awcache),
+        .probe14(net_slot_0_axi_awid),
+        .probe15(net_slot_0_axi_awlen),
+        .probe16(net_slot_0_axi_awlock),
+        .probe17(net_slot_0_axi_awprot),
+        .probe18(net_slot_0_axi_awqos),
+        .probe19(net_slot_0_axi_awsize),
+        .probe2(net_slot_0_axi_araddr),
+        .probe20(net_slot_0_axi_bid),
+        .probe21(net_slot_0_axi_bresp),
+        .probe22(net_slot_0_axi_rdata),
+        .probe23(net_slot_0_axi_rid),
+        .probe24(net_slot_0_axi_rresp),
+        .probe25(net_slot_0_axi_wdata),
+        .probe26(net_slot_0_axi_wstrb),
+        .probe27(net_slot_0_axi_aw_ctrl),
+        .probe28(net_slot_0_axi_w_ctrl),
+        .probe29(net_slot_0_axi_b_ctrl),
+        .probe3(net_slot_0_axi_arburst),
+        .probe30(net_slot_0_axi_ar_ctrl),
+        .probe31(net_slot_0_axi_r_ctrl),
+        .probe4(net_slot_0_axi_arcache),
+        .probe5(net_slot_0_axi_arid),
+        .probe6(net_slot_0_axi_arlen),
+        .probe7(net_slot_0_axi_arlock),
+        .probe8(net_slot_0_axi_arprot),
+        .probe9(net_slot_0_axi_arqos));
   bd_3457_slot_0_ar_0 slot_0_ar
        (.In0(net_slot_0_axi_arvalid),
         .In1(net_slot_0_axi_arready),

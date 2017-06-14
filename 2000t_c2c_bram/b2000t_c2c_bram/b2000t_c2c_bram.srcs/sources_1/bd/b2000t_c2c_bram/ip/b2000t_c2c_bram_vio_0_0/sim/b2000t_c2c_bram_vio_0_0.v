@@ -48,16 +48,21 @@
 `timescale 1ns / 1ps
 module b2000t_c2c_bram_vio_0_0 (
 clk,
-probe_in0,
+probe_in0,probe_in1,probe_in2,probe_in3,
 probe_out0,
-probe_out1
+probe_out1,
+probe_out2
 );
 
 input clk;
 input [0 : 0] probe_in0;
+input [0 : 0] probe_in1;
+input [0 : 0] probe_in2;
+input [0 : 0] probe_in3;
 
 output reg [0 : 0] probe_out0 = 'h0 ;
 output reg [0 : 0] probe_out1 = 'h0 ;
+output reg [0 : 0] probe_out2 = 'h0 ;
 
 
 endmodule

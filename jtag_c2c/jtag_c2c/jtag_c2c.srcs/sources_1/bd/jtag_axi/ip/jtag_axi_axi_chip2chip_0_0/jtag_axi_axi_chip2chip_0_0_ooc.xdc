@@ -54,8 +54,8 @@
 
 create_clock -period 10 -name s_aclk [get_ports s_aclk]
 
-create_clock -period 20.480 -name axi_c2c_phy_clk [get_ports axi_c2c_phy_clk]
-
 create_clock -period 10 -name aurora_init_clk [get_ports aurora_init_clk]
+
+create_clock -period 20.480 -name axi_c2c_phy_clk [get_ports axi_c2c_phy_clk]
 
 

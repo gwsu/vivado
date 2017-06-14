@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Sat Jun 10 21:30:38 2017
+// Date        : Sat Jun 10 21:30:35 2017
 // Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               f:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top jtag_axi_axi_chip2chip_0_0 -prefix
+//               jtag_axi_axi_chip2chip_0_0_ jtag_axi_axi_chip2chip_0_0_sim_netlist.v
 // Design      : jtag_axi_axi_chip2chip_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -441,13 +441,12 @@ endmodule
 (* C_SELECTIO_PHY_CLK = "100" *) (* C_SELECTIO_WIDTH = "9" *) (* C_SIMULATION = "0" *) 
 (* C_SYNC_STAGE = "3" *) (* C_USE_DIFF_CLK = "0" *) (* C_USE_DIFF_IO = "0" *) 
 (* C_WIDTH_CONVERSION = "1" *) (* DATA_MUX_RATIO = "1" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
-(* EN_ECC = "1" *) (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11" *) (* PHY_CTRL_WIDTH = "3" *) 
-(* PHY_DATA_WIDTH = "64" *) (* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "36" *) 
-(* RFIFO_DATA_SIZE_M2 = "0" *) (* RFIFO_DATA_SIZE_M3 = "0" *) (* RFIFO_DATA_SIZE_M4 = "0" *) 
-(* RFIFO_TIE_WIDTH = "1" *) (* RFIFO_WIDTH = "36" *) (* TDM_ID_WIDTH = "2" *) 
-(* TDM_VAL_BITS = "1" *) (* WFIFO_DATA_SIZE = "38" *) (* WFIFO_DATA_SIZE_M2 = "0" *) 
-(* WFIFO_DATA_SIZE_M3 = "2" *) (* WFIFO_DATA_SIZE_M4 = "2" *) (* WFIFO_TIE_WIDTH = "1" *) 
-(* WFIFO_WIDTH = "38" *) 
+(* EN_ECC = "1" *) (* PHY_CTRL_WIDTH = "3" *) (* PHY_DATA_WIDTH = "64" *) 
+(* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "36" *) (* RFIFO_DATA_SIZE_M2 = "0" *) 
+(* RFIFO_DATA_SIZE_M3 = "0" *) (* RFIFO_DATA_SIZE_M4 = "0" *) (* RFIFO_TIE_WIDTH = "1" *) 
+(* RFIFO_WIDTH = "36" *) (* TDM_ID_WIDTH = "2" *) (* TDM_VAL_BITS = "1" *) 
+(* WFIFO_DATA_SIZE = "38" *) (* WFIFO_DATA_SIZE_M2 = "0" *) (* WFIFO_DATA_SIZE_M3 = "2" *) 
+(* WFIFO_DATA_SIZE_M4 = "2" *) (* WFIFO_TIE_WIDTH = "1" *) (* WFIFO_WIDTH = "38" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
    (s_aclk,
     s_aresetn,
@@ -1187,7 +1186,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_asitv10_axisc_register_slice" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice
    (tdm_user_data_ready,
     Q,
@@ -3886,7 +3884,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_s
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_async_fifo" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo
    (out,
     \slot_select_reg[1] ,
@@ -4253,7 +4250,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__parameterize
         .s_axi_bvalid(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_aurora_standard_cc_module" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module
    (aurora_do_cc,
     aurora_pma_init_out,
@@ -5507,7 +5503,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_modul
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_awr_fifo" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo
    (out,
     next_int_ch2_ready,
@@ -5739,7 +5734,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__parameterized1
         .s_axi_rvalid(s_axi_rvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_b_fifo" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
    (out,
     \gic0.gc0.count_d1_reg[7] ,
@@ -5874,7 +5868,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
         .s_axi_bvalid(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ch0_ctrl" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
    (out,
     send_ch0,
@@ -6330,7 +6323,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_decoder" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
    (rd_ch_data_valid,
     br_ch_data_valid,
@@ -6992,7 +6984,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
         .O(\slot_select[3]_i_2_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_dec" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
    (ch0_valid0,
     data_out,
@@ -9018,7 +9009,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
         .R(rx_user_reset));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_enc" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
    (D,
     Q);
@@ -9388,7 +9378,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
         .O(\storage_data2[63]_i_7_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_master" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master
    (axi_c2c_aurora_tx_tvalid,
     Q,
@@ -9885,7 +9874,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master
         .tdm_user_data_ready(tdm_user_data_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_if" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
    (out,
     aurora_reset_pb,
@@ -9995,7 +9983,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_init" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
    (D,
     aurora_reset_pb,
@@ -11141,7 +11128,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .R(SS));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_reset_sync" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
    (calib_done_flop_reg,
     \sync_reset_flop_reg[0]_0 ,
@@ -11287,7 +11273,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .Q(calib_done_flop_reg));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_sync_cell" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell
    (axi_c2c_multi_bit_error_out,
     in0,
@@ -12203,7 +12188,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell__parameterized
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_tdm" *) 
 module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
    (tdm_user_data_valid,
     slot_select,
@@ -13522,7 +13506,6 @@ module jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .R(rx_user_reset));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
    (D,
     axi_c2c_phy_clk,
@@ -13706,7 +13689,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width
    (D,
     axi_c2c_phy_clk,
@@ -13890,7 +13872,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
    (D,
     axi_c2c_phy_clk,
@@ -14895,7 +14876,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized1
         .WEBWE({E,E,E,E}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top
    (D,
     axi_c2c_phy_clk,
@@ -15079,7 +15059,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
    (D,
     axi_c2c_phy_clk,
@@ -15263,7 +15242,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
 module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
    (D,
     axi_c2c_phy_clk,
@@ -15447,7 +15425,6 @@ module jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "clk_x_pntrs" *) 
 module jtag_axi_axi_chip2chip_0_0_clk_x_pntrs
    (ram_full_i_reg,
     S,
@@ -18695,7 +18672,6 @@ module jtag_axi_axi_chip2chip_0_0_compare__parameterized7
         .O(ram_full_fb_i_reg));
 endmodule
 
-(* ORIG_REF_NAME = "dmem" *) 
 module jtag_axi_axi_chip2chip_0_0_dmem
    (\gpr1.dout_i_reg[0]_0 ,
     \gpr1.dout_i_reg[1]_0 ,
@@ -18900,7 +18876,6 @@ module jtag_axi_axi_chip2chip_0_0_dmem
         .Q(\gpr1.dout_i_reg[2]_4 ));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
 module jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo
    (out,
     \slot_select_reg[1] ,
@@ -19762,7 +19737,6 @@ module jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .\tdm_data_out_reg[3] (out));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module jtag_axi_axi_chip2chip_0_0_fifo_generator_top
    (out,
     \slot_select_reg[1] ,
@@ -20129,7 +20103,6 @@ module jtag_axi_axi_chip2chip_0_0_fifo_generator_top__parameterized2
         .s_axi_bvalid(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_3" *) 
 module jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3
    (out,
     \slot_select_reg[1] ,
@@ -20496,7 +20469,6 @@ module jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
         .s_axi_bvalid(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_3_synth" *) 
 module jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth
    (out,
     \slot_select_reg[1] ,
@@ -20863,7 +20835,6 @@ module jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameterized2
         .s_axi_bvalid(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "memory" *) 
 module jtag_axi_axi_chip2chip_0_0_memory
    (\tdm_data_out_reg[49] ,
     axi_c2c_phy_clk,
@@ -22568,7 +22539,6 @@ module jtag_axi_axi_chip2chip_0_0_memory__parameterized2
         .Q(s_axi_bresp[1]));
 endmodule
 
-(* ORIG_REF_NAME = "rd_bin_cntr" *) 
 module jtag_axi_axi_chip2chip_0_0_rd_bin_cntr
    (ram_empty_i_reg,
     Q,
@@ -23970,7 +23940,6 @@ module jtag_axi_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .O(ram_empty_i_i_7__1_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "rd_fwft" *) 
 module jtag_axi_axi_chip2chip_0_0_rd_fwft
    (out,
     fwft_rst_done_q,
@@ -25184,7 +25153,6 @@ module jtag_axi_axi_chip2chip_0_0_rd_fwft__parameterized0
         .O(s_axi_bvalid));
 endmodule
 
-(* ORIG_REF_NAME = "rd_logic" *) 
 module jtag_axi_axi_chip2chip_0_0_rd_logic
    (out,
     fwft_rst_done_q,
@@ -25687,7 +25655,6 @@ module jtag_axi_axi_chip2chip_0_0_rd_logic__parameterized2
         .s_aclk(s_aclk));
 endmodule
 
-(* ORIG_REF_NAME = "rd_status_flags_as" *) 
 module jtag_axi_axi_chip2chip_0_0_rd_status_flags_as
    (out,
     \gc0.count_reg[2] ,
@@ -25983,7 +25950,6 @@ module jtag_axi_axi_chip2chip_0_0_rd_status_flags_as__parameterized2
         .Q(ram_empty_i));
 endmodule
 
-(* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
 module jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo
    (out,
     ram_empty_i_reg,
@@ -28285,7 +28251,6 @@ module jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo__parameterized0
         .O(D));
 endmodule
 
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
 module jtag_axi_axi_chip2chip_0_0_synchronizer_ff
    (\Q_reg_reg[0]_0 ,
     out,
@@ -36715,7 +36680,6 @@ module jtag_axi_axi_chip2chip_0_0_synchronizer_ff__parameterized9
         .Q(Q_reg[8]));
 endmodule
 
-(* ORIG_REF_NAME = "wr_bin_cntr" *) 
 module jtag_axi_axi_chip2chip_0_0_wr_bin_cntr
    (ram_full_i_reg,
     Q,
@@ -38588,7 +38552,6 @@ module jtag_axi_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .Q(Q[7]));
 endmodule
 
-(* ORIG_REF_NAME = "wr_logic" *) 
 module jtag_axi_axi_chip2chip_0_0_wr_logic
    (out,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
@@ -38995,7 +38958,6 @@ module jtag_axi_axi_chip2chip_0_0_wr_logic__parameterized2
         .\gnxpm_cdc.wr_pntr_gc_reg[7] (\gnxpm_cdc.wr_pntr_gc_reg[7] ));
 endmodule
 
-(* ORIG_REF_NAME = "wr_pf_as" *) 
 module jtag_axi_axi_chip2chip_0_0_wr_pf_as
    (prog_full_int,
     E,
@@ -39321,7 +39283,6 @@ module jtag_axi_axi_chip2chip_0_0_wr_pf_as__parameterized1
         .S({1'b0,1'b0,1'b0,\gic0.gc0.count_d1_reg[8] }));
 endmodule
 
-(* ORIG_REF_NAME = "wr_status_flags_as" *) 
 module jtag_axi_axi_chip2chip_0_0_wr_status_flags_as
    (out,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,

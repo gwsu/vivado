@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:30:38 2017
+-- Date        : Sat Jun 10 21:30:36 2017
 -- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               f:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top jtag_axi_axi_chip2chip_0_0 -prefix
+--               jtag_axi_axi_chip2chip_0_0_ jtag_axi_axi_chip2chip_0_0_sim_netlist.vhdl
 -- Design      : jtag_axi_axi_chip2chip_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,8 +29,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_s
     \tdm_data_out_reg[53]\ : in STD_LOGIC_VECTOR ( 50 downto 0 );
     axi_c2c_phy_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice : entity is "axi_chip2chip_v4_2_11_asitv10_axisc_register_slice";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice is
@@ -3608,8 +3606,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_modul
     aurora_pma_init_in : in STD_LOGIC;
     axi_c2c_aurora_channel_up : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module : entity is "axi_chip2chip_v4_2_11_aurora_standard_cc_module";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module is
@@ -5311,8 +5307,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder is
     data_out : in STD_LOGIC_VECTOR ( 52 downto 0 );
     CO : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder : entity is "axi_chip2chip_v4_2_11_decoder";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder is
@@ -6120,8 +6114,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec is
     rx_user_reset : in STD_LOGIC;
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec : entity is "axi_chip2chip_v4_2_11_ecc_dec";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec is
@@ -8731,8 +8723,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc is
     D : out STD_LOGIC_VECTOR ( 6 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 50 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc : entity is "axi_chip2chip_v4_2_11_ecc_enc";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc is
@@ -9218,8 +9208,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \tx_phy_ctrl_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync : entity is "axi_chip2chip_v4_2_11_reset_sync";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync is
@@ -9393,8 +9381,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell is
     s_aclk : in STD_LOGIC;
     \out\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell : entity is "axi_chip2chip_v4_2_11_sync_cell";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell is
@@ -10575,8 +10561,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \grstd1.grst_full.grst_f.rst_d3_reg\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm : entity is "axi_chip2chip_v4_2_11_tdm";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm is
@@ -12232,8 +12216,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper is
@@ -13936,8 +13918,6 @@ entity jtag_axi_axi_chip2chip_0_0_dmem is
     s_aclk : in STD_LOGIC;
     \out\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_dmem : entity is "dmem";
 end jtag_axi_axi_chip2chip_0_0_dmem;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_dmem is
@@ -14111,8 +14091,6 @@ entity jtag_axi_axi_chip2chip_0_0_rd_bin_cntr is
     \Q_reg_reg[0]\ : in STD_LOGIC;
     axi_c2c_phy_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_rd_bin_cntr : entity is "rd_bin_cntr";
 end jtag_axi_axi_chip2chip_0_0_rd_bin_cntr;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_rd_bin_cntr is
@@ -15942,8 +15920,6 @@ entity jtag_axi_axi_chip2chip_0_0_rd_fwft is
     tdm_user_data_ready : in STD_LOGIC;
     ram_empty_fb_i_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_rd_fwft : entity is "rd_fwft";
 end jtag_axi_axi_chip2chip_0_0_rd_fwft;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_rd_fwft is
@@ -17384,8 +17360,6 @@ entity jtag_axi_axi_chip2chip_0_0_rd_status_flags_as is
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \Q_reg_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_rd_status_flags_as : entity is "rd_status_flags_as";
 end jtag_axi_axi_chip2chip_0_0_rd_status_flags_as;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_rd_status_flags_as is
@@ -17546,8 +17520,6 @@ entity jtag_axi_axi_chip2chip_0_0_synchronizer_ff is
     \out\ : in STD_LOGIC;
     s_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_synchronizer_ff : entity is "synchronizer_ff";
 end jtag_axi_axi_chip2chip_0_0_synchronizer_ff;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_synchronizer_ff is
@@ -28566,8 +28538,6 @@ entity jtag_axi_axi_chip2chip_0_0_wr_bin_cntr is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_wr_bin_cntr : entity is "wr_bin_cntr";
 end jtag_axi_axi_chip2chip_0_0_wr_bin_cntr;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_wr_bin_cntr is
@@ -30995,8 +30965,6 @@ entity jtag_axi_axi_chip2chip_0_0_wr_pf_as is
     \out\ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_wr_pf_as : entity is "wr_pf_as";
 end jtag_axi_axi_chip2chip_0_0_wr_pf_as;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_wr_pf_as is
@@ -31395,8 +31363,6 @@ entity jtag_axi_axi_chip2chip_0_0_wr_status_flags_as is
     \grstd1.grst_full.grst_f.rst_d2_reg\ : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_wr_status_flags_as : entity is "wr_status_flags_as";
 end jtag_axi_axi_chip2chip_0_0_wr_status_flags_as;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_wr_status_flags_as is
@@ -31620,8 +31586,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \data_out_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl : entity is "axi_chip2chip_v4_2_11_ch0_ctrl";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl is
@@ -32134,8 +32098,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init is
     axi_c2c_aurora_rx_tdata : in STD_LOGIC_VECTOR ( 44 downto 0 );
     aurora_mmcm_not_locked : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init : entity is "axi_chip2chip_v4_2_11_phy_init";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init is
@@ -33668,8 +33630,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_prim_width is
@@ -33821,8 +33781,6 @@ entity jtag_axi_axi_chip2chip_0_0_clk_x_pntrs is
     s_aclk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_clk_x_pntrs : entity is "clk_x_pntrs";
 end jtag_axi_axi_chip2chip_0_0_clk_x_pntrs;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_clk_x_pntrs is
@@ -37701,8 +37659,6 @@ entity jtag_axi_axi_chip2chip_0_0_rd_logic is
     tx_phy_ready : in STD_LOGIC;
     \ctrl_info_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_rd_logic : entity is "rd_logic";
 end jtag_axi_axi_chip2chip_0_0_rd_logic;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_rd_logic is
@@ -38086,8 +38042,6 @@ entity jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo is
     comp1 : in STD_LOGIC;
     ram_full_fb_i_reg_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
 end jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_reset_blk_ramfifo is
@@ -40974,8 +40928,6 @@ entity jtag_axi_axi_chip2chip_0_0_wr_logic is
     wr_rst_busy_i2_out : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_wr_logic : entity is "wr_logic";
 end jtag_axi_axi_chip2chip_0_0_wr_logic;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_wr_logic is
@@ -41346,8 +41298,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if is
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC;
     axi_c2c_aurora_rx_tdata : in STD_LOGIC_VECTOR ( 44 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if : entity is "axi_chip2chip_v4_2_11_phy_if";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if is
@@ -41421,8 +41371,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_generic_cstr is
@@ -42099,8 +42047,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_top is
@@ -42326,8 +42272,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth is
@@ -42553,8 +42497,6 @@ entity jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
 end jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 is
@@ -42863,8 +42805,6 @@ entity jtag_axi_axi_chip2chip_0_0_memory is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gpregsm1.curr_fwft_state_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_memory : entity is "memory";
 end jtag_axi_axi_chip2chip_0_0_memory;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_memory is
@@ -44845,8 +44785,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo is
     s_axi_bready : in STD_LOGIC;
     p_0_out : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo : entity is "axi_chip2chip_v4_2_11_b_fifo";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo is
@@ -44908,8 +44846,6 @@ entity jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
 end jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_fifo_generator_ramfifo is
@@ -45539,8 +45475,6 @@ entity jtag_axi_axi_chip2chip_0_0_fifo_generator_top is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_fifo_generator_top : entity is "fifo_generator_top";
 end jtag_axi_axi_chip2chip_0_0_fifo_generator_top;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_fifo_generator_top is
@@ -45709,8 +45643,6 @@ entity jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth : entity is "fifo_generator_v13_1_3_synth";
 end jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth is
@@ -45879,8 +45811,6 @@ entity jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3 is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3 : entity is "fifo_generator_v13_1_3";
 end jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_fifo_generator_v13_1_3 is
@@ -46049,8 +45979,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo : entity is "axi_chip2chip_v4_2_11_async_fifo";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo is
@@ -46222,8 +46150,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo is
     s_ready_i_reg : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo : entity is "axi_chip2chip_v4_2_11_awr_fifo";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo is
@@ -46412,8 +46338,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master is
     axi_c2c_aurora_rx_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master : entity is "axi_chip2chip_v4_2_11_master";
 end jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master;
 
 architecture STRUCTURE of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_master is
@@ -47140,8 +47064,6 @@ entity jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 is
   attribute DowngradeIPIdentifiedWarnings of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is "yes";
   attribute EN_ECC : integer;
   attribute EN_ECC of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is "axi_chip2chip_v4_2_11";
   attribute PHY_CTRL_WIDTH : integer;
   attribute PHY_CTRL_WIDTH of jtag_axi_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is 3;
   attribute PHY_DATA_WIDTH : integer;

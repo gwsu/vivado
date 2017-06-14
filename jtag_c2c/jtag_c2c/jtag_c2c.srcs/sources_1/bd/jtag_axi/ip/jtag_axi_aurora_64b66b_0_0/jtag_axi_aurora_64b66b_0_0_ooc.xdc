@@ -61,7 +61,7 @@
 # This constraints file is not used in normal top-down synthesis (the default flow of Vivado)
 ################################################################################
    # Reference clock contraint for GTX
-   create_clock -period 6.400	 [get_ports gt_refclk1_p]
+   create_clock -period 8.000	 [get_ports gt_refclk1_p]
  
 
  

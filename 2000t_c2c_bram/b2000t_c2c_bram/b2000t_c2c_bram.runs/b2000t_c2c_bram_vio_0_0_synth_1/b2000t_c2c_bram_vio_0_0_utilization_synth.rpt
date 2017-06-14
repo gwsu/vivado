@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Sat Jun 10 22:16:04 2017
-| Host         : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Jun 13 19:45:05 2017
+| Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file b2000t_c2c_bram_vio_0_0_utilization_synth.rpt -pb b2000t_c2c_bram_vio_0_0_utilization_synth.pb
 | Design       : b2000t_c2c_bram_vio_0_0
 | Device       : 7v2000tflg1925-1
@@ -34,11 +34,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   57 |     0 |   1221600 | <0.01 |
-|   LUT as Logic          |   57 |     0 |   1221600 | <0.01 |
+| Slice LUTs*             |   69 |     0 |   1221600 | <0.01 |
+|   LUT as Logic          |   69 |     0 |   1221600 | <0.01 |
 |   LUT as Memory         |    0 |     0 |    344800 |  0.00 |
-| Slice Registers         |  117 |     0 |   2443200 | <0.01 |
-|   Register as Flip Flop |  117 |     0 |   2443200 | <0.01 |
+| Slice Registers         |  144 |     0 |   2443200 | <0.01 |
+|   Register as Flip Flop |  144 |     0 |   2443200 | <0.01 |
 |   Register as Latch     |    0 |     0 |   2443200 |  0.00 |
 | F7 Muxes                |    0 |     0 |    610800 |  0.00 |
 | F8 Muxes                |    0 |     0 |    305400 |  0.00 |
@@ -61,7 +61,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 7     |          Yes |         Set |            - |
-| 110   |          Yes |       Reset |            - |
+| 137   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -155,13 +155,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  110 |        Flop & Latch |
-| LUT4     |   27 |                 LUT |
-| LUT3     |   21 |                 LUT |
-| LUT6     |   17 |                 LUT |
+| FDRE     |  137 |        Flop & Latch |
+| LUT3     |   29 |                 LUT |
+| LUT6     |   25 |                 LUT |
+| LUT5     |   11 |                 LUT |
+| LUT4     |   11 |                 LUT |
 | FDSE     |    7 |        Flop & Latch |
-| LUT5     |    6 |                 LUT |
-| LUT2     |    4 |                 LUT |
+| LUT2     |    5 |                 LUT |
 | LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 

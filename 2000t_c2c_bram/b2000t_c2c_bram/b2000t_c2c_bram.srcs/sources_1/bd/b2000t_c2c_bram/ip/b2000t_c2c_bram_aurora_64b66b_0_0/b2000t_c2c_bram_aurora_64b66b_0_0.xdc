@@ -70,10 +70,10 @@
     set_false_path -to [get_pins -hier *rxrecclk_bufg_i*/CE]
 
     # Create clock constraint for TXOUTCLK from GT
-    create_clock -period 5.333	 [get_pins -hier -filter {name=~*b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i*b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i*b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK}]
+    create_clock -period 10.240	 [get_pins -hier -filter {name=~*b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i*b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i*b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK}]
 
     # Create clock constraint for RXOUTCLK from GT
-    create_clock -period 5.333	 [get_pins -hier -filter {name=~*b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i*b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i*b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK}]
+    create_clock -period 10.240	 [get_pins -hier -filter {name=~*b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i*b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i*b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK}]
 
 
 

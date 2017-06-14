@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Sat Jun 10 21:14:20 2017
-// Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+// Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+// Date        : Tue Jun 13 15:48:14 2017
+// Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode funcsim
-//               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.v
+//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_clk_wiz_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,19 +17,23 @@ module b2000t_c2c_bram_clk_wiz_0
    (clk_out1,
     reset,
     locked,
-    clk_in1);
+    clk_in1_p,
+    clk_in1_n);
   output clk_out1;
   input reset;
   output locked;
-  input clk_in1;
+  input clk_in1_p;
+  input clk_in1_n;
 
-  (* IBUF_LOW_PWR *) wire clk_in1;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_n;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_p;
   wire clk_out1;
   wire locked;
   wire reset;
 
   b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz inst
-       (.clk_in1(clk_in1),
+       (.clk_in1_n(clk_in1_n),
+        .clk_in1_p(clk_in1_p),
         .clk_out1(clk_out1),
         .locked(locked),
         .reset(reset));
@@ -40,15 +44,17 @@ module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
    (clk_out1,
     reset,
     locked,
-    clk_in1);
+    clk_in1_p,
+    clk_in1_n);
   output clk_out1;
   input reset;
   output locked;
-  input clk_in1;
+  input clk_in1_p;
+  input clk_in1_n;
 
-  wire clk_in1;
   wire clk_in1_b2000t_c2c_bram_clk_wiz_0;
-  wire clk_in1_b2000t_c2c_bram_clk_wiz_0_buf;
+  wire clk_in1_n;
+  wire clk_in1_p;
   wire clk_out1;
   wire clk_out1_b2000t_c2c_bram_clk_wiz_0;
   wire clkfbout_b2000t_c2c_bram_clk_wiz_0;
@@ -77,18 +83,16 @@ module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
        (.I(clkfbout_b2000t_c2c_bram_clk_wiz_0),
         .O(clkfbout_buf_b2000t_c2c_bram_clk_wiz_0));
   (* BOX_TYPE = "PRIMITIVE" *) 
-  BUFG clkin1_bufg1
-       (.I(clk_in1_b2000t_c2c_bram_clk_wiz_0_buf),
-        .O(clk_in1_b2000t_c2c_bram_clk_wiz_0));
-  (* BOX_TYPE = "PRIMITIVE" *) 
   (* CAPACITANCE = "DONT_CARE" *) 
   (* IBUF_DELAY_VALUE = "0" *) 
   (* IFD_DELAY_VALUE = "AUTO" *) 
-  IBUF #(
+  IBUFDS #(
+    .DQS_BIAS("FALSE"),
     .IOSTANDARD("DEFAULT")) 
-    clkin1_ibuf0
-       (.I(clk_in1),
-        .O(clk_in1_b2000t_c2c_bram_clk_wiz_0_buf));
+    clkin1_ibufgds
+       (.I(clk_in1_p),
+        .IB(clk_in1_n),
+        .O(clk_in1_b2000t_c2c_bram_clk_wiz_0));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
        (.I(clk_out1_b2000t_c2c_bram_clk_wiz_0),
@@ -130,7 +134,7 @@ module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
     .CLKOUT6_DUTY_CYCLE(0.500000),
     .CLKOUT6_PHASE(0.000000),
     .CLKOUT6_USE_FINE_PS("FALSE"),
-    .COMPENSATION("BUF_IN"),
+    .COMPENSATION("ZHOLD"),
     .DIVCLK_DIVIDE(1),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PSEN_INVERTED(1'b0),

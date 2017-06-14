@@ -61,7 +61,7 @@
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_________100.000____________0.010
+// __primary_____________100____________0.010
 
 `timescale 1ps/1ps
 
@@ -73,19 +73,17 @@ module b2000t_c2c_bram_clk_wiz_0_clk_wiz
   // Status and control signals
   input         reset,
   output        locked,
-  input         clk_in1
+  input         clk_in1_p,
+  input         clk_in1_n
  );
   // Input buffering
   //------------------------------------
 wire clk_in1_b2000t_c2c_bram_clk_wiz_0;
 wire clk_in2_b2000t_c2c_bram_clk_wiz_0;
-  IBUF clkin1_ibuf0
-   (.O (clk_in1_b2000t_c2c_bram_clk_wiz_0_buf),
-    .I (clk_in1));
-
-  BUFG clkin1_bufg1
-   (.O (clk_in1_b2000t_c2c_bram_clk_wiz_0),
-    .I (clk_in1_b2000t_c2c_bram_clk_wiz_0_buf));
+  IBUFDS clkin1_ibufgds
+   (.O  (clk_in1_b2000t_c2c_bram_clk_wiz_0),
+    .I  (clk_in1_p),
+    .IB (clk_in1_n));
 
 
   // Clocking PRIMITIVE

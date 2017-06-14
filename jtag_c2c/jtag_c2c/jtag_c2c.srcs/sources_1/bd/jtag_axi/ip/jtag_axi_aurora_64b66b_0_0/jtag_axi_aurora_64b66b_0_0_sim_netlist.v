@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Sat Jun 10 21:26:01 2017
-// Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+// Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+// Date        : Tue Jun 13 19:03:49 2017
+// Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode funcsim
-//               f:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_sim_netlist.v
+//               /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_sim_netlist.v
 // Design      : jtag_axi_aurora_64b66b_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double156.25MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
 (* NotValidForBitStream *)
 module jtag_axi_aurora_64b66b_0_0
    (s_axi_tx_tdata,
@@ -7745,7 +7745,7 @@ module jtag_axi_aurora_64b66b_0_0_jtag_axi_aurora_64b66b_0_0_GTX
     .CLK_COR_SEQ_2_USE("FALSE"),
     .CLK_COR_SEQ_LEN(1),
     .CPLL_CFG(24'hBC07DC),
-    .CPLL_FBDIV(4),
+    .CPLL_FBDIV(5),
     .CPLL_FBDIV_45(5),
     .CPLL_INIT_CFG(24'h00001E),
     .CPLL_LOCK_CFG(16'h01E8),
@@ -7825,7 +7825,7 @@ module jtag_axi_aurora_64b66b_0_0_jtag_axi_aurora_64b66b_0_0_GTX
     .RXSLIDE_MODE("OFF"),
     .RX_BIAS_CFG(12'b000000000100),
     .RX_BUFFER_CFG(6'b000000),
-    .RX_CLK25_DIV(7),
+    .RX_CLK25_DIV(5),
     .RX_CLKMUX_PD(1'b1),
     .RX_CM_SEL(2'b11),
     .RX_CM_TRIM(3'b010),
@@ -7884,7 +7884,7 @@ module jtag_axi_aurora_64b66b_0_0_jtag_axi_aurora_64b66b_0_0_GTX
     .TXPH_CFG(16'h0780),
     .TXPH_MONITOR_SEL(5'b00000),
     .TXPMARESET_TIME(5'b00001),
-    .TX_CLK25_DIV(7),
+    .TX_CLK25_DIV(5),
     .TX_CLKMUX_PD(1'b1),
     .TX_DATA_WIDTH(64),
     .TX_DEEMPH0(5'b00000),

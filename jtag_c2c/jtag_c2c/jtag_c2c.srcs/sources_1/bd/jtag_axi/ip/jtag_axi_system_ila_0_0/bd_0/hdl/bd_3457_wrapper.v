@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-//Date        : Sat Jun 10 21:19:51 2017
-//Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+//Date        : Tue Jun 13 19:46:48 2017
+//Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_3457_wrapper.bd
 //Design      : bd_3457_wrapper
 //Purpose     : IP block netlist
@@ -47,7 +47,9 @@ module bd_3457_wrapper
     SLOT_0_AXI_wready,
     SLOT_0_AXI_wstrb,
     SLOT_0_AXI_wvalid,
-    clk);
+    clk,
+    probe0,
+    probe1);
   input [31:0]SLOT_0_AXI_araddr;
   input [1:0]SLOT_0_AXI_arburst;
   input [3:0]SLOT_0_AXI_arcache;
@@ -86,6 +88,8 @@ module bd_3457_wrapper
   input [3:0]SLOT_0_AXI_wstrb;
   input SLOT_0_AXI_wvalid;
   input clk;
+  input [0:0]probe0;
+  input [0:0]probe1;
 
   wire [31:0]SLOT_0_AXI_araddr;
   wire [1:0]SLOT_0_AXI_arburst;
@@ -125,6 +129,8 @@ module bd_3457_wrapper
   wire [3:0]SLOT_0_AXI_wstrb;
   wire SLOT_0_AXI_wvalid;
   wire clk;
+  wire [0:0]probe0;
+  wire [0:0]probe1;
 
   bd_3457 bd_3457_i
        (.SLOT_0_AXI_araddr(SLOT_0_AXI_araddr),
@@ -164,5 +170,7 @@ module bd_3457_wrapper
         .SLOT_0_AXI_wready(SLOT_0_AXI_wready),
         .SLOT_0_AXI_wstrb(SLOT_0_AXI_wstrb),
         .SLOT_0_AXI_wvalid(SLOT_0_AXI_wvalid),
-        .clk(clk));
+        .clk(clk),
+        .probe0(probe0),
+        .probe1(probe1));
 endmodule

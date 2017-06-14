@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-//Date        : Sat Jun 10 21:19:42 2017
-//Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+//Date        : Tue Jun 13 19:46:46 2017
+//Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target jtag_axi.bd
 //Design      : jtag_axi
 //Purpose     : IP block netlist
@@ -11,8 +11,8 @@
 
 (* CORE_GENERATION_INFO = "jtag_axi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=jtag_axi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_axi_chip2chip_cnt=1,da_bram_cntlr_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "jtag_axi.hwdef" *) 
 module jtag_axi
-   (GT_DIFF_REFCLK_clk_n,
-    GT_DIFF_REFCLK_clk_p,
+   (GT_DIFF_REFCLK1_clk_n,
+    GT_DIFF_REFCLK1_clk_p,
     GT_SERIAL_RX_rxn,
     GT_SERIAL_RX_rxp,
     GT_SERIAL_TX_txn,
@@ -22,9 +22,10 @@ module jtag_axi
     diff_clock_rtl_clk_n,
     diff_clock_rtl_clk_p,
     interrupt,
-    ip2intc_irpt);
-  input GT_DIFF_REFCLK_clk_n;
-  input GT_DIFF_REFCLK_clk_p;
+    ip2intc_irpt,
+    pma_init_in);
+  input GT_DIFF_REFCLK1_clk_n;
+  input GT_DIFF_REFCLK1_clk_p;
   input [0:0]GT_SERIAL_RX_rxn;
   input [0:0]GT_SERIAL_RX_rxp;
   output [0:0]GT_SERIAL_TX_txn;
@@ -35,9 +36,10 @@ module jtag_axi
   input diff_clock_rtl_clk_p;
   output interrupt;
   output ip2intc_irpt;
+  input pma_init_in;
 
-  wire GT_DIFF_REFCLK_1_CLK_N;
-  wire GT_DIFF_REFCLK_1_CLK_P;
+  wire GT_DIFF_REFCLK1_1_CLK_N;
+  wire GT_DIFF_REFCLK1_1_CLK_P;
   wire [0:0]GT_SERIAL_RX_1_RXN;
   wire [0:0]GT_SERIAL_RX_1_RXP;
   wire INIT_DIFF_CLK_1_CLK_N;
@@ -216,11 +218,12 @@ module jtag_axi
   wire jtag_axi_0_M_AXI_WVALID;
   wire [0:0]rst_clk_wiz_100M_interconnect_aresetn;
   wire [0:0]rst_clk_wiz_100M_peripheral_aresetn;
-  wire [0:0]vio_0_probe_out0;
-  wire [0:0]vio_0_probe_out1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]vio_0_probe_out0;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire vio_0_probe_out1;
+  wire [0:0]vio_0_probe_out2;
 
-  assign GT_DIFF_REFCLK_1_CLK_N = GT_DIFF_REFCLK_clk_n;
-  assign GT_DIFF_REFCLK_1_CLK_P = GT_DIFF_REFCLK_clk_p;
+  assign GT_DIFF_REFCLK1_1_CLK_N = GT_DIFF_REFCLK1_clk_n;
+  assign GT_DIFF_REFCLK1_1_CLK_P = GT_DIFF_REFCLK1_clk_p;
   assign GT_SERIAL_RX_1_RXN = GT_SERIAL_RX_rxn[0];
   assign GT_SERIAL_RX_1_RXP = GT_SERIAL_RX_rxp[0];
   assign GT_SERIAL_TX_txn[0] = aurora_64b66b_0_GT_SERIAL_TX_TXN;
@@ -231,11 +234,12 @@ module jtag_axi
   assign diff_clock_rtl_1_CLK_P = diff_clock_rtl_clk_p;
   assign interrupt = axi_perf_mon_0_interrupt;
   assign ip2intc_irpt = axi_hwicap_0_ip2intc_irpt;
+  assign vio_0_probe_out1 = pma_init_in;
   jtag_axi_aurora_64b66b_0_0 aurora_64b66b_0
        (.channel_up(aurora_64b66b_0_channel_up),
         .drp_clk_in(clk_wiz_clk_out1),
-        .gt_refclk1_n(GT_DIFF_REFCLK_1_CLK_N),
-        .gt_refclk1_p(GT_DIFF_REFCLK_1_CLK_P),
+        .gt_refclk1_n(GT_DIFF_REFCLK1_1_CLK_N),
+        .gt_refclk1_p(GT_DIFF_REFCLK1_1_CLK_P),
         .gt_rxcdrovrden_in(1'b0),
         .init_clk_n(INIT_DIFF_CLK_1_CLK_N),
         .init_clk_out(aurora_64b66b_0_init_clk_out),
@@ -637,7 +641,7 @@ module jtag_axi
   jtag_axi_rst_clk_wiz_100M_0 rst_clk_wiz_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(clk_wiz_locked),
-        .ext_reset_in(vio_0_probe_out0),
+        .ext_reset_in(vio_0_probe_out2),
         .interconnect_aresetn(rst_clk_wiz_100M_interconnect_aresetn),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_clk_wiz_100M_peripheral_aresetn),
@@ -680,7 +684,9 @@ module jtag_axi
         .SLOT_0_AXI_wready(jtag_axi_0_M_AXI_WREADY),
         .SLOT_0_AXI_wstrb(jtag_axi_0_M_AXI_WSTRB),
         .SLOT_0_AXI_wvalid(jtag_axi_0_M_AXI_WVALID),
-        .clk(clk_wiz_clk_out1));
+        .clk(clk_wiz_clk_out1),
+        .probe0(vio_0_probe_out0),
+        .probe1(vio_0_probe_out1));
   jtag_axi_vio_0_0 vio_0
        (.clk(clk_wiz_clk_out1),
         .probe_in0(clk_wiz_locked),
@@ -689,7 +695,7 @@ module jtag_axi
         .probe_in3(axi_chip2chip_0_axi_c2c_link_error_out),
         .probe_in4(axi_chip2chip_0_axi_c2c_config_error_out),
         .probe_out0(vio_0_probe_out0),
-        .probe_out1(vio_0_probe_out1));
+        .probe_out1(vio_0_probe_out2));
 endmodule
 
 module jtag_axi_axi_mem_intercon_0

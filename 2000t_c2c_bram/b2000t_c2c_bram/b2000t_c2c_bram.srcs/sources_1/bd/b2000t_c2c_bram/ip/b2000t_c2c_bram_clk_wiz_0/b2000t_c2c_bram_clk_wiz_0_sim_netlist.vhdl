@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:14:20 2017
--- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+-- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+-- Date        : Tue Jun 13 15:48:14 2017
+-- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim
---               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.vhdl
+--               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_clk_wiz_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,7 +19,8 @@ entity b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz is
     clk_out1 : out STD_LOGIC;
     reset : in STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    clk_in1_p : in STD_LOGIC;
+    clk_in1_n : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz : entity is "b2000t_c2c_bram_clk_wiz_0_clk_wiz";
@@ -27,7 +28,6 @@ end b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz;
 
 architecture STRUCTURE of b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz is
   signal clk_in1_b2000t_c2c_bram_clk_wiz_0 : STD_LOGIC;
-  signal clk_in1_b2000t_c2c_bram_clk_wiz_0_buf : STD_LOGIC;
   signal clk_out1_b2000t_c2c_bram_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_b2000t_c2c_bram_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_buf_b2000t_c2c_bram_clk_wiz_0 : STD_LOGIC;
@@ -49,14 +49,13 @@ architecture STRUCTURE of b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_cl
   signal NLW_mmcm_adv_inst_DO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute BOX_TYPE : string;
   attribute BOX_TYPE of clkf_buf : label is "PRIMITIVE";
-  attribute BOX_TYPE of clkin1_bufg1 : label is "PRIMITIVE";
-  attribute BOX_TYPE of clkin1_ibuf0 : label is "PRIMITIVE";
+  attribute BOX_TYPE of clkin1_ibufgds : label is "PRIMITIVE";
   attribute CAPACITANCE : string;
-  attribute CAPACITANCE of clkin1_ibuf0 : label is "DONT_CARE";
+  attribute CAPACITANCE of clkin1_ibufgds : label is "DONT_CARE";
   attribute IBUF_DELAY_VALUE : string;
-  attribute IBUF_DELAY_VALUE of clkin1_ibuf0 : label is "0";
+  attribute IBUF_DELAY_VALUE of clkin1_ibufgds : label is "0";
   attribute IFD_DELAY_VALUE : string;
-  attribute IFD_DELAY_VALUE of clkin1_ibuf0 : label is "AUTO";
+  attribute IFD_DELAY_VALUE of clkin1_ibufgds : label is "AUTO";
   attribute BOX_TYPE of clkout1_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of mmcm_adv_inst : label is "PRIMITIVE";
 begin
@@ -65,18 +64,15 @@ clkf_buf: unisim.vcomponents.BUFG
       I => clkfbout_b2000t_c2c_bram_clk_wiz_0,
       O => clkfbout_buf_b2000t_c2c_bram_clk_wiz_0
     );
-clkin1_bufg1: unisim.vcomponents.BUFG
-     port map (
-      I => clk_in1_b2000t_c2c_bram_clk_wiz_0_buf,
-      O => clk_in1_b2000t_c2c_bram_clk_wiz_0
-    );
-clkin1_ibuf0: unisim.vcomponents.IBUF
+clkin1_ibufgds: unisim.vcomponents.IBUFDS
     generic map(
+      DQS_BIAS => "FALSE",
       IOSTANDARD => "DEFAULT"
     )
         port map (
-      I => clk_in1,
-      O => clk_in1_b2000t_c2c_bram_clk_wiz_0_buf
+      I => clk_in1_p,
+      IB => clk_in1_n,
+      O => clk_in1_b2000t_c2c_bram_clk_wiz_0
     );
 clkout1_buf: unisim.vcomponents.BUFG
      port map (
@@ -120,7 +116,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKOUT6_DUTY_CYCLE => 0.500000,
       CLKOUT6_PHASE => 0.000000,
       CLKOUT6_USE_FINE_PS => false,
-      COMPENSATION => "BUF_IN",
+      COMPENSATION => "ZHOLD",
       DIVCLK_DIVIDE => 1,
       IS_CLKINSEL_INVERTED => '0',
       IS_PSEN_INVERTED => '0',
@@ -179,7 +175,8 @@ entity b2000t_c2c_bram_clk_wiz_0 is
     clk_out1 : out STD_LOGIC;
     reset : in STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    clk_in1_p : in STD_LOGIC;
+    clk_in1_n : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of b2000t_c2c_bram_clk_wiz_0 : entity is true;
@@ -189,7 +186,8 @@ architecture STRUCTURE of b2000t_c2c_bram_clk_wiz_0 is
 begin
 inst: entity work.b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
      port map (
-      clk_in1 => clk_in1,
+      clk_in1_n => clk_in1_n,
+      clk_in1_p => clk_in1_p,
       clk_out1 => clk_out1,
       locked => locked,
       reset => reset

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:31:43 2017
+-- Date        : Sat Jun 10 21:31:42 2017
 -- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub
---               f:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top jtag_axi_auto_pc_0 -prefix
+--               jtag_axi_auto_pc_0_ jtag_axi_auto_pc_0_stub.vhdl
 -- Design      : jtag_axi_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z045ffv900-2

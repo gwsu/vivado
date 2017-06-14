@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Sat Jun 10 21:07:19 2017
+// Date        : Sat Jun 10 21:07:16 2017
 // Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top b2000t_c2c_bram_axi_chip2chip_0_0 -prefix
+//               b2000t_c2c_bram_axi_chip2chip_0_0_ b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_axi_chip2chip_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -434,13 +434,12 @@ endmodule
 (* C_SELECTIO_PHY_CLK = "100" *) (* C_SELECTIO_WIDTH = "9" *) (* C_SIMULATION = "0" *) 
 (* C_SYNC_STAGE = "3" *) (* C_USE_DIFF_CLK = "0" *) (* C_USE_DIFF_IO = "0" *) 
 (* C_WIDTH_CONVERSION = "1" *) (* DATA_MUX_RATIO = "1" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
-(* EN_ECC = "1" *) (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11" *) (* PHY_CTRL_WIDTH = "3" *) 
-(* PHY_DATA_WIDTH = "64" *) (* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "41" *) 
-(* RFIFO_DATA_SIZE_M2 = "1" *) (* RFIFO_DATA_SIZE_M3 = "2" *) (* RFIFO_DATA_SIZE_M4 = "1" *) 
-(* RFIFO_TIE_WIDTH = "1" *) (* RFIFO_WIDTH = "41" *) (* TDM_ID_WIDTH = "2" *) 
-(* TDM_VAL_BITS = "1" *) (* WFIFO_DATA_SIZE = "41" *) (* WFIFO_DATA_SIZE_M2 = "1" *) 
-(* WFIFO_DATA_SIZE_M3 = "2" *) (* WFIFO_DATA_SIZE_M4 = "1" *) (* WFIFO_TIE_WIDTH = "1" *) 
-(* WFIFO_WIDTH = "41" *) 
+(* EN_ECC = "1" *) (* PHY_CTRL_WIDTH = "3" *) (* PHY_DATA_WIDTH = "64" *) 
+(* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "41" *) (* RFIFO_DATA_SIZE_M2 = "1" *) 
+(* RFIFO_DATA_SIZE_M3 = "2" *) (* RFIFO_DATA_SIZE_M4 = "1" *) (* RFIFO_TIE_WIDTH = "1" *) 
+(* RFIFO_WIDTH = "41" *) (* TDM_ID_WIDTH = "2" *) (* TDM_VAL_BITS = "1" *) 
+(* WFIFO_DATA_SIZE = "41" *) (* WFIFO_DATA_SIZE_M2 = "1" *) (* WFIFO_DATA_SIZE_M3 = "2" *) 
+(* WFIFO_DATA_SIZE_M4 = "1" *) (* WFIFO_TIE_WIDTH = "1" *) (* WFIFO_WIDTH = "41" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
    (s_aclk,
     s_aresetn,
@@ -1101,7 +1100,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_asitv10_axisc_register_slice" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice
    (D,
     \state_reg[1]_0 ,
@@ -3765,7 +3763,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_async_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo
    (D,
     m_axi_awvalid,
@@ -4192,7 +4189,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_aurora_standard_cc_module" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module
    (aurora_do_cc,
     aurora_pma_init_out,
@@ -5446,7 +5442,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_c
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_awr_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo
    (D,
     m_axi_arvalid,
@@ -5642,7 +5637,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__paramet
         .unpack_data_re(unpack_data_re));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_b_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
    (out,
     \gpregsm1.user_valid_reg ,
@@ -5873,7 +5867,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ch0_ctrl" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
    (send_ch0,
     ecc_dec_error_in_dly,
@@ -6226,7 +6219,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_decoder" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
    (aw_ch_data_valid,
     ar_ch_data_valid,
@@ -6862,7 +6854,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
         .O(S[0]));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_dec" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
    (ch0_valid0,
     data_out,
@@ -8889,7 +8880,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
         .R(rx_user_reset));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_enc" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
    (D,
     \storage_data2_reg[63] ,
@@ -9262,7 +9252,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
         .O(D[6]));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_if" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
    (D,
     aurora_reset_pb,
@@ -9371,7 +9360,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_init" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
    (D,
     aurora_reset_pb,
@@ -10093,7 +10081,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .Q(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_reset_sync" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
    (calib_done_flop_reg,
     \sync_reset_flop_reg[0]_0 ,
@@ -10273,7 +10260,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .Q(calib_done_flop_reg));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_slave" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
    (ecc_dec_error_in_dly,
     axi_c2c_aurora_tx_tvalid,
@@ -10875,7 +10861,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .wd_ch_data_valid(wd_ch_data_valid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_sync_cell" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell
    (D,
     \auto_neg_intr_gen.intr_flop_reg ,
@@ -11561,7 +11546,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell__parame
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_tdm" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
    (tdm_user_data_valid,
     slot_select,
@@ -12507,7 +12491,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .R(rx_user_reset));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
    (D,
     m_aclk,
@@ -12683,7 +12666,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr__parameterized
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width
    (D,
     m_aclk,
@@ -12859,7 +12841,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
    (D,
     m_aclk,
@@ -13968,7 +13949,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
         .WEBWE({E,E,E,E,E,E,E,E}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top
    (D,
     m_aclk,
@@ -14144,7 +14124,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
    (D,
     m_aclk,
@@ -14320,7 +14299,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
    (D,
     m_aclk,
@@ -14496,7 +14474,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth__parameterized
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
-(* ORIG_REF_NAME = "clk_x_pntrs" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs
    (ram_empty_fb_i_reg,
     WR_PNTR_RD,
@@ -17565,7 +17542,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_compare__parameterized7
         .O(ram_full_fb_i_reg));
 endmodule
 
-(* ORIG_REF_NAME = "dmem" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
    (\gpr1.dout_i_reg[0]_0 ,
     \gpr1.dout_i_reg[1]_0 ,
@@ -18058,7 +18034,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
         .Q(Q[7]));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
    (D,
     m_axi_awvalid,
@@ -18941,7 +18916,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .out(wr_rst_i));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top
    (D,
     m_axi_awvalid,
@@ -19368,7 +19342,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_3" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3
    (D,
     m_axi_awvalid,
@@ -19795,7 +19768,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_3_synth" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth
    (D,
     m_axi_awvalid,
@@ -20222,7 +20194,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
-(* ORIG_REF_NAME = "memory" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_memory
    (\m_axi_awaddr[31] ,
     m_aclk,
@@ -22144,7 +22115,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
         .Q(\tdm_data_out_reg[13] [7]));
 endmodule
 
-(* ORIG_REF_NAME = "rd_bin_cntr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
    (Q,
     ram_empty_fb_i_reg,
@@ -23522,7 +23492,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .O(ram_empty_fb_i_reg));
 endmodule
 
-(* ORIG_REF_NAME = "rd_fwft" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft
    (fwft_rst_done_q,
     E,
@@ -24755,7 +24724,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
         .O(int_ch1_ready5__1));
 endmodule
 
-(* ORIG_REF_NAME = "rd_logic" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
    (fwft_rst_done_q,
     E,
@@ -25248,7 +25216,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
         .ram_empty_fb_i_reg(ram_empty_fb_i_reg));
 endmodule
 
-(* ORIG_REF_NAME = "rd_status_flags_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as
    (out,
     \gnxpm_cdc.wr_pntr_bin_reg[6] ,
@@ -25546,7 +25513,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as__parameterized2
         .Q(ram_empty_i));
 endmodule
 
-(* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo
    (out,
     ram_empty_i_reg,
@@ -27840,7 +27806,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo__parameterized0
         .Q(wr_rst_reg[2]));
 endmodule
 
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff
    (\Q_reg_reg[0]_0 ,
     out,
@@ -36256,7 +36221,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized9
         .Q(Q_reg[8]));
 endmodule
 
-(* ORIG_REF_NAME = "wr_bin_cntr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
    (ram_full_i_reg,
     Q,
@@ -38358,7 +38322,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .O(ram_full_i_i_9__1_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "wr_logic" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic
    (out,
     \gpf1.prog_full_i_reg ,
@@ -38789,7 +38752,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized2
         .ram_full_i_reg(wpntr_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "wr_pf_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
    (prog_full_int,
     E,
@@ -39275,7 +39237,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as__parameterized0
         .S({1'b0,1'b0,1'b0,\gic0.gc0.count_d1_reg[8] }));
 endmodule
 
-(* ORIG_REF_NAME = "wr_status_flags_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as
    (out,
     \gpf1.prog_full_i_reg ,

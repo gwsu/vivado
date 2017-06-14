@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:08:02 2017
--- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+-- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+-- Date        : Tue Jun 13 19:04:44 2017
+-- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim
---               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.vhdl
+--               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_aurora_64b66b_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -2075,20 +2075,20 @@ initclk_bufg_i: unisim.vcomponents.BUFG
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 6.000000,
+      CLKFBOUT_MULT_F => 9.000000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
-      CLKIN1_PERIOD => 5.333000,
+      CLKIN1_PERIOD => 10.240000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 12.000000,
+      CLKOUT0_DIVIDE_F => 18.000000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
-      CLKOUT1_DIVIDE => 6,
+      CLKOUT1_DIVIDE => 9,
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => false,
-      CLKOUT2_DIVIDE => 10,
+      CLKOUT2_DIVIDE => 20,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
       CLKOUT2_USE_FINE_PS => false,
@@ -4115,7 +4115,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       RXBUF_THRESH_UNDFLW => 4,
       RXCDRFREQRESET_TIME => B"00001",
       RXCDRPHRESET_TIME => B"00001",
-      RXCDR_CFG => X"03000023FF20400020",
+      RXCDR_CFG => X"03000023FF40200020",
       RXCDR_FR_RESET_ON_EIDLE => '0',
       RXCDR_HOLD_DURING_EIDLE => '0',
       RXCDR_LOCK_CFG => B"010101",
@@ -4129,7 +4129,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       RXLPM_HF_CFG => B"00000011110000",
       RXLPM_LF_CFG => B"00000011110000",
       RXOOB_CFG => B"0000110",
-      RXOUT_DIV => 1,
+      RXOUT_DIV => 2,
       RXPCSRESET_TIME => B"00001",
       RXPHDLY_CFG => X"084020",
       RXPH_CFG => X"000000",
@@ -4193,7 +4193,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       TXDLY_LCFG => X"030",
       TXDLY_TAP_CFG => X"0000",
       TXGEARBOX_EN => "TRUE",
-      TXOUT_DIV => 1,
+      TXOUT_DIV => 2,
       TXPCSRESET_TIME => B"00001",
       TXPHDLY_CFG => X"084020",
       TXPH_CFG => X"0780",
@@ -35644,109 +35644,109 @@ architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_auro
   signal \run_phase_alignment_int_i_1__0_n_0\ : STD_LOGIC;
   signal run_phase_alignment_int_reg_n_0 : STD_LOGIC;
   signal rx_cdrlock_counter : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal \rx_cdrlock_counter0_carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__0_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__1_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__2_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__3_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__4_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_i_4_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_1\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_4\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__5_n_7\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_i_1_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_i_2_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_i_3_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_n_2\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_n_3\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_n_5\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_n_6\ : STD_LOGIC;
+  signal \rx_cdrlock_counter0_carry__6_n_7\ : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_i_1_n_0 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_i_2_n_0 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_i_3_n_0 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_i_4_n_0 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_0 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_1 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_2 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_3 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_4 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_5 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_6 : STD_LOGIC;
+  signal rx_cdrlock_counter0_carry_n_7 : STD_LOGIC;
   signal \rx_cdrlock_counter[0]_i_1_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[12]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[12]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[12]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[12]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[16]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[16]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[16]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[16]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[20]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[20]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[20]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[20]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[24]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[24]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[24]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[24]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[28]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[28]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[28]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[28]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[31]_i_10_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[31]_i_11_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[31]_i_12_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[31]_i_13_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_2_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_3_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_4_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_5_n_0\ : STD_LOGIC;
+  signal \rx_cdrlock_counter[31]_i_6_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_7_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_8_n_0\ : STD_LOGIC;
   signal \rx_cdrlock_counter[31]_i_9_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[4]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[4]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[4]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[4]_i_6_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[8]_i_3_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[8]_i_4_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[8]_i_5_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter[8]_i_6_n_0\ : STD_LOGIC;
   signal rx_cdrlock_counter_0 : STD_LOGIC_VECTOR ( 31 downto 1 );
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[12]_i_2_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[16]_i_2_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[20]_i_2_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[24]_i_2_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[28]_i_2_n_7\ : STD_LOGIC;
   signal \^rx_cdrlock_counter_reg[31]_0\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \rx_cdrlock_counter_reg[31]_i_6_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[31]_i_6_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[31]_i_6_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[31]_i_6_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[31]_i_6_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[4]_i_2_n_7\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_0\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_1\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_2\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_3\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_4\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_5\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_6\ : STD_LOGIC;
-  signal \rx_cdrlock_counter_reg[8]_i_2_n_7\ : STD_LOGIC;
   signal rx_cdrlocked_i_1_n_0 : STD_LOGIC;
   signal \^rx_clk_locked_i\ : STD_LOGIC;
   signal rx_fsm_reset_done_int : STD_LOGIC;
@@ -35922,8 +35922,8 @@ architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_auro
   signal \wait_bypass_count_reg[8]_i_1__0_n_5\ : STD_LOGIC;
   signal \wait_bypass_count_reg[8]_i_1__0_n_6\ : STD_LOGIC;
   signal \wait_bypass_count_reg[8]_i_1__0_n_7\ : STD_LOGIC;
-  signal \NLW_rx_cdrlock_counter_reg[31]_i_6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_rx_cdrlock_counter_reg[31]_i_6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_rx_cdrlock_counter0_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_rx_cdrlock_counter0_carry__6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_time_out_counter_reg[16]_i_1__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_time_out_counter_reg[16]_i_1__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_wait_bypass_count_reg[12]_i_1__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -36342,9 +36342,400 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       D => \run_phase_alignment_int_i_1__0_n_0\,
       Q => run_phase_alignment_int_reg_n_0
     );
+rx_cdrlock_counter0_carry: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => rx_cdrlock_counter0_carry_n_0,
+      CO(2) => rx_cdrlock_counter0_carry_n_1,
+      CO(1) => rx_cdrlock_counter0_carry_n_2,
+      CO(0) => rx_cdrlock_counter0_carry_n_3,
+      CYINIT => rx_cdrlock_counter(0),
+      DI(3 downto 0) => B"0000",
+      O(3) => rx_cdrlock_counter0_carry_n_4,
+      O(2) => rx_cdrlock_counter0_carry_n_5,
+      O(1) => rx_cdrlock_counter0_carry_n_6,
+      O(0) => rx_cdrlock_counter0_carry_n_7,
+      S(3) => rx_cdrlock_counter0_carry_i_1_n_0,
+      S(2) => rx_cdrlock_counter0_carry_i_2_n_0,
+      S(1) => rx_cdrlock_counter0_carry_i_3_n_0,
+      S(0) => rx_cdrlock_counter0_carry_i_4_n_0
+    );
+\rx_cdrlock_counter0_carry__0\: unisim.vcomponents.CARRY4
+     port map (
+      CI => rx_cdrlock_counter0_carry_n_0,
+      CO(3) => \rx_cdrlock_counter0_carry__0_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__0_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__0_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__0_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__0_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__0_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__0_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__0_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__0_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__0_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__0_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__0_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__0_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(8),
+      O => \rx_cdrlock_counter0_carry__0_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__0_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(7),
+      O => \rx_cdrlock_counter0_carry__0_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__0_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(6),
+      O => \rx_cdrlock_counter0_carry__0_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__0_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(5),
+      O => \rx_cdrlock_counter0_carry__0_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__0_n_0\,
+      CO(3) => \rx_cdrlock_counter0_carry__1_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__1_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__1_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__1_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__1_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__1_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__1_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__1_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__1_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__1_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__1_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__1_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(12),
+      O => \rx_cdrlock_counter0_carry__1_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__1_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(11),
+      O => \rx_cdrlock_counter0_carry__1_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__1_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(10),
+      O => \rx_cdrlock_counter0_carry__1_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__1_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(9),
+      O => \rx_cdrlock_counter0_carry__1_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__2\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__1_n_0\,
+      CO(3) => \rx_cdrlock_counter0_carry__2_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__2_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__2_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__2_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__2_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__2_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__2_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__2_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__2_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__2_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__2_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__2_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__2_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(16),
+      O => \rx_cdrlock_counter0_carry__2_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__2_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(15),
+      O => \rx_cdrlock_counter0_carry__2_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__2_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(14),
+      O => \rx_cdrlock_counter0_carry__2_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__2_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(13),
+      O => \rx_cdrlock_counter0_carry__2_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__3\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__2_n_0\,
+      CO(3) => \rx_cdrlock_counter0_carry__3_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__3_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__3_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__3_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__3_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__3_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__3_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__3_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__3_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__3_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__3_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__3_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__3_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(20),
+      O => \rx_cdrlock_counter0_carry__3_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__3_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(19),
+      O => \rx_cdrlock_counter0_carry__3_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__3_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(18),
+      O => \rx_cdrlock_counter0_carry__3_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__3_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(17),
+      O => \rx_cdrlock_counter0_carry__3_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__4\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__3_n_0\,
+      CO(3) => \rx_cdrlock_counter0_carry__4_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__4_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__4_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__4_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__4_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__4_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__4_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__4_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__4_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__4_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__4_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__4_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__4_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(24),
+      O => \rx_cdrlock_counter0_carry__4_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__4_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(23),
+      O => \rx_cdrlock_counter0_carry__4_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__4_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(22),
+      O => \rx_cdrlock_counter0_carry__4_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__4_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(21),
+      O => \rx_cdrlock_counter0_carry__4_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__5\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__4_n_0\,
+      CO(3) => \rx_cdrlock_counter0_carry__5_n_0\,
+      CO(2) => \rx_cdrlock_counter0_carry__5_n_1\,
+      CO(1) => \rx_cdrlock_counter0_carry__5_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__5_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \rx_cdrlock_counter0_carry__5_n_4\,
+      O(2) => \rx_cdrlock_counter0_carry__5_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__5_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__5_n_7\,
+      S(3) => \rx_cdrlock_counter0_carry__5_i_1_n_0\,
+      S(2) => \rx_cdrlock_counter0_carry__5_i_2_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__5_i_3_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__5_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__5_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(28),
+      O => \rx_cdrlock_counter0_carry__5_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__5_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(27),
+      O => \rx_cdrlock_counter0_carry__5_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__5_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(26),
+      O => \rx_cdrlock_counter0_carry__5_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__5_i_4\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(25),
+      O => \rx_cdrlock_counter0_carry__5_i_4_n_0\
+    );
+\rx_cdrlock_counter0_carry__6\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \rx_cdrlock_counter0_carry__5_n_0\,
+      CO(3 downto 2) => \NLW_rx_cdrlock_counter0_carry__6_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \rx_cdrlock_counter0_carry__6_n_2\,
+      CO(0) => \rx_cdrlock_counter0_carry__6_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \NLW_rx_cdrlock_counter0_carry__6_O_UNCONNECTED\(3),
+      O(2) => \rx_cdrlock_counter0_carry__6_n_5\,
+      O(1) => \rx_cdrlock_counter0_carry__6_n_6\,
+      O(0) => \rx_cdrlock_counter0_carry__6_n_7\,
+      S(3) => '0',
+      S(2) => \rx_cdrlock_counter0_carry__6_i_1_n_0\,
+      S(1) => \rx_cdrlock_counter0_carry__6_i_2_n_0\,
+      S(0) => \rx_cdrlock_counter0_carry__6_i_3_n_0\
+    );
+\rx_cdrlock_counter0_carry__6_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(31),
+      O => \rx_cdrlock_counter0_carry__6_i_1_n_0\
+    );
+\rx_cdrlock_counter0_carry__6_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(30),
+      O => \rx_cdrlock_counter0_carry__6_i_2_n_0\
+    );
+\rx_cdrlock_counter0_carry__6_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(29),
+      O => \rx_cdrlock_counter0_carry__6_i_3_n_0\
+    );
+rx_cdrlock_counter0_carry_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(4),
+      O => rx_cdrlock_counter0_carry_i_1_n_0
+    );
+rx_cdrlock_counter0_carry_i_2: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(3),
+      O => rx_cdrlock_counter0_carry_i_2_n_0
+    );
+rx_cdrlock_counter0_carry_i_3: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(2),
+      O => rx_cdrlock_counter0_carry_i_3_n_0
+    );
+rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(1),
+      O => rx_cdrlock_counter0_carry_i_4_n_0
+    );
 \rx_cdrlock_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0001FFFF"
+      INIT => X"0000FFFE"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36363,22 +36754,10 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[12]_i_2_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__1_n_6\,
       O => rx_cdrlock_counter_0(10)
     );
 \rx_cdrlock_counter[11]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[12]_i_2_n_5\,
-      O => rx_cdrlock_counter_0(11)
-    );
-\rx_cdrlock_counter[12]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFE0000"
     )
@@ -36387,42 +36766,10 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[12]_i_2_n_4\,
-      O => rx_cdrlock_counter_0(12)
+      I4 => \rx_cdrlock_counter0_carry__1_n_5\,
+      O => rx_cdrlock_counter_0(11)
     );
-\rx_cdrlock_counter[12]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(12),
-      O => \rx_cdrlock_counter[12]_i_3_n_0\
-    );
-\rx_cdrlock_counter[12]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(11),
-      O => \rx_cdrlock_counter[12]_i_4_n_0\
-    );
-\rx_cdrlock_counter[12]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(10),
-      O => \rx_cdrlock_counter[12]_i_5_n_0\
-    );
-\rx_cdrlock_counter[12]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(9),
-      O => \rx_cdrlock_counter[12]_i_6_n_0\
-    );
-\rx_cdrlock_counter[13]_i_1\: unisim.vcomponents.LUT5
+\rx_cdrlock_counter[12]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFF0001"
     )
@@ -36431,19 +36778,31 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[16]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__1_n_4\,
+      O => rx_cdrlock_counter_0(12)
+    );
+\rx_cdrlock_counter[13]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFE0000"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => \rx_cdrlock_counter0_carry__2_n_7\,
       O => rx_cdrlock_counter_0(13)
     );
 \rx_cdrlock_counter[14]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[16]_i_2_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__2_n_6\,
       O => rx_cdrlock_counter_0(14)
     );
 \rx_cdrlock_counter[15]_i_1\: unisim.vcomponents.LUT5
@@ -36455,54 +36814,10 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[16]_i_2_n_5\,
+      I4 => \rx_cdrlock_counter0_carry__2_n_5\,
       O => rx_cdrlock_counter_0(15)
     );
 \rx_cdrlock_counter[16]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[16]_i_2_n_4\,
-      O => rx_cdrlock_counter_0(16)
-    );
-\rx_cdrlock_counter[16]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(16),
-      O => \rx_cdrlock_counter[16]_i_3_n_0\
-    );
-\rx_cdrlock_counter[16]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(15),
-      O => \rx_cdrlock_counter[16]_i_4_n_0\
-    );
-\rx_cdrlock_counter[16]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(14),
-      O => \rx_cdrlock_counter[16]_i_5_n_0\
-    );
-\rx_cdrlock_counter[16]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(13),
-      O => \rx_cdrlock_counter[16]_i_6_n_0\
-    );
-\rx_cdrlock_counter[17]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFE0000"
     )
@@ -36511,7 +36826,19 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[20]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__2_n_4\,
+      O => rx_cdrlock_counter_0(16)
+    );
+\rx_cdrlock_counter[17]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFF0001"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => \rx_cdrlock_counter0_carry__3_n_7\,
       O => rx_cdrlock_counter_0(17)
     );
 \rx_cdrlock_counter[18]_i_1\: unisim.vcomponents.LUT5
@@ -36523,34 +36850,10 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[20]_i_2_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__3_n_6\,
       O => rx_cdrlock_counter_0(18)
     );
 \rx_cdrlock_counter[19]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[20]_i_2_n_5\,
-      O => rx_cdrlock_counter_0(19)
-    );
-\rx_cdrlock_counter[1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[4]_i_2_n_7\,
-      O => rx_cdrlock_counter_0(1)
-    );
-\rx_cdrlock_counter[20]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFE0000"
     )
@@ -36559,40 +36862,32 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[20]_i_2_n_4\,
+      I4 => \rx_cdrlock_counter0_carry__3_n_5\,
+      O => rx_cdrlock_counter_0(19)
+    );
+\rx_cdrlock_counter[1]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFE0000"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => rx_cdrlock_counter0_carry_n_7,
+      O => rx_cdrlock_counter_0(1)
+    );
+\rx_cdrlock_counter[20]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFF0001"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => \rx_cdrlock_counter0_carry__3_n_4\,
       O => rx_cdrlock_counter_0(20)
-    );
-\rx_cdrlock_counter[20]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(20),
-      O => \rx_cdrlock_counter[20]_i_3_n_0\
-    );
-\rx_cdrlock_counter[20]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(19),
-      O => \rx_cdrlock_counter[20]_i_4_n_0\
-    );
-\rx_cdrlock_counter[20]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(18),
-      O => \rx_cdrlock_counter[20]_i_5_n_0\
-    );
-\rx_cdrlock_counter[20]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(17),
-      O => \rx_cdrlock_counter[20]_i_6_n_0\
     );
 \rx_cdrlock_counter[21]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -36603,7 +36898,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[24]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__4_n_7\,
       O => rx_cdrlock_counter_0(21)
     );
 \rx_cdrlock_counter[22]_i_1\: unisim.vcomponents.LUT5
@@ -36615,7 +36910,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[24]_i_2_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__4_n_6\,
       O => rx_cdrlock_counter_0(22)
     );
 \rx_cdrlock_counter[23]_i_1\: unisim.vcomponents.LUT5
@@ -36627,7 +36922,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[24]_i_2_n_5\,
+      I4 => \rx_cdrlock_counter0_carry__4_n_5\,
       O => rx_cdrlock_counter_0(23)
     );
 \rx_cdrlock_counter[24]_i_1\: unisim.vcomponents.LUT5
@@ -36639,40 +36934,8 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[24]_i_2_n_4\,
+      I4 => \rx_cdrlock_counter0_carry__4_n_4\,
       O => rx_cdrlock_counter_0(24)
-    );
-\rx_cdrlock_counter[24]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(24),
-      O => \rx_cdrlock_counter[24]_i_3_n_0\
-    );
-\rx_cdrlock_counter[24]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(23),
-      O => \rx_cdrlock_counter[24]_i_4_n_0\
-    );
-\rx_cdrlock_counter[24]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(22),
-      O => \rx_cdrlock_counter[24]_i_5_n_0\
-    );
-\rx_cdrlock_counter[24]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(21),
-      O => \rx_cdrlock_counter[24]_i_6_n_0\
     );
 \rx_cdrlock_counter[25]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -36683,7 +36946,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[28]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__5_n_7\,
       O => rx_cdrlock_counter_0(25)
     );
 \rx_cdrlock_counter[26]_i_1\: unisim.vcomponents.LUT5
@@ -36695,7 +36958,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[28]_i_2_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__5_n_6\,
       O => rx_cdrlock_counter_0(26)
     );
 \rx_cdrlock_counter[27]_i_1\: unisim.vcomponents.LUT5
@@ -36707,7 +36970,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[28]_i_2_n_5\,
+      I4 => \rx_cdrlock_counter0_carry__5_n_5\,
       O => rx_cdrlock_counter_0(27)
     );
 \rx_cdrlock_counter[28]_i_1\: unisim.vcomponents.LUT5
@@ -36719,40 +36982,8 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[28]_i_2_n_4\,
+      I4 => \rx_cdrlock_counter0_carry__5_n_4\,
       O => rx_cdrlock_counter_0(28)
-    );
-\rx_cdrlock_counter[28]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(28),
-      O => \rx_cdrlock_counter[28]_i_3_n_0\
-    );
-\rx_cdrlock_counter[28]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(27),
-      O => \rx_cdrlock_counter[28]_i_4_n_0\
-    );
-\rx_cdrlock_counter[28]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(26),
-      O => \rx_cdrlock_counter[28]_i_5_n_0\
-    );
-\rx_cdrlock_counter[28]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(25),
-      O => \rx_cdrlock_counter[28]_i_6_n_0\
     );
 \rx_cdrlock_counter[29]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -36763,7 +36994,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[31]_i_6_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__6_n_7\,
       O => rx_cdrlock_counter_0(29)
     );
 \rx_cdrlock_counter[2]_i_1\: unisim.vcomponents.LUT5
@@ -36775,7 +37006,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[4]_i_2_n_6\,
+      I4 => rx_cdrlock_counter0_carry_n_6,
       O => rx_cdrlock_counter_0(2)
     );
 \rx_cdrlock_counter[30]_i_1\: unisim.vcomponents.LUT5
@@ -36787,7 +37018,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[31]_i_6_n_6\,
+      I4 => \rx_cdrlock_counter0_carry__6_n_6\,
       O => rx_cdrlock_counter_0(30)
     );
 \rx_cdrlock_counter[31]_i_1\: unisim.vcomponents.LUT5
@@ -36799,66 +37030,31 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[31]_i_6_n_5\,
+      I4 => \rx_cdrlock_counter0_carry__6_n_5\,
       O => rx_cdrlock_counter_0(31)
-    );
-\rx_cdrlock_counter[31]_i_10\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(21),
-      I1 => rx_cdrlock_counter(20),
-      I2 => rx_cdrlock_counter(23),
-      I3 => rx_cdrlock_counter(22),
-      O => \rx_cdrlock_counter[31]_i_10_n_0\
-    );
-\rx_cdrlock_counter[31]_i_11\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(31),
-      O => \rx_cdrlock_counter[31]_i_11_n_0\
-    );
-\rx_cdrlock_counter[31]_i_12\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(30),
-      O => \rx_cdrlock_counter[31]_i_12_n_0\
-    );
-\rx_cdrlock_counter[31]_i_13\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(29),
-      O => \rx_cdrlock_counter[31]_i_13_n_0\
     );
 \rx_cdrlock_counter[31]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFFFB"
+      INIT => X"FFFFFEFF"
     )
         port map (
       I0 => rx_cdrlock_counter(10),
       I1 => rx_cdrlock_counter(11),
-      I2 => rx_cdrlock_counter(8),
-      I3 => rx_cdrlock_counter(9),
-      I4 => \rx_cdrlock_counter[31]_i_7_n_0\,
+      I2 => rx_cdrlock_counter(9),
+      I3 => rx_cdrlock_counter(8),
+      I4 => \rx_cdrlock_counter[31]_i_6_n_0\,
       O => \rx_cdrlock_counter[31]_i_2_n_0\
     );
 \rx_cdrlock_counter[31]_i_3\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFBFFF"
+      INIT => X"FFFFFFFE"
     )
         port map (
       I0 => rx_cdrlock_counter(2),
       I1 => rx_cdrlock_counter(3),
       I2 => rx_cdrlock_counter(0),
       I3 => rx_cdrlock_counter(1),
-      I4 => \rx_cdrlock_counter[31]_i_8_n_0\,
+      I4 => \rx_cdrlock_counter[31]_i_7_n_0\,
       O => \rx_cdrlock_counter[31]_i_3_n_0\
     );
 \rx_cdrlock_counter[31]_i_4\: unisim.vcomponents.LUT5
@@ -36870,44 +37066,44 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => rx_cdrlock_counter(27),
       I2 => rx_cdrlock_counter(24),
       I3 => rx_cdrlock_counter(25),
-      I4 => \rx_cdrlock_counter[31]_i_9_n_0\,
+      I4 => \rx_cdrlock_counter[31]_i_8_n_0\,
       O => \rx_cdrlock_counter[31]_i_4_n_0\
     );
 \rx_cdrlock_counter[31]_i_5\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFBFF"
+      INIT => X"FFFFFEFF"
     )
         port map (
       I0 => rx_cdrlock_counter(18),
       I1 => rx_cdrlock_counter(19),
-      I2 => rx_cdrlock_counter(17),
-      I3 => rx_cdrlock_counter(16),
-      I4 => \rx_cdrlock_counter[31]_i_10_n_0\,
+      I2 => rx_cdrlock_counter(16),
+      I3 => rx_cdrlock_counter(17),
+      I4 => \rx_cdrlock_counter[31]_i_9_n_0\,
       O => \rx_cdrlock_counter[31]_i_5_n_0\
+    );
+\rx_cdrlock_counter[31]_i_6\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFD"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(12),
+      I1 => rx_cdrlock_counter(13),
+      I2 => rx_cdrlock_counter(15),
+      I3 => rx_cdrlock_counter(14),
+      O => \rx_cdrlock_counter[31]_i_6_n_0\
     );
 \rx_cdrlock_counter[31]_i_7\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFDF"
+      INIT => X"FFFE"
     )
         port map (
-      I0 => rx_cdrlock_counter(13),
-      I1 => rx_cdrlock_counter(12),
-      I2 => rx_cdrlock_counter(14),
-      I3 => rx_cdrlock_counter(15),
+      I0 => rx_cdrlock_counter(5),
+      I1 => rx_cdrlock_counter(4),
+      I2 => rx_cdrlock_counter(7),
+      I3 => rx_cdrlock_counter(6),
       O => \rx_cdrlock_counter[31]_i_7_n_0\
     );
 \rx_cdrlock_counter[31]_i_8\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"DFFF"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(4),
-      I1 => rx_cdrlock_counter(5),
-      I2 => rx_cdrlock_counter(7),
-      I3 => rx_cdrlock_counter(6),
-      O => \rx_cdrlock_counter[31]_i_8_n_0\
-    );
-\rx_cdrlock_counter[31]_i_9\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"FFFE"
     )
@@ -36916,63 +37112,42 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => rx_cdrlock_counter(28),
       I2 => rx_cdrlock_counter(31),
       I3 => rx_cdrlock_counter(30),
+      O => \rx_cdrlock_counter[31]_i_8_n_0\
+    );
+\rx_cdrlock_counter[31]_i_9\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFD"
+    )
+        port map (
+      I0 => rx_cdrlock_counter(20),
+      I1 => rx_cdrlock_counter(21),
+      I2 => rx_cdrlock_counter(23),
+      I3 => rx_cdrlock_counter(22),
       O => \rx_cdrlock_counter[31]_i_9_n_0\
     );
 \rx_cdrlock_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[4]_i_2_n_5\,
+      I4 => rx_cdrlock_counter0_carry_n_5,
       O => rx_cdrlock_counter_0(3)
     );
 \rx_cdrlock_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[4]_i_2_n_4\,
+      I4 => rx_cdrlock_counter0_carry_n_4,
       O => rx_cdrlock_counter_0(4)
-    );
-\rx_cdrlock_counter[4]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(4),
-      O => \rx_cdrlock_counter[4]_i_3_n_0\
-    );
-\rx_cdrlock_counter[4]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(3),
-      O => \rx_cdrlock_counter[4]_i_4_n_0\
-    );
-\rx_cdrlock_counter[4]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(2),
-      O => \rx_cdrlock_counter[4]_i_5_n_0\
-    );
-\rx_cdrlock_counter[4]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(1),
-      O => \rx_cdrlock_counter[4]_i_6_n_0\
     );
 \rx_cdrlock_counter[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -36983,34 +37158,10 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[8]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__0_n_7\,
       O => rx_cdrlock_counter_0(5)
     );
 \rx_cdrlock_counter[6]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[8]_i_2_n_6\,
-      O => rx_cdrlock_counter_0(6)
-    );
-\rx_cdrlock_counter[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFF0001"
-    )
-        port map (
-      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
-      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
-      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
-      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[8]_i_2_n_5\,
-      O => rx_cdrlock_counter_0(7)
-    );
-\rx_cdrlock_counter[8]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFE0000"
     )
@@ -37019,40 +37170,32 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[8]_i_2_n_4\,
+      I4 => \rx_cdrlock_counter0_carry__0_n_6\,
+      O => rx_cdrlock_counter_0(6)
+    );
+\rx_cdrlock_counter[7]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFE0000"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => \rx_cdrlock_counter0_carry__0_n_5\,
+      O => rx_cdrlock_counter_0(7)
+    );
+\rx_cdrlock_counter[8]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFF0001"
+    )
+        port map (
+      I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
+      I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
+      I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
+      I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
+      I4 => \rx_cdrlock_counter0_carry__0_n_4\,
       O => rx_cdrlock_counter_0(8)
-    );
-\rx_cdrlock_counter[8]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(8),
-      O => \rx_cdrlock_counter[8]_i_3_n_0\
-    );
-\rx_cdrlock_counter[8]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(7),
-      O => \rx_cdrlock_counter[8]_i_4_n_0\
-    );
-\rx_cdrlock_counter[8]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(6),
-      O => \rx_cdrlock_counter[8]_i_5_n_0\
-    );
-\rx_cdrlock_counter[8]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_cdrlock_counter(5),
-      O => \rx_cdrlock_counter[8]_i_6_n_0\
     );
 \rx_cdrlock_counter[9]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -37063,7 +37206,7 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       I1 => \rx_cdrlock_counter[31]_i_3_n_0\,
       I2 => \rx_cdrlock_counter[31]_i_4_n_0\,
       I3 => \rx_cdrlock_counter[31]_i_5_n_0\,
-      I4 => \rx_cdrlock_counter_reg[12]_i_2_n_7\,
+      I4 => \rx_cdrlock_counter0_carry__1_n_7\,
       O => rx_cdrlock_counter_0(9)
     );
 \rx_cdrlock_counter_reg[0]\: unisim.vcomponents.FDRE
@@ -37110,24 +37253,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       Q => rx_cdrlock_counter(12),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
     );
-\rx_cdrlock_counter_reg[12]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[8]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[12]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[12]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[12]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[12]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[12]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[12]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[12]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[12]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[12]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[12]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[12]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[12]_i_6_n_0\
-    );
 \rx_cdrlock_counter_reg[13]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -37171,24 +37296,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       D => rx_cdrlock_counter_0(16),
       Q => rx_cdrlock_counter(16),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
-    );
-\rx_cdrlock_counter_reg[16]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[12]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[16]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[16]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[16]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[16]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[16]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[16]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[16]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[16]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[16]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[16]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[16]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[16]_i_6_n_0\
     );
 \rx_cdrlock_counter_reg[17]\: unisim.vcomponents.FDRE
     generic map(
@@ -37245,24 +37352,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       Q => rx_cdrlock_counter(20),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
     );
-\rx_cdrlock_counter_reg[20]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[16]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[20]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[20]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[20]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[20]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[20]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[20]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[20]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[20]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[20]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[20]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[20]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[20]_i_6_n_0\
-    );
 \rx_cdrlock_counter_reg[21]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -37306,24 +37395,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       D => rx_cdrlock_counter_0(24),
       Q => rx_cdrlock_counter(24),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
-    );
-\rx_cdrlock_counter_reg[24]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[20]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[24]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[24]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[24]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[24]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[24]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[24]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[24]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[24]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[24]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[24]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[24]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[24]_i_6_n_0\
     );
 \rx_cdrlock_counter_reg[25]\: unisim.vcomponents.FDRE
     generic map(
@@ -37369,24 +37440,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       Q => rx_cdrlock_counter(28),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
     );
-\rx_cdrlock_counter_reg[28]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[24]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[28]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[28]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[28]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[28]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[28]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[28]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[28]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[28]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[28]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[28]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[28]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[28]_i_6_n_0\
-    );
 \rx_cdrlock_counter_reg[29]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -37431,23 +37484,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       Q => rx_cdrlock_counter(31),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
     );
-\rx_cdrlock_counter_reg[31]_i_6\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[28]_i_2_n_0\,
-      CO(3 downto 2) => \NLW_rx_cdrlock_counter_reg[31]_i_6_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \rx_cdrlock_counter_reg[31]_i_6_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[31]_i_6_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \NLW_rx_cdrlock_counter_reg[31]_i_6_O_UNCONNECTED\(3),
-      O(2) => \rx_cdrlock_counter_reg[31]_i_6_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[31]_i_6_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[31]_i_6_n_7\,
-      S(3) => '0',
-      S(2) => \rx_cdrlock_counter[31]_i_11_n_0\,
-      S(1) => \rx_cdrlock_counter[31]_i_12_n_0\,
-      S(0) => \rx_cdrlock_counter[31]_i_13_n_0\
-    );
 \rx_cdrlock_counter_reg[3]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -37469,24 +37505,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       D => rx_cdrlock_counter_0(4),
       Q => rx_cdrlock_counter(4),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
-    );
-\rx_cdrlock_counter_reg[4]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => \rx_cdrlock_counter_reg[4]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[4]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[4]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[4]_i_2_n_3\,
-      CYINIT => rx_cdrlock_counter(0),
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[4]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[4]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[4]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[4]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[4]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[4]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[4]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[4]_i_6_n_0\
     );
 \rx_cdrlock_counter_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -37531,24 +37549,6 @@ run_phase_alignment_int_reg: unisim.vcomponents.FDCE
       D => rx_cdrlock_counter_0(8),
       Q => rx_cdrlock_counter(8),
       R => \^rx_cdrlock_counter_reg[31]_0\(0)
-    );
-\rx_cdrlock_counter_reg[8]_i_2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \rx_cdrlock_counter_reg[4]_i_2_n_0\,
-      CO(3) => \rx_cdrlock_counter_reg[8]_i_2_n_0\,
-      CO(2) => \rx_cdrlock_counter_reg[8]_i_2_n_1\,
-      CO(1) => \rx_cdrlock_counter_reg[8]_i_2_n_2\,
-      CO(0) => \rx_cdrlock_counter_reg[8]_i_2_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3) => \rx_cdrlock_counter_reg[8]_i_2_n_4\,
-      O(2) => \rx_cdrlock_counter_reg[8]_i_2_n_5\,
-      O(1) => \rx_cdrlock_counter_reg[8]_i_2_n_6\,
-      O(0) => \rx_cdrlock_counter_reg[8]_i_2_n_7\,
-      S(3) => \rx_cdrlock_counter[8]_i_3_n_0\,
-      S(2) => \rx_cdrlock_counter[8]_i_4_n_0\,
-      S(1) => \rx_cdrlock_counter[8]_i_5_n_0\,
-      S(0) => \rx_cdrlock_counter[8]_i_6_n_0\
     );
 \rx_cdrlock_counter_reg[9]\: unisim.vcomponents.FDRE
     generic map(
@@ -46260,7 +46260,7 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double6.0Gbps, Reference Clock is double120.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration";
+  attribute X_CORE_INFO of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration";
 end b2000t_c2c_bram_aurora_64b66b_0_0;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0 is

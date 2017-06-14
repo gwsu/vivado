@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Sat Jun 10 21:44:23 2017
-| Host         : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Jun 13 19:57:59 2017
+| Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_clock_utilization -file jtag_axi_wrapper_clock_utilization_routed.rpt
 | Design       : jtag_axi_wrapper
 | Device       : 7z045-ffv900
@@ -57,14 +57,14 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                                                                                                             | Driver Pin                                                                                                               | Net                                                                                                                         |
 +-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |      |                   |                 6 |        9346 |               0 |       10.000 | clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/clkout1_buf/O                                                                                    | jtag_axi_i/clk_wiz/inst/clk_out1                                                                                            |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |      |                   |                 6 |        9456 |               0 |       10.000 | clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/clkout1_buf/O                                                                                    | jtag_axi_i/clk_wiz/inst/clk_out1                                                                                            |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |      |                   |                 2 |        1799 |               0 |       20.480 | user_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i/O                                                          | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                 |
-| g2        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y1  | n/a          |      |                   |                 1 |         605 |               0 |       10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i/O | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |      |                   |                 1 |         369 |               0 |       33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                                                                        | dbg_hub/inst/itck_i                                                                                                         |
-| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |      |                   |                 3 |         301 |               0 |              |                                                                                                                                                                                                   | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i/O                                                          | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                   |
-| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |      |                   |                 1 |          34 |               0 |       10.240 | sync_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i/O                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                 |
-| g6        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y5  | n/a          |      |                   |                 1 |           1 |               0 |       10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i/O                                                       | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/clk_in_i                                                                     |
-| g7        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |      |                   |                 1 |           1 |               0 |       10.000 | clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/clkf_buf/O                                                                                       | jtag_axi_i/clk_wiz/inst/clkfbout_buf_jtag_axi_clk_wiz_0                                                                     |
+| g2        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y1  | n/a          |      |                   |                 2 |         605 |               0 |       10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i/O | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |      |                   |                 2 |         369 |               0 |       33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                                                                        | dbg_hub/inst/itck_i                                                                                                         |
+| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |      |                   |                 3 |         301 |               0 |              |                                                                                                                                                                                                   | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i/O                                                          | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                   |
+| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |      |                   |                 2 |          34 |               0 |       10.240 | sync_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i/O                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                 |
+| g6        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |      |                   |                 1 |           1 |               0 |       10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i/O                                                       | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/clk_in_i                                                                     |
+| g7        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |      |                   |                 1 |           1 |               0 |       10.000 | clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/clkf_buf/O                                                                                       | jtag_axi_i/clk_wiz/inst/clkfbout_buf_jtag_axi_clk_wiz_0                                                                     |
 +-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -73,18 +73,18 @@ Table of Contents
 3. Global Clock Source Details
 ------------------------------
 
-+-----------+-----------+------------------------+------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Source Id | Global Id | Driver Type/Pin        | Constraint | Site               | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                                                                                                                                                      | Driver Pin                                                                                                                                                                                        | Net                                                                                                                                                                                                  |
-+-----------+-----------+------------------------+------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| src0      | g0        | MMCME2_ADV/CLKOUT0     | None       | MMCME2_ADV_X1Y5    | X1Y5         |           1 |               0 |              10.000 | clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0                                                                                                                                                     | jtag_axi_i/clk_wiz/inst/clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                  |
-| src0      | g7        | MMCME2_ADV/CLKFBOUT    | None       | MMCME2_ADV_X1Y5    | X1Y5         |           1 |               0 |              10.000 | clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/mmcm_adv_inst/CLKFBOUT                                                                                                                                                    | jtag_axi_i/clk_wiz/inst/clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                  |
-| src1      | g5        | MMCME2_ADV/CLKOUT1     | None       | MMCME2_ADV_X0Y2    | X0Y2         |           1 |               0 |              10.240 | sync_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT1                                                                                                                              | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i                                                                                                                                            |
-| src1      | g1        | MMCME2_ADV/CLKOUT0     | None       | MMCME2_ADV_X0Y2    | X0Y2         |           1 |               0 |              20.480 | user_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT0                                                                                                                              | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i                                                                                                                                            |
-| src2      | g2        | GTXE2_CHANNEL/RXOUTCLK | None       | GTXE2_CHANNEL_X0Y4 | X1Y1         |           1 |               0 |              10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/rxrecclk_from_gtx_i |
-| src2      | g6        | GTXE2_CHANNEL/TXOUTCLK | None       | GTXE2_CHANNEL_X0Y4 | X1Y1         |           1 |               0 |              10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/tx_out_clk          |
-| src3      | g3        | BSCANE2/TCK            | None       | BSCAN_X0Y0         | X1Y5         |           1 |               0 |              33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                                                                                                                                                    |
-| src4      | g4        | IBUFDS/O               | None       | IOB_X0Y22          | X0Y0         |           1 |               0 |                     |                                                                                                                                                                                                   | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/IBUFDS_INIT_CLK/O                                                                                                                                  | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_IN                                                                                                                                           |
-+-----------+-----------+------------------------+------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------+-----------+------------------------+--------------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin        | Constraint         | Site               | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                                                                                                                                                      | Driver Pin                                                                                                                                                                                        | Net                                                                                                                                                                                                  |
++-----------+-----------+------------------------+--------------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| src0      | g0        | MMCME2_ADV/CLKOUT0     | None               | MMCME2_ADV_X1Y5    | X1Y5         |           1 |               0 |              10.000 | clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0                                                                                                                                                     | jtag_axi_i/clk_wiz/inst/clk_out1_jtag_axi_clk_wiz_0                                                                                                                                                  |
+| src0      | g7        | MMCME2_ADV/CLKFBOUT    | None               | MMCME2_ADV_X1Y5    | X1Y5         |           1 |               0 |              10.000 | clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                                       | jtag_axi_i/clk_wiz/inst/mmcm_adv_inst/CLKFBOUT                                                                                                                                                    | jtag_axi_i/clk_wiz/inst/clkfbout_jtag_axi_clk_wiz_0                                                                                                                                                  |
+| src1      | g5        | MMCME2_ADV/CLKOUT1     | None               | MMCME2_ADV_X0Y2    | X0Y2         |           1 |               0 |              10.240 | sync_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT1                                                                                                                              | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i                                                                                                                                            |
+| src1      | g1        | MMCME2_ADV/CLKOUT0     | None               | MMCME2_ADV_X0Y2    | X0Y2         |           1 |               0 |              20.480 | user_clk_i                                                                                                                                                                                        | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/mmcm_adv_inst/CLKOUT0                                                                                                                              | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i                                                                                                                                            |
+| src2      | g2        | GTXE2_CHANNEL/RXOUTCLK | GTXE2_CHANNEL_X0Y4 | GTXE2_CHANNEL_X0Y4 | X1Y1         |           1 |               0 |              10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/rxrecclk_from_gtx_i |
+| src2      | g6        | GTXE2_CHANNEL/TXOUTCLK | GTXE2_CHANNEL_X0Y4 | GTXE2_CHANNEL_X0Y4 | X1Y1         |           1 |               0 |              10.240 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/tx_out_clk          |
+| src3      | g3        | BSCANE2/TCK            | None               | BSCAN_X0Y0         | X1Y5         |           1 |               0 |              33.000 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                           | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                                                                                                                                                    |
+| src4      | g4        | IBUFDS/O               | IOB_X1Y272         | IOB_X1Y272         | X1Y5         |           1 |               0 |                     |                                                                                                                                                                                                   | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/IBUFDS_INIT_CLK/O                                                                                                                                  | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_IN                                                                                                                                           |
++-----------+-----------+------------------------+--------------------+--------------------+--------------+-------------+-----------------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -111,13 +111,13 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
-| X1Y0              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 5597 |  3700 | 1771 |  1050 |    0 |    80 |    8 |    40 |    0 |    60 |
-| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    7 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
-| X1Y1              |    5 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 7621 |  3700 | 2136 |  1050 |    0 |    80 |    6 |    40 |    0 |    60 |
+| X1Y0              |    6 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 1204 |  3700 |  307 |  1050 |    0 |    80 |    1 |    40 |    0 |    60 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    4 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
+| X1Y1              |    6 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 9042 |  3700 | 2784 |  1050 |    0 |    80 |   13 |    40 |    0 |    60 |
 | X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
-| X1Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |   65 |  3700 |   19 |  1050 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X1Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 3138 |  3700 |  831 |  1050 |    0 |    80 |    0 |    40 |    0 |    60 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
-| X1Y3              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   56 |  3550 |   16 |  1000 |    0 |    70 |    0 |    35 |    0 |    60 |
+| X1Y3              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   56 |  3550 |    0 |  1000 |    0 |    70 |    0 |    35 |    0 |    60 |
 | X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4500 |    0 |  1600 |    0 |    80 |    0 |    40 |    0 |    80 |
 | X1Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4100 |    0 |  1150 |    0 |   100 |    0 |    50 |    0 |    60 |
 | X0Y5              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  3200 |    0 |  1000 |    0 |    40 |    0 |    20 |    0 |    40 |
@@ -139,22 +139,24 @@ Table of Contents
 | Y4 |  0 |  0 |
 | Y3 |  0 |  1 |
 | Y2 |  1 |  2 |
-| Y1 |  1 |  5 |
-| Y0 |  0 |  4 |
+| Y1 |  1 |  6 |
+| Y0 |  0 |  6 |
 +----+----+----+
 
 
 7. Cell Type Counts per Global Clock: Region X1Y0
 -------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                         |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5285 |               0 | 5017 |    259 |    8 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                            |
-| g1        | n/a   | BUFG/O          | None       |         170 |               0 |  170 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0 |
-| g3        | n/a   | BUFG/O          | None       |         366 |               0 |  366 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                         |
-| g4        | n/a   | BUFG/O          | None       |          48 |               0 |   44 |      4 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i   |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         172 |               0 | 172 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                                                                                            |
+| g1        | n/a   | BUFG/O          | None       |         224 |               0 | 221 |      2 |    1 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                 |
+| g2        | n/a   | BUFGCTRL/O      | None       |         312 |               0 | 299 |     12 |    1 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | n/a   | BUFG/O          | None       |         237 |               0 | 237 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                         |
+| g4        | n/a   | BUFG/O          | None       |         248 |               0 | 242 |      6 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                   |
+| g5        | n/a   | BUFG/O          | None       |          33 |               0 |  33 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -166,7 +168,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |           6 |               0 |  6 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |           4 |               0 |  4 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -179,11 +181,12 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3688 |               0 | 3578 |    100 |    5 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                                                                                            |
-| g1        | n/a   | BUFG/O          | None       |        1625 |               0 | 1616 |      3 |    4 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                 |
-| g2        | n/a   | BUFGCTRL/O      | None       |         604 |               0 |  525 |     77 |    1 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
-| g4        | n/a   | BUFG/O          | None       |         220 |               0 |  216 |      2 |    0 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                   |
-| g5        | n/a   | BUFG/O          | None       |          34 |               0 |   33 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                 |
+| g0        | n/a   | BUFG/O          | None       |        7435 |               0 | 7063 |    355 |   13 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                                                                                            |
+| g1        | n/a   | BUFG/O          | None       |        1571 |               0 | 1565 |      1 |    3 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                 |
+| g2        | n/a   | BUFGCTRL/O      | None       |         292 |               0 |  226 |     65 |    0 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g3        | n/a   | BUFG/O          | None       |         129 |               0 |  129 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                         |
+| g4        | n/a   | BUFG/O          | None       |          20 |               0 |   18 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                   |
+| g5        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -206,12 +209,12 @@ Table of Contents
 11. Cell Type Counts per Global Clock: Region X1Y2
 --------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                       |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          32 |               0 | 32 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                          |
-| g4        | n/a   | BUFG/O          | None       |          33 |               0 | 33 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                       |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        1502 |               0 | 1492 |      8 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/clk_wiz/inst/clk_out1                          |
+| g4        | n/a   | BUFG/O          | None       |          33 |               0 |   33 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -250,7 +253,7 @@ Table of Contents
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                       | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                              |
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------+
-| g0        | BUFG/O          | n/a               | clk_out1_jtag_axi_clk_wiz_0 |      10.000 | {0.000 5.000} |          |        9066 |        0 |              0 |        2 | jtag_axi_i/clk_wiz/inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | clk_out1_jtag_axi_clk_wiz_0 |      10.000 | {0.000 5.000} |          |        9168 |        0 |              0 |        2 | jtag_axi_i/clk_wiz/inst/clk_out1 |
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -265,9 +268,9 @@ Table of Contents
 | Y5 |  0 |     1 |
 | Y4 |  0 |     0 |
 | Y3 |  0 |    56 |
-| Y2 |  0 |    32 |
-| Y1 |  6 |  3688 |
-| Y0 |  0 |  5285 |
+| Y2 |  0 |  1502 |
+| Y1 |  4 |  7435 |
+| Y0 |  0 |   172 |
 +----+----+-------+
 
 
@@ -293,8 +296,8 @@ Table of Contents
 | Y4 |  0 |     0 |
 | Y3 |  0 |     0 |
 | Y2 |  0 |     0 |
-| Y1 |  0 |  1625 |
-| Y0 |  0 |   170 |
+| Y1 |  0 |  1571 |
+| Y0 |  0 |   224 |
 +----+----+-------+
 
 
@@ -320,8 +323,8 @@ Table of Contents
 | Y4 |  0 |    0 |
 | Y3 |  0 |    0 |
 | Y2 |  0 |    0 |
-| Y1 |  0 |  604 |
-| Y0 |  0 |    0 |
+| Y1 |  0 |  292 |
+| Y0 |  0 |  312 |
 +----+----+------+
 
 
@@ -347,8 +350,8 @@ Table of Contents
 | Y4 |  0 |    0 |
 | Y3 |  0 |    0 |
 | Y2 |  0 |    0 |
-| Y1 |  0 |    0 |
-| Y0 |  0 |  366 |
+| Y1 |  0 |  129 |
+| Y0 |  0 |  237 |
 +----+----+------+
 
 
@@ -374,8 +377,8 @@ Table of Contents
 | Y4 |  0 |    0 |
 | Y3 |  0 |    0 |
 | Y2 |  0 |   33 |
-| Y1 |  0 |  220 |
-| Y0 |  0 |   48 |
+| Y1 |  0 |   20 |
+| Y0 |  0 |  248 |
 +----+----+------+
 
 
@@ -401,8 +404,8 @@ Table of Contents
 | Y4 |  0 |   0 |
 | Y3 |  0 |   0 |
 | Y2 |  0 |   0 |
-| Y1 |  0 |  34 |
-| Y0 |  0 |   0 |
+| Y1 |  0 |   1 |
+| Y0 |  0 |  33 |
 +----+----+-----+
 
 
@@ -462,20 +465,20 @@ Table of Contents
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y17 [get_cells jtag_axi_i/clk_wiz/inst/clkf_buf]
+set_property LOC BUFGCTRL_X0Y18 [get_cells jtag_axi_i/clk_wiz/inst/clkf_buf]
 set_property LOC BUFGCTRL_X0Y16 [get_cells jtag_axi_i/clk_wiz/inst/clkout1_buf]
 set_property LOC BUFGCTRL_X0Y1 [get_cells jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i]
 set_property LOC BUFGCTRL_X0Y0 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i]
-set_property LOC BUFGCTRL_X0Y4 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i]
-set_property LOC BUFGCTRL_X0Y5 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i]
-set_property LOC BUFGCTRL_X0Y3 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i]
-set_property LOC BUFGCTRL_X0Y2 [get_cells dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck]
+set_property LOC BUFGCTRL_X0Y2 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i]
+set_property LOC BUFGCTRL_X0Y4 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/txout_clock_net_i]
+set_property LOC BUFGCTRL_X0Y17 [get_cells jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i]
+set_property LOC BUFGCTRL_X0Y3 [get_cells dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck]
 
 # Location of IO Primitives which is load of clock spine
 
 # Location of clock ports
-set_property LOC IOB_X0Y21 [get_ports INIT_DIFF_CLK_clk_n]
-set_property LOC IOB_X0Y22 [get_ports INIT_DIFF_CLK_clk_p]
+set_property LOC IOB_X1Y271 [get_ports INIT_DIFF_CLK_clk_n]
+set_property LOC IOB_X1Y272 [get_ports INIT_DIFF_CLK_clk_p]
 set_property LOC IOB_X1Y273 [get_ports diff_clock_rtl_clk_n]
 set_property LOC IOB_X1Y274 [get_ports diff_clock_rtl_clk_p]
 
@@ -490,7 +493,7 @@ resize_pblock [get_pblocks {CLKAG_jtag_axi_i/clk_wiz/inst/clk_out1}] -add {CLOCK
 #startgroup
 create_pblock {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i"}]]]
-resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0" driven by instance "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i" located at site "BUFGCTRL_X0Y0"
@@ -500,23 +503,23 @@ add_cells_to_pblock [get_pblocks  {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_m
 resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0" driven by instance "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i" located at site "BUFGCTRL_X0Y4"
+# Clock net "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0" driven by instance "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clock_net_i" located at site "BUFGCTRL_X0Y2"
 #startgroup
 create_pblock {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}
 add_cells_to_pblock [get_pblocks  {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0"}]]]
-resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i" driven by instance "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i" located at site "BUFGCTRL_X0Y3"
+# Clock net "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i" driven by instance "jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/initclk_bufg_i" located at site "BUFGCTRL_X0Y17"
 #startgroup
 create_pblock {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i"}]]]
 resize_pblock [get_pblocks {CLKAG_jtag_axi_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "dbg_hub/inst/itck_i" driven by instance "dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck" located at site "BUFGCTRL_X0Y2"
+# Clock net "dbg_hub/inst/itck_i" driven by instance "dbg_hub/inst/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck" located at site "BUFGCTRL_X0Y3"
 #startgroup
 create_pblock {CLKAG_dbg_hub/inst/itck_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/itck_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/itck_i"}]]]
-resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/itck_i}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/itck_i}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup

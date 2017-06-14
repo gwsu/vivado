@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Sat Jun 10 21:08:01 2017
-// Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+// Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+// Date        : Tue Jun 13 19:04:44 2017
+// Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode funcsim
-//               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.v
+//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_aurora_64b66b_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double6.0Gbps, Reference Clock is double120.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
 (* NotValidForBitStream *)
 module b2000t_c2c_bram_aurora_64b66b_0_0
    (s_axi_tx_tdata,
@@ -5940,20 +5940,20 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(6.000000),
+    .CLKFBOUT_MULT_F(9.000000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
-    .CLKIN1_PERIOD(5.333000),
+    .CLKIN1_PERIOD(10.240000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(12.000000),
+    .CLKOUT0_DIVIDE_F(18.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(6),
+    .CLKOUT1_DIVIDE(9),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
-    .CLKOUT2_DIVIDE(10),
+    .CLKOUT2_DIVIDE(20),
     .CLKOUT2_DUTY_CYCLE(0.500000),
     .CLKOUT2_PHASE(0.000000),
     .CLKOUT2_USE_FINE_PS("FALSE"),
@@ -7800,7 +7800,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .RXBUF_THRESH_UNDFLW(4),
     .RXCDRFREQRESET_TIME(5'b00001),
     .RXCDRPHRESET_TIME(5'b00001),
-    .RXCDR_CFG(72'h03000023FF20400020),
+    .RXCDR_CFG(72'h03000023FF40200020),
     .RXCDR_FR_RESET_ON_EIDLE(1'b0),
     .RXCDR_HOLD_DURING_EIDLE(1'b0),
     .RXCDR_LOCK_CFG(6'b010101),
@@ -7814,7 +7814,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .RXLPM_HF_CFG(14'b00000011110000),
     .RXLPM_LF_CFG(14'b00000011110000),
     .RXOOB_CFG(7'b0000110),
-    .RXOUT_DIV(1),
+    .RXOUT_DIV(2),
     .RXPCSRESET_TIME(5'b00001),
     .RXPHDLY_CFG(24'h084020),
     .RXPH_CFG(24'h000000),
@@ -7878,7 +7878,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .TXDLY_LCFG(9'h030),
     .TXDLY_TAP_CFG(16'h0000),
     .TXGEARBOX_EN("TRUE"),
-    .TXOUT_DIV(1),
+    .TXOUT_DIV(2),
     .TXPCSRESET_TIME(5'b00001),
     .TXPHDLY_CFG(24'h084020),
     .TXPH_CFG(16'h0780),
@@ -8786,109 +8786,109 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
   wire run_phase_alignment_int_i_1__0_n_0;
   wire run_phase_alignment_int_reg_n_0;
   wire [31:0]rx_cdrlock_counter;
+  wire rx_cdrlock_counter0_carry__0_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__0_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__0_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__0_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__0_n_0;
+  wire rx_cdrlock_counter0_carry__0_n_1;
+  wire rx_cdrlock_counter0_carry__0_n_2;
+  wire rx_cdrlock_counter0_carry__0_n_3;
+  wire rx_cdrlock_counter0_carry__0_n_4;
+  wire rx_cdrlock_counter0_carry__0_n_5;
+  wire rx_cdrlock_counter0_carry__0_n_6;
+  wire rx_cdrlock_counter0_carry__0_n_7;
+  wire rx_cdrlock_counter0_carry__1_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__1_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__1_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__1_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__1_n_0;
+  wire rx_cdrlock_counter0_carry__1_n_1;
+  wire rx_cdrlock_counter0_carry__1_n_2;
+  wire rx_cdrlock_counter0_carry__1_n_3;
+  wire rx_cdrlock_counter0_carry__1_n_4;
+  wire rx_cdrlock_counter0_carry__1_n_5;
+  wire rx_cdrlock_counter0_carry__1_n_6;
+  wire rx_cdrlock_counter0_carry__1_n_7;
+  wire rx_cdrlock_counter0_carry__2_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__2_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__2_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__2_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__2_n_0;
+  wire rx_cdrlock_counter0_carry__2_n_1;
+  wire rx_cdrlock_counter0_carry__2_n_2;
+  wire rx_cdrlock_counter0_carry__2_n_3;
+  wire rx_cdrlock_counter0_carry__2_n_4;
+  wire rx_cdrlock_counter0_carry__2_n_5;
+  wire rx_cdrlock_counter0_carry__2_n_6;
+  wire rx_cdrlock_counter0_carry__2_n_7;
+  wire rx_cdrlock_counter0_carry__3_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__3_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__3_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__3_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__3_n_0;
+  wire rx_cdrlock_counter0_carry__3_n_1;
+  wire rx_cdrlock_counter0_carry__3_n_2;
+  wire rx_cdrlock_counter0_carry__3_n_3;
+  wire rx_cdrlock_counter0_carry__3_n_4;
+  wire rx_cdrlock_counter0_carry__3_n_5;
+  wire rx_cdrlock_counter0_carry__3_n_6;
+  wire rx_cdrlock_counter0_carry__3_n_7;
+  wire rx_cdrlock_counter0_carry__4_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__4_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__4_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__4_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__4_n_0;
+  wire rx_cdrlock_counter0_carry__4_n_1;
+  wire rx_cdrlock_counter0_carry__4_n_2;
+  wire rx_cdrlock_counter0_carry__4_n_3;
+  wire rx_cdrlock_counter0_carry__4_n_4;
+  wire rx_cdrlock_counter0_carry__4_n_5;
+  wire rx_cdrlock_counter0_carry__4_n_6;
+  wire rx_cdrlock_counter0_carry__4_n_7;
+  wire rx_cdrlock_counter0_carry__5_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__5_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__5_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__5_i_4_n_0;
+  wire rx_cdrlock_counter0_carry__5_n_0;
+  wire rx_cdrlock_counter0_carry__5_n_1;
+  wire rx_cdrlock_counter0_carry__5_n_2;
+  wire rx_cdrlock_counter0_carry__5_n_3;
+  wire rx_cdrlock_counter0_carry__5_n_4;
+  wire rx_cdrlock_counter0_carry__5_n_5;
+  wire rx_cdrlock_counter0_carry__5_n_6;
+  wire rx_cdrlock_counter0_carry__5_n_7;
+  wire rx_cdrlock_counter0_carry__6_i_1_n_0;
+  wire rx_cdrlock_counter0_carry__6_i_2_n_0;
+  wire rx_cdrlock_counter0_carry__6_i_3_n_0;
+  wire rx_cdrlock_counter0_carry__6_n_2;
+  wire rx_cdrlock_counter0_carry__6_n_3;
+  wire rx_cdrlock_counter0_carry__6_n_5;
+  wire rx_cdrlock_counter0_carry__6_n_6;
+  wire rx_cdrlock_counter0_carry__6_n_7;
+  wire rx_cdrlock_counter0_carry_i_1_n_0;
+  wire rx_cdrlock_counter0_carry_i_2_n_0;
+  wire rx_cdrlock_counter0_carry_i_3_n_0;
+  wire rx_cdrlock_counter0_carry_i_4_n_0;
+  wire rx_cdrlock_counter0_carry_n_0;
+  wire rx_cdrlock_counter0_carry_n_1;
+  wire rx_cdrlock_counter0_carry_n_2;
+  wire rx_cdrlock_counter0_carry_n_3;
+  wire rx_cdrlock_counter0_carry_n_4;
+  wire rx_cdrlock_counter0_carry_n_5;
+  wire rx_cdrlock_counter0_carry_n_6;
+  wire rx_cdrlock_counter0_carry_n_7;
   wire \rx_cdrlock_counter[0]_i_1_n_0 ;
-  wire \rx_cdrlock_counter[12]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[12]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[12]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[12]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[16]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[16]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[16]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[16]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[20]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[20]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[20]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[20]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[24]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[24]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[24]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[24]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[28]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[28]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[28]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[28]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[31]_i_10_n_0 ;
-  wire \rx_cdrlock_counter[31]_i_11_n_0 ;
-  wire \rx_cdrlock_counter[31]_i_12_n_0 ;
-  wire \rx_cdrlock_counter[31]_i_13_n_0 ;
   wire \rx_cdrlock_counter[31]_i_2_n_0 ;
   wire \rx_cdrlock_counter[31]_i_3_n_0 ;
   wire \rx_cdrlock_counter[31]_i_4_n_0 ;
   wire \rx_cdrlock_counter[31]_i_5_n_0 ;
+  wire \rx_cdrlock_counter[31]_i_6_n_0 ;
   wire \rx_cdrlock_counter[31]_i_7_n_0 ;
   wire \rx_cdrlock_counter[31]_i_8_n_0 ;
   wire \rx_cdrlock_counter[31]_i_9_n_0 ;
-  wire \rx_cdrlock_counter[4]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[4]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[4]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[4]_i_6_n_0 ;
-  wire \rx_cdrlock_counter[8]_i_3_n_0 ;
-  wire \rx_cdrlock_counter[8]_i_4_n_0 ;
-  wire \rx_cdrlock_counter[8]_i_5_n_0 ;
-  wire \rx_cdrlock_counter[8]_i_6_n_0 ;
   wire [31:1]rx_cdrlock_counter_0;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[12]_i_2_n_7 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[16]_i_2_n_7 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[20]_i_2_n_7 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[24]_i_2_n_7 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[28]_i_2_n_7 ;
   wire [0:0]\rx_cdrlock_counter_reg[31]_0 ;
-  wire \rx_cdrlock_counter_reg[31]_i_6_n_2 ;
-  wire \rx_cdrlock_counter_reg[31]_i_6_n_3 ;
-  wire \rx_cdrlock_counter_reg[31]_i_6_n_5 ;
-  wire \rx_cdrlock_counter_reg[31]_i_6_n_6 ;
-  wire \rx_cdrlock_counter_reg[31]_i_6_n_7 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[4]_i_2_n_7 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_0 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_1 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_2 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_3 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_4 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_5 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_6 ;
-  wire \rx_cdrlock_counter_reg[8]_i_2_n_7 ;
   wire rx_cdrlocked_i_1_n_0;
   wire rx_cdrlocked_reg_0;
   wire rx_clk_locked_i;
@@ -9058,8 +9058,8 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
   wire \wait_bypass_count_reg[8]_i_1__0_n_5 ;
   wire \wait_bypass_count_reg[8]_i_1__0_n_6 ;
   wire \wait_bypass_count_reg[8]_i_1__0_n_7 ;
-  wire [3:2]\NLW_rx_cdrlock_counter_reg[31]_i_6_CO_UNCONNECTED ;
-  wire [3:3]\NLW_rx_cdrlock_counter_reg[31]_i_6_O_UNCONNECTED ;
+  wire [3:2]NLW_rx_cdrlock_counter0_carry__6_CO_UNCONNECTED;
+  wire [3:3]NLW_rx_cdrlock_counter0_carry__6_O_UNCONNECTED;
   wire [3:2]\NLW_time_out_counter_reg[16]_i_1__0_CO_UNCONNECTED ;
   wire [3:3]\NLW_time_out_counter_reg[16]_i_1__0_O_UNCONNECTED ;
   wire [3:0]\NLW_wait_bypass_count_reg[12]_i_1__0_CO_UNCONNECTED ;
@@ -9351,8 +9351,219 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .CLR(AR),
         .D(run_phase_alignment_int_i_1__0_n_0),
         .Q(run_phase_alignment_int_reg_n_0));
+  CARRY4 rx_cdrlock_counter0_carry
+       (.CI(1'b0),
+        .CO({rx_cdrlock_counter0_carry_n_0,rx_cdrlock_counter0_carry_n_1,rx_cdrlock_counter0_carry_n_2,rx_cdrlock_counter0_carry_n_3}),
+        .CYINIT(rx_cdrlock_counter[0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry_n_4,rx_cdrlock_counter0_carry_n_5,rx_cdrlock_counter0_carry_n_6,rx_cdrlock_counter0_carry_n_7}),
+        .S({rx_cdrlock_counter0_carry_i_1_n_0,rx_cdrlock_counter0_carry_i_2_n_0,rx_cdrlock_counter0_carry_i_3_n_0,rx_cdrlock_counter0_carry_i_4_n_0}));
+  CARRY4 rx_cdrlock_counter0_carry__0
+       (.CI(rx_cdrlock_counter0_carry_n_0),
+        .CO({rx_cdrlock_counter0_carry__0_n_0,rx_cdrlock_counter0_carry__0_n_1,rx_cdrlock_counter0_carry__0_n_2,rx_cdrlock_counter0_carry__0_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__0_n_4,rx_cdrlock_counter0_carry__0_n_5,rx_cdrlock_counter0_carry__0_n_6,rx_cdrlock_counter0_carry__0_n_7}),
+        .S({rx_cdrlock_counter0_carry__0_i_1_n_0,rx_cdrlock_counter0_carry__0_i_2_n_0,rx_cdrlock_counter0_carry__0_i_3_n_0,rx_cdrlock_counter0_carry__0_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__0_i_1
+       (.I0(rx_cdrlock_counter[8]),
+        .O(rx_cdrlock_counter0_carry__0_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__0_i_2
+       (.I0(rx_cdrlock_counter[7]),
+        .O(rx_cdrlock_counter0_carry__0_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__0_i_3
+       (.I0(rx_cdrlock_counter[6]),
+        .O(rx_cdrlock_counter0_carry__0_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__0_i_4
+       (.I0(rx_cdrlock_counter[5]),
+        .O(rx_cdrlock_counter0_carry__0_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__1
+       (.CI(rx_cdrlock_counter0_carry__0_n_0),
+        .CO({rx_cdrlock_counter0_carry__1_n_0,rx_cdrlock_counter0_carry__1_n_1,rx_cdrlock_counter0_carry__1_n_2,rx_cdrlock_counter0_carry__1_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__1_n_4,rx_cdrlock_counter0_carry__1_n_5,rx_cdrlock_counter0_carry__1_n_6,rx_cdrlock_counter0_carry__1_n_7}),
+        .S({rx_cdrlock_counter0_carry__1_i_1_n_0,rx_cdrlock_counter0_carry__1_i_2_n_0,rx_cdrlock_counter0_carry__1_i_3_n_0,rx_cdrlock_counter0_carry__1_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__1_i_1
+       (.I0(rx_cdrlock_counter[12]),
+        .O(rx_cdrlock_counter0_carry__1_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__1_i_2
+       (.I0(rx_cdrlock_counter[11]),
+        .O(rx_cdrlock_counter0_carry__1_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__1_i_3
+       (.I0(rx_cdrlock_counter[10]),
+        .O(rx_cdrlock_counter0_carry__1_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__1_i_4
+       (.I0(rx_cdrlock_counter[9]),
+        .O(rx_cdrlock_counter0_carry__1_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__2
+       (.CI(rx_cdrlock_counter0_carry__1_n_0),
+        .CO({rx_cdrlock_counter0_carry__2_n_0,rx_cdrlock_counter0_carry__2_n_1,rx_cdrlock_counter0_carry__2_n_2,rx_cdrlock_counter0_carry__2_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__2_n_4,rx_cdrlock_counter0_carry__2_n_5,rx_cdrlock_counter0_carry__2_n_6,rx_cdrlock_counter0_carry__2_n_7}),
+        .S({rx_cdrlock_counter0_carry__2_i_1_n_0,rx_cdrlock_counter0_carry__2_i_2_n_0,rx_cdrlock_counter0_carry__2_i_3_n_0,rx_cdrlock_counter0_carry__2_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__2_i_1
+       (.I0(rx_cdrlock_counter[16]),
+        .O(rx_cdrlock_counter0_carry__2_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__2_i_2
+       (.I0(rx_cdrlock_counter[15]),
+        .O(rx_cdrlock_counter0_carry__2_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__2_i_3
+       (.I0(rx_cdrlock_counter[14]),
+        .O(rx_cdrlock_counter0_carry__2_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__2_i_4
+       (.I0(rx_cdrlock_counter[13]),
+        .O(rx_cdrlock_counter0_carry__2_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__3
+       (.CI(rx_cdrlock_counter0_carry__2_n_0),
+        .CO({rx_cdrlock_counter0_carry__3_n_0,rx_cdrlock_counter0_carry__3_n_1,rx_cdrlock_counter0_carry__3_n_2,rx_cdrlock_counter0_carry__3_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__3_n_4,rx_cdrlock_counter0_carry__3_n_5,rx_cdrlock_counter0_carry__3_n_6,rx_cdrlock_counter0_carry__3_n_7}),
+        .S({rx_cdrlock_counter0_carry__3_i_1_n_0,rx_cdrlock_counter0_carry__3_i_2_n_0,rx_cdrlock_counter0_carry__3_i_3_n_0,rx_cdrlock_counter0_carry__3_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__3_i_1
+       (.I0(rx_cdrlock_counter[20]),
+        .O(rx_cdrlock_counter0_carry__3_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__3_i_2
+       (.I0(rx_cdrlock_counter[19]),
+        .O(rx_cdrlock_counter0_carry__3_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__3_i_3
+       (.I0(rx_cdrlock_counter[18]),
+        .O(rx_cdrlock_counter0_carry__3_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__3_i_4
+       (.I0(rx_cdrlock_counter[17]),
+        .O(rx_cdrlock_counter0_carry__3_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__4
+       (.CI(rx_cdrlock_counter0_carry__3_n_0),
+        .CO({rx_cdrlock_counter0_carry__4_n_0,rx_cdrlock_counter0_carry__4_n_1,rx_cdrlock_counter0_carry__4_n_2,rx_cdrlock_counter0_carry__4_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__4_n_4,rx_cdrlock_counter0_carry__4_n_5,rx_cdrlock_counter0_carry__4_n_6,rx_cdrlock_counter0_carry__4_n_7}),
+        .S({rx_cdrlock_counter0_carry__4_i_1_n_0,rx_cdrlock_counter0_carry__4_i_2_n_0,rx_cdrlock_counter0_carry__4_i_3_n_0,rx_cdrlock_counter0_carry__4_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__4_i_1
+       (.I0(rx_cdrlock_counter[24]),
+        .O(rx_cdrlock_counter0_carry__4_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__4_i_2
+       (.I0(rx_cdrlock_counter[23]),
+        .O(rx_cdrlock_counter0_carry__4_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__4_i_3
+       (.I0(rx_cdrlock_counter[22]),
+        .O(rx_cdrlock_counter0_carry__4_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__4_i_4
+       (.I0(rx_cdrlock_counter[21]),
+        .O(rx_cdrlock_counter0_carry__4_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__5
+       (.CI(rx_cdrlock_counter0_carry__4_n_0),
+        .CO({rx_cdrlock_counter0_carry__5_n_0,rx_cdrlock_counter0_carry__5_n_1,rx_cdrlock_counter0_carry__5_n_2,rx_cdrlock_counter0_carry__5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({rx_cdrlock_counter0_carry__5_n_4,rx_cdrlock_counter0_carry__5_n_5,rx_cdrlock_counter0_carry__5_n_6,rx_cdrlock_counter0_carry__5_n_7}),
+        .S({rx_cdrlock_counter0_carry__5_i_1_n_0,rx_cdrlock_counter0_carry__5_i_2_n_0,rx_cdrlock_counter0_carry__5_i_3_n_0,rx_cdrlock_counter0_carry__5_i_4_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__5_i_1
+       (.I0(rx_cdrlock_counter[28]),
+        .O(rx_cdrlock_counter0_carry__5_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__5_i_2
+       (.I0(rx_cdrlock_counter[27]),
+        .O(rx_cdrlock_counter0_carry__5_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__5_i_3
+       (.I0(rx_cdrlock_counter[26]),
+        .O(rx_cdrlock_counter0_carry__5_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__5_i_4
+       (.I0(rx_cdrlock_counter[25]),
+        .O(rx_cdrlock_counter0_carry__5_i_4_n_0));
+  CARRY4 rx_cdrlock_counter0_carry__6
+       (.CI(rx_cdrlock_counter0_carry__5_n_0),
+        .CO({NLW_rx_cdrlock_counter0_carry__6_CO_UNCONNECTED[3:2],rx_cdrlock_counter0_carry__6_n_2,rx_cdrlock_counter0_carry__6_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({NLW_rx_cdrlock_counter0_carry__6_O_UNCONNECTED[3],rx_cdrlock_counter0_carry__6_n_5,rx_cdrlock_counter0_carry__6_n_6,rx_cdrlock_counter0_carry__6_n_7}),
+        .S({1'b0,rx_cdrlock_counter0_carry__6_i_1_n_0,rx_cdrlock_counter0_carry__6_i_2_n_0,rx_cdrlock_counter0_carry__6_i_3_n_0}));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__6_i_1
+       (.I0(rx_cdrlock_counter[31]),
+        .O(rx_cdrlock_counter0_carry__6_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__6_i_2
+       (.I0(rx_cdrlock_counter[30]),
+        .O(rx_cdrlock_counter0_carry__6_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry__6_i_3
+       (.I0(rx_cdrlock_counter[29]),
+        .O(rx_cdrlock_counter0_carry__6_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry_i_1
+       (.I0(rx_cdrlock_counter[4]),
+        .O(rx_cdrlock_counter0_carry_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry_i_2
+       (.I0(rx_cdrlock_counter[3]),
+        .O(rx_cdrlock_counter0_carry_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry_i_3
+       (.I0(rx_cdrlock_counter[2]),
+        .O(rx_cdrlock_counter0_carry_i_3_n_0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    rx_cdrlock_counter0_carry_i_4
+       (.I0(rx_cdrlock_counter[1]),
+        .O(rx_cdrlock_counter0_carry_i_4_n_0));
   LUT5 #(
-    .INIT(32'h0001FFFF)) 
+    .INIT(32'h0000FFFE)) 
     \rx_cdrlock_counter[0]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9367,63 +9578,43 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[12]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__1_n_6),
         .O(rx_cdrlock_counter_0[10]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[11]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[12]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__1_n_5),
         .O(rx_cdrlock_counter_0[11]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[12]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[12]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__1_n_4),
         .O(rx_cdrlock_counter_0[12]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[12]_i_3 
-       (.I0(rx_cdrlock_counter[12]),
-        .O(\rx_cdrlock_counter[12]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[12]_i_4 
-       (.I0(rx_cdrlock_counter[11]),
-        .O(\rx_cdrlock_counter[12]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[12]_i_5 
-       (.I0(rx_cdrlock_counter[10]),
-        .O(\rx_cdrlock_counter[12]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[12]_i_6 
-       (.I0(rx_cdrlock_counter[9]),
-        .O(\rx_cdrlock_counter[12]_i_6_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[13]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[16]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__2_n_7),
         .O(rx_cdrlock_counter_0[13]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[14]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[16]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__2_n_6),
         .O(rx_cdrlock_counter_0[14]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9432,45 +9623,25 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[16]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__2_n_5),
         .O(rx_cdrlock_counter_0[15]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[16]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[16]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__2_n_4),
         .O(rx_cdrlock_counter_0[16]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[16]_i_3 
-       (.I0(rx_cdrlock_counter[16]),
-        .O(\rx_cdrlock_counter[16]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[16]_i_4 
-       (.I0(rx_cdrlock_counter[15]),
-        .O(\rx_cdrlock_counter[16]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[16]_i_5 
-       (.I0(rx_cdrlock_counter[14]),
-        .O(\rx_cdrlock_counter[16]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[16]_i_6 
-       (.I0(rx_cdrlock_counter[13]),
-        .O(\rx_cdrlock_counter[16]_i_6_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[17]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[20]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__3_n_7),
         .O(rx_cdrlock_counter_0[17]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9479,55 +9650,35 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[20]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__3_n_6),
         .O(rx_cdrlock_counter_0[18]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[19]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[20]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__3_n_5),
         .O(rx_cdrlock_counter_0[19]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[1]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[4]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry_n_7),
         .O(rx_cdrlock_counter_0[1]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[20]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[20]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__3_n_4),
         .O(rx_cdrlock_counter_0[20]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[20]_i_3 
-       (.I0(rx_cdrlock_counter[20]),
-        .O(\rx_cdrlock_counter[20]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[20]_i_4 
-       (.I0(rx_cdrlock_counter[19]),
-        .O(\rx_cdrlock_counter[20]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[20]_i_5 
-       (.I0(rx_cdrlock_counter[18]),
-        .O(\rx_cdrlock_counter[20]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[20]_i_6 
-       (.I0(rx_cdrlock_counter[17]),
-        .O(\rx_cdrlock_counter[20]_i_6_n_0 ));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[21]_i_1 
@@ -9535,7 +9686,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[24]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__4_n_7),
         .O(rx_cdrlock_counter_0[21]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9544,7 +9695,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[24]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__4_n_6),
         .O(rx_cdrlock_counter_0[22]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9553,7 +9704,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[24]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__4_n_5),
         .O(rx_cdrlock_counter_0[23]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9562,28 +9713,8 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[24]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__4_n_4),
         .O(rx_cdrlock_counter_0[24]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[24]_i_3 
-       (.I0(rx_cdrlock_counter[24]),
-        .O(\rx_cdrlock_counter[24]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[24]_i_4 
-       (.I0(rx_cdrlock_counter[23]),
-        .O(\rx_cdrlock_counter[24]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[24]_i_5 
-       (.I0(rx_cdrlock_counter[22]),
-        .O(\rx_cdrlock_counter[24]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[24]_i_6 
-       (.I0(rx_cdrlock_counter[21]),
-        .O(\rx_cdrlock_counter[24]_i_6_n_0 ));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[25]_i_1 
@@ -9591,7 +9722,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[28]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__5_n_7),
         .O(rx_cdrlock_counter_0[25]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9600,7 +9731,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[28]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__5_n_6),
         .O(rx_cdrlock_counter_0[26]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9609,7 +9740,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[28]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__5_n_5),
         .O(rx_cdrlock_counter_0[27]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9618,28 +9749,8 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[28]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__5_n_4),
         .O(rx_cdrlock_counter_0[28]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[28]_i_3 
-       (.I0(rx_cdrlock_counter[28]),
-        .O(\rx_cdrlock_counter[28]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[28]_i_4 
-       (.I0(rx_cdrlock_counter[27]),
-        .O(\rx_cdrlock_counter[28]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[28]_i_5 
-       (.I0(rx_cdrlock_counter[26]),
-        .O(\rx_cdrlock_counter[28]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[28]_i_6 
-       (.I0(rx_cdrlock_counter[25]),
-        .O(\rx_cdrlock_counter[28]_i_6_n_0 ));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[29]_i_1 
@@ -9647,7 +9758,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[31]_i_6_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__6_n_7),
         .O(rx_cdrlock_counter_0[29]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9656,7 +9767,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[4]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry_n_6),
         .O(rx_cdrlock_counter_0[2]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9665,7 +9776,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[31]_i_6_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__6_n_6),
         .O(rx_cdrlock_counter_0[30]));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
@@ -9674,48 +9785,25 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[31]_i_6_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__6_n_5),
         .O(rx_cdrlock_counter_0[31]));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \rx_cdrlock_counter[31]_i_10 
-       (.I0(rx_cdrlock_counter[21]),
-        .I1(rx_cdrlock_counter[20]),
-        .I2(rx_cdrlock_counter[23]),
-        .I3(rx_cdrlock_counter[22]),
-        .O(\rx_cdrlock_counter[31]_i_10_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[31]_i_11 
-       (.I0(rx_cdrlock_counter[31]),
-        .O(\rx_cdrlock_counter[31]_i_11_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[31]_i_12 
-       (.I0(rx_cdrlock_counter[30]),
-        .O(\rx_cdrlock_counter[31]_i_12_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[31]_i_13 
-       (.I0(rx_cdrlock_counter[29]),
-        .O(\rx_cdrlock_counter[31]_i_13_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFFFFFB)) 
+    .INIT(32'hFFFFFEFF)) 
     \rx_cdrlock_counter[31]_i_2 
        (.I0(rx_cdrlock_counter[10]),
         .I1(rx_cdrlock_counter[11]),
-        .I2(rx_cdrlock_counter[8]),
-        .I3(rx_cdrlock_counter[9]),
-        .I4(\rx_cdrlock_counter[31]_i_7_n_0 ),
+        .I2(rx_cdrlock_counter[9]),
+        .I3(rx_cdrlock_counter[8]),
+        .I4(\rx_cdrlock_counter[31]_i_6_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFFBFFF)) 
+    .INIT(32'hFFFFFFFE)) 
     \rx_cdrlock_counter[31]_i_3 
        (.I0(rx_cdrlock_counter[2]),
         .I1(rx_cdrlock_counter[3]),
         .I2(rx_cdrlock_counter[0]),
         .I3(rx_cdrlock_counter[1]),
-        .I4(\rx_cdrlock_counter[31]_i_8_n_0 ),
+        .I4(\rx_cdrlock_counter[31]_i_7_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_3_n_0 ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
@@ -9724,79 +9812,67 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(rx_cdrlock_counter[27]),
         .I2(rx_cdrlock_counter[24]),
         .I3(rx_cdrlock_counter[25]),
-        .I4(\rx_cdrlock_counter[31]_i_9_n_0 ),
+        .I4(\rx_cdrlock_counter[31]_i_8_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_4_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFFFBFF)) 
+    .INIT(32'hFFFFFEFF)) 
     \rx_cdrlock_counter[31]_i_5 
        (.I0(rx_cdrlock_counter[18]),
         .I1(rx_cdrlock_counter[19]),
-        .I2(rx_cdrlock_counter[17]),
-        .I3(rx_cdrlock_counter[16]),
-        .I4(\rx_cdrlock_counter[31]_i_10_n_0 ),
+        .I2(rx_cdrlock_counter[16]),
+        .I3(rx_cdrlock_counter[17]),
+        .I4(\rx_cdrlock_counter[31]_i_9_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_5_n_0 ));
   LUT4 #(
-    .INIT(16'hFFDF)) 
-    \rx_cdrlock_counter[31]_i_7 
-       (.I0(rx_cdrlock_counter[13]),
-        .I1(rx_cdrlock_counter[12]),
-        .I2(rx_cdrlock_counter[14]),
-        .I3(rx_cdrlock_counter[15]),
-        .O(\rx_cdrlock_counter[31]_i_7_n_0 ));
-  LUT4 #(
-    .INIT(16'hDFFF)) 
-    \rx_cdrlock_counter[31]_i_8 
-       (.I0(rx_cdrlock_counter[4]),
-        .I1(rx_cdrlock_counter[5]),
-        .I2(rx_cdrlock_counter[7]),
-        .I3(rx_cdrlock_counter[6]),
-        .O(\rx_cdrlock_counter[31]_i_8_n_0 ));
+    .INIT(16'hFFFD)) 
+    \rx_cdrlock_counter[31]_i_6 
+       (.I0(rx_cdrlock_counter[12]),
+        .I1(rx_cdrlock_counter[13]),
+        .I2(rx_cdrlock_counter[15]),
+        .I3(rx_cdrlock_counter[14]),
+        .O(\rx_cdrlock_counter[31]_i_6_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
-    \rx_cdrlock_counter[31]_i_9 
+    \rx_cdrlock_counter[31]_i_7 
+       (.I0(rx_cdrlock_counter[5]),
+        .I1(rx_cdrlock_counter[4]),
+        .I2(rx_cdrlock_counter[7]),
+        .I3(rx_cdrlock_counter[6]),
+        .O(\rx_cdrlock_counter[31]_i_7_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \rx_cdrlock_counter[31]_i_8 
        (.I0(rx_cdrlock_counter[29]),
         .I1(rx_cdrlock_counter[28]),
         .I2(rx_cdrlock_counter[31]),
         .I3(rx_cdrlock_counter[30]),
+        .O(\rx_cdrlock_counter[31]_i_8_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFD)) 
+    \rx_cdrlock_counter[31]_i_9 
+       (.I0(rx_cdrlock_counter[20]),
+        .I1(rx_cdrlock_counter[21]),
+        .I2(rx_cdrlock_counter[23]),
+        .I3(rx_cdrlock_counter[22]),
         .O(\rx_cdrlock_counter[31]_i_9_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[3]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[4]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry_n_5),
         .O(rx_cdrlock_counter_0[3]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[4]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[4]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry_n_4),
         .O(rx_cdrlock_counter_0[4]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[4]_i_3 
-       (.I0(rx_cdrlock_counter[4]),
-        .O(\rx_cdrlock_counter[4]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[4]_i_4 
-       (.I0(rx_cdrlock_counter[3]),
-        .O(\rx_cdrlock_counter[4]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[4]_i_5 
-       (.I0(rx_cdrlock_counter[2]),
-        .O(\rx_cdrlock_counter[4]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[4]_i_6 
-       (.I0(rx_cdrlock_counter[1]),
-        .O(\rx_cdrlock_counter[4]_i_6_n_0 ));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[5]_i_1 
@@ -9804,55 +9880,35 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[8]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__0_n_7),
         .O(rx_cdrlock_counter_0[5]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[6]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[8]_i_2_n_6 ),
+        .I4(rx_cdrlock_counter0_carry__0_n_6),
         .O(rx_cdrlock_counter_0[6]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[7]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[8]_i_2_n_5 ),
+        .I4(rx_cdrlock_counter0_carry__0_n_5),
         .O(rx_cdrlock_counter_0[7]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[8]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[8]_i_2_n_4 ),
+        .I4(rx_cdrlock_counter0_carry__0_n_4),
         .O(rx_cdrlock_counter_0[8]));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[8]_i_3 
-       (.I0(rx_cdrlock_counter[8]),
-        .O(\rx_cdrlock_counter[8]_i_3_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[8]_i_4 
-       (.I0(rx_cdrlock_counter[7]),
-        .O(\rx_cdrlock_counter[8]_i_4_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[8]_i_5 
-       (.I0(rx_cdrlock_counter[6]),
-        .O(\rx_cdrlock_counter[8]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h2)) 
-    \rx_cdrlock_counter[8]_i_6 
-       (.I0(rx_cdrlock_counter[5]),
-        .O(\rx_cdrlock_counter[8]_i_6_n_0 ));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[9]_i_1 
@@ -9860,7 +9916,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
         .I2(\rx_cdrlock_counter[31]_i_4_n_0 ),
         .I3(\rx_cdrlock_counter[31]_i_5_n_0 ),
-        .I4(\rx_cdrlock_counter_reg[12]_i_2_n_7 ),
+        .I4(rx_cdrlock_counter0_carry__1_n_7),
         .O(rx_cdrlock_counter_0[9]));
   FDRE #(
     .INIT(1'b0)) 
@@ -9894,13 +9950,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[12]),
         .Q(rx_cdrlock_counter[12]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[12]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[8]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[12]_i_2_n_0 ,\rx_cdrlock_counter_reg[12]_i_2_n_1 ,\rx_cdrlock_counter_reg[12]_i_2_n_2 ,\rx_cdrlock_counter_reg[12]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[12]_i_2_n_4 ,\rx_cdrlock_counter_reg[12]_i_2_n_5 ,\rx_cdrlock_counter_reg[12]_i_2_n_6 ,\rx_cdrlock_counter_reg[12]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[12]_i_3_n_0 ,\rx_cdrlock_counter[12]_i_4_n_0 ,\rx_cdrlock_counter[12]_i_5_n_0 ,\rx_cdrlock_counter[12]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[13] 
@@ -9933,13 +9982,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[16]),
         .Q(rx_cdrlock_counter[16]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[16]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[12]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[16]_i_2_n_0 ,\rx_cdrlock_counter_reg[16]_i_2_n_1 ,\rx_cdrlock_counter_reg[16]_i_2_n_2 ,\rx_cdrlock_counter_reg[16]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[16]_i_2_n_4 ,\rx_cdrlock_counter_reg[16]_i_2_n_5 ,\rx_cdrlock_counter_reg[16]_i_2_n_6 ,\rx_cdrlock_counter_reg[16]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[16]_i_3_n_0 ,\rx_cdrlock_counter[16]_i_4_n_0 ,\rx_cdrlock_counter[16]_i_5_n_0 ,\rx_cdrlock_counter[16]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[17] 
@@ -9980,13 +10022,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[20]),
         .Q(rx_cdrlock_counter[20]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[20]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[16]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[20]_i_2_n_0 ,\rx_cdrlock_counter_reg[20]_i_2_n_1 ,\rx_cdrlock_counter_reg[20]_i_2_n_2 ,\rx_cdrlock_counter_reg[20]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[20]_i_2_n_4 ,\rx_cdrlock_counter_reg[20]_i_2_n_5 ,\rx_cdrlock_counter_reg[20]_i_2_n_6 ,\rx_cdrlock_counter_reg[20]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[20]_i_3_n_0 ,\rx_cdrlock_counter[20]_i_4_n_0 ,\rx_cdrlock_counter[20]_i_5_n_0 ,\rx_cdrlock_counter[20]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[21] 
@@ -10019,13 +10054,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[24]),
         .Q(rx_cdrlock_counter[24]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[24]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[20]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[24]_i_2_n_0 ,\rx_cdrlock_counter_reg[24]_i_2_n_1 ,\rx_cdrlock_counter_reg[24]_i_2_n_2 ,\rx_cdrlock_counter_reg[24]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[24]_i_2_n_4 ,\rx_cdrlock_counter_reg[24]_i_2_n_5 ,\rx_cdrlock_counter_reg[24]_i_2_n_6 ,\rx_cdrlock_counter_reg[24]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[24]_i_3_n_0 ,\rx_cdrlock_counter[24]_i_4_n_0 ,\rx_cdrlock_counter[24]_i_5_n_0 ,\rx_cdrlock_counter[24]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[25] 
@@ -10058,13 +10086,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[28]),
         .Q(rx_cdrlock_counter[28]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[28]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[24]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[28]_i_2_n_0 ,\rx_cdrlock_counter_reg[28]_i_2_n_1 ,\rx_cdrlock_counter_reg[28]_i_2_n_2 ,\rx_cdrlock_counter_reg[28]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[28]_i_2_n_4 ,\rx_cdrlock_counter_reg[28]_i_2_n_5 ,\rx_cdrlock_counter_reg[28]_i_2_n_6 ,\rx_cdrlock_counter_reg[28]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[28]_i_3_n_0 ,\rx_cdrlock_counter[28]_i_4_n_0 ,\rx_cdrlock_counter[28]_i_5_n_0 ,\rx_cdrlock_counter[28]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[29] 
@@ -10097,13 +10118,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[31]),
         .Q(rx_cdrlock_counter[31]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[31]_i_6 
-       (.CI(\rx_cdrlock_counter_reg[28]_i_2_n_0 ),
-        .CO({\NLW_rx_cdrlock_counter_reg[31]_i_6_CO_UNCONNECTED [3:2],\rx_cdrlock_counter_reg[31]_i_6_n_2 ,\rx_cdrlock_counter_reg[31]_i_6_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_rx_cdrlock_counter_reg[31]_i_6_O_UNCONNECTED [3],\rx_cdrlock_counter_reg[31]_i_6_n_5 ,\rx_cdrlock_counter_reg[31]_i_6_n_6 ,\rx_cdrlock_counter_reg[31]_i_6_n_7 }),
-        .S({1'b0,\rx_cdrlock_counter[31]_i_11_n_0 ,\rx_cdrlock_counter[31]_i_12_n_0 ,\rx_cdrlock_counter[31]_i_13_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[3] 
@@ -10120,13 +10134,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[4]),
         .Q(rx_cdrlock_counter[4]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[4]_i_2 
-       (.CI(1'b0),
-        .CO({\rx_cdrlock_counter_reg[4]_i_2_n_0 ,\rx_cdrlock_counter_reg[4]_i_2_n_1 ,\rx_cdrlock_counter_reg[4]_i_2_n_2 ,\rx_cdrlock_counter_reg[4]_i_2_n_3 }),
-        .CYINIT(rx_cdrlock_counter[0]),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[4]_i_2_n_4 ,\rx_cdrlock_counter_reg[4]_i_2_n_5 ,\rx_cdrlock_counter_reg[4]_i_2_n_6 ,\rx_cdrlock_counter_reg[4]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[4]_i_3_n_0 ,\rx_cdrlock_counter[4]_i_4_n_0 ,\rx_cdrlock_counter[4]_i_5_n_0 ,\rx_cdrlock_counter[4]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[5] 
@@ -10159,13 +10166,6 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .D(rx_cdrlock_counter_0[8]),
         .Q(rx_cdrlock_counter[8]),
         .R(\rx_cdrlock_counter_reg[31]_0 ));
-  CARRY4 \rx_cdrlock_counter_reg[8]_i_2 
-       (.CI(\rx_cdrlock_counter_reg[4]_i_2_n_0 ),
-        .CO({\rx_cdrlock_counter_reg[8]_i_2_n_0 ,\rx_cdrlock_counter_reg[8]_i_2_n_1 ,\rx_cdrlock_counter_reg[8]_i_2_n_2 ,\rx_cdrlock_counter_reg[8]_i_2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\rx_cdrlock_counter_reg[8]_i_2_n_4 ,\rx_cdrlock_counter_reg[8]_i_2_n_5 ,\rx_cdrlock_counter_reg[8]_i_2_n_6 ,\rx_cdrlock_counter_reg[8]_i_2_n_7 }),
-        .S({\rx_cdrlock_counter[8]_i_3_n_0 ,\rx_cdrlock_counter[8]_i_4_n_0 ,\rx_cdrlock_counter[8]_i_5_n_0 ,\rx_cdrlock_counter[8]_i_6_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \rx_cdrlock_counter_reg[9] 

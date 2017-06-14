@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Sat Jun 10 21:44:03 2017
-| Host         : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Jun 13 19:57:51 2017
+| Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_methodology -file jtag_axi_wrapper_methodology_drc_routed.rpt -rpx jtag_axi_wrapper_methodology_drc_routed.rpx
 | Design       : jtag_axi_wrapper
 | Device       : xc7z045ffv900-2
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1053
+             Violations found: 1054
 +-----------+----------+----------------------------------------------------+------------+
 | Rule      | Severity | Description                                        | Violations |
 +-----------+----------+----------------------------------------------------+------------+
@@ -31,7 +31,7 @@ Table of Contents
 | PDRC-190  | Warning  | Suboptimally placed synchronized register chain    | 47         |
 | TIMING-9  | Warning  | Unknown CDC Logic                                  | 1          |
 | TIMING-17 | Warning  | Non-clocked sequential cell                        | 1000       |
-| TIMING-18 | Warning  | Missing input or output delay                      | 2          |
+| TIMING-18 | Warning  | Missing input or output delay                      | 3          |
 | TIMING-25 | Warning  | Invalid clock waveform on gigabit transceiver (GT) | 2          |
 +-----------+----------+----------------------------------------------------+------------+
 
@@ -44,237 +44,237 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X150Y57 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X146Y59 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X142Y56 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X159Y72 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X147Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X137Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X141Y62 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X157Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X145Y66 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/reset_pb_sync/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X133Y53 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/reset_pb_sync/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X115Y93 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X141Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X128Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X128Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_perf_mon_0/inst/ext_sync_flop_1/q_reg in site SLICE_X99Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/reset_event_cdc_sync/s_level_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_perf_mon_0/inst/ext_sync_flop_1/q_reg in site SLICE_X112Y109 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/reset_event_cdc_sync/s_level_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell jtag_axi_i/axi_perf_mon_0/inst/ext_sync_flop_10/q_reg in site SLICE_X102Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/reset_event_cdc_sync1/s_level_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDPE cell jtag_axi_i/axi_perf_mon_0/inst/ext_sync_flop_10/q_reg in site SLICE_X107Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/reset_event_cdc_sync1/s_level_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X106Y17 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X108Y44 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X107Y18 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X106Y43 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X105Y18 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X107Y43 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X104Y18 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X108Y42 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X103Y18 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X111Y43 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X100Y17 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X109Y44 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X103Y16 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X111Y45 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X102Y16 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X109Y46 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X101Y16 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X110Y44 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X97Y19 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X101Y49 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X97Y18 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X101Y48 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#21 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X97Y20 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X101Y50 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#22 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X108Y20 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X108Y50 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#23 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X108Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X108Y51 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#24 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X104Y14 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X105Y45 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#25 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X104Y15 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X105Y46 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#26 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/data_sync_reg6 in site SLICE_X163Y43 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/data_sync_reg6 in site SLICE_X163Y48 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/jtag_axi_aurora_64b66b_0_0_multi_gt_i/jtag_axi_aurora_64b66b_0_0_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#27 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X160Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X142Y40 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#28 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X163Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X159Y50 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/aurora_64b66b_0/inst/jtag_axi_aurora_64b66b_0_0_core_i/jtag_axi_aurora_64b66b_0_0_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_jtag_axi_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#29 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X149Y58 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X144Y62 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#30 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X145Y57 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X157Y73 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#31 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X147Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X139Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#32 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X141Y60 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X160Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_chip2chip_0/inst/master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#33 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[0].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X94Y70 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[0].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[0].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X119Y108 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[0].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#34 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[10].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X89Y63 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[10].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[10].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X99Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[10].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#35 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[11].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X90Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[11].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[11].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X98Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[11].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#36 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[12].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X91Y63 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[12].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[12].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X101Y100 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[12].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#37 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[1].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X98Y66 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[1].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[1].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X114Y106 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[1].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#38 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[2].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X93Y64 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[2].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[2].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X101Y105 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[2].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#39 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[3].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X118Y68 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[3].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[3].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X105Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[3].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#40 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[4].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X91Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[4].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[4].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X98Y104 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[4].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#41 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[5].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X91Y65 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[5].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[5].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X99Y101 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[5].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#42 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[6].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X92Y66 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[6].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[6].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X99Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[6].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#43 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[7].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X91Y59 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[7].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[7].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X100Y103 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[7].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#44 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[8].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X91Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[8].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[8].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X100Y98 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[8].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#45 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[9].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X93Y61 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[9].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[9].cdc_sync_inst/p_in_d1_cdc_from_reg in site SLICE_X102Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/GEN_INTR_ASYNC.intr_sync_module_inst/GEN_SYNC[9].cdc_sync_inst/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#46 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst1/p_in_d1_cdc_from_reg in site SLICE_X98Y56 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst1/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst1/p_in_d1_cdc_from_reg in site SLICE_X120Y103 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst1/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#47 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst2/p_in_d1_cdc_from_reg in site SLICE_X92Y58 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst2/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst2/p_in_d1_cdc_from_reg in site SLICE_X100Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell jtag_axi_i/axi_perf_mon_0/inst/GEN_Advanced_Mode.adavnced_mode_inst/register_module_inst/cdc_sync_inst2/s_out_d1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning
@@ -5284,10 +5284,15 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An output delay is missing on interrupt relative to clock(s) diff_clock_rtl_clk_p 
+An input delay is missing on pma_init_in relative to clock(s) diff_clock_rtl_clk_p 
 Related violations: <none>
 
 TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on interrupt relative to clock(s) diff_clock_rtl_clk_p 
+Related violations: <none>
+
+TIMING-18#3 Warning
 Missing input or output delay  
 An output delay is missing on ip2intc_irpt relative to clock(s) diff_clock_rtl_clk_p 
 Related violations: <none>

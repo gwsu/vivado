@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2016.4 (64-bit)
-# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sat Jun 10 21:31:47 2017
-# Process ID: 12788
-# Current directory: F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1
-# Command line: vivado.exe -log jtag_axi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jtag_axi_wrapper.tcl
-# Log file: F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/jtag_axi_wrapper.vds
-# Journal file: F:/GITHUB/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1\vivado.jou
+# Start of session at: Tue Jun 13 19:53:07 2017
+# Process ID: 11734
+# Current directory: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1
+# Command line: vivado -log jtag_axi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jtag_axi_wrapper.tcl
+# Log file: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/jtag_axi_wrapper.vds
+# Journal file: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source jtag_axi_wrapper.tcl -notrace

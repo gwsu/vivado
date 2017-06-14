@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Sat Jun 10 14:23:18 2017
-| Host         : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Jun 13 17:32:54 2017
+| Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file jtag_axi_system_ila_0_0_utilization_synth.rpt -pb jtag_axi_system_ila_0_0_utilization_synth.pb
 | Design       : jtag_axi_system_ila_0_0
 | Device       : 7z045ffv900-2
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1984 |     0 |    218600 |  0.91 |
-|   LUT as Logic             | 1516 |     0 |    218600 |  0.69 |
-|   LUT as Memory            |  468 |     0 |     70400 |  0.66 |
+| Slice LUTs*                | 2059 |     0 |    218600 |  0.94 |
+|   LUT as Logic             | 1579 |     0 |    218600 |  0.72 |
+|   LUT as Memory            |  480 |     0 |     70400 |  0.68 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |  468 |     0 |           |       |
-| Slice Registers            | 2957 |     0 |    437200 |  0.68 |
-|   Register as Flip Flop    | 2957 |     0 |    437200 |  0.68 |
+|     LUT as Shift Register  |  480 |     0 |           |       |
+| Slice Registers            | 3055 |     0 |    437200 |  0.70 |
+|   Register as Flip Flop    | 3055 |     0 |    437200 |  0.70 |
 |   Register as Latch        |    0 |     0 |    437200 |  0.00 |
-| F7 Muxes                   |   65 |     0 |    109300 |  0.06 |
-| F8 Muxes                   |    0 |     0 |     54650 |  0.00 |
+| F7 Muxes                   |   85 |     0 |    109300 |  0.08 |
+| F8 Muxes                   |    1 |     0 |     54650 | <0.01 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 9     |          Yes |         Set |            - |
-| 2948  |          Yes |       Reset |            - |
+| 3046  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -155,20 +155,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 2948 |        Flop & Latch |
-| LUT6     |  958 |                 LUT |
-| SRL16E   |  415 |  Distributed Memory |
-| LUT4     |  331 |                 LUT |
-| SRLC32E  |  259 |  Distributed Memory |
-| LUT5     |  142 |                 LUT |
-| LUT3     |  136 |                 LUT |
-| CARRY4   |   86 |          CarryLogic |
-| LUT2     |   70 |                 LUT |
-| MUXF7    |   65 |               MuxFx |
-| LUT1     |   42 |                 LUT |
+| FDRE     | 3046 |        Flop & Latch |
+| LUT6     | 1012 |                 LUT |
+| SRL16E   |  425 |  Distributed Memory |
+| LUT4     |  328 |                 LUT |
+| SRLC32E  |  269 |  Distributed Memory |
+| LUT5     |  156 |                 LUT |
+| LUT3     |  137 |                 LUT |
+| CARRY4   |   90 |          CarryLogic |
+| MUXF7    |   85 |               MuxFx |
+| LUT2     |   72 |                 LUT |
+| LUT1     |   43 |                 LUT |
 | FDSE     |    9 |        Flop & Latch |
 | RAMB36E1 |    6 |        Block Memory |
 | SRLC16E  |    2 |  Distributed Memory |
+| MUXF8    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 

@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-//Date        : Sat Jun 10 21:19:43 2017
-//Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+//Date        : Tue Jun 13 19:46:46 2017
+//Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target jtag_axi_wrapper.bd
 //Design      : jtag_axi_wrapper
 //Purpose     : IP block netlist
@@ -10,8 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module jtag_axi_wrapper
-   (GT_DIFF_REFCLK_clk_n,
-    GT_DIFF_REFCLK_clk_p,
+   (GT_DIFF_REFCLK1_clk_n,
+    GT_DIFF_REFCLK1_clk_p,
     GT_SERIAL_RX_rxn,
     GT_SERIAL_RX_rxp,
     GT_SERIAL_TX_txn,
@@ -21,9 +21,10 @@ module jtag_axi_wrapper
     diff_clock_rtl_clk_n,
     diff_clock_rtl_clk_p,
     interrupt,
-    ip2intc_irpt);
-  input GT_DIFF_REFCLK_clk_n;
-  input GT_DIFF_REFCLK_clk_p;
+    ip2intc_irpt,
+    pma_init_in);
+  input GT_DIFF_REFCLK1_clk_n;
+  input GT_DIFF_REFCLK1_clk_p;
   input [0:0]GT_SERIAL_RX_rxn;
   input [0:0]GT_SERIAL_RX_rxp;
   output [0:0]GT_SERIAL_TX_txn;
@@ -34,9 +35,10 @@ module jtag_axi_wrapper
   input diff_clock_rtl_clk_p;
   output interrupt;
   output ip2intc_irpt;
+  input pma_init_in;
 
-  wire GT_DIFF_REFCLK_clk_n;
-  wire GT_DIFF_REFCLK_clk_p;
+  wire GT_DIFF_REFCLK1_clk_n;
+  wire GT_DIFF_REFCLK1_clk_p;
   wire [0:0]GT_SERIAL_RX_rxn;
   wire [0:0]GT_SERIAL_RX_rxp;
   wire [0:0]GT_SERIAL_TX_txn;
@@ -47,10 +49,11 @@ module jtag_axi_wrapper
   wire diff_clock_rtl_clk_p;
   wire interrupt;
   wire ip2intc_irpt;
+  wire pma_init_in;
 
   jtag_axi jtag_axi_i
-       (.GT_DIFF_REFCLK_clk_n(GT_DIFF_REFCLK_clk_n),
-        .GT_DIFF_REFCLK_clk_p(GT_DIFF_REFCLK_clk_p),
+       (.GT_DIFF_REFCLK1_clk_n(GT_DIFF_REFCLK1_clk_n),
+        .GT_DIFF_REFCLK1_clk_p(GT_DIFF_REFCLK1_clk_p),
         .GT_SERIAL_RX_rxn(GT_SERIAL_RX_rxn),
         .GT_SERIAL_RX_rxp(GT_SERIAL_RX_rxp),
         .GT_SERIAL_TX_txn(GT_SERIAL_TX_txn),
@@ -60,5 +63,6 @@ module jtag_axi_wrapper
         .diff_clock_rtl_clk_n(diff_clock_rtl_clk_n),
         .diff_clock_rtl_clk_p(diff_clock_rtl_clk_p),
         .interrupt(interrupt),
-        .ip2intc_irpt(ip2intc_irpt));
+        .ip2intc_irpt(ip2intc_irpt),
+        .pma_init_in(pma_init_in));
 endmodule

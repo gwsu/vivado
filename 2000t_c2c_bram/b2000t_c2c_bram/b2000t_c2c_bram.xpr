@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr">
+<Project Version="7" Minor="17" Path="/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="625422cf5ee1498ca671e81f0ba5cf84"/>
@@ -57,33 +57,40 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xci">
-          <Proxy FileSetName="b2000t_c2c_bram_rst_clk_wiz_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xci">
-          <Proxy FileSetName="b2000t_c2c_bram_axi_chip2chip_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="b2000t_c2c_bram_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hdl/b2000t_c2c_bram.v"/>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xci">
-          <Proxy FileSetName="b2000t_c2c_bram_aurora_64b66b_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_mem_intercon_0/b2000t_c2c_bram_axi_mem_intercon_0.xci"/>
         <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0.xci">
           <Proxy FileSetName="b2000t_c2c_bram_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xci">
-          <Proxy FileSetName="b2000t_c2c_bram_vio_0_0"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_rst_clk_wiz_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_mem_intercon_0/b2000t_c2c_bram_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hdl/b2000t_c2c_bram.v"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_axi_bram_ctrl_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xci">
           <Proxy FileSetName="b2000t_c2c_bram_clk_wiz_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hw_handoff/b2000t_c2c_bram_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_vio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_aurora_64b66b_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hw_handoff/b2000t_c2c_bram.hwh"/>
-        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hdl/b2000t_c2c_bram.hwdef"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_jtag_axi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.xci">
+          <Proxy FileSetName="b2000t_c2c_bram_system_ila_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="b2000t_c2c_bram_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hw_handoff/b2000t_c2c_bram_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="b2000t_c2c_bram.bd" FileRelPathName="hdl/b2000t_c2c_bram.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v">
         <FileInfo>
@@ -100,11 +107,19 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="b2000t_c2c_bram_wrapper"/>
@@ -121,21 +136,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="b2000t_c2c_bram_axi_chip2chip_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_axi_chip2chip_0_0">
-      <Config>
-        <Option Name="TopModule" Val="b2000t_c2c_bram_axi_chip2chip_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="b2000t_c2c_bram_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_axi_bram_ctrl_0_0">
       <Config>
         <Option Name="TopModule" Val="b2000t_c2c_bram_axi_bram_ctrl_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="b2000t_c2c_bram_aurora_64b66b_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_aurora_64b66b_0_0">
-      <Config>
-        <Option Name="TopModule" Val="b2000t_c2c_bram_aurora_64b66b_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -157,6 +160,30 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="b2000t_c2c_bram_system_ila_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_system_ila_0">
+      <Config>
+        <Option Name="TopModule" Val="b2000t_c2c_bram_system_ila_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="b2000t_c2c_bram_aurora_64b66b_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_aurora_64b66b_0_0">
+      <Config>
+        <Option Name="TopModule" Val="b2000t_c2c_bram_aurora_64b66b_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="b2000t_c2c_bram_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="b2000t_c2c_bram_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="b2000t_c2c_bram_jtag_axi_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_jtag_axi_0_0">
+      <Config>
+        <Option Name="TopModule" Val="b2000t_c2c_bram_jtag_axi_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -169,19 +196,20 @@
     <Simulator Name="Questa">
       <Option Name="Description" Val="Questa Advanced Simulator"/>
     </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
-    </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7v2000tflg1925-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -189,25 +217,45 @@
     </Run>
     <Run Id="b2000t_c2c_bram_rst_clk_wiz_100M_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_rst_clk_wiz_100M_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_rst_clk_wiz_100M_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_rst_clk_wiz_100M_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="b2000t_c2c_bram_axi_chip2chip_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_axi_chip2chip_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_axi_chip2chip_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_axi_chip2chip_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_axi_bram_ctrl_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_blk_mem_gen_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_vio_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_vio_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_vio_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_vio_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_clk_wiz_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_clk_wiz_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_clk_wiz_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_system_ila_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_system_ila_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_system_ila_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_system_ila_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -227,7 +275,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_blk_mem_gen_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="b2000t_c2c_bram_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_xbar_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -237,17 +285,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="b2000t_c2c_bram_vio_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_vio_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_vio_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_vio_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="b2000t_c2c_bram_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_clk_wiz_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_clk_wiz_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_clk_wiz_0_synth_1" IncludeInArchive="true">
+    <Run Id="b2000t_c2c_bram_jtag_axi_0_0_synth_1" Type="Ft3:Synth" SrcSet="b2000t_c2c_bram_jtag_axi_0_0" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_jtag_axi_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/b2000t_c2c_bram_jtag_axi_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -259,9 +297,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -277,26 +313,7 @@
     </Run>
     <Run Id="b2000t_c2c_bram_rst_clk_wiz_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_rst_clk_wiz_100M_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_rst_clk_wiz_100M_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="b2000t_c2c_bram_axi_chip2chip_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_axi_chip2chip_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_axi_chip2chip_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -310,6 +327,66 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="b2000t_c2c_bram_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_axi_bram_ctrl_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_blk_mem_gen_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_vio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_vio_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_vio_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_clk_wiz_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_clk_wiz_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="b2000t_c2c_bram_system_ila_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_system_ila_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_system_ila_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>
@@ -343,7 +420,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="b2000t_c2c_bram_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_blk_mem_gen_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="b2000t_c2c_bram_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_xbar_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_xbar_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>
@@ -360,24 +437,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="b2000t_c2c_bram_vio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_vio_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_vio_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="b2000t_c2c_bram_clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_clk_wiz_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_clk_wiz_0_synth_1" IncludeInArchive="false">
+    <Run Id="b2000t_c2c_bram_jtag_axi_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7v2000tflg1925-1" ConstrsSet="b2000t_c2c_bram_jtag_axi_0_0" Description="Default settings for Implementation." SynthRun="b2000t_c2c_bram_jtag_axi_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

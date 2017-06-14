@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:07:19 2017
+-- Date        : Sat Jun 10 21:07:16 2017
 -- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               f:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_axi_chip2chip_0_0 -prefix
+--               b2000t_c2c_bram_axi_chip2chip_0_0_ b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_axi_chip2chip_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -49,8 +49,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
     s_ready_i04_out_0 : in STD_LOGIC;
     tdm_data_valid_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice : entity is "axi_chip2chip_v4_2_11_asitv10_axisc_register_slice";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice is
@@ -3490,8 +3488,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_c
     aurora_pma_init_in : in STD_LOGIC;
     axi_c2c_aurora_channel_up : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module : entity is "axi_chip2chip_v4_2_11_aurora_standard_cc_module";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module is
@@ -5188,8 +5184,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder is
     rx_phy_ready : in STD_LOGIC;
     CO : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder : entity is "axi_chip2chip_v4_2_11_decoder";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder is
@@ -5980,8 +5974,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec is
     rx_user_reset : in STD_LOGIC;
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec : entity is "axi_chip2chip_v4_2_11_ecc_dec";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec is
@@ -8602,8 +8594,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc is
     \storage_data2_reg[58]_1\ : out STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 47 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc : entity is "axi_chip2chip_v4_2_11_ecc_enc";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc is
@@ -9081,8 +9071,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync is
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
     m_aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync : entity is "axi_chip2chip_v4_2_11_reset_sync";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync is
@@ -9306,8 +9294,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell is
     tx_phy_ctrl : in STD_LOGIC_VECTOR ( 0 to 0 );
     axi_c2c_phy_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell : entity is "axi_chip2chip_v4_2_11_sync_cell";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell is
@@ -10178,8 +10164,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm is
     s_ready_i_reg : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm : entity is "axi_chip2chip_v4_2_11_tdm";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm is
@@ -11353,8 +11337,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper is
@@ -13198,8 +13180,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_dmem is
     axi_c2c_phy_clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_dmem : entity is "dmem";
 end b2000t_c2c_bram_axi_chip2chip_0_0_dmem;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_dmem is
@@ -13631,8 +13611,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr : entity is "rd_bin_cntr";
 end b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr is
@@ -15430,8 +15408,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft is
     comp1 : in STD_LOGIC;
     comp0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft : entity is "rd_fwft";
 end b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft is
@@ -16892,8 +16868,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as is
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \Q_reg_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as : entity is "rd_status_flags_as";
 end b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as is
@@ -17054,8 +17028,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff is
     \out\ : in STD_LOGIC;
     axi_c2c_phy_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff : entity is "synchronizer_ff";
 end b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff is
@@ -28061,8 +28033,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     axi_c2c_phy_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr : entity is "wr_bin_cntr";
 end b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr is
@@ -30808,8 +30778,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as is
     ram_full_fb_i_reg : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as : entity is "wr_pf_as";
 end b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as is
@@ -31406,8 +31374,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as is
     \grstd1.grst_full.grst_f.rst_d2_reg\ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as : entity is "wr_status_flags_as";
 end b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as is
@@ -31618,8 +31584,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \data_out_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl : entity is "axi_chip2chip_v4_2_11_ch0_ctrl";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl is
@@ -32022,8 +31986,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init is
     m_aclk : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init : entity is "axi_chip2chip_v4_2_11_phy_init";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init is
@@ -32982,8 +32944,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width is
@@ -33130,8 +33090,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs is
     axi_c2c_phy_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs : entity is "clk_x_pntrs";
 end b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs is
@@ -36862,8 +36820,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic is
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gc0.count_reg[3]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic : entity is "rd_logic";
 end b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic is
@@ -37245,8 +37201,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo is
     \gfwft_rst_done.fwft_rst_done_reg_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     fwft_rst_done_q : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
 end b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo is
@@ -40130,8 +40084,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic is
     \grstd1.grst_full.grst_f.rst_d3_reg\ : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic : entity is "wr_logic";
 end b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic is
@@ -40534,8 +40486,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if is
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC;
     m_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if : entity is "axi_chip2chip_v4_2_11_phy_if";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if is
@@ -40606,8 +40556,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr is
@@ -41305,8 +41253,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top is
@@ -41576,8 +41522,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth is
@@ -41847,8 +41791,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \data_out_reg[49]\ : in STD_LOGIC_VECTOR ( 49 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
 end b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 is
@@ -42249,8 +42191,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_memory is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_memory : entity is "memory";
 end b2000t_c2c_bram_axi_chip2chip_0_0_memory;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_memory is
@@ -44450,8 +44390,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo is
     m_axi_bvalid : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo : entity is "axi_chip2chip_v4_2_11_b_fifo";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo is
@@ -44532,8 +44470,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo is
     aw_ch_data_valid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
 end b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo is
@@ -45120,8 +45056,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top is
     aw_ch_data_valid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top : entity is "fifo_generator_top";
 end b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top is
@@ -45272,8 +45206,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth is
     aw_ch_data_valid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth : entity is "fifo_generator_v13_1_3_synth";
 end b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth is
@@ -45424,8 +45356,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3 is
     aw_ch_data_valid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3 : entity is "fifo_generator_v13_1_3";
 end b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3 is
@@ -45576,8 +45506,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo is
     aw_ch_data_valid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo : entity is "axi_chip2chip_v4_2_11_async_fifo";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo is
@@ -45728,8 +45656,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo is
     ar_ch_data_valid : in STD_LOGIC;
     m_axi_arready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo : entity is "axi_chip2chip_v4_2_11_awr_fifo";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo is
@@ -45905,8 +45831,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave is
     axi_c2c_aurora_rx_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
     axi_c2c_aurora_rx_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave : entity is "axi_chip2chip_v4_2_11_slave";
 end b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave is
@@ -46769,8 +46693,6 @@ entity b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 is
   attribute DowngradeIPIdentifiedWarnings of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is "yes";
   attribute EN_ECC : integer;
   attribute EN_ECC of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is "axi_chip2chip_v4_2_11";
   attribute PHY_CTRL_WIDTH : integer;
   attribute PHY_CTRL_WIDTH of b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11 : entity is 3;
   attribute PHY_DATA_WIDTH : integer;
