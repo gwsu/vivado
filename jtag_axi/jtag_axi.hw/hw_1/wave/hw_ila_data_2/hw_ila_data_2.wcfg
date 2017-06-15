@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/wesleyguo/github/vivado/vivado/jtag_axi/jtag_axi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4991fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="258"></NameColumnWidth>
+      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="jtag_axi_i/system_ila_0/inst/probe0_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">jtag_axi_i/system_ila_0/inst/probe0_1</obj_property>
+      <obj_property name="ObjectShortName">probe0_1</obj_property>
+      <obj_property name="label">vio_0_probe_out0</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="jtag_axi_i/system_ila_0/inst/probe1_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">jtag_axi_i/system_ila_0/inst/probe1_1</obj_property>
+      <obj_property name="ObjectShortName">probe1_1</obj_property>
+      <obj_property name="label">External_Ports_pma_init_in</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Read Address Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Read Data Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Write Address Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Write Data Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Write Response Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider69" type="divider">
+      <obj_property name="label">slot_0 : jtag_axi_0_M_AXI : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">khaki</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)">
+      <obj_property name="ElementShortName">Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

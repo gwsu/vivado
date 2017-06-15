@@ -1,0 +1,107 @@
+
+*** Running vivado
+    with args -log jtag_axi_system_ila_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source jtag_axi_system_ila_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source jtag_axi_system_ila_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1313.777 ; gain = 298.586 ; free physical = 93235 ; free virtual = 195867
+INFO: [Synth 8-638] synthesizing module 'jtag_axi_system_ila_0_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/synth/jtag_axi_system_ila_0_0.v:203]
+INFO: [Synth 8-638] synthesizing module 'bd_3457' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/bd_3457.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_g_inst_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_1/synth/bd_3457_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_g_inst_0_gigantic_mux' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_1/bd_3457_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_g_inst_0_gigantic_mux' (1#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_1/bd_3457_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_g_inst_0' (2#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_1/synth/bd_3457_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_ila_lib_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_0/synth/bd_3457_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (10#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (11#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (21#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (23#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (25#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (30#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_ila_lib_0' (48#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_0/synth/bd_3457_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_0_ar_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_5/synth/bd_3457_slot_0_ar_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (49#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_0_ar_0' (50#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_5/synth/bd_3457_slot_0_ar_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_0_aw_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_2/synth/bd_3457_slot_0_aw_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_0_aw_0' (51#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_2/synth/bd_3457_slot_0_aw_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_0_b_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_4/synth/bd_3457_slot_0_b_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_0_b_0' (52#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_4/synth/bd_3457_slot_0_b_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_0_r_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_6/synth/bd_3457_slot_0_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized0' (52#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_0_r_0' (53#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_6/synth/bd_3457_slot_0_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_0_w_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_3/synth/bd_3457_slot_0_w_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized1' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized1' (53#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_0_w_0' (54#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_3/synth/bd_3457_slot_0_w_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_1_ar_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_10/synth/bd_3457_slot_1_ar_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_1_ar_0' (55#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_10/synth/bd_3457_slot_1_ar_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_1_aw_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_7/synth/bd_3457_slot_1_aw_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_1_aw_0' (56#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_7/synth/bd_3457_slot_1_aw_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_1_b_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_9/synth/bd_3457_slot_1_b_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_1_b_0' (57#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_9/synth/bd_3457_slot_1_b_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_1_r_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_11/synth/bd_3457_slot_1_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized2' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized2' (57#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_1_r_0' (58#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_11/synth/bd_3457_slot_1_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_3457_slot_1_w_0' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_8/synth/bd_3457_slot_1_w_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized3' [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized3' (58#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457_slot_1_w_0' (59#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_8/synth/bd_3457_slot_1_w_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_3457' (60#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/bd_3457.v:13]
+INFO: [Synth 8-256] done synthesizing module 'jtag_axi_system_ila_0_0' (61#1) [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/synth/jtag_axi_system_ila_0_0.v:203]
+Finished RTL Elaboration : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1717.719 ; gain = 702.527 ; free physical = 93952 ; free virtual = 196599
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 1717.719 ; gain = 702.527 ; free physical = 93953 ; free virtual = 196597
+INFO: [Device 21-403] Loading part xc7z045ffv900-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1881.746 ; gain = 0.004 ; free physical = 93928 ; free virtual = 196573
+Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:01:50 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93928 ; free virtual = 196573
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:01:50 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93928 ; free virtual = 196573
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:52 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93928 ; free virtual = 196573
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:58 ; elapsed = 00:01:59 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93932 ; free virtual = 196577
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:16 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93905 ; free virtual = 196550
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93902 ; free virtual = 196547
+Finished Timing Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93902 ; free virtual = 196547
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:32 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196507
+Finished IO Insertion : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:32 ; elapsed = 00:02:34 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:32 ; elapsed = 00:02:34 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:33 ; elapsed = 00:02:34 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:33 ; elapsed = 00:02:34 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   164|
+|2     |CFGLUT5  |   461|
+|3     |LUT1     |    72|
+|4     |LUT2     |   107|
+|5     |LUT3     |   195|
+|6     |LUT4     |   582|
+|7     |LUT5     |   197|
+|8     |LUT6     |  1749|
+|9     |MUXF7    |   160|
+|10    |MUXF8    |    58|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    11|
+|13    |SRL16E   |   410|
+|14    |SRLC16E  |     2|
+|15    |SRLC32E  |    17|
+|16    |FDRE     |  5179|
+|17    |FDSE     |    21|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:33 ; elapsed = 00:02:34 . Memory (MB): peak = 1881.746 ; gain = 866.555 ; free physical = 93863 ; free virtual = 196508
+synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:33 . Memory (MB): peak = 1886.566 ; gain = 694.285 ; free physical = 93863 ; free virtual = 196508
