@@ -7,8 +7,6 @@ set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ}
 set_property PACKAGE_PIN AV6 [get_ports {GT_SERIAL_RX_rxp}]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN BA8 [get_ports {GT_DIFF_REFCLK1_clk_p}]
-set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN A22  [get_ports {aurora_pma_init_in}]
 set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN BA22 [get_ports {pma_init_out}]
 set_property src_info {type:XDC file:1 line:25 export:INPUT save:INPUT read:READ} [current_design]

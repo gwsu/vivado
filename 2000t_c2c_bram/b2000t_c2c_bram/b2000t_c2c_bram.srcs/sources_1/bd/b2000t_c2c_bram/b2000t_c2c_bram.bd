@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xA31ADE42F9621367" bd:device="xc7v2000tflg1925-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="b2000t_c2c_bram" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x9C2FDCFBCEBF6E78" bd:device="xc7v2000tflg1925-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="b2000t_c2c_bram" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -77,35 +77,6 @@
         </spirit:parameters>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>RST.AURORA_PMA_INIT_IN</spirit:name>
-        <spirit:displayName>Reset</spirit:displayName>
-        <spirit:description>Reset</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>RST</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>aurora_pma_init_in</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>POLARITY</spirit:name>
-            <spirit:value>ACTIVE_HIGH</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:busInterface>
-      <spirit:busInterface>
         <spirit:name>RST.EXT_RESET_IN</spirit:name>
         <spirit:displayName>Reset</spirit:displayName>
         <spirit:description>Reset</spirit:description>
@@ -155,12 +126,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>axi_c2c_multi_bit_error_out</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>axi_c2c_link_status_out</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -173,9 +138,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>aurora_pma_init_in</spirit:name>
+          <spirit:name>axi_c2c_multi_bit_error_out</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -223,10 +188,10 @@
         <spirit:componentRef spirit:library="ip" spirit:name="aurora_64b66b" spirit:vendor="xilinx.com" spirit:version="11.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_aurora_64b66b_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_LINE_RATE">3.125</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_LINE_RATE">6.25</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_REFCLK_FREQUENCY">125.000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_INIT_CLK">100</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DRP_FREQ">100.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_INIT_CLK">100.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DRP_FREQ">150.0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="interface_mode">Streaming</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_CHIPSCOPE">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="drp_mode">Disabled</spirit:configurableElementValue>
@@ -270,12 +235,14 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_clk_wiz_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_IN_FREQ">100</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKIN1_JITTER_PS">100.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">150.00</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_SOURCE">Differential_clock_capable_pin</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">10.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">19.875</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_CLKIN1_PERIOD">10.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">130.958</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">98.575</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">6.625</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">143.858</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">157.402</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -486,7 +453,7 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>vio_0_probe_out0</spirit:name>
-        <spirit:externalPortReference spirit:portRef="aurora_pma_init_in"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out0"/>
         <spirit:externalPortReference spirit:portRef="pma_init_out"/>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="aurora_pma_init_in"/>
         <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="probe1"/>
@@ -498,20 +465,20 @@
       <spirit:adHocConnection>
         <spirit:name>axi_chip2chip_0_axi_c2c_link_status_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="axi_c2c_link_status_out"/>
-        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in3"/>
         <spirit:externalPortReference spirit:portRef="axi_c2c_link_status_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in3"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_chip2chip_0_axi_c2c_config_error_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="axi_c2c_config_error_out"/>
-        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in2"/>
         <spirit:externalPortReference spirit:portRef="axi_c2c_config_error_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in2"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_chip2chip_0_axi_c2c_multi_bit_error_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="axi_c2c_multi_bit_error_out"/>
-        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in1"/>
         <spirit:externalPortReference spirit:portRef="axi_c2c_multi_bit_error_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_0_dout</spirit:name>
@@ -521,8 +488,8 @@
       <spirit:adHocConnection>
         <spirit:name>aux_reset_in_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="ext_reset_in"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="probe0"/>
         <spirit:externalPortReference spirit:portRef="ext_reset_out"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="probe0"/>
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_100M" spirit:portRef="ext_reset_in"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>

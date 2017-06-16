@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Thu Jun 15 16:24:22 2017
+| Date             : Fri Jun 16 10:50:11 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file b2000t_c2c_bram_wrapper_power_routed.rpt -pb b2000t_c2c_bram_wrapper_power_summary_routed.pb -rpx b2000t_c2c_bram_wrapper_power_routed.rpx
 | Design           : b2000t_c2c_bram_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.211  |
-| Dynamic (W)              | 0.555  |
-| Device Static (W)        | 0.656  |
+| Total On-Chip Power (W)  | 1.339  |
+| Dynamic (W)              | 0.681  |
+| Device Static (W)        | 0.658  |
 | Effective TJA (C/W)      | 0.8    |
-| Max Ambient (C)          | 84.0   |
-| Junction Temperature (C) | 26.0   |
+| Max Ambient (C)          | 83.9   |
+| Junction Temperature (C) | 26.1   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.054 |       13 |       --- |             --- |
-| Slice Logic              |     0.004 |    19368 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     5258 |   1221600 |            0.43 |
+| Clocks                   |     0.078 |       13 |       --- |             --- |
+| Slice Logic              |     0.007 |    19368 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     5263 |   1221600 |            0.43 |
 |   Register               |    <0.001 |    10302 |   2443200 |            0.42 |
-|   LUT as Shift Register  |    <0.001 |      596 |    344800 |            0.17 |
+|   LUT as Shift Register  |    <0.001 |      597 |    344800 |            0.17 |
 |   CARRY4                 |    <0.001 |      203 |    305400 |            0.07 |
 |   LUT as Distributed RAM |    <0.001 |      216 |    344800 |            0.06 |
 |   F7/F8 Muxes            |    <0.001 |       79 |   1221600 |           <0.01 |
 |   Others                 |     0.000 |     1327 |       --- |             --- |
-| Signals                  |     0.007 |    14190 |       --- |             --- |
-| Block RAM                |     0.016 |       32 |      1292 |            2.48 |
-| MMCM                     |     0.205 |        2 |        24 |            8.33 |
-| I/O                      |     0.008 |       11 |      1200 |            0.92 |
-| GTX                      |     0.260 |        1 |        16 |            6.25 |
-| Static Power             |     0.656 |          |           |                 |
-| Total                    |     1.211 |          |           |                 |
+| Signals                  |     0.011 |    14165 |       --- |             --- |
+| Block RAM                |     0.025 |       32 |      1292 |            2.48 |
+| MMCM                     |     0.238 |        2 |        24 |            8.33 |
+| I/O                      |     0.008 |       10 |      1200 |            0.83 |
+| GTX                      |     0.314 |        1 |        16 |            6.25 |
+| Static Power             |     0.658 |          |           |                 |
+| Total                    |     1.339 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.415 |       0.099 |      0.316 |
-| Vccaux    |       1.800 |     0.216 |       0.117 |      0.099 |
+| Vccint    |       1.000 |     0.469 |       0.152 |      0.318 |
+| Vccaux    |       1.800 |     0.234 |       0.135 |      0.099 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
@@ -83,8 +83,8 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.006 |       0.001 |      0.005 |
-| MGTAVcc   |       1.000 |     0.133 |       0.129 |      0.004 |
+| Vccbram   |       1.000 |     0.006 |       0.002 |      0.005 |
+| MGTAVcc   |       1.000 |     0.173 |       0.170 |      0.004 |
 | MGTAVtt   |       1.200 |     0.101 |       0.096 |      0.005 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
 | MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |
@@ -137,14 +137,14 @@ Table of Contents
 | CLK_IN1_D_clk_p                                                                                                                                                                                                                      | CLK_IN1_D_clk_p                                                                                                                                                                                                                         |            10.0 |
 | GT_DIFF_REFCLK1_clk_p                                                                                                                                                                                                                | GT_DIFF_REFCLK1_clk_p                                                                                                                                                                                                                   |             8.0 |
 | INIT_DIFF_CLK_clk_p                                                                                                                                                                                                                  | INIT_DIFF_CLK_clk_p                                                                                                                                                                                                                     |            10.0 |
-| b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/rxrecclk_from_gtx_i |            10.2 |
-| b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/tx_out_clk          |            10.2 |
-| clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |            10.0 |
-| clkfbout                                                                                                                                                                                                                             | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/clkfbout                                                                                                                                                                          |            10.2 |
-| clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |            10.0 |
+| b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/rxrecclk_from_gtx_i |             5.1 |
+| b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/TXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/tx_out_clk          |             5.1 |
+| clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |             6.7 |
+| clkfbout                                                                                                                                                                                                                             | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/clkfbout                                                                                                                                                                          |             5.1 |
+| clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkfbout_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                       |            20.0 |
 | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                                                                                                              | dbg_hub/inst/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                                                                                                                                                                                       |            33.0 |
-| sync_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i                                                                                                                                                                        |            10.2 |
-| user_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i                                                                                                                                                                        |            20.5 |
+| sync_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i                                                                                                                                                                        |             5.1 |
+| user_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i                                                                                                                                                                        |            10.2 |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
@@ -157,22 +157,22 @@ Table of Contents
 +----------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                               | Power (W) |
 +----------------------------------------------------------------------------------------------------+-----------+
-| b2000t_c2c_bram_wrapper                                                                            |     0.555 |
-|   b2000t_c2c_bram_i                                                                                |     0.551 |
-|     aurora_64b66b_0                                                                                |     0.382 |
-|       inst                                                                                         |     0.382 |
-|         b2000t_c2c_bram_aurora_64b66b_0_0_core_i                                                   |     0.277 |
-|           aurora_lane_0_i                                                                          |    <0.001 |
+| b2000t_c2c_bram_wrapper                                                                            |     0.681 |
+|   b2000t_c2c_bram_i                                                                                |     0.676 |
+|     aurora_64b66b_0                                                                                |     0.460 |
+|       inst                                                                                         |     0.460 |
+|         b2000t_c2c_bram_aurora_64b66b_0_0_core_i                                                   |     0.337 |
+|           aurora_lane_0_i                                                                          |     0.001 |
 |             err_detect_i                                                                           |    <0.001 |
 |             lane_init_sm_i                                                                         |    <0.001 |
 |               u_cdc_rxlossofsync_in                                                                |    <0.001 |
 |             sym_dec_i                                                                              |    <0.001 |
 |             sym_gen_i                                                                              |    <0.001 |
-|           b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i                                              |     0.275 |
-|             b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i                                           |     0.261 |
-|               b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst                                           |     0.261 |
+|           b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i                                              |     0.334 |
+|             b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i                                           |     0.315 |
+|               b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst                                           |     0.315 |
 |             block_sync_sm_gtx0_i                                                                   |    <0.001 |
-|             cbcc_gtx0_i                                                                            |     0.002 |
+|             cbcc_gtx0_i                                                                            |     0.003 |
 |               u_cdc_rxlossofsync_in                                                                |    <0.001 |
 |               u_cdc_wr_err_rd_clk                                                                  |    <0.001 |
 |               u_rst_sync_btf_sync                                                                  |    <0.001 |
@@ -188,7 +188,7 @@ Table of Contents
 |               u_rst_sync_reset_to_fifo_wr_clk                                                      |    <0.001 |
 |               u_rst_sync_reset_wr_clk                                                              |    <0.001 |
 |               u_rst_sync_rst_cbcc_rd_clk                                                           |    <0.001 |
-|             descrambler_64b66b_gtx0_i                                                              |    <0.001 |
+|             descrambler_64b66b_gtx0_i                                                              |     0.001 |
 |             rxresetfsm_i                                                                           |     0.003 |
 |               u_rst_sync_mmcm_lock                                                                 |    <0.001 |
 |               u_rst_sync_plllock                                                                   |    <0.001 |
@@ -198,7 +198,7 @@ Table of Contents
 |               u_rst_sync_rxresetdone                                                               |    <0.001 |
 |               u_rst_sync_system_reset                                                              |    <0.001 |
 |               u_rst_sync_time_out_wait_bypass                                                      |    <0.001 |
-|             scrambler_64b66b_gtx0_i                                                                |     0.002 |
+|             scrambler_64b66b_gtx0_i                                                                |     0.003 |
 |             txresetfsm_i                                                                           |     0.004 |
 |               u_rst_sync_plllock                                                                   |    <0.001 |
 |               u_rst_sync_run_phase_align                                                           |    <0.001 |
@@ -228,36 +228,36 @@ Table of Contents
 |           tx_stream_i                                                                              |    <0.001 |
 |             tx_stream_control_sm_i                                                                 |    <0.001 |
 |             tx_stream_datapath_i                                                                   |    <0.001 |
-|         clock_module_i                                                                             |     0.105 |
+|         clock_module_i                                                                             |     0.123 |
 |         gt_common_support                                                                          |    <0.001 |
 |         gt_reset_sync                                                                              |    <0.001 |
 |         reset_pb_sync                                                                              |    <0.001 |
 |         support_reset_logic_i                                                                      |    <0.001 |
 |           u_rst_sync_gt                                                                            |    <0.001 |
-|     axi_bram_ctrl_0                                                                                |     0.003 |
-|       U0                                                                                           |     0.003 |
-|         gext_inst.abcv4_0_ext_inst                                                                 |     0.003 |
-|           GEN_AXI4.I_FULL_AXI                                                                      |     0.003 |
+|     axi_bram_ctrl_0                                                                                |     0.004 |
+|       U0                                                                                           |     0.004 |
+|         gext_inst.abcv4_0_ext_inst                                                                 |     0.004 |
+|           GEN_AXI4.I_FULL_AXI                                                                      |     0.004 |
 |             I_RD_CHNL                                                                              |     0.002 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|             I_WR_CHNL                                                                              |     0.001 |
+|             I_WR_CHNL                                                                              |     0.002 |
 |               BID_FIFO                                                                             |    <0.001 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|     axi_chip2chip_0                                                                                |     0.012 |
-|       inst                                                                                         |     0.012 |
-|         slave_fpga_gen.axi_chip2chip_slave_inst                                                    |     0.011 |
+|     axi_chip2chip_0                                                                                |     0.020 |
+|       inst                                                                                         |     0.020 |
+|         slave_fpga_gen.axi_chip2chip_slave_inst                                                    |     0.018 |
 |           aurora_ecc_io_stage.ecc_dec_inst[0].axi_chip2chip_ecc_dec_inst                           |    <0.001 |
 |           aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst                           |     0.000 |
 |           aurora_ecc_io_stage.ecc_in_reg_slice_inst                                                |    <0.001 |
 |           aurora_ecc_io_stage.tdm_out_reg_slice_inst                                               |    <0.001 |
-|           axi_chip2chip_ar_fifo_inst                                                               |     0.003 |
-|             axi_chip2chip_async_fifo_inst                                                          |     0.003 |
-|               U0                                                                                   |     0.003 |
-|                 inst_fifo_gen                                                                      |     0.003 |
-|                   gconvfifo.rf                                                                     |     0.003 |
-|                     grf.rf                                                                         |     0.003 |
+|           axi_chip2chip_ar_fifo_inst                                                               |     0.005 |
+|             axi_chip2chip_async_fifo_inst                                                          |     0.005 |
+|               U0                                                                                   |     0.005 |
+|                 inst_fifo_gen                                                                      |     0.005 |
+|                   gconvfifo.rf                                                                     |     0.005 |
+|                     grf.rf                                                                         |     0.005 |
 |                       gntv_or_sync_fifo.gcx.clkx                                                   |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                                       |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                                       |    <0.001 |
@@ -273,13 +273,13 @@ Table of Contents
 |                         gwas.gpf.wrpf                                                              |    <0.001 |
 |                         gwas.wsts                                                                  |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                        |     0.002 |
-|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
-|                           inst_blk_mem_gen                                                         |     0.002 |
-|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
-|                               valid.cstr                                                           |     0.002 |
-|                                 ramloop[0].ram.r                                                   |     0.002 |
-|                                   prim_noinit.ram                                                  |     0.002 |
+|                       gntv_or_sync_fifo.mem                                                        |     0.003 |
+|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.003 |
+|                           inst_blk_mem_gen                                                         |     0.003 |
+|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.003 |
+|                               valid.cstr                                                           |     0.003 |
+|                                 ramloop[0].ram.r                                                   |     0.003 |
+|                                   prim_noinit.ram                                                  |     0.003 |
 |                       rstblk                                                                       |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst             |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst             |    <0.001 |
@@ -309,12 +309,12 @@ Table of Contents
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].wrst_inst                   |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].rrst_inst                   |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst                   |    <0.001 |
-|           axi_chip2chip_aw_fifo_inst                                                               |     0.003 |
-|             axi_chip2chip_async_fifo_inst                                                          |     0.003 |
-|               U0                                                                                   |     0.003 |
-|                 inst_fifo_gen                                                                      |     0.003 |
-|                   gconvfifo.rf                                                                     |     0.003 |
-|                     grf.rf                                                                         |     0.003 |
+|           axi_chip2chip_aw_fifo_inst                                                               |     0.005 |
+|             axi_chip2chip_async_fifo_inst                                                          |     0.005 |
+|               U0                                                                                   |     0.005 |
+|                 inst_fifo_gen                                                                      |     0.005 |
+|                   gconvfifo.rf                                                                     |     0.005 |
+|                     grf.rf                                                                         |     0.005 |
 |                       gntv_or_sync_fifo.gcx.clkx                                                   |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                                       |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                                       |    <0.001 |
@@ -330,13 +330,13 @@ Table of Contents
 |                         gwas.gpf.wrpf                                                              |    <0.001 |
 |                         gwas.wsts                                                                  |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                        |     0.002 |
-|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
-|                           inst_blk_mem_gen                                                         |     0.002 |
-|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
-|                               valid.cstr                                                           |     0.002 |
-|                                 ramloop[0].ram.r                                                   |     0.002 |
-|                                   prim_noinit.ram                                                  |     0.002 |
+|                       gntv_or_sync_fifo.mem                                                        |     0.003 |
+|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.003 |
+|                           inst_blk_mem_gen                                                         |     0.003 |
+|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.003 |
+|                               valid.cstr                                                           |     0.003 |
+|                                 ramloop[0].ram.r                                                   |     0.003 |
+|                                   prim_noinit.ram                                                  |     0.003 |
 |                       rstblk                                                                       |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst             |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst             |    <0.001 |
@@ -400,12 +400,12 @@ Table of Contents
 |           axi_chip2chip_ch0_ctrl_inst                                                              |    <0.001 |
 |             axi_chip2chip_sync_cell_intr_in_inst                                                   |     0.000 |
 |           axi_chip2chip_decoder_inst                                                               |    <0.001 |
-|           axi_chip2chip_r_fifo_inst                                                                |     0.001 |
-|             axi_chip2chip_async_fifo_inst                                                          |     0.001 |
-|               U0                                                                                   |     0.001 |
-|                 inst_fifo_gen                                                                      |     0.001 |
-|                   gconvfifo.rf                                                                     |     0.001 |
-|                     grf.rf                                                                         |     0.001 |
+|           axi_chip2chip_r_fifo_inst                                                                |     0.002 |
+|             axi_chip2chip_async_fifo_inst                                                          |     0.002 |
+|               U0                                                                                   |     0.002 |
+|                 inst_fifo_gen                                                                      |     0.002 |
+|                   gconvfifo.rf                                                                     |     0.002 |
+|                     grf.rf                                                                         |     0.002 |
 |                       gntv_or_sync_fifo.gcx.clkx                                                   |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                                       |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                                       |    <0.001 |
@@ -424,7 +424,7 @@ Table of Contents
 |                           c1                                                                       |     0.000 |
 |                           c2                                                                       |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                        |    <0.001 |
+|                       gntv_or_sync_fifo.mem                                                        |     0.001 |
 |                         gbm.gbmg.gbmga.ngecc.bmg                                                   |    <0.001 |
 |                           inst_blk_mem_gen                                                         |    <0.001 |
 |                             gnbram.gnativebmg.native_blk_mem_gen                                   |    <0.001 |
@@ -461,12 +461,12 @@ Table of Contents
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].rrst_inst                   |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst                   |    <0.001 |
 |           axi_chip2chip_tdm_inst                                                                   |    <0.001 |
-|           axi_chip2chip_w_fifo_inst                                                                |     0.002 |
-|             axi_chip2chip_async_fifo_inst                                                          |     0.002 |
-|               U0                                                                                   |     0.002 |
-|                 inst_fifo_gen                                                                      |     0.002 |
-|                   gconvfifo.rf                                                                     |     0.002 |
-|                     grf.rf                                                                         |     0.002 |
+|           axi_chip2chip_w_fifo_inst                                                                |     0.004 |
+|             axi_chip2chip_async_fifo_inst                                                          |     0.004 |
+|               U0                                                                                   |     0.004 |
+|                 inst_fifo_gen                                                                      |     0.004 |
+|                   gconvfifo.rf                                                                     |     0.004 |
+|                     grf.rf                                                                         |     0.004 |
 |                       gntv_or_sync_fifo.gcx.clkx                                                   |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                                       |    <0.001 |
 |                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                                       |    <0.001 |
@@ -486,7 +486,7 @@ Table of Contents
 |                           c1                                                                       |    <0.001 |
 |                           c2                                                                       |     0.000 |
 |                         wpntr                                                                      |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                        |     0.002 |
+|                       gntv_or_sync_fifo.mem                                                        |     0.003 |
 |                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
 |                           inst_blk_mem_gen                                                         |     0.002 |
 |                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
@@ -522,15 +522,15 @@ Table of Contents
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].wrst_inst                   |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].rrst_inst                   |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst                   |    <0.001 |
-|         slave_fpga_gen.axi_chip2chip_slave_phy_inst                                                |    <0.001 |
+|         slave_fpga_gen.axi_chip2chip_slave_phy_inst                                                |     0.001 |
 |           aurora_phy.standard_cc_module_inst                                                       |    <0.001 |
 |           aurora_phy.user_reset_sync_inst                                                          |    <0.001 |
 |           axi_chip2chip_phy_init_inst                                                              |    <0.001 |
 |             axi_chip2chip_sync_cell_inst                                                           |    <0.001 |
-|     axi_mem_intercon                                                                               |     0.002 |
-|       xbar                                                                                         |     0.002 |
-|         inst                                                                                       |     0.002 |
-|           gen_samd.crossbar_samd                                                                   |     0.002 |
+|     axi_mem_intercon                                                                               |     0.003 |
+|       xbar                                                                                         |     0.003 |
+|         inst                                                                                       |     0.003 |
+|           gen_samd.crossbar_samd                                                                   |     0.003 |
 |             addr_arbiter_ar                                                                        |    <0.001 |
 |             addr_arbiter_aw                                                                        |    <0.001 |
 |             gen_decerr_slave.decerr_slave_inst                                                     |    <0.001 |
@@ -563,11 +563,11 @@ Table of Contents
 |               wrouter_aw_fifo                                                                      |    <0.001 |
 |                 gen_srls[0].gen_rep[0].srl_nx1                                                     |    <0.001 |
 |             splitter_aw_mi                                                                         |    <0.001 |
-|     blk_mem_gen_0                                                                                  |     0.006 |
-|       U0                                                                                           |     0.006 |
-|         inst_blk_mem_gen                                                                           |     0.006 |
-|           gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                                    |     0.006 |
-|             valid.cstr                                                                             |     0.006 |
+|     blk_mem_gen_0                                                                                  |     0.009 |
+|       U0                                                                                           |     0.009 |
+|         inst_blk_mem_gen                                                                           |     0.009 |
+|           gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                                    |     0.009 |
+|             valid.cstr                                                                             |     0.009 |
 |               ramloop[0].ram.r                                                                     |    <0.001 |
 |                 prim_noinit.ram                                                                    |    <0.001 |
 |               ramloop[10].ram.r                                                                    |    <0.001 |
@@ -600,41 +600,18 @@ Table of Contents
 |                 prim_noinit.ram                                                                    |    <0.001 |
 |               ramloop[9].ram.r                                                                     |    <0.001 |
 |                 prim_noinit.ram                                                                    |    <0.001 |
-|     clk_wiz                                                                                        |     0.111 |
-|       inst                                                                                         |     0.111 |
-|     jtag_axi_0                                                                                     |     0.010 |
-|       inst                                                                                         |     0.010 |
-|         axi_bridge_u                                                                               |    <0.001 |
+|     clk_wiz                                                                                        |     0.126 |
+|       inst                                                                                         |     0.126 |
+|     jtag_axi_0                                                                                     |     0.015 |
+|       inst                                                                                         |     0.015 |
+|         axi_bridge_u                                                                               |     0.001 |
 |           read_axi_full_u                                                                          |    <0.001 |
 |           write_axi_full_u                                                                         |    <0.001 |
-|         jtag_axi_engine_u                                                                          |     0.009 |
+|         jtag_axi_engine_u                                                                          |     0.013 |
 |           U_XSDB_SLAVE                                                                             |    <0.001 |
 |           cmd_decode_rd_channel                                                                    |    <0.001 |
 |           cmd_decode_wr_channel                                                                    |    <0.001 |
-|           rd_cmd_fifo_i                                                                            |    <0.001 |
-|             inst_fifo_gen                                                                          |    <0.001 |
-|               gconvfifo.rf                                                                         |    <0.001 |
-|                 grf.rf                                                                             |    <0.001 |
-|                   gntv_or_sync_fifo.gcx.clkx                                                       |    <0.001 |
-|                     gnxpm_cdc.gsync_stage[1].rd_stg_inst                                           |    <0.001 |
-|                     gnxpm_cdc.gsync_stage[1].wr_stg_inst                                           |    <0.001 |
-|                     gnxpm_cdc.gsync_stage[2].rd_stg_inst                                           |    <0.001 |
-|                     gnxpm_cdc.gsync_stage[2].wr_stg_inst                                           |    <0.001 |
-|                   gntv_or_sync_fifo.gl0.rd                                                         |    <0.001 |
-|                     gr1.gr1_int.rfwft                                                              |    <0.001 |
-|                     gras.rsts                                                                      |    <0.001 |
-|                     rpntr                                                                          |    <0.001 |
-|                   gntv_or_sync_fifo.gl0.wr                                                         |    <0.001 |
-|                     gwas.wsts                                                                      |    <0.001 |
-|                     wpntr                                                                          |    <0.001 |
-|                   gntv_or_sync_fifo.mem                                                            |    <0.001 |
-|                     gbm.gbmg.gbmga.ngecc.bmg                                                       |    <0.001 |
-|                       inst_blk_mem_gen                                                             |    <0.001 |
-|                         gnbram.gnativebmg.native_blk_mem_gen                                       |    <0.001 |
-|                           valid.cstr                                                               |    <0.001 |
-|                             ramloop[0].ram.r                                                       |    <0.001 |
-|                               prim_noinit.ram                                                      |    <0.001 |
-|           rx_fifo_i                                                                                |     0.001 |
+|           rd_cmd_fifo_i                                                                            |     0.001 |
 |             inst_fifo_gen                                                                          |     0.001 |
 |               gconvfifo.rf                                                                         |     0.001 |
 |                 grf.rf                                                                             |     0.001 |
@@ -657,7 +634,7 @@ Table of Contents
 |                           valid.cstr                                                               |    <0.001 |
 |                             ramloop[0].ram.r                                                       |    <0.001 |
 |                               prim_noinit.ram                                                      |    <0.001 |
-|           tx_fifo_i                                                                                |     0.002 |
+|           rx_fifo_i                                                                                |     0.002 |
 |             inst_fifo_gen                                                                          |     0.002 |
 |               gconvfifo.rf                                                                         |     0.002 |
 |                 grf.rf                                                                             |     0.002 |
@@ -673,8 +650,31 @@ Table of Contents
 |                   gntv_or_sync_fifo.gl0.wr                                                         |    <0.001 |
 |                     gwas.wsts                                                                      |    <0.001 |
 |                     wpntr                                                                          |    <0.001 |
-|                   gntv_or_sync_fifo.mem                                                            |     0.001 |
-|                     gdm.dm_gen.dm                                                                  |     0.001 |
+|                   gntv_or_sync_fifo.mem                                                            |    <0.001 |
+|                     gbm.gbmg.gbmga.ngecc.bmg                                                       |    <0.001 |
+|                       inst_blk_mem_gen                                                             |    <0.001 |
+|                         gnbram.gnativebmg.native_blk_mem_gen                                       |    <0.001 |
+|                           valid.cstr                                                               |    <0.001 |
+|                             ramloop[0].ram.r                                                       |    <0.001 |
+|                               prim_noinit.ram                                                      |    <0.001 |
+|           tx_fifo_i                                                                                |     0.003 |
+|             inst_fifo_gen                                                                          |     0.003 |
+|               gconvfifo.rf                                                                         |     0.003 |
+|                 grf.rf                                                                             |     0.003 |
+|                   gntv_or_sync_fifo.gcx.clkx                                                       |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[1].rd_stg_inst                                           |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[1].wr_stg_inst                                           |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[2].rd_stg_inst                                           |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[2].wr_stg_inst                                           |    <0.001 |
+|                   gntv_or_sync_fifo.gl0.rd                                                         |    <0.001 |
+|                     gr1.gr1_int.rfwft                                                              |    <0.001 |
+|                     gras.rsts                                                                      |    <0.001 |
+|                     rpntr                                                                          |    <0.001 |
+|                   gntv_or_sync_fifo.gl0.wr                                                         |    <0.001 |
+|                     gwas.wsts                                                                      |    <0.001 |
+|                     wpntr                                                                          |    <0.001 |
+|                   gntv_or_sync_fifo.mem                                                            |     0.002 |
+|                     gdm.dm_gen.dm                                                                  |     0.002 |
 |                       RAM_reg_0_63_0_2                                                             |    <0.001 |
 |                       RAM_reg_0_63_12_14                                                           |    <0.001 |
 |                       RAM_reg_0_63_15_17                                                           |    <0.001 |
@@ -723,15 +723,15 @@ Table of Contents
 |                       RAM_reg_64_127_3_5                                                           |    <0.001 |
 |                       RAM_reg_64_127_6_8                                                           |    <0.001 |
 |                       RAM_reg_64_127_9_11                                                          |    <0.001 |
-|           u_xsdb_fifo_interface                                                                    |     0.002 |
+|           u_xsdb_fifo_interface                                                                    |     0.003 |
 |             rxfifo2xsdb_i                                                                          |    <0.001 |
 |             xsdb2read_cmdfifo                                                                      |    <0.001 |
 |             xsdb2txfifo_i                                                                          |    <0.001 |
 |             xsdb2write_cmdfifo                                                                     |    <0.001 |
-|           wr_cmd_fifo_i                                                                            |     0.001 |
-|             inst_fifo_gen                                                                          |     0.001 |
-|               gconvfifo.rf                                                                         |     0.001 |
-|                 grf.rf                                                                             |     0.001 |
+|           wr_cmd_fifo_i                                                                            |     0.002 |
+|             inst_fifo_gen                                                                          |     0.002 |
+|               gconvfifo.rf                                                                         |     0.002 |
+|                 grf.rf                                                                             |     0.002 |
 |                   gntv_or_sync_fifo.gcx.clkx                                                       |    <0.001 |
 |                     gnxpm_cdc.gsync_stage[1].rd_stg_inst                                           |    <0.001 |
 |                     gnxpm_cdc.gsync_stage[1].wr_stg_inst                                           |    <0.001 |
@@ -757,33 +757,33 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                                                |    <0.001 |
 |         SEQ                                                                                        |    <0.001 |
 |           SEQ_COUNTER                                                                              |    <0.001 |
-|     system_ila                                                                                     |     0.017 |
-|       inst                                                                                         |     0.017 |
+|     system_ila                                                                                     |     0.025 |
+|       inst                                                                                         |     0.025 |
 |         g_inst                                                                                     |     0.000 |
 |           inst                                                                                     |     0.000 |
-|         ila_lib                                                                                    |     0.017 |
-|           inst                                                                                     |     0.017 |
-|             ila_core_inst                                                                          |     0.017 |
-|               ila_trace_memory_inst                                                                |     0.003 |
-|                 SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                           |     0.003 |
-|                   inst_blk_mem_gen                                                                 |     0.003 |
-|                     gnbram.gnativebmg.native_blk_mem_gen                                           |     0.003 |
-|                       valid.cstr                                                                   |     0.003 |
-|                         ramloop[0].ram.r                                                           |    <0.001 |
-|                           prim_noinit.ram                                                          |    <0.001 |
-|                         ramloop[1].ram.r                                                           |    <0.001 |
-|                           prim_noinit.ram                                                          |    <0.001 |
-|                         ramloop[2].ram.r                                                           |    <0.001 |
-|                           prim_noinit.ram                                                          |    <0.001 |
-|                         ramloop[3].ram.r                                                           |    <0.001 |
-|                           prim_noinit.ram                                                          |    <0.001 |
-|                         ramloop[4].ram.r                                                           |    <0.001 |
-|                           prim_noinit.ram                                                          |    <0.001 |
-|               u_ila_cap_ctrl                                                                       |    <0.001 |
+|         ila_lib                                                                                    |     0.025 |
+|           inst                                                                                     |     0.025 |
+|             ila_core_inst                                                                          |     0.025 |
+|               ila_trace_memory_inst                                                                |     0.005 |
+|                 SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                           |     0.005 |
+|                   inst_blk_mem_gen                                                                 |     0.005 |
+|                     gnbram.gnativebmg.native_blk_mem_gen                                           |     0.005 |
+|                       valid.cstr                                                                   |     0.005 |
+|                         ramloop[0].ram.r                                                           |     0.001 |
+|                           prim_noinit.ram                                                          |     0.001 |
+|                         ramloop[1].ram.r                                                           |     0.001 |
+|                           prim_noinit.ram                                                          |     0.001 |
+|                         ramloop[2].ram.r                                                           |     0.001 |
+|                           prim_noinit.ram                                                          |     0.001 |
+|                         ramloop[3].ram.r                                                           |     0.001 |
+|                           prim_noinit.ram                                                          |     0.001 |
+|                         ramloop[4].ram.r                                                           |     0.001 |
+|                           prim_noinit.ram                                                          |     0.001 |
+|               u_ila_cap_ctrl                                                                       |     0.001 |
 |                 U_CDONE                                                                            |    <0.001 |
 |                 U_NS0                                                                              |    <0.001 |
 |                 U_NS1                                                                              |    <0.001 |
-|                 u_cap_addrgen                                                                      |    <0.001 |
+|                 u_cap_addrgen                                                                      |     0.001 |
 |                   U_CMPRESET                                                                       |    <0.001 |
 |                   u_cap_sample_counter                                                             |    <0.001 |
 |                     U_SCE                                                                          |    <0.001 |
@@ -832,7 +832,7 @@ Table of Contents
 |                             u_srlB                                                                 |    <0.001 |
 |                             u_srlC                                                                 |    <0.001 |
 |                             u_srlD                                                                 |    <0.001 |
-|               u_ila_regs                                                                           |     0.007 |
+|               u_ila_regs                                                                           |     0.010 |
 |                 MU_SRL[0].mu_srl_reg                                                               |    <0.001 |
 |                 MU_SRL[10].mu_srl_reg                                                              |    <0.001 |
 |                 MU_SRL[11].mu_srl_reg                                                              |    <0.001 |
@@ -908,7 +908,7 @@ Table of Contents
 |                 asyncrounous_transfer.halt_in_transfer_inst                                        |    <0.001 |
 |                 asyncrounous_transfer.halt_out_transfer_inst                                       |    <0.001 |
 |                 halt_detection_inst                                                                |    <0.001 |
-|               u_trig                                                                               |     0.003 |
+|               u_trig                                                                               |     0.005 |
 |                 N_DDR_TC.N_DDR_TC_INST[0].U_TC                                                     |    <0.001 |
 |                   allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |    <0.001 |
 |                     DUT                                                                            |    <0.001 |
@@ -927,7 +927,7 @@ Table of Contents
 |                         u_srlB                                                                     |    <0.001 |
 |                         u_srlC                                                                     |    <0.001 |
 |                         u_srlD                                                                     |    <0.001 |
-|                 U_TM                                                                               |     0.003 |
+|                 U_TM                                                                               |     0.004 |
 |                   N_DDR_MODE.G_NMU[0].U_M                                                          |    <0.001 |
 |                     allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                        |    <0.001 |
 |                       DUT                                                                          |    <0.001 |
@@ -1172,24 +1172,24 @@ Table of Contents
 |                           u_srlB                                                                   |    <0.001 |
 |                           u_srlC                                                                   |    <0.001 |
 |                           u_srlD                                                                   |    <0.001 |
-|               xsdb_memory_read_inst                                                                |    <0.001 |
+|               xsdb_memory_read_inst                                                                |     0.001 |
 |         slot_0_ar                                                                                  |     0.000 |
 |         slot_0_aw                                                                                  |     0.000 |
 |         slot_0_b                                                                                   |     0.000 |
 |         slot_0_r                                                                                   |     0.000 |
 |         slot_0_w                                                                                   |     0.000 |
-|     system_ila1                                                                                    |     0.008 |
-|       inst                                                                                         |     0.008 |
+|     system_ila1                                                                                    |     0.014 |
+|       inst                                                                                         |     0.014 |
 |         g_inst                                                                                     |     0.000 |
 |           inst                                                                                     |     0.000 |
-|         ila_lib                                                                                    |     0.008 |
-|           inst                                                                                     |     0.008 |
-|             ila_core_inst                                                                          |     0.008 |
-|               ila_trace_memory_inst                                                                |    <0.001 |
-|                 SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                           |    <0.001 |
-|                   inst_blk_mem_gen                                                                 |    <0.001 |
-|                     gnbram.gnativebmg.native_blk_mem_gen                                           |    <0.001 |
-|                       valid.cstr                                                                   |    <0.001 |
+|         ila_lib                                                                                    |     0.014 |
+|           inst                                                                                     |     0.014 |
+|             ila_core_inst                                                                          |     0.014 |
+|               ila_trace_memory_inst                                                                |     0.002 |
+|                 SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                           |     0.002 |
+|                   inst_blk_mem_gen                                                                 |     0.002 |
+|                     gnbram.gnativebmg.native_blk_mem_gen                                           |     0.002 |
+|                       valid.cstr                                                                   |     0.002 |
 |                         ramloop[0].ram.r                                                           |    <0.001 |
 |                           prim_noinit.ram                                                          |    <0.001 |
 |                         ramloop[1].ram.r                                                           |    <0.001 |
@@ -1198,7 +1198,7 @@ Table of Contents
 |                           prim_noinit.ram                                                          |    <0.001 |
 |                         ramloop[3].ram.r                                                           |    <0.001 |
 |                           prim_noinit.ram                                                          |    <0.001 |
-|               u_ila_cap_ctrl                                                                       |    <0.001 |
+|               u_ila_cap_ctrl                                                                       |     0.001 |
 |                 U_CDONE                                                                            |    <0.001 |
 |                 U_NS0                                                                              |    <0.001 |
 |                 U_NS1                                                                              |    <0.001 |
@@ -1251,7 +1251,7 @@ Table of Contents
 |                             u_srlB                                                                 |    <0.001 |
 |                             u_srlC                                                                 |    <0.001 |
 |                             u_srlD                                                                 |    <0.001 |
-|               u_ila_regs                                                                           |     0.004 |
+|               u_ila_regs                                                                           |     0.006 |
 |                 MU_SRL[0].mu_srl_reg                                                               |    <0.001 |
 |                 MU_SRL[1].mu_srl_reg                                                               |    <0.001 |
 |                 MU_SRL[2].mu_srl_reg                                                               |    <0.001 |
@@ -1311,7 +1311,7 @@ Table of Contents
 |                 asyncrounous_transfer.halt_in_transfer_inst                                        |    <0.001 |
 |                 asyncrounous_transfer.halt_out_transfer_inst                                       |    <0.001 |
 |                 halt_detection_inst                                                                |    <0.001 |
-|               u_trig                                                                               |     0.001 |
+|               u_trig                                                                               |     0.003 |
 |                 N_DDR_TC.N_DDR_TC_INST[0].U_TC                                                     |    <0.001 |
 |                   allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |    <0.001 |
 |                     DUT                                                                            |    <0.001 |
@@ -1320,9 +1320,9 @@ Table of Contents
 |                         u_srlB                                                                     |    <0.001 |
 |                         u_srlC                                                                     |    <0.001 |
 |                         u_srlD                                                                     |    <0.001 |
-|                 U_TM                                                                               |     0.001 |
-|                   N_DDR_MODE.G_NMU[0].U_M                                                          |    <0.001 |
-|                     allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                        |    <0.001 |
+|                 U_TM                                                                               |     0.002 |
+|                   N_DDR_MODE.G_NMU[0].U_M                                                          |     0.001 |
+|                     allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                        |     0.001 |
 |                       DUT                                                                          |    <0.001 |
 |                         I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                               |    <0.001 |
 |                           u_srlA                                                                   |    <0.001 |
@@ -1388,8 +1388,8 @@ Table of Contents
 |                           u_srlB                                                                   |    <0.001 |
 |                           u_srlC                                                                   |    <0.001 |
 |                           u_srlD                                                                   |    <0.001 |
-|                   N_DDR_MODE.G_NMU[4].U_M                                                          |    <0.001 |
-|                     allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                        |    <0.001 |
+|                   N_DDR_MODE.G_NMU[4].U_M                                                          |     0.001 |
+|                     allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                        |     0.001 |
 |                       DUT                                                                          |    <0.001 |
 |                         I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                               |    <0.001 |
 |                           u_srlA                                                                   |    <0.001 |
@@ -1447,7 +1447,7 @@ Table of Contents
 |                           u_srlB                                                                   |    <0.001 |
 |                           u_srlC                                                                   |    <0.001 |
 |                           u_srlD                                                                   |    <0.001 |
-|               xsdb_memory_read_inst                                                                |    <0.001 |
+|               xsdb_memory_read_inst                                                                |     0.001 |
 |     vio_0                                                                                          |    <0.001 |
 |       inst                                                                                         |    <0.001 |
 |         DECODER_INST                                                                               |    <0.001 |
@@ -1456,9 +1456,9 @@ Table of Contents
 |           G_PROBE_OUT[0].PROBE_OUT0_INST                                                           |    <0.001 |
 |         U_XSDB_SLAVE                                                                               |    <0.001 |
 |     xlconstant_0                                                                                   |     0.000 |
-|   dbg_hub                                                                                          |     0.003 |
-|     inst                                                                                           |     0.003 |
-|       CORE_XSDB.UUT_MASTER                                                                         |     0.003 |
+|   dbg_hub                                                                                          |     0.004 |
+|     inst                                                                                           |     0.004 |
+|       CORE_XSDB.UUT_MASTER                                                                         |     0.004 |
 |         U_ICON_INTERFACE                                                                           |     0.002 |
 |           U_CMD1                                                                                   |    <0.001 |
 |           U_CMD2                                                                                   |    <0.001 |

@@ -68,17 +68,17 @@
 
 	############################################################################
     ### User Clock Contraint
-    ## create_clock -name user_clk_out -period 20.48 [get_ports user_clk_out] 
+    ## create_clock -name user_clk_out -period 10.24 [get_ports user_clk_out] 
 
 	### SYNC Clock Constraint
-	## create_clock -name sync_clk_out -period 10.240	 [get_ports sync_clk_out]
+	## create_clock -name sync_clk_out -period 5.120	 [get_ports sync_clk_out]
 
 	     
         ### DRP Clock Constraint
-	     create_clock -period 10.000	 [get_ports drp_clk_in]
+	     create_clock -period 6.667	 [get_ports drp_clk_in]
 
 		### RX Recovered Clock Constraint
-		### create_clock -name TS_rxrecclk_32 -period 10.240	 [get_pins -hier *rxrecclk_bufg_i/O]
+		### create_clock -name TS_rxrecclk_32 -period 5.120	 [get_pins -hier *rxrecclk_bufg_i/O]
 
 	### 50MHz board Clock Constraint
 	create_clock -period 10.000	 [get_ports init_clk_p]

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Jun 15 16:16:10 2017
+| Date         : Fri Jun 16 10:40:16 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file b2000t_c2c_bram_wrapper_utilization_synth.rpt -pb b2000t_c2c_bram_wrapper_utilization_synth.pb
 | Design       : b2000t_c2c_bram_wrapper
@@ -113,7 +113,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   11 |     0 |      1200 |  0.92 |
+| Bonded IOB                  |   10 |     0 |      1200 |  0.83 |
 | Bonded IPADs                |    0 |     0 |        50 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        32 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |        24 |  0.00 |
@@ -175,7 +175,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | OBUF     |    7 |                  IO |
-| IBUF     |    4 |                  IO |
+| IBUF     |    3 |                  IO |
 +----------+------+---------------------+
 
 

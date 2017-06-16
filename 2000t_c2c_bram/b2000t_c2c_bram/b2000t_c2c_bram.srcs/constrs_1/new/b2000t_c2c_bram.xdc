@@ -10,7 +10,7 @@ set_property IOSTANDARD DIFF_SSTL15 [get_ports CLK_IN1_D_clk_n]
 
 
 set_property IOSTANDARD LVCMOS18 [get_ports {pma_init_out}]
-set_property IOSTANDARD LVCMOS18 [get_ports {aurora_pma_init_in}]
+#set_property IOSTANDARD LVCMOS18 [get_ports {aurora_pma_init_in}]
 set_property IOSTANDARD LVCMOS18 [get_ports {axi_c2c_config_error_out}]
 set_property IOSTANDARD LVCMOS18 [get_ports {axi_c2c_link_status_out}]
 set_property IOSTANDARD LVCMOS18 [get_ports {axi_c2c_multi_bit_error_out}]
@@ -18,7 +18,7 @@ set_property IOSTANDARD LVCMOS18 [get_ports {ext_reset_in}]
 set_property IOSTANDARD LVCMOS18 [get_ports {ext_reset_out}]
 
 #sw1
-set_property PACKAGE_PIN A22  [get_ports {aurora_pma_init_in}]
+#set_property PACKAGE_PIN A22  [get_ports {aurora_pma_init_in}]
 
 set_property PACKAGE_PIN BA22 [get_ports {pma_init_out}]
 #D1

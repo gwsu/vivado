@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Jun 13 19:04:43 2017
+-- Date        : Fri Jun 16 10:38:57 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_aurora_64b66b_0_0 -prefix
---               b2000t_c2c_bram_aurora_64b66b_0_0_ b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_aurora_64b66b_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,6 +23,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rxheadervalid_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM is
@@ -1190,6 +1192,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
     CHANNEL_UP_TX_IF_reg : in STD_LOGIC;
     SYSTEM_RESET_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN is
@@ -1389,6 +1393,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
     hard_err_i : in STD_LOGIC;
     \out\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT is
@@ -1435,6 +1441,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     soft_err_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM is
@@ -2004,6 +2012,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
     init_clk_n : in STD_LOGIC;
     MMCM_RESET_reg : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE is
@@ -2065,20 +2075,20 @@ initclk_bufg_i: unisim.vcomponents.BUFG
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 9.000000,
+      CLKFBOUT_MULT_F => 6.000000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
-      CLKIN1_PERIOD => 10.240000,
+      CLKIN1_PERIOD => 5.120000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 18.000000,
+      CLKOUT0_DIVIDE_F => 12.000000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
-      CLKOUT1_DIVIDE => 9,
+      CLKOUT1_DIVIDE => 6,
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => false,
-      CLKOUT2_DIVIDE => 20,
+      CLKOUT2_DIVIDE => 10,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
       CLKOUT2_USE_FINE_PS => false,
@@ -2193,6 +2203,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCR
     \rxdata_from_gtx_i_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \rxdata_from_gtx_i_reg[13]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B is
@@ -3439,6 +3451,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_D
     ENABLE_ERR_DETECT_reg_0 : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT is
@@ -3519,6 +3533,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX i
     CPLL_RESET_reg : in STD_LOGIC;
     gt_cpllreset_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_GTX";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX is
@@ -4099,7 +4115,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       RXBUF_THRESH_UNDFLW => 4,
       RXCDRFREQRESET_TIME => B"00001",
       RXCDRPHRESET_TIME => B"00001",
-      RXCDR_CFG => X"03000023FF40200020",
+      RXCDR_CFG => X"03000023FF20400020",
       RXCDR_FR_RESET_ON_EIDLE => '0',
       RXCDR_HOLD_DURING_EIDLE => '0',
       RXCDR_LOCK_CFG => B"010101",
@@ -4113,7 +4129,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       RXLPM_HF_CFG => B"00000011110000",
       RXLPM_LF_CFG => B"00000011110000",
       RXOOB_CFG => B"0000110",
-      RXOUT_DIV => 2,
+      RXOUT_DIV => 1,
       RXPCSRESET_TIME => B"00001",
       RXPHDLY_CFG => X"084020",
       RXPH_CFG => X"000000",
@@ -4177,7 +4193,7 @@ gtxe2_i: unisim.vcomponents.GTXE2_CHANNEL
       TXDLY_LCFG => X"030",
       TXDLY_TAP_CFG => X"0000",
       TXGEARBOX_EN => "TRUE",
-      TXOUT_DIV => 2,
+      TXOUT_DIV => 1,
       TXPCSRESET_TIME => B"00001",
       TXPHDLY_CFG => X"084020",
       TXPH_CFG => X"0780",
@@ -4477,6 +4493,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH is
@@ -5019,6 +5037,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAM
     \out\ : in STD_LOGIC;
     tempData : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B is
@@ -6963,6 +6983,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STAND
     CHANNEL_UP_RX_IF_reg : in STD_LOGIC;
     extend_cc_r : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE is
@@ -7795,6 +7817,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_D
     fifo_dout_i : in STD_LOGIC_VECTOR ( 65 downto 0 );
     lane_up_flop_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC is
@@ -9349,6 +9373,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_G
     \TX_PE_DATA_reg[59]\ : in STD_LOGIC;
     \TX_PE_DATA_reg[60]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN is
@@ -10173,6 +10199,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
     extend_cc_r_reg_0 : in STD_LOGIC;
     s_axi_tx_tvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM is
@@ -10316,6 +10344,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
     channel_up_tx_if : in STD_LOGIC;
     s_axi_tx_tdata : in STD_LOGIC_VECTOR ( 0 to 63 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH is
@@ -11518,6 +11548,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_s
     rxheadervalid_i : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync is
@@ -25559,6 +25591,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_commo
     MMCM_RESET_reg : in STD_LOGIC;
     ANY_VLD_BTF_FLAG : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc is
@@ -25620,6 +25654,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_co
     gt_refclk1_out : in STD_LOGIC;
     \out\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper is
@@ -25736,6 +25772,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_s
     pma_init : in STD_LOGIC;
     \out\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync is
@@ -30073,6 +30111,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
     new_gtx_rx_pcsreset_comb_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     illegal_btf_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING is
@@ -34899,6 +34939,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBA
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     soft_err_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC is
@@ -34977,6 +35019,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_
     rx_lossofsync_i : in STD_LOGIC;
     reset_lanes_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM is
@@ -35402,6 +35446,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI
     CPLL_RESET_reg : in STD_LOGIC;
     gt_cpllreset_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT is
@@ -35470,6 +35516,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET
     tx_reset_i : in STD_LOGIC;
     gen_na_idles_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC is
@@ -35572,6 +35620,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     fsm_resetdone_to_new_gtx_rx_comb : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM is
@@ -36709,7 +36759,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[11]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFE0000"
+      INIT => X"FFFF0001"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36721,7 +36771,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[12]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36769,7 +36819,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[16]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFE0000"
+      INIT => X"FFFF0001"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36781,7 +36831,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[17]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36805,7 +36855,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[19]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFE0000"
+      INIT => X"FFFF0001"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36829,7 +36879,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[20]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -36985,13 +37035,13 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[31]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFEFF"
+      INIT => X"FFFFFFFB"
     )
         port map (
       I0 => rx_cdrlock_counter(10),
       I1 => rx_cdrlock_counter(11),
-      I2 => rx_cdrlock_counter(9),
-      I3 => rx_cdrlock_counter(8),
+      I2 => rx_cdrlock_counter(8),
+      I3 => rx_cdrlock_counter(9),
       I4 => \rx_cdrlock_counter[31]_i_6_n_0\,
       O => \rx_cdrlock_counter[31]_i_2_n_0\
     );
@@ -37021,30 +37071,30 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[31]_i_5\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFEFF"
+      INIT => X"FFFFFBFF"
     )
         port map (
       I0 => rx_cdrlock_counter(18),
       I1 => rx_cdrlock_counter(19),
-      I2 => rx_cdrlock_counter(16),
-      I3 => rx_cdrlock_counter(17),
+      I2 => rx_cdrlock_counter(17),
+      I3 => rx_cdrlock_counter(16),
       I4 => \rx_cdrlock_counter[31]_i_9_n_0\,
       O => \rx_cdrlock_counter[31]_i_5_n_0\
     );
 \rx_cdrlock_counter[31]_i_6\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFD"
+      INIT => X"FFFE"
     )
         port map (
-      I0 => rx_cdrlock_counter(12),
-      I1 => rx_cdrlock_counter(13),
+      I0 => rx_cdrlock_counter(13),
+      I1 => rx_cdrlock_counter(12),
       I2 => rx_cdrlock_counter(15),
       I3 => rx_cdrlock_counter(14),
       O => \rx_cdrlock_counter[31]_i_6_n_0\
     );
 \rx_cdrlock_counter[31]_i_7\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFE"
+      INIT => X"FFEF"
     )
         port map (
       I0 => rx_cdrlock_counter(5),
@@ -37066,11 +37116,11 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[31]_i_9\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFD"
+      INIT => X"FFFE"
     )
         port map (
-      I0 => rx_cdrlock_counter(20),
-      I1 => rx_cdrlock_counter(21),
+      I0 => rx_cdrlock_counter(21),
+      I1 => rx_cdrlock_counter(20),
       I2 => rx_cdrlock_counter(23),
       I3 => rx_cdrlock_counter(22),
       O => \rx_cdrlock_counter[31]_i_9_n_0\
@@ -37125,7 +37175,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[7]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFE0000"
+      INIT => X"FFFF0001"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -37137,7 +37187,7 @@ rx_cdrlock_counter0_carry_i_4: unisim.vcomponents.LUT1
     );
 \rx_cdrlock_counter[8]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF0001"
+      INIT => X"FFFE0000"
     )
         port map (
       I0 => \rx_cdrlock_counter[31]_i_2_n_0\,
@@ -39061,6 +39111,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM is
@@ -39089,6 +39141,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPO
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     stg5_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC is
@@ -39307,6 +39361,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
     \dly_gt_rst_r_reg[18]\ : in STD_LOGIC;
     ack_flag : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM is
@@ -42250,6 +42306,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
     s_axi_tx_tvalid : in STD_LOGIC;
     s_axi_tx_tdata : in STD_LOGIC_VECTOR ( 0 to 63 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM is
@@ -42356,6 +42414,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_commo
     rx_cdrlocked_reg : in STD_LOGIC;
     cb_bit_err_out : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc is
@@ -42758,6 +42818,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AUROR
     \TX_PE_DATA_reg[59]\ : in STD_LOGIC;
     \TX_PE_DATA_reg[60]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE is
@@ -42936,6 +42998,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPP
     illegal_btf_i : in STD_LOGIC;
     tempData : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER is
@@ -45236,6 +45300,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core 
     s_axi_tx_tvalid : in STD_LOGIC;
     s_axi_tx_tdata : in STD_LOGIC_VECTOR ( 0 to 63 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_core";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core is
@@ -46006,6 +46072,8 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_suppo
   );
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_support : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_support : entity is "b2000t_c2c_bram_aurora_64b66b_0_0_support";
 end b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_support;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_support is
@@ -46192,7 +46260,7 @@ entity b2000t_c2c_bram_aurora_64b66b_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration";
+  attribute X_CORE_INFO of b2000t_c2c_bram_aurora_64b66b_0_0 : entity is "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double6.25Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration";
 end b2000t_c2c_bram_aurora_64b66b_0_0;
 
 architecture STRUCTURE of b2000t_c2c_bram_aurora_64b66b_0_0 is

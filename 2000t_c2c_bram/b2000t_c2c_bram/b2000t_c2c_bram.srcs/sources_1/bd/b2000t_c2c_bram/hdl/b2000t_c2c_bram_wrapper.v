@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Thu Jun 15 16:14:39 2017
+//Date        : Fri Jun 16 10:37:10 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram_wrapper.bd
 //Design      : b2000t_c2c_bram_wrapper
@@ -20,7 +20,6 @@ module b2000t_c2c_bram_wrapper
     GT_SERIAL_TX_txp,
     INIT_DIFF_CLK_clk_n,
     INIT_DIFF_CLK_clk_p,
-    aurora_pma_init_in,
     axi_c2c_config_error_out,
     axi_c2c_link_status_out,
     axi_c2c_multi_bit_error_out,
@@ -37,7 +36,6 @@ module b2000t_c2c_bram_wrapper
   output [0:0]GT_SERIAL_TX_txp;
   input INIT_DIFF_CLK_clk_n;
   input INIT_DIFF_CLK_clk_p;
-  input aurora_pma_init_in;
   output axi_c2c_config_error_out;
   output axi_c2c_link_status_out;
   output axi_c2c_multi_bit_error_out;
@@ -55,7 +53,6 @@ module b2000t_c2c_bram_wrapper
   wire [0:0]GT_SERIAL_TX_txp;
   wire INIT_DIFF_CLK_clk_n;
   wire INIT_DIFF_CLK_clk_p;
-  wire aurora_pma_init_in;
   wire axi_c2c_config_error_out;
   wire axi_c2c_link_status_out;
   wire axi_c2c_multi_bit_error_out;
@@ -74,7 +71,6 @@ module b2000t_c2c_bram_wrapper
         .GT_SERIAL_TX_txp(GT_SERIAL_TX_txp),
         .INIT_DIFF_CLK_clk_n(INIT_DIFF_CLK_clk_n),
         .INIT_DIFF_CLK_clk_p(INIT_DIFF_CLK_clk_p),
-        .aurora_pma_init_in(aurora_pma_init_in),
         .axi_c2c_config_error_out(axi_c2c_config_error_out),
         .axi_c2c_link_status_out(axi_c2c_link_status_out),
         .axi_c2c_multi_bit_error_out(axi_c2c_multi_bit_error_out),

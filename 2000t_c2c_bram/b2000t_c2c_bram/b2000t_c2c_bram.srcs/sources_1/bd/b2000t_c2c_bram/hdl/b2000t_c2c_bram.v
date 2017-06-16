@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Thu Jun 15 16:14:38 2017
+//Date        : Fri Jun 16 10:37:10 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram.bd
 //Design      : b2000t_c2c_bram
@@ -21,7 +21,6 @@ module b2000t_c2c_bram
     GT_SERIAL_TX_txp,
     INIT_DIFF_CLK_clk_n,
     INIT_DIFF_CLK_clk_p,
-    aurora_pma_init_in,
     axi_c2c_config_error_out,
     axi_c2c_link_status_out,
     axi_c2c_multi_bit_error_out,
@@ -38,7 +37,6 @@ module b2000t_c2c_bram
   output [0:0]GT_SERIAL_TX_txp;
   input INIT_DIFF_CLK_clk_n;
   input INIT_DIFF_CLK_clk_p;
-  input aurora_pma_init_in;
   output axi_c2c_config_error_out;
   output axi_c2c_link_status_out;
   output axi_c2c_multi_bit_error_out;
@@ -190,7 +188,7 @@ module b2000t_c2c_bram
   wire jtag_axi_0_M_AXI_WVALID;
   wire [0:0]rst_clk_wiz_100M_interconnect_aresetn;
   wire [0:0]rst_clk_wiz_100M_peripheral_aresetn;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire vio_0_probe_out0;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]vio_0_probe_out0;
   wire [0:0]xlconstant_0_dout;
 
   assign CLK_IN1_D_1_CLK_N = CLK_IN1_D_clk_n;
@@ -209,7 +207,6 @@ module b2000t_c2c_bram
   assign axi_c2c_multi_bit_error_out = axi_chip2chip_0_axi_c2c_multi_bit_error_out;
   assign ext_reset_out = aux_reset_in_1;
   assign pma_init_out[0] = vio_0_probe_out0;
-  assign vio_0_probe_out0 = aurora_pma_init_in;
   b2000t_c2c_bram_aurora_64b66b_0_0 aurora_64b66b_0
        (.channel_up(aurora_64b66b_0_channel_up),
         .drp_clk_in(clk_wiz_clk_out1),
@@ -559,7 +556,8 @@ module b2000t_c2c_bram
         .probe_in0(clk_wiz_locked),
         .probe_in1(axi_chip2chip_0_axi_c2c_multi_bit_error_out),
         .probe_in2(axi_chip2chip_0_axi_c2c_config_error_out),
-        .probe_in3(axi_chip2chip_0_axi_c2c_link_status_out));
+        .probe_in3(axi_chip2chip_0_axi_c2c_link_status_out),
+        .probe_out0(vio_0_probe_out0));
   b2000t_c2c_bram_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
 endmodule

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Jun 13 15:48:14 2017
+-- Date        : Fri Jun 16 10:39:00 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_clk_wiz_0 -prefix
---               b2000t_c2c_bram_clk_wiz_0_ b2000t_c2c_bram_clk_wiz_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_clk_wiz_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,6 +22,8 @@ entity b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz is
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz : entity is "b2000t_c2c_bram_clk_wiz_0_clk_wiz";
 end b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz;
 
 architecture STRUCTURE of b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz is
@@ -80,12 +82,12 @@ clkout1_buf: unisim.vcomponents.BUFG
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 10.000000,
+      CLKFBOUT_MULT_F => 19.875000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
       CLKIN1_PERIOD => 10.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 10.000000,
+      CLKOUT0_DIVIDE_F => 6.625000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
@@ -115,7 +117,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKOUT6_PHASE => 0.000000,
       CLKOUT6_USE_FINE_PS => false,
       COMPENSATION => "ZHOLD",
-      DIVCLK_DIVIDE => 1,
+      DIVCLK_DIVIDE => 2,
       IS_CLKINSEL_INVERTED => '0',
       IS_PSEN_INVERTED => '0',
       IS_PSINCDEC_INVERTED => '0',

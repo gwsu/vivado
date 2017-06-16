@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 15 16:14:52 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun 16 10:37:27 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="virtex7" DEVICE="7v2000t" NAME="b2000t_c2c_bram" PACKAGE="flg1925" SPEEDGRADE="-1"/>
 
@@ -14,14 +14,9 @@
     <PORT DIR="I" NAME="CLK_IN1_D_clk_p" SIGIS="undef"/>
     <PORT DIR="I" NAME="GT_DIFF_REFCLK1_clk_n" SIGIS="undef"/>
     <PORT DIR="I" NAME="GT_DIFF_REFCLK1_clk_p" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="0" NAME="pma_init_out" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_aurora_pma_init_in">
+    <PORT DIR="O" LEFT="0" NAME="pma_init_out" RIGHT="0" SIGIS="undef" SIGNAME="vio_0_probe_out0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="External_Ports" PORT="aurora_pma_init_in"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="axi_c2c_multi_bit_error_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_multi_bit_error_out">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_chip2chip_0" PORT="axi_c2c_multi_bit_error_out"/>
+        <CONNECTION INSTANCE="vio_0" PORT="probe_out0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="axi_c2c_link_status_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_link_status_out">
@@ -34,17 +29,15 @@
         <CONNECTION INSTANCE="axi_chip2chip_0" PORT="axi_c2c_config_error_out"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="aurora_pma_init_in" SIGIS="rst" SIGNAME="External_Ports_aurora_pma_init_in">
+    <PORT DIR="O" NAME="axi_c2c_multi_bit_error_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_multi_bit_error_out">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="External_Ports" PORT="pma_init_out"/>
-        <CONNECTION INSTANCE="axi_chip2chip_0" PORT="aurora_pma_init_in"/>
-        <CONNECTION INSTANCE="system_ila" PORT="probe1"/>
+        <CONNECTION INSTANCE="axi_chip2chip_0" PORT="axi_c2c_multi_bit_error_out"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="ext_reset_in" SIGIS="rst" SIGNAME="External_Ports_ext_reset_in">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="system_ila" PORT="probe0"/>
         <CONNECTION INSTANCE="External_Ports" PORT="ext_reset_out"/>
+        <CONNECTION INSTANCE="system_ila" PORT="probe0"/>
         <CONNECTION INSTANCE="rst_clk_wiz_100M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
@@ -132,10 +125,10 @@
         <PARAMETER NAME="c_user_k" VALUE="false"/>
         <PARAMETER NAME="c_example_simulation" VALUE="false"/>
         <PARAMETER NAME="c_use_chipscope" VALUE="true"/>
-        <PARAMETER NAME="c_line_rate" VALUE="3125.0"/>
+        <PARAMETER NAME="c_line_rate" VALUE="6250.0"/>
         <PARAMETER NAME="c_refclk_frequency" VALUE="125000.0"/>
-        <PARAMETER NAME="c_init_clk" VALUE="100"/>
-        <PARAMETER NAME="drp_freq" VALUE="100.0"/>
+        <PARAMETER NAME="c_init_clk" VALUE="100.0"/>
+        <PARAMETER NAME="drp_freq" VALUE="150.0"/>
         <PARAMETER NAME="c_gt_loc_1" VALUE="X"/>
         <PARAMETER NAME="c_gt_loc_2" VALUE="X"/>
         <PARAMETER NAME="c_gt_loc_3" VALUE="X"/>
@@ -194,8 +187,8 @@
         <PARAMETER NAME="c_cpll_fbdiv" VALUE="5"/>
         <PARAMETER NAME="c_cpll_fbdiv_45" VALUE="5"/>
         <PARAMETER NAME="c_cpll_refclk_div" VALUE="1"/>
-        <PARAMETER NAME="c_rxoutdiv" VALUE="2"/>
-        <PARAMETER NAME="c_txoutdiv" VALUE="2"/>
+        <PARAMETER NAME="c_rxoutdiv" VALUE="1"/>
+        <PARAMETER NAME="c_txoutdiv" VALUE="1"/>
         <PARAMETER NAME="c_qpll_fbdiv_ratio" VALUE="16"/>
         <PARAMETER NAME="c_qpll_refclk_div" VALUE="1"/>
         <PARAMETER NAME="c_user_interface" VALUE="axi4_stream"/>
@@ -229,10 +222,10 @@
         <PARAMETER NAME="CHANNEL_ENABLE" VALUE="X0Y0"/>
         <PARAMETER NAME="C_GT_TYPE" VALUE="gtx"/>
         <PARAMETER NAME="C_AURORA_LANES" VALUE="1"/>
-        <PARAMETER NAME="C_LINE_RATE" VALUE="3.125"/>
+        <PARAMETER NAME="C_LINE_RATE" VALUE="6.25"/>
         <PARAMETER NAME="C_REFCLK_FREQUENCY" VALUE="125.000"/>
-        <PARAMETER NAME="C_INIT_CLK" VALUE="100"/>
-        <PARAMETER NAME="DRP_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_INIT_CLK" VALUE="100.0"/>
+        <PARAMETER NAME="DRP_FREQ" VALUE="150.0"/>
         <PARAMETER NAME="C_COLUMN_USED" VALUE="left"/>
         <PARAMETER NAME="C_UCOLUMN_USED" VALUE="right"/>
         <PARAMETER NAME="C_USER_K" VALUE="false"/>
@@ -327,8 +320,8 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="lane_up" RIGHT="0" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="97656250" DIR="O" NAME="tx_out_clk" SIGIS="clk"/>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="drp_clk_in" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="195312500" DIR="O" NAME="tx_out_clk" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="drp_clk_in" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -367,13 +360,13 @@
         <PORT DIR="O" NAME="link_reset_out" SIGIS="rst"/>
         <PORT DIR="I" NAME="gt_refclk1_p" SIGIS="undef"/>
         <PORT DIR="I" NAME="gt_refclk1_n" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="48828125" DIR="O" NAME="user_clk_out" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
+        <PORT CLKFREQUENCY="97656250" DIR="O" NAME="user_clk_out" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_chip2chip_0" PORT="axi_c2c_phy_clk"/>
             <CONNECTION INSTANCE="system_ila1" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="97656250" DIR="O" NAME="sync_clk_out" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="195312500" DIR="O" NAME="sync_clk_out" SIGIS="clk"/>
         <PORT DIR="I" NAME="init_clk_p" SIGIS="undef"/>
         <PORT DIR="I" NAME="init_clk_n" SIGIS="undef"/>
         <PORT CLKFREQUENCY="0" DIR="O" NAME="gt_qpllclk_quad2_out" SIGIS="clk"/>
@@ -390,7 +383,7 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi_chip2chip_0_AXIS_TX" NAME="USER_DATA_S_AXIS_TX" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="8"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
@@ -409,7 +402,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="aurora_64b66b_0_USER_DATA_M_AXIS_RX" NAME="USER_DATA_M_AXIS_RX" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="8"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
@@ -818,7 +811,7 @@
         <PARAMETER NAME="C_S_AXI_HIGHADDR" VALUE="0x7600FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -1078,7 +1071,7 @@
         <BUSINTERFACE BUSNAME="axi_mem_intercon_M00_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="150000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="2"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="16"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1219,7 +1212,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="m_aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -1376,7 +1369,7 @@
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="axi_c2c_s2m_intr_in" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="3" NAME="axi_c2c_m2s_intr_out" RIGHT="0" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="48828125" DIR="I" NAME="axi_c2c_phy_clk" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
+        <PORT CLKFREQUENCY="97656250" DIR="I" NAME="axi_c2c_phy_clk" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="aurora_64b66b_0" PORT="user_clk_out"/>
           </CONNECTIONS>
@@ -1412,9 +1405,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="aurora_do_cc" SIGIS="undef"/>
-        <PORT DIR="I" NAME="aurora_pma_init_in" SIGIS="rst" SIGNAME="External_Ports_aurora_pma_init_in">
+        <PORT DIR="I" NAME="aurora_pma_init_in" SIGIS="rst" SIGNAME="vio_0_probe_out0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="aurora_pma_init_in"/>
+            <CONNECTION INSTANCE="vio_0" PORT="probe_out0"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aurora_init_clk" SIGIS="clk" SIGNAME="aurora_64b66b_0_init_clk_out">
@@ -1439,20 +1432,20 @@
         </PORT>
         <PORT DIR="O" NAME="axi_c2c_config_error_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_config_error_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vio_0" PORT="probe_in2"/>
             <CONNECTION INSTANCE="External_Ports" PORT="axi_c2c_config_error_out"/>
+            <CONNECTION INSTANCE="vio_0" PORT="probe_in2"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="axi_c2c_link_status_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_link_status_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vio_0" PORT="probe_in3"/>
             <CONNECTION INSTANCE="External_Ports" PORT="axi_c2c_link_status_out"/>
+            <CONNECTION INSTANCE="vio_0" PORT="probe_in3"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="axi_c2c_multi_bit_error_out" SIGIS="undef" SIGNAME="axi_chip2chip_0_axi_c2c_multi_bit_error_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vio_0" PORT="probe_in1"/>
             <CONNECTION INSTANCE="External_Ports" PORT="axi_c2c_multi_bit_error_out"/>
+            <CONNECTION INSTANCE="vio_0" PORT="probe_in1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1460,7 +1453,7 @@
         <BUSINTERFACE BUSNAME="axi_chip2chip_0_m_axi" DATAWIDTH="32" NAME="m_axi" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="150000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1529,7 +1522,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="b2000t_c2c_bram_aurora_64b66b_0_0_user_clk_out"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -1547,7 +1540,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="b2000t_c2c_bram_aurora_64b66b_0_0_user_clk_out"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -1929,152 +1922,6 @@
             <CONNECTION INSTANCE="rst_clk_wiz_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="S00_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_rlast" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_wlast" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_wuser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="S00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_s_axi_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_araddr"/>
@@ -2435,6 +2282,151 @@
             <CONNECTION INSTANCE="jtag_axi_0" PORT="m_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S00_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_rlast" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_wlast" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_chip2chip_0_m_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi_chip2chip_0_m_axi" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -2467,7 +2459,6 @@
             <PORTMAP LOGICAL="WLAST" PHYSICAL="S00_AXI_wlast"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="S00_AXI_wready"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="S00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WUSER" PHYSICAL="S00_AXI_wuser"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="S00_AXI_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
@@ -2887,14 +2878,14 @@
         <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1___100.000______0.000______50.0______130.958_____98.575"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1___150.000______0.000______50.0______143.858____157.402"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="no_CLK_OUT2_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="no_CLK_OUT3_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="no_CLK_OUT4_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
-        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="150.00"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -2915,7 +2906,7 @@
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="150.000"/>
         <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="100.000"/>
@@ -2947,17 +2938,17 @@
         <PARAMETER NAME="C_CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="C_MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="10.000"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="19.875"/>
         <PARAMETER NAME="C_MMCM_CLKIN1_PERIOD" VALUE="10.0"/>
         <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
         <PARAMETER NAME="C_MMCM_CLKOUT4_CASCADE" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_CLOCK_HOLD" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_COMPENSATION" VALUE="ZHOLD"/>
-        <PARAMETER NAME="C_MMCM_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_DIVCLK_DIVIDE" VALUE="2"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_STARTUP_WAIT" VALUE="FALSE"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="10.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="6.625"/>
         <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
@@ -3066,8 +3057,8 @@
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="11"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_POWER_REG" VALUE="FFFF"/>
-        <PARAMETER NAME="C_CLKOUT0_1" VALUE="1145"/>
-        <PARAMETER NAME="C_CLKOUT0_2" VALUE="0000"/>
+        <PARAMETER NAME="C_CLKOUT0_1" VALUE="1082"/>
+        <PARAMETER NAME="C_CLKOUT0_2" VALUE="5c00"/>
         <PARAMETER NAME="C_CLKOUT1_1" VALUE="1041"/>
         <PARAMETER NAME="C_CLKOUT1_2" VALUE="00c0"/>
         <PARAMETER NAME="C_CLKOUT2_1" VALUE="1041"/>
@@ -3077,24 +3068,24 @@
         <PARAMETER NAME="C_CLKOUT4_1" VALUE="1041"/>
         <PARAMETER NAME="C_CLKOUT4_2" VALUE="00c0"/>
         <PARAMETER NAME="C_CLKOUT5_1" VALUE="1041"/>
-        <PARAMETER NAME="C_CLKOUT5_2" VALUE="00c0"/>
+        <PARAMETER NAME="C_CLKOUT5_2" VALUE="14c0"/>
         <PARAMETER NAME="C_CLKOUT6_1" VALUE="1041"/>
-        <PARAMETER NAME="C_CLKOUT6_2" VALUE="00c0"/>
+        <PARAMETER NAME="C_CLKOUT6_2" VALUE="38c0"/>
         <PARAMETER NAME="C_CLKFBOUT_1" VALUE="0000"/>
-        <PARAMETER NAME="C_CLKFBOUT_2" VALUE="0000"/>
-        <PARAMETER NAME="C_DIVCLK" VALUE="1041"/>
-        <PARAMETER NAME="C_LOCK_1" VALUE="03e8"/>
-        <PARAMETER NAME="C_LOCK_2" VALUE="7001"/>
-        <PARAMETER NAME="C_LOCK_3" VALUE="73e9"/>
+        <PARAMETER NAME="C_CLKFBOUT_2" VALUE="7800"/>
+        <PARAMETER NAME="C_DIVCLK" VALUE="0041"/>
+        <PARAMETER NAME="C_LOCK_1" VALUE="020d"/>
+        <PARAMETER NAME="C_LOCK_2" VALUE="7c01"/>
+        <PARAMETER NAME="C_LOCK_3" VALUE="7fe9"/>
         <PARAMETER NAME="C_FILTER_1" VALUE="0800"/>
-        <PARAMETER NAME="C_FILTER_2" VALUE="9190"/>
+        <PARAMETER NAME="C_FILTER_2" VALUE="9890"/>
         <PARAMETER NAME="C_DIVIDE1_AUTO" VALUE="1"/>
-        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="1.0"/>
-        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="1.0"/>
-        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="1.0"/>
-        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="1.0"/>
-        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="1.0"/>
-        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="1.0"/>
+        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="1.5"/>
+        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="1.5"/>
+        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="1.5"/>
+        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="1.5"/>
+        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="1.5"/>
+        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="1.5"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_MMCMBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV1" VALUE="false"/>
@@ -3115,7 +3106,7 @@
         <PARAMETER NAME="C_CLKOUT5_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT6_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT7_MATCHED_ROUTING" VALUE="false"/>
-        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="150.000"/>
         <PARAMETER NAME="C_CLKOUT1_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT2_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_ACTUAL_FREQ" VALUE="100.000"/>
@@ -3198,7 +3189,7 @@
         <PARAMETER NAME="PSEN_PORT" VALUE="psen"/>
         <PARAMETER NAME="PSINCDEC_PORT" VALUE="psincdec"/>
         <PARAMETER NAME="PSDONE_PORT" VALUE="psdone"/>
-        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="150.00"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -3268,9 +3259,9 @@
         <PARAMETER NAME="SS_MOD_TIME" VALUE="0.004"/>
         <PARAMETER NAME="OVERRIDE_MMCM" VALUE="false"/>
         <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
-        <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="2"/>
         <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="10.000"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="19.875"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="10.0"/>
@@ -3281,7 +3272,7 @@
         <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="10.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="6.625"/>
         <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
@@ -3359,8 +3350,8 @@
         <PARAMETER NAME="CDDCREQ_PORT" VALUE="cddcreq"/>
         <PARAMETER NAME="ENABLE_CLKOUTPHY" VALUE="false"/>
         <PARAMETER NAME="CLKOUTPHY_REQUESTED_FREQ" VALUE="600.000"/>
-        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="130.958"/>
-        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="98.575"/>
+        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="143.858"/>
+        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="157.402"/>
         <PARAMETER NAME="CLKOUT2_JITTER" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT3_JITTER" VALUE="0.0"/>
@@ -3387,7 +3378,7 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_chip2chip_0" PORT="m_aclk"/>
             <CONNECTION INSTANCE="rst_clk_wiz_100M" PORT="slowest_sync_clk"/>
@@ -3436,7 +3427,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -3642,7 +3633,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="150000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
@@ -3732,7 +3723,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -7416,7 +7407,7 @@
         <PARAMETER NAME="EDK_SPECIAL" VALUE="MONITOR"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -7426,9 +7417,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="ext_reset_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_aurora_pma_init_in">
+        <PORT DIR="I" LEFT="0" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="vio_0_probe_out0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="aurora_pma_init_in"/>
+            <CONNECTION INSTANCE="vio_0" PORT="probe_out0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXI_awid" RIGHT="0" SIGIS="undef"/>
@@ -7464,7 +7455,7 @@
         <BUSINTERFACE BUSNAME="axi_chip2chip_0_m_axi" DATAWIDTH="32" NAME="SLOT_0_AXI" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="150000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -11171,7 +11162,7 @@
         <PARAMETER NAME="EDK_SPECIAL" VALUE="MONITOR"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="48828125" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
+        <PORT CLKFREQUENCY="97656250" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="aurora_64b66b_0_user_clk_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="aurora_64b66b_0" PORT="user_clk_out"/>
           </CONNECTIONS>
@@ -11194,7 +11185,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="b2000t_c2c_bram_aurora_64b66b_0_0_user_clk_out"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -11214,7 +11205,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="48828125"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="97656250"/>
           <PARAMETER NAME="PHASE" VALUE="0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="b2000t_c2c_bram_aurora_64b66b_0_0_user_clk_out"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -12025,7 +12016,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
+        <PORT CLKFREQUENCY="150000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
@@ -12050,7 +12041,13 @@
             <CONNECTION INSTANCE="axi_chip2chip_0" PORT="axi_c2c_link_status_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="probe_out0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="probe_out0" RIGHT="0" SIGIS="undef" SIGNAME="vio_0_probe_out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pma_init_out"/>
+            <CONNECTION INSTANCE="axi_chip2chip_0" PORT="aurora_pma_init_in"/>
+            <CONNECTION INSTANCE="system_ila" PORT="probe1"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

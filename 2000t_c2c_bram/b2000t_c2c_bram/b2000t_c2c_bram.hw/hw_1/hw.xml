@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7v2000t_0" gui_info=""/>
+  <device name="xc7v2000t_0" gui_info="dashboard1=hw_ila_1[xc7v2000t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7v2000t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_1/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;],dashboard2=hw_ila_2[xc7v2000t_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;xc7v2000t_0/hw_ila_2/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_2/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_2/Settings=ILA_SETTINGS_1;],dashboard3=hw_vios[xc7v2000t_0/hw_vio_1=VIO_PROBES_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7v2000t_0" gui_info="">
       <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
@@ -339,7 +339,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
@@ -553,7 +553,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
@@ -697,7 +697,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_bid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
@@ -861,7 +861,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
@@ -1062,7 +1062,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_wready"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -1125,7 +1125,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="MAP" value="probe1[0]"/>
-        <Option Id="NAME.CUSTOM" value="External_Ports_aurora_pma_init_in"/>
+        <Option Id="NAME.CUSTOM" value="vio_0_probe_out0"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -1454,7 +1454,7 @@
         <net name="b2000t_c2c_bram_i/reset_rtl_1"/>
       </nets>
     </probe>
-    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>

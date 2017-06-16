@@ -67,16 +67,16 @@
 (* DowngradeIPIdentifiedWarnings="yes" *)
  module b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE #
  (
-       parameter   MULT            =   9,
+       parameter   MULT            =   6,
 
        parameter   DIVIDE          =   1,
 
-       parameter   CLK_PERIOD      =   10.240	,
+       parameter   CLK_PERIOD      =   5.120	,
 
-       parameter   OUT0_DIVIDE     =   18,
+       parameter   OUT0_DIVIDE     =   12,
 
-       parameter   OUT1_DIVIDE     =   9,
-       parameter   OUT2_DIVIDE     =   20,
+       parameter   OUT1_DIVIDE     =   6,
+       parameter   OUT2_DIVIDE     =   10,
        parameter   OUT3_DIVIDE     =   8
  )
  (

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Jun 15 12:08:08 2017
+-- Date        : Thu Jun 15 12:08:07 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim
---               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_axi_bram_ctrl_0_0 -prefix
+--               b2000t_c2c_bram_axi_bram_ctrl_0_0_ b2000t_c2c_bram_axi_bram_ctrl_0_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_axi_bram_ctrl_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -43,8 +43,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_SRL_FIFO is
     s_axi_bid : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_SRL_FIFO : entity is "SRL_FIFO";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_SRL_FIFO;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_SRL_FIFO is
@@ -498,8 +496,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_ua_narrow is
     \GEN_NARROW_CNT.narrow_addr_int_reg[1]_2\ : in STD_LOGIC;
     narrow_addr_int : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_ua_narrow : entity is "ua_narrow";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_ua_narrow;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_ua_narrow is
@@ -1035,8 +1031,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_wrap_brst is
     s_axi_aresetn_0 : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_wrap_brst : entity is "wrap_brst";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_wrap_brst;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_wrap_brst is
@@ -2876,8 +2870,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_rd_chnl is
     s_axi_arid : in STD_LOGIC_VECTOR ( 1 downto 0 );
     bram_rddata_b : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_rd_chnl : entity is "rd_chnl";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_rd_chnl;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_rd_chnl is
@@ -7691,8 +7683,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_wr_chnl is
     s_axi_awid : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_wr_chnl : entity is "wr_chnl";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_wr_chnl;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_wr_chnl is
@@ -10271,8 +10261,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_full_axi is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_full_axi : entity is "full_axi";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_full_axi;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_full_axi is
@@ -10379,8 +10367,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl_top is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_awvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl_top : entity is "axi_bram_ctrl_top";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl_top;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl_top is
@@ -10536,8 +10522,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl is
   attribute C_S_AXI_PROTOCOL of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "AXI4";
   attribute C_S_AXI_SUPPORTS_NARROW_BURST : integer;
   attribute C_S_AXI_SUPPORTS_NARROW_BURST of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "axi_bram_ctrl";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "yes";
 end b2000t_c2c_bram_axi_bram_ctrl_0_0_axi_bram_ctrl;

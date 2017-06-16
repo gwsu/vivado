@@ -12,58 +12,56 @@ source b2000t_c2c_bram_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
-add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1262.555 ; gain = 177.867 ; free physical = 89124 ; free virtual = 192276
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1261.555 ; gain = 177.867 ; free physical = 90574 ; free virtual = 194396
 Command: synth_design -top b2000t_c2c_bram_wrapper -part xc7v2000tflg1925-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 124825 
+INFO: Helper process launched with PID 39232 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1361.047 ; gain = 345.863 ; free physical = 89027 ; free virtual = 192165
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.047 ; gain = 344.863 ; free physical = 90508 ; free virtual = 194330
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_wrapper' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:13]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_aurora_64b66b_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_aurora_64b66b_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_aurora_64b66b_0_0' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_aurora_64b66b_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'aurora_64b66b_0' of module 'b2000t_c2c_bram_aurora_64b66b_0_0' requires 35 connections, but only 23 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:213]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_chip2chip_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_axi_chip2chip_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_chip2chip_0_0' (3#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_axi_chip2chip_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axi_chip2chip_0' of module 'b2000t_c2c_bram_axi_chip2chip_0_0' requires 49 connections, but only 47 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:289]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_mem_intercon_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:567]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1QKQ509' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1401]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1QKQ509' (4#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1401]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1HLGBLT' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1659]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1HLGBLT' (5#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1659]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_RX7FM7' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1875]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_RX7FM7' (6#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1875]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_xbar_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_xbar_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_xbar_0' (7#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_xbar_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'xbar' of module 'b2000t_c2c_bram_xbar_0' requires 78 connections, but only 74 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1324]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_mem_intercon_0' (8#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:567]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_blk_mem_gen_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_blk_mem_gen_0_0' (9#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_clk_wiz_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_clk_wiz_0' (10#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_clk_wiz_0_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_jtag_axi_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_jtag_axi_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_jtag_axi_0_0' (11#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_jtag_axi_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_rst_clk_wiz_100M_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' (12#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_rst_clk_wiz_100M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_clk_wiz_100M' of module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' requires 10 connections, but only 7 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:508]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:516]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_system_ila_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_system_ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_system_ila_0' (13#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_system_ila_0_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:548]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_system_ila1_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_system_ila1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_system_ila1_0' (14#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_system_ila1_0_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:557]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_vio_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_vio_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_vio_0_0' (15#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_vio_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'vio_0' of module 'b2000t_c2c_bram_vio_0_0' requires 6 connections, but only 5 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:557]
-INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_xlconstant_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_xlconstant_0_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_xlconstant_0_0' (16#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/realtime/b2000t_c2c_bram_xlconstant_0_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_aurora_64b66b_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_aurora_64b66b_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_aurora_64b66b_0_0' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_aurora_64b66b_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'aurora_64b66b_0' of module 'b2000t_c2c_bram_aurora_64b66b_0_0' requires 35 connections, but only 23 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:210]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_bram_ctrl_0_0' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_chip2chip_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_axi_chip2chip_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_chip2chip_0_0' (3#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_axi_chip2chip_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_chip2chip_0' of module 'b2000t_c2c_bram_axi_chip2chip_0_0' requires 49 connections, but only 47 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:286]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_axi_mem_intercon_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:565]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1QKQ509' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1399]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1QKQ509' (4#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1399]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1HLGBLT' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1657]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1HLGBLT' (5#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1657]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_RX7FM7' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1873]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_RX7FM7' (6#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1873]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_xbar_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_xbar_0' (7#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'b2000t_c2c_bram_xbar_0' requires 78 connections, but only 74 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1322]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_axi_mem_intercon_0' (8#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:565]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_blk_mem_gen_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_blk_mem_gen_0_0' (9#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_clk_wiz_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_clk_wiz_0' (10#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_jtag_axi_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_jtag_axi_0_0' (11#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_rst_clk_wiz_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' (12#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_rst_clk_wiz_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_100M' of module 'b2000t_c2c_bram_rst_clk_wiz_100M_0' requires 10 connections, but only 7 given [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:505]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:513]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_system_ila_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_system_ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_system_ila_0' (13#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_system_ila_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:545]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_system_ila1_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_system_ila1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_system_ila1_0' (14#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_system_ila1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_vio_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_vio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_vio_0_0' (15#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_vio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_xlconstant_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_xlconstant_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_xlconstant_0_0' (16#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/realtime/b2000t_c2c_bram_xlconstant_0_0_stub.v:5]
 INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram' (17#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:13]
 INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_wrapper' (18#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v:12]
 WARNING: [Synth 8-3331] design s01_couplers_imp_RX7FM7 has unconnected port M_ACLK
@@ -79,7 +77,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_1QKQ509 has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_1QKQ509 has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_1QKQ509 has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.523 ; gain = 387.340 ; free physical = 88983 ; free virtual = 192122
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1401.523 ; gain = 386.340 ; free physical = 90465 ; free virtual = 194288
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -89,49 +87,49 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.523 ; gain = 387.340 ; free physical = 88984 ; free virtual = 192123
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1401.523 ; gain = 386.340 ; free physical = 90465 ; free virtual = 194288
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_aurora_64b66b_0_0' instantiated as 'b2000t_c2c_bram_i/aurora_64b66b_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:213]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_axi_bram_ctrl_0_0' instantiated as 'b2000t_c2c_bram_i/axi_bram_ctrl_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:237]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_axi_chip2chip_0_0' instantiated as 'b2000t_c2c_bram_i/axi_chip2chip_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:289]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_blk_mem_gen_0_0' instantiated as 'b2000t_c2c_bram_i/blk_mem_gen_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:447]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_clk_wiz_0' instantiated as 'b2000t_c2c_bram_i/clk_wiz' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:462]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_jtag_axi_0_0' instantiated as 'b2000t_c2c_bram_i/jtag_axi_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:468]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_rst_clk_wiz_100M_0' instantiated as 'b2000t_c2c_bram_i/rst_clk_wiz_100M' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:508]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_system_ila1_0' instantiated as 'b2000t_c2c_bram_i/system_ila1' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:548]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_system_ila_0' instantiated as 'b2000t_c2c_bram_i/system_ila' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:516]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_vio_0_0' instantiated as 'b2000t_c2c_bram_i/vio_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:557]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_xbar_0' instantiated as 'b2000t_c2c_bram_i/axi_mem_intercon/xbar' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1324]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_xlconstant_0_0' instantiated as 'b2000t_c2c_bram_i/xlconstant_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:563]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_aurora_64b66b_0_0' instantiated as 'b2000t_c2c_bram_i/aurora_64b66b_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:210]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_axi_bram_ctrl_0_0' instantiated as 'b2000t_c2c_bram_i/axi_bram_ctrl_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:234]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_axi_chip2chip_0_0' instantiated as 'b2000t_c2c_bram_i/axi_chip2chip_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:286]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_blk_mem_gen_0_0' instantiated as 'b2000t_c2c_bram_i/blk_mem_gen_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:444]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_clk_wiz_0' instantiated as 'b2000t_c2c_bram_i/clk_wiz' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:459]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_jtag_axi_0_0' instantiated as 'b2000t_c2c_bram_i/jtag_axi_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:465]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_rst_clk_wiz_100M_0' instantiated as 'b2000t_c2c_bram_i/rst_clk_wiz_100M' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:505]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_system_ila1_0' instantiated as 'b2000t_c2c_bram_i/system_ila1' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:545]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_system_ila_0' instantiated as 'b2000t_c2c_bram_i/system_ila' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:513]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_vio_0_0' instantiated as 'b2000t_c2c_bram_i/vio_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:554]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_xbar_0' instantiated as 'b2000t_c2c_bram_i/axi_mem_intercon/xbar' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:1322]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'b2000t_c2c_bram_xlconstant_0_0' instantiated as 'b2000t_c2c_bram_i/xlconstant_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v:561]
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp/b2000t_c2c_bram_axi_chip2chip_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp/b2000t_c2c_bram_axi_chip2chip_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_3/b2000t_c2c_bram_blk_mem_gen_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/blk_mem_gen_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_3/b2000t_c2c_bram_blk_mem_gen_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/blk_mem_gen_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_4/b2000t_c2c_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_4/b2000t_c2c_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_6/b2000t_c2c_bram_rst_clk_wiz_100M_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_6/b2000t_c2c_bram_rst_clk_wiz_100M_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_7/b2000t_c2c_bram_vio_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_7/b2000t_c2c_bram_vio_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_8/b2000t_c2c_bram_system_ila_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_8/b2000t_c2c_bram_system_ila_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_9/b2000t_c2c_bram_jtag_axi_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_9/b2000t_c2c_bram_jtag_axi_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_10/b2000t_c2c_bram_xbar_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_mem_intercon/xbar'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_10/b2000t_c2c_bram_xbar_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_mem_intercon/xbar'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_11/b2000t_c2c_bram_system_ila1_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila1'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_11/b2000t_c2c_bram_system_ila1_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila1'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_12/b2000t_c2c_bram_xlconstant_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/xlconstant_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_12/b2000t_c2c_bram_xlconstant_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/xlconstant_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp/b2000t_c2c_bram_axi_chip2chip_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp/b2000t_c2c_bram_axi_chip2chip_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_3/b2000t_c2c_bram_blk_mem_gen_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_3/b2000t_c2c_bram_blk_mem_gen_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/blk_mem_gen_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_4/b2000t_c2c_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_4/b2000t_c2c_bram_axi_bram_ctrl_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_6/b2000t_c2c_bram_rst_clk_wiz_100M_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_6/b2000t_c2c_bram_rst_clk_wiz_100M_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_7/b2000t_c2c_bram_vio_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_7/b2000t_c2c_bram_vio_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_8/b2000t_c2c_bram_system_ila_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_8/b2000t_c2c_bram_system_ila_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_9/b2000t_c2c_bram_jtag_axi_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_9/b2000t_c2c_bram_jtag_axi_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_10/b2000t_c2c_bram_xbar_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_10/b2000t_c2c_bram_xbar_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/axi_mem_intercon/xbar'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_11/b2000t_c2c_bram_system_ila1_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila1'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_11/b2000t_c2c_bram_system_ila1_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/system_ila1'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_12/b2000t_c2c_bram_xlconstant_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/xlconstant_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_12/b2000t_c2c_bram_xlconstant_0_0_in_context.xdc] for cell 'b2000t_c2c_bram_i/xlconstant_0'
 Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc]
 WARNING: [Constraints 18-619] A clock with name 'CLK_IN1_D_clk_p' already exists, overwriting the previous clock with the same name. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc:38]
 Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc]
@@ -144,34 +142,39 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2149.855 ; gain = 0.000 ; free physical = 87668 ; free virtual = 190807
-WARNING: [Timing 38-316] Clock period '20.480' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/axi_chip2chip_0' at clock pin 'axi_c2c_phy_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2149.848 ; gain = 0.000 ; free physical = 89199 ; free virtual = 193057
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/axi_bram_ctrl_0' at clock pin 's_axi_aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.480' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/axi_chip2chip_0' at clock pin 'axi_c2c_phy_clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/jtag_axi_0' at clock pin 'aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/rst_clk_wiz_100M' at clock pin 'slowest_sync_clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/vio_0' at clock pin 'clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'b2000t_c2c_bram_i/axi_mem_intercon/xbar' at clock pin 'aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87668 ; free virtual = 190807
+Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 89175 ; free virtual = 193033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87668 ; free virtual = 190807
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 89175 ; free virtual = 193033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 6).
-Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 7).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 8).
-Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 9).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 10).
-Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-124664-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for INIT_DIFF_CLK_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_2/b2000t_c2c_bram_aurora_64b66b_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_clk_n. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_clk_p. (constraint file  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/.Xil/Vivado-39209-HyperSilicon/dcp_5/b2000t_c2c_bram_clk_wiz_0_in_context.xdc, line 6).
 Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i/aurora_64b66b_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
@@ -187,10 +190,10 @@ Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i/system_ila1. (const
 Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i/vio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for b2000t_c2c_bram_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87668 ; free virtual = 190807
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 89175 ; free virtual = 193034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87668 ; free virtual = 190807
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 89175 ; free virtual = 193034
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -231,7 +234,7 @@ WARNING: [Synth 8-3331] design b2000t_c2c_bram_axi_mem_intercon_0 has unconnecte
 WARNING: [Synth 8-3331] design b2000t_c2c_bram_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design b2000t_c2c_bram_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87661 ; free virtual = 190800
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 89164 ; free virtual = 193022
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,10 +256,10 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'b2000t_c2c_bram_i/clk_wiz
 WARNING: [Synth 8-565] redefining clock 'CLK_IN1_D_clk_p'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87646 ; free virtual = 190785
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88719 ; free virtual = 192577
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87646 ; free virtual = 190785
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88719 ; free virtual = 192577
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -268,7 +271,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88717 ; free virtual = 192576
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,7 +295,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -305,7 +308,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,25 +320,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -375,7 +378,7 @@ Report Cell Usage:
 |10    |b2000t_c2c_bram_vio_0_0            |     1|
 |11    |b2000t_c2c_bram_xbar_0             |     1|
 |12    |b2000t_c2c_bram_xlconstant_0_0     |     1|
-|13    |IBUF                               |     4|
+|13    |IBUF                               |     3|
 |14    |OBUF                               |     7|
 +------+-----------------------------------+------+
 
@@ -383,18 +386,18 @@ Report Instance Areas:
 +------+---------------------+-----------------------------------+------+
 |      |Instance             |Module                             |Cells |
 +------+---------------------+-----------------------------------+------+
-|1     |top                  |                                   |   951|
+|1     |top                  |                                   |   950|
 |2     |  b2000t_c2c_bram_i  |b2000t_c2c_bram                    |   940|
 |3     |    axi_mem_intercon |b2000t_c2c_bram_axi_mem_intercon_0 |   260|
 +------+---------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88714 ; free virtual = 192572
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2149.855 ; gain = 101.473 ; free physical = 87636 ; free virtual = 190775
-Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.855 ; gain = 1134.672 ; free physical = 87636 ; free virtual = 190775
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2149.848 ; gain = 101.473 ; free physical = 88714 ; free virtual = 192572
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2149.848 ; gain = 1134.664 ; free physical = 88715 ; free virtual = 192573
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -402,9 +405,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 2149.855 ; gain = 887.301 ; free physical = 87613 ; free virtual = 190752
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 2149.848 ; gain = 888.293 ; free physical = 88646 ; free virtual = 192469
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/b2000t_c2c_bram_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2149.855 ; gain = 0.000 ; free physical = 87612 ; free virtual = 190751
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 15 16:16:10 2017...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2149.848 ; gain = 0.000 ; free physical = 88643 ; free virtual = 192466
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 10:40:16 2017...

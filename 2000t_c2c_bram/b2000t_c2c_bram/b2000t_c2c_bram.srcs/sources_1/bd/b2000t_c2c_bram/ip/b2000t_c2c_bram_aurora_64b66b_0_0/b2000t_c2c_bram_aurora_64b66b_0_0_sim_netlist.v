@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Tue Jun 13 19:04:43 2017
+// Date        : Fri Jun 16 10:38:57 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode funcsim -rename_top b2000t_c2c_bram_aurora_64b66b_0_0 -prefix
-//               b2000t_c2c_bram_aurora_64b66b_0_0_ b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_aurora_64b66b_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double3.125Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "aurora_64b66b_v11_1_3, Coregen v14.3_ip3, Number of lanes = 1, Line rate is double6.25Gbps, Reference Clock is double125.0MHz, Interface is Streaming, Flow Control is None and is operating in DUPLEX configuration" *) 
 (* NotValidForBitStream *)
 module b2000t_c2c_bram_aurora_64b66b_0_0
    (s_axi_tx_tdata,
@@ -169,6 +169,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0
         .user_clk_out(user_clk_out));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AURORA_LANE
    (\lane_up[0] ,
     tx_reset_i,
@@ -555,6 +556,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_AUROR
         .wait_for_lane_up_r_reg(wait_for_lane_up_r_reg));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK_SYNC_SM
    (D,
     blocksync_out_i,
@@ -1413,6 +1415,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_BLOCK
         .R(system_reset_r2));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_BOND_GEN
    (gen_ch_bond_i,
     TX_HEADER_0_reg,
@@ -1586,6 +1589,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_ERR_DETECT
    (hard_err,
     hard_err_i,
@@ -1606,6 +1610,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANNEL_INIT_SM
    (SR,
     \idle_xmit_cntr_reg[5]_0 ,
@@ -2088,6 +2093,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CHANN
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_CORRECTION_CHANNEL_BONDING
    (RX_HEADER_1_REG_reg,
     do_rd_en_i,
@@ -5864,6 +5870,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
         .R(stg31_reg));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK_MODULE
    (in0,
     sync_clk_i_0,
@@ -5933,20 +5940,20 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(9.000000),
+    .CLKFBOUT_MULT_F(6.000000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
-    .CLKIN1_PERIOD(10.240000),
+    .CLKIN1_PERIOD(5.120000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(18.000000),
+    .CLKOUT0_DIVIDE_F(12.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(9),
+    .CLKOUT1_DIVIDE(6),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
-    .CLKOUT2_DIVIDE(20),
+    .CLKOUT2_DIVIDE(10),
     .CLKOUT2_DUTY_CYCLE(0.500000),
     .CLKOUT2_PHASE(0.000000),
     .CLKOUT2_USE_FINE_PS("FALSE"),
@@ -6033,6 +6040,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_CLOCK
         .O(user_clk_i_0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCRAMBLER_64B66B
    (D,
     CB_detect0,
@@ -6995,6 +7003,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_DESCR
         .O(D[0]));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_DETECT
    (soft_err_i,
     hard_err_i,
@@ -7039,6 +7048,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_ERR_D
         .O(ready_r_reg0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBAL_LOGIC
    (SR,
     gen_na_idles_i,
@@ -7178,6 +7188,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GLOBA
         .wait_for_lane_up_r0(wait_for_lane_up_r0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_GTX" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
    (in0,
     drprdy_out,
@@ -7789,7 +7800,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .RXBUF_THRESH_UNDFLW(4),
     .RXCDRFREQRESET_TIME(5'b00001),
     .RXCDRPHRESET_TIME(5'b00001),
-    .RXCDR_CFG(72'h03000023FF40200020),
+    .RXCDR_CFG(72'h03000023FF20400020),
     .RXCDR_FR_RESET_ON_EIDLE(1'b0),
     .RXCDR_HOLD_DURING_EIDLE(1'b0),
     .RXCDR_LOCK_CFG(6'b010101),
@@ -7803,7 +7814,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .RXLPM_HF_CFG(14'b00000011110000),
     .RXLPM_LF_CFG(14'b00000011110000),
     .RXOOB_CFG(7'b0000110),
-    .RXOUT_DIV(2),
+    .RXOUT_DIV(1),
     .RXPCSRESET_TIME(5'b00001),
     .RXPHDLY_CFG(24'h084020),
     .RXPH_CFG(24'h000000),
@@ -7867,7 +7878,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
     .TXDLY_LCFG(9'h030),
     .TXDLY_TAP_CFG(16'h0000),
     .TXGEARBOX_EN("TRUE"),
-    .TXOUT_DIV(2),
+    .TXOUT_DIV(1),
     .TXPCSRESET_TIME(5'b00001),
     .TXPHDLY_CFG(24'h084020),
     .TXPH_CFG(16'h0780),
@@ -8133,6 +8144,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_GTX
         .TXUSRCLK2(MMCM_RESET_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_INIT_SM
    (\lane_up[0] ,
     rxreset_for_lanes_q_reg,
@@ -8452,6 +8464,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_LANE_
         .rx_polarity_r_reg_0(s_level_out_d1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI_GT
    (in0,
     drprdy_out,
@@ -8622,6 +8635,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_MULTI
         .txuserrdy_t(txuserrdy_t));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET_LOGIC
    (SR,
     wait_for_lane_up_r0,
@@ -8716,6 +8730,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RESET
         .O(wait_for_lane_up_r0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STARTUP_FSM
    (rx_fsm_resetdone_i,
     \rx_cdrlock_counter_reg[31]_0 ,
@@ -9566,7 +9581,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__1_n_6),
         .O(rx_cdrlock_counter_0[10]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[11]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9575,7 +9590,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__1_n_5),
         .O(rx_cdrlock_counter_0[11]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[12]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9611,7 +9626,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__2_n_5),
         .O(rx_cdrlock_counter_0[15]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[16]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9620,7 +9635,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__2_n_4),
         .O(rx_cdrlock_counter_0[16]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[17]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9638,7 +9653,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__3_n_6),
         .O(rx_cdrlock_counter_0[18]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[19]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9656,7 +9671,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry_n_7),
         .O(rx_cdrlock_counter_0[1]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[20]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9773,12 +9788,12 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__6_n_5),
         .O(rx_cdrlock_counter_0[31]));
   LUT5 #(
-    .INIT(32'hFFFFFEFF)) 
+    .INIT(32'hFFFFFFFB)) 
     \rx_cdrlock_counter[31]_i_2 
        (.I0(rx_cdrlock_counter[10]),
         .I1(rx_cdrlock_counter[11]),
-        .I2(rx_cdrlock_counter[9]),
-        .I3(rx_cdrlock_counter[8]),
+        .I2(rx_cdrlock_counter[8]),
+        .I3(rx_cdrlock_counter[9]),
         .I4(\rx_cdrlock_counter[31]_i_6_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_2_n_0 ));
   LUT5 #(
@@ -9800,24 +9815,24 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(\rx_cdrlock_counter[31]_i_8_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_4_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFFFEFF)) 
+    .INIT(32'hFFFFFBFF)) 
     \rx_cdrlock_counter[31]_i_5 
        (.I0(rx_cdrlock_counter[18]),
         .I1(rx_cdrlock_counter[19]),
-        .I2(rx_cdrlock_counter[16]),
-        .I3(rx_cdrlock_counter[17]),
+        .I2(rx_cdrlock_counter[17]),
+        .I3(rx_cdrlock_counter[16]),
         .I4(\rx_cdrlock_counter[31]_i_9_n_0 ),
         .O(\rx_cdrlock_counter[31]_i_5_n_0 ));
   LUT4 #(
-    .INIT(16'hFFFD)) 
+    .INIT(16'hFFFE)) 
     \rx_cdrlock_counter[31]_i_6 
-       (.I0(rx_cdrlock_counter[12]),
-        .I1(rx_cdrlock_counter[13]),
+       (.I0(rx_cdrlock_counter[13]),
+        .I1(rx_cdrlock_counter[12]),
         .I2(rx_cdrlock_counter[15]),
         .I3(rx_cdrlock_counter[14]),
         .O(\rx_cdrlock_counter[31]_i_6_n_0 ));
   LUT4 #(
-    .INIT(16'hFFFE)) 
+    .INIT(16'hFFEF)) 
     \rx_cdrlock_counter[31]_i_7 
        (.I0(rx_cdrlock_counter[5]),
         .I1(rx_cdrlock_counter[4]),
@@ -9833,10 +9848,10 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I3(rx_cdrlock_counter[30]),
         .O(\rx_cdrlock_counter[31]_i_8_n_0 ));
   LUT4 #(
-    .INIT(16'hFFFD)) 
+    .INIT(16'hFFFE)) 
     \rx_cdrlock_counter[31]_i_9 
-       (.I0(rx_cdrlock_counter[20]),
-        .I1(rx_cdrlock_counter[21]),
+       (.I0(rx_cdrlock_counter[21]),
+        .I1(rx_cdrlock_counter[20]),
         .I2(rx_cdrlock_counter[23]),
         .I3(rx_cdrlock_counter[22]),
         .O(\rx_cdrlock_counter[31]_i_9_n_0 ));
@@ -9877,7 +9892,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__0_n_6),
         .O(rx_cdrlock_counter_0[6]));
   LUT5 #(
-    .INIT(32'hFFFE0000)) 
+    .INIT(32'hFFFF0001)) 
     \rx_cdrlock_counter[7]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -9886,7 +9901,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .I4(rx_cdrlock_counter0_carry__0_n_5),
         .O(rx_cdrlock_counter_0[7]));
   LUT5 #(
-    .INIT(32'hFFFF0001)) 
+    .INIT(32'hFFFE0000)) 
     \rx_cdrlock_counter[8]_i_1 
        (.I0(\rx_cdrlock_counter[31]_i_2_n_0 ),
         .I1(\rx_cdrlock_counter[31]_i_3_n_0 ),
@@ -11231,6 +11246,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .R(u_rst_sync_run_phase_align_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM
    (m_axi_rx_tvalid,
     m_axi_rx_tdata,
@@ -11265,6 +11281,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .out(out));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_STREAM_DATAPATH
    (m_axi_rx_tvalid,
     m_axi_rx_tdata,
@@ -11683,6 +11700,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_RX_ST
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAMBLER_64B66B
    (scrambler,
     s_level_out_d1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg,
@@ -13153,6 +13171,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SCRAM
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STANDARD_CC_MODULE
    (do_cc_r_reg0,
     Q,
@@ -13798,6 +13817,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_STAND
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPORT_RESET_LOGIC
    (sysreset_from_support,
     gt_reset_out,
@@ -13960,6 +13980,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SUPPO
         .in0(gt_rst_r));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_DEC
    (rx_pe_data_v_i,
     illegal_btf_i,
@@ -15104,6 +15125,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_D
         .R(\rx_na_idles_cntr[4]_i_1_n_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_GEN
    (D,
     \SCRAMBLED_DATA_OUT_reg[5] ,
@@ -15902,6 +15924,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_SYM_G
         .O(\SCRAMBLED_DATA_OUT_reg[5] [5]));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STARTUP_FSM
    (tx_fsm_resetdone_i,
     stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg,
@@ -17992,6 +18015,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
         .S(\wait_time_cnt[0]_i_1_n_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM
    (gen_cc_i,
     do_cc_r,
@@ -18299,6 +18323,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
         .tx_dst_rdy_n_r_reg(tx_stream_control_sm_i_n_4));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_CONTROL_SM
    (gen_cc_i,
     do_cc_r,
@@ -18381,6 +18406,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_STREAM_DATAPATH
    (\TX_DATA_reg[63] ,
     \TX_DATA_reg[59] ,
@@ -19455,6 +19481,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_TX_ST
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPPER
    (stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg,
     drprdy_out,
@@ -21390,6 +21417,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_WRAPP
         .O(unscrambled_data_i052_out));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_sync
    (RX_NEG_OUT_reg,
     check_polarity_r_reg,
@@ -30211,6 +30239,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_s
         .R(cbcc_reset_cbstg2_rd_clk));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_logic_cbcc
    (cb_bit_err_out,
     in0,
@@ -30285,6 +30314,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_commo
         .R(cbcc_fifo_reset_wr_clk));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_common_reset_cbcc
    (cbcc_fifo_reset_to_fifo_wr_clk_dlyd_reg_0,
     cbcc_fifo_reset_to_fifo_rd_clk,
@@ -30541,6 +30571,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_commo
         .reset_cbcc_comb_reg(reset_cbcc_comb));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_core" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core
    (link_reset_out,
     \lane_up[0] ,
@@ -31068,6 +31099,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_core
         .\txseq_counter_i_reg[1] (b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i_n_92));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_common_wrapper
    (gt_qpllclk_quad2_out,
     gt_qpllrefclk_quad2_out,
@@ -31170,6 +31202,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_gt_co
         .REFCLKOUTMONITOR(NLW_gtxe2_common_i_REFCLKOUTMONITOR_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_sync
    (D,
     pma_init,
@@ -34512,7 +34545,7 @@ module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_rst_s
         .R(1'b0));
 endmodule
 
-(* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "b2000t_c2c_bram_aurora_64b66b_0_0_support" *) 
 module b2000t_c2c_bram_aurora_64b66b_0_0_b2000t_c2c_bram_aurora_64b66b_0_0_support
    (s_axi_tx_tdata,
     s_axi_tx_tvalid,

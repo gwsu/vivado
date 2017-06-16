@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Jun 15 16:20:57 2017
+| Date         : Fri Jun 16 10:45:14 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_io -file b2000t_c2c_bram_wrapper_io_placed.rpt
 | Design       : b2000t_c2c_bram_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            17 |
+|            16 |
 +---------------+
 
 
@@ -52,7 +52,7 @@ Table of Contents
 | A19        |                             | High Performance | IO_L7P_T1_40                 | 3          | User IO       |             |      40 |            |      |                     |                      |           |            |           |          |      |                  |
 | A20        |                             | High Performance | IO_L8N_T1_40                 | 3          | User IO       |             |      40 |            |      |                     |                      |           |            |           |          |      |                  |
 | A21        |                             |                  | GND                          |            | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |
-| A22        | aurora_pma_init_in          | High Performance | IO_L17N_T2_17                | 2          | INPUT         | LVCMOS18    |      17 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |
+| A22        |                             | High Performance | IO_L17N_T2_17                | 2          | User IO       |             |      17 |            |      |                     |                      |           |            |           |          |      |                  |
 | A23        |                             | High Performance | IO_L17P_T2_17                | 2          | User IO       |             |      17 |            |      |                     |                      |           |            |           |          |      |                  |
 | A24        |                             | High Performance | IO_L18N_T2_17                | 2          | User IO       |             |      17 |            |      |                     |                      |           |            |           |          |      |                  |
 | A25        |                             | High Performance | IO_L17N_T2_18                | 2          | User IO       |             |      18 |            |      |                     |                      |           |            |           |          |      |                  |

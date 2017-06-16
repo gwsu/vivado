@@ -163,10 +163,6 @@ CONFIG.FREQ_HZ {125000000} \
   set INIT_DIFF_CLK [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 INIT_DIFF_CLK ]
 
   # Create ports
-  set aurora_pma_init_in [ create_bd_port -dir I -type rst aurora_pma_init_in ]
-  set_property -dict [ list \
-CONFIG.POLARITY {ACTIVE_HIGH} \
- ] $aurora_pma_init_in
   set axi_c2c_config_error_out [ create_bd_port -dir O axi_c2c_config_error_out ]
   set axi_c2c_link_status_out [ create_bd_port -dir O axi_c2c_link_status_out ]
   set axi_c2c_multi_bit_error_out [ create_bd_port -dir O axi_c2c_multi_bit_error_out ]
@@ -177,11 +173,11 @@ CONFIG.POLARITY {ACTIVE_HIGH} \
   # Create instance: aurora_64b66b_0, and set properties
   set aurora_64b66b_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:aurora_64b66b:11.1 aurora_64b66b_0 ]
   set_property -dict [ list \
-CONFIG.C_INIT_CLK {100} \
-CONFIG.C_LINE_RATE {3.125} \
+CONFIG.C_INIT_CLK {100.0} \
+CONFIG.C_LINE_RATE {6.25} \
 CONFIG.C_REFCLK_FREQUENCY {125.000} \
 CONFIG.C_USE_CHIPSCOPE {true} \
-CONFIG.DRP_FREQ {100.0} \
+CONFIG.DRP_FREQ {150.0} \
 CONFIG.SupportLevel {1} \
 CONFIG.drp_mode {Disabled} \
 CONFIG.interface_mode {Streaming} \
@@ -234,14 +230,15 @@ CONFIG.use_bram_block.VALUE_SRC {DEFAULT} \
   set clk_wiz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz ]
   set_property -dict [ list \
 CONFIG.CLKIN1_JITTER_PS {100.0} \
-CONFIG.CLKOUT1_JITTER {130.958} \
-CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
-CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
+CONFIG.CLKOUT1_JITTER {143.858} \
+CONFIG.CLKOUT1_PHASE_ERROR {157.402} \
+CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {150.00} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {19.875} \
 CONFIG.MMCM_CLKIN1_PERIOD {10.0} \
 CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.625} \
 CONFIG.MMCM_COMPENSATION {ZHOLD} \
-CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+CONFIG.MMCM_DIVCLK_DIVIDE {2} \
 CONFIG.PRIM_IN_FREQ {100} \
 CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} \
  ] $clk_wiz
@@ -249,7 +246,6 @@ CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} \
   # Need to retain value_src of defaults
   set_property -dict [ list \
 CONFIG.MMCM_CLKIN2_PERIOD.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F.VALUE_SRC {DEFAULT} \
 CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
  ] $clk_wiz
 
@@ -352,7 +348,7 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net clk_wiz_locked [get_bd_pins clk_wiz/locked] [get_bd_pins rst_clk_wiz_100M/dcm_locked] [get_bd_pins vio_0/probe_in0]
   connect_bd_net -net rst_clk_wiz_100M_interconnect_aresetn [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins rst_clk_wiz_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_chip2chip_0/m_aresetn] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins jtag_axi_0/aresetn] [get_bd_pins rst_clk_wiz_100M/peripheral_aresetn]
-  connect_bd_net -net vio_0_probe_out0 [get_bd_ports aurora_pma_init_in] [get_bd_ports pma_init_out] [get_bd_pins axi_chip2chip_0/aurora_pma_init_in] [get_bd_pins system_ila/probe1]
+  connect_bd_net -net vio_0_probe_out0 [get_bd_ports pma_init_out] [get_bd_pins axi_chip2chip_0/aurora_pma_init_in] [get_bd_pins system_ila/probe1] [get_bd_pins vio_0/probe_out0]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets vio_0_probe_out0]
@@ -366,7 +362,6 @@ HDL_ATTRIBUTE.DEBUG {true} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port aurora_pma_init_in -pg 1 -y 210 -defaultsOSRD
 preplace port axi_c2c_multi_bit_error_out -pg 1 -y 250 -defaultsOSRD
 preplace port axi_c2c_config_error_out -pg 1 -y 210 -defaultsOSRD
 preplace port GT_SERIAL_RX -pg 1 -y -280 -defaultsOSRD
@@ -390,34 +385,34 @@ preplace inst rst_clk_wiz_100M -pg 1 -lvl 4 -y -710 -defaultsOSRD
 preplace inst axi_mem_intercon -pg 1 -lvl 6 -y -510 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y -500 -defaultsOSRD
 preplace inst axi_chip2chip_0 -pg 1 -lvl 4 -y 260 -defaultsOSRD
-preplace netloc aurora_64b66b_0_init_clk_out 1 3 3 760 -390 NJ -390 1890
-preplace netloc clk_wiz_locked 1 2 2 410 -590 710
-preplace netloc axi_chip2chip_0_m_axi 1 3 3 800 -320 1280 180 1920J
-preplace netloc aurora_64b66b_0_user_clk_out 1 3 3 790 -370 NJ -370 1900
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 710
-preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 3 1 730
+preplace netloc aurora_64b66b_0_init_clk_out 1 3 3 780 -390 NJ -390 1900
+preplace netloc clk_wiz_locked 1 2 2 410 -590 730
+preplace netloc axi_chip2chip_0_m_axi 1 3 3 820 -320 1280 180 1930J
+preplace netloc aurora_64b66b_0_user_clk_out 1 3 3 810 -370 NJ -370 1910
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 730
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 3 1 750
 preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 2 5 410J 20 NJ 20 1300 20 NJ 20 2330J
-preplace netloc jtag_axi_0_M_AXI 1 2 4 NJ -600 720J -500 1280J -580 NJ
+preplace netloc jtag_axi_0_M_AXI 1 2 4 NJ -600 740J -500 1280J -580 NJ
 preplace netloc axi_mem_intercon_M00_AXI 1 2 5 400J -800 NJ -800 NJ -800 NJ -800 2330
 preplace netloc CLK_IN1_D_1 1 0 3 NJ -670 NJ -670 N
-preplace netloc vio_0_probe_out0 1 0 7 -70J 70 NJ 70 NJ 70 710 70 NJ 70 NJ 70 NJ
-preplace netloc aurora_64b66b_0_channel_up 1 3 3 750 -400 NJ -400 1880
-preplace netloc GT_SERIAL_RX_1 1 0 5 -70J -340 NJ -340 NJ -340 NJ -340 1320J
-preplace netloc axi_chip2chip_0_AXIS_TX 1 4 2 1340J 200 1950
+preplace netloc vio_0_probe_out0 1 3 4 730 70 NJ 70 NJ 70 NJ
+preplace netloc aurora_64b66b_0_channel_up 1 3 3 770 -400 NJ -400 1890
+preplace netloc GT_SERIAL_RX_1 1 0 5 -90J -340 NJ -340 NJ -340 NJ -340 1320J
+preplace netloc axi_chip2chip_0_AXIS_TX 1 4 2 1340J 200 1960
 preplace netloc xlconstant_0_dout 1 2 1 390
-preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 4 2 NJ -690 1950
-preplace netloc INIT_DIFF_CLK_1 1 0 5 -60J -310 NJ -310 NJ -310 NJ -310 1310J
+preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 4 2 NJ -690 1960
+preplace netloc INIT_DIFF_CLK_1 1 0 5 -80J -310 NJ -310 NJ -310 NJ -310 1310J
 preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 2 5 400J 50 NJ 50 1270 50 NJ 50 2320J
 preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 4 1 1320
-preplace netloc GT_DIFF_REFCLK1_1 1 0 5 NJ 300 NJ 300 NJ 300 720J -150 1300
+preplace netloc GT_DIFF_REFCLK1_1 1 0 5 NJ 300 NJ 300 NJ 300 710J -150 1300
 preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 2 5 390J 30 NJ 30 1290 30 NJ 30 2310J
-preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 5 2 1910 -200 2330J
-preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 3 3 770 -380 NJ -380 1870
-preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 3 3 780 -410 NJ -410 1930
-preplace netloc aux_reset_in_1 1 0 7 -70J -430 NJ -430 NJ -430 740 -430 NJ -430 1940J -360 2330
+preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 5 2 1920 -200 2330J
+preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 3 3 790 -380 NJ -380 1880
+preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 3 3 800 -410 NJ -410 1940
+preplace netloc aux_reset_in_1 1 0 7 -90J -430 NJ -430 NJ -430 760 -430 NJ -430 1950J -360 2330
 preplace netloc axi_chip2chip_0_aurora_reset_pb 1 4 1 1310
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 1 5 0 -420 400 -420 690 -420 1330 -420 1950
-preplace netloc clk_wiz_clk_out1 1 1 5 -10 -360 390 -360 700 -360 1330J -360 1910J
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 1 5 0 -420 400 -420 700 -420 1330 -420 1960
+preplace netloc clk_wiz_clk_out1 1 1 5 -10 -360 390 -360 720 -360 1330J -360 1920J
 levelinfo -pg 1 -110 -30 299 560 1050 1673 2165 2360 -top -960 -bot 1000
 ",
 }

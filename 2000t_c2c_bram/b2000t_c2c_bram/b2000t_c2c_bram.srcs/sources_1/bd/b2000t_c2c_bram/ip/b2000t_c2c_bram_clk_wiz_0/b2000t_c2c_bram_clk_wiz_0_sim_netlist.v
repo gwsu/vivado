@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Tue Jun 13 15:48:14 2017
+// Date        : Fri Jun 16 10:39:00 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode funcsim -rename_top b2000t_c2c_bram_clk_wiz_0 -prefix
-//               b2000t_c2c_bram_clk_wiz_0_ b2000t_c2c_bram_clk_wiz_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_clk_wiz_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,6 +39,7 @@ module b2000t_c2c_bram_clk_wiz_0
         .reset(reset));
 endmodule
 
+(* ORIG_REF_NAME = "b2000t_c2c_bram_clk_wiz_0_clk_wiz" *) 
 module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
    (clk_out1,
     reset,
@@ -99,12 +100,12 @@ module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(10.000000),
+    .CLKFBOUT_MULT_F(19.875000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(10.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(10.000000),
+    .CLKOUT0_DIVIDE_F(6.625000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
@@ -134,7 +135,7 @@ module b2000t_c2c_bram_clk_wiz_0_b2000t_c2c_bram_clk_wiz_0_clk_wiz
     .CLKOUT6_PHASE(0.000000),
     .CLKOUT6_USE_FINE_PS("FALSE"),
     .COMPENSATION("ZHOLD"),
-    .DIVCLK_DIVIDE(1),
+    .DIVCLK_DIVIDE(2),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PSEN_INVERTED(1'b0),
     .IS_PSINCDEC_INVERTED(1'b0),

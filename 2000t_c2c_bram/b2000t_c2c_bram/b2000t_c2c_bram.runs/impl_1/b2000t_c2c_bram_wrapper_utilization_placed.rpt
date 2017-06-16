@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Jun 15 16:20:57 2017
+| Date         : Fri Jun 16 10:45:15 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file b2000t_c2c_bram_wrapper_utilization_placed.rpt -pb b2000t_c2c_bram_wrapper_utilization_placed.pb
 | Design       : b2000t_c2c_bram_wrapper
@@ -35,11 +35,11 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs                 |  6070 |     0 |   1221600 |  0.50 |
-|   LUT as Logic             |  5258 |     0 |   1221600 |  0.43 |
-|   LUT as Memory            |   812 |     0 |    344800 |  0.24 |
+| Slice LUTs                 |  6076 |     0 |   1221600 |  0.50 |
+|   LUT as Logic             |  5263 |     0 |   1221600 |  0.43 |
+|   LUT as Memory            |   813 |     0 |    344800 |  0.24 |
 |     LUT as Distributed RAM |   216 |     0 |           |       |
-|     LUT as Shift Register  |   596 |     0 |           |       |
+|     LUT as Shift Register  |   597 |     0 |           |       |
 | Slice Registers            | 10302 |     0 |   2443200 |  0.42 |
 |   Register as Flip Flop    | 10302 |     0 |   2443200 |  0.42 |
 |   Register as Latch        |     0 |     0 |   2443200 |  0.00 |
@@ -73,26 +73,26 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     | 3038 |     0 |    305400 |  0.99 |
-|   SLICEL                                  | 2116 |     0 |           |       |
-|   SLICEM                                  |  922 |     0 |           |       |
-| LUT as Logic                              | 5258 |     0 |   1221600 |  0.43 |
+| Slice                                     | 3054 |     0 |    305400 |  1.00 |
+|   SLICEL                                  | 2071 |     0 |           |       |
+|   SLICEM                                  |  983 |     0 |           |       |
+| LUT as Logic                              | 5263 |     0 |   1221600 |  0.43 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    | 4370 |       |           |       |
-|   using O5 and O6                         |  888 |       |           |       |
-| LUT as Memory                             |  812 |     0 |    344800 |  0.24 |
+|   using O6 output only                    | 4380 |       |           |       |
+|   using O5 and O6                         |  883 |       |           |       |
+| LUT as Memory                             |  813 |     0 |    344800 |  0.24 |
 |   LUT as Distributed RAM                  |  216 |     0 |           |       |
 |     using O5 output only                  |    0 |       |           |       |
 |     using O6 output only                  |  192 |       |           |       |
 |     using O5 and O6                       |   24 |       |           |       |
-|   LUT as Shift Register                   |  596 |     0 |           |       |
-|     using O5 output only                  |   13 |       |           |       |
-|     using O6 output only                  |  108 |       |           |       |
-|     using O5 and O6                       |  475 |       |           |       |
-| LUT Flip Flop Pairs                       | 3526 |     0 |   1221600 |  0.29 |
-|   fully used LUT-FF pairs                 |  657 |       |           |       |
-|   LUT-FF pairs with one unused LUT output | 2681 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  | 2380 |       |           |       |
+|   LUT as Shift Register                   |  597 |     0 |           |       |
+|     using O5 output only                  |   14 |       |           |       |
+|     using O6 output only                  |  109 |       |           |       |
+|     using O5 and O6                       |  474 |       |           |       |
+| LUT Flip Flop Pairs                       | 3558 |     0 |   1221600 |  0.29 |
+|   fully used LUT-FF pairs                 |  656 |       |           |       |
+|   LUT-FF pairs with one unused LUT output | 2693 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  | 2378 |       |           |       |
 | Unique Control Sets                       |  446 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -130,9 +130,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   11 |    11 |      1200 |  0.92 |
+| Bonded IOB                  |   10 |    10 |      1200 |  0.83 |
 |   IOB Master Pads           |    6 |       |           |       |
-|   IOB Slave Pads            |    5 |       |           |       |
+|   IOB Slave Pads            |    4 |       |           |       |
 | Bonded IPADs                |    4 |     4 |        50 |  8.00 |
 | Bonded OPADs                |    2 |     2 |        32 |  6.25 |
 | PHY_CONTROL                 |    0 |     0 |        24 |  0.00 |
@@ -213,7 +213,7 @@ Table of Contents
 | RAMS32        |   12 |  Distributed Memory |
 | OBUF          |    7 |                  IO |
 | BUFG          |    7 |               Clock |
-| IBUF          |    6 |                  IO |
+| IBUF          |    5 |                  IO |
 | SRLC16E       |    4 |  Distributed Memory |
 | MUXF8         |    3 |               MuxFx |
 | RAMB18E1      |    2 |        Block Memory |
@@ -267,12 +267,12 @@ Table of Contents
 | SLR3     |                 |         |               3 |            0 |     0 |     1 |
 | ||||||-> |               2 |    0.01 |                 |              |       |       |
 | SLR2     |                 |         |               0 |            0 |     0 |     0 |
-| ||||||-> |               4 |    0.03 |                 |              |       |       |
+| ||||||-> |               3 |    0.02 |                 |              |       |       |
 | SLR1     |                 |         |               0 |            0 |     0 |     0 |
 | ||||||-> |              14 |    0.10 |                 |              |       |       |
 | SLR0     |                 |         |               5 |            0 |     0 |     1 |
 +----------+-----------------+---------+-----------------+--------------+-------+-------+
-| Total    |              20 |         |               8 |            0 |     0 |     2 |
+| Total    |              19 |         |               8 |            0 |     0 |     2 |
 +----------+-----------------+---------+-----------------+--------------+-------+-------+
 
 
@@ -283,9 +283,9 @@ Table of Contents
 |      | SLR3 | SLR2 | SLR1 | SLR0 |
 +------+------+------+------+------+
 | SLR3 |    0 |    2 |    2 |    2 |
-| SLR2 |    2 |    0 |    4 |    4 |
-| SLR1 |    2 |    4 |    0 |   14 |
-| SLR0 |    2 |    4 |   14 |    0 |
+| SLR2 |    2 |    0 |    3 |    3 |
+| SLR1 |    2 |    3 |    0 |   14 |
+| SLR0 |    2 |    3 |   14 |    0 |
 +------+------+------+------+------+
 
 
@@ -298,9 +298,9 @@ Table of Contents
 | SLR3      |      0 |      0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |
 | SLR2      |      0 |      0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |
 | SLR1      |      0 |      0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |
-| SLR0      |   3038 |      3.98 |       6070 |         812 |          1.99 |     10302 |    32 |    0 |
+| SLR0      |   3054 |      4.00 |       6076 |         813 |          1.99 |     10302 |    32 |    0 |
 +-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
-| Total     |   3038 |           |       6070 |         812 |               |     10302 |    32 |    0 |
+| Total     |   3054 |           |       6076 |         813 |               |     10302 |    32 |    0 |
 +-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
 
 
@@ -311,11 +311,11 @@ Table of Contents
 | SLR Index | Bonded IOBs | (%)IOBs | Bonded IPADs | (%)IPADs | Bonded OPADs | (%)OPADs | GTs |
 +-----------+-------------+---------+--------------+----------+--------------+----------+-----+
 | SLR3      |           7 |    2.33 |            0 |     0.00 |            0 |     0.00 |   0 |
-| SLR2      |           2 |    0.67 |            0 |     0.00 |            0 |     0.00 |   0 |
+| SLR2      |           1 |    0.33 |            0 |     0.00 |            0 |     0.00 |   0 |
 | SLR1      |           2 |    0.67 |            0 |     0.00 |            0 |     0.00 |   0 |
 | SLR0      |           0 |    0.00 |            4 |     0.00 |            2 |     0.00 |   1 |
 +-----------+-------------+---------+--------------+----------+--------------+----------+-----+
-| Total     |          11 |         |            4 |          |            2 |          |   1 |
+| Total     |          10 |         |            4 |          |            2 |          |   1 |
 +-----------+-------------+---------+--------------+----------+--------------+----------+-----+
 
 
