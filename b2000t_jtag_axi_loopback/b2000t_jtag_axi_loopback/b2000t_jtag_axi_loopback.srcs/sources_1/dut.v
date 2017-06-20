@@ -47,7 +47,7 @@ output reg  [25:0]    b_out
       end
       else
          case (state)
-             IDEL : begin
+            IDEL : begin
                if (reg_begi)
                   state <= A2B1;
                else       
@@ -168,58 +168,97 @@ output reg  [25:0]    b_out
 //#############################################################################################
   
 // a_out and b_in sample data  
-   reg  [26:0]  data_bin;
-   
+   reg  [26:0]  data_bin_0;
+   reg  [26:0]  data_bin_1;
    always @(posedge clk or negedge rstn)
    begin
         if (~rstn)
         begin
            a_out <= 26'd0;
            a_oe  <= 1'b0;
-           data_bin <= 26'd00_0000;
+           data_bin_0 <= 26'd00_0000;
+           data_bin_1 <= 26'd00_0000;
         end
         else begin
            if   ( state == A2B1 ) begin
              a_out <= 26'h3ff_ffff;
              a_oe  <= 1'd1;
-             data_bin <= b_in;
+             data_bin_1 <= b_in;
            end 
            else (state == A2B0) begin
              a_out <= 26'h000_0000;
              a_oe  <= 1'd1;
-             data_bin <= b_in;
+             data_bin_0 <= b_in;
            end           
         end
    end 
    
 // b_out and a_in sample data
    
-   reg  [26: 0] data_ain;
-      
+   reg  [26: 0] data_ain_0;
+   reg  [26: 0] data_ain_1;   
    always @(posedge clk or negedge rstn)
    begin
         if (~rstn)
         begin
            b_out <= 26'd0;
            b_oe  <= 1'b0;
-           data_ain <= 26'h000_0000;
+           data_ain_1 <= 26'h000_0000;
+           data_ain_0 <= 26'h000_0000;
         end
         else begin
            if   ( state == B2A1 ) begin
              b_out <= 26'h3ff_ffff;
              b_oe  <= 1'd1;
-             data_ain <= a_in;
+             data_ain_1 <= a_in;
            end 
            else ( state == B2A0) begin
              b_out <= 26'h000_0000;
              b_oe  <= 1'd1;
-             data_ain <= a_in;
+             data_ain_0 <= a_in;
            end           
         end
    end 
  //#############################################################################################
+    wire [25: 0]    a_result;
+    wire [25: 0]    b_result; 
+ 
+    always @(posedge clk or negedge rstn) 
+    begin
+      if (~rstn)
+          data_out <= 32'd0;
+      else begin
+          if (en=1'd1 && we=4'h00 )begin
+                case(addr)
+                    // read ain to bus
+                    32'd2:
+                    data_out <= {6'd0,data_ain_1};
+                    //read ain-0 to bus
+                    32'd3:
+                    data_out <= {6'd0,data_ain_0};
+                    // read bin-1 to bus
+                    32'd4:
+                    data_out <= {6'd0,data_bin_1};
+                    // read bin-0 to bus
+                    32'd5:
+                    data_out <= {6'd0,data_bin_0};                    
+                    // read apin result to bus                    
+                    32'd4:
+                    data_out <= {a_result};
+                    // read bpin result to bus
+                    32'd5:
+                    data_out <= {b_result};                                    
+                    default:
+                    data_out <= 32'd0;   
+                endcase
+            end           
+      end
+    end 
+ 
+ assign a_result  = (data_ain_1 & 26'h3ff_ffff) & (data_ain_0 & 26'h000_0000);
+ assign b_result  = (data_bin_1 & 26'h3ff_ffff) & (data_bin_0 & 26'h000_0000);
+  
+ //#############################################################################################
    
-   assign <output1> = <logic_equation_based_on_states_and_inputs>;
-   assign <output2> = <logic_equation_based_on_states_and_inputs>;
    
  endmodule
