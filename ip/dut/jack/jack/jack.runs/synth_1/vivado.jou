@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jun 20 18:39:37 2017
+# Process ID: 94252
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.runs/synth_1
+# Command line: vivado -log jack.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jack.tcl
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.runs/synth_1/jack.vds
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source jack.tcl -notrace

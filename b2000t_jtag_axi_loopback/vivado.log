@@ -1,0 +1,1304 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jun 16 10:10:41 2017
+# Process ID: 26343
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram
+# Command line: vivado
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 6235.508 ; gain = 273.945 ; free physical = 92220 ; free virtual = 196105
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_100M
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_0/aurora_mmcm_not_locked(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <b2000t_c2c_bram> from BD file </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd>
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+startgroup
+set_property -dict [list CONFIG.C_LINE_RATE {6.25} CONFIG.C_REFCLK_FREQUENCY {125.000} CONFIG.C_INIT_CLK {100.0} CONFIG.DRP_FREQ {150.0}] [get_bd_cells aurora_64b66b_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {150.00} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {19.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.625} CONFIG.CLKOUT1_JITTER {143.858} CONFIG.CLKOUT1_PHASE_ERROR {157.402}] [get_bd_cells clk_wiz]
+endgroup
+disconnect_bd_net /vio_0_probe_out0 [get_bd_ports aurora_pma_init_in]
+connect_bd_net [get_bd_ports pma_init_out] [get_bd_pins vio_0/probe_out0]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_chip2chip_0/aurora_pma_init_in(rst) and /vio_0/probe_out0(undef)
+delete_bd_objs [get_bd_ports aurora_pma_init_in]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(2) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(2) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(2) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(2) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(1) to net 'axi_chip2chip_0_m_axi_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila/SLOT_0_AXI_rid'(1) to net 'axi_chip2chip_0_m_axi_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(1) to net 'axi_chip2chip_0_m_axi_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila/SLOT_0_AXI_bid'(1) to net 'axi_chip2chip_0_m_axi_BID'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hdl/b2000t_c2c_bram_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_axi_chip2chip_0_0, cache-ID = 5a78f07977298097; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_axi_bram_ctrl_0_0, cache-ID = 69b28566cbc0a19f; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_rst_clk_wiz_100M_0, cache-ID = 53391eed1ee14661; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_vio_0_0, cache-ID = 6a82e2d66a3c3266; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_system_ila_0, cache-ID = 5424a348ec2bbe5f; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_jtag_axi_0_0, cache-ID = 86714819921668d5; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_xbar_0, cache-ID = 496c7cb362b45741; cache size = 65.778 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_system_ila1_0, cache-ID = 2dbbbf61483fa460; cache size = 65.778 MB.
+[Fri Jun 16 10:37:38 2017] Launched b2000t_c2c_bram_clk_wiz_0_synth_1, b2000t_c2c_bram_aurora_64b66b_0_0_synth_1, synth_1...
+Run output will be captured here:
+b2000t_c2c_bram_clk_wiz_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_clk_wiz_0_synth_1/runme.log
+b2000t_c2c_bram_aurora_64b66b_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_aurora_64b66b_0_0_synth_1/runme.log
+synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 16 10:37:38 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:52 ; elapsed = 00:00:44 . Memory (MB): peak = 7125.184 ; gain = 190.070 ; free physical = 90977 ; free virtual = 194793
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/000018938f9c01
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-1435] Device xc7v2000t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 7207.629 ; gain = 0.000 ; free physical = 90782 ; free virtual = 194711
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 7276.566 ; gain = 68.938 ; free physical = 90727 ; free virtual = 194657
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+Processed interface axi_chip2chip_0_m_axi_ila1_slot0
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+Processed interface axi_chip2chip_0_AXIS_TX_ila2_slot0
+Processed interface aurora_64b66b_0_USER_DATA_M_AXIS_RX_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+disconnect_hw_server 192.168.0.44:3121
+close_project
+open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89755 ; free virtual = 194158
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_100M
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_0/aurora_mmcm_not_locked(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /axi_chip2chip_0/aurora_pma_init_in(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <b2000t_c2c_bram> from BD file </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd>
+startgroup
+copy_bd_objs /  [get_bd_cells {aurora_64b66b_0}]
+set_property location {4.5 1280 395} [get_bd_cells aurora_64b66b_1]
+endgroup
+set_property location {5 1674 465} [get_bd_cells aurora_64b66b_1]
+startgroup
+copy_bd_objs /  [get_bd_cells {axi_chip2chip_0}]
+set_property location {3 877 489} [get_bd_cells axi_chip2chip_1]
+endgroup
+set_property location {3 1029 529} [get_bd_cells axi_chip2chip_1]
+set_property -dict [list CONFIG.SupportLevel {0}] [get_bd_cells aurora_64b66b_1]
+apply_bd_automation -rule xilinx.com:bd_rule:axi_chip2chip -config {PHY_TYPE "Aurora_64B66B" INIT_CLK "0" REF_CLK "0" SHARED_LOGIC "1" }  [get_bd_cells axi_chip2chip_1]
+WARNING: [BD 41-1306] The connection to interface pin /aurora_64b66b_1/channel_up is being overridden by the user. This pin will not be connected as a part of interface connection CORE_STATUS
+WARNING: [BD 41-1306] The connection to interface pin /aurora_64b66b_1/mmcm_not_locked_out is being overridden by the user. This pin will not be connected as a part of interface connection CORE_STATUS
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_1/mmcm_not_locked_out(undef) and /axi_chip2chip_1/aurora_mmcm_not_locked(rst)
+startgroup
+set_property -dict [list CONFIG.SupportLevel {0}] [get_bd_cells aurora_64b66b_1]
+WARNING: [BD 41-1684] Pin /aurora_64b66b_1/mmcm_not_locked_out is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /aurora_64b66b_1/user_clk_out is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /aurora_64b66b_1/init_clk_out is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets aurora_64b66b_1_mmcm_not_locked_out] [get_bd_nets aurora_64b66b_1_user_clk_out] [get_bd_nets aurora_64b66b_1_init_clk_out] [get_bd_intf_nets GT_DIFF_REFCLK_1] [get_bd_intf_nets INIT_DIFF_CLK_1_1]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Slave "/axi_bram_ctrl_0/S_AXI" Clk "Auto" }  [get_bd_intf_pins axi_chip2chip_1/m_axi]
+</axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into </axi_chip2chip_1/MAXI> at <0x76000000 [ 64K ]>
+connect_bd_net [get_bd_pins axi_chip2chip_1/aurora_mmcm_not_locked] [get_bd_pins axi_chip2chip_0/aurora_mmcm_not_locked]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_1/aurora_mmcm_not_locked(rst)
+connect_bd_net [get_bd_pins axi_chip2chip_1/aurora_init_clk] [get_bd_pins aurora_64b66b_0/init_clk_out]
+connect_bd_net [get_bd_pins axi_chip2chip_1/aurora_pma_init_in] [get_bd_pins vio_0/probe_out0]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /axi_chip2chip_1/aurora_pma_init_in(rst)
+connect_bd_net [get_bd_pins axi_chip2chip_1/axi_c2c_phy_clk] [get_bd_pins aurora_64b66b_0/user_clk_out]
+connect_bd_net [get_bd_pins aurora_64b66b_0/gt_qpllrefclk_quad2_out] [get_bd_pins aurora_64b66b_1/gt_qpllrefclk_quad2_in]
+connect_bd_net [get_bd_pins aurora_64b66b_0/gt_qpllclk_quad2_out] [get_bd_pins aurora_64b66b_1/gt_qpllclk_quad2_in]
+connect_bd_net [get_bd_pins aurora_64b66b_1/drp_clk_in] [get_bd_pins aurora_64b66b_0/drp_clk_in]
+connect_bd_net [get_bd_pins aurora_64b66b_1/sync_clk] [get_bd_pins aurora_64b66b_0/sync_clk_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/user_clk] [get_bd_pins aurora_64b66b_0/user_clk_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/refclk1_in] [get_bd_pins aurora_64b66b_0/gt_refclk1_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/init_clk] [get_bd_pins aurora_64b66b_0/init_clk_out]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+set_property offset 0x70000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x70010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+reset_run b2000t_c2c_bram_aurora_64b66b_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '25165824' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70010000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70010000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '25165824' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd 
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_aurora_64b66b_0_0, cache-ID = fb8ee0da6bab1850; cache size = 68.655 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_axi_chip2chip_0_1, cache-ID = 5a78f07977298097; cache size = 68.655 MB.
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '25165824' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70010000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70010000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '25165824' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 88420 ; free virtual = 192691
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property offset 0x70000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+launch_runs impl_1 -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '25182208' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70000000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70000000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '25182208' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd 
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_aurora_64b66b_0_0, cache-ID = fb8ee0da6bab1850; cache size = 68.655 MB.
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+delete_bd_objs [get_bd_intf_ports GT_DIFF_REFCLK]
+delete_bd_objs [get_bd_intf_ports INIT_DIFF_CLK_1]
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {7}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins axi_chip2chip_1/axi_c2c_config_error_out] [get_bd_pins vio_0/probe_in4]
+connect_bd_net [get_bd_pins axi_chip2chip_1/axi_c2c_link_status_out] [get_bd_pins vio_0/probe_in5]
+connect_bd_net [get_bd_pins axi_chip2chip_1/axi_c2c_multi_bit_error_out] [get_bd_pins vio_0/probe_in6]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+set_property location {2383 17} [get_bd_ports axi_c2c_config_error_out]
+set_property location {2391 37} [get_bd_ports axi_c2c_link_status_out]
+set_property location {2380 48} [get_bd_ports axi_c2c_multi_bit_error_out]
+startgroup
+endgroup
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '25182208' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70000000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0> at <0x76000000 [ 64K ]> and in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x70000000 [ 64K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '25182208' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89826 ; free virtual = 194123
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_1
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] b2000t_c2c_bram_axi_bram_ctrl_1_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] b2000t_c2c_bram_axi_bram_ctrl_1_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/axi_chip2chip_0/m_axi" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/S_AXI]
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </axi_chip2chip_0/MAXI> at <0xC0000000 [ 8K ]>
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </axi_chip2chip_1/MAXI> at <0xC0000000 [ 8K ]>
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </jtag_axi_0/Data> at <0xC0000000 [ 8K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_cells blk_mem_gen_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_cells axi_bram_ctrl_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_cells blk_mem_gen_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/axi_chip2chip_0/m_axi" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/S_AXI]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property location {3 727 -488} [get_bd_cells axi_bram_ctrl_0]
+set_property location {4 1076 -533} [get_bd_cells blk_mem_gen_0]
+set_property location {4 1166 -499} [get_bd_cells blk_mem_gen_0]
+set_property location {4 1165 -484} [get_bd_cells blk_mem_gen_0]
+set_property location {2 418 -644} [get_bd_cells xlconstant_0]
+set_property location {1 178 -58} [get_bd_cells axi_bram_ctrl_1]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/axi_chip2chip_0/m_axi" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/S_AXI]
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </axi_chip2chip_0/MAXI> at <0xC0000000 [ 8K ]>
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </axi_chip2chip_1/MAXI> at <0xC0000000 [ 8K ]>
+</axi_bram_ctrl_1/S_AXI/Mem0> is being mapped into </jtag_axi_0/Data> at <0xC0000000 [ 8K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB]
+endgroup
+set_property location {2 379 -39} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {2 329 540} [get_bd_cells axi_bram_ctrl_1_bram]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </axi_chip2chip_0/MAXI>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </jtag_axi_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </axi_chip2chip_1/MAXI>. Please use Address Editor to either map or exclude it.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89802 ; free virtual = 194096
+assign_bd_address
+</axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into </axi_chip2chip_0/MAXI> at <0xC2000000 [ 8K ]>
+</axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into </axi_chip2chip_1/MAXI> at <0xC2000000 [ 8K ]>
+</axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into </jtag_axi_0/Data> at <0xC2000000 [ 8K ]>
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89796 ; free virtual = 194089
+set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+set_property offset 0x76002000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76012000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76002000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0}]
+set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+set_property location {2435 -389} [get_bd_ports ext_reset_out]
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_1/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76010000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76012000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76002000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0> at <0x76012000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76002000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_1: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89794 ; free virtual = 194088
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+CRITICAL WARNING: [BD 41-1294] requested address <0x76000000 [ 8K ]> conflicts with peripheral </axi_bram_ctrl_1/S_AXI/Mem0> mapped into segment </jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>.
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+ERROR: [BD 41-70] Exec TCL: The proposed address 0x76000000 [ 8K ] conflicts with peripheral /axi_bram_ctrl_1/S_AXI/Mem0 mapped into segment /jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0 at 0x76000000 [ 8K ]..
+WARNING: [BD 41-1642] Cannot set the parameter 'offset' on '/jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0' - Parameter does not exist. 
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+set_property offset 0x76002000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_1/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76010000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76012000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76002000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_1: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89794 ; free virtual = 194088
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property offset 0x76012000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+set_property location {5 1703 105} [get_bd_cells aurora_64b66b_0]
+set_property location {5 1766 -243} [get_bd_cells system_ila1]
+set_property location {5 1772 -621} [get_bd_cells axi_mem_intercon]
+regenerate_bd_layout
+set_property location {4 1020 278} [get_bd_cells axi_chip2chip_0]
+set_property location {4 1027 649} [get_bd_cells axi_chip2chip_1]
+set_property location {4 1162 1192} [get_bd_cells axi_mem_intercon]
+set_property location {5 1710 1255} [get_bd_cells system_ila]
+set_property location {2.5 378 432} [get_bd_cells clk_wiz]
+set_property location {2.5 468 1413} [get_bd_cells rst_clk_wiz_100M]
+set_property location {1 36 266} [get_bd_cells xlconstant_0]
+set_property location {1.5 95 1142} [get_bd_cells system_ila]
+set_property location {6 1704 1389} [get_bd_cells axi_bram_ctrl_1]
+set_property location {6.5 2065 1400} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {6 1673 1199} [get_bd_cells axi_bram_ctrl_0]
+set_property location {7 2017 1218} [get_bd_cells blk_mem_gen_0]
+set_property location {2736 1463} [get_bd_ports pma_init_out]
+set_property location {2765 390} [get_bd_ports axi_c2c_config_error_out]
+set_property location {2758 316} [get_bd_ports axi_c2c_config_error_out]
+set_property location {2813 328} [get_bd_ports axi_c2c_link_status_out]
+set_property location {2754 334} [get_bd_ports axi_c2c_link_status_out]
+set_property location {2792 860} [get_bd_ports pma_init_out]
+set_property location {4 500 651} [get_bd_cells system_ila1]
+set_property location {4 440 1160} [get_bd_cells system_ila]
+set_property location {7.5 2702 1315} [get_bd_cells system_ila]
+set_property location {6 2099 542} [get_bd_cells blk_mem_gen_0]
+set_property location {6 2118 647} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {6 2092 1381} [get_bd_cells axi_bram_ctrl_1_bram]
+undo
+INFO: [Common 17-17] undo 'set_property location {6 2092 1381} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6 2118 647} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6 2099 542} [get_bd_cells blk_mem_gen_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {7.5 2702 1315} [get_bd_cells system_ila]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 440 1160} [get_bd_cells system_ila]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 500 651} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2792 860} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2754 334} [get_bd_ports axi_c2c_link_status_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2813 328} [get_bd_ports axi_c2c_link_status_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2758 316} [get_bd_ports axi_c2c_config_error_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2765 390} [get_bd_ports axi_c2c_config_error_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2736 1463} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {7 2017 1218} [get_bd_cells blk_mem_gen_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6 1673 1199} [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6.5 2065 1400} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6 1704 1389} [get_bd_cells axi_bram_ctrl_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 95 1142} [get_bd_cells system_ila]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 36 266} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 468 1413} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 378 432} [get_bd_cells clk_wiz]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1710 1255} [get_bd_cells system_ila]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1162 1192} [get_bd_cells axi_mem_intercon]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1027 649} [get_bd_cells axi_chip2chip_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1020 278} [get_bd_cells axi_chip2chip_0]'
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1772 -621} [get_bd_cells axi_mem_intercon]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1766 -243} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1703 105} [get_bd_cells aurora_64b66b_0]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76012000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]'
+set_property location {2 380 -60} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {1.5 299 542} [get_bd_cells system_ila1]
+set_property location {7 2384 378} [get_bd_cells system_ila1]
+set_property location {4.5 1487 353} [get_bd_cells system_ila1]
+set_property location {4 1135 17} [get_bd_cells axi_chip2chip_0]
+set_property location {-143 -221} [get_bd_intf_ports GT_DIFF_REFCLK1]
+set_property location {1.5 209 440} [get_bd_cells clk_wiz]
+set_property location {1 10 364} [get_bd_cells xlconstant_0]
+set_property location {1 -25 -711} [get_bd_cells jtag_axi_0]
+set_property location {1 -32 -799} [get_bd_cells jtag_axi_0]
+set_property location {2 243 -667} [get_bd_cells jtag_axi_0]
+set_property location {1.5 101 -729} [get_bd_cells jtag_axi_0]
+set_property location {2 134 -602} [get_bd_cells jtag_axi_0]
+set_property location {2.5 206 -631} [get_bd_cells jtag_axi_0]
+set_property location {2 150 -795} [get_bd_cells jtag_axi_0]
+set_property location {2.5 318 -259} [get_bd_cells rst_clk_wiz_100M]
+set_property location {3 267 101} [get_bd_cells rst_clk_wiz_100M]
+set_property location {6.5 1290 -915} [get_bd_cells rst_clk_wiz_100M]
+undo
+INFO: [Common 17-17] undo 'set_property location {6.5 1290 -915} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 267 101} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 318 -259} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 150 -795} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 206 -631} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 134 -602} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 101 -729} [get_bd_cells jtag_axi_0]'
+set_property location {5 1760 -784} [get_bd_cells rst_clk_wiz_100M]
+set_property location {1.5 250 474} [get_bd_cells xlconstant_0]
+set_property location {1.5 87 260} [get_bd_cells xlconstant_0]
+set_property location {2.5 182 -53} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {3263 453} [get_bd_intf_ports GT_SERIAL_TX_1]
+set_property location {3262 463} [get_bd_intf_ports GT_SERIAL_TX_1]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+set_property location {3273 165} [get_bd_ports pma_init_out]
+set_property location {3264 177} [get_bd_ports pma_init_out]
+set_property location {3266 185} [get_bd_ports pma_init_out]
+set_property location {1 -84 -69} [get_bd_cells axi_bram_ctrl_1]
+set_property location {1.5 -52 -45} [get_bd_cells axi_bram_ctrl_1]
+set_property location {2.5 210 -29} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {-486 437} [get_bd_intf_ports CLK_IN1_D]
+set_property location {-412 431} [get_bd_intf_ports CLK_IN1_D]
+set_property location {-397 -799} [get_bd_ports ext_reset_in]
+set_property location {-410 -323} [get_bd_intf_ports GT_DIFF_REFCLK1]
+set_property location {2 84 491} [get_bd_cells xlconstant_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+set_property location {2.5 119 390} [get_bd_cells xlconstant_1]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {2.5 119 390} [get_bd_cells xlconstant_1]'
+INFO: [Common 17-17] undo 'copy_bd_objs /  [get_bd_cells {xlconstant_0}]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property location {1 -325 356} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {1 -225 533} [get_bd_cells jtag_axi_0]
+set_property location {2.5 309 93} [get_bd_cells jtag_axi_0]
+set_property location {1 -149 572} [get_bd_cells jtag_axi_0]
+set_property location {2.5 130 -40} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {2 -89 -32} [get_bd_cells axi_bram_ctrl_1]
+set_property location {3.5 269 -34} [get_bd_cells axi_bram_ctrl_1_bram]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+set_property location {3266 162} [get_bd_ports axi_c2c_link_status_out]
+set_property location {3257 141} [get_bd_ports axi_c2c_multi_bit_error_out]
+set_property location {3259 55} [get_bd_ports axi_c2c_config_error_out]
+undo
+INFO: [Common 17-17] undo 'set_property location {3259 55} [get_bd_ports axi_c2c_config_error_out]'
+set_property location {3264 193} [get_bd_ports pma_init_out]
+set_property location {3274 -85} [get_bd_intf_ports GT_SERIAL_TX]
+set_property location {3286 -64} [get_bd_ports ext_reset_out]
+set_property location {3267 58} [get_bd_ports axi_c2c_config_error_out]
+undo
+INFO: [Common 17-17] undo 'set_property location {3267 58} [get_bd_ports axi_c2c_config_error_out]'
+set_property location {3.5 425 174} [get_bd_cells xlconstant_0]
+set_property location {2.5 80 574} [get_bd_cells jtag_axi_0]
+set_property location {2.5 177 -28} [get_bd_cells axi_bram_ctrl_1]
+set_property location {2 234 567} [get_bd_cells jtag_axi_0]
+set_property location {2 481 438} [get_bd_cells clk_wiz]
+set_property location {1 191 192} [get_bd_cells xlconstant_0]
+set_property location {1 200 447} [get_bd_cells clk_wiz]
+set_property location {0.5 -169 154} [get_bd_cells xlconstant_0]
+set_property location {1.5 -65 143} [get_bd_cells xlconstant_0]
+set_property location {2 131 122} [get_bd_cells xlconstant_0]
+set_property location {1 284 440} [get_bd_cells clk_wiz]
+set_property location {2.5 929 -95} [get_bd_cells vio_0]
+set_property location {2.5 755 -502} [get_bd_cells axi_bram_ctrl_0]
+set_property location {3.5 880 -500} [get_bd_cells axi_bram_ctrl_0]
+set_property location {2.5 763 -95} [get_bd_cells vio_0]
+set_property location {3 739 18} [get_bd_cells vio_0]
+set_property location {3 796 -427} [get_bd_cells axi_bram_ctrl_0]
+set_property location {1 165 -427} [get_bd_cells axi_bram_ctrl_0]
+set_property location {3.5 1113 -745} [get_bd_cells rst_clk_wiz_100M]
+set_property location {4.5 1528 -733} [get_bd_cells rst_clk_wiz_100M]
+set_property location {5 1901 -723} [get_bd_cells rst_clk_wiz_100M]
+set_property location {3.5 1545 -710} [get_bd_cells rst_clk_wiz_100M]
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 1545 -710} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1901 -723} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4.5 1528 -733} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 1113 -745} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 165 -427} [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 796 -427} [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 739 18} [get_bd_cells vio_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 763 -95} [get_bd_cells vio_0]'
+set_property location {5 2052 -719} [get_bd_cells rst_clk_wiz_100M]
+set_property location {5 2069 -182} [get_bd_cells axi_chip2chip_0]
+set_property location {3 1310 311} [get_bd_cells system_ila1]
+set_property location {2.5 842 -382} [get_bd_cells system_ila]
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 842 -382} [get_bd_cells system_ila]'
+set_property location {5.5 2626 -162} [get_bd_cells aurora_64b66b_0]
+set_property location {6 2656 465} [get_bd_cells aurora_64b66b_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {6 2656 465} [get_bd_cells aurora_64b66b_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5.5 2626 -162} [get_bd_cells aurora_64b66b_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 1310 311} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 2069 -182} [get_bd_cells axi_chip2chip_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 2052 -719} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 880 -500} [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 755 -502} [get_bd_cells axi_bram_ctrl_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 929 -95} [get_bd_cells vio_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 284 440} [get_bd_cells clk_wiz]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 131 122} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 -65 143} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {0.5 -169 154} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 200 447} [get_bd_cells clk_wiz]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 191 192} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 481 438} [get_bd_cells clk_wiz]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 234 567} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 177 -28} [get_bd_cells axi_bram_ctrl_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 80 574} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 425 174} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3286 -64} [get_bd_ports ext_reset_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3274 -85} [get_bd_intf_ports GT_SERIAL_TX]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3264 193} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3257 141} [get_bd_ports axi_c2c_multi_bit_error_out]'
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'set_property location {3266 162} [get_bd_ports axi_c2c_link_status_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 269 -34} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 -89 -32} [get_bd_cells axi_bram_ctrl_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 130 -40} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -149 572} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 309 93} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -225 533} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -325 356} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 84 491} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {-410 -323} [get_bd_intf_ports GT_DIFF_REFCLK1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {-397 -799} [get_bd_ports ext_reset_in]'
+undo
+INFO: [Common 17-17] undo 'set_property location {-412 431} [get_bd_intf_ports CLK_IN1_D]'
+undo
+INFO: [Common 17-17] undo 'set_property location {-486 437} [get_bd_intf_ports CLK_IN1_D]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 210 -29} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 -52 -45} [get_bd_cells axi_bram_ctrl_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -84 -69} [get_bd_cells axi_bram_ctrl_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3266 185} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3264 177} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3273 165} [get_bd_ports pma_init_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3262 463} [get_bd_intf_ports GT_SERIAL_TX_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3263 453} [get_bd_intf_ports GT_SERIAL_TX_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 182 -53} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 87 260} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 250 474} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {5 1760 -784} [get_bd_cells rst_clk_wiz_100M]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 243 -667} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -32 -799} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -25 -711} [get_bd_cells jtag_axi_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 10 364} [get_bd_cells xlconstant_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 209 440} [get_bd_cells clk_wiz]'
+undo
+INFO: [Common 17-17] undo 'set_property location {-143 -221} [get_bd_intf_ports GT_DIFF_REFCLK1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1135 17} [get_bd_cells axi_chip2chip_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4.5 1487 353} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {7 2384 378} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 299 542} [get_bd_cells system_ila1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 380 -60} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76002000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2435 -389} [get_bd_ports ext_reset_out]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76002000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76012000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76012000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76002000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76010000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]'
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_1_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'validate_bd_design'
+undo
+INFO: [Common 17-17] undo 'assign_bd_address'
+undo
+INFO: [Common 17-17] undo 'validate_bd_design'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 329 540} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 379 -39} [get_bd_cells axi_bram_ctrl_1_bram]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Blk_Mem_Gen of BRAM_PORTA" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/axi_chip2chip_0/m_axi" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_1/S_AXI]'
+INFO: [Common 17-17] undo 'startgroup'
+close_bd_design [get_bd_designs b2000t_c2c_bram]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_100M
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_1
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_1_bram
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_0/aurora_mmcm_not_locked(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_1/aurora_mmcm_not_locked(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /axi_chip2chip_0/aurora_pma_init_in(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /axi_chip2chip_1/aurora_pma_init_in(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: b2000t_c2c_bram_s00_mmu_0 
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: b2000t_c2c_bram_s01_mmu_0 
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: b2000t_c2c_bram_s02_mmu_0 
+Successfully read diagram <b2000t_c2c_bram> from BD file </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+set_property location {3260 188} [get_bd_ports pma_init_out]
+set_property location {2.5 160 350} [get_bd_cells xlconstant_0]
+set_property location {2 -26 285} [get_bd_cells xlconstant_0]
+set_property location {2 -79 568} [get_bd_cells jtag_axi_0]
+set_property location {2 304 561} [get_bd_cells jtag_axi_0]
+set_property location {0.5 -227 273} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {2 -91 458} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {1 30 503} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {1 22 553} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {3267 -81} [get_bd_intf_ports GT_SERIAL_TX]
+set_property location {3270 -72} [get_bd_ports ext_reset_out]
+set_property location {3270 158} [get_bd_ports axi_c2c_link_status_out]
+set_property location {3267 142} [get_bd_ports axi_c2c_multi_bit_error_out]
+set_property location {3272 56} [get_bd_ports axi_c2c_config_error_out]
+undo
+INFO: [Common 17-17] undo 'set_property location {3272 56} [get_bd_ports axi_c2c_config_error_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3267 142} [get_bd_ports axi_c2c_multi_bit_error_out]'
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+ERROR: [IP_Flow 19-3461] Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+INFO: [IP_Flow 19-3438] Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running pre_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::pre_propagate Line 30
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_1/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76010000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+CRITICAL WARNING: [BD 41-1353] </axi_bram_ctrl_0/S_AXI/Mem0> is mapped at disjoint segments in master </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76012000 [ 8K ]> and in master </axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0> at <0x76002000 [ 8K ]>. It is illegal to have the same peripheral mapped to different addresses within the same network. Peripherals must either be mapped to the same offset in all masters, or to addresses that are apertures of each other or to contiguous addresses that can be combined into a single aligned address with a range that is a power of 2
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_1: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_1' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_1'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /axi_bram_ctrl_0: set_property error: Value '18432' is out of the range for parameter 'Memory Depth(MEM_DEPTH)' for BD Cell 'axi_bram_ctrl_0' . Valid values are - 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824
+Customization errors found on 'axi_bram_ctrl_0'. Restoring to previous valid configuration.
+
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89779 ; free virtual = 194072
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property location {3272 137} [get_bd_ports axi_c2c_multi_bit_error_out]
+undo
+INFO: [Common 17-17] undo 'set_property location {3272 137} [get_bd_ports axi_c2c_multi_bit_error_out]'
+set_property offset 0x76002000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+CRITICAL WARNING: [BD 41-1294] requested address <0x76000000 [ 8K ]> conflicts with peripheral </axi_bram_ctrl_1/S_AXI/Mem0> mapped into segment </jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>.
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+ERROR: [BD 41-70] Exec TCL: The proposed address 0x76000000 [ 8K ] conflicts with peripheral /axi_bram_ctrl_1/S_AXI/Mem0 mapped into segment /jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0 at 0x76000000 [ 8K ]..
+WARNING: [BD 41-1642] Cannot set the parameter 'offset' on '/jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0' - Parameter does not exist. 
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+CRITICAL WARNING: [BD 41-1294] requested address <0x76000000 [ 8K ]> conflicts with peripheral </axi_bram_ctrl_1/S_AXI/Mem0> mapped into segment </jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>.
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+ERROR: [BD 41-70] Exec TCL: The proposed address 0x76000000 [ 8K ] conflicts with peripheral /axi_bram_ctrl_1/S_AXI/Mem0 mapped into segment /jtag_axi_0/Data/SEG_axi_bram_ctrl_1_Mem0 at 0x76000000 [ 8K ]..
+WARNING: [BD 41-1642] Cannot set the parameter 'offset' on '/jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0' - Parameter does not exist. 
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+CRITICAL WARNING: [BD 41-1294] requested address <0x76000000 [ 8K ]> conflicts with peripheral </axi_bram_ctrl_1/S_AXI/Mem0> mapped into segment </axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0> at <0x76000000 [ 8K ]>.
+set_property offset 0x76000000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+ERROR: [BD 41-70] Exec TCL: The proposed address 0x76000000 [ 8K ] conflicts with peripheral /axi_bram_ctrl_1/S_AXI/Mem0 mapped into segment /axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_1_Mem0 at 0x76000000 [ 8K ]..
+WARNING: [BD 41-1642] Cannot set the parameter 'offset' on '/axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0' - Parameter does not exist. 
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_0/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {axi_chip2chip_1/MAXI/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad2_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 7516.656 ; gain = 0.000 ; free physical = 89778 ; free virtual = 194070
+set_property location {3271 137} [get_bd_ports axi_c2c_multi_bit_error_out]
+set_property location {3271 59} [get_bd_ports axi_c2c_config_error_out]
+undo
+INFO: [Common 17-17] undo 'set_property location {3271 59} [get_bd_ports axi_c2c_config_error_out]'
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+launch_runs impl_1 -jobs 24
+INFO: [BD 41-1662] The design 'b2000t_c2c_bram.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(3) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(3) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(3) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(3) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(3) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(3) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(1) to net 'axi_chip2chip_0_m_axi_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila/SLOT_0_AXI_rid'(1) to net 'axi_chip2chip_0_m_axi_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(1) to net 'axi_chip2chip_0_m_axi_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila/SLOT_0_AXI_bid'(1) to net 'axi_chip2chip_0_m_axi_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_1/m_axi_rid'(1) to net 'axi_chip2chip_1_m_axi_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_1/m_axi_bid'(1) to net 'axi_chip2chip_1_m_axi_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/hdl/b2000t_c2c_bram_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_aurora_64b66b_0_0, cache-ID = fb8ee0da6bab1850; cache size = 68.655 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_blk_mem_gen_0_0, cache-ID = 2f0bf0d070ec6533; cache size = 68.655 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_axi_chip2chip_0_1, cache-ID = 5a78f07977298097; cache size = 68.655 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP b2000t_c2c_bram_axi_bram_ctrl_1_bram_1, cache-ID = 2f0bf0d070ec6533; cache size = 68.655 MB.
+[Fri Jun 16 15:21:43 2017] Launched b2000t_c2c_bram_xbar_0_synth_1, b2000t_c2c_bram_aurora_64b66b_0_1_synth_1, b2000t_c2c_bram_axi_bram_ctrl_1_0_synth_1, b2000t_c2c_bram_vio_0_0_synth_1, b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1, synth_1...
+Run output will be captured here:
+b2000t_c2c_bram_xbar_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_xbar_0_synth_1/runme.log
+b2000t_c2c_bram_aurora_64b66b_0_1_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_aurora_64b66b_0_1_synth_1/runme.log
+b2000t_c2c_bram_axi_bram_ctrl_1_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_axi_bram_ctrl_1_0_synth_1/runme.log
+b2000t_c2c_bram_vio_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_vio_0_0_synth_1/runme.log
+b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1/runme.log
+synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 16 15:21:43 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 7541.043 ; gain = 24.387 ; free physical = 89678 ; free virtual = 193972
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 643 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 8472.641 ; gain = 742.016 ; free physical = 86584 ; free virtual = 190996
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper_early.xdc]
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK_IN1_D_clk_p' already exists, overwriting the previous clock with the same name. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc:38]
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper.xdc]
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper_late.xdc]
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/.Xil/Vivado-26343-HyperSilicon/dcp/b2000t_c2c_bram_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8503.980 ; gain = 9.672 ; free physical = 86539 ; free virtual = 190898
+Restored from archive | CPU: 1.130000 secs | Memory: 22.333733 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8503.980 ; gain = 9.672 ; free physical = 86539 ; free virtual = 190898
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 350 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 288 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 48 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
+
+open_run: Time (s): cpu = 00:01:10 ; elapsed = 00:00:44 . Memory (MB): peak = 9378.902 ; gain = 1821.391 ; free physical = 85928 ; free virtual = 190246
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 9378.902 ; gain = 0.000 ; free physical = 85746 ; free virtual = 190064
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+place_ports {GT_SERIAL_RX_1_rxp[0]} AR4
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Fri Jun 16 17:55:58 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+close_design
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/000018938f9c01
+current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
