@@ -452,13 +452,13 @@
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_0" spirit:portRef="drp_clk_in"/>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="s_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="aurora_64b66b_1" spirit:portRef="drp_clk_in"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M02_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="aurora_64b66b_1" spirit:portRef="drp_clk_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_locked</spirit:name>
@@ -472,10 +472,10 @@
         <spirit:internalPortReference spirit:componentRef="jtag_axi_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="s_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M02_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -1865,8 +1865,8 @@
           <spirit:segment>
             <spirit:name>SEG_axi_chip2chip_1_Mem0</spirit:name>
             <spirit:displayName>/axi_chip2chip_1/s_axi/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76010000</spirit:addressOffset>
-            <spirit:range>16K</spirit:range>
+            <spirit:addressOffset>0x76020000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

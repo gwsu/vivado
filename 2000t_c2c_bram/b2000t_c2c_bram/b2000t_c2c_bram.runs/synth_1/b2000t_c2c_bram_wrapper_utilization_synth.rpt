@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jun 16 15:24:34 2017
+| Date         : Wed Jun 21 17:59:18 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file b2000t_c2c_bram_wrapper_utilization_synth.rpt -pb b2000t_c2c_bram_wrapper_utilization_synth.pb
 | Design       : b2000t_c2c_bram_wrapper
@@ -189,15 +189,19 @@ Table of Contents
 | b2000t_c2c_bram_xbar_0                 |    1 |
 | b2000t_c2c_bram_vio_0_0                |    1 |
 | b2000t_c2c_bram_system_ila_0           |    1 |
+| b2000t_c2c_bram_system_ila2_0          |    1 |
 | b2000t_c2c_bram_system_ila1_0          |    1 |
 | b2000t_c2c_bram_rst_clk_wiz_100M_0     |    1 |
 | b2000t_c2c_bram_jtag_axi_0_0           |    1 |
+| b2000t_c2c_bram_jack_0_0               |    1 |
+| b2000t_c2c_bram_dut_0_0                |    1 |
 | b2000t_c2c_bram_clk_wiz_0              |    1 |
 | b2000t_c2c_bram_blk_mem_gen_0_0        |    1 |
 | b2000t_c2c_bram_axi_chip2chip_0_1      |    1 |
 | b2000t_c2c_bram_axi_chip2chip_0_0      |    1 |
 | b2000t_c2c_bram_axi_bram_ctrl_1_bram_1 |    1 |
 | b2000t_c2c_bram_axi_bram_ctrl_1_0      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_0_1      |    1 |
 | b2000t_c2c_bram_axi_bram_ctrl_0_0      |    1 |
 | b2000t_c2c_bram_aurora_64b66b_0_1      |    1 |
 | b2000t_c2c_bram_aurora_64b66b_0_0      |    1 |

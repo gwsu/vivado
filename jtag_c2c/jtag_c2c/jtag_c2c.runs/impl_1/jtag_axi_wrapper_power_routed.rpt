@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Jun 16 17:59:21 2017
+| Date             : Tue Jun 20 18:22:38 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file jtag_axi_wrapper_power_routed.rpt -pb jtag_axi_wrapper_power_summary_routed.pb -rpx jtag_axi_wrapper_power_routed.rpx
 | Design           : jtag_axi_wrapper
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.099 |       15 |       --- |             --- |
-| Slice Logic              |     0.011 |    30133 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     7868 |    218600 |            3.60 |
-|   Register               |     0.001 |    16226 |    437200 |            3.71 |
-|   LUT as Shift Register  |    <0.001 |     1022 |     70400 |            1.45 |
+| Slice Logic              |     0.011 |    30118 |       --- |             --- |
+|   LUT as Logic           |     0.008 |     7862 |    218600 |            3.60 |
+|   Register               |     0.001 |    16230 |    437200 |            3.71 |
+|   LUT as Shift Register  |    <0.001 |     1023 |     70400 |            1.45 |
 |   CARRY4                 |    <0.001 |      377 |     54650 |            0.69 |
 |   LUT as Distributed RAM |    <0.001 |      232 |     70400 |            0.33 |
 |   F7/F8 Muxes            |    <0.001 |      233 |    218600 |            0.11 |
 |   Others                 |     0.000 |     2188 |       --- |             --- |
-| Signals                  |     0.018 |    21692 |       --- |             --- |
-| Block RAM                |     0.035 |       29 |       545 |            5.32 |
+| Signals                  |     0.017 |    21679 |       --- |             --- |
+| Block RAM                |     0.036 |       29 |       545 |            5.32 |
 | MMCM                     |     0.248 |        2 |         8 |           25.00 |
 | I/O                      |     0.008 |        6 |       362 |            1.66 |
 | GTX                      |     0.627 |        2 |        16 |           12.50 |
@@ -244,12 +244,12 @@ Table of Contents
 |       SWITCH_N_EXT_BSCAN.bscan_inst                                                                |    <0.001 |
 |       SWITCH_N_EXT_BSCAN.bscan_switch                                                              |    <0.001 |
 |   jtag_axi_i                                                                                       |     1.042 |
-|     aurora_64b66b_0                                                                                |     0.464 |
-|       inst                                                                                         |     0.464 |
+|     aurora_64b66b_0                                                                                |     0.463 |
+|       inst                                                                                         |     0.463 |
 |         clock_module_i                                                                             |     0.132 |
 |         gt_common_support                                                                          |    <0.001 |
 |         gt_reset_sync                                                                              |    <0.001 |
-|         jtag_axi_aurora_64b66b_0_0_core_i                                                          |     0.332 |
+|         jtag_axi_aurora_64b66b_0_0_core_i                                                          |     0.331 |
 |           aurora_lane_0_i                                                                          |     0.001 |
 |             err_detect_i                                                                           |    <0.001 |
 |             lane_init_sm_i                                                                         |    <0.001 |
@@ -281,7 +281,7 @@ Table of Contents
 |               u_rst_sync_reset_to_fifo_wr_clk                                                      |    <0.001 |
 |               u_rst_sync_reset_wr_clk                                                              |    <0.001 |
 |               u_rst_sync_rst_cbcc_rd_clk                                                           |    <0.001 |
-|             descrambler_64b66b_gtx0_i                                                              |     0.001 |
+|             descrambler_64b66b_gtx0_i                                                              |    <0.001 |
 |             jtag_axi_aurora_64b66b_0_0_multi_gt_i                                                  |     0.314 |
 |               jtag_axi_aurora_64b66b_0_0_gtx_inst                                                  |     0.314 |
 |             rxresetfsm_i                                                                           |     0.002 |
@@ -335,7 +335,7 @@ Table of Contents
 |           channel_bond_gen_i                                                                       |    <0.001 |
 |           channel_init_sm_i                                                                        |    <0.001 |
 |         gt_reset_sync                                                                              |    <0.001 |
-|         jtag_axi_aurora_64b66b_0_1_wrapper_i                                                       |     0.328 |
+|         jtag_axi_aurora_64b66b_0_1_wrapper_i                                                       |     0.329 |
 |           block_sync_sm_gtx0_i                                                                     |    <0.001 |
 |           cbcc_gtx0_i                                                                              |     0.003 |
 |             u_cdc_rxlossofsync_in                                                                  |    <0.001 |
@@ -395,12 +395,12 @@ Table of Contents
 |           GEN_AXI4.I_FULL_AXI                                                                      |     0.003 |
 |             I_RD_CHNL                                                                              |     0.002 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|             I_WR_CHNL                                                                              |     0.001 |
+|             I_WR_CHNL                                                                              |    <0.001 |
 |               BID_FIFO                                                                             |    <0.001 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|     axi_chip2chip_0                                                                                |     0.019 |
-|       inst                                                                                         |     0.019 |
-|         master_fpga_gen.axi_chip2chip_master_inst                                                  |     0.018 |
+|     axi_chip2chip_0                                                                                |     0.020 |
+|       inst                                                                                         |     0.020 |
+|         master_fpga_gen.axi_chip2chip_master_inst                                                  |     0.019 |
 |           aurora_ecc_io_stage.axi_chip2chip_sync_cell_master_ecc_err_inst                          |    <0.001 |
 |           aurora_ecc_io_stage.ecc_dec_inst[0].axi_chip2chip_ecc_dec_inst                           |    <0.001 |
 |           aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst                           |    <0.001 |
@@ -427,12 +427,12 @@ Table of Contents
 |                         gwas.wsts                                                                  |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
 |                       gntv_or_sync_fifo.mem                                                        |     0.003 |
-|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
-|                           inst_blk_mem_gen                                                         |     0.002 |
-|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
-|                               valid.cstr                                                           |     0.002 |
-|                                 ramloop[0].ram.r                                                   |     0.002 |
-|                                   prim_noinit.ram                                                  |     0.002 |
+|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.003 |
+|                           inst_blk_mem_gen                                                         |     0.003 |
+|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.003 |
+|                               valid.cstr                                                           |     0.003 |
+|                                 ramloop[0].ram.r                                                   |     0.003 |
+|                                   prim_noinit.ram                                                  |     0.003 |
 |                       rstblk                                                                       |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst             |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst             |    <0.001 |
@@ -483,12 +483,12 @@ Table of Contents
 |                         gwas.wsts                                                                  |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
 |                       gntv_or_sync_fifo.mem                                                        |     0.003 |
-|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
-|                           inst_blk_mem_gen                                                         |     0.002 |
-|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
-|                               valid.cstr                                                           |     0.002 |
-|                                 ramloop[0].ram.r                                                   |     0.002 |
-|                                   prim_noinit.ram                                                  |     0.002 |
+|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.003 |
+|                           inst_blk_mem_gen                                                         |     0.003 |
+|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.003 |
+|                               valid.cstr                                                           |     0.003 |
+|                                 ramloop[0].ram.r                                                   |     0.003 |
+|                                   prim_noinit.ram                                                  |     0.003 |
 |                       rstblk                                                                       |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst             |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst             |    <0.001 |
@@ -637,16 +637,16 @@ Table of Contents
 |                         rpntr                                                                      |    <0.001 |
 |                       gntv_or_sync_fifo.gl0.wr                                                     |    <0.001 |
 |                         gwas.wsts                                                                  |    <0.001 |
-|                           c1                                                                       |    <0.001 |
+|                           c1                                                                       |     0.000 |
 |                           c2                                                                       |    <0.001 |
 |                         wpntr                                                                      |    <0.001 |
-|                       gntv_or_sync_fifo.mem                                                        |     0.003 |
-|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.003 |
-|                           inst_blk_mem_gen                                                         |     0.003 |
-|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.003 |
-|                               valid.cstr                                                           |     0.003 |
-|                                 ramloop[0].ram.r                                                   |     0.003 |
-|                                   prim_noinit.ram                                                  |     0.003 |
+|                       gntv_or_sync_fifo.mem                                                        |     0.002 |
+|                         gbm.gbmg.gbmga.ngecc.bmg                                                   |     0.002 |
+|                           inst_blk_mem_gen                                                         |     0.002 |
+|                             gnbram.gnativebmg.native_blk_mem_gen                                   |     0.002 |
+|                               valid.cstr                                                           |     0.002 |
+|                                 ramloop[0].ram.r                                                   |     0.002 |
+|                                   prim_noinit.ram                                                  |     0.002 |
 |                       rstblk                                                                       |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst             |    <0.001 |
 |                         ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst             |    <0.001 |
@@ -681,8 +681,8 @@ Table of Contents
 |           aurora_phy.user_reset_sync_inst                                                          |    <0.001 |
 |           axi_chip2chip_phy_init_inst                                                              |    <0.001 |
 |             sync_cell_master.axi_chip2chip_sync_cell_inst                                          |    <0.001 |
-|     axi_chip2chip_1                                                                                |     0.018 |
-|       inst                                                                                         |     0.018 |
+|     axi_chip2chip_1                                                                                |     0.019 |
+|       inst                                                                                         |     0.019 |
 |         master_fpga_gen.axi_chip2chip_master_inst                                                  |     0.018 |
 |           aurora_ecc_io_stage.ecc_dec_inst[0].axi_chip2chip_ecc_dec_inst                           |    <0.001 |
 |           aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst                           |    <0.001 |
@@ -996,10 +996,10 @@ Table of Contents
 |         inst_blk_mem_gen                                                                           |     0.002 |
 |           gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                                    |     0.002 |
 |             valid.cstr                                                                             |     0.002 |
-|               ramloop[0].ram.r                                                                     |     0.001 |
-|                 prim_noinit.ram                                                                    |     0.001 |
-|               ramloop[1].ram.r                                                                     |     0.001 |
-|                 prim_noinit.ram                                                                    |     0.001 |
+|               ramloop[0].ram.r                                                                     |    <0.001 |
+|                 prim_noinit.ram                                                                    |    <0.001 |
+|               ramloop[1].ram.r                                                                     |    <0.001 |
+|                 prim_noinit.ram                                                                    |    <0.001 |
 |     clk_wiz                                                                                        |     0.126 |
 |       inst                                                                                         |     0.126 |
 |     jtag_axi_0                                                                                     |     0.014 |
@@ -1074,7 +1074,7 @@ Table of Contents
 |                     gwas.wsts                                                                      |    <0.001 |
 |                     wpntr                                                                          |    <0.001 |
 |                   gntv_or_sync_fifo.mem                                                            |     0.002 |
-|                     gdm.dm_gen.dm                                                                  |     0.002 |
+|                     gdm.dm_gen.dm                                                                  |     0.001 |
 |                       RAM_reg_0_63_0_2                                                             |    <0.001 |
 |                       RAM_reg_0_63_12_14                                                           |    <0.001 |
 |                       RAM_reg_0_63_15_17                                                           |    <0.001 |

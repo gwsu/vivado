@@ -1,0 +1,72 @@
+
+*** Running vivado
+    with args -log b2000t_c2c_bram_system_ila2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_system_ila2_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source b2000t_c2c_bram_system_ila2_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1308.164 ; gain = 292.977 ; free physical = 83252 ; free virtual = 188686
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_system_ila2_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/synth/b2000t_c2c_bram_system_ila2_0.v:203]
+INFO: [Synth 8-638] synthesizing module 'bd_22d1' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/hdl/bd_22d1.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_22d1_ila_lib_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/synth/bd_22d1_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (8#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (9#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (19#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (21#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (23#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (28#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'bd_22d1_ila_lib_0' (46#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/synth/bd_22d1_ila_lib_0.v:84]
+INFO: [Synth 8-256] done synthesizing module 'bd_22d1' (47#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/hdl/bd_22d1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_system_ila2_0' (48#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/synth/b2000t_c2c_bram_system_ila2_0.v:203]
+Finished RTL Elaboration : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1621.980 ; gain = 606.793 ; free physical = 82940 ; free virtual = 188375
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1621.980 ; gain = 606.793 ; free physical = 82940 ; free virtual = 188375
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2191.039 ; gain = 0.004 ; free physical = 85603 ; free virtual = 191031
+Finished Constraint Validation : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85601 ; free virtual = 191029
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85601 ; free virtual = 191029
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:58 ; elapsed = 00:01:59 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85601 ; free virtual = 191029
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:00 ; elapsed = 00:02:02 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85598 ; free virtual = 191026
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:09 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85572 ; free virtual = 191000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:21 ; elapsed = 00:02:22 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85558 ; free virtual = 190986
+Finished Timing Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:23 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85558 ; free virtual = 190986
+Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:02:24 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished IO Insertion : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    57|
+|2     |CFGLUT5  |   177|
+|3     |LUT1     |    23|
+|4     |LUT2     |    61|
+|5     |LUT3     |    99|
+|6     |LUT4     |   182|
+|7     |LUT5     |   133|
+|8     |LUT6     |   584|
+|9     |MUXF7    |    12|
+|10    |RAMB18E1 |     1|
+|11    |RAMB36E1 |     5|
+|12    |SRL16E   |   195|
+|13    |SRLC16E  |     2|
+|14    |SRLC32E  |    17|
+|15    |FDRE     |  2114|
+|16    |FDSE     |     9|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2191.039 ; gain = 1175.852 ; free physical = 85546 ; free virtual = 190974
+synth_design: Time (s): cpu = 00:02:21 ; elapsed = 00:02:22 . Memory (MB): peak = 2191.039 ; gain = 1004.371 ; free physical = 85517 ; free virtual = 190945

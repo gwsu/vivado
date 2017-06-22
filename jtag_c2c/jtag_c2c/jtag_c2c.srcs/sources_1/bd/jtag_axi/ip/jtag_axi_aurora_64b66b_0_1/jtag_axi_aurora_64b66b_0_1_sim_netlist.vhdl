@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Fri Jun 16 14:15:10 2017
+-- Date        : Fri Jun 16 14:15:09 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim
---               /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top jtag_axi_aurora_64b66b_0_1 -prefix
+--               jtag_axi_aurora_64b66b_0_1_ jtag_axi_aurora_64b66b_0_1_sim_netlist.vhdl
 -- Design      : jtag_axi_aurora_64b66b_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,8 +23,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rxheadervalid_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM : entity is "jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM is
@@ -1192,8 +1190,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN is
     txdatavalid_symgen_i : in STD_LOGIC;
     CHANNEL_UP_TX_IF_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN : entity is "jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN is
@@ -1393,8 +1389,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT 
     hard_err_i : in STD_LOGIC;
     user_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT : entity is "jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT is
@@ -1441,8 +1435,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM is
     txdatavalid_symgen_i : in STD_LOGIC;
     lane_up : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM : entity is "jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM is
@@ -2017,8 +2009,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B 
     \rxdata_from_gtx_i_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     tempData : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B : entity is "jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B is
@@ -3265,8 +3255,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT is
     ENABLE_ERR_DETECT_reg_0 : in STD_LOGIC;
     SYSTEM_RESET_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT : entity is "jtag_axi_aurora_64b66b_0_1_ERR_DETECT";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT is
@@ -3347,8 +3335,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX is
     CPLL_RESET_reg : in STD_LOGIC;
     gt_cpllreset_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX : entity is "jtag_axi_aurora_64b66b_0_1_GTX";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX is
@@ -4307,8 +4293,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH 
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH : entity is "jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH is
@@ -4851,8 +4835,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B is
     user_clk : in STD_LOGIC;
     \TX_DATA_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B : entity is "jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B is
@@ -6797,8 +6779,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE 
     extend_cc_r : in STD_LOGIC;
     CHANNEL_UP_RX_IF_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE : entity is "jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE is
@@ -7631,8 +7611,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC is
     fifo_dout_i : in STD_LOGIC_VECTOR ( 65 downto 0 );
     lane_up_flop_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC : entity is "jtag_axi_aurora_64b66b_0_1_SYM_DEC";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC is
@@ -9187,8 +9165,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN is
     \TX_PE_DATA_reg[59]\ : in STD_LOGIC;
     \TX_PE_DATA_reg[60]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN : entity is "jtag_axi_aurora_64b66b_0_1_SYM_GEN";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN is
@@ -10013,8 +9989,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_S
     extend_cc_r_reg_0 : in STD_LOGIC;
     s_axi_tx_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM : entity is "jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM is
@@ -10158,8 +10132,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH 
     channel_up_tx_if : in STD_LOGIC;
     s_axi_tx_tdata : in STD_LOGIC_VECTOR ( 0 to 63 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH : entity is "jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH is
@@ -11362,8 +11334,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync is
     rxheadervalid_i : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync : entity is "jtag_axi_aurora_64b66b_0_1_cdc_sync";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync is
@@ -25405,8 +25375,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc i
     user_clk : in STD_LOGIC;
     ANY_VLD_BTF_FLAG : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc : entity is "jtag_axi_aurora_64b66b_0_1_common_logic_cbcc";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc is
@@ -25466,8 +25434,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_rst_sync is
     pma_init : in STD_LOGIC;
     init_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_rst_sync : entity is "jtag_axi_aurora_64b66b_0_1_rst_sync";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_rst_sync;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_rst_sync is
@@ -29708,8 +29674,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CH
     new_gtx_rx_pcsreset_comb_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     illegal_btf_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING : entity is "jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING is
@@ -34536,8 +34500,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC is
     txdatavalid_symgen_i : in STD_LOGIC;
     lane_up : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC : entity is "jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC is
@@ -34616,8 +34578,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM is
     rx_lossofsync_i : in STD_LOGIC;
     reset_lanes_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM : entity is "jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM is
@@ -35043,8 +35003,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT is
     CPLL_RESET_reg : in STD_LOGIC;
     gt_cpllreset_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT : entity is "jtag_axi_aurora_64b66b_0_1_MULTI_GT";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT is
@@ -35113,8 +35071,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC is
     tx_reset_i : in STD_LOGIC;
     gen_na_idles_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC : entity is "jtag_axi_aurora_64b66b_0_1_RESET_LOGIC";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC is
@@ -35217,8 +35173,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     fsm_resetdone_to_new_gtx_rx_comb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM : entity is "jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM is
@@ -38708,8 +38662,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM : entity is "jtag_axi_aurora_64b66b_0_1_RX_STREAM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM is
@@ -38746,8 +38698,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM is
     mmcm_not_locked : in STD_LOGIC;
     ack_flag : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM : entity is "jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM is
@@ -41691,8 +41641,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM is
     s_axi_tx_tvalid : in STD_LOGIC;
     s_axi_tx_tdata : in STD_LOGIC_VECTOR ( 0 to 63 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM : entity is "jtag_axi_aurora_64b66b_0_1_TX_STREAM";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM is
@@ -41799,8 +41747,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_reset_cbcc i
     \out\ : in STD_LOGIC;
     cb_bit_err_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_reset_cbcc : entity is "jtag_axi_aurora_64b66b_0_1_common_reset_cbcc";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_reset_cbcc;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_reset_cbcc is
@@ -42203,8 +42149,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE is
     \TX_PE_DATA_reg[59]\ : in STD_LOGIC;
     \TX_PE_DATA_reg[60]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE : entity is "jtag_axi_aurora_64b66b_0_1_AURORA_LANE";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE is
@@ -42382,8 +42326,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER is
     illegal_btf_i : in STD_LOGIC;
     \TX_DATA_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER : entity is "jtag_axi_aurora_64b66b_0_1_WRAPPER";
 end jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER;
 
 architecture STRUCTURE of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER is
@@ -44696,8 +44638,6 @@ entity jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core is
   attribute EXAMPLE_SIMULATION of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core : entity is 0;
   attribute INTER_CB_GAP : string;
   attribute INTER_CB_GAP of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core : entity is "5'b01001";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core : entity is "jtag_axi_aurora_64b66b_0_1_core";
   attribute SIM_GTXRESET_SPEEDUP : string;
   attribute SIM_GTXRESET_SPEEDUP of jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core : entity is "TRUE";
   attribute STABLE_CLOCK_PERIOD : integer;

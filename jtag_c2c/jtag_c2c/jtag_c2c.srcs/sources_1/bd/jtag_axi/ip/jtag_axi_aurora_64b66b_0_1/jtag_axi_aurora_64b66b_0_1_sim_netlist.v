@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Fri Jun 16 14:15:10 2017
+// Date        : Fri Jun 16 14:15:09 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode funcsim
-//               /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top jtag_axi_aurora_64b66b_0_1 -prefix
+//               jtag_axi_aurora_64b66b_0_1_ jtag_axi_aurora_64b66b_0_1_sim_netlist.v
 // Design      : jtag_axi_aurora_64b66b_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -157,7 +157,6 @@ module jtag_axi_aurora_64b66b_0_1
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_AURORA_LANE" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE
    (\lane_up[0] ,
     tx_reset_i,
@@ -544,7 +543,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_AURORA_LANE
         .wait_for_lane_up_r_reg(wait_for_lane_up_r_reg));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM
    (D,
     blocksync_out_i,
@@ -1403,7 +1401,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_BLOCK_SYNC_SM
         .R(system_reset_r2));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN
    (gen_ch_bond_i,
     TX_HEADER_0_reg,
@@ -1577,7 +1574,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_BOND_GEN
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT
    (hard_err,
     hard_err_i,
@@ -1598,7 +1594,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_ERR_DETECT
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM
    (SR,
     \idle_xmit_cntr_reg[5]_0 ,
@@ -2081,7 +2076,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CHANNEL_INIT_SM
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CHANNEL_BONDING
    (RX_HEADER_1_REG_reg,
     do_rd_en_i,
@@ -5858,7 +5852,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_CLOCK_CORRECTION_CH
         .R(stg31_reg));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B
    (D,
     CB_detect0,
@@ -6821,7 +6814,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_DESCRAMBLER_64B66B
         .O(D[0]));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_ERR_DETECT" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT
    (soft_err_i,
     hard_err_i,
@@ -6866,7 +6858,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_ERR_DETECT
         .O(ready_r_reg0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC
    (SR,
     gen_na_idles_i,
@@ -7006,7 +6997,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GLOBAL_LOGIC
         .wait_for_lane_up_r0(wait_for_lane_up_r0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_GTX" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX
    (in0,
     drprdy_out,
@@ -7962,7 +7952,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_GTX
         .TXUSRCLK2(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM
    (\lane_up[0] ,
     rxreset_for_lanes_q_reg,
@@ -8282,7 +8271,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_LANE_INIT_SM
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_MULTI_GT" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT
    (in0,
     drprdy_out,
@@ -8453,7 +8441,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_MULTI_GT
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_RESET_LOGIC" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC
    (sys_reset_out,
     wait_for_lane_up_r0,
@@ -8548,7 +8535,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RESET_LOGIC
         .O(wait_for_lane_up_r0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM
    (rx_fsm_resetdone_i,
     SR,
@@ -11064,7 +11050,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STARTUP_FSM
         .R(u_rst_sync_run_phase_align_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_RX_STREAM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM
    (m_axi_rx_tvalid,
     m_axi_rx_tdata,
@@ -11099,7 +11084,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH
    (m_axi_rx_tvalid,
     m_axi_rx_tdata,
@@ -11518,7 +11502,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_RX_STREAM_DATAPATH
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B
    (Q,
     SCRAMBLED_DATA_OUT,
@@ -12989,7 +12972,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SCRAMBLER_64B66B
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE
    (do_cc_r_reg0,
     Q,
@@ -13635,7 +13617,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_STANDARD_CC_MODULE
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_SYM_DEC" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC
    (rx_pe_data_v_i,
     illegal_btf_i,
@@ -14780,7 +14761,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_DEC
         .R(\rx_na_idles_cntr[4]_i_1_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_SYM_GEN" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN
    (D,
     tempData,
@@ -15579,7 +15559,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_SYM_GEN
         .O(tempData[5]));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM
    (tx_fsm_resetdone_i,
     in0,
@@ -17667,7 +17646,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STARTUP_FSM
         .S(\wait_time_cnt[0]_i_1_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_TX_STREAM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM
    (gen_cc_i,
     do_cc_r,
@@ -17975,7 +17953,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_SM
    (gen_cc_i,
     do_cc_r,
@@ -18058,7 +18035,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_CONTROL_S
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH
    (\TX_DATA_reg[63] ,
     \TX_DATA_reg[59] ,
@@ -19133,7 +19109,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_TX_STREAM_DATAPATH
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_WRAPPER" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER
    (in0,
     drprdy_out,
@@ -21065,7 +21040,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_WRAPPER
         .O(unscrambled_data_i052_out));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_cdc_sync" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync
    (RX_NEG_OUT_reg,
     check_polarity_r_reg,
@@ -29887,7 +29861,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_cdc_sync__parameter
         .R(cbcc_reset_cbstg2_rd_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_common_logic_cbcc" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc
    (cb_bit_err_out,
     in0,
@@ -29962,7 +29935,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_logic_cbcc
         .R(cbcc_fifo_reset_wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_common_reset_cbcc" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_common_reset_cbcc
    (cbcc_fifo_reset_to_fifo_wr_clk_dlyd_reg_0,
     cbcc_fifo_reset_to_fifo_rd_clk,
@@ -30221,8 +30193,7 @@ endmodule
 
 (* BACKWARD_COMP_MODE1 = "1'b0" *) (* BACKWARD_COMP_MODE2 = "1'b0" *) (* BACKWARD_COMP_MODE3 = "1'b0" *) 
 (* CC_FREQ_FACTOR = "5'b11000" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* EXAMPLE_SIMULATION = "0" *) 
-(* INTER_CB_GAP = "5'b01001" *) (* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_core" *) (* SIM_GTXRESET_SPEEDUP = "TRUE" *) 
-(* STABLE_CLOCK_PERIOD = "10" *) 
+(* INTER_CB_GAP = "5'b01001" *) (* SIM_GTXRESET_SPEEDUP = "TRUE" *) (* STABLE_CLOCK_PERIOD = "10" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core
    (s_axi_tx_tdata,
     s_axi_tx_tvalid,
@@ -30756,7 +30727,6 @@ module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_core
         .user_clk(user_clk));
 endmodule
 
-(* ORIG_REF_NAME = "jtag_axi_aurora_64b66b_0_1_rst_sync" *) 
 module jtag_axi_aurora_64b66b_0_1_jtag_axi_aurora_64b66b_0_1_rst_sync
    (pma_init_sync,
     pma_init,

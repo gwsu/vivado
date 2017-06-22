@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="jtag_axi" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1497641599"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1497641599"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1497641599"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1497996947"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1497996947"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1497996947"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.xci" Type="IP">
         <Instance HierarchyPath="jtag_axi_0"/>

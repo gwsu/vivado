@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Fri Jun 16 14:15:10 2017
+// Date        : Fri Jun 16 14:15:09 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode synth_stub
-//               /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top jtag_axi_aurora_64b66b_0_1 -prefix
+//               jtag_axi_aurora_64b66b_0_1_ jtag_axi_aurora_64b66b_0_1_stub.v
 // Design      : jtag_axi_aurora_64b66b_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z045ffv900-2

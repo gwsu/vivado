@@ -59,36 +59,34 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_mem_intercon_0/jtag_axi_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_blk_mem_gen_0_0/jtag_axi_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="jtag_axi_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_xlconstant_0_0/jtag_axi_xlconstant_0_0.xci">
           <Proxy FileSetName="jtag_axi_xlconstant_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_system_ila_0/jtag_axi_system_ila_0.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="hdl/jtag_axi.v"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_system_ila_0_0/jtag_axi_system_ila_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_xbar_0/jtag_axi_xbar_0.xci">
-          <Proxy FileSetName="jtag_axi_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.xci">
           <Proxy FileSetName="jtag_axi_clk_wiz_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xci">
-          <Proxy FileSetName="jtag_axi_aurora_64b66b_0_1"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_system_ila_0/jtag_axi_system_ila_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_xbar_0/jtag_axi_xbar_0.xci">
+          <Proxy FileSetName="jtag_axi_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_bram_ctrl_0_0/jtag_axi_axi_bram_ctrl_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_vio_0_0/jtag_axi_vio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_system_ila_0_0/jtag_axi_system_ila_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_bram_ctrl_0_0/jtag_axi_axi_bram_ctrl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_blk_mem_gen_0_0/jtag_axi_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="jtag_axi_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_axi_mem_intercon_0/jtag_axi_axi_mem_intercon_0.xci"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="hdl/jtag_axi.v"/>
+        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="jtag_axi_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="hw_handoff/jtag_axi_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="hw_handoff/jtag_axi.hwh"/>
         <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="hdl/jtag_axi.hwdef"/>
-        <CompFileExtendedInfo CompFileName="jtag_axi.bd" FileRelPathName="jtag_axi_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v">
         <FileInfo>
@@ -98,6 +96,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/component.xml">
+        <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -153,12 +154,6 @@
     <FileSet Name="jtag_axi_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/jtag_axi_xbar_0">
       <Config>
         <Option Name="TopModule" Val="jtag_axi_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="jtag_axi_aurora_64b66b_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/jtag_axi_aurora_64b66b_0_1">
-      <Config>
-        <Option Name="TopModule" Val="jtag_axi_aurora_64b66b_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -220,16 +215,6 @@
     <Run Id="jtag_axi_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="jtag_axi_xbar_0" Part="xc7z045ffv900-2" ConstrsSet="jtag_axi_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/jtag_axi_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="jtag_axi_aurora_64b66b_0_1_synth_1" Type="Ft3:Synth" SrcSet="jtag_axi_aurora_64b66b_0_1" Part="xc7z045ffv900-2" ConstrsSet="jtag_axi_aurora_64b66b_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/jtag_axi_aurora_64b66b_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -299,23 +284,6 @@
     <Run Id="jtag_axi_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z045ffv900-2" ConstrsSet="jtag_axi_xbar_0" Description="Default settings for Implementation." SynthRun="jtag_axi_xbar_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="jtag_axi_aurora_64b66b_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z045ffv900-2" ConstrsSet="jtag_axi_aurora_64b66b_0_1" Description="Default settings for Implementation." SynthRun="jtag_axi_aurora_64b66b_0_1_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
