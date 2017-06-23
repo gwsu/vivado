@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="aurora_64b66b_0_partner_synth_1" LaunchDir="f:/GITHUB/vivado/zynq_c2c/axi_chip2chip_0_ex/axi_chip2chip_0_ex.runs/aurora_64b66b_0_partner_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-

@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jun  7 10:06:56 2017
+# Process ID: 114404
+# Current directory: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.runs/zynq_iic_axi_gpio_0_0_synth_1
+# Command line: vivado -log zynq_iic_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_iic_axi_gpio_0_0.tcl
+# Log file: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.runs/zynq_iic_axi_gpio_0_0_synth_1/zynq_iic_axi_gpio_0_0.vds
+# Journal file: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.runs/zynq_iic_axi_gpio_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zynq_iic_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1219.188 ; gain = 203.996 ; free physical = 106355 ; free virtual = 204657
+INFO: [Synth 8-638] synthesizing module 'zynq_iic_axi_gpio_0_0' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ip/zynq_iic_axi_gpio_0_0/synth/zynq_iic_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-256] done synthesizing module 'zynq_iic_axi_gpio_0_0' (8#1) [/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic/zynq_iic.srcs/sources_1/bd/zynq_iic/ip/zynq_iic_axi_gpio_0_0/synth/zynq_iic_axi_gpio_0_0.vhd:86]
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1261.664 ; gain = 246.473 ; free physical = 106261 ; free virtual = 204563
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1261.664 ; gain = 246.473 ; free physical = 106261 ; free virtual = 204563
+INFO: [Device 21-403] Loading part xc7z045ffg900-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1674.965 ; gain = 0.004 ; free physical = 105622 ; free virtual = 203924
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105443 ; free virtual = 203745
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105443 ; free virtual = 203745
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105443 ; free virtual = 203745
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105431 ; free virtual = 203733
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105412 ; free virtual = 203715
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105370 ; free virtual = 203672
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105363 ; free virtual = 203666
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105355 ; free virtual = 203657
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105337 ; free virtual = 203639
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105337 ; free virtual = 203639
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105336 ; free virtual = 203638
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105336 ; free virtual = 203638
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105333 ; free virtual = 203635
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105333 ; free virtual = 203635
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     4|
+|3     |LUT3 |     4|
+|4     |LUT4 |     4|
+|5     |LUT5 |    13|
+|6     |LUT6 |    12|
+|7     |FDR  |     8|
+|8     |FDRE |    31|
+|9     |FDSE |     2|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1674.965 ; gain = 659.773 ; free physical = 105333 ; free virtual = 203635
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1674.965 ; gain = 569.270 ; free physical = 105295 ; free virtual = 203598

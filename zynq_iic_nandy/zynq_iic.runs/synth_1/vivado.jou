@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jun  8 11:18:22 2017
+# Process ID: 80213
+# Current directory: /home/nandykong/zynq_iic/zynq_iic.runs/synth_1
+# Command line: vivado -log zynq_iic_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_iic_wrapper.tcl
+# Log file: /home/nandykong/zynq_iic/zynq_iic.runs/synth_1/zynq_iic_wrapper.vds
+# Journal file: /home/nandykong/zynq_iic/zynq_iic.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source zynq_iic_wrapper.tcl -notrace

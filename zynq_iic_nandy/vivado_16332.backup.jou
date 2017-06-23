@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jun 23 14:15:36 2017
+# Process ID: 16332
+# Current directory: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic_nandy
+# Command line: vivado zynq_iic.xpr
+# Log file: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic_nandy/vivado.log
+# Journal file: /home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic_nandy/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project zynq_iic.xpr
+open_bd_design {/home/wesleyguo/demo_2016.4_wesleyguo/zynq_iic_nandy/zynq_iic.srcs/sources_1/bd/zynq_iic/zynq_iic.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SS1_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
