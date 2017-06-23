@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jun 13 14:55:35 2017
+# Process ID: 78956
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram
+# Command line: vivado b2000t_c2c_bram.xpr
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project b2000t_c2c_bram.xpr
+INFO: [Project 1-313] Project file moved from 'F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files', nor could it be found using path '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/F:/GITHUB/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 6123.562 ; gain = 153.680 ; free physical = 96600 ; free virtual = 198984
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 14:56:36 2017...

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498082279">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="b2000t_c2c_bram_wrapper.drc"/>
+  <File Type="BG-BGN" Name="b2000t_c2c_bram_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="b2000t_c2c_bram_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="b2000t_c2c_bram_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="b2000t_c2c_bram_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="b2000t_c2c_bram_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="b2000t_c2c_bram_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="b2000t_c2c_bram_wrapper.msk"/>
+  <File Type="BG-BIN" Name="b2000t_c2c_bram_wrapper.bin"/>
+  <File Type="BG-BIT" Name="b2000t_c2c_bram_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="b2000t_c2c_bram_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="b2000t_c2c_bram_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="b2000t_c2c_bram_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="b2000t_c2c_bram_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="b2000t_c2c_bram_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="b2000t_c2c_bram_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="b2000t_c2c_bram_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="b2000t_c2c_bram_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="b2000t_c2c_bram_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="b2000t_c2c_bram_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="b2000t_c2c_bram_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="b2000t_c2c_bram_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="b2000t_c2c_bram_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="b2000t_c2c_bram_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="b2000t_c2c_bram_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="b2000t_c2c_bram_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="b2000t_c2c_bram_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="b2000t_c2c_bram_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="b2000t_c2c_bram_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="b2000t_c2c_bram_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="b2000t_c2c_bram_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="b2000t_c2c_bram_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="b2000t_c2c_bram_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="b2000t_c2c_bram_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="b2000t_c2c_bram_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="b2000t_c2c_bram_wrapper.vdi"/>
+  <File Type="PLACE-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="b2000t_c2c_bram_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="b2000t_c2c_bram_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="b2000t_c2c_bram_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="b2000t_c2c_bram_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="b2000t_c2c_bram_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="b2000t_c2c_bram_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="b2000t_c2c_bram_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="b2000t_c2c_bram_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="b2000t_c2c_bram_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="b2000t_c2c_bram_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="b2000t_c2c_bram_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="b2000t_c2c_bram_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="b2000t_c2c_bram_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="b2000t_c2c_bram_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="b2000t_c2c_bram_wrapper_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="b2000t_c2c_bram_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="b2000t_c2c_bram_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="b2000t_c2c_bram_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_0_0"/>
+</GenRun>
