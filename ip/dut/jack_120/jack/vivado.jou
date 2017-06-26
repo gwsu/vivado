@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jun 26 17:01:53 2017
+# Process ID: 135109
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack
+# Command line: vivado jack.xpr
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project jack.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ipx::open_ipxact_file /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1/component.xml
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1

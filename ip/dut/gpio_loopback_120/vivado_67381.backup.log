@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jun 20 17:23:59 2017
+# Process ID: 67381
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback
+# Command line: vivado
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+ipx::open_ipxact_file /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/component.xml
+ERROR: [Common 17-39] 'ipx::open_ipxact_file' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v" into library work [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:1]
+[Tue Jun 20 17:25:01 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 24
+[Tue Jun 20 17:27:15 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+ipx::unload_core /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/component.xml
+ipx::open_ipxact_file /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/component.xml
+ERROR: [Common 17-39] 'ipx::open_ipxact_file' failed due to earlier errors.
+set_property core_revision 7 [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+ERROR: [Common 17-39] 'update_ip_catalog' failed due to earlier errors.
+ipx::unload_core /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1/component.xml
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1 -vendor user.org -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rstn' as interface 'rstn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+open_project /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+ipx::open_ipxact_file /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1/component.xml
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+current_project gpio_loopback
+current_project jack
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1/jack.v" into library work [/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1/jack.v:1]
+[Tue Jun 20 18:39:36 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 24
+[Tue Jun 20 18:42:14 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.runs/impl_1/runme.log
+set_property version 1.1 [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property version 1.0 [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property core_revision 9 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+ipx::unload_core /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1/component.xml
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1 -vendor user.org -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property version 1.2 [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack/jack/jack.srcs/sources_1/imports/sources_1'
+current_project gpio_loopback
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 14:55:23 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 14:55:23 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 15:09:08 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 15:09:08 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 15:19:54 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+set_property supported_families {virtex7 Production virtexu Beta zynq Beta} [ipx::current_core]
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 16:01:24 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 16:01:24 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+ipx::merge_project_changes ports [ipx::current_core]
+INFO: [IP_Flow 19-3445] Bus interface 'rstn': Replace port-map physical named 'rstn' by 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+ipx::remove_bus_interface rstn [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 16:27:20 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 16:27:20 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 16:56:43 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 16:56:43 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Wed Jun 21 17:01:10 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 17:01:10 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Wed Jun 21 17:41:40 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1/runme.log
+[Wed Jun 21 17:41:40 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1/runme.log
+set_property core_revision 9 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+set_property core_revision 10 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.srcs/sources_1/imports/sources_1'
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 22 10:25:24 2017...

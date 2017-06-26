@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jun 26 17:14:48 2017
+# Process ID: 136226
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120
+# Command line: vivado gpio_loopback.xpr
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project gpio_loopback.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
