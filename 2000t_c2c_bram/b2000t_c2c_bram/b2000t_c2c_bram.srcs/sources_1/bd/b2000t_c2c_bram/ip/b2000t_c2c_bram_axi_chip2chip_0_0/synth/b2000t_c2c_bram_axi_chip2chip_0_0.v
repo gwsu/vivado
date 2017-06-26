@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "axi_chip2chip_v4_2_11,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_axi_chip2chip_0_0,axi_chip2chip_v4_2_11,{}" *)
-(* CORE_GENERATION_INFO = "b2000t_c2c_bram_axi_chip2chip_0_0,axi_chip2chip_v4_2_11,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_chip2chip,x_ipVersion=4.2,x_ipCoreRevision=11,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=virtex7,C_INSTANCE=axi_c2c,C_SIMULATION=0,C_MASTER_FPGA=0,C_AXI_BUS_TYPE=0,C_COMMON_CLK=0,C_INTERFACE_TYPE=2,C_INTERFACE_MODE=0,C_NUM_OF_IO=20,C_SELECTIO_PHY_CLK=100,C_INCLUDE_AXILITE=0,C_AXI_DATA_WIDTH=32,C_AXI_ID_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_DISABLE_DESKEW=0,C_DISAB\
+(* CORE_GENERATION_INFO = "b2000t_c2c_bram_axi_chip2chip_0_0,axi_chip2chip_v4_2_11,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_chip2chip,x_ipVersion=4.2,x_ipCoreRevision=11,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=virtex7,C_INSTANCE=axi_c2c,C_SIMULATION=0,C_MASTER_FPGA=0,C_AXI_BUS_TYPE=0,C_COMMON_CLK=0,C_INTERFACE_TYPE=2,C_INTERFACE_MODE=1,C_NUM_OF_IO=20,C_SELECTIO_PHY_CLK=100,C_INCLUDE_AXILITE=0,C_AXI_DATA_WIDTH=32,C_AXI_ID_WIDTH=7,C_AXI_WUSER_WIDTH=1,C_DISABLE_DESKEW=0,C_DISAB\
 LE_CLK_SHIFT=0,C_USE_DIFF_CLK=0,C_USE_DIFF_IO=0,C_AURORA_WIDTH=64,C_ECC_ENABLE=1,C_AXI_STB_WIDTH=4,C_AXI_ADDR_WIDTH=32,C_AXI_LEN_WIDTH=8,C_AXI_SIZE_WIDTH=3,C_AXI_BRST_WIDTH=2,C_AXI_RESP_WIDTH=2,C_INTERRUPT_WIDTH=4,C_AXI_LITE_ADDR_WIDTH=32,C_AXI_LITE_PROT_WIDTH=2,C_AXI_LITE_DATA_WIDTH=32,C_AXI_LITE_STB_WIDTH=4,C_AXI_LITE_RESP_WIDTH=2}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module b2000t_c2c_bram_axi_chip2chip_0_0 (
@@ -112,7 +112,7 @@ input wire m_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 m_aresetn RST" *)
 input wire m_aresetn;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWID" *)
-output wire [0 : 0] m_axi_awid;
+output wire [6 : 0] m_axi_awid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWADDR" *)
 output wire [31 : 0] m_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWLEN" *)
@@ -136,7 +136,7 @@ output wire m_axi_wvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WREADY" *)
 input wire m_axi_wready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BID" *)
-input wire [0 : 0] m_axi_bid;
+input wire [6 : 0] m_axi_bid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BRESP" *)
 input wire [1 : 0] m_axi_bresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BVALID" *)
@@ -144,7 +144,7 @@ input wire m_axi_bvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BREADY" *)
 output wire m_axi_bready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARID" *)
-output wire [0 : 0] m_axi_arid;
+output wire [6 : 0] m_axi_arid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARADDR" *)
 output wire [31 : 0] m_axi_araddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARLEN" *)
@@ -158,7 +158,7 @@ output wire m_axi_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARREADY" *)
 input wire m_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RID" *)
-input wire [0 : 0] m_axi_rid;
+input wire [6 : 0] m_axi_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RDATA" *)
 input wire [31 : 0] m_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RRESP" *)
@@ -207,12 +207,12 @@ output wire axi_c2c_multi_bit_error_out;
     .C_AXI_BUS_TYPE(0),
     .C_COMMON_CLK(0),
     .C_INTERFACE_TYPE(2),
-    .C_INTERFACE_MODE(0),
+    .C_INTERFACE_MODE(1),
     .C_NUM_OF_IO(20),
     .C_SELECTIO_PHY_CLK(100),
     .C_INCLUDE_AXILITE(0),
     .C_AXI_DATA_WIDTH(32),
-    .C_AXI_ID_WIDTH(1),
+    .C_AXI_ID_WIDTH(7),
     .C_AXI_WUSER_WIDTH(1),
     .C_DISABLE_DESKEW(0),
     .C_DISABLE_CLK_SHIFT(0),
@@ -235,7 +235,7 @@ output wire axi_c2c_multi_bit_error_out;
   ) inst (
     .s_aclk(1'B0),
     .s_aresetn(1'B1),
-    .s_axi_awid(1'B0),
+    .s_axi_awid(7'B0),
     .s_axi_awaddr(32'B0),
     .s_axi_awlen(8'B0),
     .s_axi_awsize(3'B0),
@@ -252,7 +252,7 @@ output wire axi_c2c_multi_bit_error_out;
     .s_axi_bresp(),
     .s_axi_bvalid(),
     .s_axi_bready(1'B0),
-    .s_axi_arid(1'B0),
+    .s_axi_arid(7'B0),
     .s_axi_araddr(32'B0),
     .s_axi_arlen(8'B0),
     .s_axi_arsize(3'B0),

@@ -17,6 +17,10 @@ set_property parent.project_path /home/wesleyguo/github/vivado/vivado/2000t_c2c_
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths {
+  /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback
+  /home/wesleyguo/github/vivado/vivado/ip/dut/jack
+} [current_project]
 set_property ip_output_repo /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.xci

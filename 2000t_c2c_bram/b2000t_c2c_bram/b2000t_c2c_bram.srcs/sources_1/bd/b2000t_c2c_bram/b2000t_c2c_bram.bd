@@ -183,8 +183,8 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_axi_chip2chip_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_AXI_WUSER_WIDTH">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_AXI_ID_WIDTH">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_INTERFACE_MODE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_AXI_ID_WIDTH">7</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_INTERFACE_MODE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_INTERFACE_TYPE">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_COMMON_CLK">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_MASTER_FPGA">0</spirit:configurableElementValue>
@@ -534,15 +534,15 @@
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_1" spirit:portRef="drp_clk_in"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_2" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila2" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_2" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M02_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila2" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_locked</spirit:name>
@@ -558,12 +558,12 @@
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="m_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_1" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_2" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S02_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_2" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M02_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>

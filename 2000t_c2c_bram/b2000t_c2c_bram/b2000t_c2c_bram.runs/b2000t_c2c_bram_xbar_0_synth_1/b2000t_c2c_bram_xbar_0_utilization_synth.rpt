@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jun 16 15:23:16 2017
+| Date         : Fri Jun 23 16:19:16 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file b2000t_c2c_bram_xbar_0_utilization_synth.rpt -pb b2000t_c2c_bram_xbar_0_utilization_synth.pb
 | Design       : b2000t_c2c_bram_xbar_0
@@ -34,15 +34,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  900 |     0 |   1221600 |  0.07 |
-|   LUT as Logic             |  888 |     0 |   1221600 |  0.07 |
-|   LUT as Memory            |   12 |     0 |    344800 | <0.01 |
+| Slice LUTs*                | 1092 |     0 |   1221600 |  0.09 |
+|   LUT as Logic             | 1075 |     0 |   1221600 |  0.09 |
+|   LUT as Memory            |   17 |     0 |    344800 | <0.01 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |   12 |     0 |           |       |
-| Slice Registers            |  550 |     0 |   2443200 |  0.02 |
-|   Register as Flip Flop    |  550 |     0 |   2443200 |  0.02 |
+|     LUT as Shift Register  |   17 |     0 |           |       |
+| Slice Registers            |  789 |     0 |   2443200 |  0.03 |
+|   Register as Flip Flop    |  789 |     0 |   2443200 |  0.03 |
 |   Register as Latch        |    0 |     0 |   2443200 |  0.00 |
-| F7 Muxes                   |    0 |     0 |    610800 |  0.00 |
+| F7 Muxes                   |    3 |     0 |    610800 | <0.01 |
 | F8 Muxes                   |    0 |     0 |    305400 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -62,8 +62,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 26    |          Yes |         Set |            - |
-| 524   |          Yes |       Reset |            - |
+| 29    |          Yes |         Set |            - |
+| 760   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -157,15 +157,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  524 |        Flop & Latch |
-| LUT5     |  317 |                 LUT |
-| LUT6     |  247 |                 LUT |
-| LUT4     |  210 |                 LUT |
-| LUT3     |  195 |                 LUT |
-| LUT2     |   58 |                 LUT |
-| FDSE     |   26 |        Flop & Latch |
-| SRL16E   |   12 |  Distributed Memory |
-| LUT1     |   10 |                 LUT |
+| FDRE     |  760 |        Flop & Latch |
+| LUT6     |  470 |                 LUT |
+| LUT5     |  357 |                 LUT |
+| LUT3     |  243 |                 LUT |
+| LUT4     |  126 |                 LUT |
+| LUT2     |   61 |                 LUT |
+| FDSE     |   29 |        Flop & Latch |
+| SRL16E   |   17 |  Distributed Memory |
+| LUT1     |    8 |                 LUT |
+| MUXF7    |    3 |               MuxFx |
 +----------+------+---------------------+
 
 
