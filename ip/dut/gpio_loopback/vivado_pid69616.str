@@ -868,3 +868,452 @@ selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Progra
 // HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 4:55:52 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 5:25:52 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 72 MB. Current time: 6/21/17 5:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 6:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 6:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 7:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 7:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 8:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 8:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 9:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 9:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 10:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 10:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 11:25:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/21/17 11:55:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 12:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 12:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 1:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 1:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 2:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 2:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 3:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 3:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 4:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 4:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 5:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 5:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 6:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 6:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 7:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 7:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 8:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 8:55:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 9:25:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 73 MB. Current time: 6/22/17 9:55:52 AM EDT
+// Elapsed time: 63623 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 72 MB. Current time: 6/22/17 10:25:53 AM EDT
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// Tcl Message: [Thu Jun 22 10:26:11 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 1390 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 27, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,841 MB. GUI used memory: 76 MB. Current time: 6/22/17 10:49:23 AM EDT
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at 192.168.0.44:3121.  Targets(s) ", jsn-DLC10-00001894580501jsn1" may be locked by another hw_server. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// TclEventType: HW_SERVER_NEEDS_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: ERROR: [Labtoolstcl 44-514] HW Server shutdown. Disconnecting from server: 192.168.0.44:3121 
+// n:a (cd:JFrame): Disconnect Hardware Server: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Disconnect Hardware Server"); // n:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at 192.168.0.44:3121.  Targets(s) ", jsn1" may be locked by another hw_server. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server 192.168.0.44:3121 
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server 192.168.0.44:3121 
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,906 MB. GUI used memory: 75 MB. Current time: 6/22/17 10:50:23 AM EDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (1) ; Programmed", 3, "xc7z045_1 (1)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (1) ; Programmed", 3, "xc7z045_1 (1)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 6950.473 ; gain = 0.000 ; free physical = 85514 ; free virtual = 191511 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,933 MB. GUI used memory: 76 MB. Current time: 6/22/17 10:51:08 AM EDT
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 6972.480 ; gain = 22.008 ; free physical = 85508 ; free virtual = 191504 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]] 
+// Tcl Message: Processed interface aurora_64b66b_0_USER_DATA_M_AXIS_RX_ila1_slot0 Processed interface axi_chip2chip_0_AXIS_TX_ila1_slot1 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: Processed interface jtag_axi_0_M_AXI_ila2_slot0 Processed interface axi_mem_intercon_M01_AXI_ila2_slot1 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'B' command handler elapsed time: 49 seconds
+// Elapsed time: 47 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_2", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "jtag_axi_i/axi_chip2chip_0_axi_c2c_link_status_out ; [B] 1 ;  ; Input ; hw_vio_1", 3, "jtag_axi_i/axi_chip2chip_0_axi_c2c_link_status_out", 0, false); // g:r (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "jtag_axi_i/clk_wiz_locked ; [B] 1 ;  ; Input ; hw_vio_1", 0, "jtag_axi_i/clk_wiz_locked", 0, false); // g:r (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,011 MB. GUI used memory: 96 MB. Current time: 6/22/17 10:51:23 AM EDT
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+setFileChooser("/home/wesleyguo/github/vivado/vivado/zynq_2000_c2c_tcl.tcl");
+// 'e' command handler elapsed time: 4 seconds
+selectCodeEditor("zynq_2000_c2c_tcl.tcl", 164, 665); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("zynq_2000_c2c_tcl.tcl", 52, 614, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Tcl Command: 'create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address 0x76020004 -len 6  -type read -force; create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address 0x76020000 -data 0x0123012411111111 -len 2 -type write -force; ; run_hw_axi wr_txn_ram; run_hw_axi rd_txn_ram'
+// Tcl Command: 'create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address 0x76020004 -len 6  -type read -force'
+// Tcl Command: 'create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address 0x76020000 -data 0x0123012411111111 -len 2 -type write -force'
+// Tcl Command: ''
+// Tcl Command: 'run_hw_axi wr_txn_ram'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Command: 'run_hw_axi rd_txn_ram'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address 0x76020004 -len 6  -type read -force 
+// Tcl Message: rd_txn_ram 
+// Tcl Message: create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address 0x76020000 -data 0x0123012411111111 -len 2 -type write -force 
+// Tcl Message: wr_txn_ram 
+// Tcl Message: run_hw_axi wr_txn_ram 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x0123012411111111 
+// Tcl Message: run_hw_axi rd_txn_ram 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 03ffffff03ffffff00000000000000000000000000000000 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (5) ; Programmed", 3, "xc7z045_1 (5)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (2) ; Open", 1, "xilinx_tcf/Xilinx/00001894580501 (2)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (2) ; Open", 1, "xilinx_tcf/Xilinx/00001894580501 (2)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "192.168.0.44 (1) ; Connected", 0, "192.168.0.44 (1)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "192.168.0.44 (1) ; Connected", 0, "192.168.0.44 (1)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_SERVER, "Close Server"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_SERVER
+// y:aO (cd:JFrame): Close Server: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Close Server"); // y:aO (cd:JFrame)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i:aE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: disconnect_hw_server 192.168.0.44:3121 
+// bt:g (cd:JFrame):  Close Server : addNotify
+dismissDialog("Close Server"); // bt:g (cd:JFrame)
+// Elapsed time: 319 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server 192.168.0.44:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// [GUI Memory]: 140 MB (+1385kb) [41:17:18]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_3"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i:aE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SYSMON_DELETE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (1) ; Programmed", 3, "xc7z045_1 (1)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (1) ; Programmed", 3, "xc7z045_1 (1)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
