@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498249070">
+<GenRun Id="synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498573525">
   <File Type="VDS-TIMING-PB" Name="b2000t_c2c_bram_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="b2000t_c2c_bram_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="b2000t_c2c_bram_wrapper.dcp"/>
@@ -47,11 +47,19 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_120_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_120_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_bram_ctrl_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_120_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_bram_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_vio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_bram_ctrl_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_chip2chip_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_bram_ctrl_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_axi_chip2chip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_dut_120_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_0_0"/>
 </GenRun>

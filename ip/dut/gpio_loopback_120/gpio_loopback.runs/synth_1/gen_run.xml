@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498081300">
-  <File Type="VDS-TIMING-PB" Name="dut_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dut_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="dut.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="dut_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="dut_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="dut_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="dut.vds"/>
-  <File Type="PA-TCL" Name="dut.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498571983">
+  <File Type="VDS-TIMING-PB" Name="dut_120_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dut_120_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="dut_120.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="dut_120_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="dut_120_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="dut_120_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="dut_120.vds"/>
+  <File Type="PA-TCL" Name="dut_120.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/dut.v">
@@ -24,7 +24,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="dut"/>
+      <Option Name="TopModule" Val="dut_120"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

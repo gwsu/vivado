@@ -84,7 +84,7 @@ input wire [31 : 0] probe8;
 input wire [0 : 0] probe9;
 input wire [0 : 0] probe10;
 input wire [3 : 0] probe11;
-input wire [12 : 0] probe12;
+input wire [11 : 0] probe12;
 
   bd_22d1 inst (
     .clk(clk),

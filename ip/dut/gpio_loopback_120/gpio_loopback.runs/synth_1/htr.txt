@@ -6,4 +6,4 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log dut.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dut.tcl
+vivado -log dut_120.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dut_120.tcl

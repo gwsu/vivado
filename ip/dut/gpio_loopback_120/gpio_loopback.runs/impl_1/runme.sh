@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/impl_1'
+HD_PWD='/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log dut.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dut.tcl -notrace
+EAStep vivado -log dut_120.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dut_120.tcl -notrace
 
 

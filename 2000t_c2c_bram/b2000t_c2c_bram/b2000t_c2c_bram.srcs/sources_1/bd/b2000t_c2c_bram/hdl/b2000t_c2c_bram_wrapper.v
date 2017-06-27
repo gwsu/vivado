@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 23 16:17:26 2017
+//Date        : Tue Jun 27 10:25:02 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram_wrapper.bd
 //Design      : b2000t_c2c_bram_wrapper

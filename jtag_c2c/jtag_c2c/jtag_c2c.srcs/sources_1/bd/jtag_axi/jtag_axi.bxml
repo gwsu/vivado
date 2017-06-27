@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="jtag_axi" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1497996947"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1497996947"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1497996947"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1498259907"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1498259907"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1498259907"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.xci" Type="IP">
         <Instance HierarchyPath="jtag_axi_0"/>
@@ -130,6 +130,28 @@
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon/s01_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="jtag_axi.bmm" Type="BMM">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>

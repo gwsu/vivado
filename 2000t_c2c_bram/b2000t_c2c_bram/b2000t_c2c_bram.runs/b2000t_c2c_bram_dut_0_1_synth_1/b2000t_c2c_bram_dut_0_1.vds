@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jun 26 16:14:59 2017
+# Process ID: 118331
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_0_1_synth_1
+# Command line: vivado -log b2000t_c2c_bram_dut_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_dut_0_1.tcl
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_0_1_synth_1/b2000t_c2c_bram_dut_0_1.vds
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source b2000t_c2c_bram_dut_0_1.tcl -notrace
+Command: synth_design -top b2000t_c2c_bram_dut_0_1 -part xc7v2000tflg1925-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 118359 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1230.176 ; gain = 214.996 ; free physical = 87293 ; free virtual = 195229
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_dut_0_1' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/synth/b2000t_c2c_bram_dut_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'dut' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6848/dut.v:8]
+	Parameter IDEL bound to: 3'b000 
+	Parameter A2B1 bound to: 3'b001 
+	Parameter A2B0 bound to: 3'b010 
+	Parameter B2A1 bound to: 3'b011 
+	Parameter B2A0 bound to: 3'b100 
+	Parameter ENDL bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6848/dut.v:49]
+INFO: [Synth 8-256] done synthesizing module 'dut' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6848/dut.v:8]
+INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_dut_0_1' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/synth/b2000t_c2c_bram_dut_0_1.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1270.652 ; gain = 255.473 ; free physical = 87172 ; free virtual = 195110
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1270.652 ; gain = 255.473 ; free physical = 87170 ; free virtual = 195107
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2056.469 ; gain = 0.000 ; free physical = 84749 ; free virtual = 192687
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84747 ; free virtual = 192685
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7v2000tflg1925-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84747 ; free virtual = 192685
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84747 ; free virtual = 192685
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dut'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_bin_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_ain_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "b_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "b_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDEL |                           000001 |                              000
+                    A2B1 |                           000010 |                              001
+                    A2B0 |                           000100 |                              010
+                    B2A1 |                           001000 |                              011
+                    B2A0 |                           010000 |                              100
+                    ENDL |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'dut'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84747 ; free virtual = 192685
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---XORs : 
+	   2 Input     26 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               27 Bit    Registers := 4     
+	               26 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   7 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	  12 Input      6 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dut 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---XORs : 
+	   2 Input     26 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               27 Bit    Registers := 4     
+	               26 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   7 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	  12 Input      6 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2160 (col length:60)
+BRAMs: 2584 (col length: RAMB18 240 RAMB36 120)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/data_bin_0_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/data_bin_1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/data_ain_0_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/data_ain_1_reg[26] )
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[0]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[1]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[2]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[3]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[4]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[5]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[6]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[7]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[8]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[9]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[10]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[11]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[12]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[13]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[14]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[15]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[16]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[17]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[18]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[19]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[20]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[21]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[22]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[23]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[24]' (FDCE) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[0]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[1]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[2]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[3]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[4]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[5]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[6]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[7]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[8]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[9]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[10]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[11]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[12]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[13]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[14]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[15]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[16]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[17]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[18]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[19]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[20]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[21]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[22]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[23]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[24]' (FDCE) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/data_out_reg[27]' (FDCE) to 'inst/data_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/data_out_reg[28]' (FDCE) to 'inst/data_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/data_out_reg[29]' (FDCE) to 'inst/data_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/data_out_reg[30]' (FDCE) to 'inst/data_out_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/data_out_reg[31] )
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[31]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[30]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[29]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[28]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[27]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[26]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[25]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[24]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[23]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[22]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[21]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[20]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[19]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[18]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[17]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[16]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[15]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[14]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[13]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[12]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[11]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[10]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[9]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[8]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[7]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[6]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[5]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[4]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[31]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[30]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[29]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[28]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[27]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[26]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[25]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[24]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[23]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[22]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[21]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[20]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[19]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[18]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[17]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[16]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[15]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[14]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[13]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[12]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[11]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[10]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[9]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[8]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[7]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[6]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[5]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/a2b1_dealy_counter_reg[4]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[31]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[30]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[29]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[28]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[27]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[26]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[25]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[24]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[23]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[22]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[21]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[20]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[19]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[18]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[17]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[16]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[15]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[14]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[13]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[12]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[11]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[10]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[9]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[8]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[7]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[6]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[5]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a1_dealy_counter_reg[4]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[31]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[30]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[29]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[28]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[27]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[26]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[25]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[24]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[23]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[22]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[21]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[20]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[19]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[18]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[17]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[16]) is unused and will be removed from module b2000t_c2c_bram_dut_0_1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84679 ; free virtual = 192617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84457 ; free virtual = 192396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84457 ; free virtual = 192396
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |    12|
+|3     |LUT2   |    21|
+|4     |LUT3   |     3|
+|5     |LUT4   |    11|
+|6     |LUT5   |    37|
+|7     |LUT6   |    96|
+|8     |FDCE   |   187|
+|9     |FDPE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   372|
+|2     |  inst   |dut    |   372|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2056.469 ; gain = 116.473 ; free physical = 84436 ; free virtual = 192374
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2056.469 ; gain = 1041.289 ; free physical = 84436 ; free virtual = 192374
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 2056.469 ; gain = 943.785 ; free physical = 85386 ; free virtual = 193325
+INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_0_1_synth_1/b2000t_c2c_bram_dut_0_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_0_1_synth_1/b2000t_c2c_bram_dut_0_1.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2086.480 ; gain = 0.000 ; free physical = 85383 ; free virtual = 193322
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 16:16:05 2017...

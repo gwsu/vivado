@@ -232,6 +232,7 @@ output reg  [119:0]   b_out
            a_oe  <= 1'b0;
            data_bin_0 <= 120'd0;
            data_bin_1 <= 120'd0;
+           data_bin_5 <= b_in;
         end
         else begin
            if   ( state == A2B1 ) begin
@@ -245,9 +246,9 @@ output reg  [119:0]   b_out
              data_bin_0 <= b_in;
            end 
            else if ( state == A01B) begin
-             b_out <= {30'h5555_5555,30'h5555_5555,30'h5555_5555,30'h5555_5555};
-             b_oe  <= 1'd1;
-             data_ain_5 <= a_in; 
+             a_out <= {30'h5555_5555,30'h5555_5555,30'h5555_5555,30'h5555_5555};
+             a_oe  <= 1'd1;
+             data_bin_5 <= b_in; 
            end          
            else begin
              a_oe <= 1'd0; 
@@ -268,6 +269,7 @@ output reg  [119:0]   b_out
            b_oe  <= 1'b0;
            data_ain_1 <= 120'd0;
            data_ain_0 <= 120'd0;
+           data_ain_5 <= 120'd0;
         end
         else begin
            if   ( state == B2A1 ) begin
@@ -303,18 +305,31 @@ output reg  [119:0]   b_out
                 case(addr)
                     // read ain to bus
                     32'd4:
-                    data_out <= {6'd0,data_ain_1};
+                    data_out <= {data_ain_1[31:0]};
                     //read ain-0 to bus
                     32'd8:
-                    data_out <= {6'd0,data_ain_0};
+                    data_out <= {data_ain_1[63:32]};
                     // read bin-1 to bus
                     32'd12:
-                    data_out <= {6'd0,data_bin_1};
+                    data_out <= {data_ain_1[95:64]};
                     // read bin-0 to bus
                     32'd16:
-                    data_out <= {6'd0,data_bin_0};                    
+                    data_out <= {8'd10,data_ain_1[125:96]};    
+                                    
                     // read apin result to bus                    
                     32'd20:
+                    data_out <= {data_ain_0[31:0]};
+                    //read ain-0 to bus
+                    32'd24:
+                    data_out <= {data_ain_0[63:32]};
+                    // read bin-1 to bus
+                    32'd28:
+                    data_out <= {data_ain_0[95:64]};
+                    // read bin-0 to bus
+                    32'd32:
+                    data_out <= {8'd10,data_ain_0[125:96]};
+                    
+                    32'd36:
                     data_out <= {a_result};
                     // read bpin result to bus
                     32'd24:
@@ -326,8 +341,8 @@ output reg  [119:0]   b_out
       end
     end 
  
- assign a_result  = (data_ain_1 ^ {26'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff}) | (data_ain_0 ^ 120'd0);
- assign b_result  = (data_bin_1 ^ {30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff}) | (data_bin_0 ^ 120'd0);
+ assign a_result  = ((data_ain_1 ^ {26'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff}) | (data_ain_0 ^ 120'd0) |  (data_ain_5 ^ {30'h5555_5555,30'h5555_5555,30'h5555_5555,30'h5555_5555} ));
+ assign b_result  = ((data_bin_1 ^ {30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff,30'h3fff_ffff}) | (data_bin_0 ^ 120'd0) |  (data_bin_5 ^ {30'h5555_5555,30'h5555_5555,30'h5555_5555,30'h5555_5555} ));
   
  //#############################################################################################
    

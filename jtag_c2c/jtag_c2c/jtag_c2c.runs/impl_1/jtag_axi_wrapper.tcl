@@ -44,16 +44,17 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint jtag_axi_wrapper_routed.dcp
   set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force jtag_axi_wrapper.mmi }
+  catch { write_bmm -force jtag_axi_wrapper_bd.bmm }
   write_bitstream -force -no_partial_bitfile jtag_axi_wrapper.bit 
   catch { write_sysdef -hwdef jtag_axi_wrapper.hwdef -bitfile jtag_axi_wrapper.bit -meminfo jtag_axi_wrapper.mmi -file jtag_axi_wrapper.sysdef }
   catch {write_debug_probes -quiet -force debug_nets}

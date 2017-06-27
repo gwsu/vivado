@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 23 16:17:39 2017
+//Date        : Tue Jun 27 10:25:16 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_22d1.bd
 //Design      : bd_22d1
@@ -30,7 +30,7 @@ module bd_22d1
   input [25:0]probe1;
   input [0:0]probe10;
   input [3:0]probe11;
-  input [12:0]probe12;
+  input [11:0]probe12;
   input [25:0]probe2;
   input [0:0]probe3;
   input [0:0]probe4;
@@ -44,7 +44,7 @@ module bd_22d1
   wire [31:0]probe0_1;
   wire [0:0]probe10_1;
   wire [3:0]probe11_1;
-  wire [12:0]probe12_1;
+  wire [11:0]probe12_1;
   wire [25:0]probe1_1;
   wire [25:0]probe2_1;
   wire [0:0]probe3_1;
@@ -59,7 +59,7 @@ module bd_22d1
   assign probe0_1 = probe0[31:0];
   assign probe10_1 = probe10[0];
   assign probe11_1 = probe11[3:0];
-  assign probe12_1 = probe12[12:0];
+  assign probe12_1 = probe12[11:0];
   assign probe1_1 = probe1[25:0];
   assign probe2_1 = probe2[25:0];
   assign probe3_1 = probe3[0];

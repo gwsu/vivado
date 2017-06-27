@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jun 23 16:40:38 2017
+| Date         : Tue Jun 27 10:37:27 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_methodology -file b2000t_c2c_bram_wrapper_methodology_drc_routed.rpt -rpx b2000t_c2c_bram_wrapper_methodology_drc_routed.rpx
 | Design       : b2000t_c2c_bram_wrapper
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 64
+             Violations found: 165
 +-----------+----------+--------------------------------------------------------+------------+
 | Rule      | Severity | Description                                            | Violations |
 +-----------+----------+--------------------------------------------------------+------------+
@@ -32,8 +32,9 @@ Table of Contents
 | TIMING-7  | Warning  | No common node between related clocks                  | 3          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
 | TIMING-15 | Warning  | Large hold violation on inter-clock path               | 2          |
-| TIMING-16 | Warning  | Large setup violation                                  | 8          |
+| TIMING-16 | Warning  | Large setup violation                                  | 45         |
 | TIMING-18 | Warning  | Missing input or output delay                          | 3          |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 64         |
 | XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
 | XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
 +-----------+----------+--------------------------------------------------------+------------+
@@ -42,212 +43,212 @@ Table of Contents
 -----------------
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X477Y129 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X470Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X476Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X477Y90 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X465Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X477Y82 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X467Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X474Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X487Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/reset_pb_sync/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X489Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/reset_pb_sync/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X492Y142 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X478Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X494Y142 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X484Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X491Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X497Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X491Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X471Y130 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X493Y130 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/reset_pb_sync/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDPE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/axi_chip2chip_phy_init_inst/auro_phy_init.aurora_rst_out_r2_reg in site SLICE_X489Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/reset_pb_sync/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/data_sync_reg6 in site SLICE_X517Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/data_sync_reg6 in site SLICE_X517Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X502Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X508Y102 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X510Y95 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X511Y104 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_b2000t_c2c_bram_aurora_64b66b_0_0_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/data_sync_reg6 in site SLICE_X517Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/data_sync_reg6 in site SLICE_X515Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/ack_sync_reg1 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X507Y147 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxresetfsm_i/time_out_wait_bypass_reg in site SLICE_X507Y140 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxresetfsm_i/u_rst_sync_time_out_wait_bypass/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X516Y140 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/u_cdc_gt_cplllock_i/s_level_out_d5_reg in site SLICE_X514Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/txresetfsm_i/u_rst_sync_plllock/stg1_b2000t_c2c_bram_aurora_64b66b_0_1_cdc_to_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X476Y130 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X471Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X475Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X475Y90 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X466Y116 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X476Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X468Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X473Y80 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#21 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X489Y140 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X474Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#22 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X495Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X483Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#23 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X492Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X498Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#24 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X490Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X470Y131 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#25 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X422Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X422Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#26 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X422Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X423Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#27 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X422Y116 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X422Y91 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#28 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X423Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X424Y91 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#29 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X420Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X422Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#30 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X423Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X419Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#31 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X423Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X420Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#32 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X421Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X421Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#33 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X421Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X418Y86 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#34 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[5] in site SLICE_X419Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[5] in site SLICE_X421Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#35 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[6] in site SLICE_X415Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[6] in site SLICE_X420Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#36 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X418Y116 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X424Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#37 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X418Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X424Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#38 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X418Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X424Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#39 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X426Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X430Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#40 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X426Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X430Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#41 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X414Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X425Y90 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#42 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X414Y116 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X425Y91 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-6#1 Warning
@@ -287,52 +288,237 @@ Related violations: <none>
 
 TIMING-15#1 Warning
 Large hold violation on inter-clock path  
-There is a large inter-clock skew of 3.720 ns between b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0 (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) that results in large hold timing violation(s) of -1.161 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
+There is a large inter-clock skew of 3.843 ns between b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0 (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/shifted_data_in_reg[7][86]_srl8/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) that results in large hold timing violation(s) of -1.192 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
 Related violations: <none>
 
 TIMING-15#2 Warning
 Large hold violation on inter-clock path  
-There is a large inter-clock skew of 3.967 ns between b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0 (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/shifted_data_in_reg[7][86]_srl8/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) that results in large hold timing violation(s) of -1.210 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
+There is a large inter-clock skew of 3.882 ns between b2000t_c2c_bram_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT0 (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) that results in large hold timing violation(s) of -1.192 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.008 ns between b2000t_c2c_bram_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/Probe_out_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/aurora_phy.standard_cc_module_inst/pma_init_stage_reg[0]/D (clocked by INIT_DIFF_CLK_clk_p). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.139 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.215 ns between b2000t_c2c_bram_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/Probe_out_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/aurora_phy.standard_cc_module_inst/pma_init_stage_reg[0]/D (clocked by INIT_DIFF_CLK_clk_p). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.244 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -3.839 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/dout_reg1_reg/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/temp_reg0_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.347 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[0]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -4.330 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/dout_reg1_reg/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.356 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[0]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -4.692 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[3]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/en_adv_trigger_2_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.356 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_NARROW_CNT.narrow_addr_int_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -7.990 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/dout_reg1_reg/C (clocked by user_clk_i) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/temp_reg0_reg/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.356 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_NARROW_CNT.narrow_bram_addr_inc_d1_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -8.004 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/dout_reg1_reg/C (clocked by user_clk_i) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/temp_reg0_reg/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.356 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_NARROW_EN.axi_wlast_d1_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -9.281 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[2]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/use_probe_debug_circuit_2_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.358 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_AWREADY.axi_awready_int_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.370 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.370 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.394 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_reg[5]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.568 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.590 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.591 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_wr_burst_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.593 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bvalid_cnt_reg[0]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.593 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bvalid_cnt_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.593 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bvalid_cnt_reg[2]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.627 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/wrap_burst_total_reg[0]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.627 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/curr_awlen_reg_1_or_2_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.634 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Data_Exists_DFF/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.634 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bid_gets_fifo_load_d1_reg/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.674 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_reg[3]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.674 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_reg[4]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.674 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/wrap_burst_total_reg[2]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.677 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/wrap_burst_total_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.696 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[0].FDRE_I/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.696 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[1].FDRE_I/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.696 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[2].FDRE_I/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.696 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[3].FDRE_I/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.751 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[0]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.751 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.751 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[4]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -1.751 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[6]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -1.826 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[7]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[2]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[3]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[5]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_bid_int_reg[8]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -1.914 ns between b2000t_c2c_bram_i/rst_clk_wiz_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_NARROW_CNT_LD.narrow_burst_cnt_ld_reg_reg[1]/R (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -3.453 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[2]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/use_probe_debug_circuit_2_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -3.675 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[3]/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/en_adv_trigger_2_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -3.744 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/dout_reg1_reg/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -3.890 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/dout_reg1_reg/C (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/temp_reg0_reg/D (clocked by user_clk_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -7.999 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/dout_reg1_reg/C (clocked by user_clk_i) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/temp_reg0_reg/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -8.033 ns between b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/dout_reg1_reg/C (clocked by user_clk_i) and b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/temp_reg0_reg/D (clocked by clk_out1_b2000t_c2c_bram_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -348,6 +534,326 @@ Related violations: <none>
 TIMING-18#3 Warning
 Missing input or output delay  
 An output delay is missing on pma_init_out[0] relative to clock(s) VIRTUAL_clk_out1_b2000t_c2c_bram_clk_wiz_0 
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[0]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[10]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[11]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[12]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[13]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[14]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[15]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[16]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[17]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[18]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[19]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[1]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[20]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[21]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[22]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[23]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[24]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[25]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[26]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[27]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[28]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[29]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[2]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[30]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[31]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[3]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[4]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[5]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[6]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[7]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[8]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[9]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_0/inst/data_bin_5_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[0]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[10]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[11]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[12]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[13]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[14]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[15]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[16]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[17]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[18]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[19]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[1]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[20]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[21]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[22]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[23]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[24]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[25]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[26]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[27]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[28]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[29]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[2]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[30]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[31]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[3]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[4]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[5]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[6]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[7]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[8]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[9]_LDC cannot be properly analyzed as its control pin b2000t_c2c_bram_i/dut_120_1/inst/data_bin_5_reg[9]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 XDCC-1#1 Warning

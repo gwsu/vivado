@@ -157,13 +157,6 @@ proc create_root_design { parentCell } {
   set SLOT_1_AXIS [ create_bd_intf_port -mode Monitor -vlnv xilinx.com:interface:axis_rtl:1.0 SLOT_1_AXIS ]
 
   # Create ports
-  set SLOT_0_AXIS_tdata [ create_bd_port -dir I -from 63 -to 0 SLOT_0_AXIS_tdata ]
-  set SLOT_0_AXIS_tlast [ create_bd_port -dir I SLOT_0_AXIS_tlast ]
-  set SLOT_0_AXIS_tready [ create_bd_port -dir I SLOT_0_AXIS_tready ]
-  set SLOT_0_AXIS_tvalid [ create_bd_port -dir I SLOT_0_AXIS_tvalid ]
-  set SLOT_1_AXIS_tdata [ create_bd_port -dir I -from 63 -to 0 SLOT_1_AXIS_tdata ]
-  set SLOT_1_AXIS_tlast [ create_bd_port -dir I SLOT_1_AXIS_tlast ]
-  set SLOT_1_AXIS_tvalid [ create_bd_port -dir I SLOT_1_AXIS_tvalid ]
   set clk [ create_bd_port -dir I -type clk clk ]
   set_property -dict [ list \
 CONFIG.ASSOCIATED_BUSIF {SLOT_0_AXIS:SLOT_1_AXIS} \

@@ -59,6 +59,7 @@
     <Object name="b2000t_c2c_bram_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=1,dashboard_1/hw_vio_1=3"/>
     <Object name="b2000t_c2c_bram_i/vio_0_probe_out1[25:0]" gui_info="hw_vios/hw_vio_1=8,dashboard_1/hw_vio_1=1"/>
     <Object name="b2000t_c2c_bram_i/vio_0_probe_out2" gui_info="hw_vios/hw_vio_1=6"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out2[25:0]" gui_info="hw_vios/hw_vio_1=9"/>
   </ObjectList>
   <ObjectList object_type="hw_vio" gui_info="">
     <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	734	Name	0	2147483647	15	417	417	Value	1	2147483647	15	63	63	Activity	2	2147483647	15	71	71	Direction	3	2147483647	15	82	82	VIO	4	2147483647	15	101	101			1	6	1	Name	Value	Activity	Direction	VIO"/>
@@ -2281,6 +2282,46 @@
       </probeOptions>
       <nets>
         <net name="b2000t_c2c_bram_i/vio_0_probe_out2"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="1FFFFFF"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[25]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[24]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[23]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[22]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[21]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[20]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[19]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[18]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[17]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[16]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[15]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[14]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[13]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[12]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[11]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[10]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[9]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[8]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[7]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[6]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[5]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[4]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[3]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[2]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[1]"/>
+        <net name="b2000t_c2c_bram_i/vio_0_probe_out2[0]"/>
       </nets>
     </probe>
   </probeset>

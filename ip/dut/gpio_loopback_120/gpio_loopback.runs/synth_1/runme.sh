@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback/gpio_loopback.runs/synth_1'
+HD_PWD='/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log dut.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dut.tcl
+EAStep vivado -log dut_120.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dut_120.tcl

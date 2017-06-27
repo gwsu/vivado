@@ -547,3 +547,779 @@ selectCodeEditor("dut.v", 376, 159); // bF:I (JPanel:JComponent, cd:JFrame)
 // TclEventType: DG_UPDATE_GRAPH
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,091 MB. GUI used memory: 40 MB. Current time: 6/26/17 5:45:06 PM EDT
+// Elapsed time: 647 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+selectCodeEditor("dut.v", 417, 654); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 803, 819); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 714, 813); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 714, 813, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("dut.v", 670, 814); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 661, 820); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 928, 809); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 35 seconds
+selectCodeEditor("dut.v", 296, 831); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 184, 834); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 742, 701); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 225, 559); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("dut.v", 144, 837); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 652, 833); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 647, 818); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 697, 875); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dut.v", 858, 624); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 1332, 814); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 1334, 816); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 19 seconds
+selectCodeEditor("dut.v", 1341, 813); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("dut.v", 798, 815); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dut.v", 849, 851); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dut.v", 138, 829); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 1351, 832); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 633, 833); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 635, 837); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dut.v", 542, 587); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 581, 731); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dut.v", 335, 635); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 293, 665); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 125, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 411, 421); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Mon Jun 26 17:54:03 2017] Launched synth_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 78 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// Tcl Message: [Mon Jun 26 17:55:22 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah:y (cd:JFrame): Implementation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 6:15:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 40 MB. Current time: 6/26/17 6:45:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 7:15:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 40 MB. Current time: 6/26/17 7:45:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 39 MB. Current time: 6/26/17 8:15:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 42 MB. Current time: 6/26/17 8:45:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 9:15:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 9:45:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 10:15:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 10:45:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 11:15:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/26/17 11:45:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 12:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 12:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 1:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 1:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 2:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 2:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 3:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 3:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 4:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 4:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 5:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 5:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 6:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 6:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 7:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 7:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 8:15:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 8:45:06 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 41 MB. Current time: 6/27/17 9:15:06 AM EDT
+// Elapsed time: 55444 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:y (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 1, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 1, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v;-;;-;16;-;line;-;250;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 499, 212); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 208, 158); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 208, 158, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 44 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 1); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net data_ain_5[31] with 2nd driver pin 'data_ain_5_reg[31]/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:286]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net data_ain_5[31] with 2nd driver pin 'data_ain_5_reg[31]/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:286]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v;-;;-;16;-;line;-;286;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 295, 188); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 323, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 247, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 251, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 180, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 180, 200, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dut.v", 356, 500); // bF:I (JPanel:JComponent, cd:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data_ain_5", true); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data_ain_5"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("dut.v", 132, 520); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dut.v", 243, 519); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dut.v", 194, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 241, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dut.v", 281, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net data_ain_5[27] with 2nd driver pin 'data_ain_5_reg[27]/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:286]. ]", 10, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net data_ain_5[27] with 1st driver pin 'data_ain_5_reg[27]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 9, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net b_out_OBUF[106] with 2nd driver pin 'b_out_reg[106]/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:267]. ]", 94, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net b_out_OBUF[109] with 1st driver pin 'b_out_reg[109]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:248]. ]", 87, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net data_ain_5[31] with 1st driver pin 'data_ain_5_reg[31]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. , [Synth 8-3352] multi-driven net b_out_OBUF[109] with 1st driver pin 'b_out_reg[109]__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:248]. ]", 87, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v;-;;-;16;-;line;-;248;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 325, 488); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Tue Jun 27 09:22:36 2017] Launched synth_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// Tcl Message: [Tue Jun 27 09:23:41 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah:y (cd:JFrame): Implementation Failed: addNotify
+// [GUI Memory]: 98 MB (+414kb) [16:14:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 42 MB. Current time: 6/27/17 9:45:06 AM EDT
+// Elapsed time: 2103 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:y (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net b_oe_OBUF has multiple drivers: b_oe_reg__0/Q, b_oe_reg/Q.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net b_oe_OBUF with 1st driver pin 'b_oe_reg/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:269]. ]", 1, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net b_oe_OBUF with 1st driver pin 'b_oe_reg/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:269]. ]", 1); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net b_oe_OBUF with 1st driver pin 'b_oe_reg/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:269]. , [Synth 8-3352] multi-driven net b_out_OBUF[119] with 2nd driver pin 'b_out_reg[119]/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:268]. ]", 4, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net b_oe_OBUF with 1st driver pin 'b_oe_reg/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:269]. , [Synth 8-3352] multi-driven net b_oe_OBUF with 2nd driver pin 'b_oe_reg__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net b_oe_OBUF with 1st driver pin 'b_oe_reg/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:269]. , [Synth 8-3352] multi-driven net b_oe_OBUF with 2nd driver pin 'b_oe_reg__0/Q' [/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v:250]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v;-;;-;16;-;line;-;250;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 97, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dut.v", 208, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_SAVE_FILE_AS, "Save File As..."); // ab:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,111 MB. GUI used memory: 40 MB. Current time: 6/27/17 9:59:31 AM EDT
+setFileChooser("/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut_120.v");
+selectCodeEditor("dut.v", 481, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dut_120 (dut.v)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Tue Jun 27 09:59:44 2017] Launched synth_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// Tcl Message: [Tue Jun 27 10:00:40 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("dut.v", 253, 444); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 101 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 444 seconds
+selectCodeEditor("dut.v", 326, 542); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 326, 542, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+selectCodeEditor("dut.v", 4, 544); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u:K (t:D, cd:JFrame)
+// bt:g (cd:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bt:g (cd:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/component.xml 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// bt:g (cd:JFrame):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bt:g (cd:JFrame)
+// Elapsed time: 12 seconds
+setText(PAResourceItoN.IdentificationContentPanel_NAME, "dut_120"); // M:ak (af:L, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property name dut_120 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // al:k (JViewport:JComponent, cd:JFrame)
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // K:ab (JViewport:JComponent, cd:JFrame)
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // K:ab (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // al:k (JViewport:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Y:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ab:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cd:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b:a (a:C, P:g)
+// bt:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bt:g (P:g)
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'q' command handler elapsed time: 18 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // P:g (cd:JFrame)
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - dut"); // Y:aE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1 -vendor user.org -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'. INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'. INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// bt:g (cd:JFrame):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // al:k (JViewport:JComponent, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // al:k (JViewport:JComponent, cd:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,117 MB. GUI used memory: 53 MB. Current time: 6/27/17 10:29:31 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,117 MB. GUI used memory: 51 MB. Current time: 6/27/17 10:59:31 AM EDT
+// Elapsed time: 3333 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dut_120 (dut.v)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dut_120 (dut.v)]", 1, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("dut.v", 237, 554); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 247, 559); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 236, 563); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("dut.v", 0, 547); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("dut.v", 140, 640); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 354, 650); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 347, 654); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 332, 699); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 333, 700); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 37 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 35 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectCodeEditor("dut.v", 448, 707); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 440, 700); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 174, 725); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("dut.v", 441, 612); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 440, 804); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 298, 570); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 27 seconds
+selectCodeEditor("dut.v", 126, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 465, 762); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+selectCodeEditor("dut.v", 283, 720); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 187, 740); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 68, 269); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 3, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dut.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("dut.v", 102, 434); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 200, 618); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 4, 439); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 95, 493); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 12, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 165, 829); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 204, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 465, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 105 MB (+1736kb) [18:00:12]
+selectCodeEditor("dut.v", 160, 640); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 193, 491); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 173, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 173, 549); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 194, 532); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("dut.v", 249, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 578, 488); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 0, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 4, 664); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 0, 664); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 248, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 411, 535); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 1093, 541); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 270, 582); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("dut.v", 297, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 301, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("dut.v", 298, 358); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 340, 399); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 447, 486); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 595, 501); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 584, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 808, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("dut.v", 489, 501); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 611, 499); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 480, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 563, 317); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 584, 302); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 463, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 591, 447); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 449, 549); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 420, 568); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("dut.v", 299, 339); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("dut.v", 595, 538); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 581, 529); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 623, 606); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("dut.v", 269, 603); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 275, 607); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("dut.v", 298, 651); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 260, 781); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 258, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 3, 462); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 587, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 2, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("dut.v", 2, 651); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 3, 709); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 32, 736); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 9, 727); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 5, 695); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 5, 695); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 295, 504); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("dut.v", 301, 682); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("dut.v", 179, 665); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 111 MB (+670kb) [18:08:46]
+// Elapsed time: 109 seconds
+selectCodeEditor("dut.v", 183, 624); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 539, 537); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 183, 668); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("dut.v", 310, 637); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 127, 639); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 59, 634); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 2, 633); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("dut.v", 316, 617); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 316, 612); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 220, 542); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 89 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 141, 568); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 140, 592); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 142, 616); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 135, 652); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,117 MB. GUI used memory: 50 MB. Current time: 6/27/17 11:29:31 AM EDT
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("dut.v", 408, 716); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 591, 535); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("dut.v", 186, 678); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 183, 739); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 188, 741); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("dut.v", 249, 815); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 362, 788); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("dut.v", 313, 681); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("dut.v", 582, 527); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 577, 711); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 462, 711); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 582, 707); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 577, 531); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 575, 667); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 605, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 8, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("dut.v", 202, 481); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 208, 486); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("dut.v", 206, 677); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 185, 742); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 181, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 510, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 183, 654); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("dut.v", 211, 718); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("dut.v", 200, 852); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("dut.v", 209, 529); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 209, 667); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 222 seconds
+selectCodeEditor("dut.v", 629, 668); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("dut.v", 846, 786); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 844, 803); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("dut.v", 228, 618); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("dut.v", 313, 612); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 68, 618); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("dut.v", 159, 747); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("dut.v", 238, 714); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 238, 714, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("dut.v", 311, 708); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 312, 708, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("dut.v", 421, 714); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 421, 714, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("dut.v", 530, 708); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 530, 708, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("dut.v", 673, 702); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("dut.v", 2, 202); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 51 seconds
+selectCodeEditor("dut.v", 228, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("dut.v", 548, 202); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("dut.v", 4, 150); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 350, 638); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 320, 631); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "dut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+selectCodeEditor("dut.v", 29, 612); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 65, 818); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("dut.v", 357, 583); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("dut.v", 64, 673); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // r:JideToggleButton (g:CommandBar, cd:JFrame): TRUE
+selectCodeEditor("dut.v", 57, 496); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 47, 480); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 20, 690); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 13, 479); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 66, 605); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 29, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("dut.v", 481, 472); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 32, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("dut.v", 160, 592); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("dut.v", 127, 670); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 281, 667); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 126, 617); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("dut.v", 111, 755); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dut.v", 105, 504); // bF:I (JPanel:JComponent, cd:JFrame)

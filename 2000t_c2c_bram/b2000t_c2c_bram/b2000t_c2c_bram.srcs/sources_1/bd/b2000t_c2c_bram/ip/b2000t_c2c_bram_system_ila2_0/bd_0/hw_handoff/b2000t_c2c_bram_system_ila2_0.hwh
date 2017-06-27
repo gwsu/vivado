@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun 23 16:17:40 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 27 10:25:17 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="virtex7" DEVICE="7v2000t" NAME="bd_22d1" PACKAGE="flg1925" SPEEDGRADE="-1"/>
 
@@ -69,7 +69,7 @@
         <CONNECTION INSTANCE="ila_lib" PORT="probe11"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="12" NAME="probe12" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe12">
+    <PORT DIR="I" LEFT="11" NAME="probe12" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe12">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ila_lib" PORT="probe12"/>
       </CONNECTIONS>
@@ -135,7 +135,7 @@
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE10_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE11_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_PROBE12_WIDTH" VALUE="13"/>
+        <PARAMETER NAME="C_PROBE12_WIDTH" VALUE="12"/>
         <PARAMETER NAME="C_PROBE13_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE14_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE15_WIDTH" VALUE="1"/>
@@ -3284,7 +3284,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="probe11"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="12" NAME="probe12" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe12">
+        <PORT DIR="I" LEFT="11" NAME="probe12" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe12">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="probe12"/>
           </CONNECTIONS>

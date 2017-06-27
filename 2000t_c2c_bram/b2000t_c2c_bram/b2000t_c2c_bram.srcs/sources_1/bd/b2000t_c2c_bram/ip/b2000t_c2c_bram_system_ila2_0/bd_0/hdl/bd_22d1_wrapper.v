@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 23 16:17:39 2017
+//Date        : Tue Jun 27 10:25:16 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_22d1_wrapper.bd
 //Design      : bd_22d1_wrapper
@@ -29,7 +29,7 @@ module bd_22d1_wrapper
   input [25:0]probe1;
   input [0:0]probe10;
   input [3:0]probe11;
-  input [12:0]probe12;
+  input [11:0]probe12;
   input [25:0]probe2;
   input [0:0]probe3;
   input [0:0]probe4;
@@ -44,7 +44,7 @@ module bd_22d1_wrapper
   wire [25:0]probe1;
   wire [0:0]probe10;
   wire [3:0]probe11;
-  wire [12:0]probe12;
+  wire [11:0]probe12;
   wire [25:0]probe2;
   wire [0:0]probe3;
   wire [0:0]probe4;

@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Tue Jun 20 18:15:28 2017
+//Date        : Fri Jun 23 19:18:11 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_3457.bd
 //Design      : bd_3457
@@ -126,7 +126,7 @@ module bd_3457
   input [31:0]SLOT_1_AXI_araddr;
   input [1:0]SLOT_1_AXI_arburst;
   input [3:0]SLOT_1_AXI_arcache;
-  input [0:0]SLOT_1_AXI_arid;
+  input [6:0]SLOT_1_AXI_arid;
   input [7:0]SLOT_1_AXI_arlen;
   input [0:0]SLOT_1_AXI_arlock;
   input [2:0]SLOT_1_AXI_arprot;
@@ -137,7 +137,7 @@ module bd_3457
   input [31:0]SLOT_1_AXI_awaddr;
   input [1:0]SLOT_1_AXI_awburst;
   input [3:0]SLOT_1_AXI_awcache;
-  input [0:0]SLOT_1_AXI_awid;
+  input [6:0]SLOT_1_AXI_awid;
   input [7:0]SLOT_1_AXI_awlen;
   input [0:0]SLOT_1_AXI_awlock;
   input [2:0]SLOT_1_AXI_awprot;
@@ -145,12 +145,12 @@ module bd_3457
   input SLOT_1_AXI_awready;
   input [2:0]SLOT_1_AXI_awsize;
   input SLOT_1_AXI_awvalid;
-  input [0:0]SLOT_1_AXI_bid;
+  input [6:0]SLOT_1_AXI_bid;
   input SLOT_1_AXI_bready;
   input [1:0]SLOT_1_AXI_bresp;
   input SLOT_1_AXI_bvalid;
   input [31:0]SLOT_1_AXI_rdata;
-  input [0:0]SLOT_1_AXI_rid;
+  input [6:0]SLOT_1_AXI_rid;
   input SLOT_1_AXI_rlast;
   input SLOT_1_AXI_rready;
   input [1:0]SLOT_1_AXI_rresp;
@@ -165,7 +165,7 @@ module bd_3457
   wire [31:0]Conn1_ARADDR;
   wire [1:0]Conn1_ARBURST;
   wire [3:0]Conn1_ARCACHE;
-  wire [0:0]Conn1_ARID;
+  wire [6:0]Conn1_ARID;
   wire [7:0]Conn1_ARLEN;
   wire [0:0]Conn1_ARLOCK;
   wire [2:0]Conn1_ARPROT;
@@ -176,7 +176,7 @@ module bd_3457
   wire [31:0]Conn1_AWADDR;
   wire [1:0]Conn1_AWBURST;
   wire [3:0]Conn1_AWCACHE;
-  wire [0:0]Conn1_AWID;
+  wire [6:0]Conn1_AWID;
   wire [7:0]Conn1_AWLEN;
   wire [0:0]Conn1_AWLOCK;
   wire [2:0]Conn1_AWPROT;
@@ -184,12 +184,12 @@ module bd_3457
   wire Conn1_AWREADY;
   wire [2:0]Conn1_AWSIZE;
   wire Conn1_AWVALID;
-  wire [0:0]Conn1_BID;
+  wire [6:0]Conn1_BID;
   wire Conn1_BREADY;
   wire [1:0]Conn1_BRESP;
   wire Conn1_BVALID;
   wire [31:0]Conn1_RDATA;
-  wire [0:0]Conn1_RID;
+  wire [6:0]Conn1_RID;
   wire Conn1_RLAST;
   wire Conn1_RREADY;
   wire [1:0]Conn1_RRESP;
@@ -283,7 +283,7 @@ module bd_3457
   wire [31:0]net_slot_1_axi_araddr;
   wire [1:0]net_slot_1_axi_arburst;
   wire [3:0]net_slot_1_axi_arcache;
-  wire [0:0]net_slot_1_axi_arid;
+  wire [6:0]net_slot_1_axi_arid;
   wire [7:0]net_slot_1_axi_arlen;
   wire [0:0]net_slot_1_axi_arlock;
   wire [2:0]net_slot_1_axi_arprot;
@@ -295,7 +295,7 @@ module bd_3457
   wire [31:0]net_slot_1_axi_awaddr;
   wire [1:0]net_slot_1_axi_awburst;
   wire [3:0]net_slot_1_axi_awcache;
-  wire [0:0]net_slot_1_axi_awid;
+  wire [6:0]net_slot_1_axi_awid;
   wire [7:0]net_slot_1_axi_awlen;
   wire [0:0]net_slot_1_axi_awlock;
   wire [2:0]net_slot_1_axi_awprot;
@@ -304,13 +304,13 @@ module bd_3457
   wire [2:0]net_slot_1_axi_awsize;
   wire net_slot_1_axi_awvalid;
   wire [1:0]net_slot_1_axi_b_ctrl;
-  wire [0:0]net_slot_1_axi_bid;
+  wire [6:0]net_slot_1_axi_bid;
   wire net_slot_1_axi_bready;
   wire [1:0]net_slot_1_axi_bresp;
   wire net_slot_1_axi_bvalid;
   wire [2:0]net_slot_1_axi_r_ctrl;
   wire [31:0]net_slot_1_axi_rdata;
-  wire [0:0]net_slot_1_axi_rid;
+  wire [6:0]net_slot_1_axi_rid;
   wire net_slot_1_axi_rlast;
   wire net_slot_1_axi_rready;
   wire [1:0]net_slot_1_axi_rresp;
@@ -325,7 +325,7 @@ module bd_3457
   assign Conn1_ARADDR = SLOT_1_AXI_araddr[31:0];
   assign Conn1_ARBURST = SLOT_1_AXI_arburst[1:0];
   assign Conn1_ARCACHE = SLOT_1_AXI_arcache[3:0];
-  assign Conn1_ARID = SLOT_1_AXI_arid[0];
+  assign Conn1_ARID = SLOT_1_AXI_arid[6:0];
   assign Conn1_ARLEN = SLOT_1_AXI_arlen[7:0];
   assign Conn1_ARLOCK = SLOT_1_AXI_arlock[0];
   assign Conn1_ARPROT = SLOT_1_AXI_arprot[2:0];
@@ -336,7 +336,7 @@ module bd_3457
   assign Conn1_AWADDR = SLOT_1_AXI_awaddr[31:0];
   assign Conn1_AWBURST = SLOT_1_AXI_awburst[1:0];
   assign Conn1_AWCACHE = SLOT_1_AXI_awcache[3:0];
-  assign Conn1_AWID = SLOT_1_AXI_awid[0];
+  assign Conn1_AWID = SLOT_1_AXI_awid[6:0];
   assign Conn1_AWLEN = SLOT_1_AXI_awlen[7:0];
   assign Conn1_AWLOCK = SLOT_1_AXI_awlock[0];
   assign Conn1_AWPROT = SLOT_1_AXI_awprot[2:0];
@@ -344,12 +344,12 @@ module bd_3457
   assign Conn1_AWREADY = SLOT_1_AXI_awready;
   assign Conn1_AWSIZE = SLOT_1_AXI_awsize[2:0];
   assign Conn1_AWVALID = SLOT_1_AXI_awvalid;
-  assign Conn1_BID = SLOT_1_AXI_bid[0];
+  assign Conn1_BID = SLOT_1_AXI_bid[6:0];
   assign Conn1_BREADY = SLOT_1_AXI_bready;
   assign Conn1_BRESP = SLOT_1_AXI_bresp[1:0];
   assign Conn1_BVALID = SLOT_1_AXI_bvalid;
   assign Conn1_RDATA = SLOT_1_AXI_rdata[31:0];
-  assign Conn1_RID = SLOT_1_AXI_rid[0];
+  assign Conn1_RID = SLOT_1_AXI_rid[6:0];
   assign Conn1_RLAST = SLOT_1_AXI_rlast;
   assign Conn1_RREADY = SLOT_1_AXI_rready;
   assign Conn1_RRESP = SLOT_1_AXI_rresp[1:0];

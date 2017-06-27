@@ -1,0 +1,26 @@
+$date
+        2017-Jun-16 10:56:30
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 64 " b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata [63:0] $end
+$var reg 1 b b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid $end
+$var reg 1 c b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready $end
+$var reg 1 d b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast $end
+$var reg 64 e b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata [63:0] $end
+$var reg 1 G" b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid $end
+$var reg 1 H" b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast $end
+$var reg 3 I" Stream_Channel__i2_s0___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 L" Stream_Channel__i2_s1___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 O" Stream_Channel__i4_s0___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 R" Stream_Channel__i4_s1___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 1 U" _TRIGGER $end
+$var reg 1 V" _WINDOW $end
+$var reg 1 W" _GAP $end
+$upscope $end
+$enddefinitions $end

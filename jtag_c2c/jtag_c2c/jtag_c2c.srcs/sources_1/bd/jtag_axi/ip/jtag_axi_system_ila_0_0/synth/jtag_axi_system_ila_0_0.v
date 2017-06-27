@@ -355,7 +355,7 @@ input wire SLOT_0_AXI_rvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RREADY" *)
 input wire SLOT_0_AXI_rready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWID" *)
-input wire [0 : 0] SLOT_1_AXI_awid;
+input wire [6 : 0] SLOT_1_AXI_awid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWADDR" *)
 input wire [31 : 0] SLOT_1_AXI_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWLEN" *)
@@ -387,7 +387,7 @@ input wire SLOT_1_AXI_wvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI WREADY" *)
 input wire SLOT_1_AXI_wready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI BID" *)
-input wire [0 : 0] SLOT_1_AXI_bid;
+input wire [6 : 0] SLOT_1_AXI_bid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI BRESP" *)
 input wire [1 : 0] SLOT_1_AXI_bresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI BVALID" *)
@@ -395,7 +395,7 @@ input wire SLOT_1_AXI_bvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI BREADY" *)
 input wire SLOT_1_AXI_bready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARID" *)
-input wire [0 : 0] SLOT_1_AXI_arid;
+input wire [6 : 0] SLOT_1_AXI_arid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARADDR" *)
 input wire [31 : 0] SLOT_1_AXI_araddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARLEN" *)
@@ -417,7 +417,7 @@ input wire SLOT_1_AXI_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI ARREADY" *)
 input wire SLOT_1_AXI_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RID" *)
-input wire [0 : 0] SLOT_1_AXI_rid;
+input wire [6 : 0] SLOT_1_AXI_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RDATA" *)
 input wire [31 : 0] SLOT_1_AXI_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RRESP" *)

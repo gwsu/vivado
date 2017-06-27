@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Tue Jun 20 18:15:28 2017
+//Date        : Fri Jun 23 19:18:11 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target bd_3457_wrapper.bd
 //Design      : bd_3457_wrapper
@@ -125,7 +125,7 @@ module bd_3457_wrapper
   input [31:0]SLOT_1_AXI_araddr;
   input [1:0]SLOT_1_AXI_arburst;
   input [3:0]SLOT_1_AXI_arcache;
-  input [0:0]SLOT_1_AXI_arid;
+  input [6:0]SLOT_1_AXI_arid;
   input [7:0]SLOT_1_AXI_arlen;
   input [0:0]SLOT_1_AXI_arlock;
   input [2:0]SLOT_1_AXI_arprot;
@@ -136,7 +136,7 @@ module bd_3457_wrapper
   input [31:0]SLOT_1_AXI_awaddr;
   input [1:0]SLOT_1_AXI_awburst;
   input [3:0]SLOT_1_AXI_awcache;
-  input [0:0]SLOT_1_AXI_awid;
+  input [6:0]SLOT_1_AXI_awid;
   input [7:0]SLOT_1_AXI_awlen;
   input [0:0]SLOT_1_AXI_awlock;
   input [2:0]SLOT_1_AXI_awprot;
@@ -144,12 +144,12 @@ module bd_3457_wrapper
   input SLOT_1_AXI_awready;
   input [2:0]SLOT_1_AXI_awsize;
   input SLOT_1_AXI_awvalid;
-  input [0:0]SLOT_1_AXI_bid;
+  input [6:0]SLOT_1_AXI_bid;
   input SLOT_1_AXI_bready;
   input [1:0]SLOT_1_AXI_bresp;
   input SLOT_1_AXI_bvalid;
   input [31:0]SLOT_1_AXI_rdata;
-  input [0:0]SLOT_1_AXI_rid;
+  input [6:0]SLOT_1_AXI_rid;
   input SLOT_1_AXI_rlast;
   input SLOT_1_AXI_rready;
   input [1:0]SLOT_1_AXI_rresp;
@@ -201,7 +201,7 @@ module bd_3457_wrapper
   wire [31:0]SLOT_1_AXI_araddr;
   wire [1:0]SLOT_1_AXI_arburst;
   wire [3:0]SLOT_1_AXI_arcache;
-  wire [0:0]SLOT_1_AXI_arid;
+  wire [6:0]SLOT_1_AXI_arid;
   wire [7:0]SLOT_1_AXI_arlen;
   wire [0:0]SLOT_1_AXI_arlock;
   wire [2:0]SLOT_1_AXI_arprot;
@@ -212,7 +212,7 @@ module bd_3457_wrapper
   wire [31:0]SLOT_1_AXI_awaddr;
   wire [1:0]SLOT_1_AXI_awburst;
   wire [3:0]SLOT_1_AXI_awcache;
-  wire [0:0]SLOT_1_AXI_awid;
+  wire [6:0]SLOT_1_AXI_awid;
   wire [7:0]SLOT_1_AXI_awlen;
   wire [0:0]SLOT_1_AXI_awlock;
   wire [2:0]SLOT_1_AXI_awprot;
@@ -220,12 +220,12 @@ module bd_3457_wrapper
   wire SLOT_1_AXI_awready;
   wire [2:0]SLOT_1_AXI_awsize;
   wire SLOT_1_AXI_awvalid;
-  wire [0:0]SLOT_1_AXI_bid;
+  wire [6:0]SLOT_1_AXI_bid;
   wire SLOT_1_AXI_bready;
   wire [1:0]SLOT_1_AXI_bresp;
   wire SLOT_1_AXI_bvalid;
   wire [31:0]SLOT_1_AXI_rdata;
-  wire [0:0]SLOT_1_AXI_rid;
+  wire [6:0]SLOT_1_AXI_rid;
   wire SLOT_1_AXI_rlast;
   wire SLOT_1_AXI_rready;
   wire [1:0]SLOT_1_AXI_rresp;

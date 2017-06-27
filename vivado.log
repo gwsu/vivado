@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jun 23 16:07:25 2017
+# Process ID: 36244
+# Current directory: /home/wesleyguo/github/vivado/vivado
+# Command line: vivado
+# Log file: /home/wesleyguo/github/vivado/vivado/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 6260.074 ; gain = 300.613 ; free physical = 88615 ; free virtual = 196380
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 6386.543 ; gain = 83.410 ; free physical = 88503 ; free virtual = 196267
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]]
+Processed interface aurora_64b66b_0_USER_DATA_M_AXIS_RX_ila1_slot0
+Processed interface axi_chip2chip_0_AXIS_TX_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+Processed interface jtag_axi_0_M_AXI_ila2_slot0
+Processing Interface axi_mem_intercon_M03_AXI_ila2_slot1
+ERROR: [Labtoolstcl 44-526] The custom probe name ' :  : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)'.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 6626.633 ; gain = 0.000 ; free physical = 88490 ; free virtual = 196254
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila_0
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_1
+Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_1
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_0/aurora_mmcm_not_locked(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_1/aurora_mmcm_not_locked(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <jtag_axi> from BD file </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>
+startgroup
+set_property -dict [list CONFIG.C_AXI_ID_WIDTH.VALUE_SRC PROPAGATED CONFIG.C_AXI_WUSER_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells axi_chip2chip_1]
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6626.633 ; gain = 0.000 ; free physical = 87512 ; free virtual = 195289
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 6626.633 ; gain = 0.000 ; free physical = 87496 ; free virtual = 195273
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+disconnect_hw_server 192.168.0.44:3121
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [Device 21-403] Loading part xc7z045ffv900-2
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_bid'(6) to net 'auto_pc_to_s01_couplers_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_rid'(6) to net 'auto_pc_to_s01_couplers_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's01_couplers_to_xbar_AWID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's01_couplers_to_xbar_ARID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hdl/jtag_axi_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_pc .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef
+generate_target: Time (s): cpu = 00:00:54 ; elapsed = 00:00:45 . Memory (MB): peak = 6911.680 ; gain = 285.047 ; free physical = 87039 ; free virtual = 194816
+catch { config_ip_cache -export [get_ips -all jtag_axi_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 111.282 MB.
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd]
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd] -directory /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+INFO: [Vivado 12-4159] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream before doing hardware export.
+file mkdir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk
+file copy -force /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.sysdef /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+disconnect_hw_server 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 6944.363 ; gain = 19.551 ; free physical = 89203 ; free virtual = 197081
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 6944.363 ; gain = 0.000 ; free physical = 89206 ; free virtual = 197085
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes jtag_axi_i/vio_0/probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {jtag_axi_i/vio_0/probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes jtag_axi_i/vio_0/probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {jtag_axi_i/vio_0/probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+ERROR: [Labtools 27-2269] No devices detected on target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-2269] No devices detected on target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 6946.363 ; gain = 0.000 ; free physical = 89221 ; free virtual = 197099
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6946.363 ; gain = 0.000 ; free physical = 89221 ; free virtual = 197099
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 6946.363 ; gain = 0.000 ; free physical = 89223 ; free virtual = 197101
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+disconnect_hw_server 192.168.0.44:3121
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property offset 0x76020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property range 8K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property range 8K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76020000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property range 8K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ui/bd_4ae2cc3.ui> 
+set_property range 8K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_bid'(6) to net 'auto_pc_to_s01_couplers_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_rid'(6) to net 'auto_pc_to_s01_couplers_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's01_couplers_to_xbar_AWID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's01_couplers_to_xbar_ARID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hdl/jtag_axi_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_pc .
+Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 111.282 MB.
+[Fri Jun 23 19:18:29 2017] Launched jtag_axi_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+jtag_axi_xbar_0_synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_xbar_0_synth_1/runme.log
+synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log
+[Fri Jun 23 19:18:29 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 7052.457 ; gain = 106.094 ; free physical = 89190 ; free virtual = 197002
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Fri Jun 23 19:27:39 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log
+file copy -force /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.sysdef /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property range 128K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property range 128K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+undo
+INFO: [Common 17-17] undo 'set_property range 128K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]'
+undo
+INFO: [Common 17-17] undo 'set_property range 128K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]'

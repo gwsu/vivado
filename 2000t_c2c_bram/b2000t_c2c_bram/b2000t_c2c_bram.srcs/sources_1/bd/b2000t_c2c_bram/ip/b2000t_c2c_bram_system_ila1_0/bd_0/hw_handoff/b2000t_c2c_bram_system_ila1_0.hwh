@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun 23 16:17:37 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 27 10:25:14 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="virtex7" DEVICE="7v2000t" NAME="bd_2221" PACKAGE="flg1925" SPEEDGRADE="-1"/>
 
@@ -12,8 +12,8 @@
     </PORT>
     <PORT DIR="I" LEFT="63" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" NAME="SLOT_0_AXIS_tlast" SIGIS="undef"/>
-    <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
     <PORT DIR="I" NAME="SLOT_0_AXIS_tready" SIGIS="undef"/>
+    <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
     <PORT DIR="I" LEFT="63" NAME="SLOT_1_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" NAME="SLOT_1_AXIS_tlast" SIGIS="undef"/>
     <PORT DIR="I" NAME="SLOT_1_AXIS_tvalid" SIGIS="undef"/>
@@ -36,8 +36,8 @@
       <PORTMAPS>
         <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_0_AXIS_tdata"/>
         <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_0_AXIS_tlast"/>
-        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
         <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_0_AXIS_tready"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="g_inst_slot_1_axis" NAME="SLOT_1_AXIS" TYPE="TARGET">

@@ -60,7 +60,7 @@ ENTITY jtag_axi_axi_bram_ctrl_0_0 IS
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
-    s_axi_awid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axi_awid : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
     s_axi_awaddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -75,11 +75,11 @@ ENTITY jtag_axi_axi_bram_ctrl_0_0 IS
     s_axi_wlast : IN STD_LOGIC;
     s_axi_wvalid : IN STD_LOGIC;
     s_axi_wready : OUT STD_LOGIC;
-    s_axi_bid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axi_bid : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
     s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_bvalid : OUT STD_LOGIC;
     s_axi_bready : IN STD_LOGIC;
-    s_axi_arid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axi_arid : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
     s_axi_araddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -89,7 +89,7 @@ ENTITY jtag_axi_axi_bram_ctrl_0_0 IS
     s_axi_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_arvalid : IN STD_LOGIC;
     s_axi_arready : OUT STD_LOGIC;
-    s_axi_rid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axi_rid : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
     s_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_rlast : OUT STD_LOGIC;
@@ -140,7 +140,7 @@ ARCHITECTURE jtag_axi_axi_bram_ctrl_0_0_arch OF jtag_axi_axi_bram_ctrl_0_0 IS
       s_axi_aresetn : IN STD_LOGIC;
       ecc_interrupt : OUT STD_LOGIC;
       ecc_ue : OUT STD_LOGIC;
-      s_axi_awid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      s_axi_awid : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
       s_axi_awaddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
       s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -155,11 +155,11 @@ ARCHITECTURE jtag_axi_axi_bram_ctrl_0_0_arch OF jtag_axi_axi_bram_ctrl_0_0 IS
       s_axi_wlast : IN STD_LOGIC;
       s_axi_wvalid : IN STD_LOGIC;
       s_axi_wready : OUT STD_LOGIC;
-      s_axi_bid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      s_axi_bid : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
       s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_bvalid : OUT STD_LOGIC;
       s_axi_bready : IN STD_LOGIC;
-      s_axi_arid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      s_axi_arid : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
       s_axi_araddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
       s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -169,7 +169,7 @@ ARCHITECTURE jtag_axi_axi_bram_ctrl_0_0_arch OF jtag_axi_axi_bram_ctrl_0_0 IS
       s_axi_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s_axi_arvalid : IN STD_LOGIC;
       s_axi_arready : OUT STD_LOGIC;
-      s_axi_rid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      s_axi_rid : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
       s_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_rlast : OUT STD_LOGIC;
@@ -212,7 +212,7 @@ ARCHITECTURE jtag_axi_axi_bram_ctrl_0_0_arch OF jtag_axi_axi_bram_ctrl_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF jtag_axi_axi_bram_ctrl_0_0_arch : ARCHITECTURE IS "jtag_axi_axi_bram_ctrl_0_0,axi_bram_ctrl,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF jtag_axi_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "jtag_axi_axi_bram_ctrl_0_0,axi_bram_ctrl,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_bram_ctrl,x_ipVersion=4.0,x_ipCoreRevision=10,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_BRAM_INST_MODE=EXTERNAL,C_MEMORY_DEPTH=2048,C_BRAM_ADDR_WIDTH=11,C_S_AXI_ADDR_WIDTH=13,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ID_WIDTH=1,C_S_AXI_PROTOCOL=AXI4,C_S_AXI_SUPPORTS_NARROW_BURST=0,C_SINGLE_PORT_BRAM=0,C_FAMILY=zynq,C_SELECT_XPM=0,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_ECC" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF jtag_axi_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "jtag_axi_axi_bram_ctrl_0_0,axi_bram_ctrl,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_bram_ctrl,x_ipVersion=4.0,x_ipCoreRevision=10,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_BRAM_INST_MODE=EXTERNAL,C_MEMORY_DEPTH=2048,C_BRAM_ADDR_WIDTH=11,C_S_AXI_ADDR_WIDTH=13,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ID_WIDTH=7,C_S_AXI_PROTOCOL=AXI4,C_S_AXI_SUPPORTS_NARROW_BURST=0,C_SINGLE_PORT_BRAM=0,C_FAMILY=zynq,C_SELECT_XPM=0,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_ECC" & 
 "=0,C_ECC_TYPE=0,C_FAULT_INJECT=0,C_ECC_ONOFF_RESET_VALUE=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLKIF CLK";
@@ -274,7 +274,7 @@ BEGIN
       C_BRAM_ADDR_WIDTH => 11,
       C_S_AXI_ADDR_WIDTH => 13,
       C_S_AXI_DATA_WIDTH => 32,
-      C_S_AXI_ID_WIDTH => 1,
+      C_S_AXI_ID_WIDTH => 7,
       C_S_AXI_PROTOCOL => "AXI4",
       C_S_AXI_SUPPORTS_NARROW_BURST => 0,
       C_SINGLE_PORT_BRAM => 0,
