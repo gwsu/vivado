@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Jun 15 12:11:08 2017
+// Date        : Fri Jun 23 16:22:09 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode funcsim -rename_top b2000t_c2c_bram_axi_chip2chip_0_0 -prefix
-//               b2000t_c2c_bram_axi_chip2chip_0_0_ b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_sim_netlist.v
 // Design      : b2000t_c2c_bram_axi_chip2chip_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -66,7 +66,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
     axi_c2c_multi_bit_error_out);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_aclk CLK" *) input m_aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 m_aresetn RST" *) input m_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWID" *) output [0:0]m_axi_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWID" *) output [6:0]m_axi_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWADDR" *) output [31:0]m_axi_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWLEN" *) output [7:0]m_axi_awlen;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWSIZE" *) output [2:0]m_axi_awsize;
@@ -78,18 +78,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WLAST" *) output m_axi_wlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WVALID" *) output m_axi_wvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WREADY" *) input m_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BID" *) input [0:0]m_axi_bid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BID" *) input [6:0]m_axi_bid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BRESP" *) input [1:0]m_axi_bresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BVALID" *) input m_axi_bvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BREADY" *) output m_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARID" *) output [0:0]m_axi_arid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARID" *) output [6:0]m_axi_arid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARADDR" *) output [31:0]m_axi_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARLEN" *) output [7:0]m_axi_arlen;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARSIZE" *) output [2:0]m_axi_arsize;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARBURST" *) output [1:0]m_axi_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARVALID" *) output m_axi_arvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARREADY" *) input m_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RID" *) input [0:0]m_axi_rid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RID" *) input [6:0]m_axi_rid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RDATA" *) input [31:0]m_axi_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RRESP" *) input [1:0]m_axi_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RLAST" *) input m_axi_rlast;
@@ -136,24 +136,24 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
   wire m_aresetn;
   wire [31:0]m_axi_araddr;
   wire [1:0]m_axi_arburst;
-  wire [0:0]m_axi_arid;
+  wire [6:0]m_axi_arid;
   wire [7:0]m_axi_arlen;
   wire m_axi_arready;
   wire [2:0]m_axi_arsize;
   wire m_axi_arvalid;
   wire [31:0]m_axi_awaddr;
   wire [1:0]m_axi_awburst;
-  wire [0:0]m_axi_awid;
+  wire [6:0]m_axi_awid;
   wire [7:0]m_axi_awlen;
   wire m_axi_awready;
   wire [2:0]m_axi_awsize;
   wire m_axi_awvalid;
-  wire [0:0]m_axi_bid;
+  wire [6:0]m_axi_bid;
   wire m_axi_bready;
   wire [1:0]m_axi_bresp;
   wire m_axi_bvalid;
   wire [31:0]m_axi_rdata;
-  wire [0:0]m_axi_rid;
+  wire [6:0]m_axi_rid;
   wire m_axi_rlast;
   wire m_axi_rready;
   wire [1:0]m_axi_rresp;
@@ -195,32 +195,32 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
   wire [31:0]NLW_inst_m_axi_lite_wdata_UNCONNECTED;
   wire [3:0]NLW_inst_m_axi_lite_wstrb_UNCONNECTED;
   wire [0:0]NLW_inst_m_axi_wuser_UNCONNECTED;
-  wire [0:0]NLW_inst_s_axi_bid_UNCONNECTED;
+  wire [6:0]NLW_inst_s_axi_bid_UNCONNECTED;
   wire [1:0]NLW_inst_s_axi_bresp_UNCONNECTED;
   wire [1:0]NLW_inst_s_axi_lite_bresp_UNCONNECTED;
   wire [31:0]NLW_inst_s_axi_lite_rdata_UNCONNECTED;
   wire [1:0]NLW_inst_s_axi_lite_rresp_UNCONNECTED;
   wire [31:0]NLW_inst_s_axi_rdata_UNCONNECTED;
-  wire [0:0]NLW_inst_s_axi_rid_UNCONNECTED;
+  wire [6:0]NLW_inst_s_axi_rid_UNCONNECTED;
   wire [1:0]NLW_inst_s_axi_rresp_UNCONNECTED;
 
-  (* ADDR_MUX_RATIO = "1" *) 
-  (* AFIFO_DATA_SIZE = "45" *) 
+  (* ADDR_MUX_RATIO = "4" *) 
+  (* AFIFO_DATA_SIZE = "51" *) 
   (* AFIFO_DATA_SIZE_M2 = "1" *) 
   (* AFIFO_DATA_SIZE_M3 = "0" *) 
-  (* AFIFO_DATA_SIZE_M4 = "1" *) 
-  (* AFIFO_TIE_WIDTH = "1" *) 
-  (* AFIFO_WIDTH = "45" *) 
+  (* AFIFO_DATA_SIZE_M4 = "3" *) 
+  (* AFIFO_TIE_WIDTH = "2" *) 
+  (* AFIFO_WIDTH = "52" *) 
   (* AWB_FC_WIDTH = "2" *) 
   (* AXILITE_WIDTH = "20" *) 
-  (* BFIFO_DATA_SIZE = "3" *) 
-  (* BFIFO_WIDTH = "3" *) 
+  (* BFIFO_DATA_SIZE = "9" *) 
+  (* BFIFO_WIDTH = "9" *) 
   (* C_AURORA_WIDTH = "64" *) 
   (* C_AXI_ADDR_WIDTH = "32" *) 
   (* C_AXI_BRST_WIDTH = "2" *) 
   (* C_AXI_BUS_TYPE = "0" *) 
   (* C_AXI_DATA_WIDTH = "32" *) 
-  (* C_AXI_ID_WIDTH = "1" *) 
+  (* C_AXI_ID_WIDTH = "7" *) 
   (* C_AXI_LEN_WIDTH = "8" *) 
   (* C_AXI_LITE_ADDR_WIDTH = "32" *) 
   (* C_AXI_LITE_DATA_WIDTH = "32" *) 
@@ -239,7 +239,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
   (* C_FAMILY = "virtex7" *) 
   (* C_INCLUDE_AXILITE = "0" *) 
   (* C_INSTANCE = "axi_c2c" *) 
-  (* C_INTERFACE_MODE = "0" *) 
+  (* C_INTERFACE_MODE = "1" *) 
   (* C_INTERFACE_TYPE = "2" *) 
   (* C_INTERRUPT_WIDTH = "4" *) 
   (* C_MASTER_FPGA = "0" *) 
@@ -252,19 +252,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
   (* C_SYNC_STAGE = "3" *) 
   (* C_USE_DIFF_CLK = "0" *) 
   (* C_USE_DIFF_IO = "0" *) 
-  (* C_WIDTH_CONVERSION = "1" *) 
+  (* C_WIDTH_CONVERSION = "2" *) 
   (* DATA_MUX_RATIO = "1" *) 
   (* DowngradeIPIdentifiedWarnings = "yes" *) 
   (* EN_ECC = "1" *) 
   (* PHY_CTRL_WIDTH = "3" *) 
   (* PHY_DATA_WIDTH = "64" *) 
   (* RB_FC_WIDTH = "3" *) 
-  (* RFIFO_DATA_SIZE = "36" *) 
+  (* RFIFO_DATA_SIZE = "42" *) 
   (* RFIFO_DATA_SIZE_M2 = "0" *) 
   (* RFIFO_DATA_SIZE_M3 = "0" *) 
-  (* RFIFO_DATA_SIZE_M4 = "0" *) 
+  (* RFIFO_DATA_SIZE_M4 = "2" *) 
   (* RFIFO_TIE_WIDTH = "1" *) 
-  (* RFIFO_WIDTH = "36" *) 
+  (* RFIFO_WIDTH = "42" *) 
   (* TDM_ID_WIDTH = "2" *) 
   (* TDM_VAL_BITS = "1" *) 
   (* WFIFO_DATA_SIZE = "38" *) 
@@ -365,19 +365,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
         .s_aresetn(1'b1),
         .s_axi_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_arburst({1'b0,1'b0}),
-        .s_axi_arid(1'b0),
+        .s_axi_arid({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_arlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_arready(NLW_inst_s_axi_arready_UNCONNECTED),
         .s_axi_arsize({1'b0,1'b0,1'b0}),
         .s_axi_arvalid(1'b0),
         .s_axi_awaddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_awburst({1'b0,1'b0}),
-        .s_axi_awid(1'b0),
+        .s_axi_awid({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_awlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_awready(NLW_inst_s_axi_awready_UNCONNECTED),
         .s_axi_awsize({1'b0,1'b0,1'b0}),
         .s_axi_awvalid(1'b0),
-        .s_axi_bid(NLW_inst_s_axi_bid_UNCONNECTED[0]),
+        .s_axi_bid(NLW_inst_s_axi_bid_UNCONNECTED[6:0]),
         .s_axi_bready(1'b0),
         .s_axi_bresp(NLW_inst_s_axi_bresp_UNCONNECTED[1:0]),
         .s_axi_bvalid(NLW_inst_s_axi_bvalid_UNCONNECTED),
@@ -402,7 +402,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
         .s_axi_lite_wstrb({1'b0,1'b0,1'b0,1'b0}),
         .s_axi_lite_wvalid(1'b0),
         .s_axi_rdata(NLW_inst_s_axi_rdata_UNCONNECTED[31:0]),
-        .s_axi_rid(NLW_inst_s_axi_rid_UNCONNECTED[0]),
+        .s_axi_rid(NLW_inst_s_axi_rid_UNCONNECTED[6:0]),
         .s_axi_rlast(NLW_inst_s_axi_rlast_UNCONNECTED),
         .s_axi_rready(1'b0),
         .s_axi_rresp(NLW_inst_s_axi_rresp_UNCONNECTED[1:0]),
@@ -415,29 +415,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0
         .s_axi_wvalid(1'b0));
 endmodule
 
-(* ADDR_MUX_RATIO = "1" *) (* AFIFO_DATA_SIZE = "45" *) (* AFIFO_DATA_SIZE_M2 = "1" *) 
-(* AFIFO_DATA_SIZE_M3 = "0" *) (* AFIFO_DATA_SIZE_M4 = "1" *) (* AFIFO_TIE_WIDTH = "1" *) 
-(* AFIFO_WIDTH = "45" *) (* AWB_FC_WIDTH = "2" *) (* AXILITE_WIDTH = "20" *) 
-(* BFIFO_DATA_SIZE = "3" *) (* BFIFO_WIDTH = "3" *) (* C_AURORA_WIDTH = "64" *) 
+(* ADDR_MUX_RATIO = "4" *) (* AFIFO_DATA_SIZE = "51" *) (* AFIFO_DATA_SIZE_M2 = "1" *) 
+(* AFIFO_DATA_SIZE_M3 = "0" *) (* AFIFO_DATA_SIZE_M4 = "3" *) (* AFIFO_TIE_WIDTH = "2" *) 
+(* AFIFO_WIDTH = "52" *) (* AWB_FC_WIDTH = "2" *) (* AXILITE_WIDTH = "20" *) 
+(* BFIFO_DATA_SIZE = "9" *) (* BFIFO_WIDTH = "9" *) (* C_AURORA_WIDTH = "64" *) 
 (* C_AXI_ADDR_WIDTH = "32" *) (* C_AXI_BRST_WIDTH = "2" *) (* C_AXI_BUS_TYPE = "0" *) 
-(* C_AXI_DATA_WIDTH = "32" *) (* C_AXI_ID_WIDTH = "1" *) (* C_AXI_LEN_WIDTH = "8" *) 
+(* C_AXI_DATA_WIDTH = "32" *) (* C_AXI_ID_WIDTH = "7" *) (* C_AXI_LEN_WIDTH = "8" *) 
 (* C_AXI_LITE_ADDR_WIDTH = "32" *) (* C_AXI_LITE_DATA_WIDTH = "32" *) (* C_AXI_LITE_PROT_WIDTH = "2" *) 
 (* C_AXI_LITE_RESP_WIDTH = "2" *) (* C_AXI_LITE_STB_WIDTH = "4" *) (* C_AXI_RESP_WIDTH = "2" *) 
 (* C_AXI_SIZE_WIDTH = "3" *) (* C_AXI_SIZE_WIDTH_INTERNAL = "2" *) (* C_AXI_STB_WIDTH = "4" *) 
 (* C_AXI_WUSER_WIDTH = "1" *) (* C_COMMON_CLK = "0" *) (* C_DISABLE_CLK_SHIFT = "0" *) 
 (* C_DISABLE_DESKEW = "0" *) (* C_ECC_ENABLE = "1" *) (* C_FAMILY = "virtex7" *) 
-(* C_INCLUDE_AXILITE = "0" *) (* C_INSTANCE = "axi_c2c" *) (* C_INTERFACE_MODE = "0" *) 
+(* C_INCLUDE_AXILITE = "0" *) (* C_INSTANCE = "axi_c2c" *) (* C_INTERFACE_MODE = "1" *) 
 (* C_INTERFACE_TYPE = "2" *) (* C_INTERRUPT_WIDTH = "4" *) (* C_MASTER_FPGA = "0" *) 
 (* C_NUM_OF_IO = "20" *) (* C_PHY_SELECT = "1" *) (* C_SELECTIO_DDR = "0" *) 
 (* C_SELECTIO_PHY_CLK = "100" *) (* C_SELECTIO_WIDTH = "9" *) (* C_SIMULATION = "0" *) 
 (* C_SYNC_STAGE = "3" *) (* C_USE_DIFF_CLK = "0" *) (* C_USE_DIFF_IO = "0" *) 
-(* C_WIDTH_CONVERSION = "1" *) (* DATA_MUX_RATIO = "1" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
-(* EN_ECC = "1" *) (* PHY_CTRL_WIDTH = "3" *) (* PHY_DATA_WIDTH = "64" *) 
-(* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "36" *) (* RFIFO_DATA_SIZE_M2 = "0" *) 
-(* RFIFO_DATA_SIZE_M3 = "0" *) (* RFIFO_DATA_SIZE_M4 = "0" *) (* RFIFO_TIE_WIDTH = "1" *) 
-(* RFIFO_WIDTH = "36" *) (* TDM_ID_WIDTH = "2" *) (* TDM_VAL_BITS = "1" *) 
-(* WFIFO_DATA_SIZE = "38" *) (* WFIFO_DATA_SIZE_M2 = "0" *) (* WFIFO_DATA_SIZE_M3 = "2" *) 
-(* WFIFO_DATA_SIZE_M4 = "2" *) (* WFIFO_TIE_WIDTH = "1" *) (* WFIFO_WIDTH = "38" *) 
+(* C_WIDTH_CONVERSION = "2" *) (* DATA_MUX_RATIO = "1" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* EN_ECC = "1" *) (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11" *) (* PHY_CTRL_WIDTH = "3" *) 
+(* PHY_DATA_WIDTH = "64" *) (* RB_FC_WIDTH = "3" *) (* RFIFO_DATA_SIZE = "42" *) 
+(* RFIFO_DATA_SIZE_M2 = "0" *) (* RFIFO_DATA_SIZE_M3 = "0" *) (* RFIFO_DATA_SIZE_M4 = "2" *) 
+(* RFIFO_TIE_WIDTH = "1" *) (* RFIFO_WIDTH = "42" *) (* TDM_ID_WIDTH = "2" *) 
+(* TDM_VAL_BITS = "1" *) (* WFIFO_DATA_SIZE = "38" *) (* WFIFO_DATA_SIZE_M2 = "0" *) 
+(* WFIFO_DATA_SIZE_M3 = "2" *) (* WFIFO_DATA_SIZE_M4 = "2" *) (* WFIFO_TIE_WIDTH = "1" *) 
+(* WFIFO_WIDTH = "38" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
    (s_aclk,
     s_aresetn,
@@ -580,7 +581,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
     m_axi_lite_rready);
   input s_aclk;
   input s_aresetn;
-  input [0:0]s_axi_awid;
+  input [6:0]s_axi_awid;
   input [31:0]s_axi_awaddr;
   input [7:0]s_axi_awlen;
   input [2:0]s_axi_awsize;
@@ -593,18 +594,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   input s_axi_wlast;
   input s_axi_wvalid;
   output s_axi_wready;
-  output [0:0]s_axi_bid;
+  output [6:0]s_axi_bid;
   output [1:0]s_axi_bresp;
   output s_axi_bvalid;
   input s_axi_bready;
-  input [0:0]s_axi_arid;
+  input [6:0]s_axi_arid;
   input [31:0]s_axi_araddr;
   input [7:0]s_axi_arlen;
   input [2:0]s_axi_arsize;
   input [1:0]s_axi_arburst;
   input s_axi_arvalid;
   output s_axi_arready;
-  output [0:0]s_axi_rid;
+  output [6:0]s_axi_rid;
   output [31:0]s_axi_rdata;
   output [1:0]s_axi_rresp;
   output s_axi_rlast;
@@ -614,7 +615,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   output [3:0]axi_c2c_s2m_intr_out;
   input m_aclk;
   input m_aresetn;
-  output [0:0]m_axi_awid;
+  output [6:0]m_axi_awid;
   output [31:0]m_axi_awaddr;
   output [7:0]m_axi_awlen;
   output [2:0]m_axi_awsize;
@@ -627,18 +628,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   output m_axi_wlast;
   output m_axi_wvalid;
   input m_axi_wready;
-  input [0:0]m_axi_bid;
+  input [6:0]m_axi_bid;
   input [1:0]m_axi_bresp;
   input m_axi_bvalid;
   output m_axi_bready;
-  output [0:0]m_axi_arid;
+  output [6:0]m_axi_arid;
   output [31:0]m_axi_araddr;
   output [7:0]m_axi_arlen;
   output [2:0]m_axi_arsize;
   output [1:0]m_axi_arburst;
   output m_axi_arvalid;
   input m_axi_arready;
-  input [0:0]m_axi_rid;
+  input [6:0]m_axi_rid;
   input [31:0]m_axi_rdata;
   input [1:0]m_axi_rresp;
   input m_axi_rlast;
@@ -742,24 +743,24 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   wire m_aresetn;
   wire [31:0]m_axi_araddr;
   wire [1:0]m_axi_arburst;
-  wire [0:0]m_axi_arid;
+  wire [6:0]m_axi_arid;
   wire [7:0]m_axi_arlen;
   wire m_axi_arready;
   wire [1:0]\^m_axi_arsize ;
   wire m_axi_arvalid;
   wire [31:0]m_axi_awaddr;
   wire [1:0]m_axi_awburst;
-  wire [0:0]m_axi_awid;
+  wire [6:0]m_axi_awid;
   wire [7:0]m_axi_awlen;
   wire m_axi_awready;
   wire [1:0]\^m_axi_awsize ;
   wire m_axi_awvalid;
-  wire [0:0]m_axi_bid;
+  wire [6:0]m_axi_bid;
   wire m_axi_bready;
   wire [1:0]m_axi_bresp;
   wire m_axi_bvalid;
   wire [31:0]m_axi_rdata;
-  wire [0:0]m_axi_rid;
+  wire [6:0]m_axi_rid;
   wire m_axi_rlast;
   wire m_axi_rready;
   wire [1:0]m_axi_rresp;
@@ -789,13 +790,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   assign axi_c2c_aurora_tx_tdata[50] = \^axi_c2c_aurora_tx_tdata [54];
   assign axi_c2c_aurora_tx_tdata[49] = \^axi_c2c_aurora_tx_tdata [54];
   assign axi_c2c_aurora_tx_tdata[48] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[47] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[46] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[45] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[44] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[43] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[42] = \^axi_c2c_aurora_tx_tdata [54];
-  assign axi_c2c_aurora_tx_tdata[41:0] = \^axi_c2c_aurora_tx_tdata [41:0];
+  assign axi_c2c_aurora_tx_tdata[47:0] = \^axi_c2c_aurora_tx_tdata [47:0];
   assign axi_c2c_config_error_out = \<const0> ;
   assign axi_c2c_link_error_out = \<const0> ;
   assign axi_c2c_s2m_intr_out[3] = \<const0> ;
@@ -948,6 +943,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   assign m_axi_lite_wvalid = \<const0> ;
   assign s_axi_arready = \<const0> ;
   assign s_axi_awready = \<const0> ;
+  assign s_axi_bid[6] = \<const0> ;
+  assign s_axi_bid[5] = \<const0> ;
+  assign s_axi_bid[4] = \<const0> ;
+  assign s_axi_bid[3] = \<const0> ;
+  assign s_axi_bid[2] = \<const0> ;
+  assign s_axi_bid[1] = \<const0> ;
   assign s_axi_bid[0] = \<const0> ;
   assign s_axi_bresp[1] = \<const0> ;
   assign s_axi_bresp[0] = \<const0> ;
@@ -1025,6 +1026,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
   assign s_axi_rdata[2] = \<const0> ;
   assign s_axi_rdata[1] = \<const0> ;
   assign s_axi_rdata[0] = \<const0> ;
+  assign s_axi_rid[6] = \<const0> ;
+  assign s_axi_rid[5] = \<const0> ;
+  assign s_axi_rid[4] = \<const0> ;
+  assign s_axi_rid[3] = \<const0> ;
+  assign s_axi_rid[2] = \<const0> ;
+  assign s_axi_rid[1] = \<const0> ;
   assign s_axi_rid[0] = \<const0> ;
   assign s_axi_rlast = \<const0> ;
   assign s_axi_rresp[1] = \<const0> ;
@@ -1039,7 +1046,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
         .Q(sync_intr_in_d1),
         .axi_c2c_aurora_rx_tdata(axi_c2c_aurora_rx_tdata),
         .axi_c2c_aurora_rx_tvalid(axi_c2c_aurora_rx_tvalid),
-        .axi_c2c_aurora_tx_tdata({\^axi_c2c_aurora_tx_tdata [63],\^axi_c2c_aurora_tx_tdata [61:56],\^axi_c2c_aurora_tx_tdata [54],\^axi_c2c_aurora_tx_tdata [41:0]}),
+        .axi_c2c_aurora_tx_tdata({\^axi_c2c_aurora_tx_tdata [63],\^axi_c2c_aurora_tx_tdata [61:56],\^axi_c2c_aurora_tx_tdata [54],\^axi_c2c_aurora_tx_tdata [47:0]}),
         .axi_c2c_aurora_tx_tready(axi_c2c_aurora_tx_tready),
         .axi_c2c_aurora_tx_tvalid(axi_c2c_aurora_tx_tvalid),
         .axi_c2c_m2s_intr_out(axi_c2c_m2s_intr_out),
@@ -1093,6 +1100,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_asitv10_axisc_register_slice" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice
    (D,
     \state_reg[1]_0 ,
@@ -1107,9 +1115,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
     tdm_user_data_valid,
     Q,
     out0,
+    \storage_data1_reg[20]_0 ,
+    \storage_data1_reg[14]_0 ,
+    \storage_data1_reg[23]_0 ,
+    \storage_data1_reg[3]_0 ,
     \storage_data1_reg[2]_0 ,
-    \storage_data1_reg[10]_0 ,
-    \storage_data1_reg[33]_0 ,
+    \storage_data1_reg[37]_0 ,
     rx_user_reset,
     axi_c2c_aurora_tx_tready,
     slot_select,
@@ -1117,10 +1128,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
     empty_fwft_i_reg,
     tx_phy_ready,
     \tdm_data_out_reg[53] ,
+    \storage_data1_reg[12]_0 ,
+    \storage_data1_reg[0]_0 ,
+    \storage_data1_reg[39]_0 ,
     axi_c2c_phy_clk,
     s_ready_i04_out_0,
     tdm_data_valid_reg);
-  output [0:0]D;
+  output [2:0]D;
   output [0:0]\state_reg[1]_0 ;
   output s_ready_i04_out;
   output [0:0]E;
@@ -1128,26 +1142,32 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   output tdm_user_data_ready;
   output fifo_re__0;
   output \slot_count_reg[1] ;
-  output [42:0]\storage_data2_reg[55] ;
+  output [48:0]\storage_data2_reg[55] ;
   input reg_slice_user_data_ready;
   input tdm_user_data_valid;
-  input [0:0]Q;
+  input [2:0]Q;
   input [0:0]out0;
+  input \storage_data1_reg[20]_0 ;
+  input \storage_data1_reg[14]_0 ;
+  input \storage_data1_reg[23]_0 ;
+  input \storage_data1_reg[3]_0 ;
   input \storage_data1_reg[2]_0 ;
-  input \storage_data1_reg[10]_0 ;
-  input \storage_data1_reg[33]_0 ;
+  input \storage_data1_reg[37]_0 ;
   input rx_user_reset;
   input axi_c2c_aurora_tx_tready;
   input [1:0]slot_select;
   input out;
   input empty_fwft_i_reg;
   input tx_phy_ready;
-  input [42:0]\tdm_data_out_reg[53] ;
+  input [48:0]\tdm_data_out_reg[53] ;
+  input \storage_data1_reg[12]_0 ;
+  input \storage_data1_reg[0]_0 ;
+  input \storage_data1_reg[39]_0 ;
   input axi_c2c_phy_clk;
   input s_ready_i04_out_0;
   input [0:0]tdm_data_valid_reg;
 
-  wire [0:0]D;
+  wire [2:0]D;
   wire [0:0]E;
   wire \FSM_onehot_state[0]_i_1_n_0 ;
   wire \FSM_onehot_state[1]_i_1_n_0 ;
@@ -1159,7 +1179,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[0] ;
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[1] ;
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[2] ;
-  wire [0:0]Q;
+  wire [2:0]Q;
   wire [1:0]areset_d;
   wire axi_c2c_aurora_tx_tready;
   wire axi_c2c_phy_clk;
@@ -1217,6 +1237,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   wire \storage_data1[3]_i_1_n_0 ;
   wire \storage_data1[40]_i_1_n_0 ;
   wire \storage_data1[41]_i_1_n_0 ;
+  wire \storage_data1[42]_i_1_n_0 ;
+  wire \storage_data1[43]_i_1_n_0 ;
+  wire \storage_data1[44]_i_1_n_0 ;
+  wire \storage_data1[45]_i_1_n_0 ;
+  wire \storage_data1[46]_i_1_n_0 ;
+  wire \storage_data1[47]_i_1_n_0 ;
   wire \storage_data1[4]_i_1_n_0 ;
   wire \storage_data1[53]_i_2_n_0 ;
   wire \storage_data1[5]_i_1_n_0 ;
@@ -1224,12 +1250,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   wire \storage_data1[7]_i_1_n_0 ;
   wire \storage_data1[8]_i_1_n_0 ;
   wire \storage_data1[9]_i_1_n_0 ;
-  wire \storage_data1_reg[10]_0 ;
+  wire \storage_data1_reg[0]_0 ;
+  wire \storage_data1_reg[12]_0 ;
+  wire \storage_data1_reg[14]_0 ;
+  wire \storage_data1_reg[20]_0 ;
+  wire \storage_data1_reg[23]_0 ;
   wire \storage_data1_reg[2]_0 ;
-  wire \storage_data1_reg[33]_0 ;
-  wire [43:0]storage_data2;
-  wire [42:0]\storage_data2_reg[55] ;
-  wire [42:0]\tdm_data_out_reg[53] ;
+  wire \storage_data1_reg[37]_0 ;
+  wire \storage_data1_reg[39]_0 ;
+  wire \storage_data1_reg[3]_0 ;
+  wire [49:0]storage_data2;
+  wire [48:0]\storage_data2_reg[55] ;
+  wire [48:0]\tdm_data_out_reg[53] ;
   wire [0:0]tdm_data_valid_reg;
   wire tdm_user_data_ready;
   wire tdm_user_data_valid;
@@ -1327,7 +1359,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(\FSM_onehot_state[3]_i_3_n_0 ),
         .Q(load_s1_from_s2),
         .R(\FSM_onehot_state[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'h08)) 
     aempty_fwft_fb_i_i_2
@@ -1335,6 +1367,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .I1(slot_select[0]),
         .I2(out),
         .O(unpack_data_re));
+  LUT3 #(
+    .INIT(8'h08)) 
+    aempty_fwft_fb_i_i_2__0
+       (.I0(tdm_user_data_ready),
+        .I1(slot_select[1]),
+        .I2(empty_fwft_i_reg),
+        .O(fifo_re__0));
   (* equivalent_register_removal = "no" *) 
   FDRE \areset_d_reg[0] 
        (.C(axi_c2c_phy_clk),
@@ -1349,13 +1388,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(areset_d[0]),
         .Q(areset_d[1]),
         .R(1'b0));
-  LUT3 #(
-    .INIT(8'h08)) 
-    \goreg_dm.dout_i[2]_i_2 
-       (.I0(tdm_user_data_ready),
-        .I1(slot_select[1]),
-        .I2(empty_fwft_i_reg),
-        .O(fifo_re__0));
   LUT6 #(
     .INIT(64'hFFFFFFF700FF00F0)) 
     s_ready_i_i_1
@@ -1366,7 +1398,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .I4(areset_d[1]),
         .I5(tdm_user_data_ready),
         .O(s_ready_i_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h2)) 
     s_ready_i_i_2__0
@@ -1385,14 +1417,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(s_ready_i_i_1_n_0),
         .Q(tdm_user_data_ready),
         .R(rx_user_reset));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \slot_count[3]_i_2 
        (.I0(tdm_user_data_ready),
         .I1(tx_phy_ready),
         .O(\slot_count_reg[1] ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'h2EA2)) 
     \state[0]_i_1 
@@ -1401,7 +1433,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .I2(\state_reg_n_0_[1] ),
         .I3(reg_slice_user_data_ready),
         .O(\state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'hEE62)) 
     \state[1]_i_1 
@@ -1676,6 +1708,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .O(\storage_data1[41]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
+    \storage_data1[42]_i_1 
+       (.I0(storage_data2[42]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [42]),
+        .O(\storage_data1[42]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[43]_i_1 
+       (.I0(storage_data2[43]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [43]),
+        .O(\storage_data1[43]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[44]_i_1 
+       (.I0(storage_data2[44]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [44]),
+        .O(\storage_data1[44]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[45]_i_1 
+       (.I0(storage_data2[45]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [45]),
+        .O(\storage_data1[45]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[46]_i_1 
+       (.I0(storage_data2[46]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [46]),
+        .O(\storage_data1[46]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[47]_i_1 
+       (.I0(storage_data2[47]),
+        .I1(load_s1_from_s2),
+        .I2(\tdm_data_out_reg[53] [47]),
+        .O(\storage_data1[47]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
     \storage_data1[4]_i_1 
        (.I0(storage_data2[4]),
         .I1(load_s1_from_s2),
@@ -1693,10 +1767,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[53]_i_2 
-       (.I0(storage_data2[43]),
+       (.I0(storage_data2[49]),
         .I1(load_s1_from_s2),
-        .I2(\tdm_data_out_reg[53] [42]),
+        .I2(\tdm_data_out_reg[53] [48]),
         .O(\storage_data1[53]_i_2_n_0 ));
+  LUT5 #(
+    .INIT(32'hB88B8BB8)) 
+    \storage_data1[58]_i_1 
+       (.I0(Q[0]),
+        .I1(out0),
+        .I2(\storage_data1_reg[3]_0 ),
+        .I3(\storage_data1_reg[2]_0 ),
+        .I4(\storage_data1_reg[37]_0 ),
+        .O(D[0]));
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[5]_i_1 
@@ -1706,13 +1789,22 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .O(\storage_data1[5]_i_1_n_0 ));
   LUT5 #(
     .INIT(32'hB88B8BB8)) 
-    \storage_data1[63]_i_2 
-       (.I0(Q),
+    \storage_data1[60]_i_1 
+       (.I0(Q[1]),
         .I1(out0),
-        .I2(\storage_data1_reg[2]_0 ),
-        .I3(\storage_data1_reg[10]_0 ),
-        .I4(\storage_data1_reg[33]_0 ),
-        .O(D));
+        .I2(\storage_data1_reg[20]_0 ),
+        .I3(\storage_data1_reg[14]_0 ),
+        .I4(\storage_data1_reg[23]_0 ),
+        .O(D[1]));
+  LUT5 #(
+    .INIT(32'hFF009696)) 
+    \storage_data1[63]_i_2 
+       (.I0(\storage_data1_reg[12]_0 ),
+        .I1(\storage_data1_reg[0]_0 ),
+        .I2(\storage_data1_reg[39]_0 ),
+        .I3(Q[2]),
+        .I4(out0),
+        .O(D[2]));
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[6]_i_1 
@@ -1957,6 +2049,42 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(\storage_data1[41]_i_1_n_0 ),
         .Q(\storage_data2_reg[55] [41]),
         .R(1'b0));
+  FDRE \storage_data1_reg[42] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[42]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [42]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[43] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[43]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [43]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[44] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[44]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [44]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[45] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[45]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [45]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[46] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[46]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [46]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[47] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[47]_i_1_n_0 ),
+        .Q(\storage_data2_reg[55] [47]),
+        .R(1'b0));
   FDRE \storage_data1_reg[4] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
@@ -1967,7 +2095,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[53]_i_2_n_0 ),
-        .Q(\storage_data2_reg[55] [42]),
+        .Q(\storage_data2_reg[55] [48]),
         .R(1'b0));
   FDRE \storage_data1_reg[5] 
        (.C(axi_c2c_phy_clk),
@@ -1999,7 +2127,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(\storage_data1[9]_i_1_n_0 ),
         .Q(\storage_data2_reg[55] [9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \storage_data2[63]_i_1 
@@ -2222,11 +2350,47 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(\tdm_data_out_reg[53] [41]),
         .Q(storage_data2[41]),
         .R(1'b0));
-  FDRE \storage_data2_reg[43] 
+  FDRE \storage_data2_reg[42] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_data_valid_reg),
         .D(\tdm_data_out_reg[53] [42]),
+        .Q(storage_data2[42]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[43] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [43]),
         .Q(storage_data2[43]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[44] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [44]),
+        .Q(storage_data2[44]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[45] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [45]),
+        .Q(storage_data2[45]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[46] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [46]),
+        .Q(storage_data2[46]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[47] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [47]),
+        .Q(storage_data2[47]),
+        .R(1'b0));
+  FDRE \storage_data2_reg[49] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_data_valid_reg),
+        .D(\tdm_data_out_reg[53] [48]),
+        .Q(storage_data2[49]),
         .R(1'b0));
   FDRE \storage_data2_reg[4] 
        (.C(axi_c2c_phy_clk),
@@ -2284,18 +2448,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   output [0:0]out0;
   output axi_c2c_aurora_tx_tvalid;
   output reg_slice_user_data_ready;
-  output [0:0]Q;
-  output [49:0]axi_c2c_aurora_tx_tdata;
+  output [2:0]Q;
+  output [55:0]axi_c2c_aurora_tx_tdata;
   input axi_c2c_aurora_tx_tready;
   input [0:0]\state_reg[0]_0 ;
-  input [49:0]D;
+  input [55:0]D;
   input rx_user_reset;
   input s_ready_i04_out;
   input axi_c2c_phy_clk;
   input [0:0]E;
-  input [0:0]\storage_data2_reg[63]_0 ;
+  input [2:0]\storage_data2_reg[63]_0 ;
 
-  wire [49:0]D;
+  wire [55:0]D;
   wire [0:0]E;
   wire \FSM_onehot_state[0]_i_1_n_0 ;
   wire \FSM_onehot_state[1]_i_1_n_0 ;
@@ -2304,9 +2468,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[0] ;
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[1] ;
   (* RTL_KEEP = "yes" *) wire \FSM_onehot_state_reg_n_0_[2] ;
-  wire [0:0]Q;
+  wire [2:0]Q;
   wire [1:0]areset_d;
-  wire [49:0]axi_c2c_aurora_tx_tdata;
+  wire [55:0]axi_c2c_aurora_tx_tdata;
   wire axi_c2c_aurora_tx_tready;
   wire axi_c2c_aurora_tx_tvalid;
   wire axi_c2c_phy_clk;
@@ -2360,20 +2524,24 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   wire \storage_data1[3]_i_1__0_n_0 ;
   wire \storage_data1[40]_i_1__0_n_0 ;
   wire \storage_data1[41]_i_1__0_n_0 ;
+  wire \storage_data1[42]_i_1__0_n_0 ;
+  wire \storage_data1[43]_i_1__0_n_0 ;
+  wire \storage_data1[44]_i_1__0_n_0 ;
+  wire \storage_data1[45]_i_1__0_n_0 ;
+  wire \storage_data1[46]_i_1__0_n_0 ;
+  wire \storage_data1[47]_i_1__0_n_0 ;
   wire \storage_data1[4]_i_1__0_n_0 ;
   wire \storage_data1[55]_i_1_n_0 ;
   wire \storage_data1[56]_i_1_n_0 ;
   wire \storage_data1[57]_i_1_n_0 ;
-  wire \storage_data1[58]_i_1_n_0 ;
   wire \storage_data1[59]_i_1_n_0 ;
   wire \storage_data1[5]_i_1__0_n_0 ;
-  wire \storage_data1[60]_i_1_n_0 ;
   wire \storage_data1[61]_i_1_n_0 ;
   wire \storage_data1[6]_i_1__0_n_0 ;
   wire \storage_data1[7]_i_1__0_n_0 ;
   wire \storage_data1[8]_i_1__0_n_0 ;
   wire \storage_data1[9]_i_1__0_n_0 ;
-  wire [0:0]\storage_data2_reg[63]_0 ;
+  wire [2:0]\storage_data2_reg[63]_0 ;
   wire \storage_data2_reg_n_0_[0] ;
   wire \storage_data2_reg_n_0_[10] ;
   wire \storage_data2_reg_n_0_[11] ;
@@ -2410,14 +2578,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   wire \storage_data2_reg_n_0_[3] ;
   wire \storage_data2_reg_n_0_[40] ;
   wire \storage_data2_reg_n_0_[41] ;
+  wire \storage_data2_reg_n_0_[42] ;
+  wire \storage_data2_reg_n_0_[43] ;
+  wire \storage_data2_reg_n_0_[44] ;
+  wire \storage_data2_reg_n_0_[45] ;
+  wire \storage_data2_reg_n_0_[46] ;
+  wire \storage_data2_reg_n_0_[47] ;
   wire \storage_data2_reg_n_0_[4] ;
   wire \storage_data2_reg_n_0_[55] ;
   wire \storage_data2_reg_n_0_[56] ;
   wire \storage_data2_reg_n_0_[57] ;
-  wire \storage_data2_reg_n_0_[58] ;
   wire \storage_data2_reg_n_0_[59] ;
   wire \storage_data2_reg_n_0_[5] ;
-  wire \storage_data2_reg_n_0_[60] ;
   wire \storage_data2_reg_n_0_[61] ;
   wire \storage_data2_reg_n_0_[6] ;
   wire \storage_data2_reg_n_0_[7] ;
@@ -2833,6 +3005,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .O(\storage_data1[41]_i_1__0_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
+    \storage_data1[42]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[42] ),
+        .I1(out0),
+        .I2(D[42]),
+        .O(\storage_data1[42]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[43]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[43] ),
+        .I1(out0),
+        .I2(D[43]),
+        .O(\storage_data1[43]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[44]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[44] ),
+        .I1(out0),
+        .I2(D[44]),
+        .O(\storage_data1[44]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[45]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[45] ),
+        .I1(out0),
+        .I2(D[45]),
+        .O(\storage_data1[45]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[46]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[46] ),
+        .I1(out0),
+        .I2(D[46]),
+        .O(\storage_data1[46]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \storage_data1[47]_i_1__0 
+       (.I0(\storage_data2_reg_n_0_[47] ),
+        .I1(out0),
+        .I2(D[47]),
+        .O(\storage_data1[47]_i_1__0_n_0 ));
+  LUT3 #(
+    .INIT(8'hB8)) 
     \storage_data1[4]_i_1__0 
        (.I0(\storage_data2_reg_n_0_[4] ),
         .I1(out0),
@@ -2843,35 +3057,28 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
     \storage_data1[55]_i_1 
        (.I0(\storage_data2_reg_n_0_[55] ),
         .I1(out0),
-        .I2(D[42]),
+        .I2(D[48]),
         .O(\storage_data1[55]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[56]_i_1 
        (.I0(\storage_data2_reg_n_0_[56] ),
         .I1(out0),
-        .I2(D[43]),
+        .I2(D[49]),
         .O(\storage_data1[56]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[57]_i_1 
        (.I0(\storage_data2_reg_n_0_[57] ),
         .I1(out0),
-        .I2(D[44]),
+        .I2(D[50]),
         .O(\storage_data1[57]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \storage_data1[58]_i_1 
-       (.I0(\storage_data2_reg_n_0_[58] ),
-        .I1(out0),
-        .I2(D[45]),
-        .O(\storage_data1[58]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
     \storage_data1[59]_i_1 
        (.I0(\storage_data2_reg_n_0_[59] ),
         .I1(out0),
-        .I2(D[46]),
+        .I2(D[52]),
         .O(\storage_data1[59]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
@@ -2882,17 +3089,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .O(\storage_data1[5]_i_1__0_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
-    \storage_data1[60]_i_1 
-       (.I0(\storage_data2_reg_n_0_[60] ),
-        .I1(out0),
-        .I2(D[47]),
-        .O(\storage_data1[60]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'hB8)) 
     \storage_data1[61]_i_1 
        (.I0(\storage_data2_reg_n_0_[61] ),
         .I1(out0),
-        .I2(D[48]),
+        .I2(D[54]),
         .O(\storage_data1[61]_i_1_n_0 ));
   LUT5 #(
     .INIT(32'hFFA88888)) 
@@ -3147,6 +3347,42 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(\storage_data1[41]_i_1__0_n_0 ),
         .Q(axi_c2c_aurora_tx_tdata[41]),
         .R(1'b0));
+  FDRE \storage_data1_reg[42] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[42]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[42]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[43] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[43]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[43]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[44] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[44]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[44]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[45] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[45]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[45]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[46] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[46]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[46]),
+        .R(1'b0));
+  FDRE \storage_data1_reg[47] 
+       (.C(axi_c2c_phy_clk),
+        .CE(storage_data1),
+        .D(\storage_data1[47]_i_1__0_n_0 ),
+        .Q(axi_c2c_aurora_tx_tdata[47]),
+        .R(1'b0));
   FDRE \storage_data1_reg[4] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
@@ -3157,31 +3393,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[55]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[42]),
+        .Q(axi_c2c_aurora_tx_tdata[48]),
         .R(1'b0));
   FDRE \storage_data1_reg[56] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[56]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[43]),
+        .Q(axi_c2c_aurora_tx_tdata[49]),
         .R(1'b0));
   FDRE \storage_data1_reg[57] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[57]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[44]),
+        .Q(axi_c2c_aurora_tx_tdata[50]),
         .R(1'b0));
   FDRE \storage_data1_reg[58] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
-        .D(\storage_data1[58]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[45]),
+        .D(\storage_data2_reg[63]_0 [0]),
+        .Q(axi_c2c_aurora_tx_tdata[51]),
         .R(1'b0));
   FDRE \storage_data1_reg[59] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[59]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[46]),
+        .Q(axi_c2c_aurora_tx_tdata[52]),
         .R(1'b0));
   FDRE \storage_data1_reg[5] 
        (.C(axi_c2c_phy_clk),
@@ -3192,20 +3428,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   FDRE \storage_data1_reg[60] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
-        .D(\storage_data1[60]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[47]),
+        .D(\storage_data2_reg[63]_0 [1]),
+        .Q(axi_c2c_aurora_tx_tdata[53]),
         .R(1'b0));
   FDRE \storage_data1_reg[61] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
         .D(\storage_data1[61]_i_1_n_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[48]),
+        .Q(axi_c2c_aurora_tx_tdata[54]),
         .R(1'b0));
   FDRE \storage_data1_reg[63] 
        (.C(axi_c2c_phy_clk),
         .CE(storage_data1),
-        .D(\storage_data2_reg[63]_0 ),
-        .Q(axi_c2c_aurora_tx_tdata[49]),
+        .D(\storage_data2_reg[63]_0 [2]),
+        .Q(axi_c2c_aurora_tx_tdata[55]),
         .R(1'b0));
   FDRE \storage_data1_reg[6] 
        (.C(axi_c2c_phy_clk),
@@ -3447,6 +3683,42 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .D(D[41]),
         .Q(\storage_data2_reg_n_0_[41] ),
         .R(1'b0));
+  FDRE \storage_data2_reg[42] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[42]),
+        .Q(\storage_data2_reg_n_0_[42] ),
+        .R(1'b0));
+  FDRE \storage_data2_reg[43] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[43]),
+        .Q(\storage_data2_reg_n_0_[43] ),
+        .R(1'b0));
+  FDRE \storage_data2_reg[44] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[44]),
+        .Q(\storage_data2_reg_n_0_[44] ),
+        .R(1'b0));
+  FDRE \storage_data2_reg[45] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[45]),
+        .Q(\storage_data2_reg_n_0_[45] ),
+        .R(1'b0));
+  FDRE \storage_data2_reg[46] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[46]),
+        .Q(\storage_data2_reg_n_0_[46] ),
+        .R(1'b0));
+  FDRE \storage_data2_reg[47] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(D[47]),
+        .Q(\storage_data2_reg_n_0_[47] ),
+        .R(1'b0));
   FDRE \storage_data2_reg[4] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
@@ -3456,31 +3728,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   FDRE \storage_data2_reg[55] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[42]),
+        .D(D[48]),
         .Q(\storage_data2_reg_n_0_[55] ),
         .R(1'b0));
   FDRE \storage_data2_reg[56] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[43]),
+        .D(D[49]),
         .Q(\storage_data2_reg_n_0_[56] ),
         .R(1'b0));
   FDRE \storage_data2_reg[57] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[44]),
+        .D(D[50]),
         .Q(\storage_data2_reg_n_0_[57] ),
         .R(1'b0));
   FDRE \storage_data2_reg[58] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[45]),
-        .Q(\storage_data2_reg_n_0_[58] ),
+        .D(D[51]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE \storage_data2_reg[59] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[46]),
+        .D(D[52]),
         .Q(\storage_data2_reg_n_0_[59] ),
         .R(1'b0));
   FDRE \storage_data2_reg[5] 
@@ -3492,20 +3764,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
   FDRE \storage_data2_reg[60] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[47]),
-        .Q(\storage_data2_reg_n_0_[60] ),
+        .D(D[53]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE \storage_data2_reg[61] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[48]),
+        .D(D[54]),
         .Q(\storage_data2_reg_n_0_[61] ),
         .R(1'b0));
   FDRE \storage_data2_reg[63] 
        (.C(axi_c2c_phy_clk),
         .CE(E),
-        .D(D[49]),
-        .Q(Q),
+        .D(D[55]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE \storage_data2_reg[6] 
        (.C(axi_c2c_phy_clk),
@@ -3533,38 +3805,49 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_reg
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_async_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo
-   (D,
+   (E,
+    D,
     m_axi_awvalid,
     \m_axi_awaddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     aw_ch_data_valid,
     m_axi_awready);
+  output [0:0]E;
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input aw_ch_data_valid;
   input m_axi_awready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3 U0
        (.D(D),
+        .E(E),
         .Q(Q),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -3572,42 +3855,54 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_async_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo_108
    (D,
+    E,
     m_axi_arvalid,
     \m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     ar_ch_data_valid,
     m_axi_arready);
   output [0:0]D;
+  output [0:0]E;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input ar_ch_data_valid;
   input m_axi_arready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_109 U0
+  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_110 U0
        (.D(D),
+        .E(E),
         .Q(Q),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -3615,7 +3910,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo_108
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_async_fifo" *) 
@@ -3681,11 +3978,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -3694,8 +3991,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -3746,11 +4043,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     Q,
     int_ch1_ready5__1,
     m_axi_bready,
     \gnxpm_cdc.wr_pntr_gc_reg[7] ,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -3759,13 +4080,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -3782,31 +4103,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output [1:0]Q;
   output int_ch1_ready5__1;
   output m_axi_bready;
   output [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -3827,24 +4172,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2 U0
-       (.Q(Q),
+       (.D(D),
+        .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
@@ -3865,20 +4234,45 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__param
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .\gpregsm1.user_valid_reg (\gpregsm1.user_valid_reg ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(out),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0),
         .slot_select(slot_select),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_aurora_standard_cc_module" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_cc_module
    (aurora_do_cc,
     aurora_pma_init_out,
@@ -5132,6 +5526,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_aurora_standard_c
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_awr_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo
    (D,
     m_axi_arvalid,
@@ -5141,29 +5536,36 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo
     Q,
     br_fifo_reset,
     ar_ch_data_valid,
-    m_axi_arready);
+    m_axi_arready,
+    rx_user_reset);
   output [0:0]D;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [12:0]Q;
   input br_fifo_reset;
   input ar_ch_data_valid;
   input m_axi_arready;
+  input rx_user_reset;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire p_0_in;
+  wire p_0_in1_in;
+  wire [38:0]pack_data_out;
+  wire rx_user_reset;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo_108 axi_chip2chip_async_fifo_inst
        (.D(D),
+        .E(p_0_in1_in),
         .Q(Q),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -5171,7 +5573,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .\mux_by_4.data_count_reg[3] (p_0_in),
+        .pack_data_out(pack_data_out));
+  b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_packer_109 axi_chip2chip_packer_inst
+       (.E(p_0_in1_in),
+        .Q(Q),
+        .axi_c2c_phy_clk(axi_c2c_phy_clk),
+        .\mux_by_4.data_count_reg[0]_0 (p_0_in),
+        .pack_data_out(pack_data_out),
+        .rx_user_reset(rx_user_reset));
 endmodule
 
 (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_awr_fifo" *) 
@@ -5184,29 +5595,36 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo_0
     Q,
     br_fifo_reset,
     aw_ch_data_valid,
-    m_axi_awready);
+    m_axi_awready,
+    rx_user_reset);
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [12:0]Q;
   input br_fifo_reset;
   input aw_ch_data_valid;
   input m_axi_awready;
+  input rx_user_reset;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire p_0_in;
+  wire p_0_in1_in;
+  wire [38:0]pack_data_out;
+  wire rx_user_reset;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo axi_chip2chip_async_fifo_inst
        (.D(D),
+        .E(p_0_in1_in),
         .Q(Q),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -5214,7 +5632,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo_0
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .\mux_by_4.data_count_reg[3] (p_0_in),
+        .pack_data_out(pack_data_out));
+  b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_packer axi_chip2chip_packer_inst
+       (.E(p_0_in1_in),
+        .Q(Q),
+        .axi_c2c_phy_clk(axi_c2c_phy_clk),
+        .\mux_by_4.data_count_reg[0]_0 (p_0_in),
+        .pack_data_out(pack_data_out),
+        .rx_user_reset(rx_user_reset));
 endmodule
 
 (* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_awr_fifo" *) 
@@ -5280,11 +5707,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__paramet
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -5293,8 +5720,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__paramet
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -5327,6 +5754,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__paramet
         .unpack_data_re(unpack_data_re));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_b_fifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
    (out,
     \gpregsm1.user_valid_reg ,
@@ -5346,9 +5774,33 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     int_ch1_ready5__1,
     m_axi_bready,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -5357,13 +5809,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -5382,29 +5834,53 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output int_ch1_ready5__1;
   output m_axi_bready;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -5425,24 +5901,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_async_fifo__parameterized2 axi_chip2chip_async_fifo_inst
-       (.Q(Q),
+       (.D(D),
+        .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
@@ -5463,20 +5963,45 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .\gpregsm1.user_valid_reg (\gpregsm1.user_valid_reg ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(out),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0),
         .slot_select(slot_select),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ch0_ctrl" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
    (send_ch0,
     ecc_dec_error_in_dly,
@@ -5590,7 +6115,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
         .D(axi_chip2chip_sync_cell_intr_in_inst_n_4),
         .Q(\auto_neg_intr_gen.intr_flop_reg_n_0 ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'hAFEA)) 
     \auto_neg_intr_gen.send_ch0_i_1 
@@ -5678,7 +6203,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
         .D(D[6]),
         .Q(\tdm_data_out_reg[21] [6]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT5 #(
     .INIT(32'hFFFF7C4C)) 
     \auto_neg_intr_gen.tx_ch0_valid_i_1 
@@ -5829,6 +6354,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_decoder" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
    (aw_ch_data_valid,
     ar_ch_data_valid,
@@ -5854,7 +6380,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
   output ar_ch_data_valid;
   output wd_ch_data_valid;
   output [0:0]\intr_data_reg[3] ;
-  output [44:0]Q;
+  output [37:0]Q;
   output [1:0]\slot_select_reg[2] ;
   output [3:0]S;
   output [3:0]\intr_data_reg[3]_0 ;
@@ -5873,7 +6399,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
 
   wire [0:0]CO;
   wire [0:0]E;
-  wire [44:0]Q;
+  wire [37:0]Q;
   wire [3:0]S;
   wire ar_ch_data_valid;
   wire aw_ch_data_valid;
@@ -5897,7 +6423,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
   wire [3:0]\intr_data_reg[3]_1 ;
   wire [3:0]\intr_data_reg[3]_2 ;
   wire rx_ch0_valid;
-  wire [50:45]rx_dec_data;
+  wire [50:38]rx_dec_data;
   wire rx_phy_ready;
   wire rx_user_reset;
   wire [1:0]\slot_select_reg[2] ;
@@ -6138,13 +6664,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[43]),
-        .Q(Q[38]),
+        .Q(rx_dec_data[38]),
         .R(rx_user_reset));
   FDRE \data_out_reg[39] 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[44]),
-        .Q(Q[39]),
+        .Q(rx_dec_data[39]),
         .R(rx_user_reset));
   FDRE \data_out_reg[3] 
        (.C(axi_c2c_phy_clk),
@@ -6156,31 +6682,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[45]),
-        .Q(Q[40]),
+        .Q(rx_dec_data[40]),
         .R(rx_user_reset));
   FDRE \data_out_reg[41] 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[46]),
-        .Q(Q[41]),
+        .Q(rx_dec_data[41]),
         .R(rx_user_reset));
   FDRE \data_out_reg[42] 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[47]),
-        .Q(Q[42]),
+        .Q(rx_dec_data[42]),
         .R(rx_user_reset));
   FDRE \data_out_reg[43] 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[48]),
-        .Q(Q[43]),
+        .Q(rx_dec_data[43]),
         .R(rx_user_reset));
   FDRE \data_out_reg[44] 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(data_out[49]),
-        .Q(Q[44]),
+        .Q(rx_dec_data[44]),
         .R(rx_user_reset));
   FDRE \data_out_reg[45] 
        (.C(axi_c2c_phy_clk),
@@ -6291,7 +6817,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
         .I1(Q[36]),
         .I2(Q[33]),
         .I3(Q[34]),
-        .I4(Q[38]),
+        .I4(rx_dec_data[38]),
         .I5(Q[37]),
         .O(\intr_data[3]_i_4_n_0 ));
   LUT6 #(
@@ -6307,12 +6833,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     \intr_data[3]_i_6 
-       (.I0(Q[41]),
-        .I1(Q[42]),
-        .I2(Q[39]),
-        .I3(Q[40]),
-        .I4(Q[44]),
-        .I5(Q[43]),
+       (.I0(rx_dec_data[41]),
+        .I1(rx_dec_data[42]),
+        .I2(rx_dec_data[39]),
+        .I3(rx_dec_data[40]),
+        .I4(rx_dec_data[44]),
+        .I5(rx_dec_data[43]),
         .O(\intr_data[3]_i_6_n_0 ));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
@@ -6411,21 +6937,21 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
     .INIT(8'h01)) 
     rx_intr_data1_carry__2_i_2
        (.I0(rx_dec_data[45]),
-        .I1(Q[44]),
-        .I2(Q[43]),
+        .I1(rx_dec_data[44]),
+        .I2(rx_dec_data[43]),
         .O(\intr_data_reg[3]_2 [2]));
   LUT3 #(
     .INIT(8'h01)) 
     rx_intr_data1_carry__2_i_3
-       (.I0(Q[42]),
-        .I1(Q[41]),
-        .I2(Q[40]),
+       (.I0(rx_dec_data[42]),
+        .I1(rx_dec_data[41]),
+        .I2(rx_dec_data[40]),
         .O(\intr_data_reg[3]_2 [1]));
   LUT3 #(
     .INIT(8'h01)) 
     rx_intr_data1_carry__2_i_4
-       (.I0(Q[39]),
-        .I1(Q[38]),
+       (.I0(rx_dec_data[39]),
+        .I1(rx_dec_data[38]),
         .I2(Q[37]),
         .O(\intr_data_reg[3]_2 [0]));
   LUT2 #(
@@ -6451,8 +6977,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
   LUT3 #(
     .INIT(8'h04)) 
     rx_intr_data1_carry_i_3
-       (.I0(Q[6]),
-        .I1(Q[5]),
+       (.I0(Q[5]),
+        .I1(Q[6]),
         .I2(Q[4]),
         .O(S[1]));
   LUT3 #(
@@ -6464,6 +6990,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_decoder
         .O(S[0]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_dec" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
    (ch0_valid0,
     data_out,
@@ -8490,319 +9017,377 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec
         .R(rx_user_reset));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_ecc_enc" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
    (D,
+    \storage_data2_reg[60] ,
+    \storage_data2_reg[60]_0 ,
+    \storage_data2_reg[60]_1 ,
     \storage_data2_reg[63] ,
     \storage_data2_reg[63]_0 ,
     \storage_data2_reg[63]_1 ,
+    \storage_data2_reg[58] ,
+    \storage_data2_reg[58]_0 ,
+    \storage_data2_reg[58]_1 ,
     Q);
   output [6:0]D;
+  output \storage_data2_reg[60] ;
+  output \storage_data2_reg[60]_0 ;
+  output \storage_data2_reg[60]_1 ;
   output \storage_data2_reg[63] ;
   output \storage_data2_reg[63]_0 ;
   output \storage_data2_reg[63]_1 ;
-  input [42:0]Q;
+  output \storage_data2_reg[58] ;
+  output \storage_data2_reg[58]_0 ;
+  output \storage_data2_reg[58]_1 ;
+  input [48:0]Q;
 
   wire [6:0]D;
-  wire [42:0]Q;
+  wire [48:0]Q;
+  wire \i_/storage_data1[60]_i_5_n_0 ;
+  wire \i_/storage_data1[63]_i_6_n_0 ;
   wire \i_/storage_data2[56]_i_2_n_0 ;
   wire \i_/storage_data2[56]_i_3_n_0 ;
   wire \i_/storage_data2[56]_i_4_n_0 ;
   wire \i_/storage_data2[56]_i_5_n_0 ;
+  wire \i_/storage_data2[56]_i_6_n_0 ;
   wire \i_/storage_data2[57]_i_2_n_0 ;
   wire \i_/storage_data2[57]_i_3_n_0 ;
   wire \i_/storage_data2[57]_i_4_n_0 ;
-  wire \i_/storage_data2[58]_i_2_n_0 ;
-  wire \i_/storage_data2[58]_i_3_n_0 ;
-  wire \i_/storage_data2[58]_i_4_n_0 ;
-  wire \i_/storage_data2[58]_i_5_n_0 ;
-  wire \i_/storage_data2[58]_i_6_n_0 ;
   wire \i_/storage_data2[59]_i_2_n_0 ;
   wire \i_/storage_data2[59]_i_3_n_0 ;
   wire \i_/storage_data2[59]_i_4_n_0 ;
-  wire \i_/storage_data2[60]_i_2_n_0 ;
-  wire \i_/storage_data2[60]_i_3_n_0 ;
+  wire \i_/storage_data2[59]_i_5_n_0 ;
+  wire \i_/storage_data2[59]_i_6_n_0 ;
   wire \i_/storage_data2[61]_i_2_n_0 ;
   wire \i_/storage_data2[61]_i_3_n_0 ;
   wire \i_/storage_data2[61]_i_4_n_0 ;
+  wire \i_/storage_data2[61]_i_5_n_0 ;
+  wire \storage_data2_reg[58] ;
+  wire \storage_data2_reg[58]_0 ;
+  wire \storage_data2_reg[58]_1 ;
+  wire \storage_data2_reg[60] ;
+  wire \storage_data2_reg[60]_0 ;
+  wire \storage_data2_reg[60]_1 ;
   wire \storage_data2_reg[63] ;
   wire \storage_data2_reg[63]_0 ;
   wire \storage_data2_reg[63]_1 ;
 
   LUT6 #(
     .INIT(64'h6996966996696996)) 
-    \i_/storage_data1[63]_i_3 
+    \i_/storage_data1[58]_i_2 
+       (.I0(Q[3]),
+        .I1(Q[31]),
+        .I2(Q[30]),
+        .I3(Q[17]),
+        .I4(Q[15]),
+        .I5(Q[8]),
+        .O(\storage_data2_reg[58] ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[58]_i_3 
        (.I0(Q[2]),
-        .I1(Q[29]),
-        .I2(Q[5]),
-        .I3(Q[32]),
-        .I4(Q[27]),
+        .I1(Q[14]),
+        .I2(Q[47]),
+        .I3(Q[7]),
+        .I4(Q[39]),
+        .I5(Q[29]),
+        .O(\storage_data2_reg[58]_0 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[58]_i_4 
+       (.I0(\i_/storage_data2[59]_i_6_n_0 ),
+        .I1(\i_/storage_data2[56]_i_6_n_0 ),
+        .I2(Q[37]),
+        .I3(Q[16]),
+        .I4(Q[22]),
+        .I5(Q[45]),
+        .O(\storage_data2_reg[58]_1 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[60]_i_2 
+       (.I0(Q[20]),
+        .I1(Q[43]),
+        .I2(Q[42]),
+        .I3(Q[19]),
+        .I4(Q[25]),
+        .I5(Q[15]),
+        .O(\storage_data2_reg[60] ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[60]_i_3 
+       (.I0(Q[14]),
+        .I1(Q[18]),
+        .I2(Q[24]),
+        .I3(Q[41]),
+        .I4(Q[11]),
         .I5(Q[12]),
+        .O(\storage_data2_reg[60]_0 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[60]_i_4 
+       (.I0(Q[23]),
+        .I1(Q[46]),
+        .I2(Q[17]),
+        .I3(Q[21]),
+        .I4(Q[13]),
+        .I5(\i_/storage_data1[60]_i_5_n_0 ),
+        .O(\storage_data2_reg[60]_1 ));
+  LUT5 #(
+    .INIT(32'h96696996)) 
+    \i_/storage_data1[60]_i_5 
+       (.I0(Q[22]),
+        .I1(Q[44]),
+        .I2(Q[47]),
+        .I3(Q[16]),
+        .I4(Q[45]),
+        .O(\i_/storage_data1[60]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data1[63]_i_3 
+       (.I0(Q[12]),
+        .I1(Q[11]),
+        .I2(Q[29]),
+        .I3(Q[26]),
+        .I4(Q[2]),
+        .I5(Q[5]),
         .O(\storage_data2_reg[63] ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data1[63]_i_4 
-       (.I0(Q[10]),
-        .I1(Q[17]),
-        .I2(Q[26]),
-        .I3(Q[11]),
-        .I4(Q[1]),
-        .I5(Q[0]),
+       (.I0(Q[0]),
+        .I1(Q[33]),
+        .I2(Q[4]),
+        .I3(Q[7]),
+        .I4(Q[41]),
+        .I5(Q[48]),
         .O(\storage_data2_reg[63]_0 ));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \i_/storage_data1[63]_i_5 
+       (.I0(\i_/storage_data2[61]_i_5_n_0 ),
+        .I1(\i_/storage_data2[56]_i_6_n_0 ),
+        .I2(\i_/storage_data1[63]_i_6_n_0 ),
+        .O(\storage_data2_reg[63]_1 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
-    \i_/storage_data1[63]_i_5 
-       (.I0(\i_/storage_data2[58]_i_2_n_0 ),
-        .I1(\i_/storage_data2[56]_i_4_n_0 ),
-        .I2(Q[33]),
-        .I3(Q[14]),
-        .I4(Q[41]),
+    \i_/storage_data1[63]_i_6 
+       (.I0(Q[21]),
+        .I1(Q[17]),
+        .I2(Q[10]),
+        .I3(Q[24]),
+        .I4(Q[14]),
         .I5(Q[18]),
-        .O(\storage_data2_reg[63]_1 ));
+        .O(\i_/storage_data1[63]_i_6_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data2[56]_i_1 
        (.I0(\i_/storage_data2[56]_i_2_n_0 ),
-        .I1(\i_/storage_data2[56]_i_3_n_0 ),
-        .I2(Q[32]),
-        .I3(Q[40]),
-        .I4(\i_/storage_data2[56]_i_4_n_0 ),
-        .I5(\i_/storage_data2[56]_i_5_n_0 ),
+        .I1(\i_/storage_data2[57]_i_2_n_0 ),
+        .I2(\i_/storage_data2[56]_i_3_n_0 ),
+        .I3(\i_/storage_data2[56]_i_4_n_0 ),
+        .I4(\i_/storage_data2[56]_i_5_n_0 ),
+        .I5(\i_/storage_data2[56]_i_6_n_0 ),
         .O(D[0]));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
     \i_/storage_data2[56]_i_2 
-       (.I0(Q[11]),
-        .I1(Q[26]),
-        .I2(Q[30]),
-        .I3(Q[28]),
-        .I4(Q[19]),
-        .I5(Q[34]),
+       (.I0(Q[25]),
+        .I1(Q[40]),
         .O(\i_/storage_data2[56]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'h6996)) 
+    \i_/storage_data2[56]_i_3 
+       (.I0(Q[3]),
+        .I1(Q[6]),
+        .I2(Q[8]),
+        .I3(Q[15]),
+        .O(\i_/storage_data2[56]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[56]_i_3 
-       (.I0(Q[13]),
-        .I1(Q[6]),
-        .I2(Q[1]),
-        .I3(Q[0]),
-        .I4(Q[15]),
-        .I5(Q[8]),
-        .O(\i_/storage_data2[56]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT5 #(
-    .INIT(32'h96696996)) 
     \i_/storage_data2[56]_i_4 
-       (.I0(Q[21]),
-        .I1(Q[23]),
-        .I2(Q[38]),
-        .I3(Q[36]),
-        .I4(Q[4]),
+       (.I0(Q[30]),
+        .I1(Q[28]),
+        .I2(Q[19]),
+        .I3(Q[10]),
+        .I4(Q[42]),
+        .I5(Q[34]),
         .O(\i_/storage_data2[56]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data2[56]_i_5 
+       (.I0(Q[26]),
+        .I1(Q[11]),
+        .I2(Q[44]),
+        .I3(Q[4]),
+        .I4(Q[36]),
+        .I5(Q[0]),
+        .O(\i_/storage_data2[56]_i_5_n_0 ));
   LUT5 #(
     .INIT(32'h96696996)) 
-    \i_/storage_data2[56]_i_5 
-       (.I0(Q[25]),
-        .I1(Q[17]),
-        .I2(Q[10]),
-        .I3(Q[42]),
-        .I4(Q[3]),
-        .O(\i_/storage_data2[56]_i_5_n_0 ));
+    \i_/storage_data2[56]_i_6 
+       (.I0(Q[32]),
+        .I1(Q[38]),
+        .I2(Q[23]),
+        .I3(Q[46]),
+        .I4(Q[1]),
+        .O(\i_/storage_data2[56]_i_6_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data2[57]_i_1 
-       (.I0(Q[24]),
-        .I1(Q[39]),
-        .I2(Q[27]),
-        .I3(Q[2]),
-        .I4(\i_/storage_data2[57]_i_2_n_0 ),
-        .I5(\i_/storage_data2[58]_i_5_n_0 ),
-        .O(D[1]));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[57]_i_2 
-       (.I0(\i_/storage_data2[57]_i_3_n_0 ),
-        .I1(Q[20]),
-        .I2(Q[16]),
+       (.I0(\i_/storage_data2[57]_i_2_n_0 ),
+        .I1(Q[16]),
+        .I2(\i_/storage_data2[57]_i_3_n_0 ),
         .I3(\i_/storage_data2[57]_i_4_n_0 ),
-        .I4(Q[12]),
-        .I5(Q[9]),
+        .I4(\i_/storage_data2[59]_i_6_n_0 ),
+        .I5(\i_/storage_data2[61]_i_5_n_0 ),
+        .O(D[1]));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \i_/storage_data2[57]_i_2 
+       (.I0(Q[17]),
+        .I1(Q[21]),
+        .I2(Q[13]),
         .O(\i_/storage_data2[57]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data2[57]_i_3 
-       (.I0(Q[21]),
-        .I1(Q[6]),
-        .I2(Q[28]),
-        .I3(Q[36]),
-        .I4(Q[13]),
-        .I5(Q[0]),
+       (.I0(Q[12]),
+        .I1(Q[28]),
+        .I2(Q[32]),
+        .I3(Q[0]),
+        .I4(Q[2]),
+        .I5(Q[5]),
         .O(\i_/storage_data2[57]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data2[57]_i_4 
+       (.I0(Q[31]),
+        .I1(Q[35]),
+        .I2(Q[6]),
+        .I3(Q[3]),
+        .I4(Q[43]),
+        .I5(Q[20]),
+        .O(\i_/storage_data2[57]_i_4_n_0 ));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \i_/storage_data2[58]_i_1 
+       (.I0(\storage_data2_reg[58] ),
+        .I1(\storage_data2_reg[58]_0 ),
+        .I2(\storage_data2_reg[58]_1 ),
+        .O(D[2]));
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
+    \i_/storage_data2[59]_i_1 
+       (.I0(Q[22]),
+        .I1(\i_/storage_data2[59]_i_2_n_0 ),
+        .I2(\i_/storage_data2[59]_i_3_n_0 ),
+        .I3(\i_/storage_data2[59]_i_4_n_0 ),
+        .I4(\i_/storage_data2[59]_i_5_n_0 ),
+        .I5(\i_/storage_data2[59]_i_6_n_0 ),
+        .O(D[3]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \i_/storage_data2[57]_i_4 
-       (.I0(Q[5]),
-        .I1(Q[35]),
-        .O(\i_/storage_data2[57]_i_4_n_0 ));
-  LUT5 #(
-    .INIT(32'h96696996)) 
-    \i_/storage_data2[58]_i_1 
-       (.I0(\i_/storage_data2[58]_i_2_n_0 ),
-        .I1(Q[22]),
-        .I2(\i_/storage_data2[58]_i_3_n_0 ),
-        .I3(\i_/storage_data2[58]_i_4_n_0 ),
-        .I4(\i_/storage_data2[58]_i_5_n_0 ),
-        .O(D[2]));
-  LUT3 #(
-    .INIT(8'h96)) 
-    \i_/storage_data2[58]_i_2 
-       (.I0(Q[39]),
-        .I1(Q[24]),
-        .I2(Q[7]),
-        .O(\i_/storage_data2[58]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[58]_i_3 
-       (.I0(Q[8]),
-        .I1(Q[15]),
-        .I2(Q[23]),
-        .I3(Q[38]),
-        .I4(Q[1]),
-        .I5(Q[30]),
-        .O(\i_/storage_data2[58]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[58]_i_4 
-       (.I0(Q[37]),
-        .I1(Q[14]),
-        .I2(Q[9]),
-        .I3(Q[16]),
-        .I4(Q[29]),
-        .I5(Q[2]),
-        .O(\i_/storage_data2[58]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[58]_i_5 
-       (.I0(\i_/storage_data2[58]_i_6_n_0 ),
-        .I1(Q[3]),
-        .I2(Q[42]),
-        .I3(Q[10]),
-        .I4(Q[17]),
-        .I5(Q[25]),
-        .O(\i_/storage_data2[58]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT3 #(
-    .INIT(8'h96)) 
-    \i_/storage_data2[58]_i_6 
-       (.I0(Q[40]),
-        .I1(Q[32]),
-        .I2(Q[31]),
-        .O(\i_/storage_data2[58]_i_6_n_0 ));
-  LUT5 #(
-    .INIT(32'h96696996)) 
-    \i_/storage_data2[59]_i_1 
-       (.I0(Q[10]),
-        .I1(Q[42]),
-        .I2(Q[33]),
-        .I3(Q[18]),
-        .I4(\i_/storage_data2[59]_i_2_n_0 ),
-        .O(D[3]));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
     \i_/storage_data2[59]_i_2 
-       (.I0(\i_/storage_data2[56]_i_4_n_0 ),
-        .I1(Q[39]),
-        .I2(Q[24]),
-        .I3(Q[7]),
-        .I4(\i_/storage_data2[59]_i_3_n_0 ),
-        .I5(\i_/storage_data2[59]_i_4_n_0 ),
+       (.I0(Q[39]),
+        .I1(Q[36]),
         .O(\i_/storage_data2[59]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT4 #(
+    .INIT(16'h6996)) 
     \i_/storage_data2[59]_i_3 
-       (.I0(Q[37]),
-        .I1(Q[22]),
-        .I2(Q[5]),
-        .I3(Q[35]),
-        .I4(Q[9]),
-        .I5(Q[20]),
+       (.I0(Q[35]),
+        .I1(Q[37]),
+        .I2(Q[6]),
+        .I3(Q[20]),
         .O(\i_/storage_data2[59]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data2[59]_i_4 
-       (.I0(Q[25]),
-        .I1(Q[40]),
-        .I2(Q[19]),
-        .I3(Q[34]),
-        .I4(Q[6]),
-        .I5(Q[8]),
+       (.I0(Q[34]),
+        .I1(Q[8]),
+        .I2(Q[18]),
+        .I3(Q[5]),
+        .I4(Q[19]),
+        .I5(Q[21]),
         .O(\i_/storage_data2[59]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[60]_i_1 
-       (.I0(\i_/storage_data2[60]_i_2_n_0 ),
-        .I1(\i_/storage_data2[60]_i_3_n_0 ),
-        .I2(Q[21]),
-        .I3(Q[23]),
-        .I4(Q[25]),
-        .I5(Q[17]),
-        .O(D[4]));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[60]_i_2 
-       (.I0(Q[18]),
-        .I1(Q[41]),
-        .I2(Q[12]),
-        .I3(Q[16]),
-        .I4(Q[22]),
-        .I5(Q[14]),
-        .O(\i_/storage_data2[60]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h6996966996696996)) 
-    \i_/storage_data2[60]_i_3 
-       (.I0(Q[20]),
-        .I1(Q[24]),
-        .I2(Q[11]),
-        .I3(Q[19]),
-        .I4(Q[13]),
-        .I5(Q[15]),
-        .O(\i_/storage_data2[60]_i_3_n_0 ));
+    \i_/storage_data2[59]_i_5 
+       (.I0(Q[38]),
+        .I1(Q[33]),
+        .I2(Q[4]),
+        .I3(Q[7]),
+        .I4(Q[23]),
+        .I5(Q[48]),
+        .O(\i_/storage_data2[59]_i_5_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT5 #(
     .INIT(32'h96696996)) 
-    \i_/storage_data2[61]_i_1 
-       (.I0(\i_/storage_data2[61]_i_2_n_0 ),
+    \i_/storage_data2[59]_i_6 
+       (.I0(Q[25]),
         .I1(Q[40]),
-        .I2(Q[32]),
-        .I3(Q[31]),
-        .I4(\i_/storage_data2[61]_i_3_n_0 ),
-        .O(D[5]));
+        .I2(Q[10]),
+        .I3(Q[24]),
+        .I4(Q[9]),
+        .O(\i_/storage_data2[59]_i_6_n_0 ));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \i_/storage_data2[60]_i_1 
+       (.I0(\storage_data2_reg[60] ),
+        .I1(\storage_data2_reg[60]_0 ),
+        .I2(\storage_data2_reg[60]_1 ),
+        .O(D[4]));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
+    \i_/storage_data2[61]_i_1 
+       (.I0(\i_/storage_data2[61]_i_2_n_0 ),
+        .I1(\i_/storage_data2[61]_i_3_n_0 ),
+        .I2(\i_/storage_data2[61]_i_4_n_0 ),
+        .I3(Q[38]),
+        .I4(Q[32]),
+        .I5(\i_/storage_data2[61]_i_5_n_0 ),
+        .O(D[5]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'h96)) 
     \i_/storage_data2[61]_i_2 
-       (.I0(Q[41]),
-        .I1(\i_/storage_data2[61]_i_4_n_0 ),
-        .I2(Q[29]),
-        .I3(Q[27]),
-        .I4(Q[33]),
-        .I5(Q[37]),
+       (.I0(Q[37]),
+        .I1(Q[35]),
+        .I2(Q[45]),
         .O(\i_/storage_data2[61]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'h6996966996696996)) 
     \i_/storage_data2[61]_i_3 
-       (.I0(Q[39]),
-        .I1(Q[35]),
-        .I2(Q[30]),
-        .I3(Q[28]),
+       (.I0(Q[29]),
+        .I1(Q[34]),
+        .I2(Q[41]),
+        .I3(Q[46]),
         .I4(Q[26]),
-        .I5(Q[34]),
+        .I5(Q[33]),
         .O(\i_/storage_data2[61]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
+  LUT6 #(
+    .INIT(64'h6996966996696996)) 
     \i_/storage_data2[61]_i_4 
-       (.I0(Q[38]),
-        .I1(Q[36]),
+       (.I0(Q[43]),
+        .I1(Q[31]),
+        .I2(Q[30]),
+        .I3(Q[42]),
+        .I4(Q[28]),
+        .I5(Q[40]),
         .O(\i_/storage_data2[61]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT5 #(
+    .INIT(32'h96696996)) 
+    \i_/storage_data2[61]_i_5 
+       (.I0(Q[39]),
+        .I1(Q[36]),
+        .I2(Q[44]),
+        .I3(Q[47]),
+        .I4(Q[27]),
+        .O(\i_/storage_data2[61]_i_5_n_0 ));
   LUT3 #(
     .INIT(8'h96)) 
     \i_/storage_data2[63]_i_2 
@@ -8812,6 +9397,577 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc
         .O(D[6]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_packer" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_packer
+   (pack_data_out,
+    \mux_by_4.data_count_reg[0]_0 ,
+    E,
+    Q,
+    axi_c2c_phy_clk,
+    rx_user_reset);
+  output [38:0]pack_data_out;
+  output [0:0]\mux_by_4.data_count_reg[0]_0 ;
+  input [0:0]E;
+  input [12:0]Q;
+  input axi_c2c_phy_clk;
+  input rx_user_reset;
+
+  wire [0:0]E;
+  wire [12:0]Q;
+  wire axi_c2c_phy_clk;
+  wire [0:0]\mux_by_4.data_count_reg[0]_0 ;
+  wire \mux_by_4.data_count_reg_n_0_[0] ;
+  wire \mux_by_4.data_count_reg_n_0_[1] ;
+  wire \mux_by_4.data_count_reg_n_0_[2] ;
+  wire [38:0]pack_data_out;
+  wire rx_user_reset;
+
+  FDSE \mux_by_4.data_count_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg[0]_0 ),
+        .Q(\mux_by_4.data_count_reg_n_0_[0] ),
+        .S(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[0] ),
+        .Q(\mux_by_4.data_count_reg_n_0_[1] ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[1] ),
+        .Q(\mux_by_4.data_count_reg_n_0_[2] ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[2] ),
+        .Q(\mux_by_4.data_count_reg[0]_0 ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.pack_reg0_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[0]),
+        .Q(pack_data_out[26]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[10]),
+        .Q(pack_data_out[36]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[11]),
+        .Q(pack_data_out[37]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[12]),
+        .Q(pack_data_out[38]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[1]),
+        .Q(pack_data_out[27]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[2]),
+        .Q(pack_data_out[28]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[3]),
+        .Q(pack_data_out[29]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[4]),
+        .Q(pack_data_out[30]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[5]),
+        .Q(pack_data_out[31]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[6]),
+        .Q(pack_data_out[32]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[7]),
+        .Q(pack_data_out[33]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[8]),
+        .Q(pack_data_out[34]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[9]),
+        .Q(pack_data_out[35]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[26]),
+        .Q(pack_data_out[13]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[36]),
+        .Q(pack_data_out[23]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[37]),
+        .Q(pack_data_out[24]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[38]),
+        .Q(pack_data_out[25]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[27]),
+        .Q(pack_data_out[14]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[28]),
+        .Q(pack_data_out[15]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[29]),
+        .Q(pack_data_out[16]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[30]),
+        .Q(pack_data_out[17]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[31]),
+        .Q(pack_data_out[18]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[32]),
+        .Q(pack_data_out[19]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[33]),
+        .Q(pack_data_out[20]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[34]),
+        .Q(pack_data_out[21]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[35]),
+        .Q(pack_data_out[22]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[13]),
+        .Q(pack_data_out[0]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[23]),
+        .Q(pack_data_out[10]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[24]),
+        .Q(pack_data_out[11]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[25]),
+        .Q(pack_data_out[12]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[14]),
+        .Q(pack_data_out[1]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[15]),
+        .Q(pack_data_out[2]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[16]),
+        .Q(pack_data_out[3]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[17]),
+        .Q(pack_data_out[4]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[18]),
+        .Q(pack_data_out[5]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[19]),
+        .Q(pack_data_out[6]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[20]),
+        .Q(pack_data_out[7]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[21]),
+        .Q(pack_data_out[8]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[22]),
+        .Q(pack_data_out[9]),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_packer" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_packer_109
+   (pack_data_out,
+    \mux_by_4.data_count_reg[0]_0 ,
+    E,
+    Q,
+    axi_c2c_phy_clk,
+    rx_user_reset);
+  output [38:0]pack_data_out;
+  output [0:0]\mux_by_4.data_count_reg[0]_0 ;
+  input [0:0]E;
+  input [12:0]Q;
+  input axi_c2c_phy_clk;
+  input rx_user_reset;
+
+  wire [0:0]E;
+  wire [12:0]Q;
+  wire axi_c2c_phy_clk;
+  wire [0:0]\mux_by_4.data_count_reg[0]_0 ;
+  wire \mux_by_4.data_count_reg_n_0_[0] ;
+  wire \mux_by_4.data_count_reg_n_0_[1] ;
+  wire \mux_by_4.data_count_reg_n_0_[2] ;
+  wire [38:0]pack_data_out;
+  wire rx_user_reset;
+
+  FDSE \mux_by_4.data_count_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg[0]_0 ),
+        .Q(\mux_by_4.data_count_reg_n_0_[0] ),
+        .S(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[0] ),
+        .Q(\mux_by_4.data_count_reg_n_0_[1] ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[1] ),
+        .Q(\mux_by_4.data_count_reg_n_0_[2] ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.data_count_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(\mux_by_4.data_count_reg_n_0_[2] ),
+        .Q(\mux_by_4.data_count_reg[0]_0 ),
+        .R(rx_user_reset));
+  FDRE \mux_by_4.pack_reg0_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[0]),
+        .Q(pack_data_out[26]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[10]),
+        .Q(pack_data_out[36]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[11]),
+        .Q(pack_data_out[37]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[12]),
+        .Q(pack_data_out[38]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[1]),
+        .Q(pack_data_out[27]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[2]),
+        .Q(pack_data_out[28]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[3]),
+        .Q(pack_data_out[29]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[4]),
+        .Q(pack_data_out[30]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[5]),
+        .Q(pack_data_out[31]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[6]),
+        .Q(pack_data_out[32]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[7]),
+        .Q(pack_data_out[33]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[8]),
+        .Q(pack_data_out[34]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg0_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(Q[9]),
+        .Q(pack_data_out[35]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[26]),
+        .Q(pack_data_out[13]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[36]),
+        .Q(pack_data_out[23]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[37]),
+        .Q(pack_data_out[24]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[38]),
+        .Q(pack_data_out[25]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[27]),
+        .Q(pack_data_out[14]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[28]),
+        .Q(pack_data_out[15]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[29]),
+        .Q(pack_data_out[16]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[30]),
+        .Q(pack_data_out[17]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[31]),
+        .Q(pack_data_out[18]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[32]),
+        .Q(pack_data_out[19]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[33]),
+        .Q(pack_data_out[20]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[34]),
+        .Q(pack_data_out[21]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg1_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[35]),
+        .Q(pack_data_out[22]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[13]),
+        .Q(pack_data_out[0]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[10] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[23]),
+        .Q(pack_data_out[10]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[11] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[24]),
+        .Q(pack_data_out[11]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[12] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[25]),
+        .Q(pack_data_out[12]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[1] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[14]),
+        .Q(pack_data_out[1]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[2] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[15]),
+        .Q(pack_data_out[2]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[16]),
+        .Q(pack_data_out[3]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[17]),
+        .Q(pack_data_out[4]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[18]),
+        .Q(pack_data_out[5]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[19]),
+        .Q(pack_data_out[6]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[20]),
+        .Q(pack_data_out[7]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[21]),
+        .Q(pack_data_out[8]),
+        .R(1'b0));
+  FDRE \mux_by_4.pack_reg2_reg[9] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .D(pack_data_out[22]),
+        .Q(pack_data_out[9]),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_if" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
    (D,
     aurora_reset_pb,
@@ -8920,6 +10076,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_if
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_phy_init" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
    (D,
     aurora_reset_pb,
@@ -9098,7 +10255,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I2(sync_reset_out_reg),
         .I3(Q),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT1 #(
     .INIT(2'h1)) 
     aw_fifo_reset_i_1
@@ -9208,11 +10365,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I2(axi_c2c_aurora_rx_tdata[11]),
         .O(i__carry_i_1_n_0));
   LUT3 #(
-    .INIT(8'h02)) 
+    .INIT(8'h04)) 
     i__carry_i_2
-       (.I0(axi_c2c_aurora_rx_tdata[8]),
-        .I1(axi_c2c_aurora_rx_tdata[10]),
-        .I2(axi_c2c_aurora_rx_tdata[9]),
+       (.I0(axi_c2c_aurora_rx_tdata[10]),
+        .I1(axi_c2c_aurora_rx_tdata[9]),
+        .I2(axi_c2c_aurora_rx_tdata[8]),
         .O(i__carry_i_2_n_0));
   LUT3 #(
     .INIT(8'h02)) 
@@ -9384,11 +10541,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I2(axi_c2c_aurora_rx_tdata[11]),
         .O(pat1_match0_carry_i_1_n_0));
   LUT3 #(
-    .INIT(8'h02)) 
+    .INIT(8'h04)) 
     pat1_match0_carry_i_2
-       (.I0(axi_c2c_aurora_rx_tdata[8]),
-        .I1(axi_c2c_aurora_rx_tdata[10]),
-        .I2(axi_c2c_aurora_rx_tdata[9]),
+       (.I0(axi_c2c_aurora_rx_tdata[10]),
+        .I1(axi_c2c_aurora_rx_tdata[9]),
+        .I2(axi_c2c_aurora_rx_tdata[8]),
         .O(pat1_match0_carry_i_2_n_0));
   LUT3 #(
     .INIT(8'h02)) 
@@ -9420,7 +10577,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .D(pat1_valid_i_1_n_0),
         .Q(pat1_valid),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT5 #(
     .INIT(32'h0000B888)) 
     \pat_count[0]_i_1 
@@ -9440,7 +10597,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I4(pat_count[0]),
         .I5(pat_count[1]),
         .O(\pat_count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT5 #(
     .INIT(32'h20888888)) 
     \pat_count[2]_i_1 
@@ -9458,7 +10615,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I2(state[2]),
         .I3(state[3]),
         .O(\pat_count[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT5 #(
     .INIT(32'h28A0A0A0)) 
     \pat_count[3]_i_2 
@@ -9468,7 +10625,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I3(pat_count[0]),
         .I4(pat_count[1]),
         .O(\pat_count[3]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT4 #(
     .INIT(16'hF808)) 
     \pat_count[3]_i_3 
@@ -9501,7 +10658,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .D(\pat_count[3]_i_2_n_0 ),
         .Q(pat_count[3]),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT5 #(
     .INIT(32'hFEF90010)) 
     rx_phy_ready_i_1
@@ -9524,7 +10681,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I1(state[0]),
         .I2(axi_c2c_aurora_channel_up),
         .O(p_2_in[0]));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT5 #(
     .INIT(32'hFF000202)) 
     \state[2]_i_1 
@@ -9552,7 +10709,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .I2(state[4]),
         .I3(state[0]),
         .O(\state[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT4 #(
     .INIT(16'hF444)) 
     \state[4]_i_3 
@@ -9641,6 +10798,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_phy_init
         .Q(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_reset_sync" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
    (calib_done_flop_reg,
     \sync_reset_flop_reg[0]_0 ,
@@ -9675,13 +10833,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
   wire \sync_reset_flop_reg[0]_0 ;
   wire \tx_phy_ctrl_reg[0] ;
 
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \auto_neg_intr_gen.tx_ch0_data[15]_i_2 
        (.I0(calib_done_flop_reg),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT3 #(
     .INIT(8'h32)) 
     \auto_neg_intr_gen.tx_ch0_data[1]_i_1 
@@ -9689,7 +10847,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .I1(calib_done_flop_reg),
         .I2(\tx_phy_ctrl_reg[0] ),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT3 #(
     .INIT(8'h32)) 
     \auto_neg_intr_gen.tx_ch0_data[2]_i_1 
@@ -9697,7 +10855,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .I1(calib_done_flop_reg),
         .I2(\tx_phy_ctrl_reg[0] ),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \auto_neg_intr_gen.tx_ch0_data[3]_i_1 
@@ -9705,23 +10863,23 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .I1(calib_done_flop_reg),
         .I2(\tx_phy_ctrl_reg[0] ),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [2]));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT3 #(
-    .INIT(8'h32)) 
+    .INIT(8'h02)) 
     \auto_neg_intr_gen.tx_ch0_data[5]_i_1 
        (.I0(ecc_dec_error_in_dly),
         .I1(calib_done_flop_reg),
         .I2(\tx_phy_ctrl_reg[0] ),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT3 #(
-    .INIT(8'h02)) 
+    .INIT(8'h32)) 
     \auto_neg_intr_gen.tx_ch0_data[6]_i_1 
        (.I0(ecc_dec_error_in_dly),
         .I1(calib_done_flop_reg),
         .I2(\tx_phy_ctrl_reg[0] ),
         .O(\auto_neg_intr_gen.tx_ch0_data_reg[15] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \auto_neg_intr_gen.tx_ch0_data[7]_i_1 
@@ -9733,7 +10891,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
     \intr_out[3]_i_1 
        (.I0(m_aresetn),
         .O(\sync_reset_flop_reg[0]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \state[4]_i_1 
@@ -9820,6 +10978,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_reset_sync
         .Q(calib_done_flop_reg));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_slave" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
    (ecc_dec_error_in_dly,
     axi_c2c_aurora_tx_tvalid,
@@ -9859,10 +11018,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   output axi_c2c_aurora_tx_tvalid;
   output [3:0]Q;
   output m_axi_bready;
-  output [49:0]axi_c2c_aurora_tx_tdata;
+  output [55:0]axi_c2c_aurora_tx_tdata;
   output [3:0]axi_c2c_m2s_intr_out;
-  output [44:0]\m_axi_awaddr[31] ;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   output [37:0]\m_axi_wdata[31] ;
   output m_axi_awvalid;
   output m_axi_arvalid;
@@ -9872,7 +11031,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   input m_aclk;
   input axi_c2c_phy_clk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input rx_user_reset;
   input tx_phy_ready;
   input rx_phy_ready_reg;
@@ -9881,7 +11040,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   input axi_c2c_aurora_tx_tready;
   input [0:0]tx_phy_ctrl;
   input [7:0]D;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input m_axi_bvalid;
   input m_axi_rvalid;
   input m_axi_awready;
@@ -9895,21 +11054,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   wire \/RAM_reg_192_255_0_2_i_1_n_0 ;
   wire \/RAM_reg_64_127_0_2_i_1_n_0 ;
   wire [7:0]D;
-  wire [3:0]DIADI;
+  wire [9:0]DIADI;
   wire [3:0]Q;
   wire ar_ch_data_valid;
   wire ar_ch_fc;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_10 ;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_11 ;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_12 ;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_13 ;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_14 ;
+  wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_15 ;
   wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_7 ;
   wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_8 ;
   wire \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_9 ;
   wire \aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_0 ;
-  wire \aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_7 ;
+  wire \aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_1 ;
+  wire \aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_2 ;
+  wire \aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_9 ;
   wire \aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_3 ;
+  wire \aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_4 ;
+  wire \aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_5 ;
   wire aw_ch_data_valid;
   wire aw_ch_fc;
   wire [63:0]axi_c2c_aurora_rx_tdata;
   wire axi_c2c_aurora_rx_tvalid;
-  wire [49:0]axi_c2c_aurora_tx_tdata;
+  wire [55:0]axi_c2c_aurora_tx_tdata;
   wire axi_c2c_aurora_tx_tready;
   wire axi_c2c_aurora_tx_tvalid;
   wire [3:0]axi_c2c_m2s_intr_out;
@@ -9928,11 +11097,42 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   wire axi_chip2chip_b_fifo_inst_n_17;
   wire axi_chip2chip_b_fifo_inst_n_18;
   wire axi_chip2chip_b_fifo_inst_n_19;
+  wire axi_chip2chip_b_fifo_inst_n_20;
+  wire axi_chip2chip_b_fifo_inst_n_21;
+  wire axi_chip2chip_b_fifo_inst_n_22;
+  wire axi_chip2chip_b_fifo_inst_n_23;
+  wire axi_chip2chip_b_fifo_inst_n_24;
+  wire axi_chip2chip_b_fifo_inst_n_25;
+  wire axi_chip2chip_b_fifo_inst_n_26;
+  wire axi_chip2chip_b_fifo_inst_n_27;
+  wire axi_chip2chip_b_fifo_inst_n_28;
+  wire axi_chip2chip_b_fifo_inst_n_29;
   wire axi_chip2chip_b_fifo_inst_n_3;
+  wire axi_chip2chip_b_fifo_inst_n_30;
+  wire axi_chip2chip_b_fifo_inst_n_31;
+  wire axi_chip2chip_b_fifo_inst_n_32;
+  wire axi_chip2chip_b_fifo_inst_n_33;
+  wire axi_chip2chip_b_fifo_inst_n_34;
+  wire axi_chip2chip_b_fifo_inst_n_35;
+  wire axi_chip2chip_b_fifo_inst_n_36;
+  wire axi_chip2chip_b_fifo_inst_n_37;
+  wire axi_chip2chip_b_fifo_inst_n_38;
+  wire axi_chip2chip_b_fifo_inst_n_39;
   wire axi_chip2chip_b_fifo_inst_n_4;
+  wire axi_chip2chip_b_fifo_inst_n_40;
+  wire axi_chip2chip_b_fifo_inst_n_41;
+  wire axi_chip2chip_b_fifo_inst_n_42;
+  wire axi_chip2chip_b_fifo_inst_n_43;
   wire axi_chip2chip_b_fifo_inst_n_5;
   wire axi_chip2chip_b_fifo_inst_n_6;
   wire axi_chip2chip_decoder_inst_n_3;
+  wire axi_chip2chip_decoder_inst_n_43;
+  wire axi_chip2chip_decoder_inst_n_44;
+  wire axi_chip2chip_decoder_inst_n_45;
+  wire axi_chip2chip_decoder_inst_n_46;
+  wire axi_chip2chip_decoder_inst_n_47;
+  wire axi_chip2chip_decoder_inst_n_48;
+  wire axi_chip2chip_decoder_inst_n_49;
   wire axi_chip2chip_decoder_inst_n_50;
   wire axi_chip2chip_decoder_inst_n_51;
   wire axi_chip2chip_decoder_inst_n_52;
@@ -9943,17 +11143,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   wire axi_chip2chip_decoder_inst_n_57;
   wire axi_chip2chip_decoder_inst_n_58;
   wire axi_chip2chip_decoder_inst_n_59;
-  wire axi_chip2chip_decoder_inst_n_60;
-  wire axi_chip2chip_decoder_inst_n_61;
-  wire axi_chip2chip_decoder_inst_n_62;
-  wire axi_chip2chip_decoder_inst_n_63;
-  wire axi_chip2chip_decoder_inst_n_64;
-  wire axi_chip2chip_decoder_inst_n_65;
-  wire axi_chip2chip_decoder_inst_n_66;
   wire axi_chip2chip_tdm_inst_n_3;
   wire axi_reset;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
+  wire [8:0]br_ch_data;
   wire br_ch_fc;
   wire br_fifo_reset;
   wire ch0_valid0;
@@ -9967,10 +11160,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   wire int_ch1_ready5__1;
   wire load_s1_from_s2;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
   wire m_axi_bready;
@@ -9981,13 +11174,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
   wire [37:0]\m_axi_wdata[31] ;
   wire m_axi_wready;
   wire m_axi_wvalid;
-  wire [2:0]p_0_out;
+  wire [8:0]p_0_out;
   wire p_12_in;
-  wire [35:0]rd_ch_data;
+  wire [41:0]rd_ch_data;
   wire [53:0]reg_slice_user_data;
   wire reg_slice_user_data_ready;
   wire reg_slice_user_data_valid;
-  wire [44:0]rx_dec_data;
+  wire [37:0]rx_dec_data;
   wire [55:0]rx_ecc_dec_data;
   wire rx_ecc_dec_data_valid;
   wire rx_ecc_dec_error;
@@ -10056,7 +11249,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .O(\/RAM_reg_64_127_0_2_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \/gpr1.dout_i[0]_i_2 
+    \/gpr1.dout_i[0]_i_1 
        (.I0(axi_chip2chip_b_fifo_inst_n_17),
         .I1(axi_chip2chip_b_fifo_inst_n_14),
         .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
@@ -10066,7 +11259,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .O(p_0_out[0]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \/gpr1.dout_i[1]_i_2 
+    \/gpr1.dout_i[1]_i_1 
        (.I0(axi_chip2chip_b_fifo_inst_n_18),
         .I1(axi_chip2chip_b_fifo_inst_n_15),
         .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
@@ -10076,7 +11269,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .O(p_0_out[1]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \/gpr1.dout_i[2]_i_2 
+    \/gpr1.dout_i[2]_i_1 
        (.I0(axi_chip2chip_b_fifo_inst_n_19),
         .I1(axi_chip2chip_b_fifo_inst_n_16),
         .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
@@ -10084,6 +11277,66 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
         .I5(axi_chip2chip_b_fifo_inst_n_6),
         .O(p_0_out[2]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[3]_i_1 
+       (.I0(axi_chip2chip_b_fifo_inst_n_29),
+        .I1(axi_chip2chip_b_fifo_inst_n_26),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_23),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_20),
+        .O(p_0_out[3]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[4]_i_1 
+       (.I0(axi_chip2chip_b_fifo_inst_n_30),
+        .I1(axi_chip2chip_b_fifo_inst_n_27),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_24),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_21),
+        .O(p_0_out[4]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[5]_i_1 
+       (.I0(axi_chip2chip_b_fifo_inst_n_31),
+        .I1(axi_chip2chip_b_fifo_inst_n_28),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_25),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_22),
+        .O(p_0_out[5]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[6]_i_1 
+       (.I0(axi_chip2chip_b_fifo_inst_n_41),
+        .I1(axi_chip2chip_b_fifo_inst_n_38),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_35),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_32),
+        .O(p_0_out[6]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[7]_i_1 
+       (.I0(axi_chip2chip_b_fifo_inst_n_42),
+        .I1(axi_chip2chip_b_fifo_inst_n_39),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_36),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_33),
+        .O(p_0_out[7]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \/gpr1.dout_i[8]_i_2 
+       (.I0(axi_chip2chip_b_fifo_inst_n_43),
+        .I1(axi_chip2chip_b_fifo_inst_n_40),
+        .I2(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [7]),
+        .I3(axi_chip2chip_b_fifo_inst_n_37),
+        .I4(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out [6]),
+        .I5(axi_chip2chip_b_fifo_inst_n_34),
+        .O(p_0_out[8]));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_dec \aurora_ecc_io_stage.ecc_dec_inst[0].axi_chip2chip_ecc_dec_inst 
        (.axi_c2c_aurora_rx_tdata(axi_c2c_aurora_rx_tdata),
         .axi_c2c_aurora_rx_tvalid(axi_c2c_aurora_rx_tvalid),
@@ -10098,14 +11351,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .rx_user_reset(rx_user_reset));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ecc_enc \aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst 
        (.D({ecc_enc_out[63],ecc_enc_out[61:56]}),
-        .Q({reg_slice_user_data[53],reg_slice_user_data[41:0]}),
-        .\storage_data2_reg[63] (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_7 ),
-        .\storage_data2_reg[63]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_8 ),
-        .\storage_data2_reg[63]_1 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_9 ));
+        .Q({reg_slice_user_data[53],reg_slice_user_data[47:0]}),
+        .\storage_data2_reg[58] (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_13 ),
+        .\storage_data2_reg[58]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_14 ),
+        .\storage_data2_reg[58]_1 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_15 ),
+        .\storage_data2_reg[60] (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_7 ),
+        .\storage_data2_reg[60]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_8 ),
+        .\storage_data2_reg[60]_1 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_9 ),
+        .\storage_data2_reg[63] (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_10 ),
+        .\storage_data2_reg[63]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_11 ),
+        .\storage_data2_reg[63]_1 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_12 ));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice \aurora_ecc_io_stage.ecc_in_reg_slice_inst 
-       (.D(\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_0 ),
+       (.D({\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_0 ,\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_1 ,\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_2 }),
         .E(storage_data2),
-        .Q(\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_3 ),
+        .Q({\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_3 ,\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_4 ,\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_5 }),
         .axi_c2c_aurora_tx_tready(axi_c2c_aurora_tx_tready),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .empty_fwft_i_reg(fifo_empty),
@@ -10116,14 +11375,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .rx_user_reset(rx_user_reset),
         .s_ready_i04_out(s_ready_i04_out),
         .s_ready_i04_out_0(s_ready_i04_out_2),
-        .\slot_count_reg[1] (\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_7 ),
+        .\slot_count_reg[1] (\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_9 ),
         .slot_select(slot_select),
         .\state_reg[1]_0 (reg_slice_user_data_valid),
-        .\storage_data1_reg[10]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_8 ),
-        .\storage_data1_reg[2]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_7 ),
-        .\storage_data1_reg[33]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_9 ),
-        .\storage_data2_reg[55] ({reg_slice_user_data[53],reg_slice_user_data[41:0]}),
-        .\tdm_data_out_reg[53] ({tdm_data_out[53],tdm_data_out[41:0]}),
+        .\storage_data1_reg[0]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_11 ),
+        .\storage_data1_reg[12]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_10 ),
+        .\storage_data1_reg[14]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_8 ),
+        .\storage_data1_reg[20]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_7 ),
+        .\storage_data1_reg[23]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_9 ),
+        .\storage_data1_reg[2]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_14 ),
+        .\storage_data1_reg[37]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_15 ),
+        .\storage_data1_reg[39]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_12 ),
+        .\storage_data1_reg[3]_0 (\aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst_n_13 ),
+        .\storage_data2_reg[55] ({reg_slice_user_data[53],reg_slice_user_data[47:0]}),
+        .\tdm_data_out_reg[53] ({tdm_data_out[53],tdm_data_out[47:0]}),
         .tdm_data_valid_reg(storage_data2_1),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tdm_user_data_valid(tdm_user_data_valid),
@@ -10136,9 +11401,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .Q(rx_ecc_dec_error_flop),
         .R(rx_user_reset));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_asitv10_axisc_register_slice__parameterized0 \aurora_ecc_io_stage.tdm_out_reg_slice_inst 
-       (.D({ecc_enc_out[63],ecc_enc_out[61:56],reg_slice_user_data[53],reg_slice_user_data[41:0]}),
+       (.D({ecc_enc_out[63],ecc_enc_out[61:56],reg_slice_user_data[53],reg_slice_user_data[47:0]}),
         .E(storage_data2),
-        .Q(\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_3 ),
+        .Q({\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_3 ,\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_4 ,\aurora_ecc_io_stage.tdm_out_reg_slice_inst_n_5 }),
         .axi_c2c_aurora_tx_tdata(axi_c2c_aurora_tx_tdata),
         .axi_c2c_aurora_tx_tready(axi_c2c_aurora_tx_tready),
         .axi_c2c_aurora_tx_tvalid(axi_c2c_aurora_tx_tvalid),
@@ -10148,7 +11413,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .rx_user_reset(rx_user_reset),
         .s_ready_i04_out(s_ready_i04_out),
         .\state_reg[0]_0 (reg_slice_user_data_valid),
-        .\storage_data2_reg[63]_0 (\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_0 ));
+        .\storage_data2_reg[63]_0 ({\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_0 ,\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_1 ,\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_2 }));
   FDPE aw_fifo_reset_reg
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
@@ -10157,29 +11422,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .Q(br_fifo_reset));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo axi_chip2chip_ar_fifo_inst
        (.D(ar_ch_fc),
-        .Q(rx_dec_data),
+        .Q(rx_dec_data[12:0]),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .rx_user_reset(rx_user_reset));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo_0 axi_chip2chip_aw_fifo_inst
        (.D(aw_ch_fc),
-        .Q(rx_dec_data),
+        .Q(rx_dec_data[12:0]),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .rx_user_reset(rx_user_reset));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_b_fifo axi_chip2chip_b_fifo_inst
-       (.Q(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out ),
+       (.D(p_0_out),
+        .Q(\axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (br_ch_fc),
         .fifo_re__0(fifo_re__0),
@@ -10200,16 +11467,40 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .\gpr1.dout_i_reg[2]_0 (axi_chip2chip_b_fifo_inst_n_13),
         .\gpr1.dout_i_reg[2]_1 (axi_chip2chip_b_fifo_inst_n_16),
         .\gpr1.dout_i_reg[2]_2 (axi_chip2chip_b_fifo_inst_n_19),
+        .\gpr1.dout_i_reg[3] (axi_chip2chip_b_fifo_inst_n_20),
+        .\gpr1.dout_i_reg[3]_0 (axi_chip2chip_b_fifo_inst_n_23),
+        .\gpr1.dout_i_reg[3]_1 (axi_chip2chip_b_fifo_inst_n_26),
+        .\gpr1.dout_i_reg[3]_2 (axi_chip2chip_b_fifo_inst_n_29),
+        .\gpr1.dout_i_reg[4] (axi_chip2chip_b_fifo_inst_n_21),
+        .\gpr1.dout_i_reg[4]_0 (axi_chip2chip_b_fifo_inst_n_24),
+        .\gpr1.dout_i_reg[4]_1 (axi_chip2chip_b_fifo_inst_n_27),
+        .\gpr1.dout_i_reg[4]_2 (axi_chip2chip_b_fifo_inst_n_30),
+        .\gpr1.dout_i_reg[5] (axi_chip2chip_b_fifo_inst_n_22),
+        .\gpr1.dout_i_reg[5]_0 (axi_chip2chip_b_fifo_inst_n_25),
+        .\gpr1.dout_i_reg[5]_1 (axi_chip2chip_b_fifo_inst_n_28),
+        .\gpr1.dout_i_reg[5]_2 (axi_chip2chip_b_fifo_inst_n_31),
+        .\gpr1.dout_i_reg[6] (axi_chip2chip_b_fifo_inst_n_32),
+        .\gpr1.dout_i_reg[6]_0 (axi_chip2chip_b_fifo_inst_n_35),
+        .\gpr1.dout_i_reg[6]_1 (axi_chip2chip_b_fifo_inst_n_38),
+        .\gpr1.dout_i_reg[6]_2 (axi_chip2chip_b_fifo_inst_n_41),
+        .\gpr1.dout_i_reg[7] (axi_chip2chip_b_fifo_inst_n_33),
+        .\gpr1.dout_i_reg[7]_0 (axi_chip2chip_b_fifo_inst_n_36),
+        .\gpr1.dout_i_reg[7]_1 (axi_chip2chip_b_fifo_inst_n_39),
+        .\gpr1.dout_i_reg[7]_2 (axi_chip2chip_b_fifo_inst_n_42),
+        .\gpr1.dout_i_reg[8] (axi_chip2chip_b_fifo_inst_n_34),
+        .\gpr1.dout_i_reg[8]_0 (axi_chip2chip_b_fifo_inst_n_37),
+        .\gpr1.dout_i_reg[8]_1 (axi_chip2chip_b_fifo_inst_n_40),
+        .\gpr1.dout_i_reg[8]_2 (axi_chip2chip_b_fifo_inst_n_43),
         .\gpregsm1.user_valid_reg (fifo_empty),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(\axi_chip2chip_async_fifo_inst/wr_rst_busy ),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(\/RAM_reg_0_63_0_2_i_1_n_0 ),
         .ram_full_i_reg_0(\/RAM_reg_192_255_0_2_i_1_n_0 ),
         .slot_select(slot_select[2]),
+        .\tdm_data_out_reg[14] (br_ch_data),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_ch0_ctrl axi_chip2chip_ch0_ctrl_inst
@@ -10217,16 +11508,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .D(D),
         .E(rx_intr_data),
         .Q(tx_ch0_valid),
-        .S({axi_chip2chip_decoder_inst_n_51,axi_chip2chip_decoder_inst_n_52,axi_chip2chip_decoder_inst_n_53,axi_chip2chip_decoder_inst_n_54}),
+        .S({axi_chip2chip_decoder_inst_n_44,axi_chip2chip_decoder_inst_n_45,axi_chip2chip_decoder_inst_n_46,axi_chip2chip_decoder_inst_n_47}),
         .\auto_neg_intr_gen.tx_ch0_data_reg[3]_0 (Q),
         .axi_c2c_m2s_intr_out(axi_c2c_m2s_intr_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .axi_c2c_s2m_intr_in(axi_c2c_s2m_intr_in),
         .axi_reset(axi_reset),
-        .\data_out_reg[24] ({axi_chip2chip_decoder_inst_n_55,axi_chip2chip_decoder_inst_n_56,axi_chip2chip_decoder_inst_n_57,axi_chip2chip_decoder_inst_n_58}),
-        .\data_out_reg[36] ({axi_chip2chip_decoder_inst_n_59,axi_chip2chip_decoder_inst_n_60,axi_chip2chip_decoder_inst_n_61,axi_chip2chip_decoder_inst_n_62}),
+        .\data_out_reg[24] ({axi_chip2chip_decoder_inst_n_48,axi_chip2chip_decoder_inst_n_49,axi_chip2chip_decoder_inst_n_50,axi_chip2chip_decoder_inst_n_51}),
+        .\data_out_reg[36] ({axi_chip2chip_decoder_inst_n_52,axi_chip2chip_decoder_inst_n_53,axi_chip2chip_decoder_inst_n_54,axi_chip2chip_decoder_inst_n_55}),
         .\data_out_reg[3] (rx_dec_data[3:0]),
-        .\data_out_reg[48] ({axi_chip2chip_decoder_inst_n_63,axi_chip2chip_decoder_inst_n_64,axi_chip2chip_decoder_inst_n_65,axi_chip2chip_decoder_inst_n_66}),
+        .\data_out_reg[48] ({axi_chip2chip_decoder_inst_n_56,axi_chip2chip_decoder_inst_n_57,axi_chip2chip_decoder_inst_n_58,axi_chip2chip_decoder_inst_n_59}),
         .\data_out_reg[49] (axi_chip2chip_decoder_inst_n_3),
         .ecc_dec_error_in_dly(ecc_dec_error_in_dly),
         .m_aclk(m_aclk),
@@ -10241,7 +11532,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
        (.CO(rx_intr_data14_in),
         .E(rx_intr_data),
         .Q(rx_dec_data),
-        .S({axi_chip2chip_decoder_inst_n_51,axi_chip2chip_decoder_inst_n_52,axi_chip2chip_decoder_inst_n_53,axi_chip2chip_decoder_inst_n_54}),
+        .S({axi_chip2chip_decoder_inst_n_44,axi_chip2chip_decoder_inst_n_45,axi_chip2chip_decoder_inst_n_46,axi_chip2chip_decoder_inst_n_47}),
         .ar_ch_data_valid(ar_ch_data_valid),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -10251,19 +11542,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .data_out(rx_ecc_dec_data),
         .data_out_valid(rx_ecc_dec_data_valid),
         .\intr_data_reg[3] (axi_chip2chip_decoder_inst_n_3),
-        .\intr_data_reg[3]_0 ({axi_chip2chip_decoder_inst_n_55,axi_chip2chip_decoder_inst_n_56,axi_chip2chip_decoder_inst_n_57,axi_chip2chip_decoder_inst_n_58}),
-        .\intr_data_reg[3]_1 ({axi_chip2chip_decoder_inst_n_59,axi_chip2chip_decoder_inst_n_60,axi_chip2chip_decoder_inst_n_61,axi_chip2chip_decoder_inst_n_62}),
-        .\intr_data_reg[3]_2 ({axi_chip2chip_decoder_inst_n_63,axi_chip2chip_decoder_inst_n_64,axi_chip2chip_decoder_inst_n_65,axi_chip2chip_decoder_inst_n_66}),
+        .\intr_data_reg[3]_0 ({axi_chip2chip_decoder_inst_n_48,axi_chip2chip_decoder_inst_n_49,axi_chip2chip_decoder_inst_n_50,axi_chip2chip_decoder_inst_n_51}),
+        .\intr_data_reg[3]_1 ({axi_chip2chip_decoder_inst_n_52,axi_chip2chip_decoder_inst_n_53,axi_chip2chip_decoder_inst_n_54,axi_chip2chip_decoder_inst_n_55}),
+        .\intr_data_reg[3]_2 ({axi_chip2chip_decoder_inst_n_56,axi_chip2chip_decoder_inst_n_57,axi_chip2chip_decoder_inst_n_58,axi_chip2chip_decoder_inst_n_59}),
         .rx_phy_ready(rx_phy_ready),
         .rx_user_reset(rx_user_reset),
-        .\slot_select_reg[2] ({br_ch_fc,axi_chip2chip_decoder_inst_n_50}),
+        .\slot_select_reg[2] ({br_ch_fc,axi_chip2chip_decoder_inst_n_43}),
         .wd_ch_data_valid(wd_ch_data_valid));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__parameterized1 axi_chip2chip_r_fifo_inst
        (.DIADI(DIADI),
         .Q(rd_ch_data),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
-        .\ctrl_info_reg[0] (axi_chip2chip_decoder_inst_n_50),
+        .\ctrl_info_reg[0] (axi_chip2chip_decoder_inst_n_43),
         .m_aclk(m_aclk),
         .m_axi_rdata(m_axi_rdata),
         .m_axi_rready(m_axi_rready),
@@ -10280,26 +11571,26 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .\auto_neg_intr_gen.tx_ch0_data_reg[15] ({tx_ch0_tdm_data[15],tx_ch0_tdm_data[7:5],tx_ch0_tdm_data[3:0]}),
         .\auto_neg_intr_gen.tx_ch0_valid_reg (tx_ch0_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .br_ch_data(br_ch_data),
         .empty_fwft_i_reg(fifo_empty),
+        .\goreg_dm.dout_i_reg[8] (br_ch_data),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .out(fifo_empty_0),
         .p_12_in(p_12_in),
         .reg_slice_user_data_ready(reg_slice_user_data_ready),
         .rx_user_reset(rx_user_reset),
         .s_ready_i04_out(s_ready_i04_out_2),
-        .s_ready_i_reg(\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_7 ),
+        .s_ready_i_reg(\aurora_ecc_io_stage.ecc_in_reg_slice_inst_n_9 ),
         .send_ch0(send_ch0),
         .slot_select(slot_select),
-        .\storage_data2_reg[43] (storage_data2_1),
-        .\storage_data2_reg[43]_0 ({tdm_data_out[53],tdm_data_out[41:0]}),
-        .\tdm_data_out_reg[41]_0 (axi_chip2chip_tdm_inst_n_3),
+        .\storage_data2_reg[49] (storage_data2_1),
+        .\storage_data2_reg[49]_0 ({tdm_data_out[53],tdm_data_out[47:0]}),
+        .\tdm_data_out_reg[47]_0 (axi_chip2chip_tdm_inst_n_3),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tdm_user_data_valid(tdm_user_data_valid),
         .tx_phy_ready(tx_phy_ready));
   b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_awr_fifo__parameterized0 axi_chip2chip_w_fifo_inst
        (.D(wd_ch_fc),
-        .Q(rx_dec_data[37:0]),
+        .Q(rx_dec_data),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
         .m_aclk(m_aclk),
@@ -10309,6 +11600,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_slave
         .wd_ch_data_valid(wd_ch_data_valid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_sync_cell" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell
    (D,
     \auto_neg_intr_gen.intr_flop_reg ,
@@ -10994,13 +12286,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_sync_cell__parame
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_chip2chip_v4_2_11_tdm" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
    (tdm_user_data_valid,
     slot_select,
-    \tdm_data_out_reg[41]_0 ,
+    \tdm_data_out_reg[47]_0 ,
     s_ready_i04_out,
-    \storage_data2_reg[43] ,
-    \storage_data2_reg[43]_0 ,
+    \storage_data2_reg[49] ,
+    \storage_data2_reg[49]_0 ,
     rx_user_reset,
     tx_phy_ready,
     axi_c2c_phy_clk,
@@ -11009,7 +12302,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
     tdm_user_data_ready,
     Q,
     \auto_neg_intr_gen.tx_ch0_data_reg[15] ,
-    br_ch_data,
+    \goreg_dm.dout_i_reg[8] ,
     empty_fwft_i_reg,
     \auto_neg_intr_gen.tx_ch0_valid_reg ,
     out,
@@ -11019,19 +12312,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
     D);
   output tdm_user_data_valid;
   output [1:0]slot_select;
-  output \tdm_data_out_reg[41]_0 ;
+  output \tdm_data_out_reg[47]_0 ;
   output s_ready_i04_out;
-  output [0:0]\storage_data2_reg[43] ;
-  output [42:0]\storage_data2_reg[43]_0 ;
+  output [0:0]\storage_data2_reg[49] ;
+  output [48:0]\storage_data2_reg[49]_0 ;
   input rx_user_reset;
   input tx_phy_ready;
   input axi_c2c_phy_clk;
   input send_ch0;
   input reg_slice_user_data_ready;
   input tdm_user_data_ready;
-  input [35:0]Q;
+  input [41:0]Q;
   input [7:0]\auto_neg_intr_gen.tx_ch0_data_reg[15] ;
-  input [2:0]br_ch_data;
+  input [8:0]\goreg_dm.dout_i_reg[8] ;
   input empty_fwft_i_reg;
   input \auto_neg_intr_gen.tx_ch0_valid_reg ;
   input out;
@@ -11041,12 +12334,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
   input [2:0]D;
 
   wire [2:0]D;
-  wire [35:0]Q;
+  wire [41:0]Q;
   wire [7:0]\auto_neg_intr_gen.tx_ch0_data_reg[15] ;
   wire \auto_neg_intr_gen.tx_ch0_valid_reg ;
   wire axi_c2c_phy_clk;
-  wire [2:0]br_ch_data;
   wire empty_fwft_i_reg;
+  wire [8:0]\goreg_dm.dout_i_reg[8] ;
   wire int_ch1_ready5__1;
   wire next_int_ch1_ready;
   wire next_int_ch2_ready;
@@ -11065,8 +12358,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
   wire \slot_count[3]_i_1_n_0 ;
   wire [1:0]slot_select;
   wire \slot_select[2]_i_2_n_0 ;
-  wire [0:0]\storage_data2_reg[43] ;
-  wire [42:0]\storage_data2_reg[43]_0 ;
+  wire [0:0]\storage_data2_reg[49] ;
+  wire [48:0]\storage_data2_reg[49]_0 ;
   wire \tdm_data_out[10]_i_1_n_0 ;
   wire \tdm_data_out[11]_i_1_n_0 ;
   wire \tdm_data_out[12]_i_1_n_0 ;
@@ -11099,18 +12392,24 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
   wire \tdm_data_out[39]_i_1_n_0 ;
   wire \tdm_data_out[40]_i_1_n_0 ;
   wire \tdm_data_out[41]_i_1_n_0 ;
+  wire \tdm_data_out[42]_i_1_n_0 ;
+  wire \tdm_data_out[43]_i_1_n_0 ;
+  wire \tdm_data_out[44]_i_1_n_0 ;
+  wire \tdm_data_out[45]_i_1_n_0 ;
+  wire \tdm_data_out[46]_i_1_n_0 ;
+  wire \tdm_data_out[47]_i_1_n_0 ;
   wire \tdm_data_out[53]_i_1_n_0 ;
   wire \tdm_data_out[5]_i_1_n_0 ;
   wire \tdm_data_out[6]_i_1_n_0 ;
   wire \tdm_data_out[7]_i_1_n_0 ;
   wire \tdm_data_out[8]_i_1_n_0 ;
   wire \tdm_data_out[9]_i_1_n_0 ;
-  wire \tdm_data_out_reg[41]_0 ;
+  wire \tdm_data_out_reg[47]_0 ;
   wire tdm_user_data_ready;
   wire tdm_user_data_valid;
   wire tx_phy_ready;
 
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT2 #(
     .INIT(4'h2)) 
     s_ready_i_i_2
@@ -11179,7 +12478,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .D(\slot_count[3]_i_1_n_0 ),
         .Q(slot_count[3]),
         .R(rx_user_reset));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT5 #(
     .INIT(32'h2200F200)) 
     \slot_select[1]_i_1 
@@ -11189,7 +12488,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .I3(p_12_in),
         .I4(int_ch1_ready5__1),
         .O(next_int_ch1_ready));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT5 #(
     .INIT(32'hFF020000)) 
     \slot_select[2]_i_1 
@@ -11223,7 +12522,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(send_ch0),
-        .Q(\tdm_data_out_reg[41]_0 ),
+        .Q(\tdm_data_out_reg[47]_0 ),
         .R(rx_user_reset));
   FDRE \slot_select_reg[1] 
        (.C(axi_c2c_phy_clk),
@@ -11237,305 +12536,365 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .D(next_int_ch2_ready),
         .Q(slot_select[1]),
         .R(rx_user_reset));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT2 #(
     .INIT(4'h8)) 
-    \storage_data2[43]_i_1 
+    \storage_data2[49]_i_1 
        (.I0(tdm_user_data_valid),
         .I1(tdm_user_data_ready),
-        .O(\storage_data2_reg[43] ));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
-  LUT4 #(
-    .INIT(16'hF888)) 
+        .O(\storage_data2_reg[49] ));
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[10]_i_1 
-       (.I0(\auto_neg_intr_gen.tx_ch0_data_reg[15] [5]),
-        .I1(\tdm_data_out_reg[41]_0 ),
-        .I2(Q[4]),
-        .I3(slot_select[0]),
+       (.I0(slot_select[1]),
+        .I1(\goreg_dm.dout_i_reg[8] [4]),
+        .I2(slot_select[0]),
+        .I3(Q[4]),
+        .I4(\auto_neg_intr_gen.tx_ch0_data_reg[15] [4]),
+        .I5(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[10]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[11]_i_1 
-       (.I0(Q[5]),
-        .I1(slot_select[0]),
-        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [4]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+       (.I0(slot_select[1]),
+        .I1(\goreg_dm.dout_i_reg[8] [5]),
+        .I2(\tdm_data_out_reg[47]_0 ),
+        .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [4]),
+        .I4(Q[5]),
+        .I5(slot_select[0]),
         .O(\tdm_data_out[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[12]_i_1 
-       (.I0(Q[6]),
-        .I1(slot_select[0]),
-        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [5]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+       (.I0(slot_select[1]),
+        .I1(\goreg_dm.dout_i_reg[8] [6]),
+        .I2(\tdm_data_out_reg[47]_0 ),
+        .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [5]),
+        .I4(Q[6]),
+        .I5(slot_select[0]),
         .O(\tdm_data_out[12]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[13]_i_1 
-       (.I0(Q[7]),
-        .I1(slot_select[0]),
-        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+       (.I0(\tdm_data_out_reg[47]_0 ),
+        .I1(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I2(slot_select[1]),
+        .I3(\goreg_dm.dout_i_reg[8] [7]),
+        .I4(Q[7]),
+        .I5(slot_select[0]),
         .O(\tdm_data_out[13]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[14]_i_1 
-       (.I0(Q[8]),
-        .I1(slot_select[0]),
-        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+       (.I0(\tdm_data_out_reg[47]_0 ),
+        .I1(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I2(slot_select[1]),
+        .I3(\goreg_dm.dout_i_reg[8] [8]),
+        .I4(Q[8]),
+        .I5(slot_select[0]),
         .O(\tdm_data_out[14]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[15]_i_1 
        (.I0(Q[9]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[15]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[16]_i_1 
        (.I0(Q[10]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[16]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[17]_i_1 
        (.I0(Q[11]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[17]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[18]_i_1 
        (.I0(Q[12]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[18]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[19]_i_1 
        (.I0(Q[13]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[19]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[20]_i_1 
        (.I0(Q[14]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[20]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[21]_i_1 
        (.I0(Q[15]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [7]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[21]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[22]_i_1 
        (.I0(Q[16]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[22]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[23]_i_1 
        (.I0(Q[17]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[23]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[24]_i_1 
        (.I0(Q[18]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[24]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[25]_i_1 
        (.I0(Q[19]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[25]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[26]_i_1 
        (.I0(Q[20]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[26]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[27]_i_1 
        (.I0(Q[21]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[27]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[28]_i_1 
        (.I0(Q[22]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[28]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[29]_i_1 
        (.I0(Q[23]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[29]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[30]_i_1 
        (.I0(Q[24]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[30]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[31]_i_1 
        (.I0(Q[25]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[32]_i_1 
        (.I0(Q[26]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[32]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[33]_i_1 
        (.I0(Q[27]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[33]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[34]_i_1 
        (.I0(Q[28]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[34]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[35]_i_1 
        (.I0(Q[29]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[35]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[36]_i_1 
        (.I0(Q[30]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[36]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[37]_i_1 
        (.I0(Q[31]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[37]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[38]_i_1 
        (.I0(Q[32]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[38]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[39]_i_1 
        (.I0(Q[33]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[39]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[40]_i_1 
        (.I0(Q[34]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[40]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \tdm_data_out[41]_i_1 
        (.I0(Q[35]),
         .I1(slot_select[0]),
         .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .O(\tdm_data_out[41]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[42]_i_1 
+       (.I0(Q[36]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[42]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[43]_i_1 
+       (.I0(Q[37]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[43]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[44]_i_1 
+       (.I0(Q[38]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[44]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[45]_i_1 
+       (.I0(Q[39]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[45]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[46]_i_1 
+       (.I0(Q[40]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[46]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  LUT4 #(
+    .INIT(16'hF888)) 
+    \tdm_data_out[47]_i_1 
+       (.I0(Q[41]),
+        .I1(slot_select[0]),
+        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
+        .I3(\tdm_data_out_reg[47]_0 ),
+        .O(\tdm_data_out[47]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \tdm_data_out[53]_i_1 
-       (.I0(\tdm_data_out_reg[41]_0 ),
+       (.I0(\tdm_data_out_reg[47]_0 ),
         .I1(\auto_neg_intr_gen.tx_ch0_data_reg[15] [6]),
         .O(\tdm_data_out[53]_i_1_n_0 ));
   LUT6 #(
@@ -11544,7 +12903,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
        (.I0(slot_select[1]),
         .I1(empty_fwft_i_reg),
         .I2(\auto_neg_intr_gen.tx_ch0_valid_reg ),
-        .I3(\tdm_data_out_reg[41]_0 ),
+        .I3(\tdm_data_out_reg[47]_0 ),
         .I4(out),
         .I5(slot_select[0]),
         .O(\tdm_data_out[5]_i_1_n_0 ));
@@ -11552,8 +12911,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
     .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[6]_i_1 
        (.I0(slot_select[1]),
-        .I1(br_ch_data[0]),
-        .I2(\tdm_data_out_reg[41]_0 ),
+        .I1(\goreg_dm.dout_i_reg[8] [0]),
+        .I2(\tdm_data_out_reg[47]_0 ),
         .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [0]),
         .I4(Q[0]),
         .I5(slot_select[0]),
@@ -11562,8 +12921,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
     .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[7]_i_1 
        (.I0(slot_select[1]),
-        .I1(br_ch_data[1]),
-        .I2(\tdm_data_out_reg[41]_0 ),
+        .I1(\goreg_dm.dout_i_reg[8] [1]),
+        .I2(\tdm_data_out_reg[47]_0 ),
         .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [1]),
         .I4(Q[1]),
         .I5(slot_select[0]),
@@ -11572,277 +12931,315 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
     .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[8]_i_1 
        (.I0(slot_select[1]),
-        .I1(br_ch_data[2]),
-        .I2(\tdm_data_out_reg[41]_0 ),
+        .I1(\goreg_dm.dout_i_reg[8] [2]),
+        .I2(\tdm_data_out_reg[47]_0 ),
         .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [2]),
         .I4(Q[2]),
         .I5(slot_select[0]),
         .O(\tdm_data_out[8]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
     \tdm_data_out[9]_i_1 
-       (.I0(Q[3]),
-        .I1(slot_select[0]),
-        .I2(\auto_neg_intr_gen.tx_ch0_data_reg[15] [3]),
-        .I3(\tdm_data_out_reg[41]_0 ),
+       (.I0(slot_select[1]),
+        .I1(\goreg_dm.dout_i_reg[8] [3]),
+        .I2(\tdm_data_out_reg[47]_0 ),
+        .I3(\auto_neg_intr_gen.tx_ch0_data_reg[15] [3]),
+        .I4(Q[3]),
+        .I5(slot_select[0]),
         .O(\tdm_data_out[9]_i_1_n_0 ));
   FDRE \tdm_data_out_reg[0] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(slot_select[0]),
-        .Q(\storage_data2_reg[43]_0 [0]),
+        .Q(\storage_data2_reg[49]_0 [0]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[10] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[10]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [10]),
+        .Q(\storage_data2_reg[49]_0 [10]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[11] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[11]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [11]),
+        .Q(\storage_data2_reg[49]_0 [11]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[12] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[12]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [12]),
+        .Q(\storage_data2_reg[49]_0 [12]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[13] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[13]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [13]),
+        .Q(\storage_data2_reg[49]_0 [13]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[14] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[14]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [14]),
+        .Q(\storage_data2_reg[49]_0 [14]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[15] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[15]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [15]),
+        .Q(\storage_data2_reg[49]_0 [15]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[16] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[16]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [16]),
+        .Q(\storage_data2_reg[49]_0 [16]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[17] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[17]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [17]),
+        .Q(\storage_data2_reg[49]_0 [17]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[18] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[18]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [18]),
+        .Q(\storage_data2_reg[49]_0 [18]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[19] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[19]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [19]),
+        .Q(\storage_data2_reg[49]_0 [19]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[1] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(slot_select[1]),
-        .Q(\storage_data2_reg[43]_0 [1]),
+        .Q(\storage_data2_reg[49]_0 [1]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[20] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[20]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [20]),
+        .Q(\storage_data2_reg[49]_0 [20]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[21] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[21]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [21]),
+        .Q(\storage_data2_reg[49]_0 [21]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[22] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[22]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [22]),
+        .Q(\storage_data2_reg[49]_0 [22]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[23] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[23]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [23]),
+        .Q(\storage_data2_reg[49]_0 [23]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[24] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[24]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [24]),
+        .Q(\storage_data2_reg[49]_0 [24]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[25] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[25]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [25]),
+        .Q(\storage_data2_reg[49]_0 [25]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[26] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[26]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [26]),
+        .Q(\storage_data2_reg[49]_0 [26]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[27] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[27]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [27]),
+        .Q(\storage_data2_reg[49]_0 [27]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[28] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[28]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [28]),
+        .Q(\storage_data2_reg[49]_0 [28]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[29] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[29]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [29]),
+        .Q(\storage_data2_reg[49]_0 [29]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[2] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(D[0]),
-        .Q(\storage_data2_reg[43]_0 [2]),
+        .Q(\storage_data2_reg[49]_0 [2]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[30] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[30]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [30]),
+        .Q(\storage_data2_reg[49]_0 [30]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[31] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[31]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [31]),
+        .Q(\storage_data2_reg[49]_0 [31]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[32] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[32]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [32]),
+        .Q(\storage_data2_reg[49]_0 [32]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[33] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[33]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [33]),
+        .Q(\storage_data2_reg[49]_0 [33]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[34] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[34]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [34]),
+        .Q(\storage_data2_reg[49]_0 [34]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[35] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[35]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [35]),
+        .Q(\storage_data2_reg[49]_0 [35]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[36] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[36]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [36]),
+        .Q(\storage_data2_reg[49]_0 [36]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[37] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[37]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [37]),
+        .Q(\storage_data2_reg[49]_0 [37]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[38] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[38]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [38]),
+        .Q(\storage_data2_reg[49]_0 [38]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[39] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[39]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [39]),
+        .Q(\storage_data2_reg[49]_0 [39]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[3] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(D[1]),
-        .Q(\storage_data2_reg[43]_0 [3]),
+        .Q(\storage_data2_reg[49]_0 [3]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[40] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[40]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [40]),
+        .Q(\storage_data2_reg[49]_0 [40]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[41] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[41]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [41]),
+        .Q(\storage_data2_reg[49]_0 [41]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[42] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[42]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [42]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[43] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[43]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [43]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[44] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[44]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [44]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[45] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[45]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [45]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[46] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[46]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [46]),
+        .R(rx_user_reset));
+  FDRE \tdm_data_out_reg[47] 
+       (.C(axi_c2c_phy_clk),
+        .CE(tdm_user_data_ready),
+        .D(\tdm_data_out[47]_i_1_n_0 ),
+        .Q(\storage_data2_reg[49]_0 [47]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[4] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(D[2]),
-        .Q(\storage_data2_reg[43]_0 [4]),
+        .Q(\storage_data2_reg[49]_0 [4]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[53] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[53]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [42]),
+        .Q(\storage_data2_reg[49]_0 [48]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[5] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[5]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [5]),
+        .Q(\storage_data2_reg[49]_0 [5]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[6] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[6]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [6]),
+        .Q(\storage_data2_reg[49]_0 [6]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[7] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[7]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [7]),
+        .Q(\storage_data2_reg[49]_0 [7]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[8] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[8]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [8]),
+        .Q(\storage_data2_reg[49]_0 [8]),
         .R(rx_user_reset));
   FDRE \tdm_data_out_reg[9] 
        (.C(axi_c2c_phy_clk),
         .CE(tdm_user_data_ready),
         .D(\tdm_data_out[9]_i_1_n_0 ),
-        .Q(\storage_data2_reg[43]_0 [9]),
+        .Q(\storage_data2_reg[49]_0 [9]),
         .R(rx_user_reset));
   FDRE tdm_data_valid_reg
        (.C(axi_c2c_phy_clk),
@@ -11852,6 +13249,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_axi_chip2chip_v4_2_11_tdm
         .R(rx_user_reset));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
    (D,
     m_aclk,
@@ -11861,8 +13259,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -11870,16 +13269,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width \ramloop[0].ram.r 
@@ -11887,15 +13288,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_151
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_152
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -11904,8 +13306,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_151
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -11913,27 +13316,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_151
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_152 \ramloop[0].ram.r 
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_153 \ramloop[0].ram.r 
        (.D(D),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
@@ -11992,7 +13398,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr__parameterized
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -12001,10 +13407,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr__parameterized
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -12027,6 +13433,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr__parameterized
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width
    (D,
     m_aclk,
@@ -12036,8 +13443,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -12045,16 +13453,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper \prim_noinit.ram 
@@ -12062,15 +13472,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_152
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_153
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -12079,8 +13490,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_152
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -12088,27 +13500,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width_152
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153 \prim_noinit.ram 
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_154 \prim_noinit.ram 
        (.D(D),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
@@ -12167,7 +13582,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width__parameterized1
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -12176,10 +13591,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width__parameterized1
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -12202,6 +13617,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_width__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
    (D,
     m_aclk,
@@ -12211,8 +13627,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -12220,28 +13637,22 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ;
@@ -12253,10 +13664,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
+  wire [51:51]doutb;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
   wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTA_UNCONNECTED ;
   wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTB_UNCONNECTED ;
@@ -12453,12 +13866,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
         .CLKARDCLK(m_aclk),
         .CLKBWRCLK(axi_c2c_phy_clk),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_DBITERR_UNCONNECTED ),
-        .DIADI({1'b0,1'b0,1'b0,\data_out_reg[44] [22:18],1'b0,1'b0,\data_out_reg[44] [17:12],1'b0,1'b0,\data_out_reg[44] [11:6],1'b0,1'b0,\data_out_reg[44] [5:0]}),
-        .DIBDI({1'b0,1'b0,1'b0,\data_out_reg[44] [44:40],1'b0,1'b0,\data_out_reg[44] [39:34],1'b0,1'b0,1'b0,\data_out_reg[44] [33:29],1'b0,1'b0,\data_out_reg[44] [28:23]}),
+        .DIADI({1'b0,1'b0,pack_data_out[25:20],1'b0,pack_data_out[19:13],1'b0,1'b0,pack_data_out[12:7],1'b0,pack_data_out[6:0]}),
+        .DIBDI({1'b0,1'b0,\data_out_reg[12] [12:7],1'b0,\data_out_reg[12] [6:0],1'b0,1'b0,pack_data_out[38:33],1'b0,pack_data_out[32:26]}),
         .DIPADIP({1'b0,1'b0,1'b0,1'b0}),
         .DIPBDIP({1'b0,1'b0,1'b0,1'b0}),
-        .DOADO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ,D[22:18],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ,D[17:12],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ,D[11:6],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ,D[5:0]}),
-        .DOBDO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ,D[44:40],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ,D[39:34],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ,D[33:29],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ,D[28:23]}),
+        .DOADO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ,D[25:20],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ,D[19:13],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ,D[12:7],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ,D[6:0]}),
+        .DOBDO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ,doutb,D[50:46],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ,D[45:39],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ,D[38:33],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ,D[32:26]}),
         .DOPADOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_88 }),
         .DOPBDOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_89 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_90 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_91 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_92 }),
         .ECCPARITY(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED [7:0]),
@@ -12479,7 +13892,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_154
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -12488,8 +13901,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -12497,28 +13911,22 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ;
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ;
   wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ;
@@ -12530,10 +13938,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
+  wire [51:51]doutb;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
   wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTA_UNCONNECTED ;
   wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTB_UNCONNECTED ;
@@ -12730,12 +14140,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper_153
         .CLKARDCLK(m_aclk),
         .CLKBWRCLK(axi_c2c_phy_clk),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_DBITERR_UNCONNECTED ),
-        .DIADI({1'b0,1'b0,1'b0,\data_out_reg[44] [22:18],1'b0,1'b0,\data_out_reg[44] [17:12],1'b0,1'b0,\data_out_reg[44] [11:6],1'b0,1'b0,\data_out_reg[44] [5:0]}),
-        .DIBDI({1'b0,1'b0,1'b0,\data_out_reg[44] [44:40],1'b0,1'b0,\data_out_reg[44] [39:34],1'b0,1'b0,1'b0,\data_out_reg[44] [33:29],1'b0,1'b0,\data_out_reg[44] [28:23]}),
+        .DIADI({1'b0,1'b0,pack_data_out[25:20],1'b0,pack_data_out[19:13],1'b0,1'b0,pack_data_out[12:7],1'b0,pack_data_out[6:0]}),
+        .DIBDI({1'b0,1'b0,\data_out_reg[12] [12:7],1'b0,\data_out_reg[12] [6:0],1'b0,1'b0,pack_data_out[38:33],1'b0,pack_data_out[32:26]}),
         .DIPADIP({1'b0,1'b0,1'b0,1'b0}),
         .DIPBDIP({1'b0,1'b0,1'b0,1'b0}),
-        .DOADO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ,D[22:18],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ,D[17:12],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ,D[11:6],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ,D[5:0]}),
-        .DOBDO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ,D[44:40],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ,D[39:34],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ,D[33:29],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ,D[28:23]}),
+        .DOADO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ,D[25:20],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ,D[19:13],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ,D[12:7],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ,D[6:0]}),
+        .DOBDO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ,doutb,D[50:46],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ,D[45:39],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ,D[38:33],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ,D[32:26]}),
         .DOPADOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_88 }),
         .DOPBDOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_89 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_90 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_91 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_92 }),
         .ECCPARITY(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED [7:0]),
@@ -13051,7 +14461,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -13060,10 +14470,40 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_31 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_39 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_63 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_88 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_89 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_90 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_91 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_92 ;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -13072,12 +14512,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
   wire [31:0]m_axi_rdata;
   wire out;
   wire tmp_ram_rd_en;
+  wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTA_UNCONNECTED ;
+  wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTB_UNCONNECTED ;
+  wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_DBITERR_UNCONNECTED ;
+  wire \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_SBITERR_UNCONNECTED ;
+  wire [7:0]\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED ;
+  wire [8:0]\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_RDADDRECC_UNCONNECTED ;
 
   (* CLOCK_DOMAINS = "INDEPENDENT" *) 
   (* box_type = "PRIMITIVE" *) 
-  RAMB18E1 #(
+  RAMB36E1 #(
     .DOA_REG(0),
     .DOB_REG(0),
+    .EN_ECC_READ("FALSE"),
+    .EN_ECC_WRITE("FALSE"),
     .INITP_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -13086,6 +14534,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
     .INITP_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_08(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_09(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0A(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0B(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0C(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -13150,8 +14606,72 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
     .INIT_3D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_3E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_3F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_A(18'h00000),
-    .INIT_B(18'h00000),
+    .INIT_40(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_41(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_42(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_43(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_44(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_45(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_46(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_47(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_48(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_49(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4A(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4B(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4C(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4D(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4E(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_4F(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_50(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_51(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_52(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_53(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_54(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_55(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_56(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_57(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_58(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_59(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5A(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5B(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5C(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5D(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5E(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_5F(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_60(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_61(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_62(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_63(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_64(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_65(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_66(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_67(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_68(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_69(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6A(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6B(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6C(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6D(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6E(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_6F(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_70(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_71(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_72(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_73(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_74(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_75(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_76(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_77(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_78(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_79(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7A(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7B(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7C(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7D(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7E(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_7F(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_A(36'h000000000),
+    .INIT_B(36'h000000000),
     .INIT_FILE("NONE"),
     .IS_CLKARDCLK_INVERTED(1'b0),
     .IS_CLKBWRCLK_INVERTED(1'b0),
@@ -13161,45 +14681,58 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_prim_wrapper__parameterized
     .IS_RSTRAMB_INVERTED(1'b0),
     .IS_RSTREGARSTREG_INVERTED(1'b0),
     .IS_RSTREGB_INVERTED(1'b0),
+    .RAM_EXTENSION_A("NONE"),
+    .RAM_EXTENSION_B("NONE"),
     .RAM_MODE("SDP"),
     .RDADDR_COLLISION_HWCONFIG("DELAYED_WRITE"),
-    .READ_WIDTH_A(36),
+    .READ_WIDTH_A(72),
     .READ_WIDTH_B(0),
     .RSTREG_PRIORITY_A("REGCE"),
     .RSTREG_PRIORITY_B("REGCE"),
     .SIM_COLLISION_CHECK("ALL"),
     .SIM_DEVICE("7SERIES"),
-    .SRVAL_A(18'h00000),
-    .SRVAL_B(18'h00000),
+    .SRVAL_A(36'h000000000),
+    .SRVAL_B(36'h000000000),
     .WRITE_MODE_A("WRITE_FIRST"),
     .WRITE_MODE_B("WRITE_FIRST"),
     .WRITE_WIDTH_A(0),
-    .WRITE_WIDTH_B(36)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram 
-       (.ADDRARDADDR({Q,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ADDRBWRADDR({\gic0.gc0.count_d2_reg[8] ,1'b0,1'b0,1'b0,1'b0,1'b0}),
+    .WRITE_WIDTH_B(72)) 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram 
+       (.ADDRARDADDR({1'b1,Q,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
+        .ADDRBWRADDR({1'b1,\gic0.gc0.count_d2_reg[8] ,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
+        .CASCADEINA(1'b0),
+        .CASCADEINB(1'b0),
+        .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTA_UNCONNECTED ),
+        .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(axi_c2c_phy_clk),
         .CLKBWRCLK(m_aclk),
-        .DIADI({m_axi_rdata[12:5],m_axi_rdata[3:0],DIADI}),
-        .DIBDI({m_axi_rdata[30:23],m_axi_rdata[21:14]}),
-        .DIPADIP({m_axi_rdata[13],m_axi_rdata[4]}),
-        .DIPBDIP({m_axi_rdata[31],m_axi_rdata[22]}),
-        .DOADO({D[16:9],D[7:0]}),
-        .DOBDO({D[34:27],D[25:18]}),
-        .DOPADOP({D[17],D[8]}),
-        .DOPBDOP({D[35],D[26]}),
+        .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_DBITERR_UNCONNECTED ),
+        .DIADI({1'b0,1'b0,1'b0,m_axi_rdata[10:6],1'b0,1'b0,1'b0,m_axi_rdata[5:1],1'b0,1'b0,1'b0,m_axi_rdata[0],DIADI[9:6],1'b0,1'b0,DIADI[5:0]}),
+        .DIBDI({1'b0,1'b0,1'b0,m_axi_rdata[31:27],1'b0,1'b0,1'b0,m_axi_rdata[26:22],1'b0,1'b0,1'b0,m_axi_rdata[21:17],1'b0,1'b0,m_axi_rdata[16:11]}),
+        .DIPADIP({1'b0,1'b0,1'b0,1'b0}),
+        .DIPBDIP({1'b0,1'b0,1'b0,1'b0}),
+        .DOADO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_21 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_22 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_23 ,D[20:16],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_29 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_30 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_31 ,D[15:11],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_37 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_38 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_39 ,D[10:6],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_45 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_46 ,D[5:0]}),
+        .DOBDO({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_53 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_54 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_55 ,D[41:37],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_61 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_62 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_63 ,D[36:32],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_69 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_70 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_71 ,D[31:27],\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_77 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_78 ,D[26:21]}),
+        .DOPADOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_85 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_86 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_87 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_88 }),
+        .DOPBDOP({\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_89 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_90 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_91 ,\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_n_92 }),
+        .ECCPARITY(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED [7:0]),
         .ENARDEN(tmp_ram_rd_en),
         .ENBWREN(E),
+        .INJECTDBITERR(1'b0),
+        .INJECTSBITERR(1'b0),
+        .RDADDRECC(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_RDADDRECC_UNCONNECTED [8:0]),
         .REGCEAREGCE(1'b0),
         .REGCEB(1'b0),
         .RSTRAMARSTRAM(out),
         .RSTRAMB(1'b0),
         .RSTREGARSTREG(1'b0),
         .RSTREGB(1'b0),
-        .WEA({1'b0,1'b0}),
-        .WEBWE({E,E,E,E}));
+        .SBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_SBITERR_UNCONNECTED ),
+        .WEA({1'b0,1'b0,1'b0,1'b0}),
+        .WEBWE({E,E,E,E,E,E,E,E}));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top
    (D,
     m_aclk,
@@ -13209,8 +14742,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13218,16 +14752,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr \valid.cstr 
@@ -13235,15 +14771,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_top" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_150
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_151
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -13252,8 +14789,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_150
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13261,27 +14799,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_150
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_151 \valid.cstr 
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_generic_cstr_152 \valid.cstr 
        (.D(D),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
@@ -13340,7 +14881,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top__parameterized1
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -13349,10 +14890,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top__parameterized1
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -13375,6 +14916,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top__parameterized1
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
    (D,
     m_aclk,
@@ -13384,8 +14926,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13393,16 +14936,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth inst_blk_mem_gen
@@ -13410,15 +14955,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_148
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_149
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -13427,8 +14973,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_148
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13436,27 +14983,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_148
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_149 inst_blk_mem_gen
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_150 inst_blk_mem_gen
        (.D(D),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
@@ -13515,7 +15065,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -13524,10 +15074,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -13550,6 +15100,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
    (D,
     m_aclk,
@@ -13559,8 +15110,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13568,16 +15120,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
@@ -13585,15 +15139,16 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_149
+module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_150
    (D,
     m_aclk,
     axi_c2c_phy_clk,
@@ -13602,8 +15157,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_149
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] );
-  output [44:0]D;
+    pack_data_out,
+    \data_out_reg[12] );
+  output [50:0]D;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -13611,27 +15167,30 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth_149
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
 
-  wire [44:0]D;
+  wire [50:0]D;
   wire [0:0]E;
   wire [7:0]Q;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
+  wire [12:0]\data_out_reg[12] ;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire m_aclk;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_150 \gnbram.gnativebmg.native_blk_mem_gen 
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_top_151 \gnbram.gnativebmg.native_blk_mem_gen 
        (.D(D),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
@@ -13690,7 +15249,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth__parameterized
     \gic0.gc0.count_d2_reg[8] ,
     m_axi_rdata,
     DIADI);
-  output [35:0]D;
+  output [41:0]D;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -13699,10 +15258,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth__parameterized
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
 
-  wire [35:0]D;
-  wire [3:0]DIADI;
+  wire [41:0]D;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire axi_c2c_phy_clk;
@@ -13725,6 +15284,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_synth__parameterized
         .tmp_ram_rd_en(tmp_ram_rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "clk_x_pntrs" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs
    (ram_empty_fb_i_reg,
     WR_PNTR_RD,
@@ -14256,7 +15816,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs
 endmodule
 
 (* ORIG_REF_NAME = "clk_x_pntrs" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_113
+module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_114
    (ram_empty_fb_i_reg,
     Q,
     ram_empty_fb_i_reg_0,
@@ -14325,33 +15885,33 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_113
   wire [7:0]rd_pntr_gc;
   wire [7:0]wr_pntr_gc;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized0_160 \gnxpm_cdc.gsync_stage[1].rd_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized0_161 \gnxpm_cdc.gsync_stage[1].rd_stg_inst 
        (.D(p_3_out),
         .Q(wr_pntr_gc),
         .m_aclk(m_aclk),
         .out(out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized1_161 \gnxpm_cdc.gsync_stage[1].wr_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized1_162 \gnxpm_cdc.gsync_stage[1].wr_stg_inst 
        (.AR(AR),
         .D(p_4_out),
         .Q(rd_pntr_gc),
         .axi_c2c_phy_clk(axi_c2c_phy_clk));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized2_162 \gnxpm_cdc.gsync_stage[2].rd_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized2_163 \gnxpm_cdc.gsync_stage[2].rd_stg_inst 
        (.D(p_5_out),
         .\Q_reg_reg[7]_0 (p_3_out),
         .m_aclk(m_aclk),
         .out(out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized3_163 \gnxpm_cdc.gsync_stage[2].wr_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized3_164 \gnxpm_cdc.gsync_stage[2].wr_stg_inst 
        (.AR(AR),
         .D(p_6_out),
         .\Q_reg_reg[7]_0 (p_4_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized4_164 \gnxpm_cdc.gsync_stage[3].rd_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized4_165 \gnxpm_cdc.gsync_stage[3].rd_stg_inst 
        (.D(p_5_out),
         .\Q_reg_reg[0]_0 (out),
         .\gnxpm_cdc.wr_pntr_bin_reg[6] ({p_0_out,gray2bin}),
         .m_aclk(m_aclk),
         .out(p_7_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized5_165 \gnxpm_cdc.gsync_stage[3].wr_stg_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized5_166 \gnxpm_cdc.gsync_stage[3].wr_stg_inst 
        (.AR(AR),
         .D(p_6_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -16793,6 +18353,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_compare__parameterized7
         .O(ram_full_fb_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "dmem" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
    (\gpr1.dout_i_reg[0]_0 ,
     \gpr1.dout_i_reg[1]_0 ,
@@ -16806,9 +18367,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
     \gpr1.dout_i_reg[0]_3 ,
     \gpr1.dout_i_reg[1]_3 ,
     \gpr1.dout_i_reg[2]_3 ,
-    \gpr1.dout_i_reg[0]_4 ,
-    \gpr1.dout_i_reg[1]_4 ,
-    \gpr1.dout_i_reg[2]_4 ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[3]_3 ,
+    \gpr1.dout_i_reg[4]_3 ,
+    \gpr1.dout_i_reg[5]_3 ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
+    \gpr1.dout_i_reg[6]_3 ,
+    \gpr1.dout_i_reg[7]_3 ,
+    \gpr1.dout_i_reg[8]_3 ,
+    Q,
     m_aclk,
     bfifo_data,
     ram_full_i_reg,
@@ -16817,11 +18400,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    p_0_out,
-    p_7_out,
-    out,
+    E,
+    D,
     axi_c2c_phy_clk,
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] );
+    AR);
   output \gpr1.dout_i_reg[0]_0 ;
   output \gpr1.dout_i_reg[1]_0 ;
   output \gpr1.dout_i_reg[2]_0 ;
@@ -16834,58 +18416,105 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
   output \gpr1.dout_i_reg[0]_3 ;
   output \gpr1.dout_i_reg[1]_3 ;
   output \gpr1.dout_i_reg[2]_3 ;
-  output \gpr1.dout_i_reg[0]_4 ;
-  output \gpr1.dout_i_reg[1]_4 ;
-  output \gpr1.dout_i_reg[2]_4 ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[3]_3 ;
+  output \gpr1.dout_i_reg[4]_3 ;
+  output \gpr1.dout_i_reg[5]_3 ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
+  output \gpr1.dout_i_reg[6]_3 ;
+  output \gpr1.dout_i_reg[7]_3 ;
+  output \gpr1.dout_i_reg[8]_3 ;
+  output [8:0]Q;
   input m_aclk;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input [5:0]\gc0.count_d1_reg[5] ;
   input [5:0]\gic0.gc0.count_d2_reg[5] ;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [2:0]p_0_out;
-  input p_7_out;
-  input out;
+  input [0:0]E;
+  input [8:0]D;
   input axi_c2c_phy_clk;
-  input [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ;
+  input [0:0]AR;
 
+  wire [0:0]AR;
+  wire [8:0]D;
+  wire [0:0]E;
+  wire [8:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
+  wire [8:0]bfifo_data;
   wire [5:0]\gc0.count_d1_reg[5] ;
   wire [5:0]\gic0.gc0.count_d2_reg[5] ;
   wire \gic0.gc0.count_d2_reg[6] ;
   wire \gic0.gc0.count_d2_reg[7] ;
-  wire \gpr1.dout_i[0]_i_1_n_0 ;
-  wire \gpr1.dout_i[1]_i_1_n_0 ;
-  wire \gpr1.dout_i[2]_i_1_n_0 ;
   wire \gpr1.dout_i_reg[0]_0 ;
   wire \gpr1.dout_i_reg[0]_1 ;
   wire \gpr1.dout_i_reg[0]_2 ;
   wire \gpr1.dout_i_reg[0]_3 ;
-  wire \gpr1.dout_i_reg[0]_4 ;
   wire \gpr1.dout_i_reg[1]_0 ;
   wire \gpr1.dout_i_reg[1]_1 ;
   wire \gpr1.dout_i_reg[1]_2 ;
   wire \gpr1.dout_i_reg[1]_3 ;
-  wire \gpr1.dout_i_reg[1]_4 ;
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
   wire \gpr1.dout_i_reg[2]_3 ;
-  wire \gpr1.dout_i_reg[2]_4 ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[3]_3 ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[4]_3 ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[5]_3 ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[6]_3 ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[7]_3 ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
+  wire \gpr1.dout_i_reg[8]_3 ;
   wire m_aclk;
-  wire [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ;
-  wire out;
-  wire [2:0]p_0_out;
-  wire p_7_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire NLW_RAM_reg_0_63_0_2_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_0_63_3_5_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_0_63_6_8_DOD_UNCONNECTED;
   wire NLW_RAM_reg_128_191_0_2_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_128_191_3_5_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_128_191_6_8_DOD_UNCONNECTED;
   wire NLW_RAM_reg_192_255_0_2_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_192_255_3_5_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_192_255_6_8_DOD_UNCONNECTED;
   wire NLW_RAM_reg_64_127_0_2_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_64_127_3_5_DOD_UNCONNECTED;
+  wire NLW_RAM_reg_64_127_6_8_DOD_UNCONNECTED;
 
   (* METHODOLOGY_DRC_VIOS = "" *) 
   RAM64M RAM_reg_0_63_0_2
@@ -16901,6 +18530,38 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
         .DOB(\gpr1.dout_i_reg[1]_0 ),
         .DOC(\gpr1.dout_i_reg[2]_0 ),
         .DOD(NLW_RAM_reg_0_63_0_2_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(ram_full_i_reg));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_0_63_3_5
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[3]),
+        .DIB(bfifo_data[4]),
+        .DIC(bfifo_data[5]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[3]_0 ),
+        .DOB(\gpr1.dout_i_reg[4]_0 ),
+        .DOC(\gpr1.dout_i_reg[5]_0 ),
+        .DOD(NLW_RAM_reg_0_63_3_5_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(ram_full_i_reg));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_0_63_6_8
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[6]),
+        .DIB(bfifo_data[7]),
+        .DIC(bfifo_data[8]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[6]_0 ),
+        .DOB(\gpr1.dout_i_reg[7]_0 ),
+        .DOC(\gpr1.dout_i_reg[8]_0 ),
+        .DOD(NLW_RAM_reg_0_63_6_8_DOD_UNCONNECTED),
         .WCLK(m_aclk),
         .WE(ram_full_i_reg));
   (* METHODOLOGY_DRC_VIOS = "" *) 
@@ -16920,6 +18581,38 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
         .WCLK(m_aclk),
         .WE(\gic0.gc0.count_d2_reg[6] ));
   (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_128_191_3_5
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[3]),
+        .DIB(bfifo_data[4]),
+        .DIC(bfifo_data[5]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[3]_2 ),
+        .DOB(\gpr1.dout_i_reg[4]_2 ),
+        .DOC(\gpr1.dout_i_reg[5]_2 ),
+        .DOD(NLW_RAM_reg_128_191_3_5_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(\gic0.gc0.count_d2_reg[6] ));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_128_191_6_8
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[6]),
+        .DIB(bfifo_data[7]),
+        .DIC(bfifo_data[8]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[6]_2 ),
+        .DOB(\gpr1.dout_i_reg[7]_2 ),
+        .DOC(\gpr1.dout_i_reg[8]_2 ),
+        .DOD(NLW_RAM_reg_128_191_6_8_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(\gic0.gc0.count_d2_reg[6] ));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
   RAM64M RAM_reg_192_255_0_2
        (.ADDRA(\gc0.count_d1_reg[5] ),
         .ADDRB(\gc0.count_d1_reg[5] ),
@@ -16933,6 +18626,38 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
         .DOB(\gpr1.dout_i_reg[1]_3 ),
         .DOC(\gpr1.dout_i_reg[2]_3 ),
         .DOD(NLW_RAM_reg_192_255_0_2_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(ram_full_i_reg_0));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_192_255_3_5
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[3]),
+        .DIB(bfifo_data[4]),
+        .DIC(bfifo_data[5]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[3]_3 ),
+        .DOB(\gpr1.dout_i_reg[4]_3 ),
+        .DOC(\gpr1.dout_i_reg[5]_3 ),
+        .DOD(NLW_RAM_reg_192_255_3_5_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(ram_full_i_reg_0));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_192_255_6_8
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[6]),
+        .DIB(bfifo_data[7]),
+        .DIC(bfifo_data[8]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[6]_3 ),
+        .DOB(\gpr1.dout_i_reg[7]_3 ),
+        .DOC(\gpr1.dout_i_reg[8]_3 ),
+        .DOD(NLW_RAM_reg_192_255_6_8_DOD_UNCONNECTED),
         .WCLK(m_aclk),
         .WE(ram_full_i_reg_0));
   (* METHODOLOGY_DRC_VIOS = "" *) 
@@ -16951,78 +18676,142 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_dmem
         .DOD(NLW_RAM_reg_64_127_0_2_DOD_UNCONNECTED),
         .WCLK(m_aclk),
         .WE(\gic0.gc0.count_d2_reg[7] ));
-  LUT4 #(
-    .INIT(16'hFB08)) 
-    \gpr1.dout_i[0]_i_1 
-       (.I0(p_0_out[0]),
-        .I1(p_7_out),
-        .I2(out),
-        .I3(\gpr1.dout_i_reg[0]_4 ),
-        .O(\gpr1.dout_i[0]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFB08)) 
-    \gpr1.dout_i[1]_i_1 
-       (.I0(p_0_out[1]),
-        .I1(p_7_out),
-        .I2(out),
-        .I3(\gpr1.dout_i_reg[1]_4 ),
-        .O(\gpr1.dout_i[1]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFB08)) 
-    \gpr1.dout_i[2]_i_1 
-       (.I0(p_0_out[2]),
-        .I1(p_7_out),
-        .I2(out),
-        .I3(\gpr1.dout_i_reg[2]_4 ),
-        .O(\gpr1.dout_i[2]_i_1_n_0 ));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_64_127_3_5
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[3]),
+        .DIB(bfifo_data[4]),
+        .DIC(bfifo_data[5]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[3]_1 ),
+        .DOB(\gpr1.dout_i_reg[4]_1 ),
+        .DOC(\gpr1.dout_i_reg[5]_1 ),
+        .DOD(NLW_RAM_reg_64_127_3_5_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(\gic0.gc0.count_d2_reg[7] ));
+  (* METHODOLOGY_DRC_VIOS = "" *) 
+  RAM64M RAM_reg_64_127_6_8
+       (.ADDRA(\gc0.count_d1_reg[5] ),
+        .ADDRB(\gc0.count_d1_reg[5] ),
+        .ADDRC(\gc0.count_d1_reg[5] ),
+        .ADDRD(\gic0.gc0.count_d2_reg[5] ),
+        .DIA(bfifo_data[6]),
+        .DIB(bfifo_data[7]),
+        .DIC(bfifo_data[8]),
+        .DID(1'b0),
+        .DOA(\gpr1.dout_i_reg[6]_1 ),
+        .DOB(\gpr1.dout_i_reg[7]_1 ),
+        .DOC(\gpr1.dout_i_reg[8]_1 ),
+        .DOD(NLW_RAM_reg_64_127_6_8_DOD_UNCONNECTED),
+        .WCLK(m_aclk),
+        .WE(\gic0.gc0.count_d2_reg[7] ));
   FDCE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[0] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\gpr1.dout_i[0]_i_1_n_0 ),
-        .Q(\gpr1.dout_i_reg[0]_4 ));
+        .CE(E),
+        .CLR(AR),
+        .D(D[0]),
+        .Q(Q[0]));
   FDCE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[1] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\gpr1.dout_i[1]_i_1_n_0 ),
-        .Q(\gpr1.dout_i_reg[1]_4 ));
+        .CE(E),
+        .CLR(AR),
+        .D(D[1]),
+        .Q(Q[1]));
   FDCE #(
     .INIT(1'b0)) 
     \gpr1.dout_i_reg[2] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\gpr1.dout_i[2]_i_1_n_0 ),
-        .Q(\gpr1.dout_i_reg[2]_4 ));
+        .CE(E),
+        .CLR(AR),
+        .D(D[2]),
+        .Q(Q[2]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[3]),
+        .Q(Q[3]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[4]),
+        .Q(Q[4]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[5]),
+        .Q(Q[5]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[6]),
+        .Q(Q[6]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[7]),
+        .Q(Q[7]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \gpr1.dout_i_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(E),
+        .CLR(AR),
+        .D(D[8]),
+        .Q(Q[8]));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
-   (D,
+   (E,
+    D,
     m_axi_awvalid,
     \m_axi_awaddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     aw_ch_data_valid,
     m_axi_awready);
+  output [0:0]E;
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input aw_ch_data_valid;
   input m_axi_awready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
@@ -17031,18 +18820,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_8 ;
-  wire \gntv_or_sync_fifo.gl0.wr_n_1 ;
   wire \gr1.gr1_int.rfwft/fwft_rst_done_q ;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [7:0]p_0_out;
   wire [7:0]p_13_out;
   wire p_20_out;
   wire [7:0]p_24_out;
   wire [7:0]p_25_out;
   wire p_6_out;
+  wire [38:0]pack_data_out;
   wire prog_full_int;
   wire [4:1]rd_pntr_plus1;
   wire [2:0]rd_rst_i;
@@ -17050,13 +18840,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
   wire rst_full_gen_i;
   wire rstblk_n_0;
   wire rstblk_n_10;
-  wire rstblk_n_5;
-  wire rstblk_n_9;
+  wire rstblk_n_11;
+  wire rstblk_n_6;
   wire tmp_ram_rd_en;
+  wire wr_rst_busy_i2_out;
   wire wr_rst_pf_as;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_69 \gntv_or_sync_fifo.gcx.clkx 
-       (.AR(rstblk_n_5),
+       (.AR(rstblk_n_6),
         .Q(p_0_out),
         .RD_PNTR_WR(p_25_out),
         .WR_PNTR_RD({p_24_out[7:5],p_24_out[0]}),
@@ -17073,13 +18864,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
         .E(fwft_rst_done),
         .Q(rd_pntr_plus1),
         .\Q_reg_reg[0] (rstblk_n_0),
-        .\Q_reg_reg[0]_0 (rstblk_n_9),
-        .SR(rstblk_n_10),
+        .\Q_reg_reg[0]_0 (rstblk_n_10),
+        .SR(rstblk_n_11),
         .WR_PNTR_RD({p_24_out[7:5],p_24_out[0]}),
         .fwft_rst_done_q(\gr1.gr1_int.rfwft/fwft_rst_done_q ),
         .\gc0.count_reg[3] (\gntv_or_sync_fifo.gcx.clkx_n_5 ),
         .\gnxpm_cdc.wr_pntr_bin_reg[6] (\gntv_or_sync_fifo.gcx.clkx_n_0 ),
-        .\goreg_bm.dout_i_reg[44] (p_6_out),
+        .\goreg_bm.dout_i_reg[50] (p_6_out),
         .m_aclk(m_aclk),
         .m_axi_awready(m_axi_awready),
         .m_axi_awvalid(m_axi_awvalid),
@@ -17087,74 +18878,85 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo
         .ram_empty_fb_i_reg(\gntv_or_sync_fifo.gl0.rd_n_8 ),
         .tmp_ram_rd_en(tmp_ram_rd_en));
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic \gntv_or_sync_fifo.gl0.wr 
-       (.AR(rstblk_n_5),
+       (.AR(rstblk_n_6),
         .E(p_20_out),
         .Q(p_13_out),
         .RD_PNTR_WR(p_25_out),
+        .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\gpf1.prog_full_i_reg (\gntv_or_sync_fifo.gl0.wr_n_1 ),
         .\grstd1.grst_full.grst_f.rst_d2_reg (rst_full_ff_i),
         .\grstd1.grst_full.grst_f.rst_d3_reg (rst_full_gen_i),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
         .\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] (wr_rst_pf_as),
         .out(full_int),
-        .prog_full_int(prog_full_int));
+        .prog_full_int(prog_full_int),
+        .ram_full_i_reg(E),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
   b2000t_c2c_bram_axi_chip2chip_0_0_memory \gntv_or_sync_fifo.mem 
        (.E(p_20_out),
         .Q(p_13_out),
         .SR(rd_rst_i[0]),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (Q),
+        .\data_out_reg[12] (Q),
         .\gc0.count_d1_reg[7] (p_0_out),
         .\gpregsm1.curr_fwft_state_reg[0] (p_6_out),
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .out(rstblk_n_0),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
   b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70 rstblk
-       (.AR(rstblk_n_5),
+       (.AR(rstblk_n_6),
         .D(D),
-        .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (rst_full_gen_i),
-        .E(p_20_out),
-        .SR(rstblk_n_10),
+        .E(E),
+        .SR(rstblk_n_11),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
         .fwft_rst_done_q(\gr1.gr1_int.rfwft/fwft_rst_done_q ),
         .\gdiff.diff_pntr_pad_reg[2] (wr_rst_pf_as),
-        .\gfwft_rst_done.fwft_rst_done_reg (rstblk_n_9),
+        .\gfwft_rst_done.fwft_rst_done_reg (rstblk_n_10),
         .\gfwft_rst_done.fwft_rst_done_reg_0 (fwft_rst_done),
         .m_aclk(m_aclk),
         .out(rstblk_n_0),
         .prog_full_int(prog_full_int),
         .ram_empty_i_reg({rd_rst_i[2],rd_rst_i[0]}),
-        .ram_full_fb_i_reg(\gntv_or_sync_fifo.gl0.wr_n_1 ),
         .ram_full_i_reg(rst_full_ff_i),
-        .ram_full_i_reg_0(full_int));
+        .ram_full_i_reg_0(full_int),
+        .\tdm_data_out_reg[2] (rst_full_gen_i),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_112
+module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_113
    (D,
+    E,
     m_axi_arvalid,
     \m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     ar_ch_data_valid,
     m_axi_arready);
   output [0:0]D;
+  output [0:0]E;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input ar_ch_data_valid;
   input m_axi_arready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
@@ -17163,18 +18965,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_112
   wire \gntv_or_sync_fifo.gcx.clkx_n_5 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_1 ;
   wire \gntv_or_sync_fifo.gl0.rd_n_8 ;
-  wire \gntv_or_sync_fifo.gl0.wr_n_1 ;
   wire \gr1.gr1_int.rfwft/fwft_rst_done_q ;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [7:0]p_0_out;
   wire [7:0]p_13_out;
   wire p_20_out;
   wire [7:0]p_24_out;
   wire [7:0]p_25_out;
   wire p_6_out;
+  wire [38:0]pack_data_out;
   wire prog_full_int;
   wire [4:1]rd_pntr_plus1;
   wire [2:0]rd_rst_i;
@@ -17182,13 +18985,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_112
   wire rst_full_gen_i;
   wire rstblk_n_0;
   wire rstblk_n_10;
-  wire rstblk_n_5;
-  wire rstblk_n_9;
+  wire rstblk_n_11;
+  wire rstblk_n_6;
   wire tmp_ram_rd_en;
+  wire wr_rst_busy_i2_out;
   wire wr_rst_pf_as;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_113 \gntv_or_sync_fifo.gcx.clkx 
-       (.AR(rstblk_n_5),
+  b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs_114 \gntv_or_sync_fifo.gcx.clkx 
+       (.AR(rstblk_n_6),
         .Q({p_24_out[7:5],p_24_out[0]}),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\gc0.count_d1_reg[7] (p_0_out),
@@ -17200,68 +19004,72 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_112
         .out(rstblk_n_0),
         .ram_empty_fb_i_reg(\gntv_or_sync_fifo.gcx.clkx_n_0 ),
         .ram_empty_fb_i_reg_0(\gntv_or_sync_fifo.gcx.clkx_n_5 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114 \gntv_or_sync_fifo.gl0.rd 
+  b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_115 \gntv_or_sync_fifo.gl0.rd 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (p_0_out),
         .E(\gntv_or_sync_fifo.gl0.rd_n_1 ),
         .Q(rd_pntr_plus1),
         .\Q_reg_reg[0] (rstblk_n_0),
-        .\Q_reg_reg[0]_0 (rstblk_n_9),
-        .SR(rstblk_n_10),
+        .\Q_reg_reg[0]_0 (rstblk_n_10),
+        .SR(rstblk_n_11),
         .fwft_rst_done_q(\gr1.gr1_int.rfwft/fwft_rst_done_q ),
         .\gc0.count_reg[3] (\gntv_or_sync_fifo.gcx.clkx_n_5 ),
         .\gnxpm_cdc.wr_pntr_bin_reg[6] (\gntv_or_sync_fifo.gcx.clkx_n_0 ),
         .\gnxpm_cdc.wr_pntr_bin_reg[7] ({p_24_out[7:5],p_24_out[0]}),
-        .\goreg_bm.dout_i_reg[44] (p_6_out),
+        .\goreg_bm.dout_i_reg[50] (p_6_out),
         .m_aclk(m_aclk),
         .m_axi_arready(m_axi_arready),
         .m_axi_arvalid(m_axi_arvalid),
         .out(rd_rst_i[2]),
         .ram_empty_fb_i_reg(\gntv_or_sync_fifo.gl0.rd_n_8 ),
         .tmp_ram_rd_en(tmp_ram_rd_en));
-  b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_115 \gntv_or_sync_fifo.gl0.wr 
-       (.AR(rstblk_n_5),
+  b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_116 \gntv_or_sync_fifo.gl0.wr 
+       (.AR(rstblk_n_6),
         .E(p_20_out),
         .Q(p_13_out),
+        .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\gnxpm_cdc.rd_pntr_bin_reg[7] (p_25_out),
-        .\gpf1.prog_full_i_reg (\gntv_or_sync_fifo.gl0.wr_n_1 ),
         .\grstd1.grst_full.grst_f.rst_d2_reg (rst_full_ff_i),
         .\grstd1.grst_full.grst_f.rst_d3_reg (rst_full_gen_i),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
         .\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] (wr_rst_pf_as),
         .out(full_int),
-        .prog_full_int(prog_full_int));
-  b2000t_c2c_bram_axi_chip2chip_0_0_memory_116 \gntv_or_sync_fifo.mem 
+        .prog_full_int(prog_full_int),
+        .ram_full_i_reg(E),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
+  b2000t_c2c_bram_axi_chip2chip_0_0_memory_117 \gntv_or_sync_fifo.mem 
        (.E(p_20_out),
         .Q(p_13_out),
         .SR(rd_rst_i[0]),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (Q),
+        .\data_out_reg[12] (Q),
         .\gc0.count_d1_reg[7] (p_0_out),
         .\gpregsm1.curr_fwft_state_reg[0] (p_6_out),
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .out(rstblk_n_0),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
-  b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117 rstblk
-       (.AR(rstblk_n_5),
+  b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_118 rstblk
+       (.AR(rstblk_n_6),
         .D(D),
-        .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (rst_full_gen_i),
-        .E(p_20_out),
-        .SR(rstblk_n_10),
+        .E(E),
+        .SR(rstblk_n_11),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
         .fwft_rst_done_q(\gr1.gr1_int.rfwft/fwft_rst_done_q ),
         .\gdiff.diff_pntr_pad_reg[2] (wr_rst_pf_as),
-        .\gfwft_rst_done.fwft_rst_done_reg (rstblk_n_9),
+        .\gfwft_rst_done.fwft_rst_done_reg (rstblk_n_10),
         .\gfwft_rst_done.fwft_rst_done_reg_0 (\gntv_or_sync_fifo.gl0.rd_n_1 ),
         .m_aclk(m_aclk),
+        .\mux_by_4.pack_reg0_reg[12] (rst_full_gen_i),
         .out(rstblk_n_0),
         .prog_full_int(prog_full_int),
         .ram_empty_i_reg({rd_rst_i[2],rd_rst_i[0]}),
-        .ram_full_fb_i_reg(\gntv_or_sync_fifo.gl0.wr_n_1 ),
         .ram_full_i_reg(rst_full_ff_i),
-        .ram_full_i_reg_0(full_int));
+        .ram_full_i_reg_0(full_int),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
@@ -17452,11 +19260,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized1
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -17465,8 +19273,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized1
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -17529,7 +19337,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized1
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\ctrl_info_reg[0] (\ctrl_info_reg[0] ),
         .fwft_rst_done_q(\gr1.gr1_int.rfwft/fwft_rst_done_q ),
-        .\goreg_bm.dout_i_reg[35] (p_6_out),
+        .\goreg_bm.dout_i_reg[41] (p_6_out),
         .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] (rd_rst_i[2]),
         .out(out),
         .p_12_in(p_12_in),
@@ -17539,8 +19347,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized1
         .tx_phy_ready(tx_phy_ready),
         .unpack_data_re(unpack_data_re));
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1 \gntv_or_sync_fifo.gl0.wr 
-       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram (\gntv_or_sync_fifo.gl0.wr_n_2 ),
-        .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_0 (p_13_out),
+       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (\gntv_or_sync_fifo.gl0.wr_n_2 ),
+        .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0 (p_13_out),
         .E(p_20_out),
         .Q(p_14_out),
         .RD_PNTR_WR(p_25_out),
@@ -17567,10 +19375,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized1
         .m_axi_rdata(m_axi_rdata),
         .out(rstblk_n_0),
         .s_ready_i_reg(p_6_out),
-        .\tdm_data_out_reg[41] (Q),
+        .\tdm_data_out_reg[47] (Q),
         .tmp_ram_rd_en(tmp_ram_rd_en));
   b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_30 rstblk
-       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram (p_20_out),
+       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (p_20_out),
         .E(\gntv_or_sync_fifo.gl0.rd_n_2 ),
         .SR(rstblk_n_5),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -17610,11 +19418,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     Q,
     int_ch1_ready5__1,
     m_axi_bready,
     \gnxpm_cdc.wr_pntr_gc_reg[7] ,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -17623,13 +19455,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -17646,31 +19478,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output [1:0]Q;
   output int_ch1_ready5__1;
   output m_axi_bready;
   output [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -17681,8 +19537,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
   wire \gntv_or_sync_fifo.gcx.clkx_n_0 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_3 ;
   wire \gntv_or_sync_fifo.gcx.clkx_n_4 ;
-  wire \gntv_or_sync_fifo.gl0.rd_n_1 ;
-  wire \gntv_or_sync_fifo.gl0.rd_n_10 ;
+  wire \gntv_or_sync_fifo.gl0.rd_n_8 ;
   wire [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
   wire \gpr1.dout_i_reg[0] ;
   wire \gpr1.dout_i_reg[0]_0 ;
@@ -17696,41 +19551,64 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
-  wire [0:0]\gr1.gr1_int.rfwft/p_0_in ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
-  wire [5:0]p_0_out_0;
+  wire [5:0]p_0_out;
   wire [5:0]p_12_out;
   wire [7:6]p_13_out;
   wire [1:0]p_22_out;
   wire [7:0]p_23_out;
-  wire p_2_out;
-  wire p_7_out;
+  wire p_5_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
+  wire ram_rd_en_i;
   wire [7:2]rd_pntr_plus1;
   wire [2:0]rd_rst_i;
   wire rst_full_ff_i;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
   wire [1:0]wr_rst_i;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_clk_x_pntrs \gntv_or_sync_fifo.gcx.clkx 
        (.AR(wr_rst_i[0]),
-        .Q({Q,p_0_out_0}),
+        .Q({Q,p_0_out}),
         .RD_PNTR_WR(p_23_out),
         .WR_PNTR_RD(p_22_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\gc0.count_reg[7] (rd_pntr_plus1),
         .\gic0.gc0.count_d1_reg[7] (p_13_out),
         .\gic0.gc0.count_d2_reg[7] ({\gnxpm_cdc.wr_pntr_gc_reg[7] ,p_12_out}),
-        .\gnxpm_cdc.wr_pntr_bin_reg[0]_0 (\gntv_or_sync_fifo.gl0.rd_n_10 ),
+        .\gnxpm_cdc.wr_pntr_bin_reg[0]_0 (\gntv_or_sync_fifo.gl0.rd_n_8 ),
         .m_aclk(m_aclk),
         .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] (rd_rst_i[1]),
         .out(out),
@@ -17739,20 +19617,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .ram_full_i_reg(\gntv_or_sync_fifo.gcx.clkx_n_4 ));
   b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2 \gntv_or_sync_fifo.gl0.rd 
        (.AR(rd_rst_i[2]),
+        .E(ram_rd_en_i),
         .Q(rd_pntr_plus1),
         .WR_PNTR_RD(p_22_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
         .\gc0.count_reg[5] (\gntv_or_sync_fifo.gcx.clkx_n_0 ),
-        .\gnxpm_cdc.rd_pntr_gc_reg[7] ({Q,p_0_out_0}),
+        .\gnxpm_cdc.rd_pntr_gc_reg[7] ({Q,p_0_out}),
         .\gnxpm_cdc.wr_pntr_bin_reg[2] (\gntv_or_sync_fifo.gcx.clkx_n_3 ),
-        .\gpregsm1.user_valid_reg ({\gntv_or_sync_fifo.gl0.rd_n_1 ,\gr1.gr1_int.rfwft/p_0_in }),
-        .\gpregsm1.user_valid_reg_0 (\gpregsm1.user_valid_reg ),
+        .\goreg_dm.dout_i_reg[8] (p_5_out),
         .int_ch1_ready5__1(int_ch1_ready5__1),
-        .out(p_2_out),
-        .p_7_out(p_7_out),
-        .ram_empty_fb_i_reg(\gntv_or_sync_fifo.gl0.rd_n_10 ),
+        .out(\gpregsm1.user_valid_reg ),
+        .ram_empty_fb_i_reg(\gntv_or_sync_fifo.gl0.rd_n_8 ),
         .slot_select(slot_select),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
@@ -17770,11 +19647,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .m_axi_bvalid(m_axi_bvalid),
         .out(\gic0.gc0.count_d1_reg[7] ));
   b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2 \gntv_or_sync_fifo.mem 
-       (.axi_c2c_phy_clk(axi_c2c_phy_clk),
+       (.AR(rd_rst_i[0]),
+        .D(D),
+        .E(ram_rd_en_i),
+        .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
-        .fifo_re__0(fifo_re__0),
-        .\gc0.count_d1_reg[5] (p_0_out_0),
+        .\gc0.count_d1_reg[5] (p_0_out),
         .\gic0.gc0.count_d2_reg[5] (p_12_out),
         .\gic0.gc0.count_d2_reg[6] (\gic0.gc0.count_d2_reg[6] ),
         .\gic0.gc0.count_d2_reg[7] (\gic0.gc0.count_d2_reg[7] ),
@@ -17790,14 +19668,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
-        .\gpregsm1.curr_fwft_state_reg[1] ({\gntv_or_sync_fifo.gl0.rd_n_1 ,\gr1.gr1_int.rfwft/p_0_in }),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .m_aclk(m_aclk),
-        .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] (rd_rst_i[0]),
-        .out(p_2_out),
-        .p_0_out(p_0_out),
-        .p_7_out(p_7_out),
         .ram_full_i_reg(ram_full_i_reg),
-        .ram_full_i_reg_0(ram_full_i_reg_0));
+        .ram_full_i_reg_0(ram_full_i_reg_0),
+        .s_ready_i_reg(p_5_out),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ));
   b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo__parameterized0 rstblk
        (.axi_c2c_phy_clk(axi_c2c_phy_clk),
         .br_fifo_reset(br_fifo_reset),
@@ -17808,38 +19707,49 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2
         .out(wr_rst_i));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top
-   (D,
+   (E,
+    D,
     m_axi_awvalid,
     \m_axi_awaddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     aw_ch_data_valid,
     m_axi_awready);
+  output [0:0]E;
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input aw_ch_data_valid;
   input m_axi_awready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo \grf.rf 
        (.D(D),
+        .E(E),
         .Q(Q),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -17847,42 +19757,54 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_top" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top_111
+module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top_112
    (D,
+    E,
     m_axi_arvalid,
     \m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     ar_ch_data_valid,
     m_axi_arready);
   output [0:0]D;
+  output [0:0]E;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input ar_ch_data_valid;
   input m_axi_arready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_112 \grf.rf 
+  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo_113 \grf.rf 
        (.D(D),
+        .E(E),
         .Q(Q),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -17890,7 +19812,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top_111
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_top" *) 
@@ -17956,11 +19880,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized1
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -17969,8 +19893,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized1
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -18021,11 +19945,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     Q,
     int_ch1_ready5__1,
     m_axi_bready,
     \gnxpm_cdc.wr_pntr_gc_reg[7] ,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -18034,13 +19982,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -18057,31 +20005,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output [1:0]Q;
   output int_ch1_ready5__1;
   output m_axi_bready;
   output [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -18102,24 +20074,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_ramfifo__parameterized2 \grf.rf 
-       (.Q(Q),
+       (.D(D),
+        .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
@@ -18140,52 +20136,87 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .\gpregsm1.user_valid_reg (\gpregsm1.user_valid_reg ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(out),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0),
         .slot_select(slot_select),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_1_3" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3
-   (D,
+   (E,
+    D,
     m_axi_awvalid,
     \m_axi_awaddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     aw_ch_data_valid,
     m_axi_awready);
+  output [0:0]E;
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input aw_ch_data_valid;
   input m_axi_awready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth inst_fifo_gen
        (.D(D),
+        .E(E),
         .Q(Q),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -18193,42 +20224,54 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_v13_1_3" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_109
+module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_110
    (D,
+    E,
     m_axi_arvalid,
     \m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     ar_ch_data_valid,
     m_axi_arready);
   output [0:0]D;
+  output [0:0]E;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input ar_ch_data_valid;
   input m_axi_arready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth_110 inst_fifo_gen
+  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth_111 inst_fifo_gen
        (.D(D),
+        .E(E),
         .Q(Q),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -18236,7 +20279,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_109
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_v13_1_3" *) 
@@ -18302,11 +20347,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized1
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -18315,8 +20360,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized1
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -18367,11 +20412,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     Q,
     int_ch1_ready5__1,
     m_axi_bready,
     \gnxpm_cdc.wr_pntr_gc_reg[7] ,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -18380,13 +20449,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -18403,31 +20472,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output [1:0]Q;
   output int_ch1_ready5__1;
   output m_axi_bready;
   output [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -18448,24 +20541,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameterized2 inst_fifo_gen
-       (.Q(Q),
+       (.D(D),
+        .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
@@ -18486,52 +20603,87 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3__parameterized2
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .\gpregsm1.user_valid_reg (\gpregsm1.user_valid_reg ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(out),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0),
         .slot_select(slot_select),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_v13_1_3_synth" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth
-   (D,
+   (E,
+    D,
     m_axi_awvalid,
     \m_axi_awaddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     aw_ch_data_valid,
     m_axi_awready);
+  output [0:0]E;
   output [0:0]D;
   output m_axi_awvalid;
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input aw_ch_data_valid;
   input m_axi_awready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire m_axi_awready;
   wire m_axi_awvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top \gconvfifo.rf 
        (.D(D),
+        .E(E),
         .Q(Q),
         .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -18539,42 +20691,54 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth
         .m_aclk(m_aclk),
         .\m_axi_awaddr[31] (\m_axi_awaddr[31] ),
         .m_axi_awready(m_axi_awready),
-        .m_axi_awvalid(m_axi_awvalid));
+        .m_axi_awvalid(m_axi_awvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_v13_1_3_synth" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth_110
+module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth_111
    (D,
+    E,
     m_axi_arvalid,
     \m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
+    pack_data_out,
     Q,
     br_fifo_reset,
+    \mux_by_4.data_count_reg[3] ,
     ar_ch_data_valid,
     m_axi_arready);
   output [0:0]D;
+  output [0:0]E;
   output m_axi_arvalid;
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
-  input [44:0]Q;
+  input [38:0]pack_data_out;
+  input [12:0]Q;
   input br_fifo_reset;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
   input ar_ch_data_valid;
   input m_axi_arready;
 
   wire [0:0]D;
-  wire [44:0]Q;
+  wire [0:0]E;
+  wire [12:0]Q;
   wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire m_axi_arready;
   wire m_axi_arvalid;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
+  wire [38:0]pack_data_out;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top_111 \gconvfifo.rf 
+  b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top_112 \gconvfifo.rf 
        (.D(D),
+        .E(E),
         .Q(Q),
         .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -18582,7 +20746,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth_110
         .m_aclk(m_aclk),
         .\m_axi_araddr[31] (\m_axi_araddr[31] ),
         .m_axi_arready(m_axi_arready),
-        .m_axi_arvalid(m_axi_arvalid));
+        .m_axi_arvalid(m_axi_arvalid),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .pack_data_out(pack_data_out));
 endmodule
 
 (* ORIG_REF_NAME = "fifo_generator_v13_1_3_synth" *) 
@@ -18648,11 +20814,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
   output out;
   output p_12_in;
   output m_axi_rready;
-  output [35:0]Q;
+  output [41:0]Q;
   input axi_c2c_phy_clk;
   input m_aclk;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input br_fifo_reset;
   input [0:0]slot_select;
   input tdm_user_data_ready;
@@ -18661,8 +20827,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
   input [0:0]\ctrl_info_reg[0] ;
   input m_axi_rvalid;
 
-  wire [3:0]DIADI;
-  wire [35:0]Q;
+  wire [9:0]DIADI;
+  wire [41:0]Q;
   wire axi_c2c_phy_clk;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[0] ;
@@ -18713,11 +20879,35 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
     Q,
     int_ch1_ready5__1,
     m_axi_bready,
     \gnxpm_cdc.wr_pntr_gc_reg[7] ,
-    br_ch_data,
+    \tdm_data_out_reg[14] ,
     axi_c2c_phy_clk,
     m_aclk,
     br_fifo_reset,
@@ -18726,13 +20916,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] ,
     m_axi_bvalid,
-    p_0_out);
+    D);
   output out;
   output \gpregsm1.user_valid_reg ;
   output \gic0.gc0.count_d1_reg[7] ;
@@ -18749,31 +20939,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
   output [1:0]Q;
   output int_ch1_ready5__1;
   output m_axi_bready;
   output [1:0]\gnxpm_cdc.wr_pntr_gc_reg[7] ;
-  output [2:0]br_ch_data;
+  output [8:0]\tdm_data_out_reg[14] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input br_fifo_reset;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
   input m_axi_bvalid;
-  input [2:0]p_0_out;
+  input [8:0]D;
 
+  wire [8:0]D;
   wire [1:0]Q;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
+  wire [8:0]bfifo_data;
   wire br_fifo_reset;
   wire [0:0]\ctrl_info_reg[1] ;
   wire fifo_re__0;
@@ -18794,24 +21008,48 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire \gpregsm1.user_valid_reg ;
   wire int_ch1_ready5__1;
   wire m_aclk;
   wire m_axi_bready;
   wire m_axi_bvalid;
   wire out;
-  wire [2:0]p_0_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
   wire [0:0]slot_select;
+  wire [8:0]\tdm_data_out_reg[14] ;
   wire tdm_user_data_ready;
   wire tx_phy_ready;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_top__parameterized2 \gconvfifo.rf 
-       (.Q(Q),
+       (.D(D),
+        .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
-        .br_ch_data(br_ch_data),
         .br_fifo_reset(br_fifo_reset),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
@@ -18832,20 +21070,45 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_fifo_generator_v13_1_3_synth__parameter
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_2 ),
+        .\gpr1.dout_i_reg[3] (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4] (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5] (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6] (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7] (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8] (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_2 ),
         .\gpregsm1.user_valid_reg (\gpregsm1.user_valid_reg ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
         .m_aclk(m_aclk),
         .m_axi_bready(m_axi_bready),
         .m_axi_bvalid(m_axi_bvalid),
         .out(out),
-        .p_0_out(p_0_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0),
         .slot_select(slot_select),
+        .\tdm_data_out_reg[14] (\tdm_data_out_reg[14] ),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
 endmodule
 
+(* ORIG_REF_NAME = "memory" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_memory
    (\m_axi_awaddr[31] ,
     m_aclk,
@@ -18855,10 +21118,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] ,
+    pack_data_out,
+    \data_out_reg[12] ,
     SR,
     \gpregsm1.curr_fwft_state_reg[0] );
-  output [44:0]\m_axi_awaddr[31] ;
+  output [50:0]\m_axi_awaddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -18866,7 +21130,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
   input [0:0]SR;
   input [0:0]\gpregsm1.curr_fwft_state_reg[0] ;
 
@@ -18874,13 +21139,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
   wire [7:0]Q;
   wire [0:0]SR;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
-  wire [44:0]doutb;
+  wire [12:0]\data_out_reg[12] ;
+  wire [50:0]doutb;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire [0:0]\gpregsm1.curr_fwft_state_reg[0] ;
   wire m_aclk;
-  wire [44:0]\m_axi_awaddr[31] ;
+  wire [50:0]\m_axi_awaddr[31] ;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5 \gbm.gbmg.gbmga.ngecc.bmg 
@@ -18888,10 +21154,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
   FDRE #(
     .INIT(1'b0)) 
@@ -19207,11 +21474,59 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[45] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[45]),
+        .Q(\m_axi_awaddr[31] [45]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[46] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[46]),
+        .Q(\m_axi_awaddr[31] [46]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[47] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[47]),
+        .Q(\m_axi_awaddr[31] [47]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[48] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[48]),
+        .Q(\m_axi_awaddr[31] [48]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[49] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[49]),
+        .Q(\m_axi_awaddr[31] [49]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
     \goreg_bm.dout_i_reg[4] 
        (.C(m_aclk),
         .CE(\gpregsm1.curr_fwft_state_reg[0] ),
         .D(doutb[4]),
         .Q(\m_axi_awaddr[31] [4]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[50] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[50]),
+        .Q(\m_axi_awaddr[31] [50]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -19256,7 +21571,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory
 endmodule
 
 (* ORIG_REF_NAME = "memory" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_memory_116
+module b2000t_c2c_bram_axi_chip2chip_0_0_memory_117
    (\m_axi_araddr[31] ,
     m_aclk,
     axi_c2c_phy_clk,
@@ -19265,10 +21580,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory_116
     out,
     \gc0.count_d1_reg[7] ,
     Q,
-    \data_out_reg[44] ,
+    pack_data_out,
+    \data_out_reg[12] ,
     SR,
     \gpregsm1.curr_fwft_state_reg[0] );
-  output [44:0]\m_axi_araddr[31] ;
+  output [50:0]\m_axi_araddr[31] ;
   input m_aclk;
   input axi_c2c_phy_clk;
   input tmp_ram_rd_en;
@@ -19276,7 +21592,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory_116
   input out;
   input [7:0]\gc0.count_d1_reg[7] ;
   input [7:0]Q;
-  input [44:0]\data_out_reg[44] ;
+  input [38:0]pack_data_out;
+  input [12:0]\data_out_reg[12] ;
   input [0:0]SR;
   input [0:0]\gpregsm1.curr_fwft_state_reg[0] ;
 
@@ -19284,24 +21601,26 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory_116
   wire [7:0]Q;
   wire [0:0]SR;
   wire axi_c2c_phy_clk;
-  wire [44:0]\data_out_reg[44] ;
-  wire [44:0]doutb;
+  wire [12:0]\data_out_reg[12] ;
+  wire [50:0]doutb;
   wire [7:0]\gc0.count_d1_reg[7] ;
   wire [0:0]\gpregsm1.curr_fwft_state_reg[0] ;
   wire m_aclk;
-  wire [44:0]\m_axi_araddr[31] ;
+  wire [50:0]\m_axi_araddr[31] ;
   wire out;
+  wire [38:0]pack_data_out;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_148 \gbm.gbmg.gbmga.ngecc.bmg 
+  b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5_149 \gbm.gbmg.gbmga.ngecc.bmg 
        (.D(doutb),
         .E(E),
         .Q(Q),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .\data_out_reg[44] (\data_out_reg[44] ),
+        .\data_out_reg[12] (\data_out_reg[12] ),
         .\gc0.count_d1_reg[7] (\gc0.count_d1_reg[7] ),
         .m_aclk(m_aclk),
         .out(out),
+        .pack_data_out(pack_data_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
   FDRE #(
     .INIT(1'b0)) 
@@ -19617,11 +21936,59 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory_116
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[45] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[45]),
+        .Q(\m_axi_araddr[31] [45]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[46] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[46]),
+        .Q(\m_axi_araddr[31] [46]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[47] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[47]),
+        .Q(\m_axi_araddr[31] [47]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[48] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[48]),
+        .Q(\m_axi_araddr[31] [48]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[49] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[49]),
+        .Q(\m_axi_araddr[31] [49]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
     \goreg_bm.dout_i_reg[4] 
        (.C(m_aclk),
         .CE(\gpregsm1.curr_fwft_state_reg[0] ),
         .D(doutb[4]),
         .Q(\m_axi_araddr[31] [4]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[50] 
+       (.C(m_aclk),
+        .CE(\gpregsm1.curr_fwft_state_reg[0] ),
+        .D(doutb[50]),
+        .Q(\m_axi_araddr[31] [50]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20021,7 +22388,7 @@ endmodule
 
 (* ORIG_REF_NAME = "memory" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
-   (\tdm_data_out_reg[41] ,
+   (\tdm_data_out_reg[47] ,
     axi_c2c_phy_clk,
     m_aclk,
     tmp_ram_rd_en,
@@ -20033,7 +22400,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
     DIADI,
     SR,
     s_ready_i_reg);
-  output [35:0]\tdm_data_out_reg[41] ;
+  output [41:0]\tdm_data_out_reg[47] ;
   input axi_c2c_phy_clk;
   input m_aclk;
   input tmp_ram_rd_en;
@@ -20042,22 +22409,22 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
   input [8:0]Q;
   input [8:0]\gic0.gc0.count_d2_reg[8] ;
   input [31:0]m_axi_rdata;
-  input [3:0]DIADI;
+  input [9:0]DIADI;
   input [0:0]SR;
   input [0:0]s_ready_i_reg;
 
-  wire [3:0]DIADI;
+  wire [9:0]DIADI;
   wire [0:0]E;
   wire [8:0]Q;
   wire [0:0]SR;
   wire axi_c2c_phy_clk;
-  wire [35:0]doutb;
+  wire [41:0]doutb;
   wire [8:0]\gic0.gc0.count_d2_reg[8] ;
   wire m_aclk;
   wire [31:0]m_axi_rdata;
   wire out;
   wire [0:0]s_ready_i_reg;
-  wire [35:0]\tdm_data_out_reg[41] ;
+  wire [41:0]\tdm_data_out_reg[47] ;
   wire tmp_ram_rd_en;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_blk_mem_gen_v8_3_5__parameterized3 \gbm.gbmg.gbmga.ngecc.bmg 
@@ -20077,7 +22444,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[0]),
-        .Q(\tdm_data_out_reg[41] [0]),
+        .Q(\tdm_data_out_reg[47] [0]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20085,7 +22452,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[10]),
-        .Q(\tdm_data_out_reg[41] [10]),
+        .Q(\tdm_data_out_reg[47] [10]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20093,7 +22460,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[11]),
-        .Q(\tdm_data_out_reg[41] [11]),
+        .Q(\tdm_data_out_reg[47] [11]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20101,7 +22468,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[12]),
-        .Q(\tdm_data_out_reg[41] [12]),
+        .Q(\tdm_data_out_reg[47] [12]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20109,7 +22476,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[13]),
-        .Q(\tdm_data_out_reg[41] [13]),
+        .Q(\tdm_data_out_reg[47] [13]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20117,7 +22484,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[14]),
-        .Q(\tdm_data_out_reg[41] [14]),
+        .Q(\tdm_data_out_reg[47] [14]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20125,7 +22492,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[15]),
-        .Q(\tdm_data_out_reg[41] [15]),
+        .Q(\tdm_data_out_reg[47] [15]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20133,7 +22500,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[16]),
-        .Q(\tdm_data_out_reg[41] [16]),
+        .Q(\tdm_data_out_reg[47] [16]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20141,7 +22508,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[17]),
-        .Q(\tdm_data_out_reg[41] [17]),
+        .Q(\tdm_data_out_reg[47] [17]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20149,7 +22516,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[18]),
-        .Q(\tdm_data_out_reg[41] [18]),
+        .Q(\tdm_data_out_reg[47] [18]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20157,7 +22524,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[19]),
-        .Q(\tdm_data_out_reg[41] [19]),
+        .Q(\tdm_data_out_reg[47] [19]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20165,7 +22532,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[1]),
-        .Q(\tdm_data_out_reg[41] [1]),
+        .Q(\tdm_data_out_reg[47] [1]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20173,7 +22540,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[20]),
-        .Q(\tdm_data_out_reg[41] [20]),
+        .Q(\tdm_data_out_reg[47] [20]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20181,7 +22548,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[21]),
-        .Q(\tdm_data_out_reg[41] [21]),
+        .Q(\tdm_data_out_reg[47] [21]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20189,7 +22556,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[22]),
-        .Q(\tdm_data_out_reg[41] [22]),
+        .Q(\tdm_data_out_reg[47] [22]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20197,7 +22564,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[23]),
-        .Q(\tdm_data_out_reg[41] [23]),
+        .Q(\tdm_data_out_reg[47] [23]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20205,7 +22572,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[24]),
-        .Q(\tdm_data_out_reg[41] [24]),
+        .Q(\tdm_data_out_reg[47] [24]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20213,7 +22580,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[25]),
-        .Q(\tdm_data_out_reg[41] [25]),
+        .Q(\tdm_data_out_reg[47] [25]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20221,7 +22588,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[26]),
-        .Q(\tdm_data_out_reg[41] [26]),
+        .Q(\tdm_data_out_reg[47] [26]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20229,7 +22596,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[27]),
-        .Q(\tdm_data_out_reg[41] [27]),
+        .Q(\tdm_data_out_reg[47] [27]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20237,7 +22604,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[28]),
-        .Q(\tdm_data_out_reg[41] [28]),
+        .Q(\tdm_data_out_reg[47] [28]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20245,7 +22612,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[29]),
-        .Q(\tdm_data_out_reg[41] [29]),
+        .Q(\tdm_data_out_reg[47] [29]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20253,7 +22620,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[2]),
-        .Q(\tdm_data_out_reg[41] [2]),
+        .Q(\tdm_data_out_reg[47] [2]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20261,7 +22628,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[30]),
-        .Q(\tdm_data_out_reg[41] [30]),
+        .Q(\tdm_data_out_reg[47] [30]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20269,7 +22636,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[31]),
-        .Q(\tdm_data_out_reg[41] [31]),
+        .Q(\tdm_data_out_reg[47] [31]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20277,7 +22644,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[32]),
-        .Q(\tdm_data_out_reg[41] [32]),
+        .Q(\tdm_data_out_reg[47] [32]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20285,7 +22652,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[33]),
-        .Q(\tdm_data_out_reg[41] [33]),
+        .Q(\tdm_data_out_reg[47] [33]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20293,7 +22660,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[34]),
-        .Q(\tdm_data_out_reg[41] [34]),
+        .Q(\tdm_data_out_reg[47] [34]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20301,7 +22668,39 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[35]),
-        .Q(\tdm_data_out_reg[41] [35]),
+        .Q(\tdm_data_out_reg[47] [35]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[36] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[36]),
+        .Q(\tdm_data_out_reg[47] [36]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[37] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[37]),
+        .Q(\tdm_data_out_reg[47] [37]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[38] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[38]),
+        .Q(\tdm_data_out_reg[47] [38]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[39] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[39]),
+        .Q(\tdm_data_out_reg[47] [39]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20309,7 +22708,23 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[3]),
-        .Q(\tdm_data_out_reg[41] [3]),
+        .Q(\tdm_data_out_reg[47] [3]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[40] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[40]),
+        .Q(\tdm_data_out_reg[47] [40]),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \goreg_bm.dout_i_reg[41] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .D(doutb[41]),
+        .Q(\tdm_data_out_reg[47] [41]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20317,7 +22732,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[4]),
-        .Q(\tdm_data_out_reg[41] [4]),
+        .Q(\tdm_data_out_reg[47] [4]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20325,7 +22740,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[5]),
-        .Q(\tdm_data_out_reg[41] [5]),
+        .Q(\tdm_data_out_reg[47] [5]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20333,7 +22748,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[6]),
-        .Q(\tdm_data_out_reg[41] [6]),
+        .Q(\tdm_data_out_reg[47] [6]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20341,7 +22756,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[7]),
-        .Q(\tdm_data_out_reg[41] [7]),
+        .Q(\tdm_data_out_reg[47] [7]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20349,7 +22764,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[8]),
-        .Q(\tdm_data_out_reg[41] [8]),
+        .Q(\tdm_data_out_reg[47] [8]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -20357,7 +22772,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized1
        (.C(axi_c2c_phy_clk),
         .CE(s_ready_i_reg),
         .D(doutb[9]),
-        .Q(\tdm_data_out_reg[41] [9]),
+        .Q(\tdm_data_out_reg[47] [9]),
         .R(SR));
 endmodule
 
@@ -20375,7 +22790,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
     \gpr1.dout_i_reg[0]_2 ,
     \gpr1.dout_i_reg[1]_2 ,
     \gpr1.dout_i_reg[2]_2 ,
-    br_ch_data,
+    \gpr1.dout_i_reg[3] ,
+    \gpr1.dout_i_reg[4] ,
+    \gpr1.dout_i_reg[5] ,
+    \gpr1.dout_i_reg[3]_0 ,
+    \gpr1.dout_i_reg[4]_0 ,
+    \gpr1.dout_i_reg[5]_0 ,
+    \gpr1.dout_i_reg[3]_1 ,
+    \gpr1.dout_i_reg[4]_1 ,
+    \gpr1.dout_i_reg[5]_1 ,
+    \gpr1.dout_i_reg[3]_2 ,
+    \gpr1.dout_i_reg[4]_2 ,
+    \gpr1.dout_i_reg[5]_2 ,
+    \gpr1.dout_i_reg[6] ,
+    \gpr1.dout_i_reg[7] ,
+    \gpr1.dout_i_reg[8] ,
+    \gpr1.dout_i_reg[6]_0 ,
+    \gpr1.dout_i_reg[7]_0 ,
+    \gpr1.dout_i_reg[8]_0 ,
+    \gpr1.dout_i_reg[6]_1 ,
+    \gpr1.dout_i_reg[7]_1 ,
+    \gpr1.dout_i_reg[8]_1 ,
+    \gpr1.dout_i_reg[6]_2 ,
+    \gpr1.dout_i_reg[7]_2 ,
+    \gpr1.dout_i_reg[8]_2 ,
+    \tdm_data_out_reg[14] ,
     m_aclk,
     bfifo_data,
     ram_full_i_reg,
@@ -20384,13 +22823,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
     \gic0.gc0.count_d2_reg[7] ,
     \gic0.gc0.count_d2_reg[6] ,
     ram_full_i_reg_0,
-    p_0_out,
-    p_7_out,
-    out,
+    E,
+    D,
     axi_c2c_phy_clk,
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ,
-    fifo_re__0,
-    \gpregsm1.curr_fwft_state_reg[1] );
+    AR,
+    s_ready_i_reg);
   output \gpr1.dout_i_reg[0] ;
   output \gpr1.dout_i_reg[1] ;
   output \gpr1.dout_i_reg[2] ;
@@ -20403,37 +22840,63 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
   output \gpr1.dout_i_reg[0]_2 ;
   output \gpr1.dout_i_reg[1]_2 ;
   output \gpr1.dout_i_reg[2]_2 ;
-  output [2:0]br_ch_data;
+  output \gpr1.dout_i_reg[3] ;
+  output \gpr1.dout_i_reg[4] ;
+  output \gpr1.dout_i_reg[5] ;
+  output \gpr1.dout_i_reg[3]_0 ;
+  output \gpr1.dout_i_reg[4]_0 ;
+  output \gpr1.dout_i_reg[5]_0 ;
+  output \gpr1.dout_i_reg[3]_1 ;
+  output \gpr1.dout_i_reg[4]_1 ;
+  output \gpr1.dout_i_reg[5]_1 ;
+  output \gpr1.dout_i_reg[3]_2 ;
+  output \gpr1.dout_i_reg[4]_2 ;
+  output \gpr1.dout_i_reg[5]_2 ;
+  output \gpr1.dout_i_reg[6] ;
+  output \gpr1.dout_i_reg[7] ;
+  output \gpr1.dout_i_reg[8] ;
+  output \gpr1.dout_i_reg[6]_0 ;
+  output \gpr1.dout_i_reg[7]_0 ;
+  output \gpr1.dout_i_reg[8]_0 ;
+  output \gpr1.dout_i_reg[6]_1 ;
+  output \gpr1.dout_i_reg[7]_1 ;
+  output \gpr1.dout_i_reg[8]_1 ;
+  output \gpr1.dout_i_reg[6]_2 ;
+  output \gpr1.dout_i_reg[7]_2 ;
+  output \gpr1.dout_i_reg[8]_2 ;
+  output [8:0]\tdm_data_out_reg[14] ;
   input m_aclk;
-  input [2:0]bfifo_data;
+  input [8:0]bfifo_data;
   input ram_full_i_reg;
   input [5:0]\gc0.count_d1_reg[5] ;
   input [5:0]\gic0.gc0.count_d2_reg[5] ;
   input \gic0.gc0.count_d2_reg[7] ;
   input \gic0.gc0.count_d2_reg[6] ;
   input ram_full_i_reg_0;
-  input [2:0]p_0_out;
-  input p_7_out;
-  input out;
+  input [0:0]E;
+  input [8:0]D;
   input axi_c2c_phy_clk;
-  input [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ;
-  input fifo_re__0;
-  input [1:0]\gpregsm1.curr_fwft_state_reg[1] ;
+  input [0:0]AR;
+  input [0:0]s_ready_i_reg;
 
+  wire [0:0]AR;
+  wire [8:0]D;
+  wire [0:0]E;
   wire axi_c2c_phy_clk;
-  wire [2:0]bfifo_data;
-  wire [2:0]br_ch_data;
-  wire fifo_re__0;
+  wire [8:0]bfifo_data;
   wire [5:0]\gc0.count_d1_reg[5] ;
-  wire \gdm.dm_gen.dm_n_12 ;
-  wire \gdm.dm_gen.dm_n_13 ;
-  wire \gdm.dm_gen.dm_n_14 ;
+  wire \gdm.dm_gen.dm_n_36 ;
+  wire \gdm.dm_gen.dm_n_37 ;
+  wire \gdm.dm_gen.dm_n_38 ;
+  wire \gdm.dm_gen.dm_n_39 ;
+  wire \gdm.dm_gen.dm_n_40 ;
+  wire \gdm.dm_gen.dm_n_41 ;
+  wire \gdm.dm_gen.dm_n_42 ;
+  wire \gdm.dm_gen.dm_n_43 ;
+  wire \gdm.dm_gen.dm_n_44 ;
   wire [5:0]\gic0.gc0.count_d2_reg[5] ;
   wire \gic0.gc0.count_d2_reg[6] ;
   wire \gic0.gc0.count_d2_reg[7] ;
-  wire \goreg_dm.dout_i[0]_i_1_n_0 ;
-  wire \goreg_dm.dout_i[1]_i_1_n_0 ;
-  wire \goreg_dm.dout_i[2]_i_1_n_0 ;
   wire \gpr1.dout_i_reg[0] ;
   wire \gpr1.dout_i_reg[0]_0 ;
   wire \gpr1.dout_i_reg[0]_1 ;
@@ -20446,17 +22909,42 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
   wire \gpr1.dout_i_reg[2]_0 ;
   wire \gpr1.dout_i_reg[2]_1 ;
   wire \gpr1.dout_i_reg[2]_2 ;
-  wire [1:0]\gpregsm1.curr_fwft_state_reg[1] ;
+  wire \gpr1.dout_i_reg[3] ;
+  wire \gpr1.dout_i_reg[3]_0 ;
+  wire \gpr1.dout_i_reg[3]_1 ;
+  wire \gpr1.dout_i_reg[3]_2 ;
+  wire \gpr1.dout_i_reg[4] ;
+  wire \gpr1.dout_i_reg[4]_0 ;
+  wire \gpr1.dout_i_reg[4]_1 ;
+  wire \gpr1.dout_i_reg[4]_2 ;
+  wire \gpr1.dout_i_reg[5] ;
+  wire \gpr1.dout_i_reg[5]_0 ;
+  wire \gpr1.dout_i_reg[5]_1 ;
+  wire \gpr1.dout_i_reg[5]_2 ;
+  wire \gpr1.dout_i_reg[6] ;
+  wire \gpr1.dout_i_reg[6]_0 ;
+  wire \gpr1.dout_i_reg[6]_1 ;
+  wire \gpr1.dout_i_reg[6]_2 ;
+  wire \gpr1.dout_i_reg[7] ;
+  wire \gpr1.dout_i_reg[7]_0 ;
+  wire \gpr1.dout_i_reg[7]_1 ;
+  wire \gpr1.dout_i_reg[7]_2 ;
+  wire \gpr1.dout_i_reg[8] ;
+  wire \gpr1.dout_i_reg[8]_0 ;
+  wire \gpr1.dout_i_reg[8]_1 ;
+  wire \gpr1.dout_i_reg[8]_2 ;
   wire m_aclk;
-  wire [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ;
-  wire out;
-  wire [2:0]p_0_out;
-  wire p_7_out;
   wire ram_full_i_reg;
   wire ram_full_i_reg_0;
+  wire [0:0]s_ready_i_reg;
+  wire [8:0]\tdm_data_out_reg[14] ;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_dmem \gdm.dm_gen.dm 
-       (.axi_c2c_phy_clk(axi_c2c_phy_clk),
+       (.AR(AR),
+        .D(D),
+        .E(E),
+        .Q({\gdm.dm_gen.dm_n_36 ,\gdm.dm_gen.dm_n_37 ,\gdm.dm_gen.dm_n_38 ,\gdm.dm_gen.dm_n_39 ,\gdm.dm_gen.dm_n_40 ,\gdm.dm_gen.dm_n_41 ,\gdm.dm_gen.dm_n_42 ,\gdm.dm_gen.dm_n_43 ,\gdm.dm_gen.dm_n_44 }),
+        .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .bfifo_data(bfifo_data),
         .\gc0.count_d1_reg[5] (\gc0.count_d1_reg[5] ),
         .\gic0.gc0.count_d2_reg[5] (\gic0.gc0.count_d2_reg[5] ),
@@ -20466,77 +22954,116 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_memory__parameterized2
         .\gpr1.dout_i_reg[0]_1 (\gpr1.dout_i_reg[0]_0 ),
         .\gpr1.dout_i_reg[0]_2 (\gpr1.dout_i_reg[0]_1 ),
         .\gpr1.dout_i_reg[0]_3 (\gpr1.dout_i_reg[0]_2 ),
-        .\gpr1.dout_i_reg[0]_4 (\gdm.dm_gen.dm_n_12 ),
         .\gpr1.dout_i_reg[1]_0 (\gpr1.dout_i_reg[1] ),
         .\gpr1.dout_i_reg[1]_1 (\gpr1.dout_i_reg[1]_0 ),
         .\gpr1.dout_i_reg[1]_2 (\gpr1.dout_i_reg[1]_1 ),
         .\gpr1.dout_i_reg[1]_3 (\gpr1.dout_i_reg[1]_2 ),
-        .\gpr1.dout_i_reg[1]_4 (\gdm.dm_gen.dm_n_13 ),
         .\gpr1.dout_i_reg[2]_0 (\gpr1.dout_i_reg[2] ),
         .\gpr1.dout_i_reg[2]_1 (\gpr1.dout_i_reg[2]_0 ),
         .\gpr1.dout_i_reg[2]_2 (\gpr1.dout_i_reg[2]_1 ),
         .\gpr1.dout_i_reg[2]_3 (\gpr1.dout_i_reg[2]_2 ),
-        .\gpr1.dout_i_reg[2]_4 (\gdm.dm_gen.dm_n_14 ),
+        .\gpr1.dout_i_reg[3]_0 (\gpr1.dout_i_reg[3] ),
+        .\gpr1.dout_i_reg[3]_1 (\gpr1.dout_i_reg[3]_0 ),
+        .\gpr1.dout_i_reg[3]_2 (\gpr1.dout_i_reg[3]_1 ),
+        .\gpr1.dout_i_reg[3]_3 (\gpr1.dout_i_reg[3]_2 ),
+        .\gpr1.dout_i_reg[4]_0 (\gpr1.dout_i_reg[4] ),
+        .\gpr1.dout_i_reg[4]_1 (\gpr1.dout_i_reg[4]_0 ),
+        .\gpr1.dout_i_reg[4]_2 (\gpr1.dout_i_reg[4]_1 ),
+        .\gpr1.dout_i_reg[4]_3 (\gpr1.dout_i_reg[4]_2 ),
+        .\gpr1.dout_i_reg[5]_0 (\gpr1.dout_i_reg[5] ),
+        .\gpr1.dout_i_reg[5]_1 (\gpr1.dout_i_reg[5]_0 ),
+        .\gpr1.dout_i_reg[5]_2 (\gpr1.dout_i_reg[5]_1 ),
+        .\gpr1.dout_i_reg[5]_3 (\gpr1.dout_i_reg[5]_2 ),
+        .\gpr1.dout_i_reg[6]_0 (\gpr1.dout_i_reg[6] ),
+        .\gpr1.dout_i_reg[6]_1 (\gpr1.dout_i_reg[6]_0 ),
+        .\gpr1.dout_i_reg[6]_2 (\gpr1.dout_i_reg[6]_1 ),
+        .\gpr1.dout_i_reg[6]_3 (\gpr1.dout_i_reg[6]_2 ),
+        .\gpr1.dout_i_reg[7]_0 (\gpr1.dout_i_reg[7] ),
+        .\gpr1.dout_i_reg[7]_1 (\gpr1.dout_i_reg[7]_0 ),
+        .\gpr1.dout_i_reg[7]_2 (\gpr1.dout_i_reg[7]_1 ),
+        .\gpr1.dout_i_reg[7]_3 (\gpr1.dout_i_reg[7]_2 ),
+        .\gpr1.dout_i_reg[8]_0 (\gpr1.dout_i_reg[8] ),
+        .\gpr1.dout_i_reg[8]_1 (\gpr1.dout_i_reg[8]_0 ),
+        .\gpr1.dout_i_reg[8]_2 (\gpr1.dout_i_reg[8]_1 ),
+        .\gpr1.dout_i_reg[8]_3 (\gpr1.dout_i_reg[8]_2 ),
         .m_aclk(m_aclk),
-        .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] (\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .out(out),
-        .p_0_out(p_0_out),
-        .p_7_out(p_7_out),
         .ram_full_i_reg(ram_full_i_reg),
         .ram_full_i_reg_0(ram_full_i_reg_0));
-  LUT5 #(
-    .INIT(32'hBAFF8A00)) 
-    \goreg_dm.dout_i[0]_i_1 
-       (.I0(\gdm.dm_gen.dm_n_12 ),
-        .I1(fifo_re__0),
-        .I2(\gpregsm1.curr_fwft_state_reg[1] [0]),
-        .I3(\gpregsm1.curr_fwft_state_reg[1] [1]),
-        .I4(br_ch_data[0]),
-        .O(\goreg_dm.dout_i[0]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hBAFF8A00)) 
-    \goreg_dm.dout_i[1]_i_1 
-       (.I0(\gdm.dm_gen.dm_n_13 ),
-        .I1(fifo_re__0),
-        .I2(\gpregsm1.curr_fwft_state_reg[1] [0]),
-        .I3(\gpregsm1.curr_fwft_state_reg[1] [1]),
-        .I4(br_ch_data[1]),
-        .O(\goreg_dm.dout_i[1]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hBAFF8A00)) 
-    \goreg_dm.dout_i[2]_i_1 
-       (.I0(\gdm.dm_gen.dm_n_14 ),
-        .I1(fifo_re__0),
-        .I2(\gpregsm1.curr_fwft_state_reg[1] [0]),
-        .I3(\gpregsm1.curr_fwft_state_reg[1] [1]),
-        .I4(br_ch_data[2]),
-        .O(\goreg_dm.dout_i[2]_i_1_n_0 ));
   FDCE #(
     .INIT(1'b0)) 
     \goreg_dm.dout_i_reg[0] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\goreg_dm.dout_i[0]_i_1_n_0 ),
-        .Q(br_ch_data[0]));
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_44 ),
+        .Q(\tdm_data_out_reg[14] [0]));
   FDCE #(
     .INIT(1'b0)) 
     \goreg_dm.dout_i_reg[1] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\goreg_dm.dout_i[1]_i_1_n_0 ),
-        .Q(br_ch_data[1]));
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_43 ),
+        .Q(\tdm_data_out_reg[14] [1]));
   FDCE #(
     .INIT(1'b0)) 
     \goreg_dm.dout_i_reg[2] 
        (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .CLR(\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0] ),
-        .D(\goreg_dm.dout_i[2]_i_1_n_0 ),
-        .Q(br_ch_data[2]));
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_42 ),
+        .Q(\tdm_data_out_reg[14] [2]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[3] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_41 ),
+        .Q(\tdm_data_out_reg[14] [3]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[4] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_40 ),
+        .Q(\tdm_data_out_reg[14] [4]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[5] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_39 ),
+        .Q(\tdm_data_out_reg[14] [5]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[6] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_38 ),
+        .Q(\tdm_data_out_reg[14] [6]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[7] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_37 ),
+        .Q(\tdm_data_out_reg[14] [7]));
+  FDCE #(
+    .INIT(1'b0)) 
+    \goreg_dm.dout_i_reg[8] 
+       (.C(axi_c2c_phy_clk),
+        .CE(s_ready_i_reg),
+        .CLR(AR),
+        .D(\gdm.dm_gen.dm_n_36 ),
+        .Q(\tdm_data_out_reg[14] [8]));
 endmodule
 
+(* ORIG_REF_NAME = "rd_bin_cntr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
    (Q,
     ram_empty_fb_i_reg,
@@ -20585,7 +23112,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
        (.I0(rd_pntr_plus1[0]),
         .I1(Q[0]),
         .O(plusOp__6[1]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[2]_i_1__1 
@@ -20593,7 +23120,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
         .I1(rd_pntr_plus1[0]),
         .I2(Q[1]),
         .O(plusOp__6[2]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[3]_i_1__1 
@@ -20602,7 +23129,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
         .I2(Q[0]),
         .I3(Q[2]),
         .O(plusOp__6[3]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[4]_i_1__1 
@@ -20622,7 +23149,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
         .I4(Q[2]),
         .I5(rd_pntr_plus1[5]),
         .O(plusOp__6[5]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[6]_i_1__1 
@@ -20631,7 +23158,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
         .I2(rd_pntr_plus1[5]),
         .I3(rd_pntr_plus1[6]),
         .O(plusOp__6[6]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[7]_i_1__1 
@@ -20641,7 +23168,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
         .I3(Q[3]),
         .I4(rd_pntr_plus1[7]),
         .O(plusOp__6[7]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \gc0.count[7]_i_2__0 
@@ -20801,7 +23328,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr
 endmodule
 
 (* ORIG_REF_NAME = "rd_bin_cntr" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
+module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_160
    (Q,
     ram_empty_fb_i_reg,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
@@ -20849,7 +23376,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
        (.I0(rd_pntr_plus1[0]),
         .I1(Q[0]),
         .O(plusOp__7[1]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[2]_i_1__2 
@@ -20857,7 +23384,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
         .I1(rd_pntr_plus1[0]),
         .I2(Q[1]),
         .O(plusOp__7[2]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[3]_i_1__2 
@@ -20866,7 +23393,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
         .I2(Q[0]),
         .I3(Q[2]),
         .O(plusOp__7[3]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[4]_i_1__2 
@@ -20886,7 +23413,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
         .I4(Q[2]),
         .I5(rd_pntr_plus1[5]),
         .O(plusOp__7[5]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[6]_i_1__2 
@@ -20895,7 +23422,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
         .I2(rd_pntr_plus1[5]),
         .I3(rd_pntr_plus1[6]),
         .O(plusOp__7[6]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[7]_i_1__2 
@@ -20905,7 +23432,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159
         .I3(Q[3]),
         .I4(rd_pntr_plus1[7]),
         .O(plusOp__7[7]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \gc0.count[7]_i_2__1 
@@ -21106,7 +23633,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
        (.I0(\gc0.count_d1_reg[7]_0 [0]),
         .I1(\gc0.count_d1_reg[7]_0 [1]),
         .O(plusOp__8[1]));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[2]_i_1__3 
@@ -21114,7 +23641,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
         .I1(\gc0.count_d1_reg[7]_0 [0]),
         .I2(\gc0.count_d1_reg[7]_0 [2]),
         .O(plusOp__8[2]));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[3]_i_1__3 
@@ -21123,7 +23650,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
         .I2(\gc0.count_d1_reg[7]_0 [1]),
         .I3(\gc0.count_d1_reg[7]_0 [3]),
         .O(plusOp__8[3]));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[4]_i_1__3 
@@ -21150,7 +23677,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
         .I1(\gc0.count[8]_i_2__0_n_0 ),
         .I2(\gc0.count_d1_reg[7]_0 [6]),
         .O(plusOp__8[6]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[7]_i_1__3 
@@ -21159,7 +23686,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
         .I2(\gc0.count_d1_reg[7]_0 [6]),
         .I3(\gc0.count_d1_reg[7]_0 [7]),
         .O(plusOp__8[7]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[8]_i_1__0 
@@ -21169,7 +23696,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized0
         .I3(\gc0.count_d1_reg[7]_0 [5]),
         .I4(rd_pntr_plus1),
         .O(plusOp__8[8]));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \gc0.count[8]_i_2__0 
@@ -21370,14 +23897,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized1
     \gc0.count[0]_i_1__0 
        (.I0(rd_pntr_plus1[0]),
         .O(plusOp__3[0]));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \gc0.count[1]_i_1__0 
        (.I0(rd_pntr_plus1[0]),
         .I1(rd_pntr_plus1[1]),
         .O(plusOp__3[1]));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[2]_i_1__0 
@@ -21385,7 +23912,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized1
         .I1(rd_pntr_plus1[1]),
         .I2(rd_pntr_plus1[2]),
         .O(plusOp__3[2]));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[3]_i_1__0 
@@ -21394,7 +23921,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized1
         .I2(rd_pntr_plus1[2]),
         .I3(rd_pntr_plus1[3]),
         .O(plusOp__3[3]));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[4]_i_1__0 
@@ -21420,7 +23947,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized1
        (.I0(\gc0.count[8]_i_2_n_0 ),
         .I1(rd_pntr_plus1[6]),
         .O(plusOp__3[6]));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[7]_i_1__0 
@@ -21428,7 +23955,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized1
         .I1(rd_pntr_plus1[6]),
         .I2(rd_pntr_plus1[7]),
         .O(plusOp__3[7]));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[8]_i_1 
@@ -21705,14 +24232,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
     \gc0.count[0]_i_1 
        (.I0(rd_pntr_plus1[0]),
         .O(plusOp__2[0]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \gc0.count[1]_i_1 
        (.I0(rd_pntr_plus1[0]),
         .I1(rd_pntr_plus1[1]),
         .O(plusOp__2[1]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[2]_i_1 
@@ -21720,7 +24247,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .I1(rd_pntr_plus1[1]),
         .I2(Q[0]),
         .O(plusOp__2[2]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gc0.count[3]_i_1 
@@ -21729,7 +24256,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .I2(Q[0]),
         .I3(Q[1]),
         .O(plusOp__2[3]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gc0.count[4]_i_1 
@@ -21749,14 +24276,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .I4(Q[2]),
         .I5(Q[3]),
         .O(plusOp__2[5]));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \gc0.count[6]_i_1 
        (.I0(\gc0.count[7]_i_2_n_0 ),
         .I1(Q[4]),
         .O(plusOp__2[6]));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gc0.count[7]_i_1 
@@ -21914,6 +24441,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2
         .O(ram_empty_fb_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "rd_fwft" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft
    (fwft_rst_done_q,
     E,
@@ -21979,7 +24507,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft
 
   LUT6 #(
     .INIT(64'hFFFFFFFF15115555)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1__1 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1__2 
        (.I0(ram_empty_fb_i_reg),
         .I1(curr_fwft_state[0]),
         .I2(empty_fwft_i),
@@ -22097,7 +24625,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft
         .Q(E));
   LUT4 #(
     .INIT(16'h7500)) 
-    \goreg_bm.dout_i[0]_i_1__1 
+    \goreg_bm.dout_i[0]_i_1 
        (.I0(curr_fwft_state[0]),
         .I1(empty_fwft_i),
         .I2(m_axi_wready),
@@ -22181,7 +24709,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
    (fwft_rst_done_q,
     E,
     m_axi_awvalid,
-    \goreg_bm.dout_i_reg[44] ,
+    \goreg_bm.dout_i_reg[50] ,
     tmp_ram_rd_en,
     \gc0.count_d1_reg[7] ,
     ram_empty_fb_i_reg,
@@ -22195,7 +24723,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
   output fwft_rst_done_q;
   output [0:0]E;
   output m_axi_awvalid;
-  output [0:0]\goreg_bm.dout_i_reg[44] ;
+  output [0:0]\goreg_bm.dout_i_reg[50] ;
   output tmp_ram_rd_en;
   output [0:0]\gc0.count_d1_reg[7] ;
   output ram_empty_fb_i_reg;
@@ -22222,7 +24750,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
   wire empty_fwft_i0;
   wire fwft_rst_done_q;
   wire [0:0]\gc0.count_d1_reg[7] ;
-  wire [0:0]\goreg_bm.dout_i_reg[44] ;
+  wire [0:0]\goreg_bm.dout_i_reg[50] ;
   wire m_aclk;
   wire m_axi_awready;
   wire m_axi_awvalid;
@@ -22235,7 +24763,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
 
   LUT6 #(
     .INIT(64'hFFFFFFFF11515555)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1__0 
        (.I0(ram_empty_fb_i_reg_0),
         .I1(curr_fwft_state[0]),
         .I2(m_axi_awready),
@@ -22353,12 +24881,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
         .Q(E));
   LUT4 #(
     .INIT(16'h5D00)) 
-    \goreg_bm.dout_i[0]_i_1 
+    \goreg_bm.dout_i[6]_i_1 
        (.I0(curr_fwft_state[0]),
         .I1(m_axi_awready),
         .I2(empty_fwft_i),
         .I3(curr_fwft_state[1]),
-        .O(\goreg_bm.dout_i_reg[44] ));
+        .O(\goreg_bm.dout_i_reg[50] ));
   LUT4 #(
     .INIT(16'hFFB0)) 
     \gpregsm1.curr_fwft_state[0]_i_1__1 
@@ -22425,11 +24953,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_101
 endmodule
 
 (* ORIG_REF_NAME = "rd_fwft" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157
+module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_158
    (fwft_rst_done_q,
     E,
     m_axi_arvalid,
-    \goreg_bm.dout_i_reg[44] ,
+    \goreg_bm.dout_i_reg[50] ,
     tmp_ram_rd_en,
     \gc0.count_d1_reg[7] ,
     ram_empty_fb_i_reg,
@@ -22443,7 +24971,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157
   output fwft_rst_done_q;
   output [0:0]E;
   output m_axi_arvalid;
-  output [0:0]\goreg_bm.dout_i_reg[44] ;
+  output [0:0]\goreg_bm.dout_i_reg[50] ;
   output tmp_ram_rd_en;
   output [0:0]\gc0.count_d1_reg[7] ;
   output ram_empty_fb_i_reg;
@@ -22470,7 +24998,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157
   wire empty_fwft_i0;
   wire fwft_rst_done_q;
   wire [0:0]\gc0.count_d1_reg[7] ;
-  wire [0:0]\goreg_bm.dout_i_reg[44] ;
+  wire [0:0]\goreg_bm.dout_i_reg[50] ;
   wire m_aclk;
   wire m_axi_arready;
   wire m_axi_arvalid;
@@ -22483,7 +25011,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157
 
   LUT6 #(
     .INIT(64'hFFFFFFFF11515555)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1__0 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1__1 
        (.I0(ram_empty_fb_i_reg_0),
         .I1(curr_fwft_state[0]),
         .I2(m_axi_arready),
@@ -22601,12 +25129,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157
         .Q(E));
   LUT4 #(
     .INIT(16'h5D00)) 
-    \goreg_bm.dout_i[0]_i_1__0 
+    \goreg_bm.dout_i[6]_i_1__0 
        (.I0(curr_fwft_state[0]),
         .I1(m_axi_arready),
         .I2(empty_fwft_i),
         .I3(curr_fwft_state[1]),
-        .O(\goreg_bm.dout_i_reg[44] ));
+        .O(\goreg_bm.dout_i_reg[50] ));
   LUT4 #(
     .INIT(16'hFFB0)) 
     \gpregsm1.curr_fwft_state[0]_i_1__2 
@@ -22678,7 +25206,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_61
     fwft_rst_done_q,
     E,
     \gc0.count_d1_reg[8] ,
-    \goreg_bm.dout_i_reg[35] ,
+    \goreg_bm.dout_i_reg[41] ,
     p_12_in,
     axi_c2c_phy_clk,
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] ,
@@ -22695,7 +25223,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_61
   output fwft_rst_done_q;
   output [0:0]E;
   output [0:0]\gc0.count_d1_reg[8] ;
-  output [0:0]\goreg_bm.dout_i_reg[35] ;
+  output [0:0]\goreg_bm.dout_i_reg[41] ;
   output p_12_in;
   input axi_c2c_phy_clk;
   input [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] ;
@@ -22726,7 +25254,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_61
   wire empty_fwft_i0;
   wire fwft_rst_done_q;
   wire [0:0]\gc0.count_d1_reg[8] ;
-  wire [0:0]\goreg_bm.dout_i_reg[35] ;
+  wire [0:0]\goreg_bm.dout_i_reg[41] ;
   wire [1:0]next_fwft_state;
   wire [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] ;
   wire p_12_in;
@@ -22850,13 +25378,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_61
         .Q(E));
   LUT5 #(
     .INIT(32'h08FF0000)) 
-    \goreg_bm.dout_i[35]_i_1 
+    \goreg_bm.dout_i[41]_i_1 
        (.I0(tdm_user_data_ready),
         .I1(slot_select),
         .I2(empty_fwft_i),
         .I3(curr_fwft_state[0]),
         .I4(curr_fwft_state[1]),
-        .O(\goreg_bm.dout_i_reg[35] ));
+        .O(\goreg_bm.dout_i_reg[41] ));
   LUT5 #(
     .INIT(32'hFFFFBF00)) 
     \gpregsm1.curr_fwft_state[0]_i_1 
@@ -22921,25 +25449,27 @@ endmodule
 (* ORIG_REF_NAME = "rd_fwft" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
    (out,
-    \gpregsm1.user_valid_reg_0 ,
     E,
+    \gc0.count_d1_reg[7] ,
+    \goreg_dm.dout_i_reg[8] ,
     int_ch1_ready5__1,
     axi_c2c_phy_clk,
     AR,
-    slot_select,
     tdm_user_data_ready,
+    slot_select,
     ram_empty_fb_i_reg,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] );
-  output [1:0]out;
-  output \gpregsm1.user_valid_reg_0 ;
+  output out;
   output [0:0]E;
+  output [0:0]\gc0.count_d1_reg[7] ;
+  output [0:0]\goreg_dm.dout_i_reg[8] ;
   output int_ch1_ready5__1;
   input axi_c2c_phy_clk;
   input [0:0]AR;
-  input [0:0]slot_select;
   input tdm_user_data_ready;
+  input [0:0]slot_select;
   input ram_empty_fb_i_reg;
   input fifo_re__0;
   input tx_phy_ready;
@@ -22959,6 +25489,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
   (* DONT_TOUCH *) wire empty_fwft_i;
   wire empty_fwft_i0;
   wire fifo_re__0;
+  wire [0:0]\gc0.count_d1_reg[7] ;
+  wire [0:0]\goreg_dm.dout_i_reg[8] ;
   wire int_ch1_ready5__1;
   wire [1:0]next_fwft_state;
   wire ram_empty_fb_i_reg;
@@ -22967,8 +25499,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
   wire tx_phy_ready;
   (* DONT_TOUCH *) wire user_valid;
 
-  assign \gpregsm1.user_valid_reg_0  = empty_fwft_i;
-  assign out[1:0] = curr_fwft_state;
+  assign out = empty_fwft_i;
   LUT5 #(
     .INIT(32'hFEF38000)) 
     aempty_fwft_fb_i_i_1__0
@@ -23062,6 +25593,25 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
         .I3(curr_fwft_state[0]),
         .I4(curr_fwft_state[1]),
         .I5(ram_empty_fb_i_reg),
+        .O(\gc0.count_d1_reg[7] ));
+  LUT5 #(
+    .INIT(32'h08FF0000)) 
+    \goreg_dm.dout_i[8]_i_1 
+       (.I0(tdm_user_data_ready),
+        .I1(slot_select),
+        .I2(empty_fwft_i),
+        .I3(curr_fwft_state[0]),
+        .I4(curr_fwft_state[1]),
+        .O(\goreg_dm.dout_i_reg[8] ));
+  LUT6 #(
+    .INIT(64'h000000007777F777)) 
+    \gpr1.dout_i[8]_i_1 
+       (.I0(curr_fwft_state[1]),
+        .I1(curr_fwft_state[0]),
+        .I2(tdm_user_data_ready),
+        .I3(slot_select),
+        .I4(empty_fwft_i),
+        .I5(ram_empty_fb_i_reg),
         .O(E));
   LUT5 #(
     .INIT(32'hFFFFBF00)) 
@@ -23124,12 +25674,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0
         .O(int_ch1_ready5__1));
 endmodule
 
+(* ORIG_REF_NAME = "rd_logic" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
    (fwft_rst_done_q,
     E,
     m_axi_awvalid,
     Q,
-    \goreg_bm.dout_i_reg[44] ,
+    \goreg_bm.dout_i_reg[50] ,
     ram_empty_fb_i_reg,
     tmp_ram_rd_en,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
@@ -23146,7 +25697,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
   output [0:0]E;
   output m_axi_awvalid;
   output [3:0]Q;
-  output [0:0]\goreg_bm.dout_i_reg[44] ;
+  output [0:0]\goreg_bm.dout_i_reg[50] ;
   output ram_empty_fb_i_reg;
   output tmp_ram_rd_en;
   output [7:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
@@ -23170,7 +25721,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
   wire fwft_rst_done_q;
   wire \gc0.count_reg[3] ;
   wire \gnxpm_cdc.wr_pntr_bin_reg[6] ;
-  wire [0:0]\goreg_bm.dout_i_reg[44] ;
+  wire [0:0]\goreg_bm.dout_i_reg[50] ;
   wire \gr1.gr1_int.rfwft_n_6 ;
   wire m_aclk;
   wire m_axi_awready;
@@ -23188,7 +25739,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
         .SR(SR),
         .fwft_rst_done_q(fwft_rst_done_q),
         .\gc0.count_d1_reg[7] (p_8_out),
-        .\goreg_bm.dout_i_reg[44] (\goreg_bm.dout_i_reg[44] ),
+        .\goreg_bm.dout_i_reg[50] (\goreg_bm.dout_i_reg[50] ),
         .m_aclk(m_aclk),
         .m_axi_awready(m_axi_awready),
         .m_axi_awvalid(m_axi_awvalid),
@@ -23216,12 +25767,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic
 endmodule
 
 (* ORIG_REF_NAME = "rd_logic" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114
+module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_115
    (fwft_rst_done_q,
     E,
     m_axi_arvalid,
     Q,
-    \goreg_bm.dout_i_reg[44] ,
+    \goreg_bm.dout_i_reg[50] ,
     ram_empty_fb_i_reg,
     tmp_ram_rd_en,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
@@ -23238,7 +25789,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114
   output [0:0]E;
   output m_axi_arvalid;
   output [3:0]Q;
-  output [0:0]\goreg_bm.dout_i_reg[44] ;
+  output [0:0]\goreg_bm.dout_i_reg[50] ;
   output ram_empty_fb_i_reg;
   output tmp_ram_rd_en;
   output [7:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
@@ -23262,7 +25813,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114
   wire \gc0.count_reg[3] ;
   wire \gnxpm_cdc.wr_pntr_bin_reg[6] ;
   wire [3:0]\gnxpm_cdc.wr_pntr_bin_reg[7] ;
-  wire [0:0]\goreg_bm.dout_i_reg[44] ;
+  wire [0:0]\goreg_bm.dout_i_reg[50] ;
   wire \gr1.gr1_int.rfwft_n_6 ;
   wire m_aclk;
   wire m_axi_arready;
@@ -23273,14 +25824,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114
   wire ram_empty_fb_i_reg;
   wire tmp_ram_rd_en;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_157 \gr1.gr1_int.rfwft 
+  b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft_158 \gr1.gr1_int.rfwft 
        (.E(E),
         .\Q_reg_reg[0] (\Q_reg_reg[0] ),
         .\Q_reg_reg[0]_0 (\Q_reg_reg[0]_0 ),
         .SR(SR),
         .fwft_rst_done_q(fwft_rst_done_q),
         .\gc0.count_d1_reg[7] (p_8_out),
-        .\goreg_bm.dout_i_reg[44] (\goreg_bm.dout_i_reg[44] ),
+        .\goreg_bm.dout_i_reg[50] (\goreg_bm.dout_i_reg[50] ),
         .m_aclk(m_aclk),
         .m_axi_arready(m_axi_arready),
         .m_axi_arvalid(m_axi_arvalid),
@@ -23288,13 +25839,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic_114
         .ram_empty_fb_i_reg(\gr1.gr1_int.rfwft_n_6 ),
         .ram_empty_fb_i_reg_0(p_2_out),
         .tmp_ram_rd_en(tmp_ram_rd_en));
-  b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as_158 \gras.rsts 
+  b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as_159 \gras.rsts 
        (.\Q_reg_reg[0] (\Q_reg_reg[0] ),
         .\gnxpm_cdc.wr_pntr_bin_reg[6] (\gnxpm_cdc.wr_pntr_bin_reg[6] ),
         .m_aclk(m_aclk),
         .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] (out),
         .out(p_2_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_159 rpntr
+  b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr_160 rpntr
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ),
         .E(p_8_out),
         .Q(Q),
@@ -23436,7 +25987,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized1
     fwft_rst_done_q,
     E,
     tmp_ram_rd_en,
-    \goreg_bm.dout_i_reg[35] ,
+    \goreg_bm.dout_i_reg[41] ,
     Q,
     p_12_in,
     axi_c2c_phy_clk,
@@ -23454,7 +26005,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized1
   output fwft_rst_done_q;
   output [0:0]E;
   output tmp_ram_rd_en;
-  output [0:0]\goreg_bm.dout_i_reg[35] ;
+  output [0:0]\goreg_bm.dout_i_reg[41] ;
   output [8:0]Q;
   output p_12_in;
   input axi_c2c_phy_clk;
@@ -23480,7 +26031,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized1
   wire [4:0]\c1/v1_reg ;
   wire [0:0]\ctrl_info_reg[0] ;
   wire fwft_rst_done_q;
-  wire [0:0]\goreg_bm.dout_i_reg[35] ;
+  wire [0:0]\goreg_bm.dout_i_reg[41] ;
   wire [0:0]\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] ;
   wire out;
   wire p_12_in;
@@ -23501,7 +26052,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized1
         .\ctrl_info_reg[0] (\ctrl_info_reg[0] ),
         .fwft_rst_done_q(fwft_rst_done_q),
         .\gc0.count_d1_reg[8] (p_8_out),
-        .\goreg_bm.dout_i_reg[35] (\goreg_bm.dout_i_reg[35] ),
+        .\goreg_bm.dout_i_reg[41] (\goreg_bm.dout_i_reg[41] ),
         .\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] (\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2] ),
         .out(out),
         .p_12_in(p_12_in),
@@ -23532,43 +26083,42 @@ endmodule
 (* ORIG_REF_NAME = "rd_logic" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
    (out,
-    \gpregsm1.user_valid_reg ,
-    \gpregsm1.user_valid_reg_0 ,
     Q,
+    E,
     ram_empty_fb_i_reg,
-    p_7_out,
+    \goreg_dm.dout_i_reg[8] ,
     int_ch1_ready5__1,
     \gnxpm_cdc.rd_pntr_gc_reg[7] ,
     \gc0.count_reg[5] ,
     axi_c2c_phy_clk,
     AR,
+    tdm_user_data_ready,
+    slot_select,
     \gnxpm_cdc.wr_pntr_bin_reg[2] ,
     WR_PNTR_RD,
-    slot_select,
-    tdm_user_data_ready,
     fifo_re__0,
     tx_phy_ready,
     \ctrl_info_reg[1] );
   output out;
-  output [1:0]\gpregsm1.user_valid_reg ;
-  output \gpregsm1.user_valid_reg_0 ;
   output [5:0]Q;
+  output [0:0]E;
   output ram_empty_fb_i_reg;
-  output p_7_out;
+  output [0:0]\goreg_dm.dout_i_reg[8] ;
   output int_ch1_ready5__1;
   output [7:0]\gnxpm_cdc.rd_pntr_gc_reg[7] ;
   input \gc0.count_reg[5] ;
   input axi_c2c_phy_clk;
   input [0:0]AR;
+  input tdm_user_data_ready;
+  input [0:0]slot_select;
   input \gnxpm_cdc.wr_pntr_bin_reg[2] ;
   input [1:0]WR_PNTR_RD;
-  input [0:0]slot_select;
-  input tdm_user_data_ready;
   input fifo_re__0;
   input tx_phy_ready;
   input [0:0]\ctrl_info_reg[1] ;
 
   wire [0:0]AR;
+  wire [0:0]E;
   wire [5:0]Q;
   wire [1:0]WR_PNTR_RD;
   wire axi_c2c_phy_clk;
@@ -23577,10 +26127,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
   wire \gc0.count_reg[5] ;
   wire [7:0]\gnxpm_cdc.rd_pntr_gc_reg[7] ;
   wire \gnxpm_cdc.wr_pntr_bin_reg[2] ;
-  wire [1:0]\gpregsm1.user_valid_reg ;
-  wire \gpregsm1.user_valid_reg_0 ;
+  wire [0:0]\goreg_dm.dout_i_reg[8] ;
   wire int_ch1_ready5__1;
   wire out;
+  wire p_2_out;
   wire p_7_out;
   wire ram_empty_fb_i_reg;
   wire [0:0]slot_select;
@@ -23589,14 +26139,15 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
 
   b2000t_c2c_bram_axi_chip2chip_0_0_rd_fwft__parameterized0 \gr1.gr1_int.rfwft 
        (.AR(AR),
-        .E(p_7_out),
+        .E(E),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\ctrl_info_reg[1] (\ctrl_info_reg[1] ),
         .fifo_re__0(fifo_re__0),
-        .\gpregsm1.user_valid_reg_0 (\gpregsm1.user_valid_reg_0 ),
+        .\gc0.count_d1_reg[7] (p_7_out),
+        .\goreg_dm.dout_i_reg[8] (\goreg_dm.dout_i_reg[8] ),
         .int_ch1_ready5__1(int_ch1_ready5__1),
-        .out(\gpregsm1.user_valid_reg ),
-        .ram_empty_fb_i_reg(out),
+        .out(out),
+        .ram_empty_fb_i_reg(p_2_out),
         .slot_select(slot_select),
         .tdm_user_data_ready(tdm_user_data_ready),
         .tx_phy_ready(tx_phy_ready));
@@ -23604,7 +26155,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
        (.AR(AR),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\gc0.count_reg[5] (\gc0.count_reg[5] ),
-        .out(out));
+        .out(p_2_out));
   b2000t_c2c_bram_axi_chip2chip_0_0_rd_bin_cntr__parameterized2 rpntr
        (.AR(AR),
         .E(p_7_out),
@@ -23616,6 +26167,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_logic__parameterized2
         .ram_empty_fb_i_reg(ram_empty_fb_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "rd_status_flags_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as
    (out,
     \gnxpm_cdc.wr_pntr_bin_reg[6] ,
@@ -23661,7 +26213,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as
 endmodule
 
 (* ORIG_REF_NAME = "rd_status_flags_as" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as_158
+module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as_159
    (out,
     \gnxpm_cdc.wr_pntr_bin_reg[6] ,
     m_aclk,
@@ -23834,7 +26386,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as__parameterized1
   assign out = ram_empty_fb_i;
   LUT3 #(
     .INIT(8'hF4)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_1 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_1 
        (.I0(ram_empty_fb_i),
         .I1(E),
         .I2(\Q_reg_reg[0] ),
@@ -23913,6 +26465,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_rd_status_flags_as__parameterized2
         .Q(ram_empty_i));
 endmodule
 
+(* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo
    (out,
     ram_empty_i_reg,
@@ -24438,11 +26991,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo
 endmodule
 
 (* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
+module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_118
    (out,
     ram_empty_i_reg,
     ram_full_i_reg,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
+    \mux_by_4.pack_reg0_reg[12] ,
+    wr_rst_busy_i2_out,
     AR,
     D,
     E,
@@ -24453,15 +27007,15 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
     axi_c2c_phy_clk,
     br_fifo_reset,
     prog_full_int,
-    ar_ch_data_valid,
-    ram_full_fb_i_reg,
     ram_full_i_reg_0,
+    ar_ch_data_valid,
     \gfwft_rst_done.fwft_rst_done_reg_0 ,
     fwft_rst_done_q);
   output out;
   output [1:0]ram_empty_i_reg;
   output ram_full_i_reg;
-  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
+  output \mux_by_4.pack_reg0_reg[12] ;
+  output wr_rst_busy_i2_out;
   output [0:0]AR;
   output [0:0]D;
   output [0:0]E;
@@ -24472,9 +27026,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
   input axi_c2c_phy_clk;
   input br_fifo_reset;
   input prog_full_int;
-  input ar_ch_data_valid;
-  input ram_full_fb_i_reg;
   input ram_full_i_reg_0;
+  input ar_ch_data_valid;
   input [0:0]\gfwft_rst_done.fwft_rst_done_reg_0 ;
   input fwft_rst_done_q;
 
@@ -24502,7 +27055,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst_n_1 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst_n_2 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_wr_inst_n_1 ;
-  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ;
+  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_4 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_5 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.rd_rst_middle_reg_n_0 ;
@@ -24519,7 +27072,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
   wire p_16_out;
   wire p_17_out;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire ram_full_i_reg_0;
   wire rd_rst_active;
   wire rd_rst_asreg;
@@ -24550,7 +27102,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
   wire \wrst_ext_q[3]_35 ;
   wire \wrst_ext_q[4]_38 ;
 
-  assign \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram  = rst_d3;
+  assign \mux_by_4.pack_reg0_reg[12]  = rst_d3;
   assign ram_empty_i_reg[1] = rd_rst_reg[2];
   assign ram_empty_i_reg[0] = rd_rst_reg[0];
   assign ram_full_i_reg = rst_d2;
@@ -24599,23 +27151,23 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
         .D(\grstd1.grst_full.grst_f.rst_d3_i_1__0_n_0 ),
         .PRE(rst_wr_reg2),
         .Q(rst_d3));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_118 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_119 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst 
        (.\Q_reg_reg[0]_0 (\arst_sync_q[1]_23 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(rst_wr_reg2));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_119 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_120 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[2].arst_sync_inst 
        (.\Q_reg_reg[0]_0 (\arst_sync_q[1]_23 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\arst_sync_q[2]_24 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_120 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[3].arst_sync_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_121 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[3].arst_sync_inst 
        (.\Q_reg_reg[0]_0 (\arst_sync_q[3]_25 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\arst_sync_q[2]_24 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_121 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[4].arst_sync_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_122 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[4].arst_sync_inst 
        (.\Q_reg_reg[0]_0 (\arst_sync_q[3]_25 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\arst_sync_q[4]_26 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_122 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[5].arst_sync_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_123 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[5].arst_sync_inst 
        (.axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg (\arst_sync_q[5]_27 ),
         .out(\arst_sync_q[4]_26 ));
@@ -24635,31 +27187,31 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
         .D(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_4 ),
         .Q(fifo_wrst_done),
         .R(1'b0));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_123 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_124 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_inst 
        (.m_aclk(m_aclk),
         .out(\rrst_q[1]_28 ),
         .sckt_wrst_i(sckt_wrst_i));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_124 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_125 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst 
        (.\Q_reg_reg[0]_0 (\rrst_wr_q[1]_29 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_125 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].wr_rst_ext_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_126 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].wr_rst_ext_inst 
        (.axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\wrst_ext_q[1]_30 ),
         .sckt_wrst_i(sckt_wrst_i));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_126 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].rd_rst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_127 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].rd_rst_inst 
        (.\Q_reg_reg[0]_0 (\rrst_q[2]_31 ),
         .m_aclk(m_aclk),
         .out(\rrst_q[1]_28 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_127 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].rd_rst_wr_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_128 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].rd_rst_wr_inst 
        (.\Q_reg_reg[0]_0 (\rrst_wr_q[1]_29 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\rrst_wr_q[2]_32 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_128 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].wr_rst_ext_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_129 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[2].wr_rst_ext_inst 
        (.\Q_reg_reg[0]_0 (\wrst_ext_q[2]_33 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\wrst_ext_q[1]_30 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_129 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_130 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst 
        (.\Q_reg_reg[0]_0 (\rrst_q[2]_31 ),
         .\Q_reg_reg[0]_1 (p_14_out),
         .\Q_reg_reg[0]_2 (p_12_out),
@@ -24674,37 +27226,37 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
         .out(out),
         .rd_rst_active(rd_rst_active),
         .sckt_rd_rst_fwft(\gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/sckt_rd_rst_fwft ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_130 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_wr_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_131 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_wr_inst 
        (.\Q_reg_reg[0]_0 (\rrst_wr_q[3]_34 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\rrst_wr_q[2]_32 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_131 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].wr_rst_ext_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_132 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].wr_rst_ext_inst 
        (.\Q_reg_reg[0]_0 (\wrst_ext_q[2]_33 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\wrst_ext_q[3]_35 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_132 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].rd_rst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_133 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].rd_rst_inst 
        (.\Q_reg_reg[0]_0 (\rrst_q[4]_36 ),
         .m_aclk(m_aclk),
         .out(out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_133 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].rd_rst_wr_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_134 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].rd_rst_wr_inst 
        (.\Q_reg_reg[0]_0 (\rrst_wr_q[3]_34 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\rrst_wr_q[4]_37 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_134 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].wr_rst_ext_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_135 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[4].wr_rst_ext_inst 
        (.\Q_reg_reg[0]_0 (\wrst_ext_q[4]_38 ),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(\wrst_ext_q[3]_35 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_135 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_136 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_inst 
        (.\Q_reg_reg[0]_0 (\rrst_q[4]_36 ),
         .m_aclk(m_aclk));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_136 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_wr_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_wr_inst 
        (.axi_c2c_phy_clk(axi_c2c_phy_clk),
         .fifo_rrst_done(fifo_rrst_done),
         .fifo_wrst_done(fifo_wrst_done),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_rrst_done_reg (\rrst_wr_q[5]_39 ),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_rrst_done_reg_0 (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_wr_inst_n_1 ),
         .out(\rrst_wr_q[4]_37 ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_138 \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst 
        (.D(D),
         .E(E),
         .\Q_reg_reg[0]_0 (\wrst_ext_q[4]_38 ),
@@ -24718,21 +27270,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
         .fifo_wrst_done(fifo_wrst_done),
         .\grstd1.grst_full.grst_f.rst_d3_reg (rst_d3),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_4 ),
-        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ),
+        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ),
+        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg (wr_rst_busy_i2_out),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_5 ),
         .out(\arst_sync_q[2]_24 ),
         .prog_full_int(prog_full_int),
-        .ram_full_fb_i_reg(ram_full_fb_i_reg),
         .ram_full_i_reg(ram_full_i_reg_0),
         .sckt_wr_rst_i_q(sckt_wr_rst_i_q),
-        .sckt_wrst_i(sckt_wrst_i),
-        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
+        .sckt_wrst_i(sckt_wrst_i));
   FDRE #(
     .INIT(1'b0)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ),
+        .D(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ),
         .Q(AR),
         .R(1'b0));
   FDRE #(
@@ -24775,49 +27326,49 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_117
         .D(out),
         .Q(\gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/sckt_rd_rst_fwft ),
         .R(1'b0));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_138 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_139 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst 
        (.in0(rd_rst_asreg),
         .m_aclk(m_aclk),
         .out(p_10_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_139 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_140 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst 
        (.axi_c2c_phy_clk(axi_c2c_phy_clk),
         .in0(wr_rst_asreg),
         .out(p_11_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_140 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_141 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst 
        (.\Q_reg_reg[0]_0 (p_12_out),
         .m_aclk(m_aclk),
         .out(p_10_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_141 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_142 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst 
        (.\Q_reg_reg[0]_0 (p_13_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(p_11_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_142 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[3].rrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_143 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[3].rrst_inst 
        (.\Q_reg_reg[0]_0 (p_12_out),
         .m_aclk(m_aclk),
         .out(p_14_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_143 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[3].wrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_144 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[3].wrst_inst 
        (.\Q_reg_reg[0]_0 (p_13_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .out(p_15_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_144 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].rrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_145 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].rrst_inst 
        (.\Q_reg_reg[0]_0 (p_16_out),
         .in0(rd_rst_asreg),
         .m_aclk(m_aclk),
         .\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg (\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].rrst_inst_n_1 ),
         .out(p_14_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_145 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].wrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_146 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].wrst_inst 
        (.\Q_reg_reg[0]_0 (p_17_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .in0(wr_rst_asreg),
         .\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg (\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[4].wrst_inst_n_1 ),
         .out(p_15_out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_146 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].rrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_147 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].rrst_inst 
        (.AS(rd_rst_comb),
         .\Q_reg_reg[0]_0 (p_16_out),
         .in0(rd_rst_asreg),
         .m_aclk(m_aclk),
         .rd_rst_active(rd_rst_active));
-  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_147 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst 
+  b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_148 \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst 
        (.AS(\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[5].wrst_inst_n_0 ),
         .\Q_reg_reg[0]_0 (p_17_out),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
@@ -24960,7 +27511,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_30
     \gpregsm1.user_valid_reg ,
     \gfwft_rst_done.fwft_rst_done_reg ,
     m_axi_rready,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
     ram_full_fb_i_reg_0,
     axi_c2c_phy_clk,
     m_aclk,
@@ -24980,7 +27531,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_30
   output [0:0]\gpregsm1.user_valid_reg ;
   output \gfwft_rst_done.fwft_rst_done_reg ;
   output m_axi_rready;
-  output [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  output [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   output ram_full_fb_i_reg_0;
   input axi_c2c_phy_clk;
   input m_aclk;
@@ -24993,7 +27544,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_30
   input comp1;
   input ram_full_fb_i_reg_2;
 
-  wire [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  wire [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   wire [0:0]E;
   wire [0:0]SR;
   wire \arst_sync_q[1]_65 ;
@@ -25123,7 +27674,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_30
         .m_aclk(m_aclk),
         .out(\arst_sync_q[2]_66 ));
   b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34 \ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[4].arst_sync_inst 
-       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ),
+       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ),
         .\Q_reg_reg[0]_0 (\arst_sync_q[3]_67 ),
         .\Q_reg_reg[0]_1 (\arst_sync_q[5]_69 ),
         .\Q_reg_reg[0]_2 (\arst_sync_q[2]_66 ),
@@ -25469,39 +28020,39 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70
    (out,
     ram_empty_i_reg,
     ram_full_i_reg,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
+    \tdm_data_out_reg[2] ,
+    wr_rst_busy_i2_out,
     AR,
-    D,
     E,
+    D,
     \gdiff.diff_pntr_pad_reg[2] ,
     \gfwft_rst_done.fwft_rst_done_reg ,
     SR,
     m_aclk,
     axi_c2c_phy_clk,
     br_fifo_reset,
-    prog_full_int,
-    aw_ch_data_valid,
-    ram_full_fb_i_reg,
     ram_full_i_reg_0,
+    aw_ch_data_valid,
+    prog_full_int,
     \gfwft_rst_done.fwft_rst_done_reg_0 ,
     fwft_rst_done_q);
   output out;
   output [1:0]ram_empty_i_reg;
   output ram_full_i_reg;
-  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
+  output \tdm_data_out_reg[2] ;
+  output wr_rst_busy_i2_out;
   output [0:0]AR;
-  output [0:0]D;
   output [0:0]E;
+  output [0:0]D;
   output [0:0]\gdiff.diff_pntr_pad_reg[2] ;
   output \gfwft_rst_done.fwft_rst_done_reg ;
   output [0:0]SR;
   input m_aclk;
   input axi_c2c_phy_clk;
   input br_fifo_reset;
-  input prog_full_int;
-  input aw_ch_data_valid;
-  input ram_full_fb_i_reg;
   input ram_full_i_reg_0;
+  input aw_ch_data_valid;
+  input prog_full_int;
   input [0:0]\gfwft_rst_done.fwft_rst_done_reg_0 ;
   input fwft_rst_done_q;
 
@@ -25529,7 +28080,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst_n_1 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst_n_2 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].rd_rst_wr_inst_n_1 ;
-  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ;
+  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_4 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_5 ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.rd_rst_middle_reg_n_0 ;
@@ -25546,7 +28097,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70
   wire p_16_out;
   wire p_17_out;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire ram_full_i_reg_0;
   wire rd_rst_active;
   wire rd_rst_asreg;
@@ -25577,10 +28127,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70
   wire \wrst_ext_q[3]_14 ;
   wire \wrst_ext_q[4]_17 ;
 
-  assign \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram  = rst_d3;
   assign ram_empty_i_reg[1] = rd_rst_reg[2];
   assign ram_empty_i_reg[0] = rd_rst_reg[0];
   assign ram_full_i_reg = rst_d2;
+  assign \tdm_data_out_reg[2]  = rst_d3;
   LUT2 #(
     .INIT(4'hE)) 
     \gdiff.diff_pntr_pad[8]_i_1 
@@ -25745,21 +28295,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo_70
         .fifo_wrst_done(fifo_wrst_done),
         .\grstd1.grst_full.grst_f.rst_d3_reg (rst_d3),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_4 ),
-        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ),
+        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ),
+        .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg (wr_rst_busy_i2_out),
         .\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_5 ),
         .out(\arst_sync_q[2]_3 ),
         .prog_full_int(prog_full_int),
-        .ram_full_fb_i_reg(ram_full_fb_i_reg),
         .ram_full_i_reg(ram_full_i_reg_0),
         .sckt_wr_rst_i_q(sckt_wr_rst_i_q),
-        .sckt_wrst_i(sckt_wrst_i),
-        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
+        .sckt_wrst_i(sckt_wrst_i));
   FDRE #(
     .INIT(1'b0)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg 
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_2 ),
+        .D(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[5].wr_rst_ext_inst_n_3 ),
         .Q(AR),
         .R(1'b0));
   FDRE #(
@@ -26206,6 +28755,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_reset_blk_ramfifo__parameterized0
         .Q(wr_rst_reg[2]));
 endmodule
 
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff
    (\Q_reg_reg[0]_0 ,
     out,
@@ -26414,7 +28964,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_11
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_118
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_119
    (\Q_reg_reg[0]_0 ,
     out,
     axi_c2c_phy_clk);
@@ -26436,33 +28986,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_118
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(out),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_119
-   (out,
-    \Q_reg_reg[0]_0 ,
-    axi_c2c_phy_clk);
-  output out;
-  input \Q_reg_reg[0]_0 ;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire \Q_reg_reg[0]_0 ;
-  wire axi_c2c_phy_clk;
-
-  assign out = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .D(\Q_reg_reg[0]_0 ),
         .Q(Q_reg),
         .R(1'b0));
 endmodule
@@ -26496,33 +29019,6 @@ endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_120
-   (\Q_reg_reg[0]_0 ,
-    out,
-    axi_c2c_phy_clk);
-  output \Q_reg_reg[0]_0 ;
-  input out;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire axi_c2c_phy_clk;
-  wire out;
-
-  assign \Q_reg_reg[0]_0  = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .D(out),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_121
    (out,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk);
@@ -26549,7 +29045,61 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_121
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_121
+   (\Q_reg_reg[0]_0 ,
+    out,
+    axi_c2c_phy_clk);
+  output \Q_reg_reg[0]_0 ;
+  input out;
+  input axi_c2c_phy_clk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire axi_c2c_phy_clk;
+  wire out;
+
+  assign \Q_reg_reg[0]_0  = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(1'b1),
+        .D(out),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_122
+   (out,
+    \Q_reg_reg[0]_0 ,
+    axi_c2c_phy_clk);
+  output out;
+  input \Q_reg_reg[0]_0 ;
+  input axi_c2c_phy_clk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire \Q_reg_reg[0]_0 ;
+  wire axi_c2c_phy_clk;
+
+  assign out = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(1'b1),
+        .D(\Q_reg_reg[0]_0 ),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_123
    (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ,
     out,
     axi_c2c_phy_clk);
@@ -26576,7 +29126,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_122
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_123
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_124
    (out,
     sckt_wrst_i,
     m_aclk);
@@ -26598,39 +29148,39 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_123
        (.C(m_aclk),
         .CE(1'b1),
         .D(sckt_wrst_i),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_124
-   (\Q_reg_reg[0]_0 ,
-    out,
-    axi_c2c_phy_clk);
-  output \Q_reg_reg[0]_0 ;
-  input out;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire axi_c2c_phy_clk;
-  wire out;
-
-  assign \Q_reg_reg[0]_0  = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .D(out),
         .Q(Q_reg),
         .R(1'b0));
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_125
+   (\Q_reg_reg[0]_0 ,
+    out,
+    axi_c2c_phy_clk);
+  output \Q_reg_reg[0]_0 ;
+  input out;
+  input axi_c2c_phy_clk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire axi_c2c_phy_clk;
+  wire out;
+
+  assign \Q_reg_reg[0]_0  = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(1'b1),
+        .D(out),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_126
    (out,
     sckt_wrst_i,
     axi_c2c_phy_clk);
@@ -26657,7 +29207,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_125
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_126
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_127
    (\Q_reg_reg[0]_0 ,
     out,
     m_aclk);
@@ -26684,7 +29234,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_126
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_127
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_128
    (out,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk);
@@ -26711,7 +29261,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_127
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_128
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_129
    (\Q_reg_reg[0]_0 ,
     out,
     axi_c2c_phy_clk);
@@ -26738,7 +29288,34 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_128
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_129
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_13
+   (out,
+    \Q_reg_reg[0]_0 ,
+    axi_c2c_phy_clk);
+  output out;
+  input \Q_reg_reg[0]_0 ;
+  input axi_c2c_phy_clk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire \Q_reg_reg[0]_0 ;
+  wire axi_c2c_phy_clk;
+
+  assign out = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(1'b1),
+        .D(\Q_reg_reg[0]_0 ),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_130
    (out,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.rd_rst_active_reg ,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.rd_rst_middle_reg ,
@@ -26829,34 +29406,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_129
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_13
-   (out,
-    \Q_reg_reg[0]_0 ,
-    axi_c2c_phy_clk);
-  output out;
-  input \Q_reg_reg[0]_0 ;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire \Q_reg_reg[0]_0 ;
-  wire axi_c2c_phy_clk;
-
-  assign out = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .D(\Q_reg_reg[0]_0 ),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_130
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_131
    (\Q_reg_reg[0]_0 ,
     out,
     axi_c2c_phy_clk);
@@ -26883,7 +29433,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_130
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_131
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_132
    (out,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk);
@@ -26910,7 +29460,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_131
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_132
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_133
    (\Q_reg_reg[0]_0 ,
     out,
     m_aclk);
@@ -26937,7 +29487,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_132
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_133
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_134
    (out,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk);
@@ -26959,33 +29509,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_133
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(\Q_reg_reg[0]_0 ),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_134
-   (\Q_reg_reg[0]_0 ,
-    out,
-    axi_c2c_phy_clk);
-  output \Q_reg_reg[0]_0 ;
-  input out;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire axi_c2c_phy_clk;
-  wire out;
-
-  assign \Q_reg_reg[0]_0  = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
-        .CE(1'b1),
-        .D(out),
         .Q(Q_reg),
         .R(1'b0));
 endmodule
@@ -26993,6 +29516,33 @@ endmodule
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_135
    (\Q_reg_reg[0]_0 ,
+    out,
+    axi_c2c_phy_clk);
+  output \Q_reg_reg[0]_0 ;
+  input out;
+  input axi_c2c_phy_clk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire axi_c2c_phy_clk;
+  wire out;
+
+  assign \Q_reg_reg[0]_0  = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(axi_c2c_phy_clk),
+        .CE(1'b1),
+        .D(out),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_136
+   (\Q_reg_reg[0]_0 ,
     m_aclk);
   input \Q_reg_reg[0]_0 ;
   input m_aclk;
@@ -27015,7 +29565,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_135
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_136
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
    (\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_rrst_done_reg ,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_rrst_done_reg_0 ,
     out,
@@ -27059,22 +29609,21 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_136
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_138
    (D,
-    wr_rst_busy_i2_out,
-    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ,
+    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ,
     E,
+    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
     prog_full_int,
+    ram_full_i_reg,
+    ar_ch_data_valid,
     sckt_wrst_i,
     sckt_wr_rst_i_q,
-    ar_ch_data_valid,
-    ram_full_fb_i_reg,
-    ram_full_i_reg,
     out,
     \Q_reg_reg[0]_1 ,
     \Q_reg_reg[0]_2 ,
@@ -27083,20 +29632,19 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
     fifo_wrst_done,
     fifo_rrst_done);
   output [0:0]D;
-  output wr_rst_busy_i2_out;
-  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
+  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ;
   output [0:0]E;
+  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
   output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ;
   output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ;
   input \Q_reg_reg[0]_0 ;
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
   input prog_full_int;
+  input ram_full_i_reg;
+  input ar_ch_data_valid;
   input sckt_wrst_i;
   input sckt_wr_rst_i_q;
-  input ar_ch_data_valid;
-  input ram_full_fb_i_reg;
-  input ram_full_i_reg;
   input out;
   input \Q_reg_reg[0]_1 ;
   input \Q_reg_reg[0]_2 ;
@@ -27121,24 +29669,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
+  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ;
   wire out;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire ram_full_i_reg;
   wire sckt_wr_rst_i_q;
   wire sckt_wrst_i;
-  wire wr_rst_busy_i2_out;
 
-  LUT5 #(
-    .INIT(32'h00000002)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_2__1 
-       (.I0(ar_ch_data_valid),
-        .I1(\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .I2(ram_full_fb_i_reg),
-        .I3(ram_full_i_reg),
-        .I4(wr_rst_busy_i2_out),
-        .O(E));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
   (* msgon = "true" *) 
@@ -27150,6 +29688,15 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
         .D(\Q_reg_reg[0]_0 ),
         .Q(Q_reg),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT4 #(
+    .INIT(16'h0004)) 
+    \mux_by_4.pack_reg0[12]_i_1__0 
+       (.I0(ram_full_i_reg),
+        .I1(ar_ch_data_valid),
+        .I2(\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .I3(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
+        .O(E));
   LUT4 #(
     .INIT(16'h2F22)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_i_1__0 
@@ -27158,13 +29705,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
         .I2(Q_reg),
         .I3(\Q_reg_reg[0]_0 ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_i_1__1 
        (.I0(sckt_wrst_i),
         .I1(sckt_wr_rst_i_q),
-        .I2(wr_rst_busy_i2_out),
+        .I2(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
@@ -27174,7 +29720,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
         .I2(\Q_reg_reg[0]_1 ),
         .I3(\Q_reg_reg[0]_2 ),
         .I4(\Q_reg_reg[0]_3 ),
-        .O(wr_rst_busy_i2_out));
+        .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ));
   LUT3 #(
     .INIT(8'hFE)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_i_2__1 
@@ -27192,18 +29738,18 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_137
         .I4(\Q_reg_reg[0]_4 ),
         .I5(\Q_reg_reg[0]_3 ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \tdm_data_out[3]_i_1 
        (.I0(\grstd1.grst_full.grst_f.rst_d3_reg ),
         .I1(prog_full_int),
-        .I2(wr_rst_busy_i2_out),
+        .I2(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
         .O(D));
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_138
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_139
    (out,
     in0,
     m_aclk);
@@ -27223,33 +29769,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_138
     .INIT(1'b0)) 
     \Q_reg_reg[0] 
        (.C(m_aclk),
-        .CE(1'b1),
-        .D(in0),
-        .Q(Q_reg),
-        .R(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_139
-   (out,
-    in0,
-    axi_c2c_phy_clk);
-  output out;
-  input [0:0]in0;
-  input axi_c2c_phy_clk;
-
-  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire axi_c2c_phy_clk;
-  wire [0:0]in0;
-
-  assign out = Q_reg;
-  (* ASYNC_REG *) 
-  (* KEEP = "yes" *) 
-  (* msgon = "true" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \Q_reg_reg[0] 
-       (.C(axi_c2c_phy_clk),
         .CE(1'b1),
         .D(in0),
         .Q(Q_reg),
@@ -27285,27 +29804,27 @@ endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_140
-   (\Q_reg_reg[0]_0 ,
-    out,
-    m_aclk);
-  output \Q_reg_reg[0]_0 ;
-  input out;
-  input m_aclk;
+   (out,
+    in0,
+    axi_c2c_phy_clk);
+  output out;
+  input [0:0]in0;
+  input axi_c2c_phy_clk;
 
   (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
-  wire m_aclk;
-  wire out;
+  wire axi_c2c_phy_clk;
+  wire [0:0]in0;
 
-  assign \Q_reg_reg[0]_0  = Q_reg;
+  assign out = Q_reg;
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
   (* msgon = "true" *) 
   FDRE #(
     .INIT(1'b0)) 
     \Q_reg_reg[0] 
-       (.C(m_aclk),
+       (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(out),
+        .D(in0),
         .Q(Q_reg),
         .R(1'b0));
 endmodule
@@ -27314,6 +29833,33 @@ endmodule
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_141
    (\Q_reg_reg[0]_0 ,
     out,
+    m_aclk);
+  output \Q_reg_reg[0]_0 ;
+  input out;
+  input m_aclk;
+
+  (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
+  wire m_aclk;
+  wire out;
+
+  assign \Q_reg_reg[0]_0  = Q_reg;
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  (* msgon = "true" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \Q_reg_reg[0] 
+       (.C(m_aclk),
+        .CE(1'b1),
+        .D(out),
+        .Q(Q_reg),
+        .R(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "synchronizer_ff" *) 
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_142
+   (\Q_reg_reg[0]_0 ,
+    out,
     axi_c2c_phy_clk);
   output \Q_reg_reg[0]_0 ;
   input out;
@@ -27338,7 +29884,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_141
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_142
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_143
    (out,
     \Q_reg_reg[0]_0 ,
     m_aclk);
@@ -27365,7 +29911,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_142
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_143
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_144
    (out,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk);
@@ -27392,7 +29938,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_143
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_144
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_145
    (\Q_reg_reg[0]_0 ,
     \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ,
     out,
@@ -27431,7 +29977,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_144
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_145
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_146
    (\Q_reg_reg[0]_0 ,
     \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg ,
     out,
@@ -27470,7 +30016,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_145
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_146
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_147
    (AS,
     \Q_reg_reg[0]_0 ,
     m_aclk,
@@ -27510,7 +30056,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_146
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_147
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_148
    (AS,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk,
@@ -27776,7 +30322,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_19
         .I2(Q_reg),
         .I3(\Q_reg_reg[0]_0 ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_i_1__0 
@@ -27818,7 +30364,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_19
         .I2(out),
         .I3(comp1),
         .O(ram_full_fb_i_reg));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \tdm_data_out[4]_i_1 
@@ -28285,7 +30831,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
     m_axi_rready,
     wr_rst_busy_i2_out,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
     ram_full_fb_i_reg,
     \Q_reg_reg[0]_0 ,
     m_aclk,
@@ -28303,7 +30849,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
   output m_axi_rready;
   output wr_rst_busy_i2_out;
   output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
-  output [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  output [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   output ram_full_fb_i_reg;
   input \Q_reg_reg[0]_0 ;
   input m_aclk;
@@ -28318,7 +30864,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
   input \Q_reg_reg[0]_2 ;
   input \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ;
 
-  wire [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  wire [0:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   (* async_reg = "true" *) (* msgon = "true" *) wire Q_reg;
   wire \Q_reg_reg[0]_0 ;
   wire \Q_reg_reg[0]_1 ;
@@ -28340,13 +30886,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
   assign out = Q_reg;
   LUT5 #(
     .INIT(32'h00000002)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_2 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_2__2 
        (.I0(m_axi_rvalid),
         .I1(\grstd1.grst_full.grst_f.rst_d3_reg ),
         .I2(ram_full_fb_i_reg_0),
         .I3(ram_full_i_reg),
         .I4(wr_rst_busy_i2_out),
-        .O(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ));
+        .O(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
   (* msgon = "true" *) 
@@ -28358,7 +30904,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
         .D(\Q_reg_reg[0]_0 ),
         .Q(Q_reg),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'h01)) 
     m_axi_rready_INST_0
@@ -28381,7 +30927,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_34
        (.I0(wr_rst_busy_i2_out),
         .I1(sckt_wr_rst_i_q),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT4 #(
     .INIT(16'h4F44)) 
     ram_full_i_i_1__2
@@ -30199,21 +32745,20 @@ endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
-   (D,
-    wr_rst_busy_i2_out,
+   (E,
+    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ,
+    D,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ,
-    E,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ,
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ,
     \Q_reg_reg[0]_0 ,
     axi_c2c_phy_clk,
+    ram_full_i_reg,
+    aw_ch_data_valid,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
     prog_full_int,
     sckt_wrst_i,
     sckt_wr_rst_i_q,
-    aw_ch_data_valid,
-    ram_full_fb_i_reg,
-    ram_full_i_reg,
     out,
     \Q_reg_reg[0]_1 ,
     \Q_reg_reg[0]_2 ,
@@ -30221,21 +32766,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
     \Q_reg_reg[0]_4 ,
     fifo_wrst_done,
     fifo_rrst_done);
-  output [0:0]D;
-  output wr_rst_busy_i2_out;
-  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
   output [0:0]E;
+  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ;
+  output [0:0]D;
+  output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
   output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ;
   output \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ;
   input \Q_reg_reg[0]_0 ;
   input axi_c2c_phy_clk;
+  input ram_full_i_reg;
+  input aw_ch_data_valid;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
   input prog_full_int;
   input sckt_wrst_i;
   input sckt_wr_rst_i_q;
-  input aw_ch_data_valid;
-  input ram_full_fb_i_reg;
-  input ram_full_i_reg;
   input out;
   input \Q_reg_reg[0]_1 ;
   input \Q_reg_reg[0]_2 ;
@@ -30260,24 +32804,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ;
+  wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ;
   wire \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ;
   wire out;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire ram_full_i_reg;
   wire sckt_wr_rst_i_q;
   wire sckt_wrst_i;
-  wire wr_rst_busy_i2_out;
 
-  LUT5 #(
-    .INIT(32'h00000002)) 
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_2 
-       (.I0(aw_ch_data_valid),
-        .I1(\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .I2(ram_full_fb_i_reg),
-        .I3(ram_full_i_reg),
-        .I4(wr_rst_busy_i2_out),
-        .O(E));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
   (* msgon = "true" *) 
@@ -30289,6 +32823,15 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
         .D(\Q_reg_reg[0]_0 ),
         .Q(Q_reg),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  LUT4 #(
+    .INIT(16'h0004)) 
+    \mux_by_4.pack_reg0[12]_i_1 
+       (.I0(ram_full_i_reg),
+        .I1(aw_ch_data_valid),
+        .I2(\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .I3(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
+        .O(E));
   LUT4 #(
     .INIT(16'h2F22)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_i_1 
@@ -30297,13 +32840,12 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
         .I2(Q_reg),
         .I3(\Q_reg_reg[0]_0 ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.fifo_wrst_done_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_i_1 
        (.I0(sckt_wrst_i),
         .I1(sckt_wr_rst_i_q),
-        .I2(wr_rst_busy_i2_out),
+        .I2(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.safety_ckt_wr_rst_i_reg ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
@@ -30313,7 +32855,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
         .I2(\Q_reg_reg[0]_1 ),
         .I3(\Q_reg_reg[0]_2 ),
         .I4(\Q_reg_reg[0]_3 ),
-        .O(wr_rst_busy_i2_out));
+        .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ));
   LUT3 #(
     .INIT(8'hFE)) 
     \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_i_2 
@@ -30331,13 +32873,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff_90
         .I4(\Q_reg_reg[0]_4 ),
         .I5(\Q_reg_reg[0]_3 ),
         .O(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wrst_i_reg ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \tdm_data_out[2]_i_1 
        (.I0(\grstd1.grst_full.grst_f.rst_d3_reg ),
         .I1(prog_full_int),
-        .I2(wr_rst_busy_i2_out),
+        .I2(\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_i_q_reg ),
         .O(D));
 endmodule
 
@@ -30836,7 +33378,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized0_102
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized0_160
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized0_161
    (D,
     Q,
     m_aclk,
@@ -32393,7 +34935,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized1_103
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized1_161
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized1_162
    (D,
     Q,
     axi_c2c_phy_clk,
@@ -32714,7 +35256,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized2_104
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized2_162
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized2_163
    (D,
     \Q_reg_reg[7]_0 ,
     m_aclk,
@@ -33035,7 +35577,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized3_105
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized3_163
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized3_164
    (D,
     \Q_reg_reg[7]_0 ,
     axi_c2c_phy_clk,
@@ -33478,7 +36020,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized4_106
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized4_164
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized4_165
    (out,
     \gnxpm_cdc.wr_pntr_bin_reg[6] ,
     D,
@@ -33982,7 +36524,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized5_107
 endmodule
 
 (* ORIG_REF_NAME = "synchronizer_ff" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized5_165
+module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized5_166
    (out,
     \gnxpm_cdc.rd_pntr_bin_reg[6] ,
     D,
@@ -34621,26 +37163,33 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_synchronizer_ff__parameterized9
         .Q(Q_reg[8]));
 endmodule
 
+(* ORIG_REF_NAME = "wr_bin_cntr" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
    (ram_full_i_reg,
     Q,
     \gdiff.diff_pntr_pad_reg[8] ,
     S,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
-    E,
+    ram_full_fb_i_reg,
+    \mux_by_4.data_count_reg[3] ,
+    ram_full_i_reg_0,
     RD_PNTR_WR,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
     AR,
+    E,
     axi_c2c_phy_clk);
   output ram_full_i_reg;
   output [6:0]Q;
   output [3:0]\gdiff.diff_pntr_pad_reg[8] ;
   output [3:0]S;
   output [7:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
-  input [0:0]E;
+  input ram_full_fb_i_reg;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input [0:0]ram_full_i_reg_0;
   input [7:0]RD_PNTR_WR;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
   input [0:0]AR;
+  input [0:0]E;
   input axi_c2c_phy_clk;
 
   wire [0:0]AR;
@@ -34653,8 +37202,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
   wire [3:0]\gdiff.diff_pntr_pad_reg[8] ;
   wire \gic0.gc0.count[7]_i_2_n_0 ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [7:7]p_14_out;
   wire [7:0]plusOp;
+  wire ram_full_fb_i_reg;
   wire ram_full_i_i_2_n_0;
   wire ram_full_i_i_3_n_0;
   wire ram_full_i_i_4_n_0;
@@ -34664,9 +37215,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
   wire ram_full_i_i_8_n_0;
   wire ram_full_i_i_9_n_0;
   wire ram_full_i_reg;
+  wire [0:0]ram_full_i_reg_0;
   wire [7:0]wr_pntr_plus2;
 
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \gic0.gc0.count[0]_i_1 
@@ -34678,7 +37230,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
        (.I0(wr_pntr_plus2[0]),
         .I1(wr_pntr_plus2[1]),
         .O(plusOp[1]));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[2]_i_1 
@@ -34686,7 +37238,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
         .I1(wr_pntr_plus2[1]),
         .I2(wr_pntr_plus2[2]),
         .O(plusOp[2]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[3]_i_1 
@@ -34695,7 +37247,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
         .I2(wr_pntr_plus2[2]),
         .I3(wr_pntr_plus2[3]),
         .O(plusOp[3]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[4]_i_1 
@@ -34721,7 +37273,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
        (.I0(\gic0.gc0.count[7]_i_2_n_0 ),
         .I1(wr_pntr_plus2[6]),
         .O(plusOp[6]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[7]_i_1 
@@ -34979,12 +37531,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
        (.I0(Q[0]),
         .I1(RD_PNTR_WR[0]),
         .O(S[0]));
-  LUT3 #(
-    .INIT(8'hF8)) 
+  LUT5 #(
+    .INIT(32'hFFFF4000)) 
     ram_full_i_i_1
-       (.I0(E),
-        .I1(ram_full_i_i_2_n_0),
-        .I2(ram_full_i_i_3_n_0),
+       (.I0(ram_full_fb_i_reg),
+        .I1(\mux_by_4.data_count_reg[3] ),
+        .I2(ram_full_i_reg_0),
+        .I3(ram_full_i_i_2_n_0),
+        .I4(ram_full_i_i_3_n_0),
         .O(ram_full_i_reg));
   LUT6 #(
     .INIT(64'h2002000000002002)) 
@@ -35016,7 +37570,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
         .I4(RD_PNTR_WR[1]),
         .I5(\grstd1.grst_full.grst_f.rst_d3_reg ),
         .O(ram_full_i_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT4 #(
     .INIT(16'h6FF6)) 
     ram_full_i_i_5
@@ -35062,26 +37616,32 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr
 endmodule
 
 (* ORIG_REF_NAME = "wr_bin_cntr" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
+module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_157
    (ram_full_i_reg,
     Q,
     \gdiff.diff_pntr_pad_reg[8] ,
     S,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
-    E,
+    ram_full_fb_i_reg,
+    \mux_by_4.data_count_reg[3] ,
+    ram_full_i_reg_0,
     \gnxpm_cdc.rd_pntr_bin_reg[7] ,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
     AR,
+    E,
     axi_c2c_phy_clk);
   output ram_full_i_reg;
   output [6:0]Q;
   output [3:0]\gdiff.diff_pntr_pad_reg[8] ;
   output [3:0]S;
   output [7:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
-  input [0:0]E;
+  input ram_full_fb_i_reg;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input [0:0]ram_full_i_reg_0;
   input [7:0]\gnxpm_cdc.rd_pntr_bin_reg[7] ;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
   input [0:0]AR;
+  input [0:0]E;
   input axi_c2c_phy_clk;
 
   wire [0:0]AR;
@@ -35094,8 +37654,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
   wire \gic0.gc0.count[7]_i_2__0_n_0 ;
   wire [7:0]\gnxpm_cdc.rd_pntr_bin_reg[7] ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [7:7]p_14_out;
   wire [7:0]plusOp__0;
+  wire ram_full_fb_i_reg;
   wire ram_full_i_i_2__0_n_0;
   wire ram_full_i_i_3__0_n_0;
   wire ram_full_i_i_4__0_n_0;
@@ -35105,9 +37667,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
   wire ram_full_i_i_8__0_n_0;
   wire ram_full_i_i_9__0_n_0;
   wire ram_full_i_reg;
+  wire [0:0]ram_full_i_reg_0;
   wire [7:0]wr_pntr_plus2;
 
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \gic0.gc0.count[0]_i_1__0 
@@ -35119,7 +37682,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
        (.I0(wr_pntr_plus2[0]),
         .I1(wr_pntr_plus2[1]),
         .O(plusOp__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[2]_i_1__0 
@@ -35127,7 +37690,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
         .I1(wr_pntr_plus2[1]),
         .I2(wr_pntr_plus2[2]),
         .O(plusOp__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[3]_i_1__0 
@@ -35136,7 +37699,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
         .I2(wr_pntr_plus2[2]),
         .I3(wr_pntr_plus2[3]),
         .O(plusOp__0[3]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[4]_i_1__0 
@@ -35162,7 +37725,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
        (.I0(\gic0.gc0.count[7]_i_2__0_n_0 ),
         .I1(wr_pntr_plus2[6]),
         .O(plusOp__0[6]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[7]_i_1__0 
@@ -35420,12 +37983,14 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
        (.I0(Q[0]),
         .I1(\gnxpm_cdc.rd_pntr_bin_reg[7] [0]),
         .O(S[0]));
-  LUT3 #(
-    .INIT(8'hF8)) 
+  LUT5 #(
+    .INIT(32'hFFFF4000)) 
     ram_full_i_i_1__1
-       (.I0(E),
-        .I1(ram_full_i_i_2__0_n_0),
-        .I2(ram_full_i_i_3__0_n_0),
+       (.I0(ram_full_fb_i_reg),
+        .I1(\mux_by_4.data_count_reg[3] ),
+        .I2(ram_full_i_reg_0),
+        .I3(ram_full_i_i_2__0_n_0),
+        .I4(ram_full_i_i_3__0_n_0),
         .O(ram_full_i_reg));
   LUT6 #(
     .INIT(64'h2002000000002002)) 
@@ -35457,7 +38022,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156
         .I4(\gnxpm_cdc.rd_pntr_bin_reg[7] [1]),
         .I5(\grstd1.grst_full.grst_f.rst_d3_reg ),
         .O(ram_full_i_i_4__0_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'h6FF6)) 
     ram_full_i_i_5__0
@@ -35542,7 +38107,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
   wire [8:0]plusOp__1;
   wire [0:0]v1_reg;
 
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \gic0.gc0.count[0]_i_1__1 
@@ -35554,7 +38119,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
        (.I0(Q[0]),
         .I1(Q[1]),
         .O(plusOp__1[1]));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[2]_i_1__1 
@@ -35562,7 +38127,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
         .I1(Q[1]),
         .I2(Q[2]),
         .O(plusOp__1[2]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[3]_i_1__1 
@@ -35571,7 +38136,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
         .I2(Q[2]),
         .I3(Q[3]),
         .O(plusOp__1[3]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[4]_i_1__1 
@@ -35597,7 +38162,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
        (.I0(\gic0.gc0.count[8]_i_2_n_0 ),
         .I1(Q[6]),
         .O(plusOp__1[6]));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[7]_i_1__1 
@@ -35605,7 +38170,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized0
         .I1(Q[6]),
         .I2(Q[7]),
         .O(plusOp__1[7]));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[8]_i_1 
@@ -35914,7 +38479,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
     ram_full_fb_i_reg_6,
     \gic0.gc0.count_d1_reg[8]_0 ,
     Q,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
     RD_PNTR_WR,
     SR,
     E,
@@ -35929,13 +38494,13 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
   output ram_full_fb_i_reg_6;
   output [0:0]\gic0.gc0.count_d1_reg[8]_0 ;
   output [0:0]Q;
-  output [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  output [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   input [7:0]RD_PNTR_WR;
   input [0:0]SR;
   input [0:0]E;
   input m_aclk;
 
-  wire [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  wire [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   wire [0:0]E;
   wire [0:0]Q;
   wire [7:0]RD_PNTR_WR;
@@ -35966,7 +38531,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.I0(wr_pntr_plus2[0]),
         .I1(wr_pntr_plus2[1]),
         .O(plusOp__4[1]));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[2]_i_1__2 
@@ -35974,7 +38539,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
         .I1(wr_pntr_plus2[0]),
         .I2(wr_pntr_plus2[2]),
         .O(plusOp__4[2]));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[3]_i_1__2 
@@ -35983,7 +38548,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
         .I2(wr_pntr_plus2[1]),
         .I3(wr_pntr_plus2[3]),
         .O(plusOp__4[3]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[4]_i_1__2 
@@ -36010,7 +38575,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
         .I1(\gic0.gc0.count[8]_i_2__0_n_0 ),
         .I2(wr_pntr_plus2[6]),
         .O(plusOp__4[6]));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[7]_i_1__2 
@@ -36019,7 +38584,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
         .I2(wr_pntr_plus2[6]),
         .I3(wr_pntr_plus2[7]),
         .O(plusOp__4[7]));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[8]_i_1__0 
@@ -36029,7 +38594,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
         .I3(wr_pntr_plus2[5]),
         .I4(\gic0.gc0.count_d1_reg[8]_0 ),
         .O(plusOp__4[8]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \gic0.gc0.count[8]_i_2__0 
@@ -36117,7 +38682,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[0]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [0]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [0]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36125,7 +38690,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[1]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [1]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [1]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36133,7 +38698,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[2]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [2]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [2]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36141,7 +38706,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[3]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [3]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [3]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36149,7 +38714,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[4]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [4]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [4]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36157,7 +38722,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[5]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [5]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [5]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36165,7 +38730,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[6]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [6]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [6]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36173,7 +38738,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(p_14_out[7]),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [7]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [7]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36181,7 +38746,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1
        (.C(m_aclk),
         .CE(E),
         .D(Q),
-        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram [8]),
+        .Q(\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram [8]),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -36373,7 +38938,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
   wire ram_full_i_reg;
   wire [7:0]wr_pntr_plus2;
 
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \gic0.gc0.count[0]_i_1__3 
@@ -36385,7 +38950,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
        (.I0(wr_pntr_plus2[0]),
         .I1(wr_pntr_plus2[1]),
         .O(plusOp__5[1]));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \gic0.gc0.count[2]_i_1__3 
@@ -36393,7 +38958,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I1(wr_pntr_plus2[0]),
         .I2(wr_pntr_plus2[2]),
         .O(plusOp__5[2]));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[3]_i_1__3 
@@ -36402,7 +38967,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I2(wr_pntr_plus2[1]),
         .I3(wr_pntr_plus2[3]),
         .O(plusOp__5[3]));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[4]_i_1__3 
@@ -36422,7 +38987,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I4(wr_pntr_plus2[3]),
         .I5(wr_pntr_plus2[5]),
         .O(plusOp__5[5]));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \gic0.gc0.count[6]_i_1__3 
@@ -36431,7 +38996,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I2(wr_pntr_plus2[5]),
         .I3(wr_pntr_plus2[6]),
         .O(plusOp__5[6]));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \gic0.gc0.count[7]_i_1__3 
@@ -36441,7 +39006,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I3(wr_pntr_plus2[4]),
         .I4(wr_pntr_plus2[7]),
         .O(plusOp__5[7]));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \gic0.gc0.count[7]_i_2__1 
@@ -36688,7 +39253,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .I4(RD_PNTR_WR[4]),
         .I5(ram_full_i_i_10_n_0),
         .O(ram_full_i_i_4__1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT4 #(
     .INIT(16'h9009)) 
     ram_full_i_i_6__1
@@ -36722,42 +39287,52 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized2
         .O(ram_full_i_i_9__1_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "wr_logic" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic
    (out,
-    \gpf1.prog_full_i_reg ,
+    E,
     prog_full_int,
     Q,
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
     AR,
-    E,
-    RD_PNTR_WR,
+    \mux_by_4.data_count_reg[3] ,
+    ram_full_i_reg,
+    wr_rst_busy_i2_out,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
+    aw_ch_data_valid,
+    RD_PNTR_WR,
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] );
   output out;
-  output \gpf1.prog_full_i_reg ;
+  output [0:0]E;
   output prog_full_int;
   output [7:0]Q;
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input [0:0]AR;
-  input [0:0]E;
-  input [7:0]RD_PNTR_WR;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input [0:0]ram_full_i_reg;
+  input wr_rst_busy_i2_out;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
+  input aw_ch_data_valid;
+  input [7:0]RD_PNTR_WR;
   input [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
 
   wire [0:0]AR;
   wire [0:0]E;
   wire [7:0]Q;
   wire [7:0]RD_PNTR_WR;
+  wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
-  wire \gpf1.prog_full_i_reg ;
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire \gwas.wsts_n_1 ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
   wire out;
   wire [6:0]p_14_out;
   wire prog_full_int;
+  wire [0:0]ram_full_i_reg;
   wire wpntr_n_0;
   wire wpntr_n_10;
   wire wpntr_n_11;
@@ -36767,6 +39342,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic
   wire wpntr_n_15;
   wire wpntr_n_8;
   wire wpntr_n_9;
+  wire wr_rst_busy_i2_out;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as \gwas.gpf.wrpf 
        (.E(E),
@@ -36777,15 +39353,20 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic
         .\grstd1.grst_full.grst_f.rst_d2_reg (\grstd1.grst_full.grst_f.rst_d2_reg ),
         .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
         .\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] (\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ),
-        .prog_full_int(prog_full_int),
-        .ram_full_fb_i_reg(\gpf1.prog_full_i_reg ));
+        .out(\gwas.wsts_n_1 ),
+        .prog_full_int(prog_full_int));
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as \gwas.wsts 
        (.AR(AR),
+        .E(E),
+        .aw_ch_data_valid(aw_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .ch1_valid_reg(wpntr_n_0),
-        .\gpf1.prog_full_i_reg (\gpf1.prog_full_i_reg ),
+        .\gic0.gc0.count_reg[0] (\gwas.wsts_n_1 ),
         .\grstd1.grst_full.grst_f.rst_d2_reg (\grstd1.grst_full.grst_f.rst_d2_reg ),
-        .out(out));
+        .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .out(out),
+        .ram_full_fb_i_reg_0(wpntr_n_0),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr wpntr
        (.AR(AR),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (Q),
@@ -36796,46 +39377,58 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
         .\gdiff.diff_pntr_pad_reg[8] ({wpntr_n_8,wpntr_n_9,wpntr_n_10,wpntr_n_11}),
         .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .ram_full_i_reg(wpntr_n_0));
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .ram_full_fb_i_reg(\gwas.wsts_n_1 ),
+        .ram_full_i_reg(wpntr_n_0),
+        .ram_full_i_reg_0(ram_full_i_reg));
 endmodule
 
 (* ORIG_REF_NAME = "wr_logic" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_115
+module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_116
    (out,
-    \gpf1.prog_full_i_reg ,
+    E,
     prog_full_int,
     Q,
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
     AR,
-    E,
-    \gnxpm_cdc.rd_pntr_bin_reg[7] ,
+    \mux_by_4.data_count_reg[3] ,
+    ram_full_i_reg,
+    wr_rst_busy_i2_out,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
+    ar_ch_data_valid,
+    \gnxpm_cdc.rd_pntr_bin_reg[7] ,
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] );
   output out;
-  output \gpf1.prog_full_i_reg ;
+  output [0:0]E;
   output prog_full_int;
   output [7:0]Q;
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input [0:0]AR;
-  input [0:0]E;
-  input [7:0]\gnxpm_cdc.rd_pntr_bin_reg[7] ;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input [0:0]ram_full_i_reg;
+  input wr_rst_busy_i2_out;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
+  input ar_ch_data_valid;
+  input [7:0]\gnxpm_cdc.rd_pntr_bin_reg[7] ;
   input [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
 
   wire [0:0]AR;
   wire [0:0]E;
   wire [7:0]Q;
+  wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
   wire [7:0]\gnxpm_cdc.rd_pntr_bin_reg[7] ;
-  wire \gpf1.prog_full_i_reg ;
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire \gwas.wsts_n_1 ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   wire [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
   wire out;
   wire [6:0]p_14_out;
   wire prog_full_int;
+  wire [0:0]ram_full_i_reg;
   wire wpntr_n_0;
   wire wpntr_n_10;
   wire wpntr_n_11;
@@ -36845,8 +39438,9 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_115
   wire wpntr_n_15;
   wire wpntr_n_8;
   wire wpntr_n_9;
+  wire wr_rst_busy_i2_out;
 
-  b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154 \gwas.gpf.wrpf 
+  b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_155 \gwas.gpf.wrpf 
        (.E(E),
         .Q(p_14_out),
         .S({wpntr_n_12,wpntr_n_13,wpntr_n_14,wpntr_n_15}),
@@ -36855,16 +39449,21 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_115
         .\grstd1.grst_full.grst_f.rst_d2_reg (\grstd1.grst_full.grst_f.rst_d2_reg ),
         .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
         .\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] (\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ),
-        .prog_full_int(prog_full_int),
-        .ram_full_fb_i_reg(\gpf1.prog_full_i_reg ));
-  b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_155 \gwas.wsts 
+        .out(\gwas.wsts_n_1 ),
+        .prog_full_int(prog_full_int));
+  b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_156 \gwas.wsts 
        (.AR(AR),
+        .E(E),
+        .ar_ch_data_valid(ar_ch_data_valid),
         .axi_c2c_phy_clk(axi_c2c_phy_clk),
-        .ch2_valid_reg(wpntr_n_0),
-        .\gpf1.prog_full_i_reg (\gpf1.prog_full_i_reg ),
+        .\gic0.gc0.count_reg[0] (\gwas.wsts_n_1 ),
         .\grstd1.grst_full.grst_f.rst_d2_reg (\grstd1.grst_full.grst_f.rst_d2_reg ),
-        .out(out));
-  b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_156 wpntr
+        .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .out(out),
+        .ram_full_fb_i_reg_0(wpntr_n_0),
+        .wr_rst_busy_i2_out(wr_rst_busy_i2_out));
+  b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr_157 wpntr
        (.AR(AR),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (Q),
         .E(E),
@@ -36874,7 +39473,10 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic_115
         .\gdiff.diff_pntr_pad_reg[8] ({wpntr_n_8,wpntr_n_9,wpntr_n_10,wpntr_n_11}),
         .\gnxpm_cdc.rd_pntr_bin_reg[7] (\gnxpm_cdc.rd_pntr_bin_reg[7] ),
         .\grstd1.grst_full.grst_f.rst_d3_reg (\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .ram_full_i_reg(wpntr_n_0));
+        .\mux_by_4.data_count_reg[3] (\mux_by_4.data_count_reg[3] ),
+        .ram_full_fb_i_reg(\gwas.wsts_n_1 ),
+        .ram_full_i_reg(wpntr_n_0),
+        .ram_full_i_reg_0(ram_full_i_reg));
 endmodule
 
 (* ORIG_REF_NAME = "wr_logic" *) 
@@ -36987,11 +39589,11 @@ endmodule
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1
    (comp1,
     out,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
     Q,
     \gic0.gc0.count_d1_reg[8] ,
     ram_full_fb_i_reg,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_0 ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0 ,
     \gnxpm_cdc.rd_pntr_bin_reg[8] ,
     \gnxpm_cdc.rd_pntr_bin_reg[8]_0 ,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
@@ -37004,11 +39606,11 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1
     E);
   output comp1;
   output out;
-  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   output [0:0]Q;
   output [0:0]\gic0.gc0.count_d1_reg[8] ;
   output ram_full_fb_i_reg;
-  output [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_0 ;
+  output [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0 ;
   input \gnxpm_cdc.rd_pntr_bin_reg[8] ;
   input \gnxpm_cdc.rd_pntr_bin_reg[8]_0 ;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
@@ -37020,8 +39622,8 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1
   input m_axi_rvalid;
   input [0:0]E;
 
-  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
-  wire [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_0 ;
+  wire \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
+  wire [8:0]\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0 ;
   wire [0:0]E;
   wire [0:0]Q;
   wire [7:0]RD_PNTR_WR;
@@ -37047,7 +39649,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1
   wire wpntr_n_7;
 
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as__parameterized1 \gwas.wsts 
-       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ),
+       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ),
         .SR(SR),
         .comp1(comp1),
         .\gic0.gc0.count_d1_reg[1] (wpntr_n_3),
@@ -37068,7 +39670,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized1
         .out(out),
         .ram_full_fb_i_reg_0(ram_full_fb_i_reg));
   b2000t_c2c_bram_axi_chip2chip_0_0_wr_bin_cntr__parameterized1 wpntr
-       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_0 ),
+       (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram (\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0 ),
         .E(E),
         .Q(Q),
         .RD_PNTR_WR(RD_PNTR_WR),
@@ -37152,6 +39754,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_logic__parameterized2
         .ram_full_i_reg(wpntr_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "wr_pf_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
    (prog_full_int,
     E,
@@ -37161,7 +39764,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
-    ram_full_fb_i_reg,
+    out,
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] );
   output prog_full_int;
   input [0:0]E;
@@ -37171,7 +39774,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
-  input ram_full_fb_i_reg;
+  input out;
   input [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
 
   wire [0:0]E;
@@ -37186,6 +39789,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
   wire [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
+  wire out;
   wire [8:2]plusOp_84;
   wire plusOp_carry__0_n_1;
   wire plusOp_carry__0_n_2;
@@ -37195,7 +39799,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
   wire plusOp_carry_n_2;
   wire plusOp_carry_n_3;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire [0:0]NLW_plusOp_carry_O_UNCONNECTED;
   wire [3:3]NLW_plusOp_carry__0_CO_UNCONNECTED;
 
@@ -37262,7 +39865,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
         .I1(\gpf1.prog_full_i_i_3_n_0 ),
         .I2(diff_pntr[7]),
         .I3(\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .I4(ram_full_fb_i_reg),
+        .I4(out),
         .I5(prog_full_int),
         .O(\gpf1.prog_full_i_i_1_n_0 ));
   LUT3 #(
@@ -37305,7 +39908,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as
 endmodule
 
 (* ORIG_REF_NAME = "wr_pf_as" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
+module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_155
    (prog_full_int,
     E,
     Q,
@@ -37314,7 +39917,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
     \grstd1.grst_full.grst_f.rst_d3_reg ,
-    ram_full_fb_i_reg,
+    out,
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] );
   output prog_full_int;
   input [0:0]E;
@@ -37324,7 +39927,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input \grstd1.grst_full.grst_f.rst_d3_reg ;
-  input ram_full_fb_i_reg;
+  input out;
   input [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
 
   wire [0:0]E;
@@ -37339,6 +39942,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
   wire \grstd1.grst_full.grst_f.rst_d3_reg ;
   wire [0:0]\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1] ;
+  wire out;
   wire plusOp_carry__0_n_1;
   wire plusOp_carry__0_n_2;
   wire plusOp_carry__0_n_3;
@@ -37354,7 +39958,6 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
   wire plusOp_carry_n_5;
   wire plusOp_carry_n_6;
   wire prog_full_int;
-  wire ram_full_fb_i_reg;
   wire [0:0]NLW_plusOp_carry_O_UNCONNECTED;
   wire [3:3]NLW_plusOp_carry__0_CO_UNCONNECTED;
 
@@ -37421,7 +40024,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as_154
         .I1(\gpf1.prog_full_i_i_3__0_n_0 ),
         .I2(diff_pntr[7]),
         .I3(\grstd1.grst_full.grst_f.rst_d3_reg ),
-        .I4(ram_full_fb_i_reg),
+        .I4(out),
         .I5(prog_full_int),
         .O(\gpf1.prog_full_i_i_1__0_n_0 ));
   LUT3 #(
@@ -37637,29 +40240,55 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_pf_as__parameterized0
         .S({1'b0,1'b0,1'b0,\gic0.gc0.count_d1_reg[8] }));
 endmodule
 
+(* ORIG_REF_NAME = "wr_status_flags_as" *) 
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as
    (out,
-    \gpf1.prog_full_i_reg ,
-    ch1_valid_reg,
+    \gic0.gc0.count_reg[0] ,
+    E,
+    ram_full_fb_i_reg_0,
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
-    AR);
+    AR,
+    \mux_by_4.data_count_reg[3] ,
+    wr_rst_busy_i2_out,
+    \grstd1.grst_full.grst_f.rst_d3_reg ,
+    aw_ch_data_valid);
   output out;
-  output \gpf1.prog_full_i_reg ;
-  input ch1_valid_reg;
+  output \gic0.gc0.count_reg[0] ;
+  output [0:0]E;
+  input ram_full_fb_i_reg_0;
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input [0:0]AR;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input wr_rst_busy_i2_out;
+  input \grstd1.grst_full.grst_f.rst_d3_reg ;
+  input aw_ch_data_valid;
 
   wire [0:0]AR;
+  wire [0:0]E;
+  wire aw_ch_data_valid;
   wire axi_c2c_phy_clk;
-  wire ch1_valid_reg;
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
+  wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   (* DONT_TOUCH *) wire ram_full_fb_i;
+  wire ram_full_fb_i_reg_0;
   (* DONT_TOUCH *) wire ram_full_i;
+  wire wr_rst_busy_i2_out;
 
-  assign \gpf1.prog_full_i_reg  = ram_full_fb_i;
+  assign \gic0.gc0.count_reg[0]  = ram_full_fb_i;
   assign out = ram_full_i;
+  LUT6 #(
+    .INIT(64'h0000000000040000)) 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_2 
+       (.I0(ram_full_fb_i),
+        .I1(\mux_by_4.data_count_reg[3] ),
+        .I2(wr_rst_busy_i2_out),
+        .I3(\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .I4(aw_ch_data_valid),
+        .I5(ram_full_i),
+        .O(E));
   (* DONT_TOUCH *) 
   (* KEEP = "yes" *) 
   (* equivalent_register_removal = "no" *) 
@@ -37668,7 +40297,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as
     ram_full_fb_i_reg
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(ch1_valid_reg),
+        .D(ram_full_fb_i_reg_0),
         .Q(ram_full_fb_i),
         .S(AR));
   (* DONT_TOUCH *) 
@@ -37679,35 +40308,60 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as
     ram_full_i_reg
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(ch1_valid_reg),
+        .D(ram_full_fb_i_reg_0),
         .PRE(\grstd1.grst_full.grst_f.rst_d2_reg ),
         .Q(ram_full_i));
 endmodule
 
 (* ORIG_REF_NAME = "wr_status_flags_as" *) 
-module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_155
+module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_156
    (out,
-    \gpf1.prog_full_i_reg ,
-    ch2_valid_reg,
+    \gic0.gc0.count_reg[0] ,
+    E,
+    ram_full_fb_i_reg_0,
     axi_c2c_phy_clk,
     \grstd1.grst_full.grst_f.rst_d2_reg ,
-    AR);
+    AR,
+    \mux_by_4.data_count_reg[3] ,
+    wr_rst_busy_i2_out,
+    \grstd1.grst_full.grst_f.rst_d3_reg ,
+    ar_ch_data_valid);
   output out;
-  output \gpf1.prog_full_i_reg ;
-  input ch2_valid_reg;
+  output \gic0.gc0.count_reg[0] ;
+  output [0:0]E;
+  input ram_full_fb_i_reg_0;
   input axi_c2c_phy_clk;
   input \grstd1.grst_full.grst_f.rst_d2_reg ;
   input [0:0]AR;
+  input [0:0]\mux_by_4.data_count_reg[3] ;
+  input wr_rst_busy_i2_out;
+  input \grstd1.grst_full.grst_f.rst_d3_reg ;
+  input ar_ch_data_valid;
 
   wire [0:0]AR;
+  wire [0:0]E;
+  wire ar_ch_data_valid;
   wire axi_c2c_phy_clk;
-  wire ch2_valid_reg;
   wire \grstd1.grst_full.grst_f.rst_d2_reg ;
+  wire \grstd1.grst_full.grst_f.rst_d3_reg ;
+  wire [0:0]\mux_by_4.data_count_reg[3] ;
   (* DONT_TOUCH *) wire ram_full_fb_i;
+  wire ram_full_fb_i_reg_0;
   (* DONT_TOUCH *) wire ram_full_i;
+  wire wr_rst_busy_i2_out;
 
-  assign \gpf1.prog_full_i_reg  = ram_full_fb_i;
+  assign \gic0.gc0.count_reg[0]  = ram_full_fb_i;
   assign out = ram_full_i;
+  LUT6 #(
+    .INIT(64'h0000000000040000)) 
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_i_2__1 
+       (.I0(ram_full_fb_i),
+        .I1(\mux_by_4.data_count_reg[3] ),
+        .I2(wr_rst_busy_i2_out),
+        .I3(\grstd1.grst_full.grst_f.rst_d3_reg ),
+        .I4(ar_ch_data_valid),
+        .I5(ram_full_i),
+        .O(E));
   (* DONT_TOUCH *) 
   (* KEEP = "yes" *) 
   (* equivalent_register_removal = "no" *) 
@@ -37716,7 +40370,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_155
     ram_full_fb_i_reg
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(ch2_valid_reg),
+        .D(ram_full_fb_i_reg_0),
         .Q(ram_full_fb_i),
         .S(AR));
   (* DONT_TOUCH *) 
@@ -37727,7 +40381,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as_155
     ram_full_i_reg
        (.C(axi_c2c_phy_clk),
         .CE(1'b1),
-        .D(ch2_valid_reg),
+        .D(ram_full_fb_i_reg_0),
         .PRE(\grstd1.grst_full.grst_f.rst_d2_reg ),
         .Q(ram_full_i));
 endmodule
@@ -37806,7 +40460,7 @@ endmodule
 module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as__parameterized1
    (comp1,
     out,
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ,
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ,
     ram_full_fb_i_reg_0,
     \gic0.gc0.count_d1_reg[1] ,
     \gic0.gc0.count_d1_reg[2] ,
@@ -37826,7 +40480,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as__parameterized1
     m_axi_rvalid);
   output comp1;
   output out;
-  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram ;
+  output \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram ;
   output ram_full_fb_i_reg_0;
   input \gic0.gc0.count_d1_reg[1] ;
   input \gic0.gc0.count_d1_reg[2] ;
@@ -37866,7 +40520,7 @@ module b2000t_c2c_bram_axi_chip2chip_0_0_wr_status_flags_as__parameterized1
   wire ram_full_fb_i_reg_0;
   (* DONT_TOUCH *) wire ram_full_i;
 
-  assign \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram  = ram_full_fb_i;
+  assign \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram  = ram_full_fb_i;
   assign out = ram_full_i;
   b2000t_c2c_bram_axi_chip2chip_0_0_compare__parameterized6 c1
        (.comp1(comp1),

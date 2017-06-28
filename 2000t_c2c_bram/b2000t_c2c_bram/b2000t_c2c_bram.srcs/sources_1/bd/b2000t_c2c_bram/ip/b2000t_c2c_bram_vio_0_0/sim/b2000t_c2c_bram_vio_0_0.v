@@ -68,8 +68,8 @@ input [0 : 0] probe_in6;
 output reg [0 : 0] probe_out0 = 'h0 ;
 output reg [25 : 0] probe_out1 = 'h0000000 ;
 output reg [25 : 0] probe_out2 = 'h0000000 ;
-output reg [119 : 0] probe_out3 = 'h000000000000000000000000000000 ;
-output reg [119 : 0] probe_out4 = 'h000000000000000000000000000000 ;
+output reg [59 : 0] probe_out3 = 'h000000000000000 ;
+output reg [59 : 0] probe_out4 = 'h000000000000000 ;
 
 
 endmodule

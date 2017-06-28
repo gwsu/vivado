@@ -77,7 +77,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>cae21c70</spirit:value>
+            <spirit:value>b4815227</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -85,7 +85,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4aa80fc2</spirit:value>
+            <spirit:value>5f1b790f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -103,11 +103,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 27 14:25:03 UTC 2017</spirit:value>
+            <spirit:value>Tue Jun 27 21:04:01 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>cae21c70</spirit:value>
+            <spirit:value>b4815227</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -115,7 +115,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4aa80fc2</spirit:value>
+            <spirit:value>5f1b790f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -134,11 +134,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 27 14:25:03 UTC 2017</spirit:value>
+            <spirit:value>Tue Jun 27 21:04:01 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>cae21c70</spirit:value>
+            <spirit:value>b4815227</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -146,7 +146,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4aa80fc2</spirit:value>
+            <spirit:value>5f1b790f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -165,11 +165,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 27 14:25:03 UTC 2017</spirit:value>
+            <spirit:value>Tue Jun 27 21:04:01 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>cae21c70</spirit:value>
+            <spirit:value>b4815227</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -177,7 +177,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>0e922453</spirit:value>
+            <spirit:value>02e19be1</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -195,11 +195,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 27 14:26:41 UTC 2017</spirit:value>
+            <spirit:value>Tue Jun 27 21:05:36 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>cae21c70</spirit:value>
+            <spirit:value>b4815227</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -207,7 +207,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4aa80fc2</spirit:value>
+            <spirit:value>5f1b790f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -6959,7 +6959,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_PROBE_OUT3_WIDTH&apos;)) - 1)">119</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_PROBE_OUT3_WIDTH&apos;)) - 1)">59</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -6982,7 +6982,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_PROBE_OUT4_WIDTH&apos;)) - 1)">119</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_PROBE_OUT4_WIDTH&apos;)) - 1)">59</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -14182,12 +14182,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT3_WIDTH</spirit:name>
         <spirit:displayName>PROBE OUT3 WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT3_WIDTH" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT3_WIDTH&apos;)))" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">120</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT3_WIDTH" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT3_WIDTH&apos;)))" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">60</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT4_WIDTH</spirit:name>
         <spirit:displayName>PROBE OUT4 WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT4_WIDTH" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT4_WIDTH&apos;)))" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">120</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT4_WIDTH" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT4_WIDTH&apos;)))" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">60</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT5_WIDTH</spirit:name>
@@ -15462,12 +15462,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT3_INIT_VAL</spirit:name>
         <spirit:displayName>PROBE OUT3 INIT VALUE</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT3_INIT_VAL" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT3_INIT_VAL&apos;)))" spirit:bitStringLength="120">0x000000000000000000000000000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT3_INIT_VAL" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT3_INIT_VAL&apos;)))" spirit:bitStringLength="60">0x000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT4_INIT_VAL</spirit:name>
         <spirit:displayName>PROBE OUT4 INIT VALUE</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT4_INIT_VAL" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT4_INIT_VAL&apos;)))" spirit:bitStringLength="120">0x000000000000000000000000000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_PROBE_OUT4_INIT_VAL" spirit:dependency="(spirit:decode(id(&apos;PARAM_VALUE.C_PROBE_OUT4_INIT_VAL&apos;)))" spirit:bitStringLength="60">0x000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROBE_OUT5_INIT_VAL</spirit:name>
@@ -18208,12 +18208,12 @@
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT4_INIT_VAL</spirit:name>
       <spirit:displayName>PROBE OUT4 INIT VALUE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT4_INIT_VAL" spirit:order="53100" spirit:bitStringLength="120">0x0</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT4_INIT_VAL" spirit:order="53100" spirit:bitStringLength="60">0x0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT3_INIT_VAL</spirit:name>
       <spirit:displayName>PROBE OUT3 INIT VALUE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT3_INIT_VAL" spirit:order="53000" spirit:bitStringLength="120">0x0</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT3_INIT_VAL" spirit:order="53000" spirit:bitStringLength="60">0x0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT2_INIT_VAL</spirit:name>
@@ -19488,12 +19488,12 @@
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT4_WIDTH</spirit:name>
       <spirit:displayName>PROBE OUT4 WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT4_WIDTH" spirit:order="27500" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">120</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT4_WIDTH" spirit:order="27500" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">60</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT3_WIDTH</spirit:name>
       <spirit:displayName>PROBE OUT3 WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT3_WIDTH" spirit:order="27400" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">120</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROBE_OUT3_WIDTH" spirit:order="27400" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">60</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_PROBE_OUT2_WIDTH</spirit:name>

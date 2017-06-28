@@ -4,9 +4,11 @@ proc init_gui { IPINST } {
   #Adding Page
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "A01B" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "A10B" -parent ${Page_0}
   ipgui::add_param $IPINST -name "A2B0" -parent ${Page_0}
   ipgui::add_param $IPINST -name "A2B1" -parent ${Page_0}
   ipgui::add_param $IPINST -name "B01A" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "B10A" -parent ${Page_0}
   ipgui::add_param $IPINST -name "B2A0" -parent ${Page_0}
   ipgui::add_param $IPINST -name "B2A1" -parent ${Page_0}
   ipgui::add_param $IPINST -name "ENDL" -parent ${Page_0}
@@ -21,6 +23,15 @@ proc update_PARAM_VALUE.A01B { PARAM_VALUE.A01B } {
 
 proc validate_PARAM_VALUE.A01B { PARAM_VALUE.A01B } {
 	# Procedure called to validate A01B
+	return true
+}
+
+proc update_PARAM_VALUE.A10B { PARAM_VALUE.A10B } {
+	# Procedure called to update A10B when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.A10B { PARAM_VALUE.A10B } {
+	# Procedure called to validate A10B
 	return true
 }
 
@@ -48,6 +59,15 @@ proc update_PARAM_VALUE.B01A { PARAM_VALUE.B01A } {
 
 proc validate_PARAM_VALUE.B01A { PARAM_VALUE.B01A } {
 	# Procedure called to validate B01A
+	return true
+}
+
+proc update_PARAM_VALUE.B10A { PARAM_VALUE.B10A } {
+	# Procedure called to update B10A when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.B10A { PARAM_VALUE.B10A } {
+	# Procedure called to validate B10A
 	return true
 }
 
@@ -121,6 +141,16 @@ proc update_MODELPARAM_VALUE.A01B { MODELPARAM_VALUE.A01B PARAM_VALUE.A01B } {
 proc update_MODELPARAM_VALUE.B01A { MODELPARAM_VALUE.B01A PARAM_VALUE.B01A } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.B01A}] ${MODELPARAM_VALUE.B01A}
+}
+
+proc update_MODELPARAM_VALUE.A10B { MODELPARAM_VALUE.A10B PARAM_VALUE.A10B } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.A10B}] ${MODELPARAM_VALUE.A10B}
+}
+
+proc update_MODELPARAM_VALUE.B10A { MODELPARAM_VALUE.B10A PARAM_VALUE.B10A } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.B10A}] ${MODELPARAM_VALUE.B10A}
 }
 
 proc update_MODELPARAM_VALUE.ENDL { MODELPARAM_VALUE.ENDL PARAM_VALUE.ENDL } {

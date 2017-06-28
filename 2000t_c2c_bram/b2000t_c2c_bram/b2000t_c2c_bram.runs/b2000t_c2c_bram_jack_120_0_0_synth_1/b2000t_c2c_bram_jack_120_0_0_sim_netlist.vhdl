@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Jun 27 10:26:30 2017
+-- Date        : Tue Jun 27 19:16:36 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ b2000t_c2c_bram_jack_120_0_0_sim_netlist.vhdl
@@ -16,38 +16,18 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120 is
   port (
-    a_out : out STD_LOGIC_VECTOR ( 119 downto 0 );
-    b_out : out STD_LOGIC_VECTOR ( 119 downto 0 );
-    b_in : in STD_LOGIC_VECTOR ( 119 downto 0 );
-    mode : in STD_LOGIC_VECTOR ( 119 downto 0 );
-    a_in : in STD_LOGIC_VECTOR ( 119 downto 0 )
+    a_out : out STD_LOGIC_VECTOR ( 59 downto 0 );
+    b_out : out STD_LOGIC_VECTOR ( 59 downto 0 );
+    b_in : in STD_LOGIC_VECTOR ( 59 downto 0 );
+    mode : in STD_LOGIC_VECTOR ( 59 downto 0 );
+    a_in : in STD_LOGIC_VECTOR ( 59 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120 is
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \a_out[0]_INST_0\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \a_out[100]_INST_0\ : label is "soft_lutpair100";
-  attribute SOFT_HLUTNM of \a_out[101]_INST_0\ : label is "soft_lutpair101";
-  attribute SOFT_HLUTNM of \a_out[102]_INST_0\ : label is "soft_lutpair102";
-  attribute SOFT_HLUTNM of \a_out[103]_INST_0\ : label is "soft_lutpair103";
-  attribute SOFT_HLUTNM of \a_out[104]_INST_0\ : label is "soft_lutpair104";
-  attribute SOFT_HLUTNM of \a_out[105]_INST_0\ : label is "soft_lutpair105";
-  attribute SOFT_HLUTNM of \a_out[106]_INST_0\ : label is "soft_lutpair106";
-  attribute SOFT_HLUTNM of \a_out[107]_INST_0\ : label is "soft_lutpair107";
-  attribute SOFT_HLUTNM of \a_out[108]_INST_0\ : label is "soft_lutpair108";
-  attribute SOFT_HLUTNM of \a_out[109]_INST_0\ : label is "soft_lutpair109";
   attribute SOFT_HLUTNM of \a_out[10]_INST_0\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \a_out[110]_INST_0\ : label is "soft_lutpair110";
-  attribute SOFT_HLUTNM of \a_out[111]_INST_0\ : label is "soft_lutpair111";
-  attribute SOFT_HLUTNM of \a_out[112]_INST_0\ : label is "soft_lutpair112";
-  attribute SOFT_HLUTNM of \a_out[113]_INST_0\ : label is "soft_lutpair113";
-  attribute SOFT_HLUTNM of \a_out[114]_INST_0\ : label is "soft_lutpair114";
-  attribute SOFT_HLUTNM of \a_out[115]_INST_0\ : label is "soft_lutpair115";
-  attribute SOFT_HLUTNM of \a_out[116]_INST_0\ : label is "soft_lutpair116";
-  attribute SOFT_HLUTNM of \a_out[117]_INST_0\ : label is "soft_lutpair117";
-  attribute SOFT_HLUTNM of \a_out[118]_INST_0\ : label is "soft_lutpair118";
-  attribute SOFT_HLUTNM of \a_out[119]_INST_0\ : label is "soft_lutpair119";
   attribute SOFT_HLUTNM of \a_out[11]_INST_0\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \a_out[12]_INST_0\ : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \a_out[13]_INST_0\ : label is "soft_lutpair13";
@@ -102,72 +82,12 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120 is
   attribute SOFT_HLUTNM of \a_out[58]_INST_0\ : label is "soft_lutpair58";
   attribute SOFT_HLUTNM of \a_out[59]_INST_0\ : label is "soft_lutpair59";
   attribute SOFT_HLUTNM of \a_out[5]_INST_0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \a_out[60]_INST_0\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \a_out[61]_INST_0\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \a_out[62]_INST_0\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \a_out[63]_INST_0\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \a_out[64]_INST_0\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \a_out[65]_INST_0\ : label is "soft_lutpair65";
-  attribute SOFT_HLUTNM of \a_out[66]_INST_0\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \a_out[67]_INST_0\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \a_out[68]_INST_0\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \a_out[69]_INST_0\ : label is "soft_lutpair69";
   attribute SOFT_HLUTNM of \a_out[6]_INST_0\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \a_out[70]_INST_0\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \a_out[71]_INST_0\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \a_out[72]_INST_0\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \a_out[73]_INST_0\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \a_out[74]_INST_0\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \a_out[75]_INST_0\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \a_out[76]_INST_0\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \a_out[77]_INST_0\ : label is "soft_lutpair77";
-  attribute SOFT_HLUTNM of \a_out[78]_INST_0\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \a_out[79]_INST_0\ : label is "soft_lutpair79";
   attribute SOFT_HLUTNM of \a_out[7]_INST_0\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \a_out[80]_INST_0\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \a_out[81]_INST_0\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \a_out[82]_INST_0\ : label is "soft_lutpair82";
-  attribute SOFT_HLUTNM of \a_out[83]_INST_0\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \a_out[84]_INST_0\ : label is "soft_lutpair84";
-  attribute SOFT_HLUTNM of \a_out[85]_INST_0\ : label is "soft_lutpair85";
-  attribute SOFT_HLUTNM of \a_out[86]_INST_0\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \a_out[87]_INST_0\ : label is "soft_lutpair87";
-  attribute SOFT_HLUTNM of \a_out[88]_INST_0\ : label is "soft_lutpair88";
-  attribute SOFT_HLUTNM of \a_out[89]_INST_0\ : label is "soft_lutpair89";
   attribute SOFT_HLUTNM of \a_out[8]_INST_0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \a_out[90]_INST_0\ : label is "soft_lutpair90";
-  attribute SOFT_HLUTNM of \a_out[91]_INST_0\ : label is "soft_lutpair91";
-  attribute SOFT_HLUTNM of \a_out[92]_INST_0\ : label is "soft_lutpair92";
-  attribute SOFT_HLUTNM of \a_out[93]_INST_0\ : label is "soft_lutpair93";
-  attribute SOFT_HLUTNM of \a_out[94]_INST_0\ : label is "soft_lutpair94";
-  attribute SOFT_HLUTNM of \a_out[95]_INST_0\ : label is "soft_lutpair95";
-  attribute SOFT_HLUTNM of \a_out[96]_INST_0\ : label is "soft_lutpair96";
-  attribute SOFT_HLUTNM of \a_out[97]_INST_0\ : label is "soft_lutpair97";
-  attribute SOFT_HLUTNM of \a_out[98]_INST_0\ : label is "soft_lutpair98";
-  attribute SOFT_HLUTNM of \a_out[99]_INST_0\ : label is "soft_lutpair99";
   attribute SOFT_HLUTNM of \a_out[9]_INST_0\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of \b_out[0]_INST_0\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \b_out[100]_INST_0\ : label is "soft_lutpair100";
-  attribute SOFT_HLUTNM of \b_out[101]_INST_0\ : label is "soft_lutpair101";
-  attribute SOFT_HLUTNM of \b_out[102]_INST_0\ : label is "soft_lutpair102";
-  attribute SOFT_HLUTNM of \b_out[103]_INST_0\ : label is "soft_lutpair103";
-  attribute SOFT_HLUTNM of \b_out[104]_INST_0\ : label is "soft_lutpair104";
-  attribute SOFT_HLUTNM of \b_out[105]_INST_0\ : label is "soft_lutpair105";
-  attribute SOFT_HLUTNM of \b_out[106]_INST_0\ : label is "soft_lutpair106";
-  attribute SOFT_HLUTNM of \b_out[107]_INST_0\ : label is "soft_lutpair107";
-  attribute SOFT_HLUTNM of \b_out[108]_INST_0\ : label is "soft_lutpair108";
-  attribute SOFT_HLUTNM of \b_out[109]_INST_0\ : label is "soft_lutpair109";
   attribute SOFT_HLUTNM of \b_out[10]_INST_0\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \b_out[110]_INST_0\ : label is "soft_lutpair110";
-  attribute SOFT_HLUTNM of \b_out[111]_INST_0\ : label is "soft_lutpair111";
-  attribute SOFT_HLUTNM of \b_out[112]_INST_0\ : label is "soft_lutpair112";
-  attribute SOFT_HLUTNM of \b_out[113]_INST_0\ : label is "soft_lutpair113";
-  attribute SOFT_HLUTNM of \b_out[114]_INST_0\ : label is "soft_lutpair114";
-  attribute SOFT_HLUTNM of \b_out[115]_INST_0\ : label is "soft_lutpair115";
-  attribute SOFT_HLUTNM of \b_out[116]_INST_0\ : label is "soft_lutpair116";
-  attribute SOFT_HLUTNM of \b_out[117]_INST_0\ : label is "soft_lutpair117";
-  attribute SOFT_HLUTNM of \b_out[118]_INST_0\ : label is "soft_lutpair118";
-  attribute SOFT_HLUTNM of \b_out[119]_INST_0\ : label is "soft_lutpair119";
   attribute SOFT_HLUTNM of \b_out[11]_INST_0\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \b_out[12]_INST_0\ : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \b_out[13]_INST_0\ : label is "soft_lutpair13";
@@ -222,49 +142,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120 is
   attribute SOFT_HLUTNM of \b_out[58]_INST_0\ : label is "soft_lutpair58";
   attribute SOFT_HLUTNM of \b_out[59]_INST_0\ : label is "soft_lutpair59";
   attribute SOFT_HLUTNM of \b_out[5]_INST_0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \b_out[60]_INST_0\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \b_out[61]_INST_0\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \b_out[62]_INST_0\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \b_out[63]_INST_0\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \b_out[64]_INST_0\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \b_out[65]_INST_0\ : label is "soft_lutpair65";
-  attribute SOFT_HLUTNM of \b_out[66]_INST_0\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \b_out[67]_INST_0\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \b_out[68]_INST_0\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \b_out[69]_INST_0\ : label is "soft_lutpair69";
   attribute SOFT_HLUTNM of \b_out[6]_INST_0\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \b_out[70]_INST_0\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \b_out[71]_INST_0\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \b_out[72]_INST_0\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \b_out[73]_INST_0\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \b_out[74]_INST_0\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \b_out[75]_INST_0\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \b_out[76]_INST_0\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \b_out[77]_INST_0\ : label is "soft_lutpair77";
-  attribute SOFT_HLUTNM of \b_out[78]_INST_0\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \b_out[79]_INST_0\ : label is "soft_lutpair79";
   attribute SOFT_HLUTNM of \b_out[7]_INST_0\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \b_out[80]_INST_0\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \b_out[81]_INST_0\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \b_out[82]_INST_0\ : label is "soft_lutpair82";
-  attribute SOFT_HLUTNM of \b_out[83]_INST_0\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \b_out[84]_INST_0\ : label is "soft_lutpair84";
-  attribute SOFT_HLUTNM of \b_out[85]_INST_0\ : label is "soft_lutpair85";
-  attribute SOFT_HLUTNM of \b_out[86]_INST_0\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \b_out[87]_INST_0\ : label is "soft_lutpair87";
-  attribute SOFT_HLUTNM of \b_out[88]_INST_0\ : label is "soft_lutpair88";
-  attribute SOFT_HLUTNM of \b_out[89]_INST_0\ : label is "soft_lutpair89";
   attribute SOFT_HLUTNM of \b_out[8]_INST_0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \b_out[90]_INST_0\ : label is "soft_lutpair90";
-  attribute SOFT_HLUTNM of \b_out[91]_INST_0\ : label is "soft_lutpair91";
-  attribute SOFT_HLUTNM of \b_out[92]_INST_0\ : label is "soft_lutpair92";
-  attribute SOFT_HLUTNM of \b_out[93]_INST_0\ : label is "soft_lutpair93";
-  attribute SOFT_HLUTNM of \b_out[94]_INST_0\ : label is "soft_lutpair94";
-  attribute SOFT_HLUTNM of \b_out[95]_INST_0\ : label is "soft_lutpair95";
-  attribute SOFT_HLUTNM of \b_out[96]_INST_0\ : label is "soft_lutpair96";
-  attribute SOFT_HLUTNM of \b_out[97]_INST_0\ : label is "soft_lutpair97";
-  attribute SOFT_HLUTNM of \b_out[98]_INST_0\ : label is "soft_lutpair98";
-  attribute SOFT_HLUTNM of \b_out[99]_INST_0\ : label is "soft_lutpair99";
   attribute SOFT_HLUTNM of \b_out[9]_INST_0\ : label is "soft_lutpair9";
 begin
 \a_out[0]_INST_0\: unisim.vcomponents.LUT2
@@ -276,96 +156,6 @@ begin
       I1 => mode(0),
       O => a_out(0)
     );
-\a_out[100]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(100),
-      I1 => mode(100),
-      O => a_out(100)
-    );
-\a_out[101]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(101),
-      I1 => mode(101),
-      O => a_out(101)
-    );
-\a_out[102]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(102),
-      I1 => mode(102),
-      O => a_out(102)
-    );
-\a_out[103]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(103),
-      I1 => mode(103),
-      O => a_out(103)
-    );
-\a_out[104]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(104),
-      I1 => mode(104),
-      O => a_out(104)
-    );
-\a_out[105]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(105),
-      I1 => mode(105),
-      O => a_out(105)
-    );
-\a_out[106]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(106),
-      I1 => mode(106),
-      O => a_out(106)
-    );
-\a_out[107]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(107),
-      I1 => mode(107),
-      O => a_out(107)
-    );
-\a_out[108]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(108),
-      I1 => mode(108),
-      O => a_out(108)
-    );
-\a_out[109]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(109),
-      I1 => mode(109),
-      O => a_out(109)
-    );
 \a_out[10]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -374,96 +164,6 @@ begin
       I0 => b_in(10),
       I1 => mode(10),
       O => a_out(10)
-    );
-\a_out[110]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(110),
-      I1 => mode(110),
-      O => a_out(110)
-    );
-\a_out[111]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(111),
-      I1 => mode(111),
-      O => a_out(111)
-    );
-\a_out[112]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(112),
-      I1 => mode(112),
-      O => a_out(112)
-    );
-\a_out[113]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(113),
-      I1 => mode(113),
-      O => a_out(113)
-    );
-\a_out[114]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(114),
-      I1 => mode(114),
-      O => a_out(114)
-    );
-\a_out[115]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(115),
-      I1 => mode(115),
-      O => a_out(115)
-    );
-\a_out[116]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(116),
-      I1 => mode(116),
-      O => a_out(116)
-    );
-\a_out[117]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(117),
-      I1 => mode(117),
-      O => a_out(117)
-    );
-\a_out[118]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(118),
-      I1 => mode(118),
-      O => a_out(118)
-    );
-\a_out[119]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(119),
-      I1 => mode(119),
-      O => a_out(119)
     );
 \a_out[11]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -951,96 +651,6 @@ begin
       I1 => mode(5),
       O => a_out(5)
     );
-\a_out[60]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(60),
-      I1 => mode(60),
-      O => a_out(60)
-    );
-\a_out[61]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(61),
-      I1 => mode(61),
-      O => a_out(61)
-    );
-\a_out[62]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(62),
-      I1 => mode(62),
-      O => a_out(62)
-    );
-\a_out[63]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(63),
-      I1 => mode(63),
-      O => a_out(63)
-    );
-\a_out[64]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(64),
-      I1 => mode(64),
-      O => a_out(64)
-    );
-\a_out[65]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(65),
-      I1 => mode(65),
-      O => a_out(65)
-    );
-\a_out[66]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(66),
-      I1 => mode(66),
-      O => a_out(66)
-    );
-\a_out[67]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(67),
-      I1 => mode(67),
-      O => a_out(67)
-    );
-\a_out[68]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(68),
-      I1 => mode(68),
-      O => a_out(68)
-    );
-\a_out[69]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(69),
-      I1 => mode(69),
-      O => a_out(69)
-    );
 \a_out[6]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -1049,96 +659,6 @@ begin
       I0 => b_in(6),
       I1 => mode(6),
       O => a_out(6)
-    );
-\a_out[70]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(70),
-      I1 => mode(70),
-      O => a_out(70)
-    );
-\a_out[71]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(71),
-      I1 => mode(71),
-      O => a_out(71)
-    );
-\a_out[72]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(72),
-      I1 => mode(72),
-      O => a_out(72)
-    );
-\a_out[73]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(73),
-      I1 => mode(73),
-      O => a_out(73)
-    );
-\a_out[74]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(74),
-      I1 => mode(74),
-      O => a_out(74)
-    );
-\a_out[75]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(75),
-      I1 => mode(75),
-      O => a_out(75)
-    );
-\a_out[76]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(76),
-      I1 => mode(76),
-      O => a_out(76)
-    );
-\a_out[77]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(77),
-      I1 => mode(77),
-      O => a_out(77)
-    );
-\a_out[78]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(78),
-      I1 => mode(78),
-      O => a_out(78)
-    );
-\a_out[79]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(79),
-      I1 => mode(79),
-      O => a_out(79)
     );
 \a_out[7]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -1149,96 +669,6 @@ begin
       I1 => mode(7),
       O => a_out(7)
     );
-\a_out[80]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(80),
-      I1 => mode(80),
-      O => a_out(80)
-    );
-\a_out[81]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(81),
-      I1 => mode(81),
-      O => a_out(81)
-    );
-\a_out[82]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(82),
-      I1 => mode(82),
-      O => a_out(82)
-    );
-\a_out[83]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(83),
-      I1 => mode(83),
-      O => a_out(83)
-    );
-\a_out[84]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(84),
-      I1 => mode(84),
-      O => a_out(84)
-    );
-\a_out[85]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(85),
-      I1 => mode(85),
-      O => a_out(85)
-    );
-\a_out[86]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(86),
-      I1 => mode(86),
-      O => a_out(86)
-    );
-\a_out[87]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(87),
-      I1 => mode(87),
-      O => a_out(87)
-    );
-\a_out[88]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(88),
-      I1 => mode(88),
-      O => a_out(88)
-    );
-\a_out[89]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(89),
-      I1 => mode(89),
-      O => a_out(89)
-    );
 \a_out[8]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -1247,96 +677,6 @@ begin
       I0 => b_in(8),
       I1 => mode(8),
       O => a_out(8)
-    );
-\a_out[90]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(90),
-      I1 => mode(90),
-      O => a_out(90)
-    );
-\a_out[91]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(91),
-      I1 => mode(91),
-      O => a_out(91)
-    );
-\a_out[92]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(92),
-      I1 => mode(92),
-      O => a_out(92)
-    );
-\a_out[93]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(93),
-      I1 => mode(93),
-      O => a_out(93)
-    );
-\a_out[94]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(94),
-      I1 => mode(94),
-      O => a_out(94)
-    );
-\a_out[95]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(95),
-      I1 => mode(95),
-      O => a_out(95)
-    );
-\a_out[96]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(96),
-      I1 => mode(96),
-      O => a_out(96)
-    );
-\a_out[97]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(97),
-      I1 => mode(97),
-      O => a_out(97)
-    );
-\a_out[98]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(98),
-      I1 => mode(98),
-      O => a_out(98)
-    );
-\a_out[99]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => b_in(99),
-      I1 => mode(99),
-      O => a_out(99)
     );
 \a_out[9]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -1356,96 +696,6 @@ begin
       I1 => mode(0),
       O => b_out(0)
     );
-\b_out[100]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(100),
-      I1 => mode(100),
-      O => b_out(100)
-    );
-\b_out[101]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(101),
-      I1 => mode(101),
-      O => b_out(101)
-    );
-\b_out[102]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(102),
-      I1 => mode(102),
-      O => b_out(102)
-    );
-\b_out[103]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(103),
-      I1 => mode(103),
-      O => b_out(103)
-    );
-\b_out[104]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(104),
-      I1 => mode(104),
-      O => b_out(104)
-    );
-\b_out[105]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(105),
-      I1 => mode(105),
-      O => b_out(105)
-    );
-\b_out[106]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(106),
-      I1 => mode(106),
-      O => b_out(106)
-    );
-\b_out[107]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(107),
-      I1 => mode(107),
-      O => b_out(107)
-    );
-\b_out[108]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(108),
-      I1 => mode(108),
-      O => b_out(108)
-    );
-\b_out[109]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(109),
-      I1 => mode(109),
-      O => b_out(109)
-    );
 \b_out[10]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -1454,96 +704,6 @@ begin
       I0 => a_in(10),
       I1 => mode(10),
       O => b_out(10)
-    );
-\b_out[110]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(110),
-      I1 => mode(110),
-      O => b_out(110)
-    );
-\b_out[111]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(111),
-      I1 => mode(111),
-      O => b_out(111)
-    );
-\b_out[112]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(112),
-      I1 => mode(112),
-      O => b_out(112)
-    );
-\b_out[113]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(113),
-      I1 => mode(113),
-      O => b_out(113)
-    );
-\b_out[114]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(114),
-      I1 => mode(114),
-      O => b_out(114)
-    );
-\b_out[115]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(115),
-      I1 => mode(115),
-      O => b_out(115)
-    );
-\b_out[116]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(116),
-      I1 => mode(116),
-      O => b_out(116)
-    );
-\b_out[117]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(117),
-      I1 => mode(117),
-      O => b_out(117)
-    );
-\b_out[118]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(118),
-      I1 => mode(118),
-      O => b_out(118)
-    );
-\b_out[119]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(119),
-      I1 => mode(119),
-      O => b_out(119)
     );
 \b_out[11]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -2031,96 +1191,6 @@ begin
       I1 => mode(5),
       O => b_out(5)
     );
-\b_out[60]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(60),
-      I1 => mode(60),
-      O => b_out(60)
-    );
-\b_out[61]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(61),
-      I1 => mode(61),
-      O => b_out(61)
-    );
-\b_out[62]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(62),
-      I1 => mode(62),
-      O => b_out(62)
-    );
-\b_out[63]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(63),
-      I1 => mode(63),
-      O => b_out(63)
-    );
-\b_out[64]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(64),
-      I1 => mode(64),
-      O => b_out(64)
-    );
-\b_out[65]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(65),
-      I1 => mode(65),
-      O => b_out(65)
-    );
-\b_out[66]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(66),
-      I1 => mode(66),
-      O => b_out(66)
-    );
-\b_out[67]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(67),
-      I1 => mode(67),
-      O => b_out(67)
-    );
-\b_out[68]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(68),
-      I1 => mode(68),
-      O => b_out(68)
-    );
-\b_out[69]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(69),
-      I1 => mode(69),
-      O => b_out(69)
-    );
 \b_out[6]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -2129,96 +1199,6 @@ begin
       I0 => a_in(6),
       I1 => mode(6),
       O => b_out(6)
-    );
-\b_out[70]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(70),
-      I1 => mode(70),
-      O => b_out(70)
-    );
-\b_out[71]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(71),
-      I1 => mode(71),
-      O => b_out(71)
-    );
-\b_out[72]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(72),
-      I1 => mode(72),
-      O => b_out(72)
-    );
-\b_out[73]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(73),
-      I1 => mode(73),
-      O => b_out(73)
-    );
-\b_out[74]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(74),
-      I1 => mode(74),
-      O => b_out(74)
-    );
-\b_out[75]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(75),
-      I1 => mode(75),
-      O => b_out(75)
-    );
-\b_out[76]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(76),
-      I1 => mode(76),
-      O => b_out(76)
-    );
-\b_out[77]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(77),
-      I1 => mode(77),
-      O => b_out(77)
-    );
-\b_out[78]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(78),
-      I1 => mode(78),
-      O => b_out(78)
-    );
-\b_out[79]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(79),
-      I1 => mode(79),
-      O => b_out(79)
     );
 \b_out[7]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -2229,96 +1209,6 @@ begin
       I1 => mode(7),
       O => b_out(7)
     );
-\b_out[80]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(80),
-      I1 => mode(80),
-      O => b_out(80)
-    );
-\b_out[81]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(81),
-      I1 => mode(81),
-      O => b_out(81)
-    );
-\b_out[82]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(82),
-      I1 => mode(82),
-      O => b_out(82)
-    );
-\b_out[83]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(83),
-      I1 => mode(83),
-      O => b_out(83)
-    );
-\b_out[84]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(84),
-      I1 => mode(84),
-      O => b_out(84)
-    );
-\b_out[85]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(85),
-      I1 => mode(85),
-      O => b_out(85)
-    );
-\b_out[86]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(86),
-      I1 => mode(86),
-      O => b_out(86)
-    );
-\b_out[87]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(87),
-      I1 => mode(87),
-      O => b_out(87)
-    );
-\b_out[88]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(88),
-      I1 => mode(88),
-      O => b_out(88)
-    );
-\b_out[89]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(89),
-      I1 => mode(89),
-      O => b_out(89)
-    );
 \b_out[8]_INST_0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -2327,96 +1217,6 @@ begin
       I0 => a_in(8),
       I1 => mode(8),
       O => b_out(8)
-    );
-\b_out[90]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(90),
-      I1 => mode(90),
-      O => b_out(90)
-    );
-\b_out[91]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(91),
-      I1 => mode(91),
-      O => b_out(91)
-    );
-\b_out[92]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(92),
-      I1 => mode(92),
-      O => b_out(92)
-    );
-\b_out[93]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(93),
-      I1 => mode(93),
-      O => b_out(93)
-    );
-\b_out[94]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(94),
-      I1 => mode(94),
-      O => b_out(94)
-    );
-\b_out[95]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(95),
-      I1 => mode(95),
-      O => b_out(95)
-    );
-\b_out[96]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(96),
-      I1 => mode(96),
-      O => b_out(96)
-    );
-\b_out[97]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(97),
-      I1 => mode(97),
-      O => b_out(97)
-    );
-\b_out[98]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(98),
-      I1 => mode(98),
-      O => b_out(98)
-    );
-\b_out[99]_INST_0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => a_in(99),
-      I1 => mode(99),
-      O => b_out(99)
     );
 \b_out[9]_INST_0\: unisim.vcomponents.LUT2
     generic map(
@@ -2434,13 +1234,13 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
-    a_in : in STD_LOGIC_VECTOR ( 119 downto 0 );
+    a_in : in STD_LOGIC_VECTOR ( 59 downto 0 );
     a_oe : in STD_LOGIC;
-    b_in : in STD_LOGIC_VECTOR ( 119 downto 0 );
+    b_in : in STD_LOGIC_VECTOR ( 59 downto 0 );
     b_oe : in STD_LOGIC;
-    a_out : out STD_LOGIC_VECTOR ( 119 downto 0 );
-    b_out : out STD_LOGIC_VECTOR ( 119 downto 0 );
-    mode : in STD_LOGIC_VECTOR ( 119 downto 0 )
+    a_out : out STD_LOGIC_VECTOR ( 59 downto 0 );
+    b_out : out STD_LOGIC_VECTOR ( 59 downto 0 );
+    mode : in STD_LOGIC_VECTOR ( 59 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
@@ -2456,10 +1256,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 begin
 inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_jack_120
      port map (
-      a_in(119 downto 0) => a_in(119 downto 0),
-      a_out(119 downto 0) => a_out(119 downto 0),
-      b_in(119 downto 0) => b_in(119 downto 0),
-      b_out(119 downto 0) => b_out(119 downto 0),
-      mode(119 downto 0) => mode(119 downto 0)
+      a_in(59 downto 0) => a_in(59 downto 0),
+      a_out(59 downto 0) => a_out(59 downto 0),
+      b_in(59 downto 0) => b_in(59 downto 0),
+      b_out(59 downto 0) => b_out(59 downto 0),
+      mode(59 downto 0) => mode(59 downto 0)
     );
 end STRUCTURE;

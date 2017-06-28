@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Jun 27 10:26:32 2017
+-- Date        : Tue Jun 27 20:41:50 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ b2000t_c2c_bram_dut_120_1_0_stub.vhdl
@@ -21,12 +21,12 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     we : in STD_LOGIC_VECTOR ( 3 downto 0 );
     en : in STD_LOGIC;
     data_out : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    a_in : in STD_LOGIC_VECTOR ( 119 downto 0 );
+    a_in : in STD_LOGIC_VECTOR ( 59 downto 0 );
     a_oe : out STD_LOGIC;
-    b_in : in STD_LOGIC_VECTOR ( 119 downto 0 );
+    b_in : in STD_LOGIC_VECTOR ( 59 downto 0 );
     b_oe : out STD_LOGIC;
-    a_out : out STD_LOGIC_VECTOR ( 119 downto 0 );
-    b_out : out STD_LOGIC_VECTOR ( 119 downto 0 )
+    a_out : out STD_LOGIC_VECTOR ( 59 downto 0 );
+    b_out : out STD_LOGIC_VECTOR ( 59 downto 0 )
   );
 
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
@@ -35,7 +35,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,rst,addr[31:0],data_in[31:0],we[3:0],en,data_out[31:0],a_in[119:0],a_oe,b_in[119:0],b_oe,a_out[119:0],b_out[119:0]";
+attribute black_box_pad_pin of stub : architecture is "clk,rst,addr[31:0],data_in[31:0],we[3:0],en,data_out[31:0],a_in[59:0],a_oe,b_in[59:0],b_oe,a_out[59:0],b_out[59:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "dut_120,Vivado 2016.4";
 begin

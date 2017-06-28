@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jun 27 14:19:40 2017
+# Process ID: 107869
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1
+# Command line: vivado -log dut_120.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dut_120.tcl -notrace
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1/dut_120.vdi
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source dut_120.tcl -notrace

@@ -50,7 +50,10 @@ module b2000t_c2c_bram_vio_0_0 (
 clk,
 probe_in0,probe_in1,probe_in2,probe_in3,probe_in4,probe_in5,probe_in6,
 probe_out0,
-probe_out1
+probe_out1,
+probe_out2,
+probe_out3,
+probe_out4
 );
 
 input clk;
@@ -64,6 +67,9 @@ input [0 : 0] probe_in6;
 
 output reg [0 : 0] probe_out0 = 'h0 ;
 output reg [25 : 0] probe_out1 = 'h0000000 ;
+output reg [25 : 0] probe_out2 = 'h0000000 ;
+output reg [59 : 0] probe_out3 = 'h000000000000000 ;
+output reg [59 : 0] probe_out4 = 'h000000000000000 ;
 
 
 endmodule

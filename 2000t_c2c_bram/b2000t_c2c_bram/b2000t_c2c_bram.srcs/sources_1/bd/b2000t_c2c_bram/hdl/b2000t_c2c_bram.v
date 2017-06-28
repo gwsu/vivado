@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Tue Jun 27 10:25:02 2017
+//Date        : Tue Jun 27 20:40:22 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram.bd
 //Design      : b2000t_c2c_bram
@@ -424,14 +424,14 @@ module b2000t_c2c_bram
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [25:0]dut_0_b_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]dut_0_data_out;
   wire dut_120_0_a_oe;
-  wire [119:0]dut_120_0_a_out;
+  wire [59:0]dut_120_0_a_out;
   wire dut_120_0_b_oe;
-  wire [119:0]dut_120_0_b_out;
+  wire [59:0]dut_120_0_b_out;
   wire [31:0]dut_120_0_data_out;
   wire dut_120_1_a_oe;
-  wire [119:0]dut_120_1_a_out;
+  wire [59:0]dut_120_1_a_out;
   wire dut_120_1_b_oe;
-  wire [119:0]dut_120_1_b_out;
+  wire [59:0]dut_120_1_b_out;
   wire [31:0]dut_120_1_data_out;
   wire dut_1_a_oe;
   wire [25:0]dut_1_a_out;
@@ -440,10 +440,10 @@ module b2000t_c2c_bram
   wire [31:0]dut_1_data_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [25:0]jack_0_a_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [25:0]jack_0_b_out;
-  wire [119:0]jack_120_0_a_out;
-  wire [119:0]jack_120_0_b_out;
-  wire [119:0]jack_120_1_a_out;
-  wire [119:0]jack_120_1_b_out;
+  wire [59:0]jack_120_0_a_out;
+  wire [59:0]jack_120_0_b_out;
+  wire [59:0]jack_120_1_a_out;
+  wire [59:0]jack_120_1_b_out;
   wire [25:0]jack_1_a_out;
   wire [25:0]jack_1_b_out;
   wire [31:0]jtag_axi_0_M_AXI_ARADDR;
@@ -488,8 +488,8 @@ module b2000t_c2c_bram
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]vio_0_probe_out0;
   wire [25:0]vio_0_probe_out1;
   wire [25:0]vio_0_probe_out2;
-  wire [119:0]vio_0_probe_out3;
-  wire [119:0]vio_0_probe_out4;
+  wire [59:0]vio_0_probe_out3;
+  wire [59:0]vio_0_probe_out4;
   wire [0:0]xlconstant_0_dout;
 
   assign CLK_IN1_D_1_CLK_N = CLK_IN1_D_clk_n;

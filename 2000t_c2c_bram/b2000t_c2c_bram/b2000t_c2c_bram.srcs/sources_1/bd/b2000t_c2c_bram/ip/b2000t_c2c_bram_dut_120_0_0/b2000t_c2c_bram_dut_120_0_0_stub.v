@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Tue Jun 27 10:26:33 2017
+// Date        : Tue Jun 27 20:41:51 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/b2000t_c2c_bram_dut_120_0_0_stub.v
@@ -16,7 +16,7 @@
 (* X_CORE_INFO = "dut_120,Vivado 2016.4" *)
 module b2000t_c2c_bram_dut_120_0_0(clk, rst, addr, data_in, we, en, data_out, a_in, a_oe, 
   b_in, b_oe, a_out, b_out)
-/* synthesis syn_black_box black_box_pad_pin="clk,rst,addr[31:0],data_in[31:0],we[3:0],en,data_out[31:0],a_in[119:0],a_oe,b_in[119:0],b_oe,a_out[119:0],b_out[119:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="clk,rst,addr[31:0],data_in[31:0],we[3:0],en,data_out[31:0],a_in[59:0],a_oe,b_in[59:0],b_oe,a_out[59:0],b_out[59:0]" */;
   input clk;
   input rst;
   input [31:0]addr;
@@ -24,10 +24,10 @@ module b2000t_c2c_bram_dut_120_0_0(clk, rst, addr, data_in, we, en, data_out, a_
   input [3:0]we;
   input en;
   output [31:0]data_out;
-  input [119:0]a_in;
+  input [59:0]a_in;
   output a_oe;
-  input [119:0]b_in;
+  input [59:0]b_in;
   output b_oe;
-  output [119:0]a_out;
-  output [119:0]b_out;
+  output [59:0]a_out;
+  output [59:0]b_out;
 endmodule

@@ -45,8 +45,8 @@ run_hw_axi wr_txn_ram
 run_hw_axi rd_txn_ram
 
 
-create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address 0x76022000 -len 6  -type read -force
-create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address 0x76022000 -data 0x0123012411111111 -len 2 -type write -force
+create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address 0x76000000 -len 8  -type read -force
+create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x0123012411111111 -len 2 -type write -force
 
 run_hw_axi wr_txn_ram
 run_hw_axi rd_txn_ram

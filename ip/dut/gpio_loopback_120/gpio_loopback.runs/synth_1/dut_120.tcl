@@ -4,6 +4,7 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7v2000tflg1925-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -19,7 +20,7 @@ set_property ip_repo_paths {
 } [current_project]
 set_property ip_output_repo /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut.v
+read_verilog -library xil_defaultlib /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut_120.v
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }

@@ -249,8 +249,8 @@
         <spirit:componentRef spirit:library="ip" spirit:name="vio" spirit:vendor="xilinx.com" spirit:version="3.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_vio_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT4_WIDTH">120</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT3_WIDTH">120</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT4_WIDTH">60</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT3_WIDTH">60</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT2_WIDTH">26</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE_OUT1_WIDTH">26</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_NUM_PROBE_OUT">5</spirit:configurableElementValue>
@@ -462,20 +462,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>dut_120_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>dut_120_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_1_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>jack_120_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="jack_120" spirit:vendor="user.org" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -487,6 +473,20 @@
         <spirit:componentRef spirit:library="user" spirit:name="jack_120" spirit:vendor="user.org" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_jack_120_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dut_120_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dut_120_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_1_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -3815,25 +3815,25 @@
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_2_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_2/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76020000</spirit:addressOffset>
+            <spirit:addressOffset>0x76030000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_3_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_3/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76021000</spirit:addressOffset>
+            <spirit:addressOffset>0x76031000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_4_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_4/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76000000</spirit:addressOffset>
+            <spirit:addressOffset>0x76020000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_5_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_5/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76001000</spirit:addressOffset>
+            <spirit:addressOffset>0x76021000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
         </spirit:segments>
@@ -3867,25 +3867,25 @@
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_2_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_2/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76020000</spirit:addressOffset>
+            <spirit:addressOffset>0x76030000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_3_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_3/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76021000</spirit:addressOffset>
+            <spirit:addressOffset>0x76031000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_4_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_4/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76000000</spirit:addressOffset>
+            <spirit:addressOffset>0x76020000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_5_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_5/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76001000</spirit:addressOffset>
+            <spirit:addressOffset>0x76021000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
         </spirit:segments>
@@ -3919,25 +3919,25 @@
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_2_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_2/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76020000</spirit:addressOffset>
+            <spirit:addressOffset>0x76030000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_3_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_3/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76021000</spirit:addressOffset>
+            <spirit:addressOffset>0x76031000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_4_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_4/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76000000</spirit:addressOffset>
+            <spirit:addressOffset>0x76020000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_bram_ctrl_5_Mem0</spirit:name>
             <spirit:displayName>/axi_bram_ctrl_5/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x76001000</spirit:addressOffset>
+            <spirit:addressOffset>0x76021000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
           </spirit:segment>
         </spirit:segments>

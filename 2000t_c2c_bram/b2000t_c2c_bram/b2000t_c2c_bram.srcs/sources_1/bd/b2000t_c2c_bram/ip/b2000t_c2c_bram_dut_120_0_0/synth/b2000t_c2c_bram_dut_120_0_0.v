@@ -78,22 +78,24 @@ input wire [31 : 0] data_in;
 input wire [3 : 0] we;
 input wire en;
 output wire [31 : 0] data_out;
-input wire [119 : 0] a_in;
+input wire [59 : 0] a_in;
 output wire a_oe;
-input wire [119 : 0] b_in;
+input wire [59 : 0] b_in;
 output wire b_oe;
-output wire [119 : 0] a_out;
-output wire [119 : 0] b_out;
+output wire [59 : 0] a_out;
+output wire [59 : 0] b_out;
 
   dut_120 #(
-    .IDEL(3'B000),
-    .A2B1(3'B001),
-    .A2B0(3'B010),
-    .B2A1(3'B011),
-    .B2A0(3'B100),
-    .A01B(3'B101),
-    .B01A(3'B110),
-    .ENDL(3'B111)
+    .IDEL(4'B0000),
+    .A2B1(4'B0001),
+    .A2B0(4'B0010),
+    .B2A1(4'B0011),
+    .B2A0(4'B0100),
+    .A01B(4'B0101),
+    .B01A(4'B0110),
+    .A10B(4'B0111),
+    .B10A(4'B1000),
+    .ENDL(4'B0111)
   ) inst (
     .clk(clk),
     .rst(rst),

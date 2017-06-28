@@ -314,7 +314,7 @@ output reg  [119:0]   b_out
                     data_out <= {data_ain_1[95:64]};
                     // read bin-0 to bus
                     32'd16:
-                    data_out <= {8'd10,data_ain_1[125:96]};    
+                    data_out <= {8'd0,data_ain_1[119:96]};    
                                     
                     // read apin result to bus                    
                     32'd20:
@@ -327,7 +327,7 @@ output reg  [119:0]   b_out
                     data_out <= {data_ain_0[95:64]};
                     // read bin-0 to bus
                     32'd32:
-                    data_out <= {8'd10,data_ain_0[125:96]};
+                    data_out <= {8'd10,data_ain_0[119:96]};
                     
                     32'd36:
                     data_out <= {a_result};

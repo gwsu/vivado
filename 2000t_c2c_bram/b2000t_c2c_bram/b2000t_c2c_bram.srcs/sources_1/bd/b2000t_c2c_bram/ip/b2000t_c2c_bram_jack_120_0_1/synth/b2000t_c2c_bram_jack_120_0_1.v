@@ -63,13 +63,13 @@ module b2000t_c2c_bram_jack_120_0_1 (
   mode
 );
 
-input wire [119 : 0] a_in;
+input wire [59 : 0] a_in;
 input wire a_oe;
-input wire [119 : 0] b_in;
+input wire [59 : 0] b_in;
 input wire b_oe;
-output wire [119 : 0] a_out;
-output wire [119 : 0] b_out;
-input wire [119 : 0] mode;
+output wire [59 : 0] a_out;
+output wire [59 : 0] b_out;
+input wire [59 : 0] mode;
 
   jack_120 inst (
     .a_in(a_in),
