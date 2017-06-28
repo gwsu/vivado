@@ -215,5 +215,24 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../b2000t_c2c_bram.srcs/sourc
 "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/sim/b2000t_c2c_bram_system_ila2_0.v" \
 "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v" \
 
+vcom -work xil_defaultlib -93 \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/sim/b2000t_c2c_bram_axi_bram_ctrl_2_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/100a" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/7e3a/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/0cab/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/f9cc/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/469d/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6e61/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/48e6/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/100a" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/7e3a/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/0cab/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/f9cc/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/469d/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6e61/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/48e6/hdl/verilog" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/sim/b2000t_c2c_bram_dut_0_1.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_1/sim/b2000t_c2c_bram_jack_0_1.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_3_0/sim/b2000t_c2c_bram_axi_bram_ctrl_3_0.vhd" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_1/sim/b2000t_c2c_bram_axi_bram_ctrl_2_1.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/100a" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/7e3a/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/0cab/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/f9cc/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/469d/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6e61/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/48e6/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/100a" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/7e3a/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/0cab/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/f9cc/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/469d/hdl/verilog" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/6e61/hdl" "+incdir+../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/48e6/hdl/verilog" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/sim/b2000t_c2c_bram_dut_120_0_0.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_1_0/sim/b2000t_c2c_bram_dut_120_1_0.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/sim/b2000t_c2c_bram_jack_120_0_0.v" \
+"../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/sim/b2000t_c2c_bram_jack_120_0_1.v" \
+
 vlog -work xil_defaultlib "glbl.v"
 

@@ -366,7 +366,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">jtag_axi_vio_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_NUM_PROBE_OUT">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_NUM_PROBE_IN">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_PROBE_IN">9</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -375,21 +375,34 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">jtag_axi_system_ila_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_APC_EN">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_APC_EN">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_AW_SEL_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_W_SEL_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_B_SEL_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_AR_SEL_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_R_SEL_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_AW_SEL_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_W_SEL_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_B_SEL_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_AR_SEL_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_R_SEL_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_AW_SEL_TRIG">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_W_SEL_TRIG">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_B_SEL_TRIG">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_AR_SEL_TRIG">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_R_SEL_TRIG">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_AW_SEL_TRIG">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_W_SEL_TRIG">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_B_SEL_TRIG">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_AR_SEL_TRIG">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_AXI_R_SEL_TRIG">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE1_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE0_TYPE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DATA_DEPTH">2048</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_NUM_MONITOR_SLOTS">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_INTF_TYPE">xilinx.com:interface:aximm_rtl:1.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_2_INTF_TYPE">xilinx.com:interface:aximm_rtl:1.0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">INTERFACE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -420,23 +433,6 @@
           <spirit:configurableElementValue spirit:referenceId="interface_mode">Streaming</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="drp_mode">Disabled</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SupportLevel">1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>system_ila</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="system_ila" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">jtag_axi_system_ila_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_APC_EN">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_APC_EN">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_DATA_SEL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_DATA_SEL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_TRIG_SEL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_AXI_TRIG_SEL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_NUM_MONITOR_SLOTS">2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_INTF_TYPE">xilinx.com:interface:axis_rtl:1.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_SLOT_1_INTF_TYPE">xilinx.com:interface:axis_rtl:1.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">INTERFACE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -541,30 +537,12 @@
         <spirit:name>aurora_64b66b_0_USER_DATA_M_AXIS_RX</spirit:name>
         <spirit:activeInterface spirit:busRef="AXIS_RX" spirit:componentRef="axi_chip2chip_0"/>
         <spirit:activeInterface spirit:busRef="USER_DATA_M_AXIS_RX" spirit:componentRef="aurora_64b66b_0"/>
-        <bd:hdl_attributes>
-          <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
-          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
-        </bd:hdl_attributes>
       </spirit:interconnection>
-      <spirit:monitorInterconnection>
-        <spirit:name>aurora_64b66b_0_USER_DATA_M_AXIS_RX</spirit:name>
-        <spirit:monitoredActiveInterface spirit:busRef="AXIS_RX" spirit:componentRef="axi_chip2chip_0"/>
-        <spirit:monitorInterface spirit:busRef="SLOT_0_AXIS" spirit:componentRef="system_ila"/>
-      </spirit:monitorInterconnection>
       <spirit:interconnection>
         <spirit:name>axi_chip2chip_0_AXIS_TX</spirit:name>
         <spirit:activeInterface spirit:busRef="AXIS_TX" spirit:componentRef="axi_chip2chip_0"/>
         <spirit:activeInterface spirit:busRef="USER_DATA_S_AXIS_TX" spirit:componentRef="aurora_64b66b_0"/>
-        <bd:hdl_attributes>
-          <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
-          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
-        </bd:hdl_attributes>
       </spirit:interconnection>
-      <spirit:monitorInterconnection>
-        <spirit:name>axi_chip2chip_0_AXIS_TX</spirit:name>
-        <spirit:monitoredActiveInterface spirit:busRef="AXIS_TX" spirit:componentRef="axi_chip2chip_0"/>
-        <spirit:monitorInterface spirit:busRef="SLOT_1_AXIS" spirit:componentRef="system_ila"/>
-      </spirit:monitorInterconnection>
       <spirit:interconnection>
         <spirit:name>aurora_64b66b_1_USER_DATA_M_AXIS_RX</spirit:name>
         <spirit:activeInterface spirit:busRef="AXIS_RX" spirit:componentRef="axi_chip2chip_1"/>
@@ -640,7 +618,6 @@
         <spirit:name>aurora_64b66b_0_user_clk_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_0" spirit:portRef="user_clk_out"/>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_0" spirit:portRef="axi_c2c_phy_clk"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_1" spirit:portRef="user_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="axi_c2c_phy_clk"/>
       </spirit:adHocConnection>
@@ -747,6 +724,26 @@
         <spirit:name>aurora_64b66b_0_gt_refclk1_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_0" spirit:portRef="gt_refclk1_out"/>
         <spirit:internalPortReference spirit:componentRef="aurora_64b66b_1" spirit:portRef="refclk1_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_chip2chip_1_axi_c2c_config_error_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="axi_c2c_config_error_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in5"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_chip2chip_1_axi_c2c_link_status_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="axi_c2c_link_status_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_chip2chip_1_axi_c2c_multi_bit_error_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="axi_c2c_multi_bit_error_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in7"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_chip2chip_1_axi_c2c_link_error_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_chip2chip_1" spirit:portRef="axi_c2c_link_error_out"/>
+        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_in8"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

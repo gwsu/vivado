@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Tue Jun 27 10:37:38 2017
+| Date             : Wed Jun 28 15:48:36 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file b2000t_c2c_bram_wrapper_power_routed.rpt -pb b2000t_c2c_bram_wrapper_power_summary_routed.pb -rpx b2000t_c2c_bram_wrapper_power_routed.rpx
 | Design           : b2000t_c2c_bram_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.745  |
-| Dynamic (W)              | 1.082  |
+| Total On-Chip Power (W)  | 1.747  |
+| Dynamic (W)              | 1.084  |
 | Device Static (W)        | 0.663  |
 | Effective TJA (C/W)      | 0.8    |
 | Max Ambient (C)          | 83.5   |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.133 |       15 |       --- |             --- |
-| Slice Logic              |     0.018 |    38029 |       --- |             --- |
-|   LUT as Logic           |     0.015 |    11778 |   1221600 |            0.96 |
-|   Register               |     0.001 |    19535 |   2443200 |            0.80 |
+| Clocks                   |     0.131 |       15 |       --- |             --- |
+| Slice Logic              |     0.020 |    38737 |       --- |             --- |
+|   LUT as Logic           |     0.017 |    12161 |   1221600 |            1.00 |
+|   Register               |     0.002 |    19828 |   2443200 |            0.81 |
 |   LUT as Shift Register  |    <0.001 |     1003 |    344800 |            0.29 |
-|   CARRY4                 |    <0.001 |      371 |    305400 |            0.12 |
+|   CARRY4                 |    <0.001 |      377 |    305400 |            0.12 |
 |   LUT as Distributed RAM |    <0.001 |      264 |    344800 |            0.08 |
-|   F7/F8 Muxes            |    <0.001 |      249 |   1221600 |            0.02 |
-|   Others                 |     0.000 |     2204 |       --- |             --- |
-| Signals                  |     0.026 |    27846 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      217 |   1221600 |            0.02 |
+|   Others                 |     0.000 |     2202 |       --- |             --- |
+| Signals                  |     0.027 |    28999 |       --- |             --- |
 | Block RAM                |     0.032 |     30.5 |      1292 |            2.36 |
 | MMCM                     |     0.238 |        2 |        24 |            8.33 |
 | I/O                      |     0.008 |       10 |      1200 |            0.83 |
 | GTX                      |     0.627 |        2 |        16 |           12.50 |
 | Static Power             |     0.663 |          |           |                 |
-| Total                    |     1.745 |          |           |                 |
+| Total                    |     1.747 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.590 |       0.268 |      0.322 |
+| Vccint    |       1.000 |     0.592 |       0.270 |      0.322 |
 | Vccaux    |       1.800 |     0.234 |       0.135 |      0.099 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -158,22 +158,22 @@ Table of Contents
 +----------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                               | Power (W) |
 +----------------------------------------------------------------------------------------------------+-----------+
-| b2000t_c2c_bram_wrapper                                                                            |     1.082 |
-|   b2000t_c2c_bram_i                                                                                |     1.077 |
-|     aurora_64b66b_0                                                                                |     0.460 |
-|       inst                                                                                         |     0.460 |
-|         b2000t_c2c_bram_aurora_64b66b_0_0_core_i                                                   |     0.337 |
+| b2000t_c2c_bram_wrapper                                                                            |     1.084 |
+|   b2000t_c2c_bram_i                                                                                |     1.079 |
+|     aurora_64b66b_0                                                                                |     0.459 |
+|       inst                                                                                         |     0.459 |
+|         b2000t_c2c_bram_aurora_64b66b_0_0_core_i                                                   |     0.336 |
 |           aurora_lane_0_i                                                                          |     0.001 |
 |             err_detect_i                                                                           |    <0.001 |
 |             lane_init_sm_i                                                                         |    <0.001 |
 |               u_cdc_rxlossofsync_in                                                                |    <0.001 |
 |             sym_dec_i                                                                              |    <0.001 |
 |             sym_gen_i                                                                              |    <0.001 |
-|           b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i                                              |     0.335 |
+|           b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i                                              |     0.334 |
 |             b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i                                           |     0.315 |
 |               b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst                                           |     0.315 |
 |             block_sync_sm_gtx0_i                                                                   |    <0.001 |
-|             cbcc_gtx0_i                                                                            |     0.005 |
+|             cbcc_gtx0_i                                                                            |     0.004 |
 |               u_cdc_rxlossofsync_in                                                                |    <0.001 |
 |               u_cdc_wr_err_rd_clk                                                                  |    <0.001 |
 |               u_rst_sync_btf_sync                                                                  |    <0.001 |
@@ -243,11 +243,11 @@ Table of Contents
 |             u_cdc_rxlossofsync_in                                                                  |    <0.001 |
 |           sym_dec_i                                                                                |    <0.001 |
 |           sym_gen_i                                                                                |    <0.001 |
-|         b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i                                                |     0.331 |
+|         b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i                                                |     0.332 |
 |           b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i                                             |     0.315 |
 |             b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst                                             |     0.315 |
 |           block_sync_sm_gtx0_i                                                                     |    <0.001 |
-|           cbcc_gtx0_i                                                                              |     0.003 |
+|           cbcc_gtx0_i                                                                              |     0.004 |
 |             u_cdc_rxlossofsync_in                                                                  |    <0.001 |
 |             u_cdc_wr_err_rd_clk                                                                    |    <0.001 |
 |             u_rst_sync_btf_sync                                                                    |    <0.001 |
@@ -360,10 +360,10 @@ Table of Contents
 |               BID_FIFO                                                                             |    <0.001 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|     axi_bram_ctrl_4                                                                                |     0.003 |
-|       U0                                                                                           |     0.003 |
-|         gext_inst.abcv4_0_ext_inst                                                                 |     0.003 |
-|           GEN_AXI4.I_FULL_AXI                                                                      |     0.003 |
+|     axi_bram_ctrl_4                                                                                |     0.004 |
+|       U0                                                                                           |     0.004 |
+|         gext_inst.abcv4_0_ext_inst                                                                 |     0.004 |
+|           GEN_AXI4.I_FULL_AXI                                                                      |     0.004 |
 |             GEN_ARB.I_SNG_PORT                                                                     |    <0.001 |
 |             I_RD_CHNL                                                                              |     0.002 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
@@ -372,10 +372,10 @@ Table of Contents
 |               BID_FIFO                                                                             |    <0.001 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
 |               I_WRAP_BRST                                                                          |    <0.001 |
-|     axi_bram_ctrl_5                                                                                |     0.003 |
-|       U0                                                                                           |     0.003 |
-|         gext_inst.abcv4_0_ext_inst                                                                 |     0.003 |
-|           GEN_AXI4.I_FULL_AXI                                                                      |     0.003 |
+|     axi_bram_ctrl_5                                                                                |     0.004 |
+|       U0                                                                                           |     0.004 |
+|         gext_inst.abcv4_0_ext_inst                                                                 |     0.004 |
+|           GEN_AXI4.I_FULL_AXI                                                                      |     0.004 |
 |             GEN_ARB.I_SNG_PORT                                                                     |    <0.001 |
 |             I_RD_CHNL                                                                              |     0.002 |
 |               GEN_UA_NARROW.I_UA_NARROW                                                            |    <0.001 |
@@ -386,7 +386,7 @@ Table of Contents
 |               I_WRAP_BRST                                                                          |    <0.001 |
 |     axi_chip2chip_0                                                                                |     0.019 |
 |       inst                                                                                         |     0.019 |
-|         slave_fpga_gen.axi_chip2chip_slave_inst                                                    |     0.019 |
+|         slave_fpga_gen.axi_chip2chip_slave_inst                                                    |     0.018 |
 |           aurora_ecc_io_stage.ecc_dec_inst[0].axi_chip2chip_ecc_dec_inst                           |    <0.001 |
 |           aurora_ecc_io_stage.ecc_enc_inst[0].axi_chip2chip_ecc_enc_inst                           |     0.000 |
 |           aurora_ecc_io_stage.ecc_in_reg_slice_inst                                                |    <0.001 |
@@ -1069,10 +1069,10 @@ Table of Contents
 |       inst                                                                                         |     0.002 |
 |     dut_1                                                                                          |     0.002 |
 |       inst                                                                                         |     0.002 |
-|     dut_120_0                                                                                      |     0.003 |
-|       inst                                                                                         |     0.003 |
-|     dut_120_1                                                                                      |     0.003 |
-|       inst                                                                                         |     0.003 |
+|     dut_120_0                                                                                      |     0.006 |
+|       inst                                                                                         |     0.006 |
+|     dut_120_1                                                                                      |     0.006 |
+|       inst                                                                                         |     0.006 |
 |     jack_0                                                                                         |    <0.001 |
 |       inst                                                                                         |    <0.001 |
 |     jack_1                                                                                         |    <0.001 |
@@ -1081,12 +1081,12 @@ Table of Contents
 |       inst                                                                                         |    <0.001 |
 |     jack_120_1                                                                                     |    <0.001 |
 |       inst                                                                                         |    <0.001 |
-|     jtag_axi_0                                                                                     |     0.015 |
-|       inst                                                                                         |     0.015 |
+|     jtag_axi_0                                                                                     |     0.014 |
+|       inst                                                                                         |     0.014 |
 |         axi_bridge_u                                                                               |    <0.001 |
 |           read_axi_full_u                                                                          |    <0.001 |
 |           write_axi_full_u                                                                         |    <0.001 |
-|         jtag_axi_engine_u                                                                          |     0.014 |
+|         jtag_axi_engine_u                                                                          |     0.013 |
 |           U_XSDB_SLAVE                                                                             |    <0.001 |
 |           cmd_decode_rd_channel                                                                    |    <0.001 |
 |           cmd_decode_wr_channel                                                                    |    <0.001 |
@@ -1236,13 +1236,13 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                                                |    <0.001 |
 |         SEQ                                                                                        |    <0.001 |
 |           SEQ_COUNTER                                                                              |    <0.001 |
-|     system_ila                                                                                     |     0.024 |
-|       inst                                                                                         |     0.024 |
+|     system_ila                                                                                     |     0.023 |
+|       inst                                                                                         |     0.023 |
 |         g_inst                                                                                     |     0.000 |
 |           inst                                                                                     |     0.000 |
-|         ila_lib                                                                                    |     0.024 |
-|           inst                                                                                     |     0.024 |
-|             ila_core_inst                                                                          |     0.024 |
+|         ila_lib                                                                                    |     0.023 |
+|           inst                                                                                     |     0.023 |
+|             ila_core_inst                                                                          |     0.023 |
 |               ila_trace_memory_inst                                                                |     0.005 |
 |                 SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                           |     0.005 |
 |                   inst_blk_mem_gen                                                                 |     0.005 |
@@ -2283,16 +2283,16 @@ Table of Contents
 |                           u_srlC                                                                   |    <0.001 |
 |                           u_srlD                                                                   |    <0.001 |
 |               xsdb_memory_read_inst                                                                |     0.001 |
-|     vio_0                                                                                          |     0.006 |
-|       inst                                                                                         |     0.006 |
+|     vio_0                                                                                          |     0.004 |
+|       inst                                                                                         |     0.004 |
 |         DECODER_INST                                                                               |    <0.001 |
 |         PROBE_IN_INST                                                                              |    <0.001 |
-|         PROBE_OUT_ALL_INST                                                                         |     0.005 |
+|         PROBE_OUT_ALL_INST                                                                         |     0.003 |
 |           G_PROBE_OUT[0].PROBE_OUT0_INST                                                           |    <0.001 |
 |           G_PROBE_OUT[1].PROBE_OUT0_INST                                                           |    <0.001 |
 |           G_PROBE_OUT[2].PROBE_OUT0_INST                                                           |    <0.001 |
-|           G_PROBE_OUT[3].PROBE_OUT0_INST                                                           |     0.002 |
-|           G_PROBE_OUT[4].PROBE_OUT0_INST                                                           |     0.002 |
+|           G_PROBE_OUT[3].PROBE_OUT0_INST                                                           |    <0.001 |
+|           G_PROBE_OUT[4].PROBE_OUT0_INST                                                           |    <0.001 |
 |         PROBE_OUT_WIDTH_INST                                                                       |    <0.001 |
 |         U_XSDB_SLAVE                                                                               |    <0.001 |
 |     xlconstant_0                                                                                   |     0.000 |

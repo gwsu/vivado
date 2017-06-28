@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="jtag_axi_system_ila_0_0_synth_1" LaunchPart="xc7z045ffv900-2" LaunchTime="1497557715">
+<GenRun Id="jtag_axi_system_ila_0_0_synth_1" LaunchPart="xc7z045ffv900-2" LaunchTime="1498683710">
   <File Type="VDS-TIMING-PB" Name="jtag_axi_system_ila_0_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="jtag_axi_system_ila_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="jtag_axi_system_ila_0_0.dcp"/>

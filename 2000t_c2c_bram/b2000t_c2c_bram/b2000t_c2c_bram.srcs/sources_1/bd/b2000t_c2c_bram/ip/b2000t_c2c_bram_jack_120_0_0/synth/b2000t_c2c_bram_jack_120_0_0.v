@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:jack_120:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 (* X_CORE_INFO = "jack_120,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_jack_120_0_0,jack_120,{}" *)

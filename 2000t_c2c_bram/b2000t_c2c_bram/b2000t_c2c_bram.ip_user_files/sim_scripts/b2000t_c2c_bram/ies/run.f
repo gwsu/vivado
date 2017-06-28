@@ -183,6 +183,25 @@
   "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v" \
 -endlib
 -makelib ies/xil_defaultlib \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/sim/b2000t_c2c_bram_axi_bram_ctrl_2_0.vhd" \
+-endlib
+-makelib ies/xil_defaultlib \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/sim/b2000t_c2c_bram_dut_0_1.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_1/sim/b2000t_c2c_bram_jack_0_1.v" \
+-endlib
+-makelib ies/xil_defaultlib \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_3_0/sim/b2000t_c2c_bram_axi_bram_ctrl_3_0.vhd" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_1/sim/b2000t_c2c_bram_axi_bram_ctrl_2_1.vhd" \
+-endlib
+-makelib ies/xil_defaultlib \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/sim/b2000t_c2c_bram_dut_120_0_0.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_1_0/sim/b2000t_c2c_bram_dut_120_1_0.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/sim/b2000t_c2c_bram_jack_120_0_0.v" \
+  "../../../../b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/sim/b2000t_c2c_bram_jack_120_0_1.v" \
+-endlib
+-makelib ies/xil_defaultlib \
   glbl.v
 -endlib
 

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Tue Jun 27 10:37:48 2017
+| Date         : Wed Jun 28 15:48:46 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_clock_utilization -file b2000t_c2c_bram_wrapper_clock_utilization_routed.rpt
 | Design       : b2000t_c2c_bram_wrapper
@@ -54,7 +54,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+-----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site            | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                                                                                                                                                | Driver Pin                                                                                                                                    | Net                                                                                                                                              |
 +-----------+-----------+-----------------+------------+-----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y96  | n/a          |      |                   |                 2 |       14551 |               2 |        6.667 | clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf/O                                                                                                  | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y96  | n/a          |      |                   |                 2 |       14908 |               2 |        6.667 | clk_out1_b2000t_c2c_bram_clk_wiz_0                                                                                                                                                                                                   | b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf/O                                                                                                  | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2   | n/a          |      |                   |                 2 |        4130 |               0 |       10.240 | user_clk_i                                                                                                                                                                                                                           | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_net_i/O                                                                        | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
 | g2        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y16  | n/a          |      |                   |                 2 |         605 |               0 |        5.120 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/RXOUTCLK | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_bufg_i/O | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
 | g3        | src3      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y17  | n/a          |      |                   |                 1 |         605 |               0 |        5.120 | b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/gtxe2_i/RXOUTCLK                                          | b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxrecclk_bufg_i/O                                          | b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxrecclk_to_fabric_i                                          |
@@ -99,9 +99,9 @@ Table of Contents
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
 | X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
 | X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
-| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 | 10312 | 13150 | 3680 |  3650 |    0 |   110 |   20 |    55 |    0 |    80 |
+| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 | 10597 | 13150 | 3645 |  3650 |    0 |   110 |   20 |    55 |    0 |    80 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 12600 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
-| X1Y2              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    2 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  9143 | 13300 | 2903 |  3700 |    0 |   120 |    9 |    60 |    0 |    80 |
+| X1Y2              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    2 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  9215 | 13300 | 3011 |  3700 |    0 |   120 |    9 |    60 |    0 |    80 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 12000 |    0 |  3500 |    0 |    98 |    0 |    49 |    0 |   100 |
 | X1Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 13300 |    0 |  3700 |    0 |   120 |    0 |    60 |    0 |    80 |
 | X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 12000 |    0 |  3500 |    0 |   100 |    0 |    50 |    0 |   100 |
@@ -164,11 +164,11 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        8111 |               0 | 7598 |    493 |   19 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
-| g1        | n/a   | BUFG/O          | None       |        2356 |               0 | 2212 |    135 |    9 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
-| g2        | n/a   | BUFGCTRL/O      | None       |         176 |               0 |  163 |     12 |    1 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
-| g4        | n/a   | BUFG/O          | None       |          33 |               0 |   33 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
-| g5        | n/a   | BUFG/O          | None       |         306 |               0 |  306 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
+| g0        | n/a   | BUFG/O          | None       |        8214 |               0 | 7701 |    493 |   19 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g1        | n/a   | BUFG/O          | None       |        2369 |               0 | 2224 |    136 |    9 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
+| g2        | n/a   | BUFGCTRL/O      | None       |         333 |               0 |  294 |     38 |    1 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g4        | n/a   | BUFG/O          | None       |          77 |               0 |   73 |      4 |    0 |   0 |  0 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
+| g5        | n/a   | BUFG/O          | None       |         305 |               0 |  305 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -181,12 +181,12 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5907 |               0 | 5813 |     81 |    8 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
-| g1        | n/a   | BUFG/O          | None       |        1774 |               0 | 1763 |      4 |    4 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
-| g2        | n/a   | BUFGCTRL/O      | None       |         428 |               0 |  362 |     65 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
+| g0        | n/a   | BUFG/O          | None       |        6161 |               0 | 6067 |     81 |    8 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1                                                                                                          |
+| g1        | n/a   | BUFG/O          | None       |        1761 |               0 | 1751 |      3 |    4 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/user_clk_i_0                                                                               |
+| g2        | n/a   | BUFGCTRL/O      | None       |         271 |               0 |  231 |     39 |    0 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/rxrecclk_to_fabric_i |
 | g3        | n/a   | BUFGCTRL/O      | None       |         604 |               0 |  525 |     77 |    1 |   0 |  1 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/rxrecclk_to_fabric_i                                          |
-| g4        | n/a   | BUFG/O          | None       |         560 |               0 |  546 |     11 |    0 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
-| g5        | n/a   | BUFG/O          | None       |          68 |               0 |   68 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
+| g4        | n/a   | BUFG/O          | None       |         516 |               0 |  506 |      7 |    0 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/INIT_CLK_i                                                                                 |
+| g5        | n/a   | BUFG/O          | None       |          69 |               0 |   69 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/itck_i                                                                                                                              |
 | g6        | n/a   | BUFG/O          | None       |          68 |               0 |   66 |      0 |    0 |   0 |  2 |    0 |   0 |       0 | b2000t_c2c_bram_i/aurora_64b66b_0/inst/clock_module_i/sync_clk_i_0                                                                               |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -213,7 +213,7 @@ Table of Contents
 +-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                              | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                     |
 +-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_out1_b2000t_c2c_bram_clk_wiz_0 |       6.667 | {0.000 3.333} |          |       14015 |        0 |              0 |        3 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | clk_out1_b2000t_c2c_bram_clk_wiz_0 |       6.667 | {0.000 3.333} |          |       14372 |        0 |              0 |        3 | b2000t_c2c_bram_i/clk_wiz/inst/clk_out1 |
 +-----------+-----------------+-------------------+------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -233,8 +233,8 @@ Table of Contents
 | Y5  |  0 |     0 |
 | Y4  |  0 |     0 |
 | Y3  |  0 |     0 |
-| Y2  |  0 |  5907 |
-| Y1  |  0 |  8111 |
+| Y2  |  0 |  6161 |
+| Y1  |  0 |  8214 |
 | Y0  |  0 |     0 |
 +-----+----+-------+
 
@@ -265,8 +265,8 @@ Table of Contents
 | Y5  |  0 |     0 |
 | Y4  |  0 |     0 |
 | Y3  |  0 |     0 |
-| Y2  |  0 |  1774 |
-| Y1  |  0 |  2356 |
+| Y2  |  0 |  1761 |
+| Y1  |  0 |  2369 |
 | Y0  |  0 |     0 |
 +-----+----+-------+
 
@@ -297,8 +297,8 @@ Table of Contents
 | Y5  |  0 |    0 |
 | Y4  |  0 |    0 |
 | Y3  |  0 |    0 |
-| Y2  |  0 |  428 |
-| Y1  |  0 |  176 |
+| Y2  |  0 |  271 |
+| Y1  |  0 |  333 |
 | Y0  |  0 |    0 |
 +-----+----+------+
 
@@ -361,8 +361,8 @@ Table of Contents
 | Y5  |  0 |    0 |
 | Y4  |  0 |    0 |
 | Y3  |  0 |    0 |
-| Y2  |  0 |  560 |
-| Y1  |  0 |   33 |
+| Y2  |  0 |  516 |
+| Y1  |  0 |   77 |
 | Y0  |  0 |    0 |
 +-----+----+------+
 
@@ -393,8 +393,8 @@ Table of Contents
 | Y5  |  0 |    0 |
 | Y4  |  0 |    0 |
 | Y3  |  0 |    0 |
-| Y2  |  0 |   68 |
-| Y1  |  0 |  306 |
+| Y2  |  0 |   69 |
+| Y1  |  0 |  305 |
 | Y0  |  0 |    0 |
 +-----+----+------+
 

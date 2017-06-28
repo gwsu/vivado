@@ -128,7 +128,17 @@ output reg  [59:0]   b_out
             reg_start <= 32'd0;
         end
    end 
-  
+   
+   reg  [31 : 0]  reg_read;
+   always @(posedge clk or posedge rst) 
+   begin
+        if (rst)
+            reg_read <= 32'd0;
+        else begin
+            if ( ( addr==32'd160) && ( en==1'd1 ) && ( we==4'hf ) )
+            reg_read <= data_in;
+        end
+    end
 // a2b0 and dealy
    reg [31 : 0]  a2b0_dealy_counter;
    
@@ -300,7 +310,7 @@ output reg  [59:0]   b_out
              data_bin_5 <= b_in; 
            end
            else if ( state == A10B) begin
-             a_out <= {30'h2aa_aaaa,30'h2aaa_aaaa};
+             a_out <= {30'h2aaa_aaaa,30'h2aaa_aaaa};
              a_oe  <= 1'd1;
              data_bin_a <= b_in; 
            end                    
@@ -431,7 +441,9 @@ output reg  [59:0]   b_out
                     data_out <= {b_result[31:0]};
                     32'd152:
                     data_out <= {4'd0,b_result[59:32]};                                                                                   
-//////////////////////////////////////////////////////////////////////                    
+//////////////////////////////////////////////////////////////////////   
+                    32'd160:
+                    data_out <=reg_read;            
                     default:
                     data_out <= 60'd0;   
                 endcase

@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 23 19:18:10 2017
+//Date        : Wed Jun 28 17:15:30 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target jtag_axi.bd
 //Design      : jtag_axi
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "jtag_axi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=jtag_axi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_axi_chip2chip_cnt=3,da_board_cnt=4,da_bram_cntlr_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "jtag_axi.hwdef" *) 
+(* CORE_GENERATION_INFO = "jtag_axi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=jtag_axi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_axi_chip2chip_cnt=3,da_board_cnt=4,da_bram_cntlr_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "jtag_axi.hwdef" *) 
 module jtag_axi
    (DDR_addr,
     DDR_ba,
@@ -120,8 +120,8 @@ module jtag_axi
   wire INIT_DIFF_CLK_1_CLK_P;
   wire [0:0]aurora_64b66b_0_GT_SERIAL_TX_TXN;
   wire [0:0]aurora_64b66b_0_GT_SERIAL_TX_TXP;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:63]aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire aurora_64b66b_0_USER_DATA_M_AXIS_RX_TVALID;
+  wire [0:63]aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA;
+  wire aurora_64b66b_0_USER_DATA_M_AXIS_RX_TVALID;
   wire aurora_64b66b_0_channel_up;
   wire aurora_64b66b_0_gt_qpllclk_quad1_out;
   wire aurora_64b66b_0_gt_qpllrefclk_quad1_out;
@@ -149,9 +149,9 @@ module jtag_axi
   wire axi_bram_ctrl_0_BRAM_PORTB_EN;
   wire axi_bram_ctrl_0_BRAM_PORTB_RST;
   wire [3:0]axi_bram_ctrl_0_BRAM_PORTB_WE;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [63:0]axi_chip2chip_0_AXIS_TX_TDATA;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_chip2chip_0_AXIS_TX_TREADY;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_chip2chip_0_AXIS_TX_TVALID;
+  wire [63:0]axi_chip2chip_0_AXIS_TX_TDATA;
+  wire axi_chip2chip_0_AXIS_TX_TREADY;
+  wire axi_chip2chip_0_AXIS_TX_TVALID;
   wire axi_chip2chip_0_aurora_pma_init_out;
   wire axi_chip2chip_0_aurora_reset_pb;
   wire axi_chip2chip_0_axi_c2c_config_error_out;
@@ -163,6 +163,10 @@ module jtag_axi
   wire axi_chip2chip_1_AXIS_TX_TVALID;
   wire axi_chip2chip_1_aurora_pma_init_out;
   wire axi_chip2chip_1_aurora_reset_pb;
+  wire axi_chip2chip_1_axi_c2c_config_error_out;
+  wire axi_chip2chip_1_axi_c2c_link_error_out;
+  wire axi_chip2chip_1_axi_c2c_link_status_out;
+  wire axi_chip2chip_1_axi_c2c_multi_bit_error_out;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
@@ -569,7 +573,11 @@ module jtag_axi
         .axi_c2c_aurora_tx_tdata(axi_chip2chip_1_AXIS_TX_TDATA),
         .axi_c2c_aurora_tx_tready(axi_chip2chip_1_AXIS_TX_TREADY),
         .axi_c2c_aurora_tx_tvalid(axi_chip2chip_1_AXIS_TX_TVALID),
+        .axi_c2c_config_error_out(axi_chip2chip_1_axi_c2c_config_error_out),
+        .axi_c2c_link_error_out(axi_chip2chip_1_axi_c2c_link_error_out),
+        .axi_c2c_link_status_out(axi_chip2chip_1_axi_c2c_link_status_out),
         .axi_c2c_m2s_intr_in({1'b0,1'b0,1'b0,1'b0}),
+        .axi_c2c_multi_bit_error_out(axi_chip2chip_1_axi_c2c_multi_bit_error_out),
         .axi_c2c_phy_clk(aurora_64b66b_0_user_clk_out),
         .s_aclk(clk_wiz_clk_out1),
         .s_aresetn(rst_clk_wiz_100M_peripheral_aresetn),
@@ -927,15 +935,6 @@ module jtag_axi
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb));
-  jtag_axi_system_ila_0 system_ila
-       (.SLOT_0_AXIS_tdata({aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[0],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[1],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[2],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[3],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[4],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[5],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[6],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[7],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[8],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[9],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[10],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[11],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[12],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[13],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[14],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[15],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[16],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[17],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[18],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[19],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[20],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[21],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[22],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[23],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[24],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[25],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[26],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[27],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[28],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[29],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[30],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[31],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[32],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[33],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[34],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[35],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[36],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[37],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[38],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[39],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[40],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[41],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[42],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[43],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[44],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[45],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[46],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[47],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[48],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[49],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[50],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[51],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[52],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[53],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[54],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[55],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[56],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[57],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[58],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[59],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[60],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[61],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[62],aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA[63]}),
-        .SLOT_0_AXIS_tlast(1'b0),
-        .SLOT_0_AXIS_tvalid(aurora_64b66b_0_USER_DATA_M_AXIS_RX_TVALID),
-        .SLOT_1_AXIS_tdata(axi_chip2chip_0_AXIS_TX_TDATA),
-        .SLOT_1_AXIS_tlast(1'b0),
-        .SLOT_1_AXIS_tready(axi_chip2chip_0_AXIS_TX_TREADY),
-        .SLOT_1_AXIS_tvalid(axi_chip2chip_0_AXIS_TX_TVALID),
-        .clk(aurora_64b66b_0_user_clk_out));
   jtag_axi_system_ila_0_0 system_ila_0
        (.SLOT_0_AXI_araddr(jtag_axi_0_M_AXI_ARADDR),
         .SLOT_0_AXI_arburst(jtag_axi_0_M_AXI_ARBURST),
@@ -1018,7 +1017,11 @@ module jtag_axi
         .probe_in1(axi_chip2chip_0_axi_c2c_link_status_out),
         .probe_in2(axi_chip2chip_0_axi_c2c_multi_bit_error_out),
         .probe_in3(axi_chip2chip_0_axi_c2c_link_error_out),
-        .probe_in4(axi_chip2chip_0_axi_c2c_config_error_out));
+        .probe_in4(axi_chip2chip_0_axi_c2c_config_error_out),
+        .probe_in5(axi_chip2chip_1_axi_c2c_config_error_out),
+        .probe_in6(axi_chip2chip_1_axi_c2c_link_status_out),
+        .probe_in7(axi_chip2chip_1_axi_c2c_multi_bit_error_out),
+        .probe_in8(axi_chip2chip_1_axi_c2c_link_error_out));
   jtag_axi_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
 endmodule

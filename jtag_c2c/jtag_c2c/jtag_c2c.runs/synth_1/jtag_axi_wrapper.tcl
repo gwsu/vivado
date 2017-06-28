@@ -3,6 +3,7 @@
 # 
 
 set_param xicom.use_bs_reader 1
+set_param tcl.collectionResultDisplayLimit 0
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7z045ffv900-2
@@ -40,10 +41,6 @@ set_property used_in_implementation false [get_files -all /home/wesleyguo/github
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/ip/ip_0/bd_7f6b_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/ip/ip_1/bd_7f6b_g_inst_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/bd_7f6b_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0_ooc.xdc]

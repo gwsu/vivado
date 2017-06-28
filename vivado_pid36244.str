@@ -2495,3 +2495,2934 @@ selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_ch
 // HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 7:52:06 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 8:22:06 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 8:52:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 9:22:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 9:52:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 10:22:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 10:52:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 11:22:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/27/17 11:52:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 12:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 12:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 1:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 1:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 2:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 2:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 3:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 3:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 4:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 4:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 5:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 5:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 6:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 6:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 7:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 7:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 8:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 8:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 9:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 9:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 10:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 10:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 11:22:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 11:52:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 12:22:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 12:52:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 1:22:07 PM EDT
+// Elapsed time: 72387 seconds
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_chip2chip_0 ; s_axi ; Mem0 ; 0x7602_0000 ; 8K ; 0x7602_1FFF", 8, "axi_chip2chip_0", 0, false); // c:ab (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 1:52:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,195 MB. GUI used memory: 79 MB. Current time: 6/28/17 2:22:07 PM EDT
+// Elapsed time: 2362 seconds
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_chip2chip_1 ; s_axi ; Mem0 ; 0x7600_0000 ; 8K ; 0x7600_1FFF", 9, "axi_chip2chip_1", 0, false); // c:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_chip2chip_0 ; s_axi ; Mem0 ; 0x7602_0000 ; 8K ; 0x7602_1FFF", 8, "axi_chip2chip_0", 0, false); // c:ab (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SYSTEM_HIERARCHY, "Design"); // as:DockableFrame
+minimizeFrame(PAResourceOtoP.PAViews_SYSTEM_HIERARCHY, "Design"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,210 MB. GUI used memory: 82 MB. Current time: 6/28/17 2:52:07 PM EDT
+// Elapsed time: 2160 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 955, 502, 1671, 723, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M02_AXI }]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// bt:g (cd:JFrame):  Debug : addNotify
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M02_AXI }] 
+// Tcl Message: true 
+dismissDialog("Debug"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:k (JPanel:JComponent, cd:JFrame)
+// s:q (cd:JFrame): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:q)
+dismissDialog("Run Connection Automation"); // s:q (cd:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \                                                           [get_bd_intf_nets axi_mem_intercon_M02_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" APC_EN "0" } \                                                          ] 
+// bt:g (cd:JFrame):  Run Connection Automation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,214 MB. GUI used memory: 81 MB. Current time: 6/28/17 3:03:42 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode INTERFACE, with 1 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation. Debug Automation : Connecting interface connection /axi_mem_intercon_M02_AXI, to System ILA slot interface pin /system_ila_0/SLOT_2_AXI for debug. 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ui/bd_4ae2cc3.ui>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz . INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,242 MB. GUI used memory: 80 MB. Current time: 6/28/17 3:04:27 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hw_handoff/jtag_axi_system_ila_0_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0/bd_0/hdl/jtag_axi_system_ila_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh 
+// Tcl Message: INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide. INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide. 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,315 MB. GUI used memory: 78 MB. Current time: 6/28/17 3:04:42 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 113.808 MB. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 28 15:04:46 2017] Launched jtag_axi_system_ila_0_0_synth_1, synth_1... Run output will be captured here: jtag_axi_system_ila_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_system_ila_0_0_synth_1/runme.log synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log [Wed Jun 28 15:04:46 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:45 ; elapsed = 00:00:39 . Memory (MB): peak = 7354.590 ; gain = 103.633 ; free physical = 70685 ; free virtual = 179007 
+// Elapsed time: 39 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 150 MB (+1568kb) [119:02:22]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Tcl Command: 'set_property location {6.5 1798 667} [get_bd_cells axi_chip2chip_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6.5 1798 667} [get_bd_cells axi_chip2chip_1] 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 742 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {6.5 1798 667} [get_bd_cells axi_chip2chip_1]' 
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~jtag_axi_i/system_ila/inst/ila_lib}]]. , [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.. ]", 6, false, false, false, false, true, false); // ah:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // Y:JMenu (K:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceItoN.MsgTreePanel_DISCARD_USER_CREATED_MESSAGES, "Discard User Created Messages"); // ab:JMenuItem (K:JPopupMenu, Popup:JWindow)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary Report ; Wed Jun 28 15:15:33 EDT 2017 ; 1738942 ; Open", 34, "Timing Summary Report", 0, false); // x:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary Report ; Wed Jun 28 15:15:33 EDT 2017 ; 1738942 ; Open", 34, "Open", 3, false); // x:ab (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ui/bd_4ae2cc3.ui>  
+// f:q (cd:JFrame): Launch Runs: addNotify
+dismissDialog("Save Constraints"); // bt:g (cd:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// 'cn' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// Tcl Message: [Wed Jun 28 15:18:01 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 158 MB (+102kb) [119:21:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,332 MB. GUI used memory: 82 MB. Current time: 6/28/17 3:34:43 PM EDT
+// Elapsed time: 2333 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 27, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 27, true); // u:K (t:D, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (0) ; Closed", 1, "xilinx_tcf/Xilinx/00001894580501 (0)", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (0) ; Closed", 1, "xilinx_tcf/Xilinx/00001894580501 (0)", 0, false, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET, "Open Target"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501} 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// bt:g (cd:JFrame):  Open Target : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Open Target"); // bt:g (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (5) ; Programmed", 3, "xc7z045_1 (5)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (5) ; Programmed", 3, "xc7z045_1 (5)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 7369.484 ; gain = 0.000 ; free physical = 72482 ; free virtual = 180913 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 7369.484 ; gain = 0.000 ; free physical = 72479 ; free virtual = 180910 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]] 
+// Tcl Message: Processed interface aurora_64b66b_0_USER_DATA_M_AXIS_RX_ila1_slot0 Processed interface axi_chip2chip_0_AXIS_TX_ila1_slot1 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: Processed interface jtag_axi_0_M_AXI_ila2_slot0 Processing Interface axi_mem_intercon_M01_AXI_ila2_slot1 
+// Tcl Message: ERROR: [Labtoolstcl 44-526] The custom probe name ' :  : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)'. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'B' command handler elapsed time: 51 seconds
+// Elapsed time: 49 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 99 MB. Current time: 6/28/17 3:58:03 PM EDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_2", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_DASHBOARD
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready ; ==   ; [B]   ; X ; probe58[1]", 0, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid ; ==   ; [B] ;  ; probe58[0]", 9, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : jtag_axi_0_M_AXI : Interface]", 0, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 103 MB. Current time: 6/28/17 3:58:29 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 94 MB. Current time: 6/28/17 3:58:29 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)[2:0]]", 8, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false, true, false, false, false, false); // t:ab (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 101 MB. Current time: 6/28/17 3:58:37 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 95 MB. Current time: 6/28/17 3:58:41 PM EDT
+selectTreeTableHeader(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "Name", 0); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_vio_1 ; OK - Outputs Reset", 8, "hw_vio_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// 'F' command handler elapsed time: 3 seconds
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1] 
+// Tcl Message: Processed interface aurora_64b66b_0_USER_DATA_M_AXIS_RX_ila1_slot0 Processed interface axi_chip2chip_0_AXIS_TX_ila1_slot1 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_1", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+minimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 92 MB. Current time: 6/28/17 3:59:03 PM EDT
+minimizeFrame(RDIResource.RDIViews_PROPERTIES, "ILA Core Properties"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Interface]", 0, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group]", 1, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group]", 1); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 95 MB. Current time: 6/28/17 3:59:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group]", 1); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Stream_Channel_(i1:s1)_(axi_chip2chip_0_AXIS_TX)[2:0]]", 3, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group]", 1, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group]", 1, true, false, false, false, true, false); // a:i (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Interface]", 0, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 93 MB. Current time: 6/28/17 3:59:25 PM EDT
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 92 MB. Current time: 6/28/17 3:59:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 92 MB. Current time: 6/28/17 3:59:41 PM EDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_2 ; Idle", 7, "hw_ila_2", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2] 
+// Tcl Message: Processing Interface jtag_axi_0_M_AXI_ila2_slot0 
+// Tcl Message: ERROR: [Labtoolstcl 44-526] The custom probe name ' :  : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)'. 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+minimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 100 MB. Current time: 6/28/17 3:59:45 PM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 1, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : jtag_axi_0_M_AXI : Interface]", 0, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_0_axi_araddr[31:0]]", 1, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+// Elapsed time: 11 seconds
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, Write_Response_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 150, false, true, false, false, false, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Add Probes: hide
+// Tcl Message: set_property NAME.CUSTOM { :  : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM { :  : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM { :  : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM { :  : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM { :  : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)]  
+// Tcl Message: set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)]  
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 141 MB. Current time: 6/28/17 4:00:17 PM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 24, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_0_axi_arid]", 3, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_1_axi_wstrb[3:0]]", 4, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_0_axi_araddr[31:0]]", 0, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true,  :  : Read Address Channel  Events]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true,  :  : Read Data Channel  Events]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Data_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_1 : axi_mem_intercon_M01_AXI : Read Data Channel  Events]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true,  :  : Write Address Channel  Events]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)[2:0]]", 7, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)[2:0]]", 7, true, false, false, false, true, false); // a:i (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Signal Color"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "Short"); // P:JCheckBoxMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_0_axi_arready]", 9, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_1_axi_wvalid]", 5, false, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_arready]", 7, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_arvalid]", 8, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_arvalid]", 8, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_awready]", 9, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_awvalid]", 10, false, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_awvalid]", 10, false); // a:i (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid ; ==   ; [B]   ; X ; probe85[0]", 3, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready ; ==   ; [B]   ; X ; probe88[1]", 0, "jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready ; ==   ; [B]   ; X ; probe88[1]", 0, "jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready", 0, true, false, false, true, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key - Popup Trigger
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_SHORT, "Short"); // aj:JRadioButtonMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_DISPLAY_PROBE_SHORT_NAME
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; X ; probe85[0]", 3, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; X ; probe85[0]", 3, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 3, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awready ; ==   ; [B]   ; X ; probe85[1]", 2, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awready ; ==   ; [B]   ; X ; probe85[1]", 2, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 2, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2017-Jun-28 16:02:23 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_STOP_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_stop_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_2' trigger was stopped by user at 2017-Jun-28 16:02:26 
+setText("[0 - 1023]", "128"); // I:E (JPanel:JComponent, cd:JFrame)
+// TclEventType: HW_ILA_CHANGE
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2017-Jun-28 16:02:32 
+// Elapsed time: 24 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 232); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "zynq_2000_c2c_tcl.tcl", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 24, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+// Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 232); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+// Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 232); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+// Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 232); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_1", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 101 MB. Current time: 6/28/17 4:03:36 PM EDT
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axis_tvalid ; ==   ; [B]   ; 1 ; probe4[0] ; 1 of 1", 2, "net_slot_1_axis_tvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_2", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_1", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "dashboard_1"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+minimizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Settings - hw_ila_2"); // O:as (FrameContainer:JideTabbedPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 108 MB. Current time: 6/28/17 4:03:47 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awready ; ==   ; [B]   ; 1 ; probe85[1]", 2, "net_slot_2_axi_awready", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; 1 ; probe85[0]", 3, "net_slot_2_axi_awvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; 1 ; probe85[0]", 3, "1", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; 1 ; probe85[0]", 3, "1", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 3, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awready ; ==   ; [B]   ; 1 ; probe85[1]", 2, "1", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awready ; ==   ; [B]   ; 1 ; probe85[1]", 2, "1", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 2, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_2' trigger was stopped by user at 2017-Jun-28 16:04:09 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2017-Jun-28 16:04:09 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2017-Jun-28 16:04:09 
+// Tcl Message: ERROR: [Common 17-49] Internal Data Exception: Assertion failed:/proj/rdi-xco/wall/workspaces/wall305/sub/REL/2016.4/src/shared/labtools/la/LTDHWProbeUtils.cxx:351:HDDCProbeData LTDHWProbeUtils::getProbeILAData(HDDCProbeManager*, HDDCProbeInterface*, LTDHWWaveManager*, LTDHWWave*):p_wave != nullptr 
+// Tcl Message: ERROR: [Common 17-49] Internal Data Exception: Assertion failed:/proj/rdi-xco/wall/workspaces/wall305/sub/REL/2016.4/src/shared/labtools/la/LTDHWProbeUtils.cxx:351:HDDCProbeData LTDHWProbeUtils::getProbeILAData(HDDCProbeManager*, HDDCProbeInterface*, LTDHWWaveManager*, LTDHWWave*):p_wave != nullptr 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 145 MB. Current time: 6/28/17 4:04:11 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,352 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:12 PM EDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Processing Interface jtag_axi_0_M_AXI_ila2_slot0 
+// Tcl Message: ERROR: [Labtoolstcl 44-526] The custom probe name ' :  : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)'. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 99 MB. Current time: 6/28/17 4:04:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:18 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 98 MB. Current time: 6/28/17 4:04:19 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 16 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arcache[3:0]]", 3, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, jtag_axi_i/system_ila_0/inst/net_slot_2_axi_ar_ctrl[1:0]]", 0, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 96 MB. Current time: 6/28/17 4:04:26 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:26 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:27 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true, false, false, false, true, false); // a:i (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Name"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "Short"); // P:JCheckBoxMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 2, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 5, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:50 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 5); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 5); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:53 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 4); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 4); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 3, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 126 MB. Current time: 6/28/17 4:04:57 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 3); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 3); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:04:59 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 2); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 2); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:03 PM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_rready]", 3, false); // a:i (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:08 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_rvalid]", 7, false, false, true, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Control Key
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_arvalid ; ==   ; [B]   ; X ; probe88[0]", 1, "net_slot_2_axi_arvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_arvalid ; ==   ; [B]   ; X ; probe88[0]", 1, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_arvalid ; ==   ; [B]   ; X ; probe88[0]", 1, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 1, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_arready ; ==   ; [B]   ; X ; probe88[1]", 0, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:30 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:32 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:32 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2017-Jun-28 16:05:35 
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:05:57 PM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "zynq_2000_c2c_tcl.tcl", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K:H (Workspace:JPanel, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1023, 290, 1865, 964, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Clear Debug"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Tcl Message: startgroup 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_mem_intercon_M02_AXI } ] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_intf_net [get_bd_intf_net axi_mem_intercon_M02_AXI] [get_bd_intf_pins system_ila_0/SLOT_2_AXI] 
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Clear Debug : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: endgroup 
+dismissDialog("Clear Debug"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 18 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1314, 176, 1865, 964, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Clear Debug"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Tcl Message: startgroup 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { aurora_64b66b_0_USER_DATA_M_AXIS_RX } ] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_intf_net [get_bd_intf_net aurora_64b66b_0_USER_DATA_M_AXIS_RX] [get_bd_intf_pins system_ila/SLOT_0_AXIS] 
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Clear Debug : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: endgroup 
+dismissDialog("Clear Debug"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1466, 154, 1865, 964, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenuItem((HResource) null, "Clear Debug"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Tcl Message: startgroup 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_chip2chip_0_AXIS_TX } ] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_intf_net [get_bd_intf_net axi_chip2chip_0_AXIS_TX] [get_bd_intf_pins system_ila/SLOT_0_AXIS] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila] 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 24, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 887, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 887, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 886, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_araddr[31:0]]", 1, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_ar_ctrl[1:0]]", 0, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 101 MB. Current time: 6/28/17 4:07:04 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 94 MB. Current time: 6/28/17 4:07:04 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 93 MB. Current time: 6/28/17 4:07:04 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 114 MB. Current time: 6/28/17 4:07:06 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Write_Response_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)[2:0]]", 6, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 138 MB. Current time: 6/28/17 4:07:10 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)[2:0]]", 8, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 135 MB. Current time: 6/28/17 4:07:13 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 94 MB. Current time: 6/28/17 4:07:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 94 MB. Current time: 6/28/17 4:07:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 97 MB. Current time: 6/28/17 4:07:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, net_slot_2_axi_ar_ctrl[1:0]]", 0, true, true, false, false, false, false); // a:i (JViewport:JComponent, cd:JFrame) - Shift Key - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 94 MB. Current time: 6/28/17 4:07:15 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_awvalid ; ==   ; [B]   ; X ; probe85[0]", 3, "net_slot_2_axi_awvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_2_axi_arready ; ==   ; [B]   ; 1 ; probe88[1]", 0, "net_slot_2_axi_arready", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+// Elapsed time: 30 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "net_slot_1_", true); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl[1:0]]", 0, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid]", 41, false, true, false, false, false, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot[2:0] ; ==   ; [H]   ; X ; probe36[2:0]", 7, "==  ", 1); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot[2:0] ; ==   ; [H]   ; X ; probe36[2:0]", 7, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot[2:0]", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+// Elapsed time: 11 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "net_slot_1_"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl[1:0]]", 0, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid]", 41, false, true, false, false, false, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Add Probes: hide
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid[6:0] ; ==   ; [H]   ; XX ; probe33[6:0]", 4, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid[6:0]", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl[1:0] ; ==   ; [H]   ; X ; probe58[1:0]", 0, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl[1:0]", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid ; ==   ; [B]   ; X ; probe56[0]", 41, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid ; ==   ; [B]   ; X ; probe56[0]", 41, "jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid", 0, false, false, false, true, false); // z:r (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_SHORT, "Short"); // aj:JRadioButtonMenuItem (JPopupMenu:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_DISPLAY_PROBE_SHORT_NAME
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// bt:g (cd:JFrame):  Set Probe Name Display Type : addNotify
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]  
+dismissDialog("Set Probe Name Display Type"); // bt:g (cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_wlast ; ==   ; [B]   ; X ; probe56[2]", 39, "net_slot_1_axi_wlast", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_wready ; ==   ; [B]   ; X ; probe56[1]", 40, "net_slot_1_axi_wready", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_wready ; ==   ; [B]   ; X ; probe56[1]", 40, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_wready ; ==   ; [B]   ; X ; probe56[1]", 40, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awready ; ==   ; [B]   ; X ; probe55[1]", 32, "net_slot_1_axi_awready", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awready ; ==   ; [B]   ; X ; probe55[1]", 32, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 32, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awvalid ; ==   ; [B]   ; X ; probe55[0]", 33, "net_slot_1_axi_awvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_wvalid ; ==   ; [B]   ; X ; probe56[0]", 41, "net_slot_1_axi_wvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_ar_ctrl[1:0] ; ==   ; [H]   ; X ; probe58[1:0]", 0, "net_slot_1_axi_ar_ctrl[1:0]", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+// Elapsed time: 11 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "awre"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_awready]", 1, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "awv"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_awvalid]", 1, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+// Elapsed time: 10 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "arr"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_arready]", 1, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "arv"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_arvalid]", 1, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awvalid ; ==   ; [B]   ; X ; probe55[0]", 1, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awvalid ; ==   ; [B]   ; X ; probe55[0]", 1, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awvalid ; ==   ; [B]   ; X ; probe55[0]", 1, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 1, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awready ; ==   ; [B]   ; X ; probe55[1]", 0, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awready ; ==   ; [B]   ; X ; probe55[1]", 0, "X", 3); // z:r (JViewport:JComponent, cd:JFrame)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // z:r (JViewport:JComponent, cd:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:09:47 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// Elapsed time: 24 seconds
+selectButton(PAResourceTtoZ.TriggerStatusPanel_STOP_TRIGGER_FOR_THIS_ILA_CORE, "ILA_stop_trigger"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_2' trigger was stopped by user at 2017-Jun-28 16:10:13 
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,337 MB. GUI used memory: 95 MB. Current time: 6/28/17 4:10:16 PM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ui/bd_4ae2cc3.ui>  
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Out-of-Context module run and Synthesis run are Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Out-of-Context module run and Synthesis run are Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run jtag_axi_system_ila_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -jobs 24 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz . INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef 
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh 
+// Tcl Message: INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide. INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 132.158 MB. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,377 MB. GUI used memory: 97 MB. Current time: 6/28/17 4:11:08 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 28 16:11:08 2017] Launched jtag_axi_system_ila_0_0_synth_1, synth_1... Run output will be captured here: jtag_axi_system_ila_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_system_ila_0_0_synth_1/runme.log synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log [Wed Jun 28 16:11:08 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 7599.566 ; gain = 0.000 ; free physical = 72545 ; free virtual = 180867 
+// Elapsed time: 26 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 166 MB (+294kb) [120:08:38]
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 521 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// Tcl Message: [Wed Jun 28 16:19:50 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 155 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 27, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 887, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 887, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 887, 269); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "zynq_2000_c2c_tcl.tcl", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (5) ; Programmed", 3, "xc7z045_1 (5)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (5) ; Programmed", 3, "xc7z045_1 (5)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 7599.566 ; gain = 0.000 ; free physical = 72465 ; free virtual = 180878 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// [GUI Memory]: 175 MB (+504kb) [120:15:41]
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// 'B' command handler elapsed time: 44 seconds
+// Elapsed time: 43 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_2", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Tcl Message: save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "dashboard_2"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# Current time: 6/28/17 4:23:27 PM EDT
+# Process ID: 36244
+# Platform: Unix
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [Common 17-70] Application Exception: CORE_LOCATION mismatch
+probe_1=1:1-0 (jtag_axi_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl[1:0])
+probe_2=1:2-0 (Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0])
+ (See /home/wesleyguo/github/vivado/vivado/vivado_pid36244.debug)
+*/
+// HOptionPane Error: "ERROR: [Common 17-70]: CORE_LOCATION mismatch probe_1=1:1-0<br>(jtag_axi_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl[1:0]) probe_2=1:2-0 (Read_Address_<br>Channel_(i1:s0)_(jtag_axi_0_M_AXI)[2:0])  (Vivado v2016.4 (64-bit))"
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "dashboard_1"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Add Probes: show
+// Elapsed time: 12 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", "slot_1"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_bid[6:0]]", 21, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_ar_ctrl[1:0]]", 0, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, net_slot_1_axi_wvalid]", 41, false, true, false, false, false, false); // M:i (JViewport:JComponent, ResizableWindow:JWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectButton(PAResourceEtoH.HardwareDashboardView_CELL_NAME_FOR_DEBUG_CORE, "hw_ila_1"); // d:h (m:JPanel, cd:JFrame)
+// Cell Name for hw_ila_1: show
+closeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // O:as (FrameContainer:JideTabbedPane, cd:JFrame)
+closeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Capture Setup - hw_ila_1"); // O:as (FrameContainer:JideTabbedPane, cd:JFrame)
+closeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Trigger Setup - hw_ila_1"); // O:as (FrameContainer:JideTabbedPane, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_DASHBOARD
+// y:aO (cd:JFrame): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: dashboard_1: close view
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "dashboard_1"); // i:aE
+dismissDialog("Delete Dashboard"); // y:aO (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+// 'F' command handler elapsed time: 4 seconds
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 24, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_arvalid ; ==   ; [B]   ; X ; probe58[0] ; ", 3, "net_slot_1_axi_arvalid", 0); // z:r (JViewport:JComponent, cd:JFrame)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awvalid ; ==   ; [B]   ; 1 ; probe55[0] ; 1 of 1", 1, "net_slot_1_axi_awvalid", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "net_slot_1_axi_awready ; ==   ; [B]   ; 1 ; probe55[1] ; 1 of 1", 0, "net_slot_1_axi_awready", 0, true, false, false, false, false); // z:r (JViewport:JComponent, cd:JFrame) - Shift Key
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceEtoH.HardwareDashboardView_CELL_NAME_FOR_DEBUG_CORE, "hw_ila_1"); // d:h (m:JPanel, cd:JFrame)
+// Cell Name for hw_ila_1: show
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 6, "hw_ila_1", 0, false, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_CREATE_HARDWARE_DASHBOARDS, "Dashboard"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResource.AbstractSelectableTablePanel_EXPORT_TO_SPREADSHEET, "Export to Spreadsheet..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// z:q (cd:JFrame): Export Table to Spreadsheet: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, z:q)
+dismissDialog("Export Table to Spreadsheet"); // z:q (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_vio_1 ; OK - Outputs Reset", 7, "hw_vio_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_vio_1 ; OK - Outputs Reset", 7, "hw_vio_1", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_vio_1 ; OK - Outputs Reset", 7, "hw_vio_1", 0, false, false, false, false, false, true); // t:ab (JViewport:JComponent, cd:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a:aj (cd:JFrame): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:aj)
+dismissDialog("New Dashboard"); // a:aj (cd:JFrame)
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBES, (String) null); // y:JideButton (JPanel:JComponent, cd:JFrame)
+// Add Probes: show
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ResizableWindow:JWindow)
+// Add Probes: hide
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_1", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 8, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd} 
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 452, 436, 1676, 721, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M01_AXI }]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M01_AXI }] 
+// Tcl Message: true 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // y:JideButton (g:CommandBar, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 24 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bt:g)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz . INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,392 MB. GUI used memory: 103 MB. Current time: 6/28/17 4:26:33 PM EDT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef 
+// Tcl Message: Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh 
+// Tcl Message: INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide. INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 146.561 MB. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 28 16:26:41 2017] Launched synth_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log [Wed Jun 28 16:26:41 2017] Launched impl_1... Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 7599.566 ; gain = 0.000 ; free physical = 72453 ; free virtual = 180806 
+// Elapsed time: 23 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 417 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 27, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (4) ; Programmed", 3, "xc7z045_1 (4)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z045_1 (4) ; Programmed", 3, "xc7z045_1 (4)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 7599.566 ; gain = 0.000 ; free physical = 72402 ; free virtual = 180815 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE

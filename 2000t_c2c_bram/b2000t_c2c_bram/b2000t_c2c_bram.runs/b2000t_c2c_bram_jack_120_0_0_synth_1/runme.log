@@ -14,18 +14,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25376 
+INFO: Helper process launched with PID 132517 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.180 ; gain = 217.996 ; free physical = 77171 ; free virtual = 185519
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.188 ; gain = 217.996 ; free physical = 71785 ; free virtual = 180152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_jack_120_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/synth/b2000t_c2c_bram_jack_120_0_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'jack_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/3d6f/jack_120.v:1]
-INFO: [Synth 8-256] done synthesizing module 'jack_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/3d6f/jack_120.v:1]
+INFO: [Synth 8-638] synthesizing module 'jack_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v:1]
+INFO: [Synth 8-256] done synthesizing module 'jack_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v:1]
 INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_jack_120_0_0' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/synth/b2000t_c2c_bram_jack_120_0_0.v:56]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port a_oe
 WARNING: [Synth 8-3331] design jack_120 has unconnected port b_oe
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1274.656 ; gain = 259.473 ; free physical = 77013 ; free virtual = 185361
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1274.664 ; gain = 259.473 ; free physical = 71619 ; free virtual = 179985
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -35,7 +35,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1274.656 ; gain = 259.473 ; free physical = 76999 ; free virtual = 185348
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1274.664 ; gain = 259.473 ; free physical = 71616 ; free virtual = 179983
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -47,25 +47,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1981.465 ; gain = 0.000 ; free physical = 74607 ; free virtual = 182957
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1980.473 ; gain = 0.000 ; free physical = 69166 ; free virtual = 177535
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74412 ; free virtual = 182762
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74411 ; free virtual = 182762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74411 ; free virtual = 182762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74411 ; free virtual = 182762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -102,7 +102,7 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port a_oe
 WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port b_oe
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74403 ; free virtual = 182754
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177452
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -117,10 +117,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74351 ; free virtual = 182702
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69042 ; free virtual = 177410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74351 ; free virtual = 182702
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69042 ; free virtual = 177410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -132,7 +132,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69033 ; free virtual = 177402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -156,7 +156,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177367
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -169,7 +169,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -181,25 +181,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74340 ; free virtual = 182691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74340 ; free virtual = 182691
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -226,11 +226,11 @@ Report Instance Areas:
 |2     |  inst   |jack_120 |   120|
 +------+---------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74340 ; free virtual = 182691
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1981.465 ; gain = 117.473 ; free physical = 74341 ; free virtual = 182692
-Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1981.465 ; gain = 966.281 ; free physical = 74342 ; free virtual = 182693
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1980.473 ; gain = 117.473 ; free physical = 68997 ; free virtual = 177365
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68997 ; free virtual = 177365
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -240,8 +240,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 13 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2046.309 ; gain = 929.621 ; free physical = 74273 ; free virtual = 182624
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2047.312 ; gain = 930.617 ; free physical = 68903 ; free virtual = 177272
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/b2000t_c2c_bram_jack_120_0_0.dcp' has been generated.
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/b2000t_c2c_bram_jack_120_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2076.320 ; gain = 0.000 ; free physical = 74271 ; free virtual = 182622
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 19:16:36 2017...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2077.328 ; gain = 0.000 ; free physical = 68867 ; free virtual = 177236
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 13:59:43 2017...

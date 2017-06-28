@@ -36,9 +36,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_axi_ch
 # IP: bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_aurora_64b66b_0_0 || ORIG_REF_NAME==jtag_axi_aurora_64b66b_0_0}]
 
-# IP: bd/jtag_axi/ip/jtag_axi_system_ila_0/jtag_axi_system_ila_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_system_ila_0 || ORIG_REF_NAME==jtag_axi_system_ila_0}]
-
 # IP: bd/jtag_axi/ip/jtag_axi_xlconstant_0_0/jtag_axi_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_xlconstant_0_0 || ORIG_REF_NAME==jtag_axi_xlconstant_0_0}]
 

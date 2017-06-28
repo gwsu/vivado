@@ -1,0 +1,249 @@
+$date
+        2017-Jun-28 17:30:34
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " jtag_axi_i/system_ila_0/inst/net_slot_0_axi_araddr [31:0] $end
+$var reg 2 B jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arburst [1:0] $end
+$var reg 4 D jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arcache [3:0] $end
+$var reg 1 H jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arid $end
+$var reg 8 I jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arlen [7:0] $end
+$var reg 1 Q jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arlock $end
+$var reg 3 R jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arprot [2:0] $end
+$var reg 4 U jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arqos [3:0] $end
+$var reg 3 Y jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arsize [2:0] $end
+$var reg 32 \ jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awaddr [31:0] $end
+$var reg 2 | jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awburst [1:0] $end
+$var reg 4 ~ jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awcache [3:0] $end
+$var reg 1 $" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awid $end
+$var reg 8 %" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awlen [7:0] $end
+$var reg 1 -" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awlock $end
+$var reg 3 ." jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awprot [2:0] $end
+$var reg 4 1" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awqos [3:0] $end
+$var reg 3 5" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awsize [2:0] $end
+$var reg 1 8" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bid $end
+$var reg 2 9" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bresp [1:0] $end
+$var reg 32 ;" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rdata [31:0] $end
+$var reg 1 [" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rid $end
+$var reg 2 \" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rresp [1:0] $end
+$var reg 32 ^" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wdata [31:0] $end
+$var reg 4 ~" jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wstrb [3:0] $end
+$var reg 1 $# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awvalid $end
+$var reg 2 %# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl [1:0] $end
+$var reg 1 '# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awready $end
+$var reg 3 (# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_w_ctrl [2:0] $end
+$var reg 1 +# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wvalid $end
+$var reg 1 ,# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wready $end
+$var reg 1 -# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wlast $end
+$var reg 2 .# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_b_ctrl [1:0] $end
+$var reg 1 0# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bvalid $end
+$var reg 1 1# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bready $end
+$var reg 2 2# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl [1:0] $end
+$var reg 1 4# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arvalid $end
+$var reg 1 5# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arready $end
+$var reg 1 6# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rvalid $end
+$var reg 3 7# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_r_ctrl [2:0] $end
+$var reg 1 :# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rready $end
+$var reg 1 ;# jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rlast $end
+$var reg 32 <# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr [31:0] $end
+$var reg 2 \# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst [1:0] $end
+$var reg 4 ^# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache [3:0] $end
+$var reg 7 b# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid [6:0] $end
+$var reg 8 i# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen [7:0] $end
+$var reg 1 q# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock $end
+$var reg 3 r# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot [2:0] $end
+$var reg 4 u# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos [3:0] $end
+$var reg 3 y# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize [2:0] $end
+$var reg 32 |# jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr [31:0] $end
+$var reg 2 >$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst [1:0] $end
+$var reg 4 @$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache [3:0] $end
+$var reg 7 D$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid [6:0] $end
+$var reg 8 K$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen [7:0] $end
+$var reg 1 S$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock $end
+$var reg 3 T$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot [2:0] $end
+$var reg 4 W$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos [3:0] $end
+$var reg 3 [$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize [2:0] $end
+$var reg 7 ^$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid [6:0] $end
+$var reg 2 e$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp [1:0] $end
+$var reg 32 g$ jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata [31:0] $end
+$var reg 7 )% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid [6:0] $end
+$var reg 2 0% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp [1:0] $end
+$var reg 32 2% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata [31:0] $end
+$var reg 4 R% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb [3:0] $end
+$var reg 2 V% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl [1:0] $end
+$var reg 1 X% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid $end
+$var reg 1 Y% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready $end
+$var reg 3 Z% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl [2:0] $end
+$var reg 1 ]% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid $end
+$var reg 1 ^% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready $end
+$var reg 1 _% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast $end
+$var reg 1 `% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid $end
+$var reg 2 a% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl [1:0] $end
+$var reg 1 c% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready $end
+$var reg 1 d% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid $end
+$var reg 2 e% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl [1:0] $end
+$var reg 1 g% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready $end
+$var reg 3 h% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl [2:0] $end
+$var reg 1 k% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid $end
+$var reg 1 l% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready $end
+$var reg 1 m% jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast $end
+$var reg 3 n% Read_Address_Channel__i1_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 q% Read_Address_Channel__i1_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 t% Read_Address_Channel__i2_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 w% Read_Address_Channel__i2_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 z% Read_Address_Channel__i2_s1___axi_mem_intercon_M03_AXI_ [2:0] $end
+$var reg 3 }% Read_Data_Channel__i1_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 "& Read_Data_Channel__i1_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 %& Read_Data_Channel__i2_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 (& Read_Data_Channel__i2_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 +& Read_Data_Channel__i2_s1___axi_mem_intercon_M03_AXI_ [2:0] $end
+$var reg 3 .& Stream_Channel__i1_s0___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 1& Stream_Channel__i1_s1___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 4& Stream_Channel__i3_s0___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 7& Stream_Channel__i3_s1___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 :& Write_Address_Channel__i1_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 =& Write_Address_Channel__i1_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 @& Write_Address_Channel__i2_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 C& Write_Address_Channel__i2_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 F& Write_Address_Channel__i2_s1___axi_mem_intercon_M03_AXI_ [2:0] $end
+$var reg 3 I& Write_Data_Channel__i1_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 L& Write_Data_Channel__i1_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 O& Write_Data_Channel__i2_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 R& Write_Data_Channel__i2_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 U& Write_Data_Channel__i2_s1___axi_mem_intercon_M03_AXI_ [2:0] $end
+$var reg 3 X& Write_Response_Channel__i1_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 [& Write_Response_Channel__i1_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 ^& Write_Response_Channel__i2_s0___jtag_axi_0_M_AXI_ [2:0] $end
+$var reg 3 a& Write_Response_Channel__i2_s1___axi_mem_intercon_M01_AXI_ [2:0] $end
+$var reg 3 d& Write_Response_Channel__i2_s1___axi_mem_intercon_M03_AXI_ [2:0] $end
+$var reg 1 g& _TRIGGER $end
+$var reg 1 h& _WINDOW $end
+$var reg 1 i& _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 B
+b0 D
+0H
+b0 I
+0Q
+b0 R
+b0 U
+b0 Y
+b0 \
+b0 |
+b0 ~
+0$"
+b0 %"
+0-"
+b0 ."
+b0 1"
+b0 5"
+08"
+b0 9"
+b0 ;"
+0["
+b0 \"
+b0 ^"
+b1111 ~"
+0$#
+b0 %#
+0'#
+b0 (#
+0+#
+0,#
+0-#
+b0 .#
+00#
+01#
+b0 2#
+04#
+05#
+06#
+b0 7#
+0:#
+0;#
+b0 <#
+b0 \#
+b1100 ^#
+b0 b#
+b0 i#
+0q#
+b0 r#
+b0 u#
+b0 y#
+b0 |#
+b0 >$
+b1100 @$
+b0 D$
+b0 K$
+0S$
+b0 T$
+b0 W$
+b0 [$
+b0 ^$
+b0 e$
+b0 g$
+b0 )%
+b0 0%
+b0 2%
+b1111 R%
+b10 V%
+0X%
+1Y%
+b10 Z%
+0]%
+1^%
+0_%
+0`%
+b10 a%
+1c%
+0d%
+b10 e%
+1g%
+b10 h%
+0k%
+1l%
+0m%
+b11 n%
+b11 q%
+b0 t%
+b0 w%
+b0 z%
+b100 }%
+b100 "&
+b0 %&
+b0 (&
+b0 +&
+b0 .&
+b0 1&
+b0 4&
+b0 7&
+b11 :&
+b11 =&
+b0 @&
+b0 C&
+b0 F&
+b100 I&
+b100 L&
+b0 O&
+b0 R&
+b0 U&
+b11 X&
+b11 [&
+b0 ^&
+b0 a&
+b0 d&
+0g&
+1h&
+0i&
+$end
+#128
+1g&

@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jun 23 16:07:25 2017
+# Process ID: 36244
+# Current directory: /home/wesleyguo/github/vivado/vivado
+# Command line: vivado
+# Log file: /home/wesleyguo/github/vivado/vivado/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.xpr
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/chip2chip_jtagaxi_ok/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+startgroup
+set_property -dict [list CONFIG.C_AXI_ID_WIDTH.VALUE_SRC PROPAGATED CONFIG.C_AXI_WUSER_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells axi_chip2chip_1]
+endgroup
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+disconnect_hw_server 192.168.0.44:3121
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd]
+catch { config_ip_cache -export [get_ips -all jtag_axi_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd]
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd] -directory /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+file mkdir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk
+file copy -force /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.sysdef /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7v2000t_0] 0]
+disconnect_hw_server 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes jtag_axi_i/vio_0/probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {jtag_axi_i/vio_0/probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes jtag_axi_i/vio_0/probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {jtag_axi_i/vio_0/probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/vio_0"}]]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+disconnect_hw_server 192.168.0.44:3121
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property offset 0x76020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property range 8K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property range 8K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76020000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property range 8K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+save_bd_design
+set_property range 8K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+file copy -force /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.sysdef /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+
+launch_sdk -workspace /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk -hwspec /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper.hdf
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property range 128K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property range 128K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+undo
+undo
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M02_AXI }]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_mem_intercon_M02_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+set_property location {6.5 1798 667} [get_bd_cells axi_chip2chip_1]
+undo
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_araddr} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arburst} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arcache} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arlen} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arlock} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arprot} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arqos} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arsize} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awaddr} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awburst} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awcache} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awlen} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awlock} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awprot} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awqos} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awsize} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_b_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bresp} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_r_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rdata} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rresp} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_w_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wdata} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wstrb} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_ar_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_araddr} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arburst} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arcache} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arlen} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arlock} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arprot} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arqos} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arsize} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_aw_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awaddr} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awburst} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awcache} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awlen} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awlock} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awprot} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awqos} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awsize} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_b_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_bid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_bresp} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_r_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rdata} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rresp} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_w_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_wdata} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_wstrb} {Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Read_Data_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Data_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Response_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arready} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_arvalid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awready} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_awvalid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bready} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_bvalid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rlast} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rready} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_rvalid} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wlast} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wready} {jtag_axi_i/system_ila_0/inst/net_slot_0_axi_wvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_bready} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_bvalid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rlast} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rready} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_rvalid} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_wlast} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_wready} {jtag_axi_i/system_ila_0/inst/net_slot_2_axi_wvalid} {Read_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)} {Read_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)} {Write_Address_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)} {Write_Data_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)} {Write_Response_Channel_(i2:s2)_(axi_mem_intercon_M02_AXI)} }
+set_property NAME.CUSTOM { :  : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
+set_property NAME.CUSTOM { :  : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
+set_property NAME.CUSTOM { :  : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
+set_property NAME.CUSTOM { :  : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
+set_property NAME.CUSTOM { :  : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_mem_intercon_M02_AXI } ]
+disconnect_bd_intf_net [get_bd_intf_net axi_mem_intercon_M02_AXI] [get_bd_intf_pins system_ila_0/SLOT_2_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { aurora_64b66b_0_USER_DATA_M_AXIS_RX } ]
+disconnect_bd_intf_net [get_bd_intf_net aurora_64b66b_0_USER_DATA_M_AXIS_RX] [get_bd_intf_pins system_ila/SLOT_0_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_chip2chip_0_AXIS_TX } ]
+disconnect_bd_intf_net [get_bd_intf_net axi_chip2chip_0_AXIS_TX] [get_bd_intf_pins system_ila/SLOT_0_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila]
+endgroup
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_2_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid} }
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+save_bd_design
+reset_run jtag_axi_system_ila_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M01_AXI }]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]

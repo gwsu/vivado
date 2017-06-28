@@ -472,3 +472,85 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sourc
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, jack_120 (jack_120.v)]", 1, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
 // HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 8:12:16 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 8:42:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 9:12:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 9:42:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 10:12:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 10:42:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 11:12:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/27/17 11:42:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 12:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 12:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 1:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 1:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 2:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 2:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 3:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 3:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 4:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 4:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 5:12:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 5:42:16 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 6:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 6:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 51 MB. Current time: 6/28/17 7:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 7:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 8:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 8:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 9:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 9:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 10:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 10:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 11:12:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 50 MB. Current time: 6/28/17 11:42:17 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,165 MB. GUI used memory: 50 MB. Current time: 6/28/17 12:12:17 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,166 MB. GUI used memory: 50 MB. Current time: 6/28/17 12:42:17 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,167 MB. GUI used memory: 50 MB. Current time: 6/28/17 1:12:17 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,168 MB. GUI used memory: 50 MB. Current time: 6/28/17 1:42:17 PM EDT
+// Elapsed time: 65178 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u:K (t:D, cd:JFrame)
+// bt:g (cd:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bt:g (cd:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1' 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,177 MB. GUI used memory: 51 MB. Current time: 6/28/17 1:50:57 PM EDT
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 4 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 53 MB. Current time: 6/28/17 2:20:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 51 MB. Current time: 6/28/17 2:50:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 51 MB. Current time: 6/28/17 3:20:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 52 MB. Current time: 6/28/17 3:50:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 51 MB. Current time: 6/28/17 4:20:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 50 MB. Current time: 6/28/17 4:50:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 51 MB. Current time: 6/28/17 5:20:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,179 MB. GUI used memory: 51 MB. Current time: 6/28/17 5:50:57 PM EDT

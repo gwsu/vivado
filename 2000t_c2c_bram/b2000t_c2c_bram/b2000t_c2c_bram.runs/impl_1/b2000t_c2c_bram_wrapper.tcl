@@ -51,6 +51,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
+  set_param tcl.collectionResultDisplayLimit 0
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/wt [current_project]
@@ -227,6 +228,25 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  catch { write_mem_info -force b2000t_c2c_bram_wrapper.mmi }
+  write_bitstream -force -no_partial_bitfile b2000t_c2c_bram_wrapper.bit 
+  catch { write_sysdef -hwdef b2000t_c2c_bram_wrapper.hwdef -bitfile b2000t_c2c_bram_wrapper.bit -meminfo b2000t_c2c_bram_wrapper.mmi -file b2000t_c2c_bram_wrapper.sysdef }
+  catch {write_debug_probes -quiet -force debug_nets}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

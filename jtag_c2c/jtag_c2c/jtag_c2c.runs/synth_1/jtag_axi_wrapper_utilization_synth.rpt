@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jun 23 19:20:30 2017
+| Date         : Wed Jun 28 17:17:19 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file jtag_axi_wrapper_utilization_synth.rpt -pb jtag_axi_wrapper_utilization_synth.pb
 | Design       : jtag_axi_wrapper
@@ -187,7 +187,6 @@ Table of Contents
 | jtag_axi_xbar_0                 |    1 |
 | jtag_axi_vio_0_0                |    1 |
 | jtag_axi_system_ila_0_0         |    1 |
-| jtag_axi_system_ila_0           |    1 |
 | jtag_axi_processing_system7_0_0 |    1 |
 | jtag_axi_proc_sys_reset_0_0     |    1 |
 | jtag_axi_jtag_axi_0_0           |    1 |

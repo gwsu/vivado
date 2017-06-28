@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Tue Jun 27 10:03:49 2017
+| Date         : Wed Jun 28 15:34:40 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file dut_120_timing_summary_routed.rpt -rpx dut_120_timing_summary_routed.rpx
 | Design       : dut_120
@@ -52,73 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[0] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[10] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[11] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[12] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[13] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[14] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[15] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[16] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[17] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[18] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[19] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[1] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[20] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[21] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[22] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[23] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[24] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[25] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[26] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[27] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[28] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[29] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[2] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[30] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[31] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[3] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[4] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[5] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[6] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[7] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[8] (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: b_in[9] (HIGH)
-
- There are 558 register/latch pins with no clock driven by root clock pin: clk (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: rst (HIGH)
+ There are 742 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
 
 2. checking constant_clock
@@ -133,21 +67,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 1644 pins that are not constrained for maximum delay. (HIGH)
+ There are 2152 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 134 input ports with no input delay specified. (HIGH)
+ There are 190 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 274 ports with no output delay specified. (HIGH)
+ There are 154 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
