@@ -49,8 +49,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
-  set_param tcl.collectionResultDisplayLimit 0
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.cache/wt [current_project]
@@ -81,14 +79,12 @@ set rc [catch {
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_xlconstant_0_0/jtag_axi_xlconstant_0_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.dcp]
+  add_files -quiet /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_s00_mmu_0/jtag_axi_s00_mmu_0.dcp
+  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_s00_mmu_0/jtag_axi_s00_mmu_0.dcp]
   add_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bmm
   set_property SCOPED_TO_REF jtag_axi [get_files -all /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bmm]
   read_xdc -ref jtag_axi_jtag_axi_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_jtag_axi_0_0/constraints/jtag_axi.xdc
@@ -109,10 +105,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0_board.xdc]
   read_xdc -ref jtag_axi_proc_sys_reset_0_0 -cells U0 /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xdc
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xdc]
-  read_xdc -ref jtag_axi_axi_chip2chip_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xdc]
-  read_xdc -ref jtag_axi_aurora_64b66b_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xdc]
   read_xdc -ref jtag_axi_processing_system7_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xdc
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xdc]
   read_xdc /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc
@@ -120,10 +112,6 @@ set rc [catch {
   set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_clocks.xdc]
   read_xdc -ref jtag_axi_aurora_64b66b_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_clocks.xdc
   set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_clocks.xdc]
-  read_xdc -ref jtag_axi_axi_chip2chip_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1_clocks.xdc
-  set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1_clocks.xdc]
-  read_xdc -ref jtag_axi_aurora_64b66b_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_clocks.xdc
-  set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_clocks.xdc]
   link_design -top jtag_axi_wrapper -part xc7z045ffv900-2
   write_hwdef -file jtag_axi_wrapper.hwdef
   close_msg_db -file init_design.pb

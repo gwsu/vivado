@@ -2,21 +2,29 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Wed Jun 28 16:34:50 2017
-# Process ID: 54555
+# Start of session at: Fri Jun 30 10:33:31 2017
+# Process ID: 124479
 # Current directory: /home/wesleyguo/github/vivado/vivado
 # Command line: vivado
 # Log file: /home/wesleyguo/github/vivado/vivado/vivado.log
 # Journal file: /home/wesleyguo/github/vivado/vivado/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.xpr
+open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 6219.129 ; gain = 261.973 ; free physical = 73704 ; free virtual = 182117
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'b2000t_c2c_bram.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+b2000t_c2c_bram_dut_120_1_0
+b2000t_c2c_bram_dut_120_0_0
+
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 6243.121 ; gain = 293.145 ; free physical = 81003 ; free virtual = 191124
 open_hw
 connect_hw_server -url 192.168.0.44:3121
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
@@ -26,430 +34,647 @@ Resolution: If needed connect the desired target to a server and use command ref
 ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
 open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
 INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
-set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
-set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
-current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
-refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
-refresh_hw_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6366.500 ; gain = 73.691 ; free physical = 73589 ; free virtual = 182002
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-Processing Interface jtag_axi_0_M_AXI_ila1_slot0
-Processing Interface axi_mem_intercon_M01_AXI_ila1_slot1
-ERROR: [Labtoolstcl 44-526] The custom probe name 'slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)'.
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-28 16:38:07
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Labtools 27-2269] No devices detected on target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501.
-Check cable connectivity and that the target board is powered up then
-use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
-set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
-program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-1435] Device xc7v2000t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 6606.590 ; gain = 0.000 ; free physical = 73559 ; free virtual = 181973
-refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
-refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6606.590 ; gain = 0.000 ; free physical = 73555 ; free virtual = 181968
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
-Processed interface jtag_axi_0_M_AXI_ila1_slot0
-Processed interface axi_mem_intercon_M01_AXI_ila1_slot1
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.SELECT short [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-28 16:40:03
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Jun-28 16:40:27
-Processed interface jtag_axi_0_M_AXI_ila1_slot0
-Processed interface axi_mem_intercon_M01_AXI_ila1_slot1
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_araddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awaddr} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awburst} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awcache} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlen} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awlock} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awprot} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awqos} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awsize} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_b_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_r_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rresp} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_w_ctrl} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wdata} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wstrb} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready} }
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_bvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_rvalid} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wlast} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wready} {jtag_axi_i/system_ila_0/inst/net_slot_1_axi_wvalid} }
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_awready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes jtag_axi_i/system_ila_0/inst/net_slot_1_axi_arready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-28 16:49:09
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Jun-28 16:49:25
-Processing Interface jtag_axi_0_M_AXI_ila1_slot0
-Processing Interface axi_mem_intercon_M01_AXI_ila1_slot1
-ERROR: [Labtoolstcl 44-526] The custom probe name 'slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)'.
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
-Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
-Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
-Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
-Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
-Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
-Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila_0
+program_hw_devices: Time (s): cpu = 00:02:50 ; elapsed = 00:02:45 . Memory (MB): peak = 6319.742 ; gain = 14.867 ; free physical = 80950 ; free virtual = 191071
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 6359.211 ; gain = 39.469 ; free physical = 80904 ; free virtual = 191024
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_3.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2017-Jun-30 10:44:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2017-Jun-30 10:44:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe9_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
 Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0
 Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_100M
+Adding cell -- xilinx.com:ip:vio:3.0 - vio_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila
+Adding cell -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
-Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
-Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_1
-Adding cell -- xilinx.com:ip:aurora_64b66b:11.1 - aurora_64b66b_1
-Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_1_bram
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_2
+Adding cell -- user.org:user:jack:1.2 - jack_0
+Adding cell -- user.org:user:dut:1.0 - dut_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_3
+Adding cell -- user.org:user:dut:1.0 - dut_1
+Adding cell -- user.org:user:jack:1.2 - jack_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_4
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_5
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila1
+Adding cell -- user.org:user:jack_120:1.0 - jack_120_0
+Adding cell -- user.org:user:jack_120:1.0 - jack_120_1
+Adding cell -- user.org:user:dut_120:1.0 - dut_120_0
+Adding cell -- user.org:user:dut_120:1.0 - dut_120_1
 WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_0/aurora_mmcm_not_locked(rst)
-WARNING: [BD 41-1731] Type mismatch between connected pins: /aurora_64b66b_0/mmcm_not_locked_out(undef) and /axi_chip2chip_1/aurora_mmcm_not_locked(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /axi_chip2chip_0/aurora_pma_init_in(rst)
 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Successfully read diagram <jtag_axi> from BD file </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd>
-open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+Successfully read diagram <b2000t_c2c_bram> from BD file </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 6606.582 ; gain = 0.000 ; free physical = 80667 ; free virtual = 190772
+set_property location {-442 -562} [get_bd_intf_ports INIT_DIFF_CLK]
+set_property location {-454 -319} [get_bd_ports ext_reset_in]
+set_property location {-459 -349} [get_bd_intf_ports GT_SERIAL_RX]
+set_property location {3550 -322} [get_bd_ports ext_reset_out]
 startgroup
-set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_mem_intercon_M01_AXI } ]
-disconnect_bd_intf_net [get_bd_intf_net axi_mem_intercon_M01_AXI] [get_bd_intf_pins system_ila_0/SLOT_1_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axi_chip2chip_0_m_axi } ]
+disconnect_bd_intf_net [get_bd_intf_net axi_chip2chip_0_m_axi] [get_bd_intf_pins system_ila/SLOT_0_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila]
 endgroup
-INFO: [Device 21-403] Loading part xc7z045ffv900-2
-startgroup
-set_property -dict [list CONFIG.C_DATA_DEPTH {2048} CONFIG.C_NUM_MONITOR_SLOTS {2} CONFIG.C_BRAM_CNT {23}] [get_bd_cells system_ila_0]
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '11.5' to '23' has been ignored for IP 'system_ila_0'
-endgroup
-connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_1_AXI] [get_bd_intf_pins axi_chip2chip_0/s_axi]
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -log ip_upgrade.log
+Upgrading '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd'
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_dut_120_0_0 from dut_120_v1_0 1.0 to dut_120_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_dut_120_1_0 from dut_120_v1_0 1.0 to dut_120_v1_0 1.0
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_4: PORT /axi_bram_ctrl_4/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_5: PORT /axi_bram_ctrl_5/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_3: PORT /axi_bram_ctrl_3/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_2: PORT /axi_bram_ctrl_2/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's00_couplers_to_xbar_AWID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's00_couplers_to_xbar_ARID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(7) to net 'axi_chip2chip_0_m_axi_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(7) to net 'axi_chip2chip_0_m_axi_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_0/addr'(32) to net 'axi_bram_ctrl_2_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_1/addr'(32) to net 'axi_bram_ctrl_3_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_0/addr'(32) to net 'axi_bram_ctrl_5_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_1/addr'(32) to net 'axi_bram_ctrl_4_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_1/hw_handoff/b2000t_c2c_bram_system_ila_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_1/hw_handoff/b2000t_c2c_bram_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_1/hdl/b2000t_c2c_bram_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+generate_target: Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 7255.945 ; gain = 649.363 ; free physical = 77423 ; free virtual = 187494
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_system_ila_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_1_0] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_system_ila_0_synth_1 b2000t_c2c_bram_dut_120_0_0_synth_1 b2000t_c2c_bram_dut_120_1_0_synth_1}
+[Fri Jun 30 10:53:49 2017] Launched b2000t_c2c_bram_system_ila_0_synth_1, b2000t_c2c_bram_dut_120_0_0_synth_1, b2000t_c2c_bram_dut_120_1_0_synth_1...
+Run output will be captured here:
+b2000t_c2c_bram_system_ila_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_system_ila_0_synth_1/runme.log
+b2000t_c2c_bram_dut_120_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_0_0_synth_1/runme.log
+b2000t_c2c_bram_dut_120_1_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_1_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_cells system_ila]
 save_bd_design
-Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { Net } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_bram_ctrl_2_bram_we_a } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_bram_ctrl_2_bram_wrdata_a } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_bram_ctrl_2_bram_en_a } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_bram_ctrl_2_bram_addr_a } ]
+endgroup
+set_property location {2 602 -195} [get_bd_cells blk_mem_gen_0]
+save_bd_design
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
 reset_run synth_1
-reset_run jtag_axi_system_ila_0_0_synth_1
+launch_runs impl_1 -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_4: PORT /axi_bram_ctrl_4/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_5: PORT /axi_bram_ctrl_5/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_3: PORT /axi_bram_ctrl_3/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_2: PORT /axi_bram_ctrl_2/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's00_couplers_to_xbar_AWID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's00_couplers_to_xbar_ARID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(7) to net 'axi_chip2chip_0_m_axi_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(7) to net 'axi_chip2chip_0_m_axi_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_0/addr'(32) to net 'axi_bram_ctrl_2_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_1/addr'(32) to net 'axi_bram_ctrl_3_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_0/addr'(32) to net 'axi_bram_ctrl_5_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_1/addr'(32) to net 'axi_bram_ctrl_4_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+[Fri Jun 30 11:00:09 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 30 11:00:09 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 7360.445 ; gain = 0.000 ; free physical = 75903 ; free virtual = 185865
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+Upgrading '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd'
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_jack_120_0_0 from jack_120_v1_0 1.0 to jack_120_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_jack_120_0_1 from jack_120_v1_0 1.0 to jack_120_v1_0 1.0
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ui/bd_e415f932.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 24
 WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
 Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
 For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_4: PORT /axi_bram_ctrl_4/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_5: PORT /axi_bram_ctrl_5/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_3: PORT /axi_bram_ctrl_3/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_2: PORT /axi_bram_ctrl_2/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_bid'(6) to net 'auto_pc_to_s01_couplers_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_rid'(6) to net 'auto_pc_to_s01_couplers_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's01_couplers_to_xbar_AWID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's01_couplers_to_xbar_ARID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's00_couplers_to_xbar_AWID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's00_couplers_to_xbar_ARID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(7) to net 'axi_chip2chip_0_m_axi_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(7) to net 'axi_chip2chip_0_m_axi_BID'(8) - Only lower order bits will be connected.
 WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
-Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v
-Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v
-Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
-Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh
-Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl
-Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_0/addr'(32) to net 'axi_bram_ctrl_2_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_1/addr'(32) to net 'axi_bram_ctrl_3_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_0/addr'(32) to net 'axi_bram_ctrl_5_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_1/addr'(32) to net 'axi_bram_ctrl_4_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
 INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_pc .
-Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
 INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
 INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
-Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl
-Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 146.561 MB.
-[Wed Jun 28 17:01:50 2017] Launched jtag_axi_system_ila_0_0_synth_1, synth_1...
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+[Fri Jun 30 11:12:07 2017] Launched b2000t_c2c_bram_jack_120_0_0_synth_1, b2000t_c2c_bram_jack_120_0_1_synth_1, synth_1...
 Run output will be captured here:
-jtag_axi_system_ila_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_system_ila_0_0_synth_1/runme.log
-synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log
-[Wed Jun 28 17:01:50 2017] Launched impl_1...
-Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 6944.488 ; gain = 108.668 ; free physical = 73007 ; free virtual = 181346
-startgroup
-set_property -dict [list CONFIG.C_NUM_PROBE_IN {9}] [get_bd_cells vio_0]
-endgroup
-connect_bd_net [get_bd_pins vio_0/probe_in5] [get_bd_pins axi_chip2chip_1/axi_c2c_config_error_out]
-connect_bd_net [get_bd_pins vio_0/probe_in6] [get_bd_pins axi_chip2chip_1/axi_c2c_link_status_out]
-connect_bd_net [get_bd_pins vio_0/probe_in7] [get_bd_pins axi_chip2chip_1/axi_c2c_multi_bit_error_out]
-connect_bd_net [get_bd_pins vio_0/probe_in8] [get_bd_pins axi_chip2chip_1/axi_c2c_link_error_out]
-save_bd_design
-Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
-Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ui/bd_4ae2cc3.ui> 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 24
+b2000t_c2c_bram_jack_120_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/runme.log
+b2000t_c2c_bram_jack_120_0_1_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_1_synth_1/runme.log
+synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 30 11:12:07 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 7402.867 ; gain = 42.422 ; free physical = 76231 ; free virtual = 186361
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -log ip_upgrade.log
+Upgrading '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd'
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_dut_120_0_0 from dut_120_v1_0 1.0 to dut_120_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded b2000t_c2c_bram_dut_120_1_0 from dut_120_v1_0 1.0 to dut_120_v1_0 1.0
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
 WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
 Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
 For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_4: PORT /axi_bram_ctrl_4/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_5: PORT /axi_bram_ctrl_5/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_3: PORT /axi_bram_ctrl_3/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_2: PORT /axi_bram_ctrl_2/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
 INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : refclk1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : INIT CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 100000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : USER CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 97656250 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : SYNC CLK of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 195312500 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 0 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : gt_qpllrefclk_quad1_in of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 125000000 Hz.
-INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_1 NOTE : drp_clk of /aurora_64b66b_1 (Aurora IP) has input port frequency configured as 150000000 Hz.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_bid'(6) to net 'auto_pc_to_s01_couplers_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_pc/m_axi_rid'(6) to net 'auto_pc_to_s01_couplers_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(7) to net 's01_couplers_to_xbar_AWID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(7) to net 's01_couplers_to_xbar_ARID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXI_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(7) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's00_couplers_to_xbar_AWID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's00_couplers_to_xbar_ARID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(7) to net 'axi_chip2chip_0_m_axi_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(7) to net 'axi_chip2chip_0_m_axi_BID'(8) - Only lower order bits will be connected.
 WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
-Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.v
-Verilog Output written to : /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi_wrapper.v
-Wrote  : </home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd> 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
-Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0.hwh
-Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hw_handoff/jtag_axi_system_ila_0_0_bd.tcl
-Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/hdl/jtag_axi_system_ila_0_0.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_0/addr'(32) to net 'axi_bram_ctrl_2_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_1/addr'(32) to net 'axi_bram_ctrl_3_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_0/addr'(32) to net 'axi_bram_ctrl_5_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_1/addr'(32) to net 'axi_bram_ctrl_4_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
 INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_pc .
-Exporting to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi.hwh
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
 INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
 INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
-Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hw_handoff/jtag_axi_bd.tcl
-Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/hdl/jtag_axi.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP jtag_axi_auto_pc_0, cache-ID = 1a6f2c1c86ff3f79; cache size = 161.528 MB.
-[Wed Jun 28 17:15:44 2017] Launched jtag_axi_vio_0_0_synth_1, synth_1...
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 7457.348 ; gain = 54.480 ; free physical = 74032 ; free virtual = 184279
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_1_0] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_dut_120_0_0_synth_1 b2000t_c2c_bram_dut_120_1_0_synth_1}
+[Fri Jun 30 11:29:19 2017] Launched b2000t_c2c_bram_dut_120_0_0_synth_1, b2000t_c2c_bram_dut_120_1_0_synth_1...
 Run output will be captured here:
-jtag_axi_vio_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_vio_0_0_synth_1/runme.log
-synth_1: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1/runme.log
-[Wed Jun 28 17:15:44 2017] Launched impl_1...
-Run output will be captured here: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 6999.035 ; gain = 32.211 ; free physical = 72882 ; free virtual = 181251
-save_wave_config {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
-set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
-program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+b2000t_c2c_bram_dut_120_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_0_0_synth_1/runme.log
+b2000t_c2c_bram_dut_120_1_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_1_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+Upgrading '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd'
+INFO: [IP_Flow 19-3422] Upgraded b2000t_c2c_bram_jack_120_0_0 (jack_120_v1_0 1.0) from revision 2 to revision 3
+INFO: [IP_Flow 19-3422] Upgraded b2000t_c2c_bram_jack_120_0_1 (jack_120_v1_0 1.0) from revision 2 to revision 3
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_4: PORT /axi_bram_ctrl_4/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_5: PORT /axi_bram_ctrl_5/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_3: PORT /axi_bram_ctrl_3/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_2: PORT /axi_bram_ctrl_2/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_diff_refclk1 of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : INIT CLK of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 100000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : USER CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 97656250 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : SYNC CLK OUT of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 195312500 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : gt_refclk1_out of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 125000000 Hz.
+INFO: [xilinx.com:ip:aurora_64b66b:11.1-5910] /aurora_64b66b_0 NOTE : drp_clk of /aurora_64b66b_0 (Aurora IP) has input port frequency configured as 150000000 Hz.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's00_couplers_to_xbar_AWID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's00_couplers_to_xbar_ARID'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(8) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(8) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_rid'(1) to net 'jtag_axi_0_M_AXI_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/jtag_axi_0/m_axi_bid'(1) to net 'jtag_axi_0_M_AXI_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_rid'(7) to net 'axi_chip2chip_0_m_axi_RID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_chip2chip_0/m_axi_bid'(7) to net 'axi_chip2chip_0_m_axi_BID'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addra'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_1_bram/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTB_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_0/addr'(32) to net 'axi_bram_ctrl_2_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_1/addr'(32) to net 'axi_bram_ctrl_3_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_0/addr'(32) to net 'axi_bram_ctrl_5_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dut_120_1/addr'(32) to net 'axi_bram_ctrl_4_bram_addr_a'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.v
+Verilog Output written to : /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+Wrote  : </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_chip2chip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aurora_64b66b_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dut_120_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jack_120_1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0.hwh
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hw_handoff/b2000t_c2c_bram_system_ila1_0_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/hdl/b2000t_c2c_bram_system_ila1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 .
+Exporting to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hw_handoff/b2000t_c2c_bram_bd.tcl
+Generated Hardware Definition File /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram.hwdef
+generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 7512.270 ; gain = 52.922 ; free physical = 74040 ; free virtual = 184291
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_1] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_jack_120_0_0_synth_1 b2000t_c2c_bram_jack_120_0_1_synth_1}
+[Fri Jun 30 11:30:58 2017] Launched b2000t_c2c_bram_jack_120_0_0_synth_1, b2000t_c2c_bram_jack_120_0_1_synth_1...
+Run output will be captured here:
+b2000t_c2c_bram_jack_120_0_0_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/runme.log
+b2000t_c2c_bram_jack_120_0_1_synth_1: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Fri Jun 30 11:39:03 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 30 11:39:03 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-514] HW Server shutdown. Disconnecting from server: 192.168.0.44:3121
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Fri Jun 30 11:55:56 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+connect_hw_server -url 192.168.0.44:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7v2000t_0 and the probes file(s) /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx.
+The device design has 3 ILA core(s) and 1 VIO core(s). The probes file(s) have 1 ILA core(s) and 1 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 7015.098 ; gain = 0.000 ; free physical = 72785 ; free virtual = 181217
-refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
-INFO: [Labtools 27-2302] Device xc7z045 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
-refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7015.098 ; gain = 0.000 ; free physical = 72783 ; free virtual = 181215
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
-Processed interface jtag_axi_0_M_AXI_ila1_slot0
-Processed interface axi_mem_intercon_M01_AXI_ila1_slot1
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] -trigger_now
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-28 17:27:34
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Jun-28 17:27:35
-Processing Interface jtag_axi_0_M_AXI_ila1_slot0
-Processing Interface axi_mem_intercon_M01_AXI_ila1_slot1
-ERROR: [Labtoolstcl 44-526] The custom probe name 'slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)'.
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Read_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Read_Data_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Write_Address_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Data_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)} {Write_Response_Channel_(i2:s0)_(jtag_axi_0_M_AXI)} {Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M03_AXI)} {Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)} {Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Read_Data_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Write_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Write_Response_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Write_Data_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} }
-set_property NAME.CUSTOM { :  : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Read_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM { :  : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Read_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM { :  : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Address_Channel_(i1:s0)_(jtag_axi_0_M_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Address Channel  Events} [get_hw_probes Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM { :  : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Data_Channel_(i1:s0)_(jtag_axi_0_M_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Data Channel  Events} [get_hw_probes Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM { :  : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Response_Channel_(i1:s0)_(jtag_axi_0_M_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Write Response Channel  Events} [get_hw_probes Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Write_Response_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Data Channel  Events} [get_hw_probes Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Read_Data_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events} [get_hw_probes Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)] 
-set_property NAME.SELECT short [get_hw_probes Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI) -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]] 
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}] -trigger_now
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-28 17:30:30
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Jun-28 17:30:30
-Processing Interface jtag_axi_0_M_AXI_ila1_slot0
-Processing Interface axi_mem_intercon_M01_AXI_ila1_slot1
-ERROR: [Labtoolstcl 44-526] The custom probe name 'slot_1 : axi_mem_intercon_M01_AXI : Read Address Channel  Events' is already in use as a custom name for probe 'Read_Address_Channel_(i2:s1)_(axi_mem_intercon_M01_AXI)[2:0]'.  Please select a different custom name for probe 'Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)'.
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Write_Data_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Read_Data_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Write_Response_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Write_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} {Read_Address_Channel_(i1:s1)_(axi_mem_intercon_M01_AXI)} }
-open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z045ffv900-2
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.dcp' for cell 'jtag_axi_i/aurora_64b66b_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.dcp' for cell 'jtag_axi_i/aurora_64b66b_1'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_bram_ctrl_0_0/jtag_axi_axi_bram_ctrl_0_0.dcp' for cell 'jtag_axi_i/axi_bram_ctrl_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.dcp' for cell 'jtag_axi_i/axi_chip2chip_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.dcp' for cell 'jtag_axi_i/axi_chip2chip_1'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_blk_mem_gen_0_0/jtag_axi_blk_mem_gen_0_0.dcp' for cell 'jtag_axi_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.dcp' for cell 'jtag_axi_i/clk_wiz'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.dcp' for cell 'jtag_axi_i/jtag_axi_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.dcp' for cell 'jtag_axi_i/proc_sys_reset_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.dcp' for cell 'jtag_axi_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/jtag_axi_system_ila_0_0.dcp' for cell 'jtag_axi_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_vio_0_0/jtag_axi_vio_0_0.dcp' for cell 'jtag_axi_i/vio_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_xlconstant_0_0/jtag_axi_xlconstant_0_0.dcp' for cell 'jtag_axi_i/xlconstant_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_xbar_0/jtag_axi_xbar_0.dcp' for cell 'jtag_axi_i/axi_mem_intercon/xbar'
-INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.dcp' for cell 'jtag_axi_i/axi_mem_intercon/s01_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 807 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'jtag_axi_i/jtag_axi_0/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'jtag_axi_i/jtag_axi_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0_board.xdc] for cell 'jtag_axi_i/clk_wiz/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0_board.xdc] for cell 'jtag_axi_i/clk_wiz/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.xdc] for cell 'jtag_axi_i/clk_wiz/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 7774.035 ; gain = 523.852 ; free physical = 72129 ; free virtual = 180614
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.xdc] for cell 'jtag_axi_i/clk_wiz/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_vio_0_0/jtag_axi_vio_0_0.xdc] for cell 'jtag_axi_i/vio_0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_vio_0_0/jtag_axi_vio_0_0.xdc] for cell 'jtag_axi_i/vio_0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'jtag_axi_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'jtag_axi_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.xdc] for cell 'jtag_axi_i/axi_chip2chip_0/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.xdc] for cell 'jtag_axi_i/axi_chip2chip_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.xdc] for cell 'jtag_axi_i/aurora_64b66b_0/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.xdc] for cell 'jtag_axi_i/aurora_64b66b_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0_board.xdc] for cell 'jtag_axi_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0_board.xdc] for cell 'jtag_axi_i/proc_sys_reset_0/U0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xdc] for cell 'jtag_axi_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xdc] for cell 'jtag_axi_i/proc_sys_reset_0/U0'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xdc] for cell 'jtag_axi_i/axi_chip2chip_1/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xdc] for cell 'jtag_axi_i/axi_chip2chip_1/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xdc] for cell 'jtag_axi_i/aurora_64b66b_1/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xdc] for cell 'jtag_axi_i/aurora_64b66b_1/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xdc] for cell 'jtag_axi_i/processing_system7_0/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xdc] for cell 'jtag_axi_i/processing_system7_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc]
-WARNING: [Constraints 18-619] A clock with name 'diff_clock_rtl_clk_p' already exists, overwriting the previous clock with the same name. [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc:19]
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/constrs_1/new/jtag_axi.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_jtag_axi_0_0/jtag_axi_jtag_axi_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_bram_ctrl_0_0/jtag_axi_axi_bram_ctrl_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_blk_mem_gen_0_0/jtag_axi_blk_mem_gen_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_clk_wiz_0/jtag_axi_clk_wiz_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_vio_0_0/jtag_axi_vio_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_xbar_0/jtag_axi_xbar_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_system_ila_0_0/jtag_axi_system_ila_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.dcp'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_clocks.xdc] for cell 'jtag_axi_i/axi_chip2chip_0/inst'
-INFO: [Timing 38-2] Deriving generated clocks [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_clocks.xdc:2]
-can't read "phy_time": no such variable
-WARNING: [Vivado 12-180] No cells matched 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[1].wr_stg_inst/Q_reg_reg[*]'. [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_clocks.xdc:13]
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_0/jtag_axi_axi_chip2chip_0_0_clocks.xdc] for cell 'jtag_axi_i/axi_chip2chip_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_clocks.xdc] for cell 'jtag_axi_i/aurora_64b66b_0/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_0/jtag_axi_aurora_64b66b_0_0_clocks.xdc] for cell 'jtag_axi_i/aurora_64b66b_0/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1_clocks.xdc] for cell 'jtag_axi_i/axi_chip2chip_1/inst'
-can't read "phy_time": no such variable
-WARNING: [Vivado 12-180] No cells matched 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[1].wr_stg_inst/Q_reg_reg[*]'. [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1_clocks.xdc:13]
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1_clocks.xdc] for cell 'jtag_axi_i/axi_chip2chip_1/inst'
-Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_clocks.xdc] for cell 'jtag_axi_i/aurora_64b66b_1/inst'
-Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1_clocks.xdc] for cell 'jtag_axi_i/aurora_64b66b_1/inst'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Generating merged BMM file for the design top 'jtag_axi_wrapper'...
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 468 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 392 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
-  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 64 instances
-  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
-
-open_run: Time (s): cpu = 00:01:03 ; elapsed = 00:00:35 . Memory (MB): peak = 8206.145 ; gain = 955.961 ; free physical = 71915 ; free virtual = 180349
-open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
-ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /home/wesleyguo/github/vivado/vivado/vivado_pid54555.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /home/wesleyguo/github/vivado/vivado/vivado_pid54555.debug)
+program_hw_devices: Time (s): cpu = 00:02:44 ; elapsed = 00:02:43 . Memory (MB): peak = 7520.504 ; gain = 0.000 ; free physical = 80101 ; free virtual = 190287
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+ERROR: [Common 17-70] Application Exception: CORE_LOCATION mismatch
+probe_1=1:1-0 (b2000t_c2c_bram_i/system_ila1/inst/probe0_1)
+probe_2=1:2-0 (Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0])
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Jun-30 12:12:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Jun-30 12:12:44
+ERROR: [Common 17-70] Application Exception: CORE_LOCATION mismatch
+probe_1=1:1-0 (b2000t_c2c_bram_i/system_ila1/inst/probe0_1)
+probe_2=1:2-0 (Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0])
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+[Fri Jun 30 12:16:27 2017] Launched synth_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/runme.log
+[Fri Jun 30 12:16:27 2017] Launched impl_1...
+Run output will be captured here: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 12:47:34 2017...

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Wed Jun 28 15:34:43 2017
+| Date             : Fri Jun 30 17:05:57 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file dut_120_power_routed.rpt -pb dut_120_power_summary_routed.pb -rpx dut_120_power_routed.rpx
 | Design           : dut_120
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 8.425 |
-| Dynamic (W)              | 7.678 |
-| Device Static (W)        | 0.747 |
-| Effective TJA (C/W)      | 0.8   |
-| Max Ambient (C)          | 78.0  |
-| Junction Temperature (C) | 32.0  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 10.389 |
+| Dynamic (W)              | 9.609  |
+| Device Static (W)        | 0.780  |
+| Effective TJA (C/W)      | 0.8    |
+| Max Ambient (C)          | 76.3   |
+| Junction Temperature (C) | 33.7   |
+| Confidence Level         | Low    |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
 
 
 1.1 On-Chip Components
@@ -49,16 +49,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.796 |     1333 |       --- |             --- |
-|   LUT as Logic |     0.772 |      558 |   1221600 |            0.05 |
-|   Register     |     0.016 |      742 |   2443200 |            0.03 |
+| Slice Logic    |     0.809 |     1333 |       --- |             --- |
+|   LUT as Logic |     0.781 |      558 |   1221600 |            0.05 |
+|   Register     |     0.019 |      742 |   2443200 |            0.03 |
 |   BUFG         |     0.006 |        1 |       128 |            0.78 |
 |   CARRY4       |     0.003 |        8 |    305400 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     5.405 |     1438 |       --- |             --- |
-| I/O            |     1.477 |      345 |      1200 |           28.75 |
-| Static Power   |     0.747 |          |           |                 |
-| Total          |     8.425 |          |           |                 |
+| Signals        |     5.265 |     1436 |       --- |             --- |
+| I/O            |     3.535 |      345 |      1200 |           28.75 |
+| Static Power   |     0.780 |          |           |                 |
+| Total          |    10.389 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,11 +68,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     7.377 |       6.967 |      0.410 |
-| Vccaux    |       1.800 |     0.116 |       0.012 |      0.103 |
+| Vccint    |       1.000 |     7.280 |       6.840 |      0.440 |
+| Vccaux    |       1.800 |     0.286 |       0.181 |      0.105 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.384 |       0.383 |      0.001 |
+| Vcco18    |       1.800 |     1.359 |       1.358 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -139,7 +139,7 @@ Table of Contents
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
-| dut_120 |     7.678 |
+| dut_120 |     9.609 |
 +---------+-----------+
 
 

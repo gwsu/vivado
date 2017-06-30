@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed Jun 28 15:37:43 2017
+-- Date        : Fri Jun 30 19:16:57 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ b2000t_c2c_bram_dut_120_1_0_sim_netlist.vhdl
@@ -34,6 +34,7 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120 is
   signal \FSM_sequential_state[0]_i_10_n_0\ : STD_LOGIC;
+  signal \FSM_sequential_state[0]_i_11_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[0]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[0]_i_3_n_0\ : STD_LOGIC;
@@ -46,9 +47,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120 is
   signal \FSM_sequential_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[1]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[2]_i_1_n_0\ : STD_LOGIC;
-  signal \FSM_sequential_state[2]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[3]_i_1_n_0\ : STD_LOGIC;
-  signal \FSM_sequential_state[3]_i_2_n_0\ : STD_LOGIC;
   signal a01b_dealy : STD_LOGIC;
   signal a01b_dealy_counter : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal a01b_dealy_counter0_i_1_n_0 : STD_LOGIC;
@@ -110,7 +109,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120 is
   signal \a2b1_dealy_counter[0]_i_1_n_0\ : STD_LOGIC;
   signal \a2b1_dealy_counter__0\ : STD_LOGIC_VECTOR ( 4 downto 1 );
   signal a_oe_i_1_n_0 : STD_LOGIC;
-  signal \^a_out\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \a_out[58]_i_1_n_0\ : STD_LOGIC;
   signal \a_out[59]_i_1_n_0\ : STD_LOGIC;
   signal b01a_dealy : STD_LOGIC;
@@ -174,7 +172,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120 is
   signal \b2a1_dealy_counter[0]_i_1_n_0\ : STD_LOGIC;
   signal \b2a1_dealy_counter__0\ : STD_LOGIC_VECTOR ( 4 downto 1 );
   signal b_oe_i_1_n_0 : STD_LOGIC;
-  signal \^b_out\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \b_out[58]_i_1_n_0\ : STD_LOGIC;
   signal \b_out[59]_i_1_n_0\ : STD_LOGIC;
   signal \data_ain_0[59]_i_1_n_0\ : STD_LOGIC;
@@ -907,21 +904,29 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dut_120 is
   attribute SOFT_HLUTNM of \data_out[31]_i_21\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \reg_start[31]_i_7\ : label is "soft_lutpair1";
 begin
-  a_out(1 downto 0) <= \^a_out\(1 downto 0);
-  b_out(1 downto 0) <= \^b_out\(1 downto 0);
-\FSM_sequential_state[0]_i_1\: unisim.vcomponents.LUT5
+\FSM_sequential_state[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FCBBFC88"
+      INIT => X"0F008F8F0F008080"
     )
         port map (
-      I0 => b10a_dealy,
-      I1 => state(3),
-      I2 => \FSM_sequential_state[0]_i_2_n_0\,
-      I3 => state(0),
-      I4 => \FSM_sequential_state[0]_i_3_n_0\,
+      I0 => b01a_dealy,
+      I1 => \FSM_sequential_state[0]_i_2_n_0\,
+      I2 => state(3),
+      I3 => \FSM_sequential_state[0]_i_3_n_0\,
+      I4 => state(0),
+      I5 => \FSM_sequential_state[0]_i_4_n_0\,
       O => \FSM_sequential_state[0]_i_1_n_0\
     );
-\FSM_sequential_state[0]_i_10\: unisim.vcomponents.LUT6
+\FSM_sequential_state[0]_i_10\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => reg_start(0),
+      I1 => reg_start(1),
+      O => \FSM_sequential_state[0]_i_10_n_0\
+    );
+\FSM_sequential_state[0]_i_11\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -932,48 +937,57 @@ begin
       I3 => reg_start(5),
       I4 => reg_start(3),
       I5 => reg_start(2),
-      O => \FSM_sequential_state[0]_i_10_n_0\
+      O => \FSM_sequential_state[0]_i_11_n_0\
     );
-\FSM_sequential_state[0]_i_2\: unisim.vcomponents.LUT6
+\FSM_sequential_state[0]_i_2\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"505F3030505F3F3F"
+      INIT => X"1"
     )
         port map (
-      I0 => a10b_dealy,
-      I1 => b2a1_dealy,
-      I2 => state(1),
-      I3 => a01b_dealy,
-      I4 => state(2),
-      I5 => a2b1_dealy,
+      I0 => state(2),
+      I1 => state(1),
       O => \FSM_sequential_state[0]_i_2_n_0\
     );
 \FSM_sequential_state[0]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AFA0CFCFAFA0C0C0"
+      INIT => X"505F3030505F3F3F"
     )
         port map (
-      I0 => b01a_dealy,
-      I1 => a2b0_dealy,
+      I0 => b10a_dealy,
+      I1 => a10b_dealy,
       I2 => state(1),
-      I3 => b2a0_dealy,
+      I3 => b2a1_dealy,
       I4 => state(2),
-      I5 => \FSM_sequential_state[0]_i_4_n_0\,
+      I5 => a2b1_dealy,
       O => \FSM_sequential_state[0]_i_3_n_0\
     );
 \FSM_sequential_state[0]_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
+      INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => \FSM_sequential_state[0]_i_5_n_0\,
-      I1 => \FSM_sequential_state[0]_i_6_n_0\,
-      I2 => \FSM_sequential_state[0]_i_7_n_0\,
-      I3 => \FSM_sequential_state[0]_i_8_n_0\,
-      I4 => \FSM_sequential_state[0]_i_9_n_0\,
-      I5 => \FSM_sequential_state[0]_i_10_n_0\,
+      I0 => b2a0_dealy,
+      I1 => a2b0_dealy,
+      I2 => state(1),
+      I3 => a01b_dealy,
+      I4 => state(2),
+      I5 => \FSM_sequential_state[0]_i_5_n_0\,
       O => \FSM_sequential_state[0]_i_4_n_0\
     );
 \FSM_sequential_state[0]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => \FSM_sequential_state[0]_i_6_n_0\,
+      I1 => \FSM_sequential_state[0]_i_7_n_0\,
+      I2 => \FSM_sequential_state[0]_i_8_n_0\,
+      I3 => \FSM_sequential_state[0]_i_9_n_0\,
+      I4 => \FSM_sequential_state[0]_i_10_n_0\,
+      I5 => \FSM_sequential_state[0]_i_11_n_0\,
+      O => \FSM_sequential_state[0]_i_5_n_0\
+    );
+\FSM_sequential_state[0]_i_6\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -984,9 +998,9 @@ begin
       I3 => reg_start(11),
       I4 => reg_start(9),
       I5 => reg_start(8),
-      O => \FSM_sequential_state[0]_i_5_n_0\
+      O => \FSM_sequential_state[0]_i_6_n_0\
     );
-\FSM_sequential_state[0]_i_6\: unisim.vcomponents.LUT6
+\FSM_sequential_state[0]_i_7\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -997,9 +1011,9 @@ begin
       I3 => reg_start(17),
       I4 => reg_start(15),
       I5 => reg_start(14),
-      O => \FSM_sequential_state[0]_i_6_n_0\
+      O => \FSM_sequential_state[0]_i_7_n_0\
     );
-\FSM_sequential_state[0]_i_7\: unisim.vcomponents.LUT6
+\FSM_sequential_state[0]_i_8\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -1010,9 +1024,9 @@ begin
       I3 => reg_start(29),
       I4 => reg_start(27),
       I5 => reg_start(26),
-      O => \FSM_sequential_state[0]_i_7_n_0\
+      O => \FSM_sequential_state[0]_i_8_n_0\
     );
-\FSM_sequential_state[0]_i_8\: unisim.vcomponents.LUT6
+\FSM_sequential_state[0]_i_9\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -1023,27 +1037,19 @@ begin
       I3 => reg_start(23),
       I4 => reg_start(21),
       I5 => reg_start(20),
-      O => \FSM_sequential_state[0]_i_8_n_0\
-    );
-\FSM_sequential_state[0]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => reg_start(0),
-      I1 => reg_start(1),
       O => \FSM_sequential_state[0]_i_9_n_0\
     );
-\FSM_sequential_state[1]_i_1\: unisim.vcomponents.LUT5
+\FSM_sequential_state[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FCFFFC88"
+      INIT => X"0F000F0F0F002020"
     )
         port map (
-      I0 => b10a_dealy,
-      I1 => state(3),
-      I2 => \FSM_sequential_state[1]_i_2_n_0\,
-      I3 => state(0),
-      I4 => state(1),
+      I0 => b01a_dealy,
+      I1 => state(2),
+      I2 => state(3),
+      I3 => \FSM_sequential_state[1]_i_2_n_0\,
+      I4 => state(0),
+      I5 => state(1),
       O => \FSM_sequential_state[1]_i_1_n_0\
     );
 \FSM_sequential_state[1]_i_2\: unisim.vcomponents.LUT6
@@ -1051,64 +1057,44 @@ begin
       INIT => X"5F503F3F5F503030"
     )
         port map (
-      I0 => a10b_dealy,
-      I1 => b2a1_dealy,
+      I0 => b10a_dealy,
+      I1 => a10b_dealy,
       I2 => state(1),
-      I3 => a01b_dealy,
+      I3 => b2a1_dealy,
       I4 => state(2),
       I5 => a2b1_dealy,
       O => \FSM_sequential_state[1]_i_2_n_0\
     );
-\FSM_sequential_state[2]_i_1\: unisim.vcomponents.LUT3
+\FSM_sequential_state[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"F8"
+      INIT => X"000000006A2AEAAA"
     )
         port map (
-      I0 => b10a_dealy,
-      I1 => state(3),
-      I2 => \FSM_sequential_state[2]_i_2_n_0\,
-      O => \FSM_sequential_state[2]_i_1_n_0\
-    );
-\FSM_sequential_state[2]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"5FFFC000"
-    )
-        port map (
-      I0 => a10b_dealy,
-      I1 => b2a1_dealy,
-      I2 => state(1),
-      I3 => state(0),
-      I4 => state(2),
-      O => \FSM_sequential_state[2]_i_2_n_0\
-    );
-\FSM_sequential_state[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"01FF"
-    )
-        port map (
-      I0 => state(0),
-      I1 => state(2),
-      I2 => state(1),
-      I3 => state(3),
-      O => \FSM_sequential_state[3]_i_1_n_0\
-    );
-\FSM_sequential_state[3]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FC04CC0404040404"
-    )
-        port map (
-      I0 => b10a_dealy,
-      I1 => state(3),
+      I0 => state(2),
+      I1 => state(0),
       I2 => state(1),
       I3 => a10b_dealy,
+      I4 => b10a_dealy,
+      I5 => state(3),
+      O => \FSM_sequential_state[2]_i_1_n_0\
+    );
+\FSM_sequential_state[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"3000000000000404"
+    )
+        port map (
+      I0 => b01a_dealy,
+      I1 => state(3),
+      I2 => state(1),
+      I3 => b10a_dealy,
       I4 => state(2),
       I5 => state(0),
-      O => \FSM_sequential_state[3]_i_2_n_0\
+      O => \FSM_sequential_state[3]_i_1_n_0\
     );
 \FSM_sequential_state_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \FSM_sequential_state[3]_i_1_n_0\,
+      CE => '1',
       CLR => rst,
       D => \FSM_sequential_state[0]_i_1_n_0\,
       Q => state(0)
@@ -1116,7 +1102,7 @@ begin
 \FSM_sequential_state_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \FSM_sequential_state[3]_i_1_n_0\,
+      CE => '1',
       CLR => rst,
       D => \FSM_sequential_state[1]_i_1_n_0\,
       Q => state(1)
@@ -1124,7 +1110,7 @@ begin
 \FSM_sequential_state_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \FSM_sequential_state[3]_i_1_n_0\,
+      CE => '1',
       CLR => rst,
       D => \FSM_sequential_state[2]_i_1_n_0\,
       Q => state(2)
@@ -1132,9 +1118,9 @@ begin
 \FSM_sequential_state_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \FSM_sequential_state[3]_i_1_n_0\,
+      CE => '1',
       CLR => rst,
-      D => \FSM_sequential_state[3]_i_2_n_0\,
+      D => \FSM_sequential_state[3]_i_1_n_0\,
       Q => state(3)
     );
 a01b_dealy_counter0: unisim.vcomponents.CARRY4
@@ -1189,7 +1175,7 @@ a01b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a01b_dealy_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00001000"
+      INIT => X"00000010"
     )
         port map (
       I0 => state(3),
@@ -1201,7 +1187,7 @@ a01b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a01b_dealy_counter[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10000000"
+      INIT => X"00100000"
     )
         port map (
       I0 => state(3),
@@ -1213,7 +1199,7 @@ a01b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a01b_dealy_counter[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10000000"
+      INIT => X"00100000"
     )
         port map (
       I0 => state(3),
@@ -1225,7 +1211,7 @@ a01b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a01b_dealy_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10000000"
+      INIT => X"00100000"
     )
         port map (
       I0 => state(3),
@@ -1237,7 +1223,7 @@ a01b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a01b_dealy_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10000000"
+      INIT => X"00100000"
     )
         port map (
       I0 => state(3),
@@ -1339,60 +1325,60 @@ a10b_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \a10b_dealy_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00004000"
+      INIT => X"00001000"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(0),
       I4 => a10b_dealy_counter(0),
       O => \a10b_dealy_counter[0]_i_1_n_0\
     );
 \a10b_dealy_counter[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"40000000"
+      INIT => X"10000000"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(0),
       I4 => a10b_dealy_counter0_n_7,
       O => \a10b_dealy_counter__0\(1)
     );
 \a10b_dealy_counter[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"40000000"
+      INIT => X"10000000"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(0),
       I4 => a10b_dealy_counter0_n_6,
       O => \a10b_dealy_counter__0\(2)
     );
 \a10b_dealy_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"40000000"
+      INIT => X"10000000"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(0),
       I4 => a10b_dealy_counter0_n_5,
       O => \a10b_dealy_counter__0\(3)
     );
 \a10b_dealy_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"40000000"
+      INIT => X"10000000"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(0),
       I4 => a10b_dealy_counter0_n_4,
       O => \a10b_dealy_counter__0\(4)
@@ -1739,12 +1725,12 @@ a2b1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 a_oe_i_1: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00B4"
+      INIT => X"0036"
     )
         port map (
-      I0 => state(2),
-      I1 => state(1),
-      I2 => state(0),
+      I0 => state(0),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(3),
       O => a_oe_i_1_n_0
     );
@@ -1756,28 +1742,25 @@ a_oe_reg: unisim.vcomponents.FDCE
       D => a_oe_i_1_n_0,
       Q => a_oe
     );
-\a_out[58]_i_1\: unisim.vcomponents.LUT5
+\a_out[58]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FF7B0030"
+      INIT => X"0110"
     )
         port map (
-      I0 => state(2),
+      I0 => state(3),
       I1 => state(1),
-      I2 => state(0),
-      I3 => state(3),
-      I4 => \^a_out\(0),
+      I2 => state(2),
+      I3 => state(0),
       O => \a_out[58]_i_1_n_0\
     );
-\a_out[59]_i_1\: unisim.vcomponents.LUT5
+\a_out[59]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"FFDB0090"
+      INIT => X"04"
     )
         port map (
       I0 => state(2),
-      I1 => state(1),
-      I2 => state(0),
-      I3 => state(3),
-      I4 => \^a_out\(1),
+      I1 => state(0),
+      I2 => state(3),
       O => \a_out[59]_i_1_n_0\
     );
 \a_out_reg[58]\: unisim.vcomponents.FDCE
@@ -1786,7 +1769,7 @@ a_oe_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => rst,
       D => \a_out[58]_i_1_n_0\,
-      Q => \^a_out\(0)
+      Q => a_out(0)
     );
 \a_out_reg[59]\: unisim.vcomponents.FDCE
      port map (
@@ -1794,7 +1777,7 @@ a_oe_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => rst,
       D => \a_out[59]_i_1_n_0\,
-      Q => \^a_out\(1)
+      Q => a_out(1)
     );
 b01a_dealy_counter0: unisim.vcomponents.CARRY4
      port map (
@@ -1848,7 +1831,7 @@ b01a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b01a_dealy_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00000040"
+      INIT => X"00000002"
     )
         port map (
       I0 => state(3),
@@ -1860,7 +1843,7 @@ b01a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b01a_dealy_counter[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00400000"
+      INIT => X"00020000"
     )
         port map (
       I0 => state(3),
@@ -1872,7 +1855,7 @@ b01a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b01a_dealy_counter[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00400000"
+      INIT => X"00020000"
     )
         port map (
       I0 => state(3),
@@ -1884,7 +1867,7 @@ b01a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b01a_dealy_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00400000"
+      INIT => X"00020000"
     )
         port map (
       I0 => state(3),
@@ -1896,7 +1879,7 @@ b01a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b01a_dealy_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00400000"
+      INIT => X"00020000"
     )
         port map (
       I0 => state(3),
@@ -1998,7 +1981,7 @@ b10a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b10a_dealy_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00000002"
+      INIT => X"00004000"
     )
         port map (
       I0 => state(3),
@@ -2010,7 +1993,7 @@ b10a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b10a_dealy_counter[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00020000"
+      INIT => X"40000000"
     )
         port map (
       I0 => state(3),
@@ -2022,7 +2005,7 @@ b10a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b10a_dealy_counter[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00020000"
+      INIT => X"40000000"
     )
         port map (
       I0 => state(3),
@@ -2034,7 +2017,7 @@ b10a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b10a_dealy_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00020000"
+      INIT => X"40000000"
     )
         port map (
       I0 => state(3),
@@ -2046,7 +2029,7 @@ b10a_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b10a_dealy_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00020000"
+      INIT => X"40000000"
     )
         port map (
       I0 => state(3),
@@ -2148,7 +2131,7 @@ b2a0_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b2a0_dealy_counter[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00000010"
+      INIT => X"00000040"
     )
         port map (
       I0 => state(3),
@@ -2160,7 +2143,7 @@ b2a0_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b2a0_dealy_counter[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00100000"
+      INIT => X"00400000"
     )
         port map (
       I0 => state(3),
@@ -2172,7 +2155,7 @@ b2a0_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b2a0_dealy_counter[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00100000"
+      INIT => X"00400000"
     )
         port map (
       I0 => state(3),
@@ -2184,7 +2167,7 @@ b2a0_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b2a0_dealy_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00100000"
+      INIT => X"00400000"
     )
         port map (
       I0 => state(3),
@@ -2196,7 +2179,7 @@ b2a0_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 \b2a0_dealy_counter[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"00100000"
+      INIT => X"00400000"
     )
         port map (
       I0 => state(3),
@@ -2302,8 +2285,8 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     )
         port map (
       I0 => state(3),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(0),
       I4 => b2a1_dealy_counter(0),
       O => \b2a1_dealy_counter[0]_i_1_n_0\
@@ -2314,8 +2297,8 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     )
         port map (
       I0 => state(3),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(0),
       I4 => b2a1_dealy_counter0_n_7,
       O => \b2a1_dealy_counter__0\(1)
@@ -2326,8 +2309,8 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     )
         port map (
       I0 => state(3),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(0),
       I4 => b2a1_dealy_counter0_n_6,
       O => \b2a1_dealy_counter__0\(2)
@@ -2338,8 +2321,8 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     )
         port map (
       I0 => state(3),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(0),
       I4 => b2a1_dealy_counter0_n_5,
       O => \b2a1_dealy_counter__0\(3)
@@ -2350,8 +2333,8 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     )
         port map (
       I0 => state(3),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(0),
       I4 => b2a1_dealy_counter0_n_4,
       O => \b2a1_dealy_counter__0\(4)
@@ -2398,13 +2381,13 @@ b2a1_dealy_counter0_i_4: unisim.vcomponents.LUT1
     );
 b_oe_i_1: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0542"
+      INIT => X"5042"
     )
         port map (
       I0 => state(3),
-      I1 => state(1),
-      I2 => state(0),
-      I3 => state(2),
+      I1 => state(0),
+      I2 => state(2),
+      I3 => state(1),
       O => b_oe_i_1_n_0
     );
 b_oe_reg: unisim.vcomponents.FDCE
@@ -2415,28 +2398,25 @@ b_oe_reg: unisim.vcomponents.FDCE
       D => b_oe_i_1_n_0,
       Q => b_oe
     );
-\b_out[58]_i_1\: unisim.vcomponents.LUT5
+\b_out[58]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FEFD0440"
+      INIT => X"1002"
     )
         port map (
       I0 => state(3),
       I1 => state(1),
-      I2 => state(0),
-      I3 => state(2),
-      I4 => \^b_out\(0),
+      I2 => state(2),
+      I3 => state(0),
       O => \b_out[58]_i_1_n_0\
     );
-\b_out[59]_i_1\: unisim.vcomponents.LUT5
+\b_out[59]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"FAFF0042"
+      INIT => X"08"
     )
         port map (
-      I0 => state(3),
-      I1 => state(1),
-      I2 => state(0),
-      I3 => state(2),
-      I4 => \^b_out\(1),
+      I0 => state(2),
+      I1 => state(0),
+      I2 => state(3),
       O => \b_out[59]_i_1_n_0\
     );
 \b_out_reg[58]\: unisim.vcomponents.FDCE
@@ -2445,7 +2425,7 @@ b_oe_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => rst,
       D => \b_out[58]_i_1_n_0\,
-      Q => \^b_out\(0)
+      Q => b_out(0)
     );
 \b_out_reg[59]\: unisim.vcomponents.FDCE
      port map (
@@ -2453,11 +2433,11 @@ b_oe_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => rst,
       D => \b_out[59]_i_1_n_0\,
-      Q => \^b_out\(1)
+      Q => b_out(1)
     );
 \data_ain_0[59]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0004"
+      INIT => X"0040"
     )
         port map (
       I0 => state(0),
@@ -2952,8 +2932,8 @@ b_oe_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => state(0),
-      I1 => state(1),
-      I2 => state(2),
+      I1 => state(2),
+      I2 => state(1),
       I3 => state(3),
       O => data_ain_1
     );
@@ -3439,7 +3419,7 @@ b_oe_reg: unisim.vcomponents.FDCE
     );
 \data_ain_5[59]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0040"
+      INIT => X"0100"
     )
         port map (
       I0 => state(0),
@@ -3930,7 +3910,7 @@ b_oe_reg: unisim.vcomponents.FDCE
     );
 \data_ain_a[59]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0100"
+      INIT => X"0080"
     )
         port map (
       I0 => state(0),
@@ -5403,7 +5383,7 @@ b_oe_reg: unisim.vcomponents.FDCE
     );
 \data_bin_5[59]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0008"
+      INIT => X"0004"
     )
         port map (
       I0 => state(0),
@@ -5894,12 +5874,12 @@ b_oe_reg: unisim.vcomponents.FDCE
     );
 \data_bin_a[59]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0080"
+      INIT => X"0008"
     )
         port map (
       I0 => state(0),
-      I1 => state(2),
-      I2 => state(1),
+      I1 => state(1),
+      I2 => state(2),
       I3 => state(3),
       O => \data_bin_a[59]_i_1_n_0\
     );

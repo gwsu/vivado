@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: user.org:user:dut_120:1.0
-// IP Revision: 2
+// IP VLNV: user.org:user:dut_120:1.1
+// IP Revision: 4
 
 (* X_CORE_INFO = "dut_120,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_dut_120_0_0,dut_120,{}" *)

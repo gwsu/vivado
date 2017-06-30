@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: user.org:user:dut_120:1.0
-// IP Revision: 2
+// IP VLNV: user.org:user:dut_120:1.1
+// IP Revision: 4
 
 `timescale 1ns/1ps
 

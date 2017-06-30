@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Sat Jun 10 21:11:55 2017
--- Host        : wsguo-PC running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub -rename_top b2000t_c2c_bram_blk_mem_gen_0_0 -prefix
---               b2000t_c2c_bram_blk_mem_gen_0_0_ b2000t_c2c_bram_blk_mem_gen_0_0_stub.vhdl
+-- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+-- Date        : Fri Jun 30 18:50:38 2017
+-- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0_stub.vhdl
 -- Design      : b2000t_c2c_bram_blk_mem_gen_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7v2000tflg1925-1

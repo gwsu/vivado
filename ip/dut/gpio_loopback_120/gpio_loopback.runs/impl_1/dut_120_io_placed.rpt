@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed Jun 28 15:32:54 2017
+| Date         : Fri Jun 30 17:04:07 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_io -file dut_120_io_placed.rpt
 | Design       : dut_120

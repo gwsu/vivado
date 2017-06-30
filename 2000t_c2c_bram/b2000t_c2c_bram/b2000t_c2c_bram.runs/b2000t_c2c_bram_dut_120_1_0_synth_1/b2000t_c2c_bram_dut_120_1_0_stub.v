@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Wed Jun 28 15:37:43 2017
+// Date        : Fri Jun 30 19:16:56 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ b2000t_c2c_bram_dut_120_1_0_stub.v

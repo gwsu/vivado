@@ -1,0 +1,479 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+Process ID: 133427
+
+Current time: 	6/29/17 5:13:54 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: CentOS release 6.4 (Final)
+Version: 2.6.32-358.el6.x86_64
+Architecture: amd64
+Available processors (cores): 24
+
+DISPLAY: :7.0
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/home/vivado/vivado201604/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	wesleyguo
+User home directory: /home/wesleyguo
+User working directory: /home/wesleyguo/github/vivado/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /home/vivado/vivado201604/Vivado
+RDI data directory: /home/vivado/vivado201604/Vivado/2016.4/data
+RDI bin directory: /home/vivado/vivado201604/Vivado/2016.4/bin
+
+Vivado preferences path: /home/wesleyguo/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /home/wesleyguo/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,933 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 36 MB (+35293kb) [00:00:05]
+// [Engine Memory]: 4,933 MB (+5021174kb) [00:00:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,943 MB. GUI used memory: 29 MB. Current time: 6/29/17 5:13:56 PM EDT
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// Opening Vivado Project: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr 
+// [GUI Memory]: 40 MB (+1912kb) [00:01:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,006 MB. GUI used memory: 30 MB. Current time: 6/29/17 5:15:21 PM EDT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 49 MB (+7560kb) [00:01:42]
+// [Engine Memory]: 5,216 MB (+38198kb) [00:01:42]
+// [GUI Memory]: 57 MB (+6152kb) [00:01:43]
+// [GUI Memory]: 64 MB (+4006kb) [00:01:44]
+// Tcl Message: open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'. 
+// Project name: b2000t_c2c_bram; location: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram; part: xc7v2000tflg1925-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 6255.922 ; gain = 301.363 ; free physical = 69612 ; free virtual = 179602 
+// Elapsed time: 15 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// [GUI Memory]: 70 MB (+3137kb) [00:01:46]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 76 MB (+2047kb) [00:02:46]
+// [GUI Memory]: 80 MB (+164kb) [00:04:51]
+// Elapsed time: 255 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,293 MB. GUI used memory: 59 MB. Current time: 6/29/17 5:19:51 PM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Y:JMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "192.168.0.44:3121,xilinx_tcf/Xilinx/000018938f9c01,PARAM.FREQUENCY:6000000"); // ab:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// bt:g (cd:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url 192.168.0.44:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.0.44:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: 192.168.0.44 Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// M:a (cd:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 86 MB (+2076kb) [00:06:05]
+// [GUI Memory]: 91 MB (+1011kb) [00:06:05]
+dismissDialog("Open Hardware Target"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (0) ; Closed", 1, "xilinx_tcf/Xilinx/00001894580501 (0)", 0, false); // t:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Xilinx/00001894580501 (0) ; Closed", 1, "xilinx_tcf/Xilinx/00001894580501 (0)", 0, false, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET, "Open Target"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501} 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501 
+// TclEventType: HW_DEVICE_CHANGE
+// bt:g (cd:JFrame):  Open Target : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7v2000t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Open Target"); // bt:g (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7v2000t_0 (1) ; Not programmed", 2, "xc7v2000t_0 (1)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7v2000t_0 (1) ; Not programmed", 2, "xc7v2000t_0 (1)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,327 MB. GUI used memory: 51 MB. Current time: 6/29/17 5:20:12 PM EDT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:02:51 ; elapsed = 00:02:44 . Memory (MB): peak = 6322.664 ; gain = 21.719 ; free physical = 69562 ; free virtual = 179552 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s). INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,379 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:22:55 PM EDT
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 6375.027 ; gain = 52.363 ; free physical = 69514 ; free virtual = 179504 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]] 
+// Tcl Message: Processed interface axi_chip2chip_0_m_axi_ila1_slot0 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]] 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'B' command handler elapsed time: 172 seconds
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 171 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// [GUI Memory]: 97 MB (+1171kb) [00:09:59]
+// [GUI Memory]: 102 MB (+733kb) [00:12:39]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 425 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i:aE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i:aE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SYSMON_DELETE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// [GUI Memory]: 107 MB (+100kb) [00:17:20]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 142 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7v2000t_0 (1) ; Programmed", 2, "xc7v2000t_0 (1)", 0, true); // t:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7v2000t_0 (1) ; Programmed", 2, "xc7v2000t_0 (1)", 0, true, false, false, false, true, false); // t:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0] 
+// [GUI Memory]: 113 MB (+381kb) [00:18:51]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:02:44 ; elapsed = 00:02:44 . Memory (MB): peak = 6615.117 ; gain = 0.000 ; free physical = 80099 ; free virtual = 190041 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s). INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). INFO: [Labtools 27-2302] Device xc7v2000t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Common 17-161] Invalid option value '' specified for 'objects'. 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// 'B' command handler elapsed time: 169 seconds
+// Elapsed time: 168 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 550 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd} 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_chip2chip:4.2 - axi_chip2chip_0 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 5,513 MB (+38228kb) [00:30:46]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,556 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:44:37 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 5,914 MB (+131390kb) [00:31:01]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,094 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:44:56 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 6,323 MB (+118407kb) [00:31:16]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,631 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:45:16 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 6,725 MB (+89989kb) [00:31:31]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 7,135 MB (+77301kb) [00:31:46]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,174 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:45:36 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 7,539 MB (+49514kb) [00:32:01]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,577 MB. GUI used memory: 68 MB. Current time: 6/29/17 5:45:51 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 7,940 MB (+25187kb) [00:32:16]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 8,115 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:46:11 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 8,342 MB (+5212kb) [00:32:31]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 8,644 MB. GUI used memory: 69 MB. Current time: 6/29/17 5:46:31 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 8,790 MB (+32370kb) [00:32:48]
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 9,605 MB (+393979kb) [00:33:19]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Successfully read diagram <b2000t_c2c_bram> from BD file </home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 9,926 MB. GUI used memory: 71 MB. Current time: 6/29/17 5:47:20 PM EDT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// [Engine Memory]: 10,711 MB (+655684kb) [00:34:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 10,712 MB. GUI used memory: 72 MB. Current time: 6/29/17 5:47:51 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:04:06 ; elapsed = 00:03:22 . Memory (MB): peak = 11714.328 ; gain = 5099.211 ; free physical = 71001 ; free virtual = 180942 
+// 'bu' command handler elapsed time: 202 seconds
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 11,105 MB. GUI used memory: 72 MB. Current time: 6/29/17 5:48:06 PM EDT
+// WARNING: HTimer (RSBApplyAutomationBar Update Bar Timer) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 217 seconds
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [Engine Memory]: 11,703 MB (+478599kb) [00:34:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 11,704 MB. GUI used memory: 72 MB. Current time: 6/29/17 5:48:28 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 12,506 MB. GUI used memory: 72 MB. Current time: 6/29/17 5:48:58 PM EDT
+// [Engine Memory]: 12,506 MB (+227982kb) [00:35:09]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 96 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h:k (JPanel:JComponent, cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE

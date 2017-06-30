@@ -1,0 +1,16 @@
+$date
+        2017-Jun-30 09:58:10
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " b2000t_c2c_bram_i/system_ila4/inst/probe0 $end
+$var reg 1 # _TRIGGER $end
+$var reg 1 $ _WINDOW $end
+$var reg 1 % _GAP $end
+$upscope $end
+$enddefinitions $end

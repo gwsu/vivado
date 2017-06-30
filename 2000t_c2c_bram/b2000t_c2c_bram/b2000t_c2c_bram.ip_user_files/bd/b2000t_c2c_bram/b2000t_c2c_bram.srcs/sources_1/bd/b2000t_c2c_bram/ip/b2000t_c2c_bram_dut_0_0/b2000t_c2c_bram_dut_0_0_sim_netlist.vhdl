@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed Jun 21 17:48:07 2017
+-- Date        : Fri Jun 30 12:57:34 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_0/b2000t_c2c_bram_dut_0_0_sim_netlist.vhdl

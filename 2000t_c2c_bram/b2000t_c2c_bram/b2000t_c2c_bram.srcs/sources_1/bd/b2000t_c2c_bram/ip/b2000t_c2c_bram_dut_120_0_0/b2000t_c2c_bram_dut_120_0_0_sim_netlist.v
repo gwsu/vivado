@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Wed Jun 28 15:37:45 2017
+// Date        : Fri Jun 30 19:16:57 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 // Command     : write_verilog -force -mode funcsim
 //               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/b2000t_c2c_bram_dut_120_0_0_sim_netlist.v
@@ -162,6 +162,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
   input en;
 
   wire \FSM_sequential_state[0]_i_10_n_0 ;
+  wire \FSM_sequential_state[0]_i_11_n_0 ;
   wire \FSM_sequential_state[0]_i_1_n_0 ;
   wire \FSM_sequential_state[0]_i_2_n_0 ;
   wire \FSM_sequential_state[0]_i_3_n_0 ;
@@ -174,9 +175,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
   wire \FSM_sequential_state[1]_i_1_n_0 ;
   wire \FSM_sequential_state[1]_i_2_n_0 ;
   wire \FSM_sequential_state[2]_i_1_n_0 ;
-  wire \FSM_sequential_state[2]_i_2_n_0 ;
   wire \FSM_sequential_state[3]_i_1_n_0 ;
-  wire \FSM_sequential_state[3]_i_2_n_0 ;
   wire a01b_dealy;
   wire [3:0]a01b_dealy_counter;
   wire a01b_dealy_counter0_i_1_n_0;
@@ -1028,181 +1027,175 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
   wire [3:3]NLW_b2a0_dealy_counter0_CO_UNCONNECTED;
   wire [3:3]NLW_b2a1_dealy_counter0_CO_UNCONNECTED;
 
-  LUT5 #(
-    .INIT(32'hFCBBFC88)) 
+  LUT6 #(
+    .INIT(64'h0F008F8F0F008080)) 
     \FSM_sequential_state[0]_i_1 
-       (.I0(b10a_dealy),
-        .I1(state[3]),
-        .I2(\FSM_sequential_state[0]_i_2_n_0 ),
-        .I3(state[0]),
-        .I4(\FSM_sequential_state[0]_i_3_n_0 ),
+       (.I0(b01a_dealy),
+        .I1(\FSM_sequential_state[0]_i_2_n_0 ),
+        .I2(state[3]),
+        .I3(\FSM_sequential_state[0]_i_3_n_0 ),
+        .I4(state[0]),
+        .I5(\FSM_sequential_state[0]_i_4_n_0 ),
         .O(\FSM_sequential_state[0]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \FSM_sequential_state[0]_i_10 
+       (.I0(reg_start[0]),
+        .I1(reg_start[1]),
+        .O(\FSM_sequential_state[0]_i_10_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_sequential_state[0]_i_10 
+    \FSM_sequential_state[0]_i_11 
        (.I0(reg_start[6]),
         .I1(reg_start[7]),
         .I2(reg_start[4]),
         .I3(reg_start[5]),
         .I4(reg_start[3]),
         .I5(reg_start[2]),
-        .O(\FSM_sequential_state[0]_i_10_n_0 ));
+        .O(\FSM_sequential_state[0]_i_11_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \FSM_sequential_state[0]_i_2 
+       (.I0(state[2]),
+        .I1(state[1]),
+        .O(\FSM_sequential_state[0]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'h505F3030505F3F3F)) 
-    \FSM_sequential_state[0]_i_2 
-       (.I0(a10b_dealy),
-        .I1(b2a1_dealy),
+    \FSM_sequential_state[0]_i_3 
+       (.I0(b10a_dealy),
+        .I1(a10b_dealy),
+        .I2(state[1]),
+        .I3(b2a1_dealy),
+        .I4(state[2]),
+        .I5(a2b1_dealy),
+        .O(\FSM_sequential_state[0]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \FSM_sequential_state[0]_i_4 
+       (.I0(b2a0_dealy),
+        .I1(a2b0_dealy),
         .I2(state[1]),
         .I3(a01b_dealy),
         .I4(state[2]),
-        .I5(a2b1_dealy),
-        .O(\FSM_sequential_state[0]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \FSM_sequential_state[0]_i_3 
-       (.I0(b01a_dealy),
-        .I1(a2b0_dealy),
-        .I2(state[1]),
-        .I3(b2a0_dealy),
-        .I4(state[2]),
-        .I5(\FSM_sequential_state[0]_i_4_n_0 ),
-        .O(\FSM_sequential_state[0]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_sequential_state[0]_i_4 
-       (.I0(\FSM_sequential_state[0]_i_5_n_0 ),
-        .I1(\FSM_sequential_state[0]_i_6_n_0 ),
-        .I2(\FSM_sequential_state[0]_i_7_n_0 ),
-        .I3(\FSM_sequential_state[0]_i_8_n_0 ),
-        .I4(\FSM_sequential_state[0]_i_9_n_0 ),
-        .I5(\FSM_sequential_state[0]_i_10_n_0 ),
+        .I5(\FSM_sequential_state[0]_i_5_n_0 ),
         .O(\FSM_sequential_state[0]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \FSM_sequential_state[0]_i_5 
+       (.I0(\FSM_sequential_state[0]_i_6_n_0 ),
+        .I1(\FSM_sequential_state[0]_i_7_n_0 ),
+        .I2(\FSM_sequential_state[0]_i_8_n_0 ),
+        .I3(\FSM_sequential_state[0]_i_9_n_0 ),
+        .I4(\FSM_sequential_state[0]_i_10_n_0 ),
+        .I5(\FSM_sequential_state[0]_i_11_n_0 ),
+        .O(\FSM_sequential_state[0]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \FSM_sequential_state[0]_i_6 
        (.I0(reg_start[12]),
         .I1(reg_start[13]),
         .I2(reg_start[10]),
         .I3(reg_start[11]),
         .I4(reg_start[9]),
         .I5(reg_start[8]),
-        .O(\FSM_sequential_state[0]_i_5_n_0 ));
+        .O(\FSM_sequential_state[0]_i_6_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_sequential_state[0]_i_6 
+    \FSM_sequential_state[0]_i_7 
        (.I0(reg_start[18]),
         .I1(reg_start[19]),
         .I2(reg_start[16]),
         .I3(reg_start[17]),
         .I4(reg_start[15]),
         .I5(reg_start[14]),
-        .O(\FSM_sequential_state[0]_i_6_n_0 ));
+        .O(\FSM_sequential_state[0]_i_7_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_sequential_state[0]_i_7 
+    \FSM_sequential_state[0]_i_8 
        (.I0(reg_start[30]),
         .I1(reg_start[31]),
         .I2(reg_start[28]),
         .I3(reg_start[29]),
         .I4(reg_start[27]),
         .I5(reg_start[26]),
-        .O(\FSM_sequential_state[0]_i_7_n_0 ));
+        .O(\FSM_sequential_state[0]_i_8_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_sequential_state[0]_i_8 
+    \FSM_sequential_state[0]_i_9 
        (.I0(reg_start[24]),
         .I1(reg_start[25]),
         .I2(reg_start[22]),
         .I3(reg_start[23]),
         .I4(reg_start[21]),
         .I5(reg_start[20]),
-        .O(\FSM_sequential_state[0]_i_8_n_0 ));
-  LUT2 #(
-    .INIT(4'hE)) 
-    \FSM_sequential_state[0]_i_9 
-       (.I0(reg_start[0]),
-        .I1(reg_start[1]),
         .O(\FSM_sequential_state[0]_i_9_n_0 ));
-  LUT5 #(
-    .INIT(32'hFCFFFC88)) 
+  LUT6 #(
+    .INIT(64'h0F000F0F0F002020)) 
     \FSM_sequential_state[1]_i_1 
-       (.I0(b10a_dealy),
-        .I1(state[3]),
-        .I2(\FSM_sequential_state[1]_i_2_n_0 ),
-        .I3(state[0]),
-        .I4(state[1]),
+       (.I0(b01a_dealy),
+        .I1(state[2]),
+        .I2(state[3]),
+        .I3(\FSM_sequential_state[1]_i_2_n_0 ),
+        .I4(state[0]),
+        .I5(state[1]),
         .O(\FSM_sequential_state[1]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h5F503F3F5F503030)) 
     \FSM_sequential_state[1]_i_2 
-       (.I0(a10b_dealy),
-        .I1(b2a1_dealy),
+       (.I0(b10a_dealy),
+        .I1(a10b_dealy),
         .I2(state[1]),
-        .I3(a01b_dealy),
+        .I3(b2a1_dealy),
         .I4(state[2]),
         .I5(a2b1_dealy),
         .O(\FSM_sequential_state[1]_i_2_n_0 ));
-  LUT3 #(
-    .INIT(8'hF8)) 
-    \FSM_sequential_state[2]_i_1 
-       (.I0(b10a_dealy),
-        .I1(state[3]),
-        .I2(\FSM_sequential_state[2]_i_2_n_0 ),
-        .O(\FSM_sequential_state[2]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'h5FFFC000)) 
-    \FSM_sequential_state[2]_i_2 
-       (.I0(a10b_dealy),
-        .I1(b2a1_dealy),
-        .I2(state[1]),
-        .I3(state[0]),
-        .I4(state[2]),
-        .O(\FSM_sequential_state[2]_i_2_n_0 ));
-  LUT4 #(
-    .INIT(16'h01FF)) 
-    \FSM_sequential_state[3]_i_1 
-       (.I0(state[0]),
-        .I1(state[2]),
-        .I2(state[1]),
-        .I3(state[3]),
-        .O(\FSM_sequential_state[3]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFC04CC0404040404)) 
-    \FSM_sequential_state[3]_i_2 
-       (.I0(b10a_dealy),
-        .I1(state[3]),
+    .INIT(64'h000000006A2AEAAA)) 
+    \FSM_sequential_state[2]_i_1 
+       (.I0(state[2]),
+        .I1(state[0]),
         .I2(state[1]),
         .I3(a10b_dealy),
+        .I4(b10a_dealy),
+        .I5(state[3]),
+        .O(\FSM_sequential_state[2]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h3000000000000404)) 
+    \FSM_sequential_state[3]_i_1 
+       (.I0(b01a_dealy),
+        .I1(state[3]),
+        .I2(state[1]),
+        .I3(b10a_dealy),
         .I4(state[2]),
         .I5(state[0]),
-        .O(\FSM_sequential_state[3]_i_2_n_0 ));
+        .O(\FSM_sequential_state[3]_i_1_n_0 ));
   (* KEEP = "yes" *) 
   FDCE \FSM_sequential_state_reg[0] 
        (.C(clk),
-        .CE(\FSM_sequential_state[3]_i_1_n_0 ),
+        .CE(1'b1),
         .CLR(rst),
         .D(\FSM_sequential_state[0]_i_1_n_0 ),
         .Q(state[0]));
   (* KEEP = "yes" *) 
   FDCE \FSM_sequential_state_reg[1] 
        (.C(clk),
-        .CE(\FSM_sequential_state[3]_i_1_n_0 ),
+        .CE(1'b1),
         .CLR(rst),
         .D(\FSM_sequential_state[1]_i_1_n_0 ),
         .Q(state[1]));
   (* KEEP = "yes" *) 
   FDCE \FSM_sequential_state_reg[2] 
        (.C(clk),
-        .CE(\FSM_sequential_state[3]_i_1_n_0 ),
+        .CE(1'b1),
         .CLR(rst),
         .D(\FSM_sequential_state[2]_i_1_n_0 ),
         .Q(state[2]));
   (* KEEP = "yes" *) 
   FDCE \FSM_sequential_state_reg[3] 
        (.C(clk),
-        .CE(\FSM_sequential_state[3]_i_1_n_0 ),
+        .CE(1'b1),
         .CLR(rst),
-        .D(\FSM_sequential_state[3]_i_2_n_0 ),
+        .D(\FSM_sequential_state[3]_i_1_n_0 ),
         .Q(state[3]));
   CARRY4 a01b_dealy_counter0
        (.CI(1'b0),
@@ -1232,7 +1225,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
        (.I0(a01b_dealy_counter[1]),
         .O(a01b_dealy_counter0_i_4_n_0));
   LUT5 #(
-    .INIT(32'h00001000)) 
+    .INIT(32'h00000010)) 
     \a01b_dealy_counter[0]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1241,7 +1234,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(a01b_dealy_counter[0]),
         .O(\a01b_dealy_counter[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'h10000000)) 
+    .INIT(32'h00100000)) 
     \a01b_dealy_counter[1]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1250,7 +1243,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(a01b_dealy_counter0_n_7),
         .O(a01b_dealy_counter__0[1]));
   LUT5 #(
-    .INIT(32'h10000000)) 
+    .INIT(32'h00100000)) 
     \a01b_dealy_counter[2]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1259,7 +1252,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(a01b_dealy_counter0_n_6),
         .O(a01b_dealy_counter__0[2]));
   LUT5 #(
-    .INIT(32'h10000000)) 
+    .INIT(32'h00100000)) 
     \a01b_dealy_counter[3]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1268,7 +1261,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(a01b_dealy_counter0_n_5),
         .O(a01b_dealy_counter__0[3]));
   LUT5 #(
-    .INIT(32'h10000000)) 
+    .INIT(32'h00100000)) 
     \a01b_dealy_counter[4]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1334,47 +1327,47 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
        (.I0(a10b_dealy_counter[1]),
         .O(a10b_dealy_counter0_i_4_n_0));
   LUT5 #(
-    .INIT(32'h00004000)) 
+    .INIT(32'h00001000)) 
     \a10b_dealy_counter[0]_i_1 
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[0]),
         .I4(a10b_dealy_counter[0]),
         .O(\a10b_dealy_counter[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'h40000000)) 
+    .INIT(32'h10000000)) 
     \a10b_dealy_counter[1]_i_1 
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[0]),
         .I4(a10b_dealy_counter0_n_7),
         .O(a10b_dealy_counter__0[1]));
   LUT5 #(
-    .INIT(32'h40000000)) 
+    .INIT(32'h10000000)) 
     \a10b_dealy_counter[2]_i_1 
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[0]),
         .I4(a10b_dealy_counter0_n_6),
         .O(a10b_dealy_counter__0[2]));
   LUT5 #(
-    .INIT(32'h40000000)) 
+    .INIT(32'h10000000)) 
     \a10b_dealy_counter[3]_i_1 
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[0]),
         .I4(a10b_dealy_counter0_n_5),
         .O(a10b_dealy_counter__0[3]));
   LUT5 #(
-    .INIT(32'h40000000)) 
+    .INIT(32'h10000000)) 
     \a10b_dealy_counter[4]_i_1 
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[0]),
         .I4(a10b_dealy_counter0_n_4),
         .O(a10b_dealy_counter__0[4]));
@@ -1613,11 +1606,11 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(a2b1_dealy_counter__0[4]),
         .Q(a2b1_dealy));
   LUT4 #(
-    .INIT(16'h00B4)) 
+    .INIT(16'h0036)) 
     a_oe_i_1
-       (.I0(state[2]),
-        .I1(state[1]),
-        .I2(state[0]),
+       (.I0(state[0]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[3]),
         .O(a_oe_i_1_n_0));
   FDCE a_oe_reg
@@ -1626,23 +1619,20 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .CLR(rst),
         .D(a_oe_i_1_n_0),
         .Q(a_oe));
-  LUT5 #(
-    .INIT(32'hFF7B0030)) 
+  LUT4 #(
+    .INIT(16'h0110)) 
     \a_out[58]_i_1 
-       (.I0(state[2]),
+       (.I0(state[3]),
         .I1(state[1]),
-        .I2(state[0]),
-        .I3(state[3]),
-        .I4(a_out[0]),
+        .I2(state[2]),
+        .I3(state[0]),
         .O(\a_out[58]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFDB0090)) 
+  LUT3 #(
+    .INIT(8'h04)) 
     \a_out[59]_i_1 
        (.I0(state[2]),
-        .I1(state[1]),
-        .I2(state[0]),
-        .I3(state[3]),
-        .I4(a_out[1]),
+        .I1(state[0]),
+        .I2(state[3]),
         .O(\a_out[59]_i_1_n_0 ));
   FDCE \a_out_reg[58] 
        (.C(clk),
@@ -1684,7 +1674,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
        (.I0(b01a_dealy_counter[1]),
         .O(b01a_dealy_counter0_i_4_n_0));
   LUT5 #(
-    .INIT(32'h00000040)) 
+    .INIT(32'h00000002)) 
     \b01a_dealy_counter[0]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1693,7 +1683,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b01a_dealy_counter[0]),
         .O(\b01a_dealy_counter[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'h00400000)) 
+    .INIT(32'h00020000)) 
     \b01a_dealy_counter[1]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1702,7 +1692,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b01a_dealy_counter0_n_7),
         .O(b01a_dealy_counter__0[1]));
   LUT5 #(
-    .INIT(32'h00400000)) 
+    .INIT(32'h00020000)) 
     \b01a_dealy_counter[2]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1711,7 +1701,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b01a_dealy_counter0_n_6),
         .O(b01a_dealy_counter__0[2]));
   LUT5 #(
-    .INIT(32'h00400000)) 
+    .INIT(32'h00020000)) 
     \b01a_dealy_counter[3]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1720,7 +1710,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b01a_dealy_counter0_n_5),
         .O(b01a_dealy_counter__0[3]));
   LUT5 #(
-    .INIT(32'h00400000)) 
+    .INIT(32'h00020000)) 
     \b01a_dealy_counter[4]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1786,7 +1776,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
        (.I0(b10a_dealy_counter[1]),
         .O(b10a_dealy_counter0_i_4_n_0));
   LUT5 #(
-    .INIT(32'h00000002)) 
+    .INIT(32'h00004000)) 
     \b10a_dealy_counter[0]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1795,7 +1785,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b10a_dealy_counter[0]),
         .O(\b10a_dealy_counter[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'h00020000)) 
+    .INIT(32'h40000000)) 
     \b10a_dealy_counter[1]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1804,7 +1794,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b10a_dealy_counter0_n_7),
         .O(b10a_dealy_counter__0[1]));
   LUT5 #(
-    .INIT(32'h00020000)) 
+    .INIT(32'h40000000)) 
     \b10a_dealy_counter[2]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1813,7 +1803,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b10a_dealy_counter0_n_6),
         .O(b10a_dealy_counter__0[2]));
   LUT5 #(
-    .INIT(32'h00020000)) 
+    .INIT(32'h40000000)) 
     \b10a_dealy_counter[3]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1822,7 +1812,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b10a_dealy_counter0_n_5),
         .O(b10a_dealy_counter__0[3]));
   LUT5 #(
-    .INIT(32'h00020000)) 
+    .INIT(32'h40000000)) 
     \b10a_dealy_counter[4]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1888,7 +1878,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
        (.I0(b2a0_dealy_counter[1]),
         .O(b2a0_dealy_counter0_i_4_n_0));
   LUT5 #(
-    .INIT(32'h00000010)) 
+    .INIT(32'h00000040)) 
     \b2a0_dealy_counter[0]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1897,7 +1887,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b2a0_dealy_counter[0]),
         .O(\b2a0_dealy_counter[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00400000)) 
     \b2a0_dealy_counter[1]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1906,7 +1896,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b2a0_dealy_counter0_n_7),
         .O(b2a0_dealy_counter__0[1]));
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00400000)) 
     \b2a0_dealy_counter[2]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1915,7 +1905,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b2a0_dealy_counter0_n_6),
         .O(b2a0_dealy_counter__0[2]));
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00400000)) 
     \b2a0_dealy_counter[3]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1924,7 +1914,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .I4(b2a0_dealy_counter0_n_5),
         .O(b2a0_dealy_counter__0[3]));
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00400000)) 
     \b2a0_dealy_counter[4]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
@@ -1993,8 +1983,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(32'h00001000)) 
     \b2a1_dealy_counter[0]_i_1 
        (.I0(state[3]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[0]),
         .I4(b2a1_dealy_counter[0]),
         .O(\b2a1_dealy_counter[0]_i_1_n_0 ));
@@ -2002,8 +1992,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(32'h10000000)) 
     \b2a1_dealy_counter[1]_i_1 
        (.I0(state[3]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[0]),
         .I4(b2a1_dealy_counter0_n_7),
         .O(b2a1_dealy_counter__0[1]));
@@ -2011,8 +2001,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(32'h10000000)) 
     \b2a1_dealy_counter[2]_i_1 
        (.I0(state[3]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[0]),
         .I4(b2a1_dealy_counter0_n_6),
         .O(b2a1_dealy_counter__0[2]));
@@ -2020,8 +2010,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(32'h10000000)) 
     \b2a1_dealy_counter[3]_i_1 
        (.I0(state[3]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[0]),
         .I4(b2a1_dealy_counter0_n_5),
         .O(b2a1_dealy_counter__0[3]));
@@ -2029,8 +2019,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(32'h10000000)) 
     \b2a1_dealy_counter[4]_i_1 
        (.I0(state[3]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[0]),
         .I4(b2a1_dealy_counter0_n_4),
         .O(b2a1_dealy_counter__0[4]));
@@ -2065,12 +2055,12 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(b2a1_dealy_counter__0[4]),
         .Q(b2a1_dealy));
   LUT4 #(
-    .INIT(16'h0542)) 
+    .INIT(16'h5042)) 
     b_oe_i_1
        (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[0]),
-        .I3(state[2]),
+        .I1(state[0]),
+        .I2(state[2]),
+        .I3(state[1]),
         .O(b_oe_i_1_n_0));
   FDCE b_oe_reg
        (.C(clk),
@@ -2078,23 +2068,20 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .CLR(rst),
         .D(b_oe_i_1_n_0),
         .Q(b_oe));
-  LUT5 #(
-    .INIT(32'hFEFD0440)) 
+  LUT4 #(
+    .INIT(16'h1002)) 
     \b_out[58]_i_1 
        (.I0(state[3]),
         .I1(state[1]),
-        .I2(state[0]),
-        .I3(state[2]),
-        .I4(b_out[0]),
+        .I2(state[2]),
+        .I3(state[0]),
         .O(\b_out[58]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFAFF0042)) 
+  LUT3 #(
+    .INIT(8'h08)) 
     \b_out[59]_i_1 
-       (.I0(state[3]),
-        .I1(state[1]),
-        .I2(state[0]),
-        .I3(state[2]),
-        .I4(b_out[1]),
+       (.I0(state[2]),
+        .I1(state[0]),
+        .I2(state[3]),
         .O(\b_out[59]_i_1_n_0 ));
   FDCE \b_out_reg[58] 
        (.C(clk),
@@ -2109,7 +2096,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(\b_out[59]_i_1_n_0 ),
         .Q(b_out[1]));
   LUT4 #(
-    .INIT(16'h0004)) 
+    .INIT(16'h0040)) 
     \data_ain_0[59]_i_1 
        (.I0(state[0]),
         .I1(state[2]),
@@ -2480,8 +2467,8 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
     .INIT(16'h0008)) 
     \data_ain_1[59]_i_1 
        (.I0(state[0]),
-        .I1(state[1]),
-        .I2(state[2]),
+        .I1(state[2]),
+        .I2(state[1]),
         .I3(state[3]),
         .O(data_ain_1));
   FDCE \data_ain_1_reg[0] 
@@ -2845,7 +2832,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(a_in[9]),
         .Q(\data_ain_1_reg_n_0_[9] ));
   LUT4 #(
-    .INIT(16'h0040)) 
+    .INIT(16'h0100)) 
     \data_ain_5[59]_i_1 
        (.I0(state[0]),
         .I1(state[2]),
@@ -3213,7 +3200,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(a_in[9]),
         .Q(\data_ain_5_reg_n_0_[9] ));
   LUT4 #(
-    .INIT(16'h0100)) 
+    .INIT(16'h0080)) 
     \data_ain_a[59]_i_1 
        (.I0(state[0]),
         .I1(state[2]),
@@ -4317,7 +4304,7 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(b_in[9]),
         .Q(\data_bin_1_reg_n_0_[9] ));
   LUT4 #(
-    .INIT(16'h0008)) 
+    .INIT(16'h0004)) 
     \data_bin_5[59]_i_1 
        (.I0(state[0]),
         .I1(state[2]),
@@ -4685,11 +4672,11 @@ module b2000t_c2c_bram_dut_120_0_0_dut_120
         .D(b_in[9]),
         .Q(\data_bin_5_reg_n_0_[9] ));
   LUT4 #(
-    .INIT(16'h0080)) 
+    .INIT(16'h0008)) 
     \data_bin_a[59]_i_1 
        (.I0(state[0]),
-        .I1(state[2]),
-        .I2(state[1]),
+        .I1(state[1]),
+        .I2(state[2]),
         .I3(state[3]),
         .O(\data_bin_a[59]_i_1_n_0 ));
   FDCE \data_bin_a_reg[0] 

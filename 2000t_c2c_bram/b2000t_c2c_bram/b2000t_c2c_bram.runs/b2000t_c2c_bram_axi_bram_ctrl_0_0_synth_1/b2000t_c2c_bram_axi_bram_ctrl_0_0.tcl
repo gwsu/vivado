@@ -19,6 +19,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback
+  /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120
+  /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120
   /home/wesleyguo/github/vivado/vivado/ip/dut/jack
 } [current_project]
 set_property ip_output_repo /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/ip [current_project]

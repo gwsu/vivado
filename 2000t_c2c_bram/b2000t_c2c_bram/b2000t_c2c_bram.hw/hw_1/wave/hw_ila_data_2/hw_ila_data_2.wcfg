@@ -9,311 +9,53 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="567351fs"></ZoomEndTime>
-      <Cursor1Time time="304000fs"></Cursor1Time>
+      <ZoomStartTime time="229146fs"></ZoomStartTime>
+      <ZoomEndTime time="345766fs"></ZoomEndTime>
+      <Cursor1Time time="285000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="216"></NameColumnWidth>
-      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+      <NameColumnWidth column_width="387"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
-   <wvobject fp_name="divider54" type="divider">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Interface</obj_property>
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe1_1">
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe1_1</obj_property>
+      <obj_property name="ObjectShortName">probe1_1</obj_property>
+      <obj_property name="label">dut_120_0_b_oe</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)">
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe3_1">
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe3_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe3_1[59:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">dut_120_0_b_out</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
-   <wvobject type="group" fp_name="group56">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel Signal Group</obj_property>
+   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe0_1">
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe0_1</obj_property>
+      <obj_property name="ObjectShortName">probe0_1</obj_property>
+      <obj_property name="label">dut_120_0_a_oe</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
-   <wvobject fp_name="divider61" type="divider">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Interface</obj_property>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe2_1">
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe2_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2_1[59:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">dut_120_0_a_out</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
-   <wvobject type="group" fp_name="group63">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group</obj_property>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe4_1">
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="divider67" type="divider">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe4_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe4_1[59:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">jack_120_1_b_out</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="group" fp_name="group69">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel Signal Group</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="divider74" type="divider">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="group" fp_name="group76">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata[63:0]</obj_property>
-      <obj_property name="ObjectShortName">net_slot_0_axis_tdata[63:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata[63:0]</obj_property>
-      <obj_property name="ObjectShortName">net_slot_1_axis_tdata[63:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid">
-      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel  Events</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel  Events</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="divider89" type="divider">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s0)_(axi_chip2chip_0_AXIS_TX)[2:0]</obj_property>
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="group" fp_name="group91">
-      <obj_property name="label">slot_0 : axi_chip2chip_0_AXIS_TX : Stream Channel Signal Group</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tready</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="divider96" type="divider">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">khaki</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Stream_Channel_(i2:s1)_(aurora_64b66b_0_USER_DATA_M_AXIS_RX)[2:0]</obj_property>
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel  Events</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">green</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="group" fp_name="group98">
-      <obj_property name="label">slot_1 : aurora_64b66b_0_USER_DATA_M_AXIS_RX : Stream Channel Signal Group</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tdata[63:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tlast</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid">
-         <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-      </wvobject>
    </wvobject>
 </wave_config>

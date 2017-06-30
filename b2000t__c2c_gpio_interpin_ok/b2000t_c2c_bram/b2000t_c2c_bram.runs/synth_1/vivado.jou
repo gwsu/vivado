@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jun 28 18:03:40 2017
+# Process ID: 75220
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1
+# Command line: vivado -log b2000t_c2c_bram_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_wrapper.tcl
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/b2000t_c2c_bram_wrapper.vds
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source b2000t_c2c_bram_wrapper.tcl -notrace

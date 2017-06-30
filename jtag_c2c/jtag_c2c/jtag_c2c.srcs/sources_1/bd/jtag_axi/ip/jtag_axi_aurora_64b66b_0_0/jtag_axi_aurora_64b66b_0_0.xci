@@ -300,7 +300,6 @@
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.TEMPERATURE_GRADE"/>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_CUSTOMIZATION">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_GENERATION">TRUE</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCACHEID">2a23a4aa5b79125e</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Integrator</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">3</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
@@ -342,8 +341,8 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_M_AXIS_RX.TID_WIDTH" xilinx:valueSource="constant"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_M_AXIS_RX.TUSER_WIDTH" xilinx:valueSource="constant"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.FREQ_HZ" xilinx:valueSource="user"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TKEEP" xilinx:valueSource="user"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TLAST" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TKEEP" xilinx:valueSource="constant_prop"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TLAST" xilinx:valueSource="constant_prop"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TREADY" xilinx:valueSource="user_prop"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.HAS_TSTRB" xilinx:valueSource="constant"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USER_DATA_S_AXIS_TX.PHASE" xilinx:valueSource="user"/>

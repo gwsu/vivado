@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: user.org:user:jack_120:1.0
-// IP Revision: 4
+// IP VLNV: user.org:user:jack_120:1.1
+// IP Revision: 7
 
 (* X_CORE_INFO = "jack_120,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_jack_120_0_0,jack_120,{}" *)
@@ -60,7 +60,9 @@ module b2000t_c2c_bram_jack_120_0_0 (
   b_oe,
   a_out,
   b_out,
-  mode
+  mode,
+  pin_a,
+  pin_b
 );
 
 input wire [59 : 0] a_in;
@@ -70,6 +72,8 @@ input wire b_oe;
 output wire [59 : 0] a_out;
 output wire [59 : 0] b_out;
 input wire [59 : 0] mode;
+inout wire [59 : 0] pin_a;
+inout wire [59 : 0] pin_b;
 
   jack_120 inst (
     .a_in(a_in),
@@ -78,6 +82,8 @@ input wire [59 : 0] mode;
     .b_oe(b_oe),
     .a_out(a_out),
     .b_out(b_out),
-    .mode(mode)
+    .mode(mode),
+    .pin_a(pin_a),
+    .pin_b(pin_b)
   );
 endmodule

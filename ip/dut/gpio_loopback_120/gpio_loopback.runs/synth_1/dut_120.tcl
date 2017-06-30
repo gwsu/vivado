@@ -14,10 +14,7 @@ set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/ip/dut/gpio
 set_property parent.project_path /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths {
-  /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1
-  /home/wesleyguo/github/vivado/vivado/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback.srcs/sources_1
-} [current_project]
+set_property ip_repo_paths /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1 [current_project]
 set_property ip_output_repo /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib /home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120/gpio_loopback.srcs/sources_1/imports/sources_1/dut_120.v

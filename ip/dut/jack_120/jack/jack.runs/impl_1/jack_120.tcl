@@ -53,10 +53,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.cache/wt [current_project]
   set_property parent.project_path /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.xpr [current_project]
-  set_property ip_repo_paths {
-  /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1
-  /home/wesleyguo/github/vivado/vivado/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback/b2000t_jtag_axi_loopback.srcs/sources_1
-} [current_project]
+  set_property ip_repo_paths /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1 [current_project]
   set_property ip_output_repo /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.runs/synth_1/jack_120.dcp

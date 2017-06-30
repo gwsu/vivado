@@ -42,16 +42,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_xlcons
 # IP: bd/jtag_axi/ip/jtag_axi_proc_sys_reset_0_0/jtag_axi_proc_sys_reset_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_proc_sys_reset_0_0 || ORIG_REF_NAME==jtag_axi_proc_sys_reset_0_0}]
 
-# IP: bd/jtag_axi/ip/jtag_axi_axi_chip2chip_0_1/jtag_axi_axi_chip2chip_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_axi_chip2chip_0_1 || ORIG_REF_NAME==jtag_axi_axi_chip2chip_0_1}]
-
-# IP: bd/jtag_axi/ip/jtag_axi_aurora_64b66b_0_1/jtag_axi_aurora_64b66b_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_aurora_64b66b_0_1 || ORIG_REF_NAME==jtag_axi_aurora_64b66b_0_1}]
-
 # IP: bd/jtag_axi/ip/jtag_axi_processing_system7_0_0/jtag_axi_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_processing_system7_0_0 || ORIG_REF_NAME==jtag_axi_processing_system7_0_0}]
 
 # IP: bd/jtag_axi/ip/jtag_axi_auto_pc_0/jtag_axi_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_auto_pc_0 || ORIG_REF_NAME==jtag_axi_auto_pc_0}]
+
+# IP: bd/jtag_axi/ip/jtag_axi_s00_mmu_0/jtag_axi_s00_mmu_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==jtag_axi_s00_mmu_0 || ORIG_REF_NAME==jtag_axi_s00_mmu_0}]
 
 # XDC: bd/jtag_axi/jtag_axi_ooc.xdc

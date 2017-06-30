@@ -16,11 +16,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 28 17:58:32 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:05:29 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>65de7a2a</spirit:value>
+            <spirit:value>00f71030</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -28,7 +28,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>de3491ee</spirit:value>
+            <spirit:value>6ae81fdb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -47,11 +47,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 28 17:58:32 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:05:29 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>65de7a2a</spirit:value>
+            <spirit:value>00f71030</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -59,7 +59,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>de3491ee</spirit:value>
+            <spirit:value>6ae81fdb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -77,11 +77,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 28 17:58:32 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:05:29 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>65de7a2a</spirit:value>
+            <spirit:value>00f71030</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -89,7 +89,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>6ca5fbb2</spirit:value>
+            <spirit:value>95b79246</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -108,11 +108,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 28 17:58:32 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:05:29 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>65de7a2a</spirit:value>
+            <spirit:value>00f71030</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -120,7 +120,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>6ca5fbb2</spirit:value>
+            <spirit:value>95b79246</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -138,11 +138,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 28 17:59:44 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:06:43 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>65de7a2a</spirit:value>
+            <spirit:value>00f71030</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -150,7 +150,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>de3491ee</spirit:value>
+            <spirit:value>6ae81fdb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -271,13 +271,47 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>pin_a</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">59</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pin_b</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">59</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/a89f/jack_120.v</spirit:name>
+        <spirit:name>../../ipshared/def2/jack_120.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -292,7 +326,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/a89f/jack_120.v</spirit:name>
+        <spirit:name>../../ipshared/def2/jack_120.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -341,7 +375,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>jack_120_v1_0</spirit:description>
+  <spirit:description>jack_120_v1_1</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -350,16 +384,17 @@
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>jack_120_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:displayName>jack_120_v1_1</xilinx:displayName>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:jack_120:1.0_ARCHIVE_LOCATION">/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:jack_120:1.1_ARCHIVE_LOCATION">/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="699b9b78"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="4caffd88"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="50395dad"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="45e61de5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b82de022"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

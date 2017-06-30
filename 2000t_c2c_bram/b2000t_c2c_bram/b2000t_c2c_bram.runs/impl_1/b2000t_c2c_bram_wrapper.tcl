@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -51,7 +50,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  set_param tcl.collectionResultDisplayLimit 0
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/wt [current_project]
@@ -80,20 +78,12 @@ set rc [catch {
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/b2000t_c2c_bram_system_ila1_0.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/b2000t_c2c_bram_system_ila1_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xlconstant_0_0/b2000t_c2c_bram_xlconstant_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xlconstant_0_0/b2000t_c2c_bram_xlconstant_0_0.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1.dcp
@@ -104,8 +94,6 @@ set rc [catch {
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_1/b2000t_c2c_bram_axi_bram_ctrl_0_1.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_0/b2000t_c2c_bram_jack_0_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_0/b2000t_c2c_bram_jack_0_0.dcp]
-  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/b2000t_c2c_bram_system_ila2_0.dcp
-  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/b2000t_c2c_bram_system_ila2_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/b2000t_c2c_bram_dut_0_1.dcp
@@ -124,6 +112,10 @@ set rc [catch {
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/b2000t_c2c_bram_jack_120_0_0.dcp]
   add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/b2000t_c2c_bram_jack_120_0_1.dcp
   set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/b2000t_c2c_bram_jack_120_0_1.dcp]
+  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_1/b2000t_c2c_bram_system_ila_1.dcp
+  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_1/b2000t_c2c_bram_system_ila_1.dcp]
+  add_files -quiet /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_2/b2000t_c2c_bram_system_ila1_2.dcp
+  set_property netlist_only true [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_2/b2000t_c2c_bram_system_ila1_2.dcp]
   read_xdc -ref b2000t_c2c_bram_axi_chip2chip_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xdc
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xdc]
   read_xdc -ref b2000t_c2c_bram_aurora_64b66b_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xdc
@@ -138,27 +130,17 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xdc]
   read_xdc -ref b2000t_c2c_bram_vio_0_0 /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xdc
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xdc]
-  read_xdc -ref bd_6d24_ila_lib_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
   read_xdc -ref b2000t_c2c_bram_jtag_axi_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/constraints/jtag_axi.xdc
   set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/constraints/jtag_axi.xdc]
-  read_xdc -ref bd_2221_ila_lib_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-  read_xdc -ref b2000t_c2c_bram_aurora_64b66b_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.xdc]
-  read_xdc -ref b2000t_c2c_bram_axi_chip2chip_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.xdc]
-  read_xdc -ref bd_22d1_ila_lib_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+  read_xdc -ref bd_ade5_ila_lib_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+  read_xdc -ref bd_e3a0_ila_lib_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+  set_property processing_order EARLY [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
   read_xdc /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc
   read_xdc -ref b2000t_c2c_bram_axi_chip2chip_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc
   set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc]
   read_xdc -ref b2000t_c2c_bram_aurora_64b66b_0_0 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_clocks.xdc
   set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_clocks.xdc]
-  read_xdc -ref b2000t_c2c_bram_aurora_64b66b_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1_clocks.xdc
-  set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1_clocks.xdc]
-  read_xdc -ref b2000t_c2c_bram_axi_chip2chip_0_1 -cells inst /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc
-  set_property processing_order LATE [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc]
   link_design -top b2000t_c2c_bram_wrapper -part xc7v2000tflg1925-1
   write_hwdef -file b2000t_c2c_bram_wrapper.hwdef
   close_msg_db -file init_design.pb

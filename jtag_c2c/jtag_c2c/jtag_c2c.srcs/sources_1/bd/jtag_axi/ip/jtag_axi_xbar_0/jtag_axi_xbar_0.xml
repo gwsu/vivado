@@ -18379,7 +18379,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>95013e5f</spirit:value>
+            <spirit:value>0d5f38e6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -18397,7 +18397,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 23 23:18:10 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:45:34 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -18409,7 +18409,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>95013e5f</spirit:value>
+            <spirit:value>0d5f38e6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -18428,7 +18428,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 23 23:18:10 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:45:34 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -18440,7 +18440,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>95013e5f</spirit:value>
+            <spirit:value>0d5f38e6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -18486,7 +18486,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>e39efb1b</spirit:value>
+            <spirit:value>92f50b1c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -18505,7 +18505,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 23 23:18:10 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:45:34 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -18517,7 +18517,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>e39efb1b</spirit:value>
+            <spirit:value>92f50b1c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -18535,7 +18535,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 23 23:19:38 UTC 2017</spirit:value>
+            <spirit:value>Fri Jun 30 22:46:57 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -18547,7 +18547,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>95013e5f</spirit:value>
+            <spirit:value>0d5f38e6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -20664,11 +20664,11 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_BASE_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_BASE_ADDR" spirit:bitStringLength="192">0x000000007600000000000000760200000000000075000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_BASE_ADDR" spirit:bitStringLength="192">0xffffffffffffffff00000000760200000000000075000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_ADDR_WIDTH" spirit:bitStringLength="96">0x0000000d0000000d0000000d</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_ADDR_WIDTH" spirit:bitStringLength="96">0x00000000000000100000000d</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_AXI_BASE_ID</spirit:name>
@@ -29727,7 +29727,7 @@
     <spirit:parameter>
       <spirit:name>M02_A00_BASE_ADDR</spirit:name>
       <spirit:displayName>My M02_A00_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_A00_BASE_ADDR" spirit:order="725" spirit:bitStringLength="64">0x0000000076000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_A00_BASE_ADDR" spirit:order="725" spirit:bitStringLength="64">0xffffffffffffffff</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -32607,7 +32607,7 @@
     <spirit:parameter>
       <spirit:name>M01_A00_ADDR_WIDTH</spirit:name>
       <spirit:displayName>My M01_A00_ADDR_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_A00_ADDR_WIDTH" spirit:order="965" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">13</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_A00_ADDR_WIDTH" spirit:order="965" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">16</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -32799,7 +32799,7 @@
     <spirit:parameter>
       <spirit:name>M02_A00_ADDR_WIDTH</spirit:name>
       <spirit:displayName>My M02_A00_ADDR_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_A00_ADDR_WIDTH" spirit:order="981" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">13</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_A00_ADDR_WIDTH" spirit:order="981" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -35533,7 +35533,6 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.PHASE" xilinx:valueSource="ip_propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M02_AXI.ADDR_WIDTH" xilinx:valueSource="user_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M02_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M02_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M02_AXI.HAS_BRESP" xilinx:valueSource="constant"/>
@@ -35573,7 +35572,6 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M04_AXI.HAS_RRESP" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M04_AXI.HAS_WSTRB" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RSTIF.POLARITY" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="user_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
@@ -35637,10 +35635,6 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_A00_ADDR_WIDTH" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_A00_BASE_ADDR" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_READ_ISSUING" xilinx:valueSource="propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_S00_READ_CONNECTIVITY" xilinx:valueSource="propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_S00_WRITE_CONNECTIVITY" xilinx:valueSource="propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_S01_READ_CONNECTIVITY" xilinx:valueSource="propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_S01_WRITE_CONNECTIVITY" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M02_WRITE_ISSUING" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M03_A00_ADDR_WIDTH" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.M03_A00_BASE_ADDR" xilinx:valueSource="propagated"/>

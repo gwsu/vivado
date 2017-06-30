@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed Jun 28 17:20:15 2017
+| Date         : Fri Jun 30 18:50:25 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_io -file jtag_axi_wrapper_io_placed.rpt
 | Design       : jtag_axi_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           150 |
+|           146 |
 +---------------+
 
 
@@ -185,8 +185,8 @@ Table of Contents
 | AD30       |                       | High Range       | IO_L8P_T1_12            | User IO       |                   |      12 |            |      |                     |                      |           |            |           |          |      |                  |
 | AE1        |                       |                  | GND                     | GND           |                   |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |
 | AE2        |                       |                  | MGTAVTT                 | Gigabit Power |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
-| AE3        | GT_SERIAL_TX_1_txn[0] |                  | MGTXTXN2_110            | OUTPUT        |                   |         |            | SLOW |                     |                 NONE |           | FIXED      |           |          |      | NONE             |
-| AE4        | GT_SERIAL_TX_1_txp[0] |                  | MGTXTXP2_110            | OUTPUT        |                   |         |            | SLOW |                     |                 NONE |           | FIXED      |           |          |      | NONE             |
+| AE3        |                       |                  | MGTXTXN2_110            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
+| AE4        |                       |                  | MGTXTXP2_110            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
 | AE5        |                       |                  | GND                     | GND           |                   |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |
 | AE6        |                       |                  | MGTAVCC                 | Gigabit Power |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
 | AE7        |                       |                  | MGTXRXN3_109            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
@@ -217,8 +217,8 @@ Table of Contents
 | AF2        |                       |                  | MGTXTXP1_110            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
 | AF3        |                       |                  | GND                     | GND           |                   |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |
 | AF4        |                       |                  | MGTAVTT                 | Gigabit Power |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
-| AF5        | GT_SERIAL_RX_1_rxn[0] |                  | MGTXRXN2_110            | INPUT         |                   |         |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |
-| AF6        | GT_SERIAL_RX_1_rxp[0] |                  | MGTXRXP2_110            | INPUT         |                   |         |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |
+| AF5        |                       |                  | MGTXRXN2_110            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
+| AF6        |                       |                  | MGTXRXP2_110            | Gigabit       |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
 | AF7        |                       |                  | GND                     | GND           |                   |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |
 | AF8        |                       |                  | MGTAVCC                 | Gigabit Power |                   |         |            |      |                     |                      |           |            |           |          |      |                  |
 | AF9        | GT_DIFF_REFCLK1_clk_n |                  | MGTREFCLK1N_109         | INPUT         |                   |         |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |

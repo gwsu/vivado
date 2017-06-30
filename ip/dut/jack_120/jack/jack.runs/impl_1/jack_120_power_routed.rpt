@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Mon Jun 26 17:17:13 2017
+| Date             : Fri Jun 30 15:41:14 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file jack_120_power_routed.rpt -pb jack_120_power_summary_routed.pb -rpx jack_120_power_routed.rpx
 | Design           : jack_120
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 79.421 (Junction temp exceeded!) |
-| Dynamic (W)              | 73.806                           |
-| Device Static (W)        | 5.615                            |
-| Effective TJA (C/W)      | 0.8                              |
-| Max Ambient (C)          | 18.6                             |
-| Junction Temperature (C) | 91.4                             |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 37.301 |
+| Dynamic (W)              | 35.712 |
+| Device Static (W)        | 1.589  |
+| Effective TJA (C/W)      | 0.8    |
+| Max Ambient (C)          | 53.8   |
+| Junction Temperature (C) | 56.2   |
+| Confidence Level         | Low    |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
 
 
 1.1 On-Chip Components
@@ -49,12 +49,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.485 |      240 |       --- |             --- |
-|   LUT as Logic |     0.485 |      120 |   1221600 |           <0.01 |
-| Signals        |    17.369 |      600 |       --- |             --- |
-| I/O            |    55.953 |      600 |      1200 |           50.00 |
-| Static Power   |     5.615 |          |           |                 |
-| Total          |    79.421 |          |           |                 |
+| Slice Logic    |     0.002 |        2 |       --- |             --- |
+|   LUT as Logic |     0.002 |        2 |   1221600 |           <0.01 |
+| Signals        |     5.939 |      244 |       --- |             --- |
+| I/O            |    29.772 |      362 |      1200 |           30.17 |
+| Static Power   |     1.589 |          |           |                 |
+| Total          |    37.301 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -64,16 +64,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    24.023 |      19.305 |      4.718 |
-| Vccaux    |       1.800 |     4.752 |       4.374 |      0.377 |
+| Vccint    |       1.000 |     7.836 |       6.674 |      1.162 |
+| Vccaux    |       1.800 |     2.481 |       2.333 |      0.148 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |    25.905 |      25.904 |      0.001 |
+| Vcco18    |       1.800 |    13.800 |      13.799 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.072 |       0.000 |      0.072 |
+| Vccbram   |       1.000 |     0.015 |       0.000 |      0.015 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -132,10 +132,130 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------+-----------+
-| Name     | Power (W) |
-+----------+-----------+
-| jack_120 |    73.806 |
-+----------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| jack_120               |    35.712 |
+|   pin_a_IOBUF[0]_inst  |     0.127 |
+|   pin_a_IOBUF[10]_inst |     0.131 |
+|   pin_a_IOBUF[11]_inst |     0.131 |
+|   pin_a_IOBUF[12]_inst |     0.130 |
+|   pin_a_IOBUF[13]_inst |     0.130 |
+|   pin_a_IOBUF[14]_inst |     0.130 |
+|   pin_a_IOBUF[15]_inst |     0.130 |
+|   pin_a_IOBUF[16]_inst |     0.130 |
+|   pin_a_IOBUF[17]_inst |     0.131 |
+|   pin_a_IOBUF[18]_inst |     0.131 |
+|   pin_a_IOBUF[19]_inst |     0.131 |
+|   pin_a_IOBUF[1]_inst  |     0.127 |
+|   pin_a_IOBUF[20]_inst |     0.131 |
+|   pin_a_IOBUF[21]_inst |     0.131 |
+|   pin_a_IOBUF[22]_inst |     0.131 |
+|   pin_a_IOBUF[23]_inst |     0.131 |
+|   pin_a_IOBUF[24]_inst |     0.131 |
+|   pin_a_IOBUF[25]_inst |     0.131 |
+|   pin_a_IOBUF[26]_inst |     0.130 |
+|   pin_a_IOBUF[27]_inst |     0.130 |
+|   pin_a_IOBUF[28]_inst |     0.131 |
+|   pin_a_IOBUF[29]_inst |     0.131 |
+|   pin_a_IOBUF[2]_inst  |     0.127 |
+|   pin_a_IOBUF[30]_inst |     0.131 |
+|   pin_a_IOBUF[31]_inst |     0.131 |
+|   pin_a_IOBUF[32]_inst |     0.131 |
+|   pin_a_IOBUF[33]_inst |     0.131 |
+|   pin_a_IOBUF[34]_inst |     0.131 |
+|   pin_a_IOBUF[35]_inst |     0.131 |
+|   pin_a_IOBUF[36]_inst |     0.131 |
+|   pin_a_IOBUF[37]_inst |     0.131 |
+|   pin_a_IOBUF[38]_inst |     0.131 |
+|   pin_a_IOBUF[39]_inst |     0.131 |
+|   pin_a_IOBUF[3]_inst  |     0.127 |
+|   pin_a_IOBUF[40]_inst |     0.131 |
+|   pin_a_IOBUF[41]_inst |     0.131 |
+|   pin_a_IOBUF[42]_inst |     0.131 |
+|   pin_a_IOBUF[43]_inst |     0.131 |
+|   pin_a_IOBUF[44]_inst |     0.131 |
+|   pin_a_IOBUF[45]_inst |     0.131 |
+|   pin_a_IOBUF[46]_inst |     0.130 |
+|   pin_a_IOBUF[47]_inst |     0.130 |
+|   pin_a_IOBUF[48]_inst |     0.130 |
+|   pin_a_IOBUF[49]_inst |     0.130 |
+|   pin_a_IOBUF[4]_inst  |     0.127 |
+|   pin_a_IOBUF[50]_inst |     0.131 |
+|   pin_a_IOBUF[51]_inst |     0.130 |
+|   pin_a_IOBUF[52]_inst |     0.131 |
+|   pin_a_IOBUF[53]_inst |     0.131 |
+|   pin_a_IOBUF[54]_inst |     0.131 |
+|   pin_a_IOBUF[55]_inst |     0.131 |
+|   pin_a_IOBUF[56]_inst |     0.132 |
+|   pin_a_IOBUF[57]_inst |     0.131 |
+|   pin_a_IOBUF[58]_inst |     0.132 |
+|   pin_a_IOBUF[59]_inst |     0.131 |
+|   pin_a_IOBUF[5]_inst  |     0.127 |
+|   pin_a_IOBUF[6]_inst  |     0.127 |
+|   pin_a_IOBUF[7]_inst  |     0.127 |
+|   pin_a_IOBUF[8]_inst  |     0.126 |
+|   pin_a_IOBUF[9]_inst  |     0.126 |
+|   pin_b_IOBUF[0]_inst  |     0.138 |
+|   pin_b_IOBUF[10]_inst |     0.141 |
+|   pin_b_IOBUF[11]_inst |     0.141 |
+|   pin_b_IOBUF[12]_inst |     0.141 |
+|   pin_b_IOBUF[13]_inst |     0.141 |
+|   pin_b_IOBUF[14]_inst |     0.141 |
+|   pin_b_IOBUF[15]_inst |     0.141 |
+|   pin_b_IOBUF[16]_inst |     0.141 |
+|   pin_b_IOBUF[17]_inst |     0.141 |
+|   pin_b_IOBUF[18]_inst |     0.141 |
+|   pin_b_IOBUF[19]_inst |     0.141 |
+|   pin_b_IOBUF[1]_inst  |     0.138 |
+|   pin_b_IOBUF[20]_inst |     0.141 |
+|   pin_b_IOBUF[21]_inst |     0.141 |
+|   pin_b_IOBUF[22]_inst |     0.141 |
+|   pin_b_IOBUF[23]_inst |     0.141 |
+|   pin_b_IOBUF[24]_inst |     0.141 |
+|   pin_b_IOBUF[25]_inst |     0.141 |
+|   pin_b_IOBUF[26]_inst |     0.141 |
+|   pin_b_IOBUF[27]_inst |     0.141 |
+|   pin_b_IOBUF[28]_inst |     0.141 |
+|   pin_b_IOBUF[29]_inst |     0.141 |
+|   pin_b_IOBUF[2]_inst  |     0.138 |
+|   pin_b_IOBUF[30]_inst |     0.141 |
+|   pin_b_IOBUF[31]_inst |     0.141 |
+|   pin_b_IOBUF[32]_inst |     0.141 |
+|   pin_b_IOBUF[33]_inst |     0.141 |
+|   pin_b_IOBUF[34]_inst |     0.141 |
+|   pin_b_IOBUF[35]_inst |     0.141 |
+|   pin_b_IOBUF[36]_inst |     0.141 |
+|   pin_b_IOBUF[37]_inst |     0.141 |
+|   pin_b_IOBUF[38]_inst |     0.141 |
+|   pin_b_IOBUF[39]_inst |     0.141 |
+|   pin_b_IOBUF[3]_inst  |     0.138 |
+|   pin_b_IOBUF[40]_inst |     0.141 |
+|   pin_b_IOBUF[41]_inst |     0.141 |
+|   pin_b_IOBUF[42]_inst |     0.141 |
+|   pin_b_IOBUF[43]_inst |     0.141 |
+|   pin_b_IOBUF[44]_inst |     0.141 |
+|   pin_b_IOBUF[45]_inst |     0.141 |
+|   pin_b_IOBUF[46]_inst |     0.141 |
+|   pin_b_IOBUF[47]_inst |     0.141 |
+|   pin_b_IOBUF[48]_inst |     0.141 |
+|   pin_b_IOBUF[49]_inst |     0.141 |
+|   pin_b_IOBUF[4]_inst  |     0.138 |
+|   pin_b_IOBUF[50]_inst |     0.139 |
+|   pin_b_IOBUF[51]_inst |     0.139 |
+|   pin_b_IOBUF[52]_inst |     0.139 |
+|   pin_b_IOBUF[53]_inst |     0.139 |
+|   pin_b_IOBUF[54]_inst |     0.139 |
+|   pin_b_IOBUF[55]_inst |     0.139 |
+|   pin_b_IOBUF[56]_inst |     0.139 |
+|   pin_b_IOBUF[57]_inst |     0.139 |
+|   pin_b_IOBUF[58]_inst |     0.139 |
+|   pin_b_IOBUF[59]_inst |     0.139 |
+|   pin_b_IOBUF[5]_inst  |     0.138 |
+|   pin_b_IOBUF[6]_inst  |     0.138 |
+|   pin_b_IOBUF[7]_inst  |     0.138 |
+|   pin_b_IOBUF[8]_inst  |     0.138 |
+|   pin_b_IOBUF[9]_inst  |     0.138 |
++------------------------+-----------+
 
 

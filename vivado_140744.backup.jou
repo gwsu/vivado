@@ -1,0 +1,450 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jun 29 17:53:19 2017
+# Process ID: 140744
+# Current directory: /home/wesleyguo/github/vivado/vivado
+# Command line: vivado
+# Log file: /home/wesleyguo/github/vivado/vivado/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.xpr
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+delete_bd_objs [get_bd_nets aurora_64b66b_1_channel_up] [get_bd_nets axi_chip2chip_1_aurora_pma_init_out] [get_bd_nets axi_chip2chip_1_aurora_reset_pb] [get_bd_nets axi_chip2chip_1_axi_c2c_config_error_out] [get_bd_intf_nets axi_chip2chip_1_AXIS_TX] [get_bd_nets axi_chip2chip_1_axi_c2c_link_status_out] [get_bd_nets axi_chip2chip_1_axi_c2c_multi_bit_error_out] [get_bd_intf_nets axi_chip2chip_1_m_axi] [get_bd_intf_nets aurora_64b66b_1_USER_DATA_M_AXIS_RX] [get_bd_cells axi_chip2chip_1]
+delete_bd_objs [get_bd_nets aurora_64b66b_0_gt_refclk1_out] [get_bd_nets aurora_64b66b_0_sync_clk_out] [get_bd_nets aurora_64b66b_0_gt_qpllclk_quad2_out] [get_bd_nets aurora_64b66b_0_gt_qpllrefclk_quad2_out] [get_bd_intf_nets aurora_64b66b_1_GT_SERIAL_TX] [get_bd_intf_nets GT_SERIAL_RX_1_1] [get_bd_cells aurora_64b66b_1]
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_RX_1]
+set_property location {-604 267} [get_bd_intf_ports CLK_IN1_D]
+set_property location {4 792 318} [get_bd_cells clk_wiz]
+set_property location {2 214 432} [get_bd_cells jtag_axi_0]
+set_property location {2 190 -38} [get_bd_cells axi_bram_ctrl_1]
+set_property location {2.5 647 5} [get_bd_cells axi_bram_ctrl_1_bram]
+set_property location {3 652 -30} [get_bd_cells axi_bram_ctrl_1_bram]
+delete_bd_objs [get_bd_intf_ports GT_SERIAL_TX_1]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+set_property location {1 131 -204} [get_bd_cells axi_bram_ctrl_0]
+set_property location {3 658 -215} [get_bd_cells blk_mem_gen_0]
+set_property location {5 1270 114} [get_bd_cells vio_0]
+set_property location {4 954 125} [get_bd_cells clk_wiz]
+set_property location {1 183 219} [get_bd_cells jtag_axi_0]
+set_property location {4 891 -172} [get_bd_cells xlconstant_0]
+validate_bd_design -force
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {6}] [get_bd_cells vio_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {4}] [get_bd_cells vio_0]
+endgroup
+save_bd_design
+validate_bd_design
+reset_run b2000t_c2c_bram_vio_0_0_synth_1
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {dut_120_0_b_oe dut_120_0_b_out dut_120_0_a_out dut_120_0_a_oe }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {dut_120_0_b_oe dut_120_0_a_oe jack_120_1_a_out dut_120_0_b_out dut_120_0_a_out jack_120_1_b_out }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {Net1 Net2 }]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets dut_120_0_a_oe] {PROBE_TYPE "Data and Trigger" CLK_SRC "/axi_bram_ctrl_5/bram_clk_a" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dut_120_0_b_oe] {PROBE_TYPE "Data and Trigger" CLK_SRC "/axi_bram_ctrl_5/bram_clk_a" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dut_120_0_a_out] {PROBE_TYPE "Data and Trigger" CLK_SRC "/axi_bram_ctrl_5/bram_clk_a" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dut_120_0_b_out] {PROBE_TYPE "Data and Trigger" CLK_SRC "/axi_bram_ctrl_5/bram_clk_a" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets jack_120_1_b_out] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets jack_120_1_a_out] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets Net1] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets Net2] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+connect_bd_net [get_bd_pins system_ila6/clk] [get_bd_pins system_ila5/clk]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2}] [get_bd_cells system_ila1]
+endgroup
+undo
+undo
+connect_bd_net [get_bd_pins system_ila1/probe3] [get_bd_pins dut_120_0/a_out]
+connect_bd_net [get_bd_pins system_ila1/probe2] [get_bd_pins dut_120_0/b_out]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {6}] [get_bd_cells system_ila1]
+endgroup
+connect_bd_net [get_bd_pins system_ila1/probe5] [get_bd_pins jack_120_1/a_out]
+connect_bd_net [get_bd_pins system_ila1/probe4] [get_bd_pins jack_120_1/b_out]
+connect_bd_net [get_bd_pins system_ila6/clk] [get_bd_pins system_ila1/clk]
+connect_bd_net [get_bd_pins system_ila5/clk] [get_bd_pins axi_bram_ctrl_5/bram_clk_a]
+delete_bd_objs [get_bd_cells system_ila3]
+delete_bd_objs [get_bd_cells system_ila4]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila5/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila6/inst/ila_lib"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+set_property OUTPUT_VALUE FFFFFFFFFFFFFFF [get_hw_probes b2000t_c2c_bram_i/vio_0_probe_out4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {b2000t_c2c_bram_i/vio_0_probe_out4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/vio_0"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe3_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe3_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {b2000t_c2c_bram_i/system_ila2/inst/probe0_1} {b2000t_c2c_bram_i/system_ila2/inst/probe10_1} {b2000t_c2c_bram_i/system_ila2/inst/probe11_1} {b2000t_c2c_bram_i/system_ila2/inst/probe12_1} {b2000t_c2c_bram_i/system_ila2/inst/probe1_1} {b2000t_c2c_bram_i/system_ila2/inst/probe2_1} {b2000t_c2c_bram_i/system_ila2/inst/probe3_1} {b2000t_c2c_bram_i/system_ila2/inst/probe4_1} {b2000t_c2c_bram_i/system_ila2/inst/probe5_1} {b2000t_c2c_bram_i/system_ila2/inst/probe6_1} {b2000t_c2c_bram_i/system_ila2/inst/probe7_1} {b2000t_c2c_bram_i/system_ila2/inst/probe8_1} {b2000t_c2c_bram_i/system_ila2/inst/probe9_1} }
+set_property NAME.CUSTOM dut_0_data_out [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe0_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_rst_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe10_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_we_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe11_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_addr_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe12_1] 
+set_property NAME.CUSTOM dut_0_a_out [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe1_1] 
+set_property NAME.CUSTOM dut_0_b_out [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe2_1] 
+set_property NAME.CUSTOM dut_0_a_oe [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe3_1] 
+set_property NAME.CUSTOM dut_0_b_oe [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe4_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_clk_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1] 
+set_property NAME.CUSTOM jack_0_a_out [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe6_1] 
+set_property NAME.CUSTOM jack_0_b_out [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe7_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_wrdata_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe8_1] 
+set_property NAME.CUSTOM axi_bram_ctrl_2_bram_en_a [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe9_1] 
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe3_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila5/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila6/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_4.wcfg} -radix hex { {b2000t_c2c_bram_i/system_ila5/inst/probe0} }
+set_property NAME.CUSTOM External_Ports_pin_a [get_hw_probes b2000t_c2c_bram_i/system_ila5/inst/probe0] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila5/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila5/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila5/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe3_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe5_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b2000t_c2c_bram_i/system_ila2/inst/probe9_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {8}] [get_bd_cells system_ila1]
+endgroup
+delete_bd_objs [get_bd_cells system_ila6]
+delete_bd_objs [get_bd_cells system_ila5]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets Net1] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets Net2] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+connect_bd_net [get_bd_pins system_ila3/clk] [get_bd_pins system_ila1/clk]
+connect_bd_net [get_bd_pins system_ila4/clk] [get_bd_pins axi_bram_ctrl_5/bram_clk_a]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {6}] [get_bd_cells system_ila1]
+endgroup
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_1] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_system_ila3_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_system_ila4_0] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_jack_120_0_0_synth_1 b2000t_c2c_bram_jack_120_0_1_synth_1 b2000t_c2c_bram_system_ila3_0_synth_1 b2000t_c2c_bram_system_ila4_0_synth_1}
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_1] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_jack_120_0_0_synth_1 b2000t_c2c_bram_jack_120_0_1_synth_1}
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+report_ip_status -name ip_status 
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila2/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila3/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila4/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {b2000t_c2c_bram_i/system_ila1/inst/probe0_1} {b2000t_c2c_bram_i/system_ila1/inst/probe1_1} {b2000t_c2c_bram_i/system_ila1/inst/probe2_1} {b2000t_c2c_bram_i/system_ila1/inst/probe3_1} {b2000t_c2c_bram_i/system_ila1/inst/probe4_1} {b2000t_c2c_bram_i/system_ila1/inst/probe5_1} }
+set_property NAME.CUSTOM dut_120_0_a_oe [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe0_1] 
+set_property NAME.CUSTOM dut_120_0_b_oe [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe1_1] 
+set_property NAME.CUSTOM dut_120_0_b_out [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe2_1] 
+set_property NAME.CUSTOM dut_120_0_a_out [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe3_1] 
+set_property NAME.CUSTOM jack_120_1_b_out [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe4_1] 
+set_property NAME.CUSTOM jack_120_1_a_out [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe5_1] 
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b2000t_c2c_bram_i/system_ila1/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5]
+save_wave_config {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+add_wave -into {hw_ila_data_4.wcfg} -radix hex { {b2000t_c2c_bram_i/system_ila3/inst/probe0} }
+set_property NAME.CUSTOM External_Ports_pin_a [get_hw_probes b2000t_c2c_bram_i/system_ila3/inst/probe0] 
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b2000t_c2c_bram_i/system_ila3/inst/probe0 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila3/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila3/inst/ila_lib"}]
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+delete_bd_objs [get_bd_cells system_ila4]
+delete_bd_objs [get_bd_cells system_ila3]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { Net1 } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { Net2 } ]
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {6}] [get_bd_cells axi_mem_intercon]
+endgroup
+save_bd_design
+validate_bd_design
+update_ip_catalog
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_dut_120_0_0 b2000t_c2c_bram_dut_120_1_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_xbar_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_1_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_0_1] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_2_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_3_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_axi_bram_ctrl_2_1] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_dut_120_1_0] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_axi_bram_ctrl_1_0_synth_1 b2000t_c2c_bram_axi_bram_ctrl_0_1_synth_1 b2000t_c2c_bram_xbar_0_synth_1 b2000t_c2c_bram_axi_bram_ctrl_0_0_synth_1 b2000t_c2c_bram_axi_bram_ctrl_2_0_synth_1 b2000t_c2c_bram_axi_bram_ctrl_3_0_synth_1 b2000t_c2c_bram_axi_bram_ctrl_2_1_synth_1 b2000t_c2c_bram_dut_120_0_0_synth_1 b2000t_c2c_bram_dut_120_1_0_synth_1}
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_cells system_ila2]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { dut_0_data_out } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { dut_0_a_oe } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { dut_0_b_oe } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { dut_0_a_out } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { dut_0_b_out } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { jack_0_a_out } ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { jack_0_b_out } ]
+endgroup
+save_bd_design
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets Net] {PROBE_TYPE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets axi_bram_ctrl_2_bram_we_a] {PROBE_TYPE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets axi_bram_ctrl_2_bram_en_a] {PROBE_TYPE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets axi_bram_ctrl_2_bram_wrdata_a] {PROBE_TYPE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets axi_bram_ctrl_2_bram_clk_a] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets axi_bram_ctrl_2_bram_addr_a] {PROBE_TYPE "Data and Trigger" CLK_SRC "/clk_wiz/clk_out1" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+delete_bd_objs [get_bd_cells system_ila2]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_bram_ctrl_2_bram_clk_a } ]
+endgroup
+set_property location {6 2145 -1142} [get_bd_cells system_ila]
+set_property location {6.5 2356 -1125} [get_bd_cells system_ila]
+set_property location {6 2121 -729} [get_bd_cells system_ila]
+set_property location {4 1313 -1198} [get_bd_cells system_ila]
+set_property location {6 2125 -677} [get_bd_cells rst_clk_wiz_100M]
+set_property location {6.5 2583 -893} [get_bd_cells axi_mem_intercon]
+undo
+undo
+set_property location {7 2708 -1064} [get_bd_cells axi_mem_intercon]
+set_property location {8 3127 -105} [get_bd_cells axi_mem_intercon]
+set_property location {6 2024 -327} [get_bd_cells rst_clk_wiz_100M]
+set_property location {6.5 2685 -58} [get_bd_cells rst_clk_wiz_100M]
+set_property location {6 2022 -479} [get_bd_cells axi_chip2chip_0]
+set_property location {6 2078 -42} [get_bd_cells rst_clk_wiz_100M]
+set_property location {6.5 2558 -57} [get_bd_cells axi_mem_intercon]
+undo
+undo
+set_property location {-439 111} [get_bd_intf_ports CLK_IN1_D]
+save_bd_design
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+connect_hw_server -url 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="b2000t_c2c_bram_xbar_0_synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498600074">
+<GenRun Id="b2000t_c2c_bram_xbar_0_synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498862921">
   <File Type="VDS-TIMING-PB" Name="b2000t_c2c_bram_xbar_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="b2000t_c2c_bram_xbar_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="b2000t_c2c_bram_xbar_0.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="b2000t_c2c_bram_xbar_0_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="b2000t_c2c_bram_xbar_0_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="b2000t_c2c_bram_xbar_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="b2000t_c2c_bram_xbar_0.vds"/>
   <File Type="PA-TCL" Name="b2000t_c2c_bram_xbar_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="b2000t_c2c_bram_xbar_0_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="b2000t_c2c_bram_xbar_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="b2000t_c2c_bram_xbar_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="b2000t_c2c_bram_xbar_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/b2000t_c2c_bram_xbar_0">
     <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.xci">
       <FileInfo>

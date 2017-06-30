@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Wed Jun 28 13:58:38 2017
-# Process ID: 132482
+# Start of session at: Fri Jun 30 18:05:39 2017
+# Process ID: 121674
 # Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1
 # Command line: vivado -log b2000t_c2c_bram_jack_120_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source b2000t_c2c_bram_jack_120_0_0.tcl
 # Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/b2000t_c2c_bram_jack_120_0_0.vds
@@ -15,18 +15,76 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 132517 
+INFO: Helper process launched with PID 121697 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.188 ; gain = 217.996 ; free physical = 71785 ; free virtual = 180152
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1218.184 ; gain = 202.996 ; free physical = 86408 ; free virtual = 196571
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_jack_120_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/synth/b2000t_c2c_bram_jack_120_0_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'jack_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v:1]
-INFO: [Synth 8-256] done synthesizing module 'jack_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/a89f/jack_120.v:1]
+INFO: [Synth 8-638] synthesizing module 'jack_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/def2/jack_120.v:1]
+INFO: [Synth 8-256] done synthesizing module 'jack_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/def2/jack_120.v:1]
 INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_jack_120_0_0' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/synth/b2000t_c2c_bram_jack_120_0_0.v:56]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port a_oe
-WARNING: [Synth 8-3331] design jack_120 has unconnected port b_oe
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[58]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[57]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[56]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[55]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[54]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[53]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[52]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[51]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[50]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[49]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[48]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[47]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[46]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[45]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[44]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[43]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[42]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[41]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[40]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[39]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[38]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[37]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[36]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[35]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[34]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[33]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[32]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[31]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[30]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[29]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[28]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[27]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[26]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[25]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[24]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[23]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[22]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[21]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[20]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[19]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[18]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[17]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[16]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[15]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[14]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[13]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[12]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[11]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[10]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[9]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[8]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[7]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[6]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[5]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[4]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[3]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[2]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[1]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1274.664 ; gain = 259.473 ; free physical = 71619 ; free virtual = 179985
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1258.660 ; gain = 243.473 ; free physical = 86239 ; free virtual = 196402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -36,7 +94,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1274.664 ; gain = 259.473 ; free physical = 71616 ; free virtual = 179983
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1258.660 ; gain = 243.473 ; free physical = 86232 ; free virtual = 196396
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -48,25 +106,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1980.473 ; gain = 0.000 ; free physical = 69166 ; free virtual = 177535
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1965.469 ; gain = 0.000 ; free physical = 83876 ; free virtual = 194040
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83631 ; free virtual = 193795
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83631 ; free virtual = 193795
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83631 ; free virtual = 193795
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177453
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83631 ; free virtual = 193795
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -100,10 +158,49 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port a_oe
-WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port b_oe
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[59]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[58]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[57]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[56]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[55]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[54]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[53]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[52]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[51]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[50]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[49]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[48]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[47]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[46]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[45]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[44]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[43]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[42]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[41]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[40]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[39]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[38]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[37]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[36]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[35]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[34]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[33]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[32]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[31]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[30]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[29]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[28]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[27]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[26]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[25]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[24]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[23]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[22]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[21]
+WARNING: [Synth 8-3331] design b2000t_c2c_bram_jack_120_0_0 has unconnected port mode[20]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69084 ; free virtual = 177452
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83631 ; free virtual = 193795
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -118,10 +215,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69042 ; free virtual = 177410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83615 ; free virtual = 193780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69042 ; free virtual = 177410
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83615 ; free virtual = 193780
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -133,7 +230,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 69033 ; free virtual = 177402
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83606 ; free virtual = 193771
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -156,8 +253,109 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_1' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_2' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_3' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_4' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_5' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_6' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_7' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_8' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_9' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_10' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_11' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_12' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_13' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_14' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_15' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_16' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_17' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_18' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_19' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_20' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_21' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_22' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_23' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_24' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_25' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_26' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_27' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_28' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_29' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_30' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_31' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_32' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_33' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_34' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_35' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_36' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_37' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_38' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_39' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_40' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_41' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_42' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_43' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_44' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_45' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_46' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_47' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_48' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_49' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_50' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_51' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_52' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_53' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_54' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_55' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_56' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_57' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_58' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_59' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_60' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_61' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_62' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_63' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_64' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_65' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_66' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_67' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_68' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_69' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_70' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_71' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_72' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_73' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_74' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_75' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_76' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_77' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_78' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_79' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_80' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_81' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_82' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_83' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_84' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_85' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_86' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_87' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_88' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_89' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_90' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_91' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_92' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_93' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_94' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_95' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_96' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_97' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_98' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_99' to logic
+INFO: [Common 17-14] Message 'Synth 8-5799' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177367
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83590 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -170,7 +368,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83590 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -182,25 +380,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83590 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83590 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83589 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83589 ; free virtual = 193754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,18 +418,17 @@ Report Cell Usage:
 +------+-----+------+
 
 Report Instance Areas: 
-+------+---------+---------+------+
-|      |Instance |Module   |Cells |
-+------+---------+---------+------+
-|1     |top      |         |   120|
-|2     |  inst   |jack_120 |   120|
-+------+---------+---------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   120|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68998 ; free virtual = 177366
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83589 ; free virtual = 193754
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1980.473 ; gain = 117.473 ; free physical = 68997 ; free virtual = 177365
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1980.473 ; gain = 965.281 ; free physical = 68997 ; free virtual = 177365
+Synthesis finished with 0 errors, 120 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1965.469 ; gain = 112.473 ; free physical = 83589 ; free virtual = 193754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1965.469 ; gain = 950.281 ; free physical = 83589 ; free virtual = 193754
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -239,10 +436,44 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-13 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+15 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2047.312 ; gain = 930.617 ; free physical = 68903 ; free virtual = 177272
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1965.469 ; gain = 857.777 ; free physical = 83497 ; free virtual = 193662
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/b2000t_c2c_bram_jack_120_0_0.dcp' has been generated.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[0] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[0]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[1] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[1]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[2] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[2]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[3] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[3]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_jack_120_0_0_synth_1/b2000t_c2c_bram_jack_120_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2077.328 ; gain = 0.000 ; free physical = 68867 ; free virtual = 177236
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 13:59:43 2017...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1974.445 ; gain = 0.000 ; free physical = 83476 ; free virtual = 193641
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[0] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[0]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[1] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[1]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[2] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[2]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+ERROR: [Designutils 20-1595] In entity b2000t_c2c_bram_jack_120_0_0, connectivity of net pin_a[3] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: 
+   inout pin_a[3]
+
+Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.
+CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: ERROR: [Vivado 12-3193] Failed to represent netlist as VHDL.  See preceding messages.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 18:06:43 2017...

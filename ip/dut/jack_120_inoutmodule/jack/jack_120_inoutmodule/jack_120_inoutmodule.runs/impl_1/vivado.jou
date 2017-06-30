@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jun 29 09:46:10 2017
+# Process ID: 56785
+# Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120_inoutmodule/jack/jack_120_inoutmodule/jack_120_inoutmodule.runs/impl_1
+# Command line: vivado -log jack_120_inoutmodule.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source jack_120_inoutmodule.tcl -notrace
+# Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120_inoutmodule/jack/jack_120_inoutmodule/jack_120_inoutmodule.runs/impl_1/jack_120_inoutmodule.vdi
+# Journal file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120_inoutmodule/jack/jack_120_inoutmodule/jack_120_inoutmodule.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source jack_120_inoutmodule.tcl -notrace

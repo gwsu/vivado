@@ -159,9 +159,7 @@ proc create_root_design { parentCell } {
 CONFIG.FREQ_HZ {125000000} \
  ] $GT_DIFF_REFCLK1
   set GT_SERIAL_RX [ create_bd_intf_port -mode Slave -vlnv xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0 GT_SERIAL_RX ]
-  set GT_SERIAL_RX_1 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0 GT_SERIAL_RX_1 ]
   set GT_SERIAL_TX [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0 GT_SERIAL_TX ]
-  set GT_SERIAL_TX_1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0 GT_SERIAL_TX_1 ]
   set INIT_DIFF_CLK [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 INIT_DIFF_CLK ]
 
   # Create ports
@@ -170,6 +168,10 @@ CONFIG.FREQ_HZ {125000000} \
   set axi_c2c_multi_bit_error_out [ create_bd_port -dir O axi_c2c_multi_bit_error_out ]
   set ext_reset_in [ create_bd_port -dir I -type rst ext_reset_in ]
   set ext_reset_out [ create_bd_port -dir O ext_reset_out ]
+  set pin_a [ create_bd_port -dir IO -from 59 -to 0 pin_a ]
+  set pin_a_1 [ create_bd_port -dir IO -from 59 -to 0 pin_a_1 ]
+  set pin_b [ create_bd_port -dir IO -from 59 -to 0 pin_b ]
+  set pin_b_1 [ create_bd_port -dir IO -from 59 -to 0 pin_b_1 ]
   set pma_init_out [ create_bd_port -dir O -from 0 -to 0 pma_init_out ]
 
   # Create instance: aurora_64b66b_0, and set properties
@@ -184,19 +186,6 @@ CONFIG.SupportLevel {1} \
 CONFIG.drp_mode {Disabled} \
 CONFIG.interface_mode {Streaming} \
  ] $aurora_64b66b_0
-
-  # Create instance: aurora_64b66b_1, and set properties
-  set aurora_64b66b_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:aurora_64b66b:11.1 aurora_64b66b_1 ]
-  set_property -dict [ list \
-CONFIG.C_INIT_CLK {100.0} \
-CONFIG.C_LINE_RATE {6.25} \
-CONFIG.C_REFCLK_FREQUENCY {125.000} \
-CONFIG.C_USE_CHIPSCOPE {true} \
-CONFIG.DRP_FREQ {150.0} \
-CONFIG.SupportLevel {0} \
-CONFIG.drp_mode {Disabled} \
-CONFIG.interface_mode {Streaming} \
- ] $aurora_64b66b_1
 
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0 ]
@@ -256,27 +245,11 @@ CONFIG.C_USE_DIFF_CLK {false} \
 CONFIG.C_USE_DIFF_IO {false} \
  ] $axi_chip2chip_0
 
-  # Create instance: axi_chip2chip_1, and set properties
-  set axi_chip2chip_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_chip2chip:4.2 axi_chip2chip_1 ]
-  set_property -dict [ list \
-CONFIG.C_AURORA_WIDTH {1} \
-CONFIG.C_AXI_ID_WIDTH {1} \
-CONFIG.C_AXI_WUSER_WIDTH {0} \
-CONFIG.C_COMMON_CLK {0} \
-CONFIG.C_DISABLE_CLK_SHIFT {false} \
-CONFIG.C_DISABLE_DESKEW {false} \
-CONFIG.C_INTERFACE_MODE {0} \
-CONFIG.C_INTERFACE_TYPE {2} \
-CONFIG.C_MASTER_FPGA {0} \
-CONFIG.C_USE_DIFF_CLK {false} \
-CONFIG.C_USE_DIFF_IO {false} \
- ] $axi_chip2chip_1
-
   # Create instance: axi_mem_intercon, and set properties
   set axi_mem_intercon [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_mem_intercon ]
   set_property -dict [ list \
 CONFIG.NUM_MI {6} \
-CONFIG.NUM_SI {3} \
+CONFIG.NUM_SI {2} \
  ] $axi_mem_intercon
 
   # Create instance: blk_mem_gen_0, and set properties
@@ -326,7 +299,7 @@ CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
   set dut_1 [ create_bd_cell -type ip -vlnv user.org:user:dut:1.0 dut_1 ]
 
   # Create instance: dut_120_0, and set properties
-  set dut_120_0 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.0 dut_120_0 ]
+  set dut_120_0 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.1 dut_120_0 ]
   set_property -dict [ list \
 CONFIG.ENDL {"0111"} \
  ] $dut_120_0
@@ -337,7 +310,7 @@ CONFIG.ENDL.VALUE_SRC {DEFAULT} \
  ] $dut_120_0
 
   # Create instance: dut_120_1, and set properties
-  set dut_120_1 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.0 dut_120_1 ]
+  set dut_120_1 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.1 dut_120_1 ]
   set_property -dict [ list \
 CONFIG.ENDL {"0111"} \
  ] $dut_120_1
@@ -354,10 +327,10 @@ CONFIG.ENDL.VALUE_SRC {DEFAULT} \
   set jack_1 [ create_bd_cell -type ip -vlnv user.org:user:jack:1.2 jack_1 ]
 
   # Create instance: jack_120_0, and set properties
-  set jack_120_0 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.0 jack_120_0 ]
+  set jack_120_0 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.1 jack_120_0 ]
 
   # Create instance: jack_120_1, and set properties
-  set jack_120_1 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.0 jack_120_1 ]
+  set jack_120_1 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.1 jack_120_1 ]
 
   # Create instance: jtag_axi_0, and set properties
   set jtag_axi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0 ]
@@ -368,63 +341,40 @@ CONFIG.ENDL.VALUE_SRC {DEFAULT} \
   # Create instance: system_ila, and set properties
   set system_ila [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila ]
   set_property -dict [ list \
-CONFIG.C_BRAM_CNT {5.5} \
-CONFIG.C_MON_TYPE {MIX} \
-CONFIG.C_NUM_MONITOR_SLOTS {1} \
-CONFIG.C_NUM_OF_PROBES {2} \
+CONFIG.C_MON_TYPE {NATIVE} \
+CONFIG.C_NUM_OF_PROBES {4} \
 CONFIG.C_PROBE0_TYPE {0} \
 CONFIG.C_PROBE1_TYPE {0} \
 CONFIG.C_PROBE2_TYPE {0} \
 CONFIG.C_PROBE3_TYPE {0} \
-CONFIG.C_PROBE4_TYPE {0} \
-CONFIG.C_PROBE5_TYPE {0} \
-CONFIG.C_PROBE6_TYPE {0} \
-CONFIG.C_SLOT_0_APC_EN {0} \
-CONFIG.C_SLOT_0_AXI_AR_SEL_DATA {1} \
-CONFIG.C_SLOT_0_AXI_AR_SEL_TRIG {1} \
-CONFIG.C_SLOT_0_AXI_AW_SEL_DATA {1} \
-CONFIG.C_SLOT_0_AXI_AW_SEL_TRIG {1} \
-CONFIG.C_SLOT_0_AXI_B_SEL_DATA {1} \
-CONFIG.C_SLOT_0_AXI_B_SEL_TRIG {1} \
-CONFIG.C_SLOT_0_AXI_ID_WIDTH {1} \
-CONFIG.C_SLOT_0_AXI_R_SEL_DATA {1} \
-CONFIG.C_SLOT_0_AXI_R_SEL_TRIG {1} \
-CONFIG.C_SLOT_0_AXI_W_SEL_DATA {1} \
-CONFIG.C_SLOT_0_AXI_W_SEL_TRIG {1} \
-CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:aximm_rtl:1.0} \
  ] $system_ila
 
   # Create instance: system_ila1, and set properties
   set system_ila1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila1 ]
   set_property -dict [ list \
-CONFIG.C_MON_TYPE {INTERFACE} \
-CONFIG.C_NUM_MONITOR_SLOTS {2} \
-CONFIG.C_SLOT_0_APC_EN {0} \
-CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
-CONFIG.C_SLOT_0_AXI_TRIG_SEL {1} \
-CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
-CONFIG.C_SLOT_1_APC_EN {0} \
-CONFIG.C_SLOT_1_AXI_DATA_SEL {1} \
-CONFIG.C_SLOT_1_AXI_TRIG_SEL {1} \
-CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
- ] $system_ila1
-
-  # Create instance: system_ila2, and set properties
-  set system_ila2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila2 ]
-  set_property -dict [ list \
+CONFIG.ALL_PROBE_SAME_MU_CNT {2} \
+CONFIG.C_ADV_TRIGGER {true} \
+CONFIG.C_EN_STRG_QUAL {1} \
 CONFIG.C_MON_TYPE {NATIVE} \
-CONFIG.C_NUM_OF_PROBES {13} \
+CONFIG.C_NUM_OF_PROBES {6} \
+CONFIG.C_PROBE0_MU_CNT {2} \
 CONFIG.C_PROBE0_TYPE {0} \
+CONFIG.C_PROBE1_MU_CNT {2} \
 CONFIG.C_PROBE1_TYPE {0} \
+CONFIG.C_PROBE2_MU_CNT {2} \
 CONFIG.C_PROBE2_TYPE {0} \
+CONFIG.C_PROBE3_MU_CNT {2} \
 CONFIG.C_PROBE3_TYPE {0} \
-CONFIG.C_PROBE4_TYPE {0} \
- ] $system_ila2
+CONFIG.C_PROBE4_MU_CNT {2} \
+CONFIG.C_PROBE5_MU_CNT {2} \
+CONFIG.C_TRIGIN_EN {false} \
+CONFIG.C_TRIGOUT_EN {false} \
+ ] $system_ila1
 
   # Create instance: vio_0, and set properties
   set vio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 ]
   set_property -dict [ list \
-CONFIG.C_NUM_PROBE_IN {7} \
+CONFIG.C_NUM_PROBE_IN {4} \
 CONFIG.C_NUM_PROBE_OUT {5} \
 CONFIG.C_PROBE_OUT1_WIDTH {26} \
 CONFIG.C_PROBE_OUT2_WIDTH {26} \
@@ -442,32 +392,15 @@ CONFIG.CONST_VAL {0} \
   connect_bd_intf_net -intf_net CLK_IN1_D_1 [get_bd_intf_ports CLK_IN1_D] [get_bd_intf_pins clk_wiz/CLK_IN1_D]
   connect_bd_intf_net -intf_net GT_DIFF_REFCLK1_1 [get_bd_intf_ports GT_DIFF_REFCLK1] [get_bd_intf_pins aurora_64b66b_0/GT_DIFF_REFCLK1]
   connect_bd_intf_net -intf_net GT_SERIAL_RX_1 [get_bd_intf_ports GT_SERIAL_RX] [get_bd_intf_pins aurora_64b66b_0/GT_SERIAL_RX]
-  connect_bd_intf_net -intf_net GT_SERIAL_RX_1_1 [get_bd_intf_ports GT_SERIAL_RX_1] [get_bd_intf_pins aurora_64b66b_1/GT_SERIAL_RX]
   connect_bd_intf_net -intf_net INIT_DIFF_CLK_1 [get_bd_intf_ports INIT_DIFF_CLK] [get_bd_intf_pins aurora_64b66b_0/INIT_DIFF_CLK]
   connect_bd_intf_net -intf_net aurora_64b66b_0_GT_SERIAL_TX [get_bd_intf_ports GT_SERIAL_TX] [get_bd_intf_pins aurora_64b66b_0/GT_SERIAL_TX]
   connect_bd_intf_net -intf_net aurora_64b66b_0_USER_DATA_M_AXIS_RX [get_bd_intf_pins aurora_64b66b_0/USER_DATA_M_AXIS_RX] [get_bd_intf_pins axi_chip2chip_0/AXIS_RX]
-connect_bd_intf_net -intf_net [get_bd_intf_nets aurora_64b66b_0_USER_DATA_M_AXIS_RX] [get_bd_intf_pins axi_chip2chip_0/AXIS_RX] [get_bd_intf_pins system_ila1/SLOT_1_AXIS]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_intf_nets aurora_64b66b_0_USER_DATA_M_AXIS_RX]
-  connect_bd_intf_net -intf_net aurora_64b66b_1_GT_SERIAL_TX [get_bd_intf_ports GT_SERIAL_TX_1] [get_bd_intf_pins aurora_64b66b_1/GT_SERIAL_TX]
-  connect_bd_intf_net -intf_net aurora_64b66b_1_USER_DATA_M_AXIS_RX [get_bd_intf_pins aurora_64b66b_1/USER_DATA_M_AXIS_RX] [get_bd_intf_pins axi_chip2chip_1/AXIS_RX]
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTB [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
   connect_bd_intf_net -intf_net axi_bram_ctrl_1_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_1_bram/BRAM_PORTA]
   connect_bd_intf_net -intf_net axi_bram_ctrl_1_BRAM_PORTB [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTB] [get_bd_intf_pins axi_bram_ctrl_1_bram/BRAM_PORTB]
   connect_bd_intf_net -intf_net axi_chip2chip_0_AXIS_TX [get_bd_intf_pins aurora_64b66b_0/USER_DATA_S_AXIS_TX] [get_bd_intf_pins axi_chip2chip_0/AXIS_TX]
-connect_bd_intf_net -intf_net [get_bd_intf_nets axi_chip2chip_0_AXIS_TX] [get_bd_intf_pins axi_chip2chip_0/AXIS_TX] [get_bd_intf_pins system_ila1/SLOT_0_AXIS]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_intf_nets axi_chip2chip_0_AXIS_TX]
   connect_bd_intf_net -intf_net axi_chip2chip_0_m_axi [get_bd_intf_pins axi_chip2chip_0/m_axi] [get_bd_intf_pins axi_mem_intercon/S00_AXI]
-connect_bd_intf_net -intf_net [get_bd_intf_nets axi_chip2chip_0_m_axi] [get_bd_intf_pins axi_mem_intercon/S00_AXI] [get_bd_intf_pins system_ila/SLOT_0_AXI]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_intf_nets axi_chip2chip_0_m_axi]
-  connect_bd_intf_net -intf_net axi_chip2chip_1_AXIS_TX [get_bd_intf_pins aurora_64b66b_1/USER_DATA_S_AXIS_TX] [get_bd_intf_pins axi_chip2chip_1/AXIS_TX]
-  connect_bd_intf_net -intf_net axi_chip2chip_1_m_axi [get_bd_intf_pins axi_chip2chip_1/m_axi] [get_bd_intf_pins axi_mem_intercon/S02_AXI]
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins axi_mem_intercon/M00_AXI]
   connect_bd_intf_net -intf_net axi_mem_intercon_M01_AXI [get_bd_intf_pins axi_bram_ctrl_1/S_AXI] [get_bd_intf_pins axi_mem_intercon/M01_AXI]
   connect_bd_intf_net -intf_net axi_mem_intercon_M02_AXI [get_bd_intf_pins axi_bram_ctrl_2/S_AXI] [get_bd_intf_pins axi_mem_intercon/M02_AXI]
@@ -477,40 +410,21 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_intf_net -intf_net jtag_axi_0_M_AXI [get_bd_intf_pins axi_mem_intercon/S01_AXI] [get_bd_intf_pins jtag_axi_0/M_AXI]
 
   # Create port connections
-  connect_bd_net -net Net [get_bd_pins axi_bram_ctrl_2/bram_rst_a] [get_bd_pins dut_0/rst] [get_bd_pins system_ila2/probe10]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets Net]
+  connect_bd_net -net Net [get_bd_pins axi_bram_ctrl_2/bram_rst_a] [get_bd_pins dut_0/rst]
+  connect_bd_net -net Net1 [get_bd_ports pin_a] [get_bd_pins jack_120_1/pin_a]
+  connect_bd_net -net Net2 [get_bd_ports pin_b] [get_bd_pins jack_120_1/pin_b]
+  connect_bd_net -net Net3 [get_bd_ports pin_a_1] [get_bd_pins jack_120_0/pin_a]
+  connect_bd_net -net Net4 [get_bd_ports pin_b_1] [get_bd_pins jack_120_0/pin_b]
   connect_bd_net -net aurora_64b66b_0_channel_up [get_bd_pins aurora_64b66b_0/channel_up] [get_bd_pins axi_chip2chip_0/axi_c2c_aurora_channel_up]
-  connect_bd_net -net aurora_64b66b_0_gt_qpllclk_quad2_out [get_bd_pins aurora_64b66b_0/gt_qpllclk_quad2_out] [get_bd_pins aurora_64b66b_1/gt_qpllclk_quad2_in]
-  connect_bd_net -net aurora_64b66b_0_gt_qpllrefclk_quad2_out [get_bd_pins aurora_64b66b_0/gt_qpllrefclk_quad2_out] [get_bd_pins aurora_64b66b_1/gt_qpllrefclk_quad2_in]
-  connect_bd_net -net aurora_64b66b_0_gt_refclk1_out [get_bd_pins aurora_64b66b_0/gt_refclk1_out] [get_bd_pins aurora_64b66b_1/refclk1_in]
-  connect_bd_net -net aurora_64b66b_0_init_clk_out [get_bd_pins aurora_64b66b_0/init_clk_out] [get_bd_pins aurora_64b66b_1/init_clk] [get_bd_pins axi_chip2chip_0/aurora_init_clk] [get_bd_pins axi_chip2chip_1/aurora_init_clk]
-  connect_bd_net -net aurora_64b66b_0_mmcm_not_locked_out [get_bd_pins aurora_64b66b_0/mmcm_not_locked_out] [get_bd_pins axi_chip2chip_0/aurora_mmcm_not_locked] [get_bd_pins axi_chip2chip_1/aurora_mmcm_not_locked]
-  connect_bd_net -net aurora_64b66b_0_sync_clk_out [get_bd_pins aurora_64b66b_0/sync_clk_out] [get_bd_pins aurora_64b66b_1/sync_clk]
-  connect_bd_net -net aurora_64b66b_0_user_clk_out [get_bd_pins aurora_64b66b_0/user_clk_out] [get_bd_pins aurora_64b66b_1/user_clk] [get_bd_pins axi_chip2chip_0/axi_c2c_phy_clk] [get_bd_pins axi_chip2chip_1/axi_c2c_phy_clk] [get_bd_pins system_ila1/clk]
-  connect_bd_net -net aurora_64b66b_1_channel_up [get_bd_pins aurora_64b66b_1/channel_up] [get_bd_pins axi_chip2chip_1/axi_c2c_aurora_channel_up]
-  connect_bd_net -net aux_reset_in_1 [get_bd_ports ext_reset_in] [get_bd_ports ext_reset_out] [get_bd_pins rst_clk_wiz_100M/ext_reset_in] [get_bd_pins system_ila/probe0]
-  connect_bd_net -net axi_bram_ctrl_2_bram_addr_a [get_bd_pins axi_bram_ctrl_2/bram_addr_a] [get_bd_pins dut_0/addr] [get_bd_pins system_ila2/probe12]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets axi_bram_ctrl_2_bram_addr_a]
-  connect_bd_net -net axi_bram_ctrl_2_bram_clk_a [get_bd_pins axi_bram_ctrl_2/bram_clk_a] [get_bd_pins dut_0/clk] [get_bd_pins system_ila2/probe5]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets axi_bram_ctrl_2_bram_clk_a]
-  connect_bd_net -net axi_bram_ctrl_2_bram_en_a [get_bd_pins axi_bram_ctrl_2/bram_en_a] [get_bd_pins dut_0/en] [get_bd_pins system_ila2/probe9]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets axi_bram_ctrl_2_bram_en_a]
-  connect_bd_net -net axi_bram_ctrl_2_bram_we_a [get_bd_pins axi_bram_ctrl_2/bram_we_a] [get_bd_pins dut_0/we] [get_bd_pins system_ila2/probe11]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets axi_bram_ctrl_2_bram_we_a]
-  connect_bd_net -net axi_bram_ctrl_2_bram_wrdata_a [get_bd_pins axi_bram_ctrl_2/bram_wrdata_a] [get_bd_pins dut_0/data_in] [get_bd_pins system_ila2/probe8]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets axi_bram_ctrl_2_bram_wrdata_a]
+  connect_bd_net -net aurora_64b66b_0_init_clk_out [get_bd_pins aurora_64b66b_0/init_clk_out] [get_bd_pins axi_chip2chip_0/aurora_init_clk]
+  connect_bd_net -net aurora_64b66b_0_mmcm_not_locked_out [get_bd_pins aurora_64b66b_0/mmcm_not_locked_out] [get_bd_pins axi_chip2chip_0/aurora_mmcm_not_locked]
+  connect_bd_net -net aurora_64b66b_0_user_clk_out [get_bd_pins aurora_64b66b_0/user_clk_out] [get_bd_pins axi_chip2chip_0/axi_c2c_phy_clk]
+  connect_bd_net -net aux_reset_in_1 [get_bd_ports ext_reset_in] [get_bd_ports ext_reset_out] [get_bd_pins rst_clk_wiz_100M/ext_reset_in]
+  connect_bd_net -net axi_bram_ctrl_2_bram_addr_a [get_bd_pins axi_bram_ctrl_2/bram_addr_a] [get_bd_pins dut_0/addr]
+  connect_bd_net -net axi_bram_ctrl_2_bram_clk_a [get_bd_pins axi_bram_ctrl_2/bram_clk_a] [get_bd_pins dut_0/clk]
+  connect_bd_net -net axi_bram_ctrl_2_bram_en_a [get_bd_pins axi_bram_ctrl_2/bram_en_a] [get_bd_pins dut_0/en]
+  connect_bd_net -net axi_bram_ctrl_2_bram_we_a [get_bd_pins axi_bram_ctrl_2/bram_we_a] [get_bd_pins dut_0/we]
+  connect_bd_net -net axi_bram_ctrl_2_bram_wrdata_a [get_bd_pins axi_bram_ctrl_2/bram_wrdata_a] [get_bd_pins dut_0/data_in]
   connect_bd_net -net axi_bram_ctrl_3_bram_addr_a [get_bd_pins axi_bram_ctrl_3/bram_addr_a] [get_bd_pins dut_1/addr]
   connect_bd_net -net axi_bram_ctrl_3_bram_clk_a [get_bd_pins axi_bram_ctrl_3/bram_clk_a] [get_bd_pins dut_1/clk]
   connect_bd_net -net axi_bram_ctrl_3_bram_en_a [get_bd_pins axi_bram_ctrl_3/bram_en_a] [get_bd_pins dut_1/en]
@@ -523,79 +437,78 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net axi_bram_ctrl_4_bram_rst_a [get_bd_pins axi_bram_ctrl_4/bram_rst_a] [get_bd_pins dut_120_1/rst]
   connect_bd_net -net axi_bram_ctrl_4_bram_we_a [get_bd_pins axi_bram_ctrl_4/bram_we_a] [get_bd_pins dut_120_1/we]
   connect_bd_net -net axi_bram_ctrl_4_bram_wrdata_a [get_bd_pins axi_bram_ctrl_4/bram_wrdata_a] [get_bd_pins dut_120_1/data_in]
-  connect_bd_net -net axi_bram_ctrl_5_bram_addr_a [get_bd_pins axi_bram_ctrl_5/bram_addr_a] [get_bd_pins dut_120_0/addr]
-  connect_bd_net -net axi_bram_ctrl_5_bram_clk_a [get_bd_pins axi_bram_ctrl_5/bram_clk_a] [get_bd_pins dut_120_0/clk]
-  connect_bd_net -net axi_bram_ctrl_5_bram_en_a [get_bd_pins axi_bram_ctrl_5/bram_en_a] [get_bd_pins dut_120_0/en]
+  connect_bd_net -net axi_bram_ctrl_5_bram_addr_a [get_bd_pins axi_bram_ctrl_5/bram_addr_a] [get_bd_pins dut_120_0/addr] [get_bd_pins system_ila/probe0]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets axi_bram_ctrl_5_bram_addr_a]
+  connect_bd_net -net axi_bram_ctrl_5_bram_clk_a [get_bd_pins axi_bram_ctrl_5/bram_clk_a] [get_bd_pins dut_120_0/clk] [get_bd_pins system_ila/clk] [get_bd_pins system_ila1/clk]
+  connect_bd_net -net axi_bram_ctrl_5_bram_en_a [get_bd_pins axi_bram_ctrl_5/bram_en_a] [get_bd_pins dut_120_0/en] [get_bd_pins system_ila/probe3]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets axi_bram_ctrl_5_bram_en_a]
   connect_bd_net -net axi_bram_ctrl_5_bram_rst_a [get_bd_pins axi_bram_ctrl_5/bram_rst_a] [get_bd_pins dut_120_0/rst]
-  connect_bd_net -net axi_bram_ctrl_5_bram_we_a [get_bd_pins axi_bram_ctrl_5/bram_we_a] [get_bd_pins dut_120_0/we]
-  connect_bd_net -net axi_bram_ctrl_5_bram_wrdata_a [get_bd_pins axi_bram_ctrl_5/bram_wrdata_a] [get_bd_pins dut_120_0/data_in]
+  connect_bd_net -net axi_bram_ctrl_5_bram_we_a [get_bd_pins axi_bram_ctrl_5/bram_we_a] [get_bd_pins dut_120_0/we] [get_bd_pins system_ila/probe2]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets axi_bram_ctrl_5_bram_we_a]
+  connect_bd_net -net axi_bram_ctrl_5_bram_wrdata_a [get_bd_pins axi_bram_ctrl_5/bram_wrdata_a] [get_bd_pins dut_120_0/data_in] [get_bd_pins system_ila/probe1]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets axi_bram_ctrl_5_bram_wrdata_a]
   connect_bd_net -net axi_chip2chip_0_aurora_pma_init_out [get_bd_pins aurora_64b66b_0/pma_init] [get_bd_pins axi_chip2chip_0/aurora_pma_init_out]
   connect_bd_net -net axi_chip2chip_0_aurora_reset_pb [get_bd_pins aurora_64b66b_0/reset_pb] [get_bd_pins axi_chip2chip_0/aurora_reset_pb]
   connect_bd_net -net axi_chip2chip_0_axi_c2c_config_error_out [get_bd_ports axi_c2c_config_error_out] [get_bd_pins axi_chip2chip_0/axi_c2c_config_error_out] [get_bd_pins vio_0/probe_in2]
   connect_bd_net -net axi_chip2chip_0_axi_c2c_link_status_out [get_bd_ports axi_c2c_link_status_out] [get_bd_pins axi_chip2chip_0/axi_c2c_link_status_out] [get_bd_pins vio_0/probe_in3]
   connect_bd_net -net axi_chip2chip_0_axi_c2c_multi_bit_error_out [get_bd_ports axi_c2c_multi_bit_error_out] [get_bd_pins axi_chip2chip_0/axi_c2c_multi_bit_error_out] [get_bd_pins vio_0/probe_in1]
-  connect_bd_net -net axi_chip2chip_1_aurora_pma_init_out [get_bd_pins aurora_64b66b_1/pma_init] [get_bd_pins axi_chip2chip_1/aurora_pma_init_out]
-  connect_bd_net -net axi_chip2chip_1_aurora_reset_pb [get_bd_pins aurora_64b66b_1/reset_pb] [get_bd_pins axi_chip2chip_1/aurora_reset_pb]
-  connect_bd_net -net axi_chip2chip_1_axi_c2c_config_error_out [get_bd_pins axi_chip2chip_1/axi_c2c_config_error_out] [get_bd_pins vio_0/probe_in4]
-  connect_bd_net -net axi_chip2chip_1_axi_c2c_link_status_out [get_bd_pins axi_chip2chip_1/axi_c2c_link_status_out] [get_bd_pins vio_0/probe_in5]
-  connect_bd_net -net axi_chip2chip_1_axi_c2c_multi_bit_error_out [get_bd_pins axi_chip2chip_1/axi_c2c_multi_bit_error_out] [get_bd_pins vio_0/probe_in6]
-  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins aurora_64b66b_0/drp_clk_in] [get_bd_pins aurora_64b66b_1/drp_clk_in] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_bram_ctrl_2/s_axi_aclk] [get_bd_pins axi_bram_ctrl_3/s_axi_aclk] [get_bd_pins axi_bram_ctrl_4/s_axi_aclk] [get_bd_pins axi_bram_ctrl_5/s_axi_aclk] [get_bd_pins axi_chip2chip_0/m_aclk] [get_bd_pins axi_chip2chip_1/m_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/M01_ACLK] [get_bd_pins axi_mem_intercon/M02_ACLK] [get_bd_pins axi_mem_intercon/M03_ACLK] [get_bd_pins axi_mem_intercon/M04_ACLK] [get_bd_pins axi_mem_intercon/M05_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_mem_intercon/S02_ACLK] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins jtag_axi_0/aclk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk] [get_bd_pins system_ila/clk] [get_bd_pins system_ila2/clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins aurora_64b66b_0/drp_clk_in] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_bram_ctrl_2/s_axi_aclk] [get_bd_pins axi_bram_ctrl_3/s_axi_aclk] [get_bd_pins axi_bram_ctrl_4/s_axi_aclk] [get_bd_pins axi_bram_ctrl_5/s_axi_aclk] [get_bd_pins axi_chip2chip_0/m_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/M01_ACLK] [get_bd_pins axi_mem_intercon/M02_ACLK] [get_bd_pins axi_mem_intercon/M03_ACLK] [get_bd_pins axi_mem_intercon/M04_ACLK] [get_bd_pins axi_mem_intercon/M05_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins jtag_axi_0/aclk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk] [get_bd_pins vio_0/clk]
   connect_bd_net -net clk_wiz_locked [get_bd_pins clk_wiz/locked] [get_bd_pins rst_clk_wiz_100M/dcm_locked] [get_bd_pins vio_0/probe_in0]
-  connect_bd_net -net dut_0_a_oe [get_bd_pins dut_0/a_oe] [get_bd_pins jack_0/a_oe] [get_bd_pins system_ila2/probe3]
+  connect_bd_net -net dut_0_a_oe [get_bd_pins dut_0/a_oe] [get_bd_pins jack_0/a_oe]
+  connect_bd_net -net dut_0_a_out [get_bd_pins dut_0/a_out] [get_bd_pins jack_0/a_in]
+  connect_bd_net -net dut_0_b_oe [get_bd_pins dut_0/b_oe] [get_bd_pins jack_0/b_oe]
+  connect_bd_net -net dut_0_b_out [get_bd_pins dut_0/b_out] [get_bd_pins jack_0/b_in]
+  connect_bd_net -net dut_0_data_out [get_bd_pins axi_bram_ctrl_2/bram_rddata_a] [get_bd_pins dut_0/data_out]
+  connect_bd_net -net dut_120_0_a_oe [get_bd_pins dut_120_0/a_oe] [get_bd_pins jack_120_1/a_oe] [get_bd_pins system_ila1/probe0]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets dut_0_a_oe]
-  connect_bd_net -net dut_0_a_out [get_bd_pins dut_0/a_out] [get_bd_pins jack_0/a_in] [get_bd_pins system_ila2/probe1]
+ ] [get_bd_nets dut_120_0_a_oe]
+  connect_bd_net -net dut_120_0_a_out [get_bd_pins dut_120_0/a_out] [get_bd_pins jack_120_0/a_in] [get_bd_pins jack_120_1/a_in] [get_bd_pins system_ila1/probe2]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets dut_0_a_out]
-  connect_bd_net -net dut_0_b_oe [get_bd_pins dut_0/b_oe] [get_bd_pins jack_0/b_oe] [get_bd_pins system_ila2/probe4]
+ ] [get_bd_nets dut_120_0_a_out]
+  connect_bd_net -net dut_120_0_b_oe [get_bd_pins dut_120_0/b_oe] [get_bd_pins jack_120_1/b_oe] [get_bd_pins system_ila1/probe1]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets dut_0_b_oe]
-  connect_bd_net -net dut_0_b_out [get_bd_pins dut_0/b_out] [get_bd_pins jack_0/b_in] [get_bd_pins system_ila2/probe2]
+ ] [get_bd_nets dut_120_0_b_oe]
+  connect_bd_net -net dut_120_0_b_out [get_bd_pins dut_120_0/b_out] [get_bd_pins jack_120_0/b_in] [get_bd_pins jack_120_1/b_in] [get_bd_pins system_ila1/probe3]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets dut_0_b_out]
-  connect_bd_net -net dut_0_data_out [get_bd_pins axi_bram_ctrl_2/bram_rddata_a] [get_bd_pins dut_0/data_out] [get_bd_pins system_ila2/probe0]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets dut_0_data_out]
-  connect_bd_net -net dut_120_0_a_oe [get_bd_pins dut_120_0/a_oe] [get_bd_pins jack_120_1/a_oe]
-  connect_bd_net -net dut_120_0_a_out [get_bd_pins dut_120_0/a_out] [get_bd_pins jack_120_1/a_in]
-  connect_bd_net -net dut_120_0_b_oe [get_bd_pins dut_120_0/b_oe] [get_bd_pins jack_120_1/b_oe]
-  connect_bd_net -net dut_120_0_b_out [get_bd_pins dut_120_0/b_out] [get_bd_pins jack_120_1/b_in]
+ ] [get_bd_nets dut_120_0_b_out]
   connect_bd_net -net dut_120_0_data_out [get_bd_pins axi_bram_ctrl_5/bram_rddata_a] [get_bd_pins dut_120_0/data_out]
   connect_bd_net -net dut_120_1_a_oe [get_bd_pins dut_120_1/a_oe] [get_bd_pins jack_120_0/a_oe]
-  connect_bd_net -net dut_120_1_a_out [get_bd_pins dut_120_1/a_out] [get_bd_pins jack_120_0/a_in]
+  connect_bd_net -net dut_120_1_a_out [get_bd_pins dut_120_1/a_in] [get_bd_pins dut_120_1/a_out]
   connect_bd_net -net dut_120_1_b_oe [get_bd_pins dut_120_1/b_oe] [get_bd_pins jack_120_0/b_oe]
-  connect_bd_net -net dut_120_1_b_out [get_bd_pins dut_120_1/b_out] [get_bd_pins jack_120_0/b_in]
+  connect_bd_net -net dut_120_1_b_out [get_bd_pins dut_120_1/b_in] [get_bd_pins dut_120_1/b_out]
   connect_bd_net -net dut_120_1_data_out [get_bd_pins axi_bram_ctrl_4/bram_rddata_a] [get_bd_pins dut_120_1/data_out]
   connect_bd_net -net dut_1_a_oe [get_bd_pins dut_1/a_oe] [get_bd_pins jack_1/a_oe]
   connect_bd_net -net dut_1_a_out [get_bd_pins dut_1/a_out] [get_bd_pins jack_1/a_in]
   connect_bd_net -net dut_1_b_oe [get_bd_pins dut_1/b_oe] [get_bd_pins jack_1/b_oe]
   connect_bd_net -net dut_1_b_out [get_bd_pins dut_1/b_out] [get_bd_pins jack_1/b_in]
   connect_bd_net -net dut_1_data_out [get_bd_pins axi_bram_ctrl_3/bram_rddata_a] [get_bd_pins dut_1/data_out]
-  connect_bd_net -net jack_0_a_out [get_bd_pins dut_0/a_in] [get_bd_pins jack_0/a_out] [get_bd_pins system_ila2/probe6]
+  connect_bd_net -net jack_0_a_out [get_bd_pins dut_0/a_in] [get_bd_pins jack_0/a_out]
+  connect_bd_net -net jack_0_b_out [get_bd_pins dut_0/b_in] [get_bd_pins jack_0/b_out]
+  connect_bd_net -net jack_120_1_a_out [get_bd_pins dut_120_0/a_in] [get_bd_pins jack_120_1/a_out] [get_bd_pins system_ila1/probe5]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets jack_0_a_out]
-  connect_bd_net -net jack_0_b_out [get_bd_pins dut_0/b_in] [get_bd_pins jack_0/b_out] [get_bd_pins system_ila2/probe7]
+ ] [get_bd_nets jack_120_1_a_out]
+  connect_bd_net -net jack_120_1_b_out [get_bd_pins dut_120_0/b_in] [get_bd_pins jack_120_1/b_out] [get_bd_pins system_ila1/probe4]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets jack_0_b_out]
-  connect_bd_net -net jack_120_0_a_out [get_bd_pins dut_120_1/a_in] [get_bd_pins jack_120_0/a_out]
-  connect_bd_net -net jack_120_0_b_out [get_bd_pins dut_120_1/b_in] [get_bd_pins jack_120_0/b_out]
-  connect_bd_net -net jack_120_1_a_out [get_bd_pins dut_120_0/a_in] [get_bd_pins jack_120_1/a_out]
-  connect_bd_net -net jack_120_1_b_out [get_bd_pins dut_120_0/b_in] [get_bd_pins jack_120_1/b_out]
+ ] [get_bd_nets jack_120_1_b_out]
   connect_bd_net -net jack_1_a_out [get_bd_pins dut_1/a_in] [get_bd_pins jack_1/a_out]
   connect_bd_net -net jack_1_b_out [get_bd_pins dut_1/b_in] [get_bd_pins jack_1/b_out]
   connect_bd_net -net rst_clk_wiz_100M_interconnect_aresetn [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins rst_clk_wiz_100M/interconnect_aresetn]
-  connect_bd_net -net rst_clk_wiz_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_2/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_3/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_4/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_5/s_axi_aresetn] [get_bd_pins axi_chip2chip_0/m_aresetn] [get_bd_pins axi_chip2chip_1/m_aresetn] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/M01_ARESETN] [get_bd_pins axi_mem_intercon/M02_ARESETN] [get_bd_pins axi_mem_intercon/M03_ARESETN] [get_bd_pins axi_mem_intercon/M04_ARESETN] [get_bd_pins axi_mem_intercon/M05_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_mem_intercon/S02_ARESETN] [get_bd_pins jtag_axi_0/aresetn] [get_bd_pins rst_clk_wiz_100M/peripheral_aresetn]
-  connect_bd_net -net vio_0_probe_out0 [get_bd_ports pma_init_out] [get_bd_pins axi_chip2chip_0/aurora_pma_init_in] [get_bd_pins axi_chip2chip_1/aurora_pma_init_in] [get_bd_pins system_ila/probe1] [get_bd_pins vio_0/probe_out0]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets vio_0_probe_out0]
+  connect_bd_net -net rst_clk_wiz_100M_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_1/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_2/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_3/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_4/s_axi_aresetn] [get_bd_pins axi_bram_ctrl_5/s_axi_aresetn] [get_bd_pins axi_chip2chip_0/m_aresetn] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/M01_ARESETN] [get_bd_pins axi_mem_intercon/M02_ARESETN] [get_bd_pins axi_mem_intercon/M03_ARESETN] [get_bd_pins axi_mem_intercon/M04_ARESETN] [get_bd_pins axi_mem_intercon/M05_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins jtag_axi_0/aresetn] [get_bd_pins rst_clk_wiz_100M/peripheral_aresetn]
+  connect_bd_net -net vio_0_probe_out0 [get_bd_ports pma_init_out] [get_bd_pins axi_chip2chip_0/aurora_pma_init_in] [get_bd_pins vio_0/probe_out0]
   connect_bd_net -net vio_0_probe_out1 [get_bd_pins jack_0/mode] [get_bd_pins vio_0/probe_out1]
   connect_bd_net -net vio_0_probe_out2 [get_bd_pins jack_1/mode] [get_bd_pins vio_0/probe_out2]
   connect_bd_net -net vio_0_probe_out3 [get_bd_pins jack_120_0/mode] [get_bd_pins vio_0/probe_out3]
@@ -603,22 +516,16 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net xlconstant_0_dout [get_bd_pins clk_wiz/reset] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
-  create_bd_addr_seg -range 0x00002000 -offset 0x76010000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
-  create_bd_addr_seg -range 0x00002000 -offset 0x76012000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_1/S_AXI/Mem0] SEG_axi_bram_ctrl_1_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76030000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_2/S_AXI/Mem0] SEG_axi_bram_ctrl_2_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76031000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_3/S_AXI/Mem0] SEG_axi_bram_ctrl_3_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76024000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76025000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_1/S_AXI/Mem0] SEG_axi_bram_ctrl_1_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76022000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_2/S_AXI/Mem0] SEG_axi_bram_ctrl_2_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76023000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_3/S_AXI/Mem0] SEG_axi_bram_ctrl_3_Mem0
   create_bd_addr_seg -range 0x00001000 -offset 0x76020000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_4/S_AXI/Mem0] SEG_axi_bram_ctrl_4_Mem0
   create_bd_addr_seg -range 0x00001000 -offset 0x76021000 [get_bd_addr_spaces axi_chip2chip_0/MAXI] [get_bd_addr_segs axi_bram_ctrl_5/S_AXI/Mem0] SEG_axi_bram_ctrl_5_Mem0
-  create_bd_addr_seg -range 0x00002000 -offset 0x76010000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
-  create_bd_addr_seg -range 0x00002000 -offset 0x76012000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_1/S_AXI/Mem0] SEG_axi_bram_ctrl_1_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76030000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_2/S_AXI/Mem0] SEG_axi_bram_ctrl_2_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76031000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_3/S_AXI/Mem0] SEG_axi_bram_ctrl_3_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76020000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_4/S_AXI/Mem0] SEG_axi_bram_ctrl_4_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76021000 [get_bd_addr_spaces axi_chip2chip_1/MAXI] [get_bd_addr_segs axi_bram_ctrl_5/S_AXI/Mem0] SEG_axi_bram_ctrl_5_Mem0
-  create_bd_addr_seg -range 0x00002000 -offset 0x76010000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
-  create_bd_addr_seg -range 0x00002000 -offset 0x76012000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_1/S_AXI/Mem0] SEG_axi_bram_ctrl_1_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76030000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_2/S_AXI/Mem0] SEG_axi_bram_ctrl_2_Mem0
-  create_bd_addr_seg -range 0x00001000 -offset 0x76031000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_3/S_AXI/Mem0] SEG_axi_bram_ctrl_3_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76024000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76025000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_1/S_AXI/Mem0] SEG_axi_bram_ctrl_1_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76022000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_2/S_AXI/Mem0] SEG_axi_bram_ctrl_2_Mem0
+  create_bd_addr_seg -range 0x00001000 -offset 0x76023000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_3/S_AXI/Mem0] SEG_axi_bram_ctrl_3_Mem0
   create_bd_addr_seg -range 0x00001000 -offset 0x76020000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_4/S_AXI/Mem0] SEG_axi_bram_ctrl_4_Mem0
   create_bd_addr_seg -range 0x00001000 -offset 0x76021000 [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs axi_bram_ctrl_5/S_AXI/Mem0] SEG_axi_bram_ctrl_5_Mem0
 
@@ -627,154 +534,140 @@ HDL_ATTRIBUTE.DEBUG {true} \
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port axi_c2c_multi_bit_error_out -pg 1 -y 140 -defaultsOSRD
-preplace port axi_c2c_config_error_out -pg 1 -y 20 -defaultsOSRD
-preplace port GT_SERIAL_RX -pg 1 -y -390 -defaultsOSRD
-preplace port GT_SERIAL_TX_1 -pg 1 -y 570 -defaultsOSRD
-preplace port CLK_IN1_D -pg 1 -y 770 -defaultsOSRD
-preplace port GT_SERIAL_RX_1 -pg 1 -y 700 -defaultsOSRD
-preplace port ext_reset_out -pg 1 -y -70 -defaultsOSRD
+preplace port axi_c2c_config_error_out -pg 1 -y 120 -defaultsOSRD
+preplace port GT_SERIAL_RX -pg 1 -y -350 -defaultsOSRD
+preplace port CLK_IN1_D -pg 1 -y 110 -defaultsOSRD
+preplace port ext_reset_out -pg 1 -y -320 -defaultsOSRD
 preplace port axi_c2c_link_status_out -pg 1 -y 160 -defaultsOSRD
 preplace port GT_DIFF_REFCLK1 -pg 1 -y -280 -defaultsOSRD
-preplace port ext_reset_in -pg 1 -y -360 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y -320 -defaultsOSRD
 preplace port GT_SERIAL_TX -pg 1 -y -160 -defaultsOSRD
-preplace port INIT_DIFF_CLK -pg 1 -y -300 -defaultsOSRD
+preplace port INIT_DIFF_CLK -pg 1 -y -560 -defaultsOSRD
+preplace portBus pin_a -pg 1 -y -1660 -defaultsOSRD
+preplace portBus pin_b -pg 1 -y -1640 -defaultsOSRD
 preplace portBus pma_init_out -pg 1 -y 180 -defaultsOSRD
-preplace inst jack_1 -pg 1 -lvl 6 -y -1340 -defaultsOSRD -resize 180 140
-preplace inst axi_bram_ctrl_2 -pg 1 -lvl 2 -y -750 -defaultsOSRD -resize 220 100
-preplace inst vio_0 -pg 1 -lvl 5 -y 430 -defaultsOSRD
-preplace inst axi_bram_ctrl_3 -pg 1 -lvl 2 -y -1120 -defaultsOSRD -resize 220 100
-preplace inst clk_wiz -pg 1 -lvl 4 -y 540 -defaultsOSRD
-preplace inst axi_bram_ctrl_4 -pg 1 -lvl 2 -y -1430 -defaultsOSRD -resize 220 100
-preplace inst xlconstant_0 -pg 1 -lvl 3 -y 400 -defaultsOSRD
-preplace inst aurora_64b66b_0 -pg 1 -lvl 9 -y -100 -defaultsOSRD
-preplace inst axi_bram_ctrl_5 -pg 1 -lvl 2 -y -1650 -defaultsOSRD -resize 220 100
-preplace inst dut_0 -pg 1 -lvl 5 -y -700 -defaultsOSRD
-preplace inst aurora_64b66b_1 -pg 1 -lvl 9 -y 570 -defaultsOSRD -resize 340 340
-preplace inst dut_1 -pg 1 -lvl 5 -y -1110 -defaultsOSRD -resize 200 200
-preplace inst jtag_axi_0 -pg 1 -lvl 1 -y 490 -defaultsOSRD
-preplace inst jack_120_0 -pg 1 -lvl 6 -y -1570 -defaultsOSRD
-preplace inst system_ila -pg 1 -lvl 8 -y -280 -defaultsOSRD
-preplace inst jack_120_1 -pg 1 -lvl 6 -y -1780 -defaultsOSRD -resize 180 140
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 100 -defaultsOSRD
-preplace inst dut_120_0 -pg 1 -lvl 4 -y -1660 -defaultsOSRD
-preplace inst system_ila1 -pg 1 -lvl 8 -y 280 -defaultsOSRD
-preplace inst dut_120_1 -pg 1 -lvl 4 -y -1390 -defaultsOSRD
-preplace inst system_ila2 -pg 1 -lvl 8 -y -960 -defaultsOSRD
+preplace portBus pin_a_1 -pg 1 -y -1390 -defaultsOSRD
+preplace portBus pin_b_1 -pg 1 -y -1370 -defaultsOSRD
+preplace inst jack_1 -pg 1 -lvl 5 -y -1070 -defaultsOSRD -resize 180 140
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 1 -y -750 -defaultsOSRD -resize 220 100
+preplace inst vio_0 -pg 1 -lvl 4 -y 110 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 1 -y -1120 -defaultsOSRD -resize 220 100
+preplace inst clk_wiz -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst axi_bram_ctrl_4 -pg 1 -lvl 1 -y -1430 -defaultsOSRD -resize 220 100
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y -170 -defaultsOSRD
+preplace inst aurora_64b66b_0 -pg 1 -lvl 8 -y -520 -defaultsOSRD
+preplace inst axi_bram_ctrl_5 -pg 1 -lvl 1 -y -1650 -defaultsOSRD -resize 220 100
+preplace inst dut_0 -pg 1 -lvl 3 -y -680 -defaultsOSRD
+preplace inst dut_1 -pg 1 -lvl 3 -y -1040 -defaultsOSRD -resize 200 200
+preplace inst jtag_axi_0 -pg 1 -lvl 1 -y 220 -defaultsOSRD
+preplace inst jack_120_0 -pg 1 -lvl 5 -y -1400 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 4 -y -1240 -defaultsOSRD
+preplace inst jack_120_1 -pg 1 -lvl 5 -y -1670 -defaultsOSRD -resize 180 140
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y -190 -defaultsOSRD
+preplace inst dut_120_0 -pg 1 -lvl 3 -y -1660 -defaultsOSRD
+preplace inst system_ila1 -pg 1 -lvl 4 -y -1870 -defaultsOSRD
+preplace inst dut_120_1 -pg 1 -lvl 3 -y -1390 -defaultsOSRD
 preplace inst axi_bram_ctrl_1_bram -pg 1 -lvl 2 -y -30 -defaultsOSRD
-preplace inst rst_clk_wiz_100M -pg 1 -lvl 8 -y -710 -defaultsOSRD
-preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y -170 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 9 -y -940 -defaultsOSRD
-preplace inst axi_chip2chip_0 -pg 1 -lvl 7 -y 50 -defaultsOSRD
-preplace inst jack_0 -pg 1 -lvl 6 -y -1130 -defaultsOSRD
-preplace inst axi_bram_ctrl_1 -pg 1 -lvl 1 -y -30 -defaultsOSRD
-preplace inst axi_chip2chip_1 -pg 1 -lvl 7 -y 647 -defaultsOSRD -resize 360 235
-preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 6 4 1810 -80 2310J -80 2760J 110 3410
-preplace netloc jack_120_0_a_out 1 3 4 630 -1230 960J -1450 NJ -1450 1750
-preplace netloc dut_120_1_a_out 1 4 2 N -1370 1360J
-preplace netloc dut_120_0_b_oe 1 4 2 N -1660 1310J
-preplace netloc aurora_64b66b_0_gt_qpllrefclk_quad2_out 1 8 2 2820 220 3400
-preplace netloc axi_mem_intercon_M01_AXI 1 0 10 -390J -100 -120J -90 NJ -90 NJ -90 NJ -90 NJ -90 NJ -90 N -90 2840 100 3420
-preplace netloc axi_bram_ctrl_3_bram_we_a 1 2 3 NJ -1090 NJ -1090 960
-preplace netloc dut_1_b_oe 1 5 1 1420
-preplace netloc axi_bram_ctrl_5_bram_wrdata_a 1 2 2 NJ -1655 630
-preplace netloc axi_mem_intercon_M04_AXI 1 1 9 -70 -1250 NJ -1250 NJ -1250 NJ -1250 NJ -1250 NJ -1250 NJ -1250 NJ -1250 3470
-preplace netloc axi_chip2chip_0_AXIS_TX 1 7 2 2300J -10 2730J
-preplace netloc axi_bram_ctrl_4_bram_we_a 1 2 2 350J -1380 N
-preplace netloc jack_1_b_out 1 4 3 1020 -1230 1350J -1220 1740
-preplace netloc axi_bram_ctrl_5_bram_clk_a 1 2 2 350 -1730 NJ
-preplace netloc vio_0_probe_out0 1 5 5 NJ 390 1770J 390 2330J 390 2790J 180 NJ
-preplace netloc axi_chip2chip_1_aurora_reset_pb 1 7 2 N 667 2800J
-preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 9 1 N
-preplace netloc axi_bram_ctrl_3_bram_addr_a 1 2 3 NJ -1142 NJ -1142 950
-preplace netloc vio_0_probe_out1 1 5 1 1460J
-preplace netloc axi_bram_ctrl_4_bram_rst_a 1 2 2 400J -1440 N
-preplace netloc vio_0_probe_out2 1 5 1 1450
-preplace netloc dut_0_a_oe 1 5 3 1470 -720 N -720 2250
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 1 N
-preplace netloc vio_0_probe_out3 1 5 1 1440
-preplace netloc jack_120_0_b_out 1 3 4 650 -1210 970J -1440 NJ -1440 1740
-preplace netloc axi_bram_ctrl_2_bram_we_a 1 2 6 410 -850 N -850 930 -850 N -850 NJ -850 NJ
-preplace netloc axi_chip2chip_0_aurora_reset_pb 1 7 2 N 70 2820J
-preplace netloc dut_120_0_data_out 1 2 3 400J -1540 NJ -1540 940
-preplace netloc axi_bram_ctrl_2_bram_addr_a 1 2 6 390 -830 N -830 940 -830 N -830 NJ -830 NJ
-preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 7 2 N 50 2830J
-preplace netloc axi_bram_ctrl_4_bram_addr_a 1 2 2 350J -1470 640
-preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 1 1 N
-preplace netloc vio_0_probe_out4 1 5 1 1390
-preplace netloc jack_120_1_a_out 1 3 4 630 -1530 NJ -1530 1330J -1670 1750
-preplace netloc axi_bram_ctrl_3_bram_rst_a 1 2 3 400J -1160 NJ -1160 N
-preplace netloc dut_1_data_out 1 2 4 NJ -1116 NJ -1116 990J -1260 1310
-preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 4 6 950J 200 NJ 200 NJ 200 2260 200 N 200 3490J
-preplace netloc GT_SERIAL_RX_1_1 1 0 9 -420J 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 2730J
-preplace netloc GT_SERIAL_RX_1 1 0 9 NJ -390 NJ -390 NJ -390 NJ -390 NJ -390 NJ -390 NJ -390 NJ -390 2850J
-preplace netloc aurora_64b66b_0_gt_refclk1_out 1 8 2 2830 150 3370
-preplace netloc axi_bram_ctrl_2_bram_en_a 1 2 6 370 -890 N -890 950 -890 N -890 NJ -890 NJ
-preplace netloc dut_120_0_a_out 1 4 2 N -1640 1300J
-preplace netloc aurora_64b66b_1_channel_up 1 6 4 1810J 790 NJ 790 NJ 790 3370
-preplace netloc dut_0_data_out 1 2 6 380 -880 N -880 N -880 1300J -880 N -880 2230
-preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 8 1 2730J
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 9 -400J -270 -100J -270 NJ -270 NJ -270 950J -270 NJ -270 1750 -270 2290 -620 2740
-preplace netloc aurora_64b66b_0_gt_qpllclk_quad2_out 1 8 2 2850 230 3450
-preplace netloc axi_bram_ctrl_3_bram_wrdata_a 1 2 3 410J -1130 NJ -1130 1000
-preplace netloc axi_bram_ctrl_4_bram_clk_a 1 2 2 360J -1460 N
-preplace netloc axi_bram_ctrl_5_bram_rst_a 1 2 2 360J -1710 N
-preplace netloc INIT_DIFF_CLK_1 1 0 9 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 2310J -130 NJ
-preplace netloc clk_wiz_clk_out1 1 0 9 -410 -290 -120 -290 NJ -290 N -290 930 -290 NJ -290 1760J -290 2280J -1150 2770J
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 2 1010 -240 1310J
-preplace netloc CLK_IN1_D_1 1 0 4 NJ 770 NJ 770 NJ 770 650J
-preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 4 2 1020 -100 1310J
-preplace netloc axi_chip2chip_0_m_axi 1 7 2 2320 -30 2720
-preplace netloc jack_0_b_out 1 4 4 1020 -930 N -930 1740 -930 N
-preplace netloc axi_bram_ctrl_3_bram_en_a 1 2 3 350J -1080 NJ -1080 N
-preplace netloc aurora_64b66b_0_init_clk_out 1 6 4 1790J 780 NJ 780 2810J 780 3440
-preplace netloc axi_bram_ctrl_4_bram_en_a 1 2 2 NJ -1417 620
-preplace netloc aux_reset_in_1 1 0 10 NJ -360 NJ -360 NJ -360 NJ -360 NJ -360 NJ -360 NJ -360 2340J -200 2780J 120 3480J
-preplace netloc axi_bram_ctrl_5_bram_addr_a 1 2 2 NJ -1672 620
-preplace netloc axi_mem_intercon_M05_AXI 1 1 9 -90 -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 3460
-preplace netloc dut_120_1_b_oe 1 4 2 N -1390 1370J
-preplace netloc axi_bram_ctrl_2_bram_clk_a 1 2 6 350 -970 N -970 990 -970 N -970 NJ -970 NJ
-preplace netloc Net 1 2 6 400 -870 N -870 960 -870 NJ -870 NJ -870 NJ
-preplace netloc dut_1_b_out 1 5 1 1430
-preplace netloc clk_wiz_locked 1 4 4 940 550 NJ 550 1740 -670 N
-preplace netloc axi_chip2chip_1_axi_c2c_link_status_out 1 4 4 970J 280 NJ 280 NJ 280 2280
-preplace netloc axi_bram_ctrl_4_bram_wrdata_a 1 2 2 360J -1400 N
-preplace netloc dut_1_a_out 1 5 1 1410
-preplace netloc aurora_64b66b_0_user_clk_out 1 6 4 1780J 240 2340J 210 2780J 210 3460
-preplace netloc aurora_64b66b_1_GT_SERIAL_TX 1 9 1 N
-preplace netloc dut_0_b_out 1 5 3 1500 -660 N -660 2260
-preplace netloc dut_1_a_oe 1 5 1 1400
-preplace netloc aurora_64b66b_0_sync_clk_out 1 8 2 2840 170 3380
-preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 4 6 960J 210 NJ 210 NJ 210 2240 160 N 160 NJ
-preplace netloc GT_DIFF_REFCLK1_1 1 0 9 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 2300J -150 NJ
-preplace netloc dut_120_1_b_out 1 4 2 N -1350 1380J
-preplace netloc jack_120_1_b_out 1 3 4 650 -1520 NJ -1520 1340J -1660 1740
-preplace netloc dut_120_0_b_out 1 4 2 N -1620 1320J
-preplace netloc jack_0_a_out 1 4 4 1010 -950 N -950 1750 -950 N
-preplace netloc dut_0_b_oe 1 5 3 1490 -700 N -700 2270
-preplace netloc axi_chip2chip_1_AXIS_TX 1 7 2 N 587 2790J
-preplace netloc aurora_64b66b_1_USER_DATA_M_AXIS_RX 1 6 4 1810J 380 NJ 380 NJ 380 3370
-preplace netloc dut_120_1_a_oe 1 4 2 N -1410 1350J
-preplace netloc dut_120_0_a_oe 1 4 2 N -1680 1290J
-preplace netloc dut_120_1_data_out 1 2 3 410J -1220 NJ -1220 930
-preplace netloc jack_1_a_out 1 4 3 1010 -1270 1380J -1230 1750
-preplace netloc jtag_axi_0_M_AXI 1 1 8 -110 -1200 NJ -1200 NJ -1200 980J -1430 NJ -1430 N -1430 N -1430 2850
-preplace netloc axi_mem_intercon_M02_AXI 1 1 9 -80 -1270 N -1270 NJ -1270 940J -1470 NJ -1470 NJ -1470 N -1470 N -1470 3490
-preplace netloc axi_chip2chip_1_aurora_pma_init_out 1 7 2 N 647 2720J
-preplace netloc axi_bram_ctrl_3_bram_clk_a 1 2 3 350J -1180 NJ -1180 N
-preplace netloc axi_bram_ctrl_5_bram_en_a 1 2 2 NJ -1637 650
-preplace netloc axi_bram_ctrl_5_bram_we_a 1 2 2 NJ -1620 640
-preplace netloc axi_mem_intercon_M03_AXI 1 1 9 -60 -1260 NJ -1260 NJ -1260 950J -1460 NJ -1460 NJ -1460 NJ -1460 NJ -1460 3480
-preplace netloc axi_chip2chip_1_m_axi 1 7 2 N 567 2750
-preplace netloc axi_chip2chip_1_axi_c2c_config_error_out 1 4 4 1010J 300 NJ 300 NJ 300 2230
-preplace netloc xlconstant_0_dout 1 3 1 630
-preplace netloc aurora_64b66b_0_channel_up 1 6 4 1810 190 NJ 190 NJ 190 3470
-preplace netloc axi_mem_intercon_M00_AXI 1 4 6 980J -250 NJ -250 NJ -250 2280 90 N 90 3430
-preplace netloc axi_chip2chip_1_axi_c2c_multi_bit_error_out 1 4 4 980J 310 NJ 310 NJ 310 2240
-preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 6 4 1800J 230 2320J 130 NJ 130 3390
-preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 4 6 1020J 220 NJ 220 NJ 220 2230 140 N 140 NJ
-preplace netloc dut_0_a_out 1 5 3 1480 -680 N -680 2240
-preplace netloc axi_bram_ctrl_2_bram_wrdata_a 1 2 6 360 -910 N -910 970 -910 N -910 NJ -910 NJ
-levelinfo -pg 1 -440 -250 220 546 803 1153 1626 2030 2543 3172 3520 -top -1880 -bot 1340
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 7 -y -20 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -y -200 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 8 -y -40 -defaultsOSRD
+preplace inst axi_chip2chip_0 -pg 1 -lvl 6 -y -480 -defaultsOSRD
+preplace inst jack_0 -pg 1 -lvl 5 -y -690 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 1 -y -40 -defaultsOSRD
+preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 5 4 1800 -740 NJ -740 NJ -740 3450
+preplace netloc dut_120_1_a_out 1 2 2 830 -1510 1080
+preplace netloc dut_120_0_b_oe 1 3 2 1100 -1660 1460J
+preplace netloc axi_mem_intercon_M01_AXI 1 0 9 -340J -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 3380
+preplace netloc axi_bram_ctrl_3_bram_we_a 1 1 2 NJ -1090 720J
+preplace netloc dut_1_b_oe 1 3 2 N -1040 1440J
+preplace netloc axi_bram_ctrl_5_bram_wrdata_a 1 1 3 360J -1240 750J -1240 N
+preplace netloc axi_mem_intercon_M04_AXI 1 0 9 -360 -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 3370
+preplace netloc axi_chip2chip_0_AXIS_TX 1 6 2 NJ -540 2850
+preplace netloc jack_1_b_out 1 2 4 830 -910 NJ -910 NJ -910 1800
+preplace netloc axi_bram_ctrl_4_bram_we_a 1 1 2 NJ -1400 800
+preplace netloc axi_bram_ctrl_5_bram_clk_a 1 1 3 360 -1730 730J -1930 1130J
+preplace netloc vio_0_probe_out0 1 4 5 NJ 70 1780J 240 NJ 240 NJ 240 3450J
+preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 8 1 3450
+preplace netloc axi_bram_ctrl_3_bram_addr_a 1 1 2 360J -1070 NJ
+preplace netloc vio_0_probe_out1 1 4 1 1520J
+preplace netloc axi_bram_ctrl_4_bram_rst_a 1 1 2 330J -1440 N
+preplace netloc vio_0_probe_out2 1 4 1 1500
+preplace netloc dut_0_a_oe 1 3 2 NJ -700 1490J
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 1 330
+preplace netloc vio_0_probe_out3 1 4 1 1470
+preplace netloc axi_bram_ctrl_2_bram_we_a 1 1 2 NJ -720 770
+preplace netloc axi_chip2chip_0_aurora_reset_pb 1 6 2 NJ -460 2880
+preplace netloc dut_120_0_data_out 1 1 3 NJ -1646 720J -1870 1080
+preplace netloc axi_bram_ctrl_2_bram_addr_a 1 1 2 340J -710 N
+preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 6 2 NJ -480 2890
+preplace netloc axi_bram_ctrl_4_bram_addr_a 1 1 2 310J -1460 770
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 1 1 340
+preplace netloc vio_0_probe_out4 1 4 1 1460
+preplace netloc axi_bram_ctrl_3_bram_rst_a 1 1 2 350J -1100 820J
+preplace netloc dut_1_data_out 1 1 3 NJ -1116 760J -920 1080J
+preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 3 6 1140J 210 NJ 210 NJ 210 2250 210 2860J 220 3420J
+preplace netloc jack_120_1_a_out 1 2 4 830J -1810 1110J -1760 NJ -1760 1800
+preplace netloc GT_SERIAL_RX_1 1 0 8 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 2870J
+preplace netloc axi_bram_ctrl_2_bram_en_a 1 1 2 310J -650 N
+preplace netloc dut_120_0_a_out 1 3 2 1140 -1640 1470J
+preplace netloc dut_0_data_out 1 1 3 NJ -746 750J -800 1080J
+preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 7 1 2900
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 8 -400J -270 NJ -270 NJ -270 NJ -270 NJ -270 1770 -270 NJ -270 2890J
+preplace netloc axi_bram_ctrl_3_bram_wrdata_a 1 1 2 340J -1050 NJ
+preplace netloc axi_bram_ctrl_4_bram_clk_a 1 1 2 320J -1450 780
+preplace netloc axi_bram_ctrl_5_bram_rst_a 1 1 2 NJ -1628 730J
+preplace netloc INIT_DIFF_CLK_1 1 0 8 NJ -560 NJ -560 NJ -560 NJ -560 NJ -560 1760J -610 NJ -610 2910J
+preplace netloc clk_wiz_clk_out1 1 0 8 -410 -120 NJ -120 NJ -120 1090 -120 NJ -120 1760J -120 2270J -120 2910J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 330
+preplace netloc CLK_IN1_D_1 1 0 3 NJ 110 NJ 110 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 1 1 340
+preplace netloc axi_chip2chip_0_m_axi 1 6 2 NJ -560 2900
+preplace netloc jack_0_b_out 1 2 4 830 -540 NJ -540 NJ -540 1740
+preplace netloc axi_bram_ctrl_3_bram_en_a 1 1 2 320J -1010 NJ
+preplace netloc aurora_64b66b_0_init_clk_out 1 5 4 1810J -330 NJ -330 NJ -330 3370
+preplace netloc axi_bram_ctrl_4_bram_en_a 1 1 2 310J -1360 N
+preplace netloc aux_reset_in_1 1 0 9 -420J -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2260J -110 2880J 210 3410J
+preplace netloc axi_bram_ctrl_5_bram_addr_a 1 1 3 NJ -1672 740J -1260 N
+preplace netloc axi_mem_intercon_M05_AXI 1 0 9 -370 -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 3400
+preplace netloc dut_120_1_b_oe 1 3 2 NJ -1390 1420J
+preplace netloc axi_bram_ctrl_2_bram_clk_a 1 1 2 NJ -764 820
+preplace netloc Net 1 1 2 360J -730 N
+preplace netloc dut_1_b_out 1 3 2 N -1000 1450J
+preplace netloc clk_wiz_locked 1 3 4 1110 20 NJ 20 NJ 20 NJ
+preplace netloc Net1 1 5 4 N -1660 NJ -1660 NJ -1660 NJ
+preplace netloc axi_bram_ctrl_4_bram_wrdata_a 1 1 2 320J -1410 820
+preplace netloc dut_1_a_out 1 3 2 N -1020 1430J
+preplace netloc aurora_64b66b_0_user_clk_out 1 5 4 1810J -710 NJ -710 NJ -710 3370
+preplace netloc Net2 1 5 4 N -1640 NJ -1640 NJ -1640 NJ
+preplace netloc dut_0_b_out 1 3 2 NJ -640 1510J
+preplace netloc dut_1_a_oe 1 3 2 N -1060 1420J
+preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 3 6 1150J 230 NJ 230 NJ 230 2240 230 NJ 230 3430J
+preplace netloc GT_DIFF_REFCLK1_1 1 0 8 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 2860J
+preplace netloc dut_120_1_b_out 1 2 2 830 -1270 1080
+preplace netloc Net3 1 5 4 N -1390 NJ -1390 NJ -1390 NJ
+preplace netloc jack_120_1_b_out 1 2 4 820J -1830 1120J -1750 1470J -1770 1810
+preplace netloc dut_120_0_b_out 1 3 2 1150 -1620 1500J
+preplace netloc jack_0_a_out 1 2 4 810 -530 NJ -530 NJ -530 1750
+preplace netloc Net4 1 5 4 N -1370 NJ -1370 NJ -1370 NJ
+preplace netloc dut_0_b_oe 1 3 2 NJ -680 1430J
+preplace netloc dut_120_1_a_oe 1 3 2 NJ -1410 1420J
+preplace netloc dut_120_1_data_out 1 1 3 NJ -1426 760J -1530 1100
+preplace netloc dut_120_0_a_oe 1 3 2 1090 -1680 1460J
+preplace netloc jack_1_a_out 1 2 4 810 -900 NJ -900 NJ -900 1810
+preplace netloc jtag_axi_0_M_AXI 1 1 7 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 2850J
+preplace netloc axi_mem_intercon_M02_AXI 1 0 9 -380 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 3390
+preplace netloc axi_bram_ctrl_3_bram_clk_a 1 1 2 NJ -1134 820J
+preplace netloc axi_bram_ctrl_5_bram_en_a 1 1 3 350J -1200 810J -1200 N
+preplace netloc axi_bram_ctrl_5_bram_we_a 1 1 3 340J -1220 790J -1220 N
+preplace netloc axi_mem_intercon_M03_AXI 1 0 9 -390 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 3380
+preplace netloc xlconstant_0_dout 1 2 2 830 -220 1080
+preplace netloc aurora_64b66b_0_channel_up 1 5 4 1780 -730 NJ -730 NJ -730 3390
+preplace netloc axi_mem_intercon_M00_AXI 1 0 9 -350 -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 3390
+preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 5 4 1790J -720 NJ -720 NJ -720 3380
+preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 3 6 1130J 250 NJ 250 NJ 250 2230 250 NJ 250 3440J
+preplace netloc dut_0_a_out 1 3 2 NJ -660 1480J
+preplace netloc axi_bram_ctrl_2_bram_wrdata_a 1 1 2 320J -690 N
+levelinfo -pg 1 -440 179 620 960 1290 1630 2030 2680 3172 3540 -top -1980 -bot 1340
 ",
 }
 

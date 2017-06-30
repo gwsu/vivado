@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Wed Jun 28 17:15:31 2017
+//Date        : Fri Jun 30 18:45:33 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target jtag_axi_wrapper.bd
 //Design      : jtag_axi_wrapper
@@ -33,12 +33,8 @@ module jtag_axi_wrapper
     FIXED_IO_ps_srstb,
     GT_DIFF_REFCLK1_clk_n,
     GT_DIFF_REFCLK1_clk_p,
-    GT_SERIAL_RX_1_rxn,
-    GT_SERIAL_RX_1_rxp,
     GT_SERIAL_RX_rxn,
     GT_SERIAL_RX_rxp,
-    GT_SERIAL_TX_1_txn,
-    GT_SERIAL_TX_1_txp,
     GT_SERIAL_TX_txn,
     GT_SERIAL_TX_txp,
     INIT_DIFF_CLK_clk_n,
@@ -74,12 +70,8 @@ module jtag_axi_wrapper
   inout FIXED_IO_ps_srstb;
   input GT_DIFF_REFCLK1_clk_n;
   input GT_DIFF_REFCLK1_clk_p;
-  input [0:0]GT_SERIAL_RX_1_rxn;
-  input [0:0]GT_SERIAL_RX_1_rxp;
   input [0:0]GT_SERIAL_RX_rxn;
   input [0:0]GT_SERIAL_RX_rxp;
-  output [0:0]GT_SERIAL_TX_1_txn;
-  output [0:0]GT_SERIAL_TX_1_txp;
   output [0:0]GT_SERIAL_TX_txn;
   output [0:0]GT_SERIAL_TX_txp;
   input INIT_DIFF_CLK_clk_n;
@@ -116,12 +108,8 @@ module jtag_axi_wrapper
   wire FIXED_IO_ps_srstb;
   wire GT_DIFF_REFCLK1_clk_n;
   wire GT_DIFF_REFCLK1_clk_p;
-  wire [0:0]GT_SERIAL_RX_1_rxn;
-  wire [0:0]GT_SERIAL_RX_1_rxp;
   wire [0:0]GT_SERIAL_RX_rxn;
   wire [0:0]GT_SERIAL_RX_rxp;
-  wire [0:0]GT_SERIAL_TX_1_txn;
-  wire [0:0]GT_SERIAL_TX_1_txp;
   wire [0:0]GT_SERIAL_TX_txn;
   wire [0:0]GT_SERIAL_TX_txp;
   wire INIT_DIFF_CLK_clk_n;
@@ -191,12 +179,8 @@ module jtag_axi_wrapper
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .GT_DIFF_REFCLK1_clk_n(GT_DIFF_REFCLK1_clk_n),
         .GT_DIFF_REFCLK1_clk_p(GT_DIFF_REFCLK1_clk_p),
-        .GT_SERIAL_RX_1_rxn(GT_SERIAL_RX_1_rxn),
-        .GT_SERIAL_RX_1_rxp(GT_SERIAL_RX_1_rxp),
         .GT_SERIAL_RX_rxn(GT_SERIAL_RX_rxn),
         .GT_SERIAL_RX_rxp(GT_SERIAL_RX_rxp),
-        .GT_SERIAL_TX_1_txn(GT_SERIAL_TX_1_txn),
-        .GT_SERIAL_TX_1_txp(GT_SERIAL_TX_1_txp),
         .GT_SERIAL_TX_txn(GT_SERIAL_TX_txn),
         .GT_SERIAL_TX_txp(GT_SERIAL_TX_txp),
         .IIC_0_scl_i(iic_0_scl_i),

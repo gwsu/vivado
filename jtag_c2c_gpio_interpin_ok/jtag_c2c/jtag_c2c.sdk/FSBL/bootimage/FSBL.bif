@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/FSBL/Debug/FSBL.elf
+	/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/jtag_axi_wrapper_hw_platform_0/jtag_axi_wrapper.bit
+	/home/mnt/hyper-ftp/nandykong/u-boot.elf
+}

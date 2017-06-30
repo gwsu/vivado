@@ -14,28 +14,27 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 33347 
+INFO: Helper process launched with PID 5076 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1233.180 ; gain = 217.996 ; free physical = 71916 ; free virtual = 180319
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1219.180 ; gain = 203.996 ; free physical = 83981 ; free virtual = 194243
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'b2000t_c2c_bram_dut_120_0_0' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/synth/b2000t_c2c_bram_dut_120_0_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'dut_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v:8]
+INFO: [Synth 8-638] synthesizing module 'dut_120' [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/cc90/dut_120.v:8]
 	Parameter IDEL bound to: 4'b0000 
 	Parameter A2B1 bound to: 4'b0001 
 	Parameter A2B0 bound to: 4'b0010 
+	Parameter A10B bound to: 4'b0111 
+	Parameter A01B bound to: 4'b0101 
 	Parameter B2A1 bound to: 4'b0011 
 	Parameter B2A0 bound to: 4'b0100 
-	Parameter A01B bound to: 4'b0101 
-	Parameter B01A bound to: 4'b0110 
-	Parameter A10B bound to: 4'b0111 
 	Parameter B10A bound to: 4'b1000 
+	Parameter B01A bound to: 4'b0110 
 	Parameter ENDL bound to: 4'b0111 
-WARNING: [Synth 8-151] case item 4'b0111 is unreachable [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v:55]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v:55]
-INFO: [Synth 8-256] done synthesizing module 'dut_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/ed2b/dut_120.v:8]
+WARNING: [Synth 8-151] case item 5'b00111 is unreachable [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/cc90/dut_120.v:54]
+INFO: [Synth 8-256] done synthesizing module 'dut_120' (1#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ipshared/cc90/dut_120.v:8]
 INFO: [Synth 8-256] done synthesizing module 'b2000t_c2c_bram_dut_120_0_0' (2#1) [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/synth/b2000t_c2c_bram_dut_120_0_0.v:56]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.656 ; gain = 258.473 ; free physical = 71828 ; free virtual = 180235
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1259.656 ; gain = 244.473 ; free physical = 83914 ; free virtual = 194177
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -45,7 +44,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.656 ; gain = 258.473 ; free physical = 71827 ; free virtual = 180235
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1259.656 ; gain = 244.473 ; free physical = 83914 ; free virtual = 194177
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -57,29 +56,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2063.566 ; gain = 1.000 ; free physical = 70422 ; free virtual = 178851
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2048.543 ; gain = 1.000 ; free physical = 82632 ; free virtual = 192895
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70419 ; free virtual = 178848
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82629 ; free virtual = 192891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70419 ; free virtual = 178848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82629 ; free virtual = 192891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70419 ; free virtual = 178848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82629 ; free virtual = 192891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dut_120'
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "data_bin_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "data_ain_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "b_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "a_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_bin_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_ain_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a_oe" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -91,19 +89,19 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDEL |                             0000 |                             0000
-                    A2B1 |                             0001 |                             0001
-                    A2B0 |                             0010 |                             0010
-                    B2A1 |                             0011 |                             0011
-                    B2A0 |                             0100 |                             0100
-                    A01B |                             0101 |                             0101
-                    B01A |                             0110 |                             0110
-                    A10B |                             0111 |                             0111
-                    B10A |                             1000 |                             1000
+                    IDEL |                             0000 |                            00000
+                    A2B1 |                             0001 |                            00001
+                    A2B0 |                             0010 |                            00010
+                    A10B |                             0011 |                            00111
+                    A01B |                             0100 |                            00101
+                    B2A1 |                             0101 |                            00011
+                    B2A0 |                             0110 |                            00100
+                    B10A |                             0111 |                            01000
+                    B01A |                             1000 |                            00110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dut_120'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70419 ; free virtual = 178848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82627 ; free virtual = 192890
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -124,13 +122,12 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 11    
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   4 Input     60 Bit        Muxes := 2     
+	   5 Input     60 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 10    
 	  19 Input      4 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 2     
-	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -149,13 +146,12 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 11    
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   4 Input     60 Bit        Muxes := 2     
+	   5 Input     60 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 10    
 	  19 Input      4 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 2     
-	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -173,106 +169,106 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[0]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[1]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[2]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[3]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[4]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[5]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[6]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[7]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[8]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[9]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[10]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[11]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[12]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[13]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[14]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[15]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[16]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[17]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[18]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[19]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[20]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[21]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[22]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[23]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[24]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[25]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[26]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[27]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[28]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[29]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[30]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[31]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[32]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[33]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[34]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[35]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[36]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[37]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[38]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[39]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[40]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[41]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[42]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[43]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[44]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[45]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[46]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[47]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[48]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[49]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[50]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[51]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[52]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[53]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[54]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[55]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[56]' (FDCE) to 'inst/b_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[57]' (FDCE) to 'inst/b_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[0]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[1]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[2]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[3]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[4]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[5]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[6]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[7]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[8]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[9]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[10]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[11]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[12]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[13]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[14]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[15]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[16]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[17]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[18]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[19]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[20]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[21]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[22]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[23]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[24]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[25]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[26]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[27]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[28]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[29]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[30]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[31]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[32]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[33]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[34]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[35]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[36]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[37]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[38]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[39]' (FDCE) to 'inst/a_out_reg[59]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[40]' (FDCE) to 'inst/a_out_reg[58]'
-INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[41]' (FDCE) to 'inst/a_out_reg[59]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[0]' (FDC) to 'inst/b_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[1]' (FDC) to 'inst/b_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[2]' (FDC) to 'inst/b_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[3]' (FDC) to 'inst/b_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[4]' (FDC) to 'inst/b_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[5]' (FDC) to 'inst/b_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[6]' (FDC) to 'inst/b_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[7]' (FDC) to 'inst/b_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[8]' (FDC) to 'inst/b_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[9]' (FDC) to 'inst/b_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[10]' (FDC) to 'inst/b_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[11]' (FDC) to 'inst/b_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[12]' (FDC) to 'inst/b_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[13]' (FDC) to 'inst/b_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[14]' (FDC) to 'inst/b_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[15]' (FDC) to 'inst/b_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[16]' (FDC) to 'inst/b_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[17]' (FDC) to 'inst/b_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[18]' (FDC) to 'inst/b_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[19]' (FDC) to 'inst/b_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[20]' (FDC) to 'inst/b_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[21]' (FDC) to 'inst/b_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[22]' (FDC) to 'inst/b_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[23]' (FDC) to 'inst/b_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[24]' (FDC) to 'inst/b_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[25]' (FDC) to 'inst/b_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[26]' (FDC) to 'inst/b_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[27]' (FDC) to 'inst/b_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[28]' (FDC) to 'inst/b_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[29]' (FDC) to 'inst/b_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[30]' (FDC) to 'inst/b_out_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[31]' (FDC) to 'inst/b_out_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[32]' (FDC) to 'inst/b_out_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[33]' (FDC) to 'inst/b_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[34]' (FDC) to 'inst/b_out_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[35]' (FDC) to 'inst/b_out_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[36]' (FDC) to 'inst/b_out_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[37]' (FDC) to 'inst/b_out_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[38]' (FDC) to 'inst/b_out_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[39]' (FDC) to 'inst/b_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[40]' (FDC) to 'inst/b_out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[41]' (FDC) to 'inst/b_out_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[42]' (FDC) to 'inst/b_out_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[43]' (FDC) to 'inst/b_out_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[44]' (FDC) to 'inst/b_out_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[45]' (FDC) to 'inst/b_out_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[46]' (FDC) to 'inst/b_out_reg[48]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[47]' (FDC) to 'inst/b_out_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[48]' (FDC) to 'inst/b_out_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[49]' (FDC) to 'inst/b_out_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[50]' (FDC) to 'inst/b_out_reg[52]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[51]' (FDC) to 'inst/b_out_reg[53]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[52]' (FDC) to 'inst/b_out_reg[54]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[53]' (FDC) to 'inst/b_out_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[54]' (FDC) to 'inst/b_out_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[55]' (FDC) to 'inst/b_out_reg[57]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[56]' (FDC) to 'inst/b_out_reg[58]'
+INFO: [Synth 8-3886] merging instance 'inst/b_out_reg[57]' (FDC) to 'inst/b_out_reg[59]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[0]' (FDC) to 'inst/a_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[1]' (FDC) to 'inst/a_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[2]' (FDC) to 'inst/a_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[3]' (FDC) to 'inst/a_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[4]' (FDC) to 'inst/a_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[5]' (FDC) to 'inst/a_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[6]' (FDC) to 'inst/a_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[7]' (FDC) to 'inst/a_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[8]' (FDC) to 'inst/a_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[9]' (FDC) to 'inst/a_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[10]' (FDC) to 'inst/a_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[11]' (FDC) to 'inst/a_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[12]' (FDC) to 'inst/a_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[13]' (FDC) to 'inst/a_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[14]' (FDC) to 'inst/a_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[15]' (FDC) to 'inst/a_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[16]' (FDC) to 'inst/a_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[17]' (FDC) to 'inst/a_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[18]' (FDC) to 'inst/a_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[19]' (FDC) to 'inst/a_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[20]' (FDC) to 'inst/a_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[21]' (FDC) to 'inst/a_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[22]' (FDC) to 'inst/a_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[23]' (FDC) to 'inst/a_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[24]' (FDC) to 'inst/a_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[25]' (FDC) to 'inst/a_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[26]' (FDC) to 'inst/a_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[27]' (FDC) to 'inst/a_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[28]' (FDC) to 'inst/a_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[29]' (FDC) to 'inst/a_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[30]' (FDC) to 'inst/a_out_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[31]' (FDC) to 'inst/a_out_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[32]' (FDC) to 'inst/a_out_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[33]' (FDC) to 'inst/a_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[34]' (FDC) to 'inst/a_out_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[35]' (FDC) to 'inst/a_out_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[36]' (FDC) to 'inst/a_out_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[37]' (FDC) to 'inst/a_out_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[38]' (FDC) to 'inst/a_out_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[39]' (FDC) to 'inst/a_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[40]' (FDC) to 'inst/a_out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/a_out_reg[41]' (FDC) to 'inst/a_out_reg[43]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[31]) is unused and will be removed from module b2000t_c2c_bram_dut_120_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/a2b0_dealy_counter_reg[30]) is unused and will be removed from module b2000t_c2c_bram_dut_120_0_0.
@@ -376,7 +372,7 @@ INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[14]) is unu
 INFO: [Synth 8-3332] Sequential element (inst/b2a0_dealy_counter_reg[13]) is unused and will be removed from module b2000t_c2c_bram_dut_120_0_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70412 ; free virtual = 178841
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82626 ; free virtual = 192889
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -391,10 +387,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70461 ; free virtual = 178890
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82597 ; free virtual = 192860
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70460 ; free virtual = 178889
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82597 ; free virtual = 192860
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -406,7 +402,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70432 ; free virtual = 178861
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82562 ; free virtual = 192826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -430,7 +426,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82563 ; free virtual = 192826
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -443,7 +439,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82563 ; free virtual = 192826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,25 +451,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82563 ; free virtual = 192826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82563 ; free virtual = 192826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82564 ; free virtual = 192827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82564 ; free virtual = 192827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -491,11 +487,11 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |     8|
 |2     |LUT1   |    32|
-|3     |LUT2   |     4|
-|4     |LUT3   |     5|
-|5     |LUT4   |   105|
-|6     |LUT5   |   254|
-|7     |LUT6   |   215|
+|3     |LUT2   |     5|
+|4     |LUT3   |     6|
+|5     |LUT4   |   106|
+|6     |LUT5   |   247|
+|7     |LUT6   |   218|
 |8     |FDCE   |   626|
 +------+-------+------+
 
@@ -503,15 +499,15 @@ Report Instance Areas:
 +------+---------+--------+------+
 |      |Instance |Module  |Cells |
 +------+---------+--------+------+
-|1     |top      |        |  1249|
-|2     |  inst   |dut_120 |  1249|
+|1     |top      |        |  1248|
+|2     |  inst   |dut_120 |  1248|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70431 ; free virtual = 178860
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82564 ; free virtual = 192827
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2063.566 ; gain = 115.473 ; free physical = 70432 ; free virtual = 178861
-Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2063.566 ; gain = 1048.383 ; free physical = 70432 ; free virtual = 178861
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2048.543 ; gain = 113.473 ; free physical = 82564 ; free virtual = 192827
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2048.543 ; gain = 1033.359 ; free physical = 82563 ; free virtual = 192826
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -522,10 +518,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-235 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+233 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2063.566 ; gain = 946.879 ; free physical = 70402 ; free virtual = 178832
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.543 ; gain = 940.855 ; free physical = 82518 ; free virtual = 192781
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_0_0_synth_1/b2000t_c2c_bram_dut_120_0_0.dcp' has been generated.
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/b2000t_c2c_bram_dut_120_0_0_synth_1/b2000t_c2c_bram_dut_120_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2093.578 ; gain = 0.000 ; free physical = 71438 ; free virtual = 179869
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 15:37:45 2017...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2078.555 ; gain = 0.000 ; free physical = 82509 ; free virtual = 192773
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 19:16:57 2017...

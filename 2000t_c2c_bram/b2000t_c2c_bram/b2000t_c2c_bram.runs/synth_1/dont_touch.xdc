@@ -30,26 +30,14 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_vio_0_0 || ORIG_REF_NAME==b2000t_c2c_bram_vio_0_0}]
 
-# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_system_ila_0 || ORIG_REF_NAME==b2000t_c2c_bram_system_ila_0}]
-
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_jtag_axi_0_0 || ORIG_REF_NAME==b2000t_c2c_bram_jtag_axi_0_0}]
 
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_xbar_0 || ORIG_REF_NAME==b2000t_c2c_bram_xbar_0}]
 
-# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/b2000t_c2c_bram_system_ila1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_system_ila1_0 || ORIG_REF_NAME==b2000t_c2c_bram_system_ila1_0}]
-
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xlconstant_0_0/b2000t_c2c_bram_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_xlconstant_0_0 || ORIG_REF_NAME==b2000t_c2c_bram_xlconstant_0_0}]
-
-# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_aurora_64b66b_0_1 || ORIG_REF_NAME==b2000t_c2c_bram_aurora_64b66b_0_1}]
-
-# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_axi_chip2chip_0_1 || ORIG_REF_NAME==b2000t_c2c_bram_axi_chip2chip_0_1}]
 
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_axi_bram_ctrl_1_0 || ORIG_REF_NAME==b2000t_c2c_bram_axi_bram_ctrl_1_0}]
@@ -65,9 +53,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram
 
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_0/b2000t_c2c_bram_jack_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_jack_0_0 || ORIG_REF_NAME==b2000t_c2c_bram_jack_0_0}]
-
-# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/b2000t_c2c_bram_system_ila2_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_system_ila2_0 || ORIG_REF_NAME==b2000t_c2c_bram_system_ila2_0}]
 
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_axi_bram_ctrl_2_0 || ORIG_REF_NAME==b2000t_c2c_bram_axi_bram_ctrl_2_0}]
@@ -95,5 +80,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram
 
 # IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/b2000t_c2c_bram_jack_120_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_jack_120_0_1 || ORIG_REF_NAME==b2000t_c2c_bram_jack_120_0_1}]
+
+# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_1/b2000t_c2c_bram_system_ila_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_system_ila_1 || ORIG_REF_NAME==b2000t_c2c_bram_system_ila_1}]
+
+# IP: bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_2/b2000t_c2c_bram_system_ila1_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==b2000t_c2c_bram_system_ila1_2 || ORIG_REF_NAME==b2000t_c2c_bram_system_ila1_2}]
 
 # XDC: bd/b2000t_c2c_bram/b2000t_c2c_bram_ooc.xdc

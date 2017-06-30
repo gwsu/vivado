@@ -27,25 +27,24 @@ output reg  [59:0]   b_out
 
 //#############################################################################################
 
-    parameter IDEL = 4'b0000;
+    parameter IDEL = 5'd1;
     
-    parameter A2B1 = 4'b0001;
-    parameter A2B0 = 4'b0010;
+    parameter A2B1 = 5'd2;
+    parameter A2B0 = 5'd3;
+    parameter A10B = 5'd4;
+    parameter A01B = 5'd5;
     
-    parameter B2A1 = 4'b0011;
-    parameter B2A0 = 4'b0100;
-    
-    parameter A01B = 4'b0101;
-    parameter B01A = 4'b0110;
-
-    parameter A10B = 4'b0111;
-    parameter B10A = 4'b1000;
+    parameter B2A1 = 5'd6;
+    parameter B2A0 = 5'd7;   
+    parameter B10A = 5'd8; 
+    parameter B01A = 5'd9;
         
-    parameter ENDL = 4'b1001;
+    parameter ENDL = 5'd10;
      
 //############################################################################################# 
    
-   reg [3:0] state = IDEL;   
+   reg [4:0] state = IDEL;  
+    
    always @(posedge clk or posedge rst)
    begin
       if (rst) begin
@@ -59,6 +58,7 @@ output reg  [59:0]   b_out
                else       
                   state <= state;
                end
+// A2B               
             A2B1 : begin
                if (a2b1_dealy)
                    state <= A2B0;
@@ -67,10 +67,23 @@ output reg  [59:0]   b_out
                end
             A2B0 : begin
                if (a2b0_dealy)
-                   state <= B2A1 ;
+                   state <= A10B ;
                else 
                    state <= state;
                end
+            A10B : begin
+               if (a10b_dealy)
+                  state <= A01B;
+               else 
+                  state <= state;
+               end
+            A01B : begin
+               if (a01b_dealy)
+                  state <= B2A1;
+               else 
+                  state <= state;
+               end 
+//B2A                                               
             B2A1 : begin
                if (b2a1_dealy)
                    state <= B2A0;
@@ -79,37 +92,29 @@ output reg  [59:0]   b_out
                end
             B2A0 : begin
                if (b2a0_dealy)
-                   state <= A01B;
+                   state <= B10A;
                else 
                    state <= state;
                end
-            A01B : begin
-                  if (a01b_dealy)
-                      state <= B01A;
-                  else 
-                      state <= state;
-                  end
-            B01A : begin
-                  if (b01a_dealy)
-                      state <= A10B;
-                  else 
-                      state <= state;
-                  end
-            A10B : begin
-                  if (a10b_dealy)
-                      state <= B10A;
-                  else 
-                      state <= state;
-                  end
             B10A : begin
-                  if (b10a_dealy)
-                     state <= ENDL ;
-                  else 
-                     state <= state;
-                  end                                 
+                if (b10a_dealy)
+                    state <= B01A;
+                else 
+                    state <= state;
+                end
+            B01A : begin
+                 if (b01a_dealy)
+                    state <= ENDL ;
+                 else 
+                    state <= state;
+                 end   
+//END                                               
             ENDL: begin               
-                  state <= IDEL ;
-               end          
+                  state <= IDEL;
+                  end
+            default: begin
+                  state <= IDEL;
+            end                     
           endcase
     end 
 //#############################################################################################    
@@ -315,7 +320,8 @@ output reg  [59:0]   b_out
              data_bin_a <= b_in; 
            end                    
            else begin
-             a_oe <= 1'd0; 
+             a_oe <= 1'd0;
+             a_out <= {30'h0000_0000,30'h0000_0000}; 
            end        
         end
    end 
@@ -360,6 +366,7 @@ output reg  [59:0]   b_out
            end                      
            else begin
              b_oe <= 1'd0; 
+             b_out <= {30'h0000_0000,30'h0000_0000}; 
            end                   
         end
    end 
@@ -372,7 +379,7 @@ output reg  [59:0]   b_out
       if (rst)
           data_out <= 32'd0;
       else begin
-          if (en==1'd1 && we==4'h00 )begin
+          if (en==1'd1 && we==4'h0 )begin
                 case(addr)
 //////////////////////////////ain-1/////////////////////////////////////                
                     // read ain to bus

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="176992fs"></ZoomStartTime>
+      <ZoomEndTime time="357791fs"></ZoomEndTime>
+      <Cursor1Time time="281000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="216"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe1_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe1_1</obj_property>
+      <obj_property name="ObjectShortName">probe1_1</obj_property>
+      <obj_property name="label">dut_120_0_b_oe</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe2_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe2_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2_1[59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">dut_120_0_b_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe0_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe0_1</obj_property>
+      <obj_property name="ObjectShortName">probe0_1</obj_property>
+      <obj_property name="label">dut_120_0_a_oe</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe3_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe3_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe3_1[59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">dut_120_0_a_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe4_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe4_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe4_1[59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">jack_120_1_b_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="b2000t_c2c_bram_i/system_ila1/inst/probe5_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2000t_c2c_bram_i/system_ila1/inst/probe5_1[59:0]</obj_property>
+      <obj_property name="ObjectShortName">probe5_1[59:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">jack_120_1_a_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed Jun 28 15:34:40 2017
+| Date         : Fri Jun 30 17:05:54 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file dut_120_timing_summary_routed.rpt -rpx dut_120_timing_summary_routed.rpx
 | Design       : dut_120
@@ -67,7 +67,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 2152 pins that are not constrained for maximum delay. (HIGH)
+ There are 2028 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

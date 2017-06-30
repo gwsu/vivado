@@ -1,0 +1,686 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jun 27 17:06:58 2017
+# Process ID: 147170
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1
+# Command line: vivado -log b2000t_c2c_bram_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source b2000t_c2c_bram_wrapper.tcl -notrace
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper.vdi
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source b2000t_c2c_bram_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.dcp' for cell 'b2000t_c2c_bram_i/aurora_64b66b_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.dcp' for cell 'b2000t_c2c_bram_i/aurora_64b66b_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_1_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_1/b2000t_c2c_bram_axi_bram_ctrl_0_1.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_3_0/b2000t_c2c_bram_axi_bram_ctrl_3_0.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_1/b2000t_c2c_bram_axi_bram_ctrl_2_1.dcp' for cell 'b2000t_c2c_bram_i/axi_bram_ctrl_5'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.dcp' for cell 'b2000t_c2c_bram_i/axi_chip2chip_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.dcp' for cell 'b2000t_c2c_bram_i/axi_chip2chip_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0.dcp' for cell 'b2000t_c2c_bram_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.dcp' for cell 'b2000t_c2c_bram_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_0/b2000t_c2c_bram_dut_0_0.dcp' for cell 'b2000t_c2c_bram_i/dut_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_0_1/b2000t_c2c_bram_dut_0_1.dcp' for cell 'b2000t_c2c_bram_i/dut_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_0_0/b2000t_c2c_bram_dut_120_0_0.dcp' for cell 'b2000t_c2c_bram_i/dut_120_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_dut_120_1_0/b2000t_c2c_bram_dut_120_1_0.dcp' for cell 'b2000t_c2c_bram_i/dut_120_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_0/b2000t_c2c_bram_jack_0_0.dcp' for cell 'b2000t_c2c_bram_i/jack_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_0_1/b2000t_c2c_bram_jack_0_1.dcp' for cell 'b2000t_c2c_bram_i/jack_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_0/b2000t_c2c_bram_jack_120_0_0.dcp' for cell 'b2000t_c2c_bram_i/jack_120_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jack_120_0_1/b2000t_c2c_bram_jack_120_0_1.dcp' for cell 'b2000t_c2c_bram_i/jack_120_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.dcp' for cell 'b2000t_c2c_bram_i/jtag_axi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.dcp' for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.dcp' for cell 'b2000t_c2c_bram_i/system_ila'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/b2000t_c2c_bram_system_ila1_0.dcp' for cell 'b2000t_c2c_bram_i/system_ila1'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/b2000t_c2c_bram_system_ila2_0.dcp' for cell 'b2000t_c2c_bram_i/system_ila2'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.dcp' for cell 'b2000t_c2c_bram_i/vio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xlconstant_0_0/b2000t_c2c_bram_xlconstant_0_0.dcp' for cell 'b2000t_c2c_bram_i/xlconstant_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.dcp' for cell 'b2000t_c2c_bram_i/axi_mem_intercon/xbar'
+INFO: [Netlist 29-17] Analyzing 892 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_board.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0_board.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.020 ; gain = 744.020 ; free physical = 76991 ; free virtual = 185298
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xdc] for cell 'b2000t_c2c_bram_i/clk_wiz/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0_board.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0_board.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xdc] for cell 'b2000t_c2c_bram_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xdc] for cell 'b2000t_c2c_bram_i/vio_0'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila/inst/ila_lib/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'b2000t_c2c_bram_i/jtag_axi_0/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_1/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_1/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_1/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_1/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK_IN1_D_clk_p' already exists, overwriting the previous clock with the same name. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc:38]
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila_0/b2000t_c2c_bram_system_ila_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila1_0/b2000t_c2c_bram_system_ila1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_0_1/b2000t_c2c_bram_axi_bram_ctrl_0_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_system_ila2_0/b2000t_c2c_bram_system_ila2_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_3_0/b2000t_c2c_bram_axi_bram_ctrl_3_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_2_1/b2000t_c2c_bram_axi_bram_ctrl_2_1.dcp'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0/inst'
+can't read "phy_time": no such variable
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_a*_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*rd_pntr_gc_reg[*]}'. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc:13]
+WARNING: [Vivado 12-180] No cells matched 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[1].wr_stg_inst/Q_reg_reg[*]'. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc:13]
+can't read "skew_value": no such variable
+can't read "skew_value": no such variable
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0_clocks.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_0/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_clocks.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0_clocks.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_0/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1_clocks.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_1/inst'
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_aurora_64b66b_0_1/b2000t_c2c_bram_aurora_64b66b_0_1_clocks.xdc] for cell 'b2000t_c2c_bram_i/aurora_64b66b_1/inst'
+Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_1/inst'
+can't read "phy_time": no such variable
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_a*_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*rd_pntr_gc_reg[*]}'. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc:13]
+WARNING: [Vivado 12-180] No cells matched 'inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[1].wr_stg_inst/Q_reg_reg[*]'. [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc:13]
+can't read "skew_value": no such variable
+can't read "skew_value": no such variable
+Finished Parsing XDC File [/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_chip2chip_0_1/b2000t_c2c_bram_axi_chip2chip_0_1_clocks.xdc] for cell 'b2000t_c2c_bram_i/axi_chip2chip_1/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 448 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 56 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
+
+link_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:16 . Memory (MB): peak = 2751.016 ; gain = 1658.320 ; free physical = 77049 ; free virtual = 185285
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7v2000t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7v2000t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2841.055 ; gain = 80.035 ; free physical = 77048 ; free virtual = 185285
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/gpio_loopback_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wesleyguo/github/vivado/vivado/ip/dut/jack'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/vivado/vivado201604/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:2.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:2.0", from Vivado IP cache entry "ffaea7dc0610055a".
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77006 ; free virtual = 185246
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1ef1e2074
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:14 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77006 ; free virtual = 185246
+Implement Debug Cores | Checksum: 1aee1e8b8
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 276 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 123862314
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77003 ; free virtual = 185242
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 192 load pin(s).
+INFO: [Opt 31-10] Eliminated 683 cells.
+Phase 3 Constant propagation | Checksum: 169bed9cd
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77000 ; free virtual = 185240
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 1592 unconnected nets.
+INFO: [Opt 31-11] Eliminated 863 unconnected cells.
+Phase 4 Sweep | Checksum: 133d83ab1
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:26 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77000 ; free virtual = 185240
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 BUFG optimization | Checksum: 133d83ab1
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:29 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77000 ; free virtual = 185240
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77000 ; free virtual = 185240
+Ending Logic Optimization Task | Checksum: 133d83ab1
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:29 . Memory (MB): peak = 2841.055 ; gain = 0.000 ; free physical = 77000 ; free virtual = 185239
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 30 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 11 newly gated: 0 Total Ports: 60
+Ending PowerOpt Patch Enables Task | Checksum: 22b4357b3
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76679 ; free virtual = 184919
+Ending Power Optimization Task | Checksum: 22b4357b3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3310.715 ; gain = 469.660 ; free physical = 76679 ; free virtual = 184919
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:53 ; elapsed = 00:01:40 . Memory (MB): peak = 3310.715 ; gain = 559.691 ; free physical = 76679 ; free virtual = 184919
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76676 ; free virtual = 184919
+INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76669 ; free virtual = 184917
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7v2000t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7v2000t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/tmp_ram_rd_en) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[0] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[0] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[1] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[1] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[2] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[2] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[3] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[3] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[4] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[4] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[5] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[5] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[6] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[6] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/tmp_ram_rd_en) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/tmp_ram_rd_en) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[0] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[0] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[1] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[1] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (b2000t_c2c_bram_i/axi_chip2chip_1/inst/slave_fpga_gen.axi_chip2chip_slave_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][5]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[11] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][6]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[12] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][7]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[5] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][0]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[6] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][1]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[7] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][2]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[8] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][3]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[9] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[7][4]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[12] (net: b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/Q[7]) which is driven by a register (b2000t_c2c_bram_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76665 ; free virtual = 184913
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76664 ; free virtual = 184912
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13cd126a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76660 ; free virtual = 184908
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1afd2d3dd
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:01:37 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76653 ; free virtual = 184901
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1afd2d3dd
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:01:37 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76653 ; free virtual = 184901
+Phase 1 Placer Initialization | Checksum: 1afd2d3dd
+
+Time (s): cpu = 00:06:09 ; elapsed = 00:01:38 . Memory (MB): peak = 3310.715 ; gain = 0.000 ; free physical = 76642 ; free virtual = 184890
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 179363af7
+
+Time (s): cpu = 00:07:30 ; elapsed = 00:02:10 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76575 ; free virtual = 184823
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 179363af7
+
+Time (s): cpu = 00:07:30 ; elapsed = 00:02:10 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76575 ; free virtual = 184823
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 221274033
+
+Time (s): cpu = 00:07:42 ; elapsed = 00:02:15 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76560 ; free virtual = 184808
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2b7c791c3
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:02:15 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76551 ; free virtual = 184799
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c4403dac
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:02:15 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76551 ; free virtual = 184799
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1da147640
+
+Time (s): cpu = 00:07:46 ; elapsed = 00:02:16 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76551 ; free virtual = 184799
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 28e493e88
+
+Time (s): cpu = 00:07:47 ; elapsed = 00:02:17 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76549 ; free virtual = 184798
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Place Remaining
+Phase 3.7.1 Place Remaining | Checksum: 1d92f02c6
+
+Time (s): cpu = 00:08:01 ; elapsed = 00:02:29 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76487 ; free virtual = 184735
+Phase 3.7 Small Shape Detail Placement | Checksum: 1d92f02c6
+
+Time (s): cpu = 00:08:01 ; elapsed = 00:02:29 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76487 ; free virtual = 184735
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1572d663d
+
+Time (s): cpu = 00:08:03 ; elapsed = 00:02:31 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76487 ; free virtual = 184735
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1572d663d
+
+Time (s): cpu = 00:08:03 ; elapsed = 00:02:31 . Memory (MB): peak = 3353.223 ; gain = 42.508 ; free physical = 76487 ; free virtual = 184735
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 216bd1601
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:02:34 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76487 ; free virtual = 184735
+Phase 3 Detail Placement | Checksum: 216bd1601
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:02:34 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.893. For the most accurate timing information please run report_timing.
+
+Phase 4.1.1.1 Replication
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-19] Post Replication Timing Summary WNS=-7.893. For the most accurate timing information please run report_timing.
+Phase 4.1.1.1 Replication | Checksum: 16fad8352
+
+Time (s): cpu = 00:08:31 ; elapsed = 00:02:45 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+Phase 4.1.1 Post Placement Optimization | Checksum: 16fad8352
+
+Time (s): cpu = 00:08:31 ; elapsed = 00:02:46 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+Phase 4.1 Post Commit Optimization | Checksum: 16fad8352
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:02:46 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 16fad8352
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:02:46 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 16fad8352
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:02:47 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1d142ce21
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:02:47 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d142ce21
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:02:47 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+Ending Placer Task | Checksum: 1676b28c7
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:02:47 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+INFO: [Common 17-83] Releasing license: Implementation
+110 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:08:41 ; elapsed = 00:02:51 . Memory (MB): peak = 3384.797 ; gain = 74.082 ; free physical = 76488 ; free virtual = 184736
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3384.797 ; gain = 0.000 ; free physical = 76445 ; free virtual = 184735
+INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3384.797 ; gain = 0.000 ; free physical = 76473 ; free virtual = 184733
+report_io: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.43 . Memory (MB): peak = 3384.797 ; gain = 0.000 ; free physical = 76471 ; free virtual = 184731
+report_utilization: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.84 . Memory (MB): peak = 3384.797 ; gain = 0.000 ; free physical = 76470 ; free virtual = 184731
+report_control_sets: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3384.797 ; gain = 0.000 ; free physical = 76468 ; free virtual = 184729
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7v2000t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7v2000t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: b6d88f4c ConstDB: 0 ShapeSum: b092997b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 48838855
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:01:36 . Memory (MB): peak = 4051.965 ; gain = 667.164 ; free physical = 75796 ; free virtual = 184057
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 48838855
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:37 . Memory (MB): peak = 4051.965 ; gain = 667.164 ; free physical = 75796 ; free virtual = 184057
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 48838855
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:37 . Memory (MB): peak = 4063.449 ; gain = 678.648 ; free physical = 75744 ; free virtual = 184006
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 48838855
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:37 . Memory (MB): peak = 4063.449 ; gain = 678.648 ; free physical = 75744 ; free virtual = 184006
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1ef10b541
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:55 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75434 ; free virtual = 183696
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.981 | TNS=-15.954| WHS=-3.937 | THS=-3369.132|
+
+Phase 2 Router Initialization | Checksum: 10fad6ba1
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:57 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183696
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 13cf9ab5f
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:00 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183696
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2481
+ Number of Nodes with overlaps = 124
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: acea5ecd
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:02:06 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183696
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-268.193| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1aacad534
+
+Time (s): cpu = 00:04:23 ; elapsed = 00:02:07 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183697
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1a629a447
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:02:08 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183697
+Phase 4.1.2 GlobIterForTiming | Checksum: 76b76a18
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:02:09 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183697
+Phase 4.1 Global Iteration 0 | Checksum: 76b76a18
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:02:09 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75435 ; free virtual = 183697
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1e573ef3b
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:02:14 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-233.721| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2b8fb2789
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:02:16 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+Phase 4 Rip-up And Reroute | Checksum: 2b8fb2789
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:02:16 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 20c93d051
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:02:17 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-186.079| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 20e3ec6b0
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:18 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 20e3ec6b0
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:18 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+Phase 5 Delay and Skew Optimization | Checksum: 20e3ec6b0
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:18 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1711c2af3
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:02:19 . Memory (MB): peak = 4369.605 ; gain = 984.805 ; free physical = 75436 ; free virtual = 183697
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-56.804| WHS=-1.199 | THS=-4.281 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 19b6e844d
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:02:52 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+Phase 6.1 Hold Fix Iter | Checksum: 19b6e844d
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:02:52 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-60.857| WHS=-1.199 | THS=-3.455 |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.011 | TNS=-60.857| WHS=-1.199 | THS=-3.455 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 13a86d0bd
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:03:05 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+WARNING: [Route 35-468] The router encountered 4 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/en_adv_trigger_2_reg/D
+	b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/use_probe_debug_circuit_2_reg/D
+	b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg/D
+	b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/temp_reg0_reg/D
+
+Phase 6 Post Hold Fix | Checksum: 13a86d0bd
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:03:05 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.250022 %
+  Global Horizontal Routing Utilization  = 0.384576 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 63.0631%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 54.0541%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 115611fe3
+
+Time (s): cpu = 00:05:43 ; elapsed = 00:03:05 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 115611fe3
+
+Time (s): cpu = 00:05:43 ; elapsed = 00:03:05 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin b2000t_c2c_bram_i/aurora_64b66b_1/inst/b2000t_c2c_bram_aurora_64b66b_0_1_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_1_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_1_gtx_inst/gtxe2_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y10/GTNORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin b2000t_c2c_bram_i/aurora_64b66b_0/inst/b2000t_c2c_bram_aurora_64b66b_0_0_core_i/b2000t_c2c_bram_aurora_64b66b_0_0_wrapper_i/b2000t_c2c_bram_aurora_64b66b_0_0_multi_gt_i/b2000t_c2c_bram_aurora_64b66b_0_0_gtx_inst/gtxe2_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y8/GTNORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin b2000t_c2c_bram_i/aurora_64b66b_0/inst/gt_common_support/gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y2/GTNORTHREFCLK1
+Phase 9 Depositing Routes | Checksum: c460bcb3
+
+Time (s): cpu = 00:05:45 ; elapsed = 00:03:07 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 10c668962
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:03:09 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.011 | TNS=-60.857| WHS=-1.199 | THS=-3.455 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 10c668962
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:03:09 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D driven by global clock buffer BUFGCTRL_X0Y96.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin b2000t_c2c_bram_i/system_ila2/inst/ila_lib/inst/ila_core_inst/shifted_data_in_reg[7][86]_srl8/D driven by global clock buffer BUFGCTRL_X0Y96.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-424] Router was unable to fix hold violation on pin b2000t_c2c_bram_i/clk_wiz/inst/clkout1_buf/I driven by MMCM site MMCME2_ADV_X0Y10.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-456] Router was unable to fix hold violation on 1 pins because of tight setup and hold constraints. Such pins are:
+	b2000t_c2c_bram_i/system_ila1/inst/ila_lib/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg/D
+
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:03:09 . Memory (MB): peak = 4426.594 ; gain = 1041.793 ; free physical = 75347 ; free virtual = 183608
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+129 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:56 ; elapsed = 00:03:12 . Memory (MB): peak = 4426.602 ; gain = 1041.805 ; free physical = 75347 ; free virtual = 183608
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4456.605 ; gain = 0.000 ; free physical = 75293 ; free virtual = 183608
+INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4456.609 ; gain = 30.008 ; free physical = 75332 ; free virtual = 183608
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/b2000t_c2c_bram_wrapper_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 4506.629 ; gain = 0.000 ; free physical = 75330 ; free virtual = 183606
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file b2000t_c2c_bram_wrapper_power_routed.rpt -pb b2000t_c2c_bram_wrapper_power_summary_routed.pb -rpx b2000t_c2c_bram_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+139 Infos, 54 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4536.637 ; gain = 30.008 ; free physical = 75312 ; free virtual = 183606
+report_clock_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4536.637 ; gain = 0.000 ; free physical = 75312 ; free virtual = 183606
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 17:17:04 2017...

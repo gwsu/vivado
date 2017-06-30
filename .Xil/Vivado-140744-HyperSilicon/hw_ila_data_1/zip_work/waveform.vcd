@@ -1,0 +1,59 @@
+$date
+        2017-Jun-30 09:24:59
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " b2000t_c2c_bram_i/system_ila/inst/probe0_1 $end
+$var reg 32 # b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_araddr [31:0] $end
+$var reg 2 C b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arburst [1:0] $end
+$var reg 1 E b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arid $end
+$var reg 8 F b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arlen [7:0] $end
+$var reg 3 N b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arsize [2:0] $end
+$var reg 32 Q b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awaddr [31:0] $end
+$var reg 2 q b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awburst [1:0] $end
+$var reg 1 s b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awid $end
+$var reg 8 t b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awlen [7:0] $end
+$var reg 3 | b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awsize [2:0] $end
+$var reg 1 !" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_bid $end
+$var reg 2 "" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_bresp [1:0] $end
+$var reg 32 $" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rdata [31:0] $end
+$var reg 1 D" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rid $end
+$var reg 2 E" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rresp [1:0] $end
+$var reg 32 G" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_wdata [31:0] $end
+$var reg 2 g" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_aw_ctrl [1:0] $end
+$var reg 1 i" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awvalid $end
+$var reg 1 j" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awready $end
+$var reg 3 k" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_w_ctrl [2:0] $end
+$var reg 1 n" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_wvalid $end
+$var reg 1 o" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_wready $end
+$var reg 1 p" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_wlast $end
+$var reg 1 q" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_bvalid $end
+$var reg 2 r" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_b_ctrl [1:0] $end
+$var reg 1 t" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_bready $end
+$var reg 2 u" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_ar_ctrl [1:0] $end
+$var reg 1 w" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arvalid $end
+$var reg 1 x" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arready $end
+$var reg 3 y" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_r_ctrl [2:0] $end
+$var reg 1 |" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rvalid $end
+$var reg 1 }" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rready $end
+$var reg 1 ~" b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_rlast $end
+$var reg 3 !# Read_Address_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 $# Read_Address_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 '# Read_Data_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 *# Read_Data_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 -# Write_Address_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 0# Write_Address_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 3# Write_Data_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 6# Write_Data_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 9# Write_Response_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 <# Write_Response_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 1 ?# _TRIGGER $end
+$var reg 1 @# _WINDOW $end
+$var reg 1 A# _GAP $end
+$upscope $end
+$enddefinitions $end

@@ -29,3 +29,4 @@
 14:41:30 WARN  : Linker script will not be updated automatically. Users need to update it manually.
 14:42:03 INFO  : Invoking Bootgen: bootgen -image FSBL.bif -arch zynq -o /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.sdk/FSBL/bootimage/BOOT.bin -w on
 14:42:04 INFO  : Bootgen command execution is done.
+11:32:47 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

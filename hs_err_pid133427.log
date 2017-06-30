@@ -1,0 +1,23 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/vivado/vivado201604/Vivado/2016.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x91ab39) [0x7fc475222b39]
+/home/vivado/vivado201604/Vivado/2016.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xb6) [0x7fc475228f26]
+/home/vivado/vivado201604/Vivado/2016.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x917753) [0x7fc47521f753]
+/lib64/libc.so.6() [0x37d5c32920]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_designutils.so(HDDCProbeManager::probeSetExistsForName(std::string const&)+0x1e) [0x7fc495ca5d7e]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWProbeUtils::getProbesForDevice(HDDCProbeManager*, std::string const&, std::vector<HDDCProbe*, std::allocator<HDDCProbe*> >&)+0x21) [0x7fc47c54ad71]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWProbeUtils::getProbesForVIO(HDDCProbeManager*, std::string const&, std::string const&, std::vector<HDDCProbe*, std::allocator<HDDCProbe*> >&)+0x43) [0x7fc47c54b273]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWVIO::initProbesByParamData()+0x97) [0x7fc47c5535b7]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWVIO::getProbesByParamName(std::string const&, HSTVector<HDDCProbe*, std::allocator<HDDCProbe*> >&)+0xf5) [0x7fc47c553c95]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWVIO::initActivity(std::string const&)+0x58) [0x7fc47c555e08]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWVIO::updateActivity(std::pair<std::string const, std::string> const&)+0x32b) [0x7fc47c5562cb]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDHWVIO::updateDynamicStatus(boost::shared_ptr<HSTStringHashMap<std::string> >, boost::shared_ptr<HSTStringHashMap<std::string> >)+0x61b) [0x7fc47c55698b]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(+0x2d76d2) [0x7fc47c5576d2]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(+0x2478c1) [0x7fc47c4c78c1]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDXsdbTimerTask::updateSlots()+0x198) [0x7fc47c4c43d8]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/librdi_labtools.so(LTDXsdbTaskUpdateThread::run()+0x4ee) [0x7fc47c4c1c1e]
+/home/vivado/vivado201604/Vivado/2016.4/lib/lnx64.o/libboost_thread.so(+0xeff5) [0x7fc4ac0b5ff5]
+/lib64/libpthread.so.0() [0x37d6007851]
+/lib64/libc.so.6(clone+0x6d) [0x37d5ce890d]

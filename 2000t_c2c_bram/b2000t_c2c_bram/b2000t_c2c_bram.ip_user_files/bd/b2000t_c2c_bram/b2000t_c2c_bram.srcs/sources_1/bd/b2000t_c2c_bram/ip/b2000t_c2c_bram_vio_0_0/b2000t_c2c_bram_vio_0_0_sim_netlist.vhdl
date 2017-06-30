@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Jun 27 17:05:36 2017
+-- Date        : Fri Jun 30 12:57:16 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0_sim_netlist.vhdl
@@ -36,7 +36,7 @@ entity b2000t_c2c_bram_vio_0_0_vio_v3_0_14_decoder is
     s_dwe_o : in STD_LOGIC;
     s_den_o : in STD_LOGIC;
     \Probe_out_reg_int_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    Bus_Data_out : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    \Bus_Data_out_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \probe_width_int_reg[13]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \addr_p1_reg[2]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
@@ -48,24 +48,21 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_decoder is
   signal \Bus_data_out[0]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[0]_i_2_n_0\ : STD_LOGIC;
   signal \Bus_data_out[0]_i_3_n_0\ : STD_LOGIC;
-  signal \Bus_data_out[0]_i_4_n_0\ : STD_LOGIC;
   signal \Bus_data_out[10]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[11]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[11]_i_2_n_0\ : STD_LOGIC;
+  signal \Bus_data_out[11]_i_3_n_0\ : STD_LOGIC;
   signal \Bus_data_out[12]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_data_out[12]_i_2_n_0\ : STD_LOGIC;
   signal \Bus_data_out[13]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[13]_i_2_n_0\ : STD_LOGIC;
+  signal \Bus_data_out[13]_i_3_n_0\ : STD_LOGIC;
   signal \Bus_data_out[14]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[15]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_data_out[15]_i_2_n_0\ : STD_LOGIC;
-  signal \Bus_data_out[15]_i_3_n_0\ : STD_LOGIC;
   signal \Bus_data_out[1]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[1]_i_2_n_0\ : STD_LOGIC;
   signal \Bus_data_out[1]_i_3_n_0\ : STD_LOGIC;
   signal \Bus_data_out[2]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[2]_i_2_n_0\ : STD_LOGIC;
-  signal \Bus_data_out[2]_i_3_n_0\ : STD_LOGIC;
   signal \Bus_data_out[3]_i_1_n_0\ : STD_LOGIC;
   signal \Bus_data_out[3]_i_2_n_0\ : STD_LOGIC;
   signal \Bus_data_out[4]_i_1_n_0\ : STD_LOGIC;
@@ -100,14 +97,12 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_decoder is
   signal xsdb_addr_8_p2 : STD_LOGIC;
   signal xsdb_drdy_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Bus_data_out[0]_i_3\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \Bus_data_out[0]_i_4\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \Bus_data_out[15]_i_2\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \Bus_data_out[15]_i_3\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \Bus_data_out[1]_i_2\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \Bus_data_out[2]_i_2\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \wr_en[2]_i_2\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \wr_en[4]_i_2\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Bus_data_out[11]_i_2\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \Bus_data_out[13]_i_2\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Bus_data_out[13]_i_3\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Bus_data_out[1]_i_2\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \wr_en[2]_i_2\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \wr_en[4]_i_2\ : label is "soft_lutpair13";
 begin
   SR(0) <= \^sr\(0);
   in0 <= \^in0\;
@@ -117,64 +112,54 @@ begin
   \wr_en_reg[4]_1\ <= \^wr_en_reg[4]_1\;
   \wr_en_reg[4]_2\ <= \^wr_en_reg[4]_2\;
   \wr_en_reg[4]_3\ <= \^wr_en_reg[4]_3\;
-\Bus_data_out[0]_i_1\: unisim.vcomponents.LUT6
+\Bus_data_out[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFFEEEEFEFFEEEE"
+      INIT => X"FFEA"
     )
         port map (
       I0 => \Bus_data_out[0]_i_2_n_0\,
-      I1 => \Bus_data_out[0]_i_3_n_0\,
-      I2 => \^in0\,
-      I3 => xsdb_addr_2_0_p2(1),
-      I4 => \Bus_data_out[0]_i_4_n_0\,
-      I5 => xsdb_addr_2_0_p2(0),
+      I1 => \Probe_out_reg_int_reg[15]\(0),
+      I2 => xsdb_addr_8_p2,
+      I3 => \Bus_data_out[0]_i_3_n_0\,
       O => \Bus_data_out[0]_i_1_n_0\
     );
 \Bus_data_out[0]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"B88888BBB8888888"
-    )
-        port map (
-      I0 => \Probe_out_reg_int_reg[15]\(0),
-      I1 => xsdb_addr_8_p2,
-      I2 => Bus_Data_out(0),
-      I3 => xsdb_addr_2_0_p2(1),
-      I4 => xsdb_addr_2_0_p2(0),
-      I5 => probe_out_modified(0),
-      O => \Bus_data_out[0]_i_2_n_0\
-    );
-\Bus_data_out[0]_i_3\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"10000000"
+      INIT => X"080F000008080000"
     )
         port map (
       I0 => xsdb_addr_2_0_p2(0),
-      I1 => xsdb_addr_8_p2,
-      I2 => xsdb_addr_2_0_p2(2),
-      I3 => xsdb_addr_2_0_p2(1),
-      I4 => \probe_width_int_reg[13]\(0),
-      O => \Bus_data_out[0]_i_3_n_0\
+      I1 => \Bus_Data_out_reg[11]\(0),
+      I2 => xsdb_addr_8_p2,
+      I3 => xsdb_addr_2_0_p2(2),
+      I4 => xsdb_addr_2_0_p2(1),
+      I5 => \^in0\,
+      O => \Bus_data_out[0]_i_2_n_0\
     );
-\Bus_data_out[0]_i_4\: unisim.vcomponents.LUT2
+\Bus_data_out[0]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"1"
+      INIT => X"00000CF000000AF0"
     )
         port map (
-      I0 => xsdb_addr_8_p2,
-      I1 => xsdb_addr_2_0_p2(2),
-      O => \Bus_data_out[0]_i_4_n_0\
+      I0 => probe_out_modified(0),
+      I1 => \probe_width_int_reg[13]\(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
+      I4 => xsdb_addr_8_p2,
+      I5 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[0]_i_3_n_0\
     );
 \Bus_data_out[10]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFF888F888F888"
     )
         port map (
-      I0 => \Bus_data_out[15]_i_2_n_0\,
+      I0 => \Bus_data_out[13]_i_2_n_0\,
       I1 => probe_out_modified(10),
-      I2 => \Probe_out_reg_int_reg[15]\(10),
-      I3 => xsdb_addr_8_p2,
-      I4 => Bus_Data_out(10),
-      I5 => \Bus_data_out[15]_i_3_n_0\,
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(10),
+      I4 => xsdb_addr_8_p2,
+      I5 => \Probe_out_reg_int_reg[15]\(10),
       O => \Bus_data_out[10]_i_1_n_0\
     );
 \Bus_data_out[11]_i_1\: unisim.vcomponents.LUT5
@@ -184,121 +169,108 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(11),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(11),
-      I4 => \Bus_data_out[11]_i_2_n_0\,
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(11),
+      I4 => \Bus_data_out[11]_i_3_n_0\,
       O => \Bus_data_out[11]_i_1_n_0\
     );
-\Bus_data_out[11]_i_2\: unisim.vcomponents.LUT6
+\Bus_data_out[11]_i_2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"000000AC00000000"
-    )
-        port map (
-      I0 => \probe_width_int_reg[13]\(2),
-      I1 => probe_out_modified(11),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
-      I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
-      O => \Bus_data_out[11]_i_2_n_0\
-    );
-\Bus_data_out[12]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFF888"
-    )
-        port map (
-      I0 => xsdb_addr_8_p2,
-      I1 => \Probe_out_reg_int_reg[15]\(12),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(12),
-      I4 => \Bus_data_out[12]_i_2_n_0\,
-      O => \Bus_data_out[12]_i_1_n_0\
-    );
-\Bus_data_out[12]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"000000AC00000000"
-    )
-        port map (
-      I0 => \probe_width_int_reg[13]\(2),
-      I1 => probe_out_modified(12),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
-      I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
-      O => \Bus_data_out[12]_i_2_n_0\
-    );
-\Bus_data_out[13]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFF888"
-    )
-        port map (
-      I0 => xsdb_addr_8_p2,
-      I1 => \Probe_out_reg_int_reg[15]\(13),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(13),
-      I4 => \Bus_data_out[13]_i_2_n_0\,
-      O => \Bus_data_out[13]_i_1_n_0\
-    );
-\Bus_data_out[13]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"000000AC00000000"
-    )
-        port map (
-      I0 => \probe_width_int_reg[13]\(3),
-      I1 => probe_out_modified(13),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
-      I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
-      O => \Bus_data_out[13]_i_2_n_0\
-    );
-\Bus_data_out[14]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFF888F888F888"
-    )
-        port map (
-      I0 => \Bus_data_out[15]_i_2_n_0\,
-      I1 => probe_out_modified(14),
-      I2 => \Probe_out_reg_int_reg[15]\(14),
-      I3 => xsdb_addr_8_p2,
-      I4 => Bus_Data_out(14),
-      I5 => \Bus_data_out[15]_i_3_n_0\,
-      O => \Bus_data_out[14]_i_1_n_0\
-    );
-\Bus_data_out[15]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFF888F888F888"
-    )
-        port map (
-      I0 => \Bus_data_out[15]_i_2_n_0\,
-      I1 => probe_out_modified(15),
-      I2 => \Probe_out_reg_int_reg[15]\(15),
-      I3 => xsdb_addr_8_p2,
-      I4 => Bus_Data_out(15),
-      I5 => \Bus_data_out[15]_i_3_n_0\,
-      O => \Bus_data_out[15]_i_1_n_0\
-    );
-\Bus_data_out[15]_i_2\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0100"
+      INIT => X"0800"
     )
         port map (
       I0 => xsdb_addr_2_0_p2(1),
       I1 => xsdb_addr_2_0_p2(0),
       I2 => xsdb_addr_8_p2,
       I3 => xsdb_addr_2_0_p2(2),
-      O => \Bus_data_out[15]_i_2_n_0\
+      O => \Bus_data_out[11]_i_2_n_0\
     );
-\Bus_data_out[15]_i_3\: unisim.vcomponents.LUT4
+\Bus_data_out[11]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0800"
+      INIT => X"00000A0000000C00"
     )
         port map (
-      I0 => xsdb_addr_2_0_p2(1),
+      I0 => \probe_width_int_reg[13]\(2),
+      I1 => probe_out_modified(11),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
+      I4 => xsdb_addr_8_p2,
+      I5 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[11]_i_3_n_0\
+    );
+\Bus_data_out[12]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFF888F888F888"
+    )
+        port map (
+      I0 => \Bus_data_out[13]_i_2_n_0\,
+      I1 => probe_out_modified(12),
+      I2 => \Bus_data_out[13]_i_3_n_0\,
+      I3 => \probe_width_int_reg[13]\(2),
+      I4 => xsdb_addr_8_p2,
+      I5 => \Probe_out_reg_int_reg[15]\(12),
+      O => \Bus_data_out[12]_i_1_n_0\
+    );
+\Bus_data_out[13]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFF888F888F888"
+    )
+        port map (
+      I0 => \Bus_data_out[13]_i_2_n_0\,
+      I1 => probe_out_modified(13),
+      I2 => \Bus_data_out[13]_i_3_n_0\,
+      I3 => \probe_width_int_reg[13]\(3),
+      I4 => xsdb_addr_8_p2,
+      I5 => \Probe_out_reg_int_reg[15]\(13),
+      O => \Bus_data_out[13]_i_1_n_0\
+    );
+\Bus_data_out[13]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0004"
+    )
+        port map (
+      I0 => xsdb_addr_2_0_p2(0),
       I1 => xsdb_addr_2_0_p2(2),
       I2 => xsdb_addr_8_p2,
-      I3 => xsdb_addr_2_0_p2(0),
-      O => \Bus_data_out[15]_i_3_n_0\
+      I3 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[13]_i_2_n_0\
+    );
+\Bus_data_out[13]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0400"
+    )
+        port map (
+      I0 => xsdb_addr_2_0_p2(0),
+      I1 => xsdb_addr_2_0_p2(2),
+      I2 => xsdb_addr_8_p2,
+      I3 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[13]_i_3_n_0\
+    );
+\Bus_data_out[14]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAA0000AAAA0C00"
+    )
+        port map (
+      I0 => \Probe_out_reg_int_reg[15]\(14),
+      I1 => probe_out_modified(14),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
+      I4 => xsdb_addr_8_p2,
+      I5 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[14]_i_1_n_0\
+    );
+\Bus_data_out[15]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAA0000AAAA0C00"
+    )
+        port map (
+      I0 => \Probe_out_reg_int_reg[15]\(15),
+      I1 => probe_out_modified(15),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
+      I4 => xsdb_addr_8_p2,
+      I5 => xsdb_addr_2_0_p2(1),
+      O => \Bus_data_out[15]_i_1_n_0\
     );
 \Bus_data_out[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -307,72 +279,61 @@ begin
         port map (
       I0 => \Probe_out_reg_int_reg[15]\(1),
       I1 => xsdb_addr_8_p2,
-      I2 => Bus_Data_out(1),
-      I3 => \Bus_data_out[15]_i_3_n_0\,
+      I2 => \Bus_Data_out_reg[11]\(1),
+      I3 => \Bus_data_out[11]_i_2_n_0\,
       I4 => \Bus_data_out[1]_i_2_n_0\,
       I5 => \Bus_data_out[1]_i_3_n_0\,
       O => \Bus_data_out[1]_i_1_n_0\
     );
 \Bus_data_out[1]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10000000"
+      INIT => X"00200000"
     )
         port map (
-      I0 => xsdb_addr_2_0_p2(0),
+      I0 => xsdb_addr_2_0_p2(1),
       I1 => xsdb_addr_8_p2,
       I2 => xsdb_addr_2_0_p2(2),
-      I3 => xsdb_addr_2_0_p2(1),
+      I3 => xsdb_addr_2_0_p2(0),
       I4 => \probe_width_int_reg[13]\(1),
       O => \Bus_data_out[1]_i_2_n_0\
     );
 \Bus_data_out[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000A00000C0F"
+      INIT => X"0000000003002020"
     )
         port map (
-      I0 => \^sr\(0),
-      I1 => probe_out_modified(1),
-      I2 => xsdb_addr_8_p2,
-      I3 => xsdb_addr_2_0_p2(2),
-      I4 => xsdb_addr_2_0_p2(0),
-      I5 => xsdb_addr_2_0_p2(1),
+      I0 => probe_out_modified(1),
+      I1 => xsdb_addr_8_p2,
+      I2 => xsdb_addr_2_0_p2(2),
+      I3 => \^sr\(0),
+      I4 => xsdb_addr_2_0_p2(1),
+      I5 => xsdb_addr_2_0_p2(0),
       O => \Bus_data_out[1]_i_3_n_0\
     );
-\Bus_data_out[2]_i_1\: unisim.vcomponents.LUT6
+\Bus_data_out[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFFFFFFFFF888"
+      INIT => X"FFEAEAEA"
     )
         port map (
-      I0 => \Bus_data_out[15]_i_3_n_0\,
-      I1 => Bus_Data_out(2),
-      I2 => xsdb_addr_8_p2,
-      I3 => \Probe_out_reg_int_reg[15]\(2),
-      I4 => \Bus_data_out[2]_i_2_n_0\,
-      I5 => \Bus_data_out[2]_i_3_n_0\,
+      I0 => \Bus_data_out[2]_i_2_n_0\,
+      I1 => \Bus_data_out[11]_i_2_n_0\,
+      I2 => \Bus_Data_out_reg[11]\(2),
+      I3 => xsdb_addr_8_p2,
+      I4 => \Probe_out_reg_int_reg[15]\(2),
       O => \Bus_data_out[2]_i_1_n_0\
     );
-\Bus_data_out[2]_i_2\: unisim.vcomponents.LUT3
+\Bus_data_out[2]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"01"
+      INIT => X"00000044000050FF"
     )
         port map (
-      I0 => xsdb_addr_2_0_p2(2),
-      I1 => xsdb_addr_8_p2,
-      I2 => xsdb_addr_2_0_p2(1),
-      O => \Bus_data_out[2]_i_2_n_0\
-    );
-\Bus_data_out[2]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"00000000040F0404"
-    )
-        port map (
-      I0 => xsdb_addr_2_0_p2(1),
+      I0 => xsdb_addr_2_0_p2(0),
       I1 => probe_out_modified(2),
-      I2 => xsdb_addr_8_p2,
-      I3 => xsdb_addr_2_0_p2(2),
-      I4 => \^internal_cnt_rst\,
-      I5 => xsdb_addr_2_0_p2(0),
-      O => \Bus_data_out[2]_i_3_n_0\
+      I2 => \^internal_cnt_rst\,
+      I3 => xsdb_addr_2_0_p2(1),
+      I4 => xsdb_addr_8_p2,
+      I5 => xsdb_addr_2_0_p2(2),
+      O => \Bus_data_out[2]_i_2_n_0\
     );
 \Bus_data_out[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -381,22 +342,22 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(3),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(3),
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(3),
       I4 => \Bus_data_out[3]_i_2_n_0\,
       O => \Bus_data_out[3]_i_1_n_0\
     );
 \Bus_data_out[3]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000AC00000000"
+      INIT => X"00000A0000000C00"
     )
         port map (
       I0 => \probe_width_int_reg[13]\(0),
       I1 => probe_out_modified(3),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
       I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
+      I5 => xsdb_addr_2_0_p2(1),
       O => \Bus_data_out[3]_i_2_n_0\
     );
 \Bus_data_out[4]_i_1\: unisim.vcomponents.LUT5
@@ -406,22 +367,22 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(4),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(4),
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(4),
       I4 => \Bus_data_out[4]_i_2_n_0\,
       O => \Bus_data_out[4]_i_1_n_0\
     );
 \Bus_data_out[4]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000AC00000000"
+      INIT => X"00000A0000000C00"
     )
         port map (
       I0 => \probe_width_int_reg[13]\(0),
       I1 => probe_out_modified(4),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
       I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
+      I5 => xsdb_addr_2_0_p2(1),
       O => \Bus_data_out[4]_i_2_n_0\
     );
 \Bus_data_out[5]_i_1\: unisim.vcomponents.LUT5
@@ -431,22 +392,22 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(5),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(5),
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(5),
       I4 => \Bus_data_out[5]_i_2_n_0\,
       O => \Bus_data_out[5]_i_1_n_0\
     );
 \Bus_data_out[5]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000AC00000000"
+      INIT => X"00000A0000000C00"
     )
         port map (
       I0 => \probe_width_int_reg[13]\(1),
       I1 => probe_out_modified(5),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
       I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
+      I5 => xsdb_addr_2_0_p2(1),
       O => \Bus_data_out[5]_i_2_n_0\
     );
 \Bus_data_out[6]_i_1\: unisim.vcomponents.LUT6
@@ -454,12 +415,12 @@ begin
       INIT => X"FFFFF888F888F888"
     )
         port map (
-      I0 => \Bus_data_out[15]_i_2_n_0\,
+      I0 => \Bus_data_out[13]_i_2_n_0\,
       I1 => probe_out_modified(6),
-      I2 => \Probe_out_reg_int_reg[15]\(6),
-      I3 => xsdb_addr_8_p2,
-      I4 => Bus_Data_out(6),
-      I5 => \Bus_data_out[15]_i_3_n_0\,
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(6),
+      I4 => xsdb_addr_8_p2,
+      I5 => \Probe_out_reg_int_reg[15]\(6),
       O => \Bus_data_out[6]_i_1_n_0\
     );
 \Bus_data_out[7]_i_1\: unisim.vcomponents.LUT6
@@ -467,12 +428,12 @@ begin
       INIT => X"FFFFF888F888F888"
     )
         port map (
-      I0 => \Bus_data_out[15]_i_2_n_0\,
+      I0 => \Bus_data_out[13]_i_2_n_0\,
       I1 => probe_out_modified(7),
-      I2 => \Probe_out_reg_int_reg[15]\(7),
-      I3 => xsdb_addr_8_p2,
-      I4 => Bus_Data_out(7),
-      I5 => \Bus_data_out[15]_i_3_n_0\,
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(7),
+      I4 => xsdb_addr_8_p2,
+      I5 => \Probe_out_reg_int_reg[15]\(7),
       O => \Bus_data_out[7]_i_1_n_0\
     );
 \Bus_data_out[8]_i_1\: unisim.vcomponents.LUT5
@@ -482,22 +443,22 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(8),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(8),
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(8),
       I4 => \Bus_data_out[8]_i_2_n_0\,
       O => \Bus_data_out[8]_i_1_n_0\
     );
 \Bus_data_out[8]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000AC00000000"
+      INIT => X"00000A0000000C00"
     )
         port map (
       I0 => \probe_width_int_reg[13]\(2),
       I1 => probe_out_modified(8),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
       I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
+      I5 => xsdb_addr_2_0_p2(1),
       O => \Bus_data_out[8]_i_2_n_0\
     );
 \Bus_data_out[9]_i_1\: unisim.vcomponents.LUT5
@@ -507,22 +468,22 @@ begin
         port map (
       I0 => xsdb_addr_8_p2,
       I1 => \Probe_out_reg_int_reg[15]\(9),
-      I2 => \Bus_data_out[15]_i_3_n_0\,
-      I3 => Bus_Data_out(9),
+      I2 => \Bus_data_out[11]_i_2_n_0\,
+      I3 => \Bus_Data_out_reg[11]\(9),
       I4 => \Bus_data_out[9]_i_2_n_0\,
       O => \Bus_data_out[9]_i_1_n_0\
     );
 \Bus_data_out[9]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000AC00000000"
+      INIT => X"00000A0000000C00"
     )
         port map (
       I0 => \probe_width_int_reg[13]\(3),
       I1 => probe_out_modified(9),
-      I2 => xsdb_addr_2_0_p2(1),
-      I3 => xsdb_addr_2_0_p2(0),
+      I2 => xsdb_addr_2_0_p2(0),
+      I3 => xsdb_addr_2_0_p2(2),
       I4 => xsdb_addr_8_p2,
-      I5 => xsdb_addr_2_0_p2(2),
+      I5 => xsdb_addr_2_0_p2(1),
       O => \Bus_data_out[9]_i_2_n_0\
     );
 \Bus_data_out_reg[0]\: unisim.vcomponents.FDRE
@@ -541,7 +502,7 @@ begin
       Q => \sl_oport_o[16]_INST_0\(10),
       R => '0'
     );
-\Bus_data_out_reg[11]\: unisim.vcomponents.FDRE
+\bus_data_out_reg[11]_RnM\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
@@ -685,7 +646,7 @@ int_cnt_rst_reg: unisim.vcomponents.FDRE
       Q => \^internal_cnt_rst\,
       R => s_rst_o
     );
-\probe_in_reg[6]_i_1\: unisim.vcomponents.LUT1
+\probe_in_reg[3]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
@@ -1015,45 +976,36 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
   port (
-    Bus_Data_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \out\ : in STD_LOGIC;
     s_daddr_o : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_dwe_o : in STD_LOGIC;
     s_den_o : in STD_LOGIC;
     \wr_en[4]_i_5\ : in STD_LOGIC;
-    s_rst_o : in STD_LOGIC;
-    internal_cnt_rst : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    D : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    clk : in STD_LOGIC
+    D : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    clk : in STD_LOGIC;
+    s_rst_o : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one : entity is "vio_v3_0_14_probe_in_one";
 end b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one;
 
 architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
-  signal \Bus_Data_out[0]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_Data_out[1]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_Data_out[2]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_Data_out[3]_i_1_n_0\ : STD_LOGIC;
-  signal \Bus_Data_out[4]_i_1_n_0\ : STD_LOGIC;
   signal \DECODER_INST/rd_en_int_7\ : STD_LOGIC;
   signal Read_int : STD_LOGIC;
-  signal addr_count : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \addr_count[0]_i_1_n_0\ : STD_LOGIC;
-  signal \addr_count[1]_i_1_n_0\ : STD_LOGIC;
-  signal \addr_count[2]_i_1_n_0\ : STD_LOGIC;
-  signal addr_count_reg0 : STD_LOGIC;
-  signal addr_count_reg1 : STD_LOGIC;
-  signal data_int_sync1 : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal data_int_sync1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg : string;
   attribute async_reg of data_int_sync1 : signal is "true";
-  signal data_int_sync2 : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal data_int_sync2 : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg of data_int_sync2 : signal is "true";
-  signal p_20_out : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal p_21_out : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal probe_all_int : STD_LOGIC_VECTOR ( 20 downto 7 );
-  signal probe_in_reg : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \dn_activity_reg_n_0_[0]\ : STD_LOGIC;
+  signal \dn_activity_reg_n_0_[3]\ : STD_LOGIC;
+  signal p_11_out : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal p_12_out : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal p_6_in : STD_LOGIC;
+  signal p_9_in : STD_LOGIC;
+  signal probe_in_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute DONT_TOUCH : boolean;
   attribute DONT_TOUCH of probe_in_reg : signal is std.standard.true;
   signal read_done : STD_LOGIC;
@@ -1061,9 +1013,11 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
   attribute MAX_FANOUT of read_done : signal is "200";
   attribute RTL_MAX_FANOUT : string;
   attribute RTL_MAX_FANOUT of read_done : signal is "found";
-  attribute MAX_FANOUT of \addr_count_reg[0]\ : label is "100";
-  attribute MAX_FANOUT of \addr_count_reg[1]\ : label is "100";
-  attribute MAX_FANOUT of \addr_count_reg[2]\ : label is "100";
+  signal read_done_i_1_n_0 : STD_LOGIC;
+  signal \up_activity_reg_n_0_[0]\ : STD_LOGIC;
+  signal \up_activity_reg_n_0_[1]\ : STD_LOGIC;
+  signal \up_activity_reg_n_0_[2]\ : STD_LOGIC;
+  signal \up_activity_reg_n_0_[3]\ : STD_LOGIC;
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \data_int_sync1_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -1074,12 +1028,6 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
   attribute KEEP of \data_int_sync1_reg[2]\ : label is "yes";
   attribute ASYNC_REG_boolean of \data_int_sync1_reg[3]\ : label is std.standard.true;
   attribute KEEP of \data_int_sync1_reg[3]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync1_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync1_reg[4]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync1_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync1_reg[5]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync1_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync1_reg[6]\ : label is "yes";
   attribute ASYNC_REG_boolean of \data_int_sync2_reg[0]\ : label is std.standard.true;
   attribute KEEP of \data_int_sync2_reg[0]\ : label is "yes";
   attribute ASYNC_REG_boolean of \data_int_sync2_reg[1]\ : label is std.standard.true;
@@ -1088,12 +1036,6 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
   attribute KEEP of \data_int_sync2_reg[2]\ : label is "yes";
   attribute ASYNC_REG_boolean of \data_int_sync2_reg[3]\ : label is std.standard.true;
   attribute KEEP of \data_int_sync2_reg[3]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync2_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync2_reg[4]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync2_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync2_reg[5]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \data_int_sync2_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \data_int_sync2_reg[6]\ : label is "yes";
   attribute DONT_TOUCH of \probe_in_reg_reg[0]\ : label is std.standard.true;
   attribute KEEP of \probe_in_reg_reg[0]\ : label is "yes";
   attribute DONT_TOUCH of \probe_in_reg_reg[1]\ : label is std.standard.true;
@@ -1102,191 +1044,103 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one is
   attribute KEEP of \probe_in_reg_reg[2]\ : label is "yes";
   attribute DONT_TOUCH of \probe_in_reg_reg[3]\ : label is std.standard.true;
   attribute KEEP of \probe_in_reg_reg[3]\ : label is "yes";
-  attribute DONT_TOUCH of \probe_in_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \probe_in_reg_reg[4]\ : label is "yes";
-  attribute DONT_TOUCH of \probe_in_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \probe_in_reg_reg[5]\ : label is "yes";
-  attribute DONT_TOUCH of \probe_in_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \probe_in_reg_reg[6]\ : label is "yes";
   attribute RTL_MAX_FANOUT of read_done_reg : label is "found";
 begin
-\Bus_Data_out[0]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => probe_all_int(16),
-      I1 => addr_count(0),
-      I2 => data_int_sync2(0),
-      O => \Bus_Data_out[0]_i_1_n_0\
-    );
-\Bus_Data_out[1]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => probe_all_int(17),
-      I1 => addr_count(0),
-      I2 => data_int_sync2(1),
-      O => \Bus_Data_out[1]_i_1_n_0\
-    );
-\Bus_Data_out[2]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => probe_all_int(18),
-      I1 => addr_count(0),
-      I2 => data_int_sync2(2),
-      O => \Bus_Data_out[2]_i_1_n_0\
-    );
-\Bus_Data_out[3]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => probe_all_int(19),
-      I1 => addr_count(0),
-      I2 => data_int_sync2(3),
-      O => \Bus_Data_out[3]_i_1_n_0\
-    );
-\Bus_Data_out[4]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => probe_all_int(20),
-      I1 => addr_count(0),
-      I2 => data_int_sync2(4),
-      O => \Bus_Data_out[4]_i_1_n_0\
-    );
 \Bus_Data_out_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => \Bus_Data_out[0]_i_1_n_0\,
-      Q => Bus_Data_out(0),
+      D => data_int_sync2(0),
+      Q => Q(0),
       R => '0'
     );
 \Bus_Data_out_reg[10]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => probe_all_int(10),
-      Q => Bus_Data_out(10),
-      R => addr_count(0)
+      D => p_9_in,
+      Q => Q(10),
+      R => '0'
     );
 \Bus_Data_out_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => probe_all_int(11),
-      Q => Bus_Data_out(11),
-      R => addr_count(0)
-    );
-\Bus_Data_out_reg[12]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => probe_all_int(12),
-      Q => Bus_Data_out(12),
-      R => addr_count(0)
-    );
-\Bus_Data_out_reg[13]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => probe_all_int(13),
-      Q => Bus_Data_out(13),
-      R => addr_count(0)
-    );
-\Bus_Data_out_reg[14]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => probe_all_int(14),
-      Q => Bus_Data_out(14),
-      R => addr_count(0)
-    );
-\Bus_Data_out_reg[15]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => probe_all_int(15),
-      Q => Bus_Data_out(15),
-      R => addr_count(0)
+      D => \dn_activity_reg_n_0_[3]\,
+      Q => Q(11),
+      R => '0'
     );
 \Bus_Data_out_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => \Bus_Data_out[1]_i_1_n_0\,
-      Q => Bus_Data_out(1),
+      D => data_int_sync2(1),
+      Q => Q(1),
       R => '0'
     );
 \Bus_Data_out_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => \Bus_Data_out[2]_i_1_n_0\,
-      Q => Bus_Data_out(2),
+      D => data_int_sync2(2),
+      Q => Q(2),
       R => '0'
     );
 \Bus_Data_out_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => \Bus_Data_out[3]_i_1_n_0\,
-      Q => Bus_Data_out(3),
+      D => data_int_sync2(3),
+      Q => Q(3),
       R => '0'
     );
 \Bus_Data_out_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => \Bus_Data_out[4]_i_1_n_0\,
-      Q => Bus_Data_out(4),
+      D => \up_activity_reg_n_0_[0]\,
+      Q => Q(4),
       R => '0'
     );
 \Bus_Data_out_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => data_int_sync2(5),
-      Q => Bus_Data_out(5),
-      R => addr_count(0)
+      D => \up_activity_reg_n_0_[1]\,
+      Q => Q(5),
+      R => '0'
     );
 \Bus_Data_out_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => data_int_sync2(6),
-      Q => Bus_Data_out(6),
-      R => addr_count(0)
+      D => \up_activity_reg_n_0_[2]\,
+      Q => Q(6),
+      R => '0'
     );
 \Bus_Data_out_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => probe_all_int(7),
-      Q => Bus_Data_out(7),
-      R => addr_count(0)
+      D => \up_activity_reg_n_0_[3]\,
+      Q => Q(7),
+      R => '0'
     );
 \Bus_Data_out_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => probe_all_int(8),
-      Q => Bus_Data_out(8),
-      R => addr_count(0)
+      D => \dn_activity_reg_n_0_[0]\,
+      Q => Q(8),
+      R => '0'
     );
 \Bus_Data_out_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => probe_all_int(9),
-      Q => Bus_Data_out(9),
-      R => addr_count(0)
+      D => p_6_in,
+      Q => Q(9),
+      R => '0'
     );
 Read_int_i_1: unisim.vcomponents.LUT5
     generic map(
@@ -1306,79 +1160,6 @@ Read_int_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => \DECODER_INST/rd_en_int_7\,
       Q => Read_int,
-      R => '0'
-    );
-\addr_count[0]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"002E"
-    )
-        port map (
-      I0 => addr_count(0),
-      I1 => Read_int,
-      I2 => addr_count(0),
-      I3 => addr_count_reg0,
-      O => \addr_count[0]_i_1_n_0\
-    );
-\addr_count[1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00002EE2"
-    )
-        port map (
-      I0 => addr_count(1),
-      I1 => Read_int,
-      I2 => addr_count(1),
-      I3 => addr_count(0),
-      I4 => addr_count_reg0,
-      O => \addr_count[1]_i_1_n_0\
-    );
-\addr_count[2]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"000000002EE2E2E2"
-    )
-        port map (
-      I0 => addr_count(2),
-      I1 => Read_int,
-      I2 => addr_count(2),
-      I3 => addr_count(0),
-      I4 => addr_count(1),
-      I5 => addr_count_reg0,
-      O => \addr_count[2]_i_1_n_0\
-    );
-\addr_count[2]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EEEFEEEEEEEEEEEE"
-    )
-        port map (
-      I0 => s_rst_o,
-      I1 => internal_cnt_rst,
-      I2 => addr_count(1),
-      I3 => addr_count(2),
-      I4 => Read_int,
-      I5 => addr_count(0),
-      O => addr_count_reg0
-    );
-\addr_count_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => \addr_count[0]_i_1_n_0\,
-      Q => addr_count(0),
-      R => '0'
-    );
-\addr_count_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => \addr_count[1]_i_1_n_0\,
-      Q => addr_count(1),
-      R => '0'
-    );
-\addr_count_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => \out\,
-      CE => '1',
-      D => \addr_count[2]_i_1_n_0\,
-      Q => addr_count(2),
       R => '0'
     );
 \data_int_sync1_reg[0]\: unisim.vcomponents.FDRE
@@ -1425,39 +1206,6 @@ Read_int_reg: unisim.vcomponents.FDRE
       Q => data_int_sync1(3),
       R => '0'
     );
-\data_int_sync1_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => probe_in_reg(4),
-      Q => data_int_sync1(4),
-      R => '0'
-    );
-\data_int_sync1_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => probe_in_reg(5),
-      Q => data_int_sync1(5),
-      R => '0'
-    );
-\data_int_sync1_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => probe_in_reg(6),
-      Q => data_int_sync1(6),
-      R => '0'
-    );
 \data_int_sync2_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1502,115 +1250,49 @@ Read_int_reg: unisim.vcomponents.FDRE
       Q => data_int_sync2(3),
       R => '0'
     );
-\data_int_sync2_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => data_int_sync1(4),
-      Q => data_int_sync2(4),
-      R => '0'
-    );
-\data_int_sync2_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => data_int_sync1(5),
-      Q => data_int_sync2(5),
-      R => '0'
-    );
-\data_int_sync2_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => data_int_sync1(6),
-      Q => data_int_sync2(6),
-      R => '0'
-    );
 \dn_activity[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(14),
+      I0 => \dn_activity_reg_n_0_[0]\,
       I1 => read_done,
       I2 => data_int_sync2(0),
       I3 => data_int_sync1(0),
-      O => p_21_out(0)
+      O => p_12_out(0)
     );
 \dn_activity[1]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(15),
+      I0 => p_6_in,
       I1 => read_done,
       I2 => data_int_sync2(1),
       I3 => data_int_sync1(1),
-      O => p_21_out(1)
+      O => p_12_out(1)
     );
 \dn_activity[2]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(16),
+      I0 => p_9_in,
       I1 => read_done,
       I2 => data_int_sync2(2),
       I3 => data_int_sync1(2),
-      O => p_21_out(2)
+      O => p_12_out(2)
     );
 \dn_activity[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(17),
+      I0 => \dn_activity_reg_n_0_[3]\,
       I1 => read_done,
       I2 => data_int_sync2(3),
       I3 => data_int_sync1(3),
-      O => p_21_out(3)
-    );
-\dn_activity[4]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(18),
-      I1 => read_done,
-      I2 => data_int_sync2(4),
-      I3 => data_int_sync1(4),
-      O => p_21_out(4)
-    );
-\dn_activity[5]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(19),
-      I1 => read_done,
-      I2 => data_int_sync2(5),
-      I3 => data_int_sync1(5),
-      O => p_21_out(5)
-    );
-\dn_activity[6]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(20),
-      I1 => read_done,
-      I2 => data_int_sync2(6),
-      I3 => data_int_sync1(6),
-      O => p_21_out(6)
+      O => p_12_out(3)
     );
 \dn_activity_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1619,8 +1301,8 @@ Read_int_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_21_out(0),
-      Q => probe_all_int(14),
+      D => p_12_out(0),
+      Q => \dn_activity_reg_n_0_[0]\,
       R => '0'
     );
 \dn_activity_reg[1]\: unisim.vcomponents.FDRE
@@ -1630,8 +1312,8 @@ Read_int_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_21_out(1),
-      Q => probe_all_int(15),
+      D => p_12_out(1),
+      Q => p_6_in,
       R => '0'
     );
 \dn_activity_reg[2]\: unisim.vcomponents.FDRE
@@ -1641,8 +1323,8 @@ Read_int_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_21_out(2),
-      Q => probe_all_int(16),
+      D => p_12_out(2),
+      Q => p_9_in,
       R => '0'
     );
 \dn_activity_reg[3]\: unisim.vcomponents.FDRE
@@ -1652,41 +1334,8 @@ Read_int_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_21_out(3),
-      Q => probe_all_int(17),
-      R => '0'
-    );
-\dn_activity_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_21_out(4),
-      Q => probe_all_int(18),
-      R => '0'
-    );
-\dn_activity_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_21_out(5),
-      Q => probe_all_int(19),
-      R => '0'
-    );
-\dn_activity_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_21_out(6),
-      Q => probe_all_int(20),
+      D => p_12_out(3),
+      Q => \dn_activity_reg_n_0_[3]\,
       R => '0'
     );
 \probe_in_reg_reg[0]\: unisim.vcomponents.FDRE
@@ -1733,55 +1382,21 @@ Read_int_reg: unisim.vcomponents.FDRE
       Q => probe_in_reg(3),
       R => '0'
     );
-\probe_in_reg_reg[4]\: unisim.vcomponents.FDRE
+read_done_i_1: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
+      INIT => X"02"
     )
         port map (
-      C => clk,
-      CE => E(0),
-      D => D(4),
-      Q => probe_in_reg(4),
-      R => '0'
-    );
-\probe_in_reg_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clk,
-      CE => E(0),
-      D => D(5),
-      Q => probe_in_reg(5),
-      R => '0'
-    );
-\probe_in_reg_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clk,
-      CE => E(0),
-      D => D(6),
-      Q => probe_in_reg(6),
-      R => '0'
-    );
-read_done_i_1: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0008"
-    )
-        port map (
-      I0 => addr_count(0),
-      I1 => Read_int,
-      I2 => addr_count(2),
-      I3 => addr_count(1),
-      O => addr_count_reg1
+      I0 => Read_int,
+      I1 => read_done,
+      I2 => s_rst_o,
+      O => read_done_i_1_n_0
     );
 read_done_reg: unisim.vcomponents.FDRE
      port map (
       C => \out\,
       CE => '1',
-      D => addr_count_reg1,
+      D => read_done_i_1_n_0,
       Q => read_done,
       R => '0'
     );
@@ -1790,77 +1405,44 @@ read_done_reg: unisim.vcomponents.FDRE
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(7),
+      I0 => \up_activity_reg_n_0_[0]\,
       I1 => read_done,
       I2 => data_int_sync1(0),
       I3 => data_int_sync2(0),
-      O => p_20_out(0)
+      O => p_11_out(0)
     );
 \up_activity[1]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(8),
+      I0 => \up_activity_reg_n_0_[1]\,
       I1 => read_done,
       I2 => data_int_sync1(1),
       I3 => data_int_sync2(1),
-      O => p_20_out(1)
+      O => p_11_out(1)
     );
 \up_activity[2]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(9),
+      I0 => \up_activity_reg_n_0_[2]\,
       I1 => read_done,
       I2 => data_int_sync1(2),
       I3 => data_int_sync2(2),
-      O => p_20_out(2)
+      O => p_11_out(2)
     );
 \up_activity[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2232"
     )
         port map (
-      I0 => probe_all_int(10),
+      I0 => \up_activity_reg_n_0_[3]\,
       I1 => read_done,
       I2 => data_int_sync1(3),
       I3 => data_int_sync2(3),
-      O => p_20_out(3)
-    );
-\up_activity[4]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(11),
-      I1 => read_done,
-      I2 => data_int_sync1(4),
-      I3 => data_int_sync2(4),
-      O => p_20_out(4)
-    );
-\up_activity[5]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(12),
-      I1 => read_done,
-      I2 => data_int_sync1(5),
-      I3 => data_int_sync2(5),
-      O => p_20_out(5)
-    );
-\up_activity[6]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2232"
-    )
-        port map (
-      I0 => probe_all_int(13),
-      I1 => read_done,
-      I2 => data_int_sync1(6),
-      I3 => data_int_sync2(6),
-      O => p_20_out(6)
+      O => p_11_out(3)
     );
 \up_activity_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1869,8 +1451,8 @@ read_done_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_20_out(0),
-      Q => probe_all_int(7),
+      D => p_11_out(0),
+      Q => \up_activity_reg_n_0_[0]\,
       R => '0'
     );
 \up_activity_reg[1]\: unisim.vcomponents.FDRE
@@ -1880,8 +1462,8 @@ read_done_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_20_out(1),
-      Q => probe_all_int(8),
+      D => p_11_out(1),
+      Q => \up_activity_reg_n_0_[1]\,
       R => '0'
     );
 \up_activity_reg[2]\: unisim.vcomponents.FDRE
@@ -1891,8 +1473,8 @@ read_done_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_20_out(2),
-      Q => probe_all_int(9),
+      D => p_11_out(2),
+      Q => \up_activity_reg_n_0_[2]\,
       R => '0'
     );
 \up_activity_reg[3]\: unisim.vcomponents.FDRE
@@ -1902,41 +1484,8 @@ read_done_reg: unisim.vcomponents.FDRE
         port map (
       C => \out\,
       CE => '1',
-      D => p_20_out(3),
-      Q => probe_all_int(10),
-      R => '0'
-    );
-\up_activity_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_20_out(4),
-      Q => probe_all_int(11),
-      R => '0'
-    );
-\up_activity_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_20_out(5),
-      Q => probe_all_int(12),
-      R => '0'
-    );
-\up_activity_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \out\,
-      CE => '1',
-      D => p_20_out(6),
-      Q => probe_all_int(13),
+      D => p_11_out(3),
+      Q => \up_activity_reg_n_0_[3]\,
       R => '0'
     );
 end STRUCTURE;
@@ -2063,22 +1612,22 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_one__pa
   signal data_int : STD_LOGIC;
   signal \mem_probe_out[0]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[0]_i_1__2\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[10]_i_1__2\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[11]_i_1__2\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[12]_i_1__2\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[13]_i_1__2\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[14]_i_1__2\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[15]_i_1__2\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[1]_i_1__2\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[2]_i_1__2\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[3]_i_1__2\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[4]_i_1__2\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[5]_i_1__2\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[6]_i_1__2\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[7]_i_1__2\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[8]_i_1__2\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[9]_i_1__2\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[0]_i_1__2\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[10]_i_1__2\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[11]_i_1__2\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[12]_i_1__2\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[13]_i_1__2\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[14]_i_1__2\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[15]_i_1__2\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[1]_i_1__2\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[2]_i_1__2\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[3]_i_1__2\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[4]_i_1__2\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[5]_i_1__2\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[6]_i_1__2\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[7]_i_1__2\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[8]_i_1__2\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[9]_i_1__2\ : label is "soft_lutpair18";
   attribute DONT_TOUCH : boolean;
   attribute DONT_TOUCH of \Probe_out_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -3234,22 +2783,22 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_one__pa
   signal \data_int_reg_n_0_[8]\ : STD_LOGIC;
   signal \data_int_reg_n_0_[9]\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[0]_i_1__1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[10]_i_1__1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[11]_i_1__1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[12]_i_1__1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[13]_i_1__1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[14]_i_1__1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[15]_i_1__1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[1]_i_1__1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[2]_i_1__1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[3]_i_1__1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[4]_i_1__1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[5]_i_1__1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[6]_i_1__1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[7]_i_1__1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[8]_i_1__1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \Bus_Data_out_int[9]_i_1__1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[0]_i_1__1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[10]_i_1__1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[11]_i_1__1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[12]_i_1__1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[13]_i_1__1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[14]_i_1__1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[15]_i_1__1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[1]_i_1__1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[2]_i_1__1\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[3]_i_1__1\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[4]_i_1__1\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[5]_i_1__1\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[6]_i_1__1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[7]_i_1__1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[8]_i_1__1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \Bus_Data_out_int[9]_i_1__1\ : label is "soft_lutpair26";
   attribute DONT_TOUCH : boolean;
   attribute DONT_TOUCH of \Probe_out_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -4413,7 +3962,7 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_one__pa
   signal \addr_count[1]_i_1_n_0\ : STD_LOGIC;
   signal \addr_count[1]_i_3_n_0\ : STD_LOGIC;
   signal \addr_count[2]_i_1_n_0\ : STD_LOGIC;
-  signal \addr_count[2]_i_2__0_n_0\ : STD_LOGIC;
+  signal \addr_count[2]_i_2_n_0\ : STD_LOGIC;
   signal \addr_count[2]_i_4_n_0\ : STD_LOGIC;
   signal \^addr_count_reg[2]_0\ : STD_LOGIC;
   signal data_int : STD_LOGIC;
@@ -6331,7 +5880,7 @@ begin
         port map (
       I0 => \^addr_count_reg[2]_0\,
       I1 => addr_count(2),
-      I2 => \addr_count[2]_i_2__0_n_0\,
+      I2 => \addr_count[2]_i_2_n_0\,
       I3 => s_daddr_o(0),
       I4 => s_den_o_INST_0_i_1,
       I5 => internal_cnt_rst,
@@ -6345,19 +5894,19 @@ begin
       I0 => addr_count(2),
       I1 => internal_cnt_rst,
       I2 => s_den_o_INST_0_i_1_0,
-      I3 => \addr_count[2]_i_2__0_n_0\,
+      I3 => \addr_count[2]_i_2_n_0\,
       I4 => addr_count(2),
       I5 => \^addr_count_reg[2]_0\,
       O => \addr_count[2]_i_1_n_0\
     );
-\addr_count[2]_i_2__0\: unisim.vcomponents.LUT2
+\addr_count[2]_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"7"
     )
         port map (
       I0 => addr_count(0),
       I1 => addr_count(1),
-      O => \addr_count[2]_i_2__0_n_0\
+      O => \addr_count[2]_i_2_n_0\
     );
 \addr_count[2]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -6690,7 +6239,7 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_one__pa
   signal \addr_count[1]_i_2__2_n_0\ : STD_LOGIC;
   signal \addr_count[1]_i_3__0_n_0\ : STD_LOGIC;
   signal \addr_count[2]_i_1_n_0\ : STD_LOGIC;
-  signal \addr_count[2]_i_2__1_n_0\ : STD_LOGIC;
+  signal \addr_count[2]_i_2__0_n_0\ : STD_LOGIC;
   signal \^addr_count_reg[2]_0\ : STD_LOGIC;
   signal data_int : STD_LOGIC;
   signal \data_int_reg_n_0_[0]\ : STD_LOGIC;
@@ -6833,14 +6382,14 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_one__pa
   attribute DONT_TOUCH of \Probe_out_reg[9]\ : label is std.standard.true;
   attribute KEEP of \Probe_out_reg[9]\ : label is "yes";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_count[1]_i_2__2\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \addr_count[1]_i_3__0\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \addr_count[2]_i_2__1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \addr_count[1]_i_2__2\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \addr_count[1]_i_3__0\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \addr_count[2]_i_2__0\ : label is "soft_lutpair32";
   attribute MAX_FANOUT : string;
   attribute MAX_FANOUT of \addr_count_reg[0]\ : label is "200";
   attribute MAX_FANOUT of \addr_count_reg[1]\ : label is "200";
   attribute MAX_FANOUT of \addr_count_reg[2]\ : label is "200";
-  attribute SOFT_HLUTNM of rd_en_p1_i_1 : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of rd_en_p1_i_1 : label is "soft_lutpair31";
 begin
   \addr_count_reg[2]_0\ <= \^addr_count_reg[2]_0\;
   rd_en_p1_reg <= \^rd_en_p1_reg\;
@@ -8626,20 +8175,20 @@ begin
         port map (
       I0 => addr_count(2),
       I1 => internal_cnt_rst,
-      I2 => \addr_count[2]_i_2__1_n_0\,
+      I2 => \addr_count[2]_i_2__0_n_0\,
       I3 => \^rd_en_p1_reg\,
       I4 => addr_count(2),
       I5 => \^addr_count_reg[2]_0\,
       O => \addr_count[2]_i_1_n_0\
     );
-\addr_count[2]_i_2__1\: unisim.vcomponents.LUT2
+\addr_count[2]_i_2__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"7"
     )
         port map (
       I0 => addr_count(0),
       I1 => addr_count(1),
-      O => \addr_count[2]_i_2__1_n_0\
+      O => \addr_count[2]_i_2__0_n_0\
     );
 \addr_count[2]_i_3__0\: unisim.vcomponents.LUT5
     generic map(
@@ -8849,12 +8398,12 @@ architecture STRUCTURE of \b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_width__para
   signal \probe_width_int[4]_i_1_n_0\ : STD_LOGIC;
   signal \probe_width_int[5]_i_1_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_count[0]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \addr_count[1]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \probe_width_int[12]_i_1\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \probe_width_int[13]_i_1\ : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \probe_width_int[4]_i_1\ : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \probe_width_int[5]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \addr_count[0]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \addr_count[1]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \probe_width_int[12]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \probe_width_int[13]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \probe_width_int[4]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \probe_width_int[5]_i_1\ : label is "soft_lutpair44";
 begin
 \addr_count[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -9976,24 +9525,24 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_out_all is
   attribute ASYNC_REG_boolean of Committ_2_reg : label is std.standard.true;
   attribute KEEP of Committ_2_reg : label is "yes";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \G_PROBE_OUT[0].wr_probe_out[0]_i_1\ : label is "soft_lutpair42";
-  attribute SOFT_HLUTNM of \G_PROBE_OUT[1].wr_probe_out[1]_i_1\ : label is "soft_lutpair42";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[0]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[10]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[11]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[12]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[13]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[14]_i_1\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[15]_i_1\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[1]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[2]_i_1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[3]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[4]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[5]_i_1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[6]_i_1\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[7]_i_1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[8]_i_1\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \Probe_out_reg_int[9]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \G_PROBE_OUT[0].wr_probe_out[0]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \G_PROBE_OUT[1].wr_probe_out[1]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[0]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[10]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[11]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[12]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[13]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[14]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[15]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[1]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[2]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[3]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[4]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[5]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[6]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[7]_i_1\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[8]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \Probe_out_reg_int[9]_i_1\ : label is "soft_lutpair37";
 begin
   \xsdb_addr_2_0_p2_reg[2]\(2 downto 0) <= \^xsdb_addr_2_0_p2_reg[2]\(2 downto 0);
   xsdb_rd <= \^xsdb_rd\;
@@ -11289,7 +10838,7 @@ entity b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio is
   attribute C_NEXT_SLAVE : integer;
   attribute C_NEXT_SLAVE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 0;
   attribute C_NUM_PROBE_IN : integer;
-  attribute C_NUM_PROBE_IN of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 7;
+  attribute C_NUM_PROBE_IN of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 4;
   attribute C_NUM_PROBE_OUT : integer;
   attribute C_NUM_PROBE_OUT of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 5;
   attribute C_PIPE_IFACE : integer;
@@ -13875,7 +13424,7 @@ entity b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio is
   attribute LC_PROBE_OUT_WIDTH_STRING : string;
   attribute LC_PROBE_OUT_WIDTH_STRING of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is "2048'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011101100111011000110010001100100000000";
   attribute LC_TOTAL_PROBE_IN_WIDTH : integer;
-  attribute LC_TOTAL_PROBE_IN_WIDTH of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 7;
+  attribute LC_TOTAL_PROBE_IN_WIDTH of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 4;
   attribute LC_TOTAL_PROBE_OUT_WIDTH : integer;
   attribute LC_TOTAL_PROBE_OUT_WIDTH of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio : entity is 173;
   attribute ORIG_REF_NAME : string;
@@ -13886,7 +13435,7 @@ end b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio;
 
 architecture STRUCTURE of b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio is
   signal \<const0>\ : STD_LOGIC;
-  signal Bus_Data_out : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal Bus_Data_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal DECODER_INST_n_10 : STD_LOGIC;
   signal DECODER_INST_n_5 : STD_LOGIC;
   signal DECODER_INST_n_6 : STD_LOGIC;
@@ -14214,7 +13763,7 @@ begin
   probe_out99(0) <= \<const0>\;
 DECODER_INST: entity work.b2000t_c2c_bram_vio_0_0_vio_v3_0_14_decoder
      port map (
-      Bus_Data_out(15 downto 0) => Bus_Data_out(15 downto 0),
+      \Bus_Data_out_reg[11]\(11 downto 0) => Bus_Data_out(11 downto 0),
       E(0) => DECODER_INST_n_9,
       \Probe_out_reg_int_reg[15]\(15) => PROBE_OUT_ALL_INST_n_177,
       \Probe_out_reg_int_reg[15]\(14) => PROBE_OUT_ALL_INST_n_178,
@@ -14277,17 +13826,13 @@ GND: unisim.vcomponents.GND
     );
 PROBE_IN_INST: entity work.b2000t_c2c_bram_vio_0_0_vio_v3_0_14_probe_in_one
      port map (
-      Bus_Data_out(15 downto 0) => Bus_Data_out(15 downto 0),
-      D(6) => probe_in6(0),
-      D(5) => probe_in5(0),
-      D(4) => probe_in4(0),
       D(3) => probe_in3(0),
       D(2) => probe_in2(0),
       D(1) => probe_in1(0),
       D(0) => probe_in0(0),
       E(0) => DECODER_INST_n_9,
+      Q(11 downto 0) => Bus_Data_out(11 downto 0),
       clk => clk,
-      internal_cnt_rst => internal_cnt_rst,
       \out\ => bus_clk,
       s_daddr_o(1) => bus_addr(2),
       s_daddr_o(0) => bus_addr(0),
@@ -14515,9 +14060,6 @@ entity b2000t_c2c_bram_vio_0_0 is
     probe_in1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe_in2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe_in3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe_in4 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe_in5 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe_in6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe_out0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     probe_out1 : out STD_LOGIC_VECTOR ( 25 downto 0 );
     probe_out2 : out STD_LOGIC_VECTOR ( 25 downto 0 );
@@ -14820,7 +14362,7 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0 is
   attribute C_NEXT_SLAVE : integer;
   attribute C_NEXT_SLAVE of inst : label is 0;
   attribute C_NUM_PROBE_IN : integer;
-  attribute C_NUM_PROBE_IN of inst : label is 7;
+  attribute C_NUM_PROBE_IN of inst : label is 4;
   attribute C_NUM_PROBE_OUT : integer;
   attribute C_NUM_PROBE_OUT of inst : label is 5;
   attribute C_PIPE_IFACE : integer;
@@ -17408,7 +16950,7 @@ architecture STRUCTURE of b2000t_c2c_bram_vio_0_0 is
   attribute LC_PROBE_OUT_WIDTH_STRING : string;
   attribute LC_PROBE_OUT_WIDTH_STRING of inst : label is "2048'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011101100111011000110010001100100000000";
   attribute LC_TOTAL_PROBE_IN_WIDTH : integer;
-  attribute LC_TOTAL_PROBE_IN_WIDTH of inst : label is 7;
+  attribute LC_TOTAL_PROBE_IN_WIDTH of inst : label is 4;
   attribute LC_TOTAL_PROBE_OUT_WIDTH : integer;
   attribute LC_TOTAL_PROBE_OUT_WIDTH of inst : label is 173;
   attribute syn_noprune : string;
@@ -17607,7 +17149,7 @@ inst: entity work.b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio
       probe_in37(0) => '0',
       probe_in38(0) => '0',
       probe_in39(0) => '0',
-      probe_in4(0) => probe_in4(0),
+      probe_in4(0) => '0',
       probe_in40(0) => '0',
       probe_in41(0) => '0',
       probe_in42(0) => '0',
@@ -17618,7 +17160,7 @@ inst: entity work.b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio
       probe_in47(0) => '0',
       probe_in48(0) => '0',
       probe_in49(0) => '0',
-      probe_in5(0) => probe_in5(0),
+      probe_in5(0) => '0',
       probe_in50(0) => '0',
       probe_in51(0) => '0',
       probe_in52(0) => '0',
@@ -17629,7 +17171,7 @@ inst: entity work.b2000t_c2c_bram_vio_0_0_vio_v3_0_14_vio
       probe_in57(0) => '0',
       probe_in58(0) => '0',
       probe_in59(0) => '0',
-      probe_in6(0) => probe_in6(0),
+      probe_in6(0) => '0',
       probe_in60(0) => '0',
       probe_in61(0) => '0',
       probe_in62(0) => '0',

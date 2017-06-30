@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1498743921">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="jack_120_inoutmodule.drc"/>
+  <File Type="BG-BGN" Name="jack_120_inoutmodule.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="jack_120_inoutmodule.sysdef"/>
+  <File Type="BITSTR-MMI" Name="jack_120_inoutmodule.mmi"/>
+  <File Type="BITSTR-BMM" Name="jack_120_inoutmodule_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="jack_120_inoutmodule.nky"/>
+  <File Type="BITSTR-RBT" Name="jack_120_inoutmodule.rbt"/>
+  <File Type="BITSTR-MSK" Name="jack_120_inoutmodule.msk"/>
+  <File Type="BG-BIN" Name="jack_120_inoutmodule.bin"/>
+  <File Type="BG-BIT" Name="jack_120_inoutmodule.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="jack_120_inoutmodule_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="jack_120_inoutmodule_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="jack_120_inoutmodule_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="jack_120_inoutmodule_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="jack_120_inoutmodule_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="jack_120_inoutmodule_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="jack_120_inoutmodule_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="jack_120_inoutmodule_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="jack_120_inoutmodule_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="jack_120_inoutmodule_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="jack_120_inoutmodule_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="jack_120_inoutmodule_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="jack_120_inoutmodule_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="jack_120_inoutmodule_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="jack_120_inoutmodule_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="jack_120_inoutmodule_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="jack_120_inoutmodule_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="jack_120_inoutmodule_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="jack_120_inoutmodule_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="jack_120_inoutmodule_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="jack_120_inoutmodule_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="jack_120_inoutmodule_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="jack_120_inoutmodule_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="jack_120_inoutmodule_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="jack_120_inoutmodule_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="jack_120_inoutmodule_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="jack_120_inoutmodule_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="jack_120_inoutmodule_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="jack_120_inoutmodule.vdi"/>
+  <File Type="PLACE-TIMING" Name="jack_120_inoutmodule_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="jack_120_inoutmodule_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="jack_120_inoutmodule_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="jack_120_inoutmodule_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="jack_120_inoutmodule_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="jack_120_inoutmodule_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="jack_120_inoutmodule_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="jack_120_inoutmodule_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="jack_120_inoutmodule_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="jack_120_inoutmodule_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="jack_120_inoutmodule_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="jack_120_inoutmodule_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="jack_120_inoutmodule_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="jack_120_inoutmodule.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="jack_120_inoutmodule_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="jack_120_inoutmodule_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="jack_120_inoutmodule_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="jack_120_inoutmodule_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="jack_120_inoutmodule_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="jack_120_inoutmodule.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/jack_120_inoutmodule.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/component.xml">
+      <FileInfo SFType="IPXACT">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../jack_120/jack/jack.srcs/sources_1/imports/sources_1/component.xml"/>
+        <Attr Name="ImportTime" Val="1498672266"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="jack_120_inoutmodule"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
