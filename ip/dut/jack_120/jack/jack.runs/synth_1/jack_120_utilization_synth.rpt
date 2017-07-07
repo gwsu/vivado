@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jun 30 11:04:22 2017
+| Date         : Fri Jul  7 12:48:46 2017
 | Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command      : report_utilization -file jack_120_utilization_synth.rpt -pb jack_120_utilization_synth.pb
 | Design       : jack_120
@@ -94,7 +94,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |  362 |     0 |      1200 | 30.17 |
+| Bonded IOB                  |  358 |     0 |      1200 | 29.83 |
 | Bonded IPADs                |    0 |     0 |        50 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        32 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |        24 |  0.00 |
@@ -155,9 +155,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |  242 |                  IO |
+| IBUF     |  238 |                  IO |
 | OBUFT    |  120 |                  IO |
-| OBUF     |  120 |                  IO |
+| OBUF     |  118 |                  IO |
 | LUT1     |    2 |                 LUT |
 +----------+------+---------------------+
 

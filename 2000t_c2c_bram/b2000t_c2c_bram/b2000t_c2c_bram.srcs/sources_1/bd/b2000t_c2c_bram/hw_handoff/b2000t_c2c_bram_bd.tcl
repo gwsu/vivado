@@ -163,15 +163,23 @@ CONFIG.FREQ_HZ {125000000} \
   set INIT_DIFF_CLK [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 INIT_DIFF_CLK ]
 
   # Create ports
+  set a_in [ create_bd_port -dir I -from 59 -to 0 a_in ]
+  set a_in_1 [ create_bd_port -dir I -from 59 -to 0 a_in_1 ]
+  set a_oe [ create_bd_port -dir O a_oe ]
+  set a_oe_1 [ create_bd_port -dir O a_oe_1 ]
+  set a_out [ create_bd_port -dir O -from 59 -to 0 a_out ]
+  set a_out_1 [ create_bd_port -dir O -from 59 -to 0 a_out_1 ]
   set axi_c2c_config_error_out [ create_bd_port -dir O axi_c2c_config_error_out ]
   set axi_c2c_link_status_out [ create_bd_port -dir O axi_c2c_link_status_out ]
   set axi_c2c_multi_bit_error_out [ create_bd_port -dir O axi_c2c_multi_bit_error_out ]
+  set b_in [ create_bd_port -dir I -from 59 -to 0 b_in ]
+  set b_in_1 [ create_bd_port -dir I -from 59 -to 0 b_in_1 ]
+  set b_oe [ create_bd_port -dir O b_oe ]
+  set b_oe_1 [ create_bd_port -dir O b_oe_1 ]
+  set b_out [ create_bd_port -dir O -from 59 -to 0 b_out ]
+  set b_out_1 [ create_bd_port -dir O -from 59 -to 0 b_out_1 ]
   set ext_reset_in [ create_bd_port -dir I -type rst ext_reset_in ]
   set ext_reset_out [ create_bd_port -dir O ext_reset_out ]
-  set pin_a [ create_bd_port -dir IO -from 59 -to 0 pin_a ]
-  set pin_a_1 [ create_bd_port -dir IO -from 59 -to 0 pin_a_1 ]
-  set pin_b [ create_bd_port -dir IO -from 59 -to 0 pin_b ]
-  set pin_b_1 [ create_bd_port -dir IO -from 59 -to 0 pin_b_1 ]
   set pma_init_out [ create_bd_port -dir O -from 0 -to 0 pma_init_out ]
 
   # Create instance: aurora_64b66b_0, and set properties
@@ -299,38 +307,16 @@ CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
   set dut_1 [ create_bd_cell -type ip -vlnv user.org:user:dut:1.0 dut_1 ]
 
   # Create instance: dut_120_0, and set properties
-  set dut_120_0 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.1 dut_120_0 ]
-  set_property -dict [ list \
-CONFIG.ENDL {"0111"} \
- ] $dut_120_0
-
-  # Need to retain value_src of defaults
-  set_property -dict [ list \
-CONFIG.ENDL.VALUE_SRC {DEFAULT} \
- ] $dut_120_0
+  set dut_120_0 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.2 dut_120_0 ]
 
   # Create instance: dut_120_1, and set properties
-  set dut_120_1 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.1 dut_120_1 ]
-  set_property -dict [ list \
-CONFIG.ENDL {"0111"} \
- ] $dut_120_1
-
-  # Need to retain value_src of defaults
-  set_property -dict [ list \
-CONFIG.ENDL.VALUE_SRC {DEFAULT} \
- ] $dut_120_1
+  set dut_120_1 [ create_bd_cell -type ip -vlnv user.org:user:dut_120:1.2 dut_120_1 ]
 
   # Create instance: jack_0, and set properties
   set jack_0 [ create_bd_cell -type ip -vlnv user.org:user:jack:1.2 jack_0 ]
 
   # Create instance: jack_1, and set properties
   set jack_1 [ create_bd_cell -type ip -vlnv user.org:user:jack:1.2 jack_1 ]
-
-  # Create instance: jack_120_0, and set properties
-  set jack_120_0 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.1 jack_120_0 ]
-
-  # Create instance: jack_120_1, and set properties
-  set jack_120_1 [ create_bd_cell -type ip -vlnv user.org:user:jack_120:1.1 jack_120_1 ]
 
   # Create instance: jtag_axi_0, and set properties
   set jtag_axi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0 ]
@@ -342,11 +328,12 @@ CONFIG.ENDL.VALUE_SRC {DEFAULT} \
   set system_ila [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila ]
   set_property -dict [ list \
 CONFIG.C_MON_TYPE {NATIVE} \
-CONFIG.C_NUM_OF_PROBES {4} \
+CONFIG.C_NUM_OF_PROBES {5} \
 CONFIG.C_PROBE0_TYPE {0} \
 CONFIG.C_PROBE1_TYPE {0} \
 CONFIG.C_PROBE2_TYPE {0} \
 CONFIG.C_PROBE3_TYPE {0} \
+CONFIG.C_PROBE4_TYPE {0} \
  ] $system_ila
 
   # Create instance: system_ila1, and set properties
@@ -411,10 +398,7 @@ CONFIG.CONST_VAL {0} \
 
   # Create port connections
   connect_bd_net -net Net [get_bd_pins axi_bram_ctrl_2/bram_rst_a] [get_bd_pins dut_0/rst]
-  connect_bd_net -net Net1 [get_bd_ports pin_a] [get_bd_pins jack_120_1/pin_a]
-  connect_bd_net -net Net2 [get_bd_ports pin_b] [get_bd_pins jack_120_1/pin_b]
-  connect_bd_net -net Net3 [get_bd_ports pin_a_1] [get_bd_pins jack_120_0/pin_a]
-  connect_bd_net -net Net4 [get_bd_ports pin_b_1] [get_bd_pins jack_120_0/pin_b]
+  connect_bd_net -net a_in_1_1 [get_bd_ports a_in_1] [get_bd_pins dut_120_1/a_in]
   connect_bd_net -net aurora_64b66b_0_channel_up [get_bd_pins aurora_64b66b_0/channel_up] [get_bd_pins axi_chip2chip_0/axi_c2c_aurora_channel_up]
   connect_bd_net -net aurora_64b66b_0_init_clk_out [get_bd_pins aurora_64b66b_0/init_clk_out] [get_bd_pins axi_chip2chip_0/aurora_init_clk]
   connect_bd_net -net aurora_64b66b_0_mmcm_not_locked_out [get_bd_pins aurora_64b66b_0/mmcm_not_locked_out] [get_bd_pins axi_chip2chip_0/aurora_mmcm_not_locked]
@@ -460,6 +444,7 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net axi_chip2chip_0_axi_c2c_config_error_out [get_bd_ports axi_c2c_config_error_out] [get_bd_pins axi_chip2chip_0/axi_c2c_config_error_out] [get_bd_pins vio_0/probe_in2]
   connect_bd_net -net axi_chip2chip_0_axi_c2c_link_status_out [get_bd_ports axi_c2c_link_status_out] [get_bd_pins axi_chip2chip_0/axi_c2c_link_status_out] [get_bd_pins vio_0/probe_in3]
   connect_bd_net -net axi_chip2chip_0_axi_c2c_multi_bit_error_out [get_bd_ports axi_c2c_multi_bit_error_out] [get_bd_pins axi_chip2chip_0/axi_c2c_multi_bit_error_out] [get_bd_pins vio_0/probe_in1]
+  connect_bd_net -net b_in_1_1 [get_bd_ports b_in_1] [get_bd_pins dut_120_1/b_in]
   connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins aurora_64b66b_0/drp_clk_in] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_bram_ctrl_1/s_axi_aclk] [get_bd_pins axi_bram_ctrl_2/s_axi_aclk] [get_bd_pins axi_bram_ctrl_3/s_axi_aclk] [get_bd_pins axi_bram_ctrl_4/s_axi_aclk] [get_bd_pins axi_bram_ctrl_5/s_axi_aclk] [get_bd_pins axi_chip2chip_0/m_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/M01_ACLK] [get_bd_pins axi_mem_intercon/M02_ACLK] [get_bd_pins axi_mem_intercon/M03_ACLK] [get_bd_pins axi_mem_intercon/M04_ACLK] [get_bd_pins axi_mem_intercon/M05_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins jtag_axi_0/aclk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk] [get_bd_pins vio_0/clk]
   connect_bd_net -net clk_wiz_locked [get_bd_pins clk_wiz/locked] [get_bd_pins rst_clk_wiz_100M/dcm_locked] [get_bd_pins vio_0/probe_in0]
   connect_bd_net -net dut_0_a_oe [get_bd_pins dut_0/a_oe] [get_bd_pins jack_0/a_oe]
@@ -467,27 +452,30 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net dut_0_b_oe [get_bd_pins dut_0/b_oe] [get_bd_pins jack_0/b_oe]
   connect_bd_net -net dut_0_b_out [get_bd_pins dut_0/b_out] [get_bd_pins jack_0/b_in]
   connect_bd_net -net dut_0_data_out [get_bd_pins axi_bram_ctrl_2/bram_rddata_a] [get_bd_pins dut_0/data_out]
-  connect_bd_net -net dut_120_0_a_oe [get_bd_pins dut_120_0/a_oe] [get_bd_pins jack_120_1/a_oe] [get_bd_pins system_ila1/probe0]
+  connect_bd_net -net dut_120_0_a_oe [get_bd_ports a_oe] [get_bd_pins dut_120_0/a_oe] [get_bd_pins system_ila1/probe0]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets dut_120_0_a_oe]
-  connect_bd_net -net dut_120_0_a_out [get_bd_pins dut_120_0/a_out] [get_bd_pins jack_120_0/a_in] [get_bd_pins jack_120_1/a_in] [get_bd_pins system_ila1/probe2]
+  connect_bd_net -net dut_120_0_a_out [get_bd_ports a_out] [get_bd_pins dut_120_0/a_out] [get_bd_pins system_ila1/probe2]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets dut_120_0_a_out]
-  connect_bd_net -net dut_120_0_b_oe [get_bd_pins dut_120_0/b_oe] [get_bd_pins jack_120_1/b_oe] [get_bd_pins system_ila1/probe1]
+  connect_bd_net -net dut_120_0_b_oe [get_bd_ports b_oe] [get_bd_pins dut_120_0/b_oe] [get_bd_pins system_ila1/probe1]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets dut_120_0_b_oe]
-  connect_bd_net -net dut_120_0_b_out [get_bd_pins dut_120_0/b_out] [get_bd_pins jack_120_0/b_in] [get_bd_pins jack_120_1/b_in] [get_bd_pins system_ila1/probe3]
+  connect_bd_net -net dut_120_0_b_out [get_bd_ports b_out] [get_bd_pins dut_120_0/b_out] [get_bd_pins system_ila1/probe3]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets dut_120_0_b_out]
-  connect_bd_net -net dut_120_0_data_out [get_bd_pins axi_bram_ctrl_5/bram_rddata_a] [get_bd_pins dut_120_0/data_out]
-  connect_bd_net -net dut_120_1_a_oe [get_bd_pins dut_120_1/a_oe] [get_bd_pins jack_120_0/a_oe]
-  connect_bd_net -net dut_120_1_a_out [get_bd_pins dut_120_1/a_in] [get_bd_pins dut_120_1/a_out]
-  connect_bd_net -net dut_120_1_b_oe [get_bd_pins dut_120_1/b_oe] [get_bd_pins jack_120_0/b_oe]
-  connect_bd_net -net dut_120_1_b_out [get_bd_pins dut_120_1/b_in] [get_bd_pins dut_120_1/b_out]
+  connect_bd_net -net dut_120_0_data_out [get_bd_pins axi_bram_ctrl_5/bram_rddata_a] [get_bd_pins dut_120_0/data_out] [get_bd_pins system_ila/probe4]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets dut_120_0_data_out]
+  connect_bd_net -net dut_120_1_a_oe [get_bd_ports a_oe_1] [get_bd_pins dut_120_1/a_oe]
+  connect_bd_net -net dut_120_1_a_out [get_bd_ports a_out_1] [get_bd_pins dut_120_1/a_out]
+  connect_bd_net -net dut_120_1_b_oe [get_bd_ports b_oe_1] [get_bd_pins dut_120_1/b_oe]
+  connect_bd_net -net dut_120_1_b_out [get_bd_ports b_out_1] [get_bd_pins dut_120_1/b_out]
   connect_bd_net -net dut_120_1_data_out [get_bd_pins axi_bram_ctrl_4/bram_rddata_a] [get_bd_pins dut_120_1/data_out]
   connect_bd_net -net dut_1_a_oe [get_bd_pins dut_1/a_oe] [get_bd_pins jack_1/a_oe]
   connect_bd_net -net dut_1_a_out [get_bd_pins dut_1/a_out] [get_bd_pins jack_1/a_in]
@@ -496,11 +484,11 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net dut_1_data_out [get_bd_pins axi_bram_ctrl_3/bram_rddata_a] [get_bd_pins dut_1/data_out]
   connect_bd_net -net jack_0_a_out [get_bd_pins dut_0/a_in] [get_bd_pins jack_0/a_out]
   connect_bd_net -net jack_0_b_out [get_bd_pins dut_0/b_in] [get_bd_pins jack_0/b_out]
-  connect_bd_net -net jack_120_1_a_out [get_bd_pins dut_120_0/a_in] [get_bd_pins jack_120_1/a_out] [get_bd_pins system_ila1/probe5]
+  connect_bd_net -net jack_120_1_a_out [get_bd_ports a_in] [get_bd_pins dut_120_0/a_in] [get_bd_pins system_ila1/probe5]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets jack_120_1_a_out]
-  connect_bd_net -net jack_120_1_b_out [get_bd_pins dut_120_0/b_in] [get_bd_pins jack_120_1/b_out] [get_bd_pins system_ila1/probe4]
+  connect_bd_net -net jack_120_1_b_out [get_bd_ports b_in] [get_bd_pins dut_120_0/b_in] [get_bd_pins system_ila1/probe4]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets jack_120_1_b_out]
@@ -511,8 +499,6 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net vio_0_probe_out0 [get_bd_ports pma_init_out] [get_bd_pins axi_chip2chip_0/aurora_pma_init_in] [get_bd_pins vio_0/probe_out0]
   connect_bd_net -net vio_0_probe_out1 [get_bd_pins jack_0/mode] [get_bd_pins vio_0/probe_out1]
   connect_bd_net -net vio_0_probe_out2 [get_bd_pins jack_1/mode] [get_bd_pins vio_0/probe_out2]
-  connect_bd_net -net vio_0_probe_out3 [get_bd_pins jack_120_0/mode] [get_bd_pins vio_0/probe_out3]
-  connect_bd_net -net vio_0_probe_out4 [get_bd_pins jack_120_1/mode] [get_bd_pins vio_0/probe_out4]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins clk_wiz/reset] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
@@ -533,21 +519,29 @@ HDL_ATTRIBUTE.DEBUG {true} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
+preplace port a_oe_1 -pg 1 -y -1930 -defaultsOSRD
 preplace port axi_c2c_multi_bit_error_out -pg 1 -y 140 -defaultsOSRD
 preplace port axi_c2c_config_error_out -pg 1 -y 120 -defaultsOSRD
 preplace port GT_SERIAL_RX -pg 1 -y -350 -defaultsOSRD
+preplace port a_oe -pg 1 -y -1680 -defaultsOSRD
+preplace port b_oe_1 -pg 1 -y -1910 -defaultsOSRD
 preplace port CLK_IN1_D -pg 1 -y 110 -defaultsOSRD
 preplace port ext_reset_out -pg 1 -y -320 -defaultsOSRD
 preplace port axi_c2c_link_status_out -pg 1 -y 160 -defaultsOSRD
-preplace port GT_DIFF_REFCLK1 -pg 1 -y -280 -defaultsOSRD
-preplace port ext_reset_in -pg 1 -y -320 -defaultsOSRD
+preplace port GT_DIFF_REFCLK1 -pg 1 -y -580 -defaultsOSRD
+preplace port b_oe -pg 1 -y -1660 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y -120 -defaultsOSRD
 preplace port GT_SERIAL_TX -pg 1 -y -160 -defaultsOSRD
 preplace port INIT_DIFF_CLK -pg 1 -y -560 -defaultsOSRD
-preplace portBus pin_a -pg 1 -y -1660 -defaultsOSRD
-preplace portBus pin_b -pg 1 -y -1640 -defaultsOSRD
+preplace portBus a_in -pg 1 -y -1980 -defaultsOSRD
+preplace portBus a_out -pg 1 -y -1970 -defaultsOSRD
+preplace portBus b_out_1 -pg 1 -y -1870 -defaultsOSRD
+preplace portBus b_in -pg 1 -y -1950 -defaultsOSRD
 preplace portBus pma_init_out -pg 1 -y 180 -defaultsOSRD
-preplace portBus pin_a_1 -pg 1 -y -1390 -defaultsOSRD
-preplace portBus pin_b_1 -pg 1 -y -1370 -defaultsOSRD
+preplace portBus b_out -pg 1 -y -1950 -defaultsOSRD
+preplace portBus a_in_1 -pg 1 -y -1930 -defaultsOSRD
+preplace portBus a_out_1 -pg 1 -y -1890 -defaultsOSRD
+preplace portBus b_in_1 -pg 1 -y -1910 -defaultsOSRD
 preplace inst jack_1 -pg 1 -lvl 5 -y -1070 -defaultsOSRD -resize 180 140
 preplace inst axi_bram_ctrl_2 -pg 1 -lvl 1 -y -750 -defaultsOSRD -resize 220 100
 preplace inst vio_0 -pg 1 -lvl 4 -y 110 -defaultsOSRD
@@ -560,9 +554,7 @@ preplace inst axi_bram_ctrl_5 -pg 1 -lvl 1 -y -1650 -defaultsOSRD -resize 220 10
 preplace inst dut_0 -pg 1 -lvl 3 -y -680 -defaultsOSRD
 preplace inst dut_1 -pg 1 -lvl 3 -y -1040 -defaultsOSRD -resize 200 200
 preplace inst jtag_axi_0 -pg 1 -lvl 1 -y 220 -defaultsOSRD
-preplace inst jack_120_0 -pg 1 -lvl 5 -y -1400 -defaultsOSRD
 preplace inst system_ila -pg 1 -lvl 4 -y -1240 -defaultsOSRD
-preplace inst jack_120_1 -pg 1 -lvl 5 -y -1670 -defaultsOSRD -resize 180 140
 preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y -190 -defaultsOSRD
 preplace inst dut_120_0 -pg 1 -lvl 3 -y -1660 -defaultsOSRD
 preplace inst system_ila1 -pg 1 -lvl 4 -y -1870 -defaultsOSRD
@@ -574,100 +566,96 @@ preplace inst axi_mem_intercon -pg 1 -lvl 8 -y -40 -defaultsOSRD
 preplace inst axi_chip2chip_0 -pg 1 -lvl 6 -y -480 -defaultsOSRD
 preplace inst jack_0 -pg 1 -lvl 5 -y -690 -defaultsOSRD
 preplace inst axi_bram_ctrl_1 -pg 1 -lvl 1 -y -40 -defaultsOSRD
-preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 5 4 1800 -740 NJ -740 NJ -740 3450
-preplace netloc dut_120_1_a_out 1 2 2 830 -1510 1080
-preplace netloc dut_120_0_b_oe 1 3 2 1100 -1660 1460J
-preplace netloc axi_mem_intercon_M01_AXI 1 0 9 -340J -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 3380
-preplace netloc axi_bram_ctrl_3_bram_we_a 1 1 2 NJ -1090 720J
-preplace netloc dut_1_b_oe 1 3 2 N -1040 1440J
-preplace netloc axi_bram_ctrl_5_bram_wrdata_a 1 1 3 360J -1240 750J -1240 N
-preplace netloc axi_mem_intercon_M04_AXI 1 0 9 -360 -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 3370
+preplace netloc aurora_64b66b_0_USER_DATA_M_AXIS_RX 1 5 4 1820 -750 NJ -750 NJ -750 3400
+preplace netloc dut_120_1_a_out 1 3 6 NJ -1370 NJ -1370 NJ -1370 NJ -1370 NJ -1370 3410J
+preplace netloc dut_120_0_b_oe 1 3 6 1100 -1660 NJ -1660 NJ -1660 NJ -1660 NJ -1660 NJ
+preplace netloc axi_mem_intercon_M01_AXI 1 0 9 -320J -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 3410
+preplace netloc axi_bram_ctrl_3_bram_we_a 1 1 2 NJ -1090 730J
+preplace netloc dut_1_b_oe 1 3 2 N -1040 1450J
+preplace netloc axi_bram_ctrl_5_bram_wrdata_a 1 1 3 340J -1250 760J -1250 NJ
+preplace netloc axi_mem_intercon_M04_AXI 1 0 9 -340 -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ -300 3390
 preplace netloc axi_chip2chip_0_AXIS_TX 1 6 2 NJ -540 2850
-preplace netloc jack_1_b_out 1 2 4 830 -910 NJ -910 NJ -910 1800
-preplace netloc axi_bram_ctrl_4_bram_we_a 1 1 2 NJ -1400 800
-preplace netloc axi_bram_ctrl_5_bram_clk_a 1 1 3 360 -1730 730J -1930 1130J
-preplace netloc vio_0_probe_out0 1 4 5 NJ 70 1780J 240 NJ 240 NJ 240 3450J
-preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 8 1 3450
-preplace netloc axi_bram_ctrl_3_bram_addr_a 1 1 2 360J -1070 NJ
-preplace netloc vio_0_probe_out1 1 4 1 1520J
-preplace netloc axi_bram_ctrl_4_bram_rst_a 1 1 2 330J -1440 N
-preplace netloc vio_0_probe_out2 1 4 1 1500
-preplace netloc dut_0_a_oe 1 3 2 NJ -700 1490J
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 1 330
-preplace netloc vio_0_probe_out3 1 4 1 1470
-preplace netloc axi_bram_ctrl_2_bram_we_a 1 1 2 NJ -720 770
-preplace netloc axi_chip2chip_0_aurora_reset_pb 1 6 2 NJ -460 2880
-preplace netloc dut_120_0_data_out 1 1 3 NJ -1646 720J -1870 1080
-preplace netloc axi_bram_ctrl_2_bram_addr_a 1 1 2 340J -710 N
-preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 6 2 NJ -480 2890
-preplace netloc axi_bram_ctrl_4_bram_addr_a 1 1 2 310J -1460 770
-preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 1 1 340
-preplace netloc vio_0_probe_out4 1 4 1 1460
-preplace netloc axi_bram_ctrl_3_bram_rst_a 1 1 2 350J -1100 820J
-preplace netloc dut_1_data_out 1 1 3 NJ -1116 760J -920 1080J
-preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 3 6 1140J 210 NJ 210 NJ 210 2250 210 2860J 220 3420J
-preplace netloc jack_120_1_a_out 1 2 4 830J -1810 1110J -1760 NJ -1760 1800
-preplace netloc GT_SERIAL_RX_1 1 0 8 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 2870J
-preplace netloc axi_bram_ctrl_2_bram_en_a 1 1 2 310J -650 N
-preplace netloc dut_120_0_a_out 1 3 2 1140 -1640 1470J
-preplace netloc dut_0_data_out 1 1 3 NJ -746 750J -800 1080J
-preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 7 1 2900
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 8 -400J -270 NJ -270 NJ -270 NJ -270 NJ -270 1770 -270 NJ -270 2890J
-preplace netloc axi_bram_ctrl_3_bram_wrdata_a 1 1 2 340J -1050 NJ
-preplace netloc axi_bram_ctrl_4_bram_clk_a 1 1 2 320J -1450 780
+preplace netloc jack_1_b_out 1 2 4 790 -920 NJ -920 NJ -920 1820
+preplace netloc axi_bram_ctrl_4_bram_we_a 1 1 2 310J -1380 N
+preplace netloc axi_bram_ctrl_5_bram_clk_a 1 1 3 320 -1730 740J -1930 1110J
+preplace netloc vio_0_probe_out0 1 4 5 NJ 70 1790J 230 NJ 230 NJ 230 3480J
+preplace netloc aurora_64b66b_0_GT_SERIAL_TX 1 8 1 3430
+preplace netloc axi_bram_ctrl_3_bram_addr_a 1 1 2 370J -1070 NJ
+preplace netloc vio_0_probe_out1 1 4 1 1490J
+preplace netloc axi_bram_ctrl_4_bram_rst_a 1 1 2 380J -1440 N
+preplace netloc vio_0_probe_out2 1 4 1 1470
+preplace netloc dut_0_a_oe 1 3 2 NJ -700 1460J
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 1 360
+preplace netloc axi_bram_ctrl_2_bram_we_a 1 1 2 NJ -720 720
+preplace netloc axi_chip2chip_0_aurora_reset_pb 1 6 2 NJ -460 2870
+preplace netloc dut_120_0_data_out 1 1 3 320J -1190 NJ -1190 1090
+preplace netloc axi_bram_ctrl_2_bram_addr_a 1 1 2 370J -710 N
+preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 6 2 NJ -480 2880
+preplace netloc axi_bram_ctrl_4_bram_addr_a 1 1 2 350J -1460 730
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 1 1 350
+preplace netloc axi_bram_ctrl_3_bram_rst_a 1 1 2 390J -1100 780J
+preplace netloc dut_1_data_out 1 1 3 NJ -1116 750J -1160 1080J
+preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 3 6 1120J 250 NJ 250 NJ 250 2250 250 NJ 250 3460J
+preplace netloc jack_120_1_a_out 1 0 4 -340J -1810 NJ -1810 790J -1810 NJ
+preplace netloc GT_SERIAL_RX_1 1 0 8 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 2850J
+preplace netloc axi_bram_ctrl_2_bram_en_a 1 1 2 330J -650 N
+preplace netloc dut_120_0_a_out 1 3 6 1120 -1640 NJ -1640 NJ -1640 NJ -1640 NJ -1640 3370J
+preplace netloc dut_0_data_out 1 1 3 NJ -746 760J -540 1080J
+preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 7 1 2890
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 8 -370J -280 NJ -280 NJ -280 NJ -280 NJ -280 1780 -280 NJ -280 2880J
+preplace netloc axi_bram_ctrl_3_bram_wrdata_a 1 1 2 350J -1050 NJ
+preplace netloc axi_bram_ctrl_4_bram_clk_a 1 1 2 370J -1450 750
 preplace netloc axi_bram_ctrl_5_bram_rst_a 1 1 2 NJ -1628 730J
-preplace netloc INIT_DIFF_CLK_1 1 0 8 NJ -560 NJ -560 NJ -560 NJ -560 NJ -560 1760J -610 NJ -610 2910J
-preplace netloc clk_wiz_clk_out1 1 0 8 -410 -120 NJ -120 NJ -120 1090 -120 NJ -120 1760J -120 2270J -120 2910J
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 330
+preplace netloc INIT_DIFF_CLK_1 1 0 8 -400J -550 NJ -550 NJ -550 NJ -550 NJ -550 1780J -610 NJ -610 2900J
+preplace netloc clk_wiz_clk_out1 1 0 8 -380 -120 NJ -120 NJ -120 1080 -120 NJ -120 1770J -120 2270J -120 2910J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 360
 preplace netloc CLK_IN1_D_1 1 0 3 NJ 110 NJ 110 NJ
-preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 1 1 340
-preplace netloc axi_chip2chip_0_m_axi 1 6 2 NJ -560 2900
-preplace netloc jack_0_b_out 1 2 4 830 -540 NJ -540 NJ -540 1740
-preplace netloc axi_bram_ctrl_3_bram_en_a 1 1 2 320J -1010 NJ
-preplace netloc aurora_64b66b_0_init_clk_out 1 5 4 1810J -330 NJ -330 NJ -330 3370
-preplace netloc axi_bram_ctrl_4_bram_en_a 1 1 2 310J -1360 N
-preplace netloc aux_reset_in_1 1 0 9 -420J -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2260J -110 2880J 210 3410J
-preplace netloc axi_bram_ctrl_5_bram_addr_a 1 1 3 NJ -1672 740J -1260 N
-preplace netloc axi_mem_intercon_M05_AXI 1 0 9 -370 -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 NJ -320 3400
-preplace netloc dut_120_1_b_oe 1 3 2 NJ -1390 1420J
-preplace netloc axi_bram_ctrl_2_bram_clk_a 1 1 2 NJ -764 820
-preplace netloc Net 1 1 2 360J -730 N
-preplace netloc dut_1_b_out 1 3 2 N -1000 1450J
-preplace netloc clk_wiz_locked 1 3 4 1110 20 NJ 20 NJ 20 NJ
-preplace netloc Net1 1 5 4 N -1660 NJ -1660 NJ -1660 NJ
-preplace netloc axi_bram_ctrl_4_bram_wrdata_a 1 1 2 320J -1410 820
-preplace netloc dut_1_a_out 1 3 2 N -1020 1430J
-preplace netloc aurora_64b66b_0_user_clk_out 1 5 4 1810J -710 NJ -710 NJ -710 3370
-preplace netloc Net2 1 5 4 N -1640 NJ -1640 NJ -1640 NJ
-preplace netloc dut_0_b_out 1 3 2 NJ -640 1510J
-preplace netloc dut_1_a_oe 1 3 2 N -1060 1420J
-preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 3 6 1150J 230 NJ 230 NJ 230 2240 230 NJ 230 3430J
-preplace netloc GT_DIFF_REFCLK1_1 1 0 8 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 2860J
-preplace netloc dut_120_1_b_out 1 2 2 830 -1270 1080
-preplace netloc Net3 1 5 4 N -1390 NJ -1390 NJ -1390 NJ
-preplace netloc jack_120_1_b_out 1 2 4 820J -1830 1120J -1750 1470J -1770 1810
-preplace netloc dut_120_0_b_out 1 3 2 1150 -1620 1500J
-preplace netloc jack_0_a_out 1 2 4 810 -530 NJ -530 NJ -530 1750
-preplace netloc Net4 1 5 4 N -1370 NJ -1370 NJ -1370 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 1 1 350
+preplace netloc axi_chip2chip_0_m_axi 1 6 2 NJ -560 2890
+preplace netloc jack_0_b_out 1 2 4 800 -530 NJ -530 NJ -530 1750
+preplace netloc axi_bram_ctrl_3_bram_en_a 1 1 2 330J -1010 NJ
+preplace netloc aurora_64b66b_0_init_clk_out 1 5 4 1800J -730 NJ -730 NJ -730 3410
+preplace netloc axi_bram_ctrl_4_bram_en_a 1 1 2 NJ -1417 720
+preplace netloc aux_reset_in_1 1 0 9 -400J -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2260J -110 2870J 210 3440J
+preplace netloc axi_bram_ctrl_5_bram_addr_a 1 1 3 NJ -1672 740J -1270 NJ
+preplace netloc axi_mem_intercon_M05_AXI 1 0 9 -350 -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 NJ -290 3380
+preplace netloc dut_120_1_b_oe 1 3 6 NJ -1390 NJ -1390 NJ -1390 NJ -1390 NJ -1390 3400
+preplace netloc axi_bram_ctrl_2_bram_clk_a 1 1 2 NJ -764 790
+preplace netloc Net 1 1 2 390J -730 N
+preplace netloc dut_1_b_out 1 3 2 N -1000 1460J
+preplace netloc clk_wiz_locked 1 3 4 1090 20 NJ 20 NJ 20 NJ
+preplace netloc axi_bram_ctrl_4_bram_wrdata_a 1 1 2 330J -1400 N
+preplace netloc dut_1_a_out 1 3 2 N -1020 1440J
+preplace netloc aurora_64b66b_0_user_clk_out 1 5 4 1830J -710 NJ -710 NJ -710 3370
+preplace netloc dut_0_b_out 1 3 2 NJ -640 1480J
+preplace netloc dut_1_a_oe 1 3 2 N -1060 1430J
+preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 3 6 1130J 210 NJ 210 NJ 210 2240 210 2860J 220 3450J
+preplace netloc GT_DIFF_REFCLK1_1 1 0 8 -390J -560 NJ -560 NJ -560 NJ -560 NJ -560 1770J -620 NJ -620 2910J
+preplace netloc dut_120_1_b_out 1 3 6 NJ -1350 NJ -1350 NJ -1350 NJ -1350 NJ -1350 3430J
+preplace netloc jack_120_1_b_out 1 0 4 -380J -1830 NJ -1830 800J -1830 NJ
+preplace netloc dut_120_0_b_out 1 3 6 1130 -1620 NJ -1620 NJ -1620 NJ -1620 NJ -1620 3380J
+preplace netloc jack_0_a_out 1 2 4 790 -520 NJ -520 NJ -520 1760
 preplace netloc dut_0_b_oe 1 3 2 NJ -680 1430J
-preplace netloc dut_120_1_a_oe 1 3 2 NJ -1410 1420J
-preplace netloc dut_120_1_data_out 1 1 3 NJ -1426 760J -1530 1100
-preplace netloc dut_120_0_a_oe 1 3 2 1090 -1680 1460J
-preplace netloc jack_1_a_out 1 2 4 810 -900 NJ -900 NJ -900 1810
+preplace netloc a_in_1_1 1 0 3 -390J -1340 NJ -1340 N
+preplace netloc dut_120_1_a_oe 1 3 6 N -1410 NJ -1410 NJ -1410 NJ -1410 NJ -1410 3390J
+preplace netloc dut_120_1_data_out 1 1 3 360J -1510 NJ -1510 1080
+preplace netloc dut_120_0_a_oe 1 3 6 1080 -1680 NJ -1680 NJ -1680 NJ -1680 NJ -1680 NJ
+preplace netloc jack_1_a_out 1 2 4 750 -910 NJ -910 NJ -910 1830
 preplace netloc jtag_axi_0_M_AXI 1 1 7 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 2850J
-preplace netloc axi_mem_intercon_M02_AXI 1 0 9 -380 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 3390
-preplace netloc axi_bram_ctrl_3_bram_clk_a 1 1 2 NJ -1134 820J
-preplace netloc axi_bram_ctrl_5_bram_en_a 1 1 3 350J -1200 810J -1200 N
-preplace netloc axi_bram_ctrl_5_bram_we_a 1 1 3 340J -1220 790J -1220 N
-preplace netloc axi_mem_intercon_M03_AXI 1 0 9 -390 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 3380
-preplace netloc xlconstant_0_dout 1 2 2 830 -220 1080
-preplace netloc aurora_64b66b_0_channel_up 1 5 4 1780 -730 NJ -730 NJ -730 3390
-preplace netloc axi_mem_intercon_M00_AXI 1 0 9 -350 -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 3390
-preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 5 4 1790J -720 NJ -720 NJ -720 3380
-preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 3 6 1130J 250 NJ 250 NJ 250 2230 250 NJ 250 3440J
-preplace netloc dut_0_a_out 1 3 2 NJ -660 1480J
-preplace netloc axi_bram_ctrl_2_bram_wrdata_a 1 1 2 320J -690 N
-levelinfo -pg 1 -440 179 620 960 1290 1630 2030 2680 3172 3540 -top -1980 -bot 1340
+preplace netloc axi_mem_intercon_M02_AXI 1 0 9 -310 -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 3400
+preplace netloc axi_bram_ctrl_3_bram_clk_a 1 1 2 NJ -1134 790J
+preplace netloc axi_bram_ctrl_5_bram_en_a 1 1 3 390J -1210 780J -1210 NJ
+preplace netloc axi_bram_ctrl_5_bram_we_a 1 1 3 350J -1650 770J -1230 NJ
+preplace netloc axi_mem_intercon_M03_AXI 1 0 9 -360 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 3370
+preplace netloc xlconstant_0_dout 1 2 2 800 -220 1080
+preplace netloc aurora_64b66b_0_channel_up 1 5 4 1790 -740 NJ -740 NJ -740 3390
+preplace netloc axi_mem_intercon_M00_AXI 1 0 9 -330 -330 NJ -330 NJ -330 NJ -330 NJ -330 NJ -330 NJ -330 NJ -330 3420
+preplace netloc b_in_1_1 1 0 3 -400J -1320 NJ -1320 N
+preplace netloc aurora_64b66b_0_mmcm_not_locked_out 1 5 4 1810J -720 NJ -720 NJ -720 3380
+preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 3 6 1100J 240 NJ 240 NJ 240 2230 240 NJ 240 3470J
+preplace netloc dut_0_a_out 1 3 2 NJ -660 1450J
+preplace netloc axi_bram_ctrl_2_bram_wrdata_a 1 1 2 350J -690 N
+levelinfo -pg 1 -440 179 620 960 1300 1640 2030 2680 3172 3540 -top -2000 -bot 1340
 ",
 }
 

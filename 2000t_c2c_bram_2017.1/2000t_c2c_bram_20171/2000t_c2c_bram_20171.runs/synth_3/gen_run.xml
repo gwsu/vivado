@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_3" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1499369125">
+  <File Type="VDS-TIMING-PB" Name="b2000t_c2c_bram_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="b2000t_c2c_bram_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="b2000t_c2c_bram_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="b2000t_c2c_bram_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="b2000t_c2c_bram_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="b2000t_c2c_bram_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="b2000t_c2c_bram_wrapper.vds"/>
+  <File Type="PA-TCL" Name="b2000t_c2c_bram_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd"/>
+        <Attr Name="ImportTime" Val="1499279511"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1499279511"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="b2000t_c2c_bram_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/constrs_1/new/b2000t_c2c_bram.xdc"/>
+        <Attr Name="ImportTime" Val="1498779889"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/b2000t_c2c_bram.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_120_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="b2000t_c2c_bram_jack_120_0_0"/>
+</GenRun>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Fri Jun 30 18:50:12 2017
+-- Date        : Fri Jun 30 18:50:10 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim
---               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_xbar_0 -prefix
+--               b2000t_c2c_bram_xbar_0_ b2000t_c2c_bram_xbar_0_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -58,8 +58,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_arbiter_resp is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_arbiter_resp : entity is "axi_crossbar_v2_1_12_arbiter_resp";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_arbiter_resp;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_arbiter_resp is
@@ -5195,8 +5193,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_decerr_slave is
     M_MESG : in STD_LOGIC_VECTOR ( 7 downto 0 );
     aresetn_d : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_decerr_slave : entity is "axi_crossbar_v2_1_12_decerr_slave";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_decerr_slave;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_decerr_slave is
@@ -5813,8 +5809,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_splitter : entity is "axi_crossbar_v2_1_12_splitter";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_splitter;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_splitter is
@@ -6063,8 +6057,6 @@ entity b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_ndeep_srl is
     \s_axi_awaddr[49]\ : in STD_LOGIC;
     out0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_ndeep_srl : entity is "axi_data_fifo_v2_1_10_ndeep_srl";
 end b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_ndeep_srl;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_ndeep_srl is
@@ -18389,8 +18381,6 @@ entity b2000t_c2c_bram_xbar_0_generic_baseblocks_v2_1_0_mux_enc is
     active_cnt : in STD_LOGIC_VECTOR ( 3 downto 0 );
     cmd_push_0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_generic_baseblocks_v2_1_0_mux_enc : entity is "generic_baseblocks_v2_1_0_mux_enc";
 end b2000t_c2c_bram_xbar_0_generic_baseblocks_v2_1_0_mux_enc;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_generic_baseblocks_v2_1_0_mux_enc is
@@ -20825,8 +20815,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_addr_arbiter is
     s_axi_arcache : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_arqos : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_addr_arbiter : entity is "axi_crossbar_v2_1_12_addr_arbiter";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_addr_arbiter;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_addr_arbiter is
@@ -24649,8 +24637,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_si_transactor is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_si_transactor : entity is "axi_crossbar_v2_1_12_si_transactor";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_si_transactor;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_si_transactor is
@@ -26362,8 +26348,6 @@ entity b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_axic_reg_srl_fifo is
     m_avalid_10 : in STD_LOGIC;
     m_select_enc_11 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_axic_reg_srl_fifo : entity is "axi_data_fifo_v2_1_10_axic_reg_srl_fifo";
 end b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_axic_reg_srl_fifo;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_data_fifo_v2_1_10_axic_reg_srl_fifo is
@@ -31613,8 +31597,6 @@ entity b2000t_c2c_bram_xbar_0_axi_register_slice_v2_1_11_axi_register_slice is
     m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_register_slice_v2_1_11_axi_register_slice : entity is "axi_register_slice_v2_1_11_axi_register_slice";
 end b2000t_c2c_bram_xbar_0_axi_register_slice_v2_1_11_axi_register_slice;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_register_slice_v2_1_11_axi_register_slice is
@@ -32352,8 +32334,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_mux is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_mux : entity is "axi_crossbar_v2_1_12_wdata_mux";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_mux;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_mux is
@@ -32805,8 +32785,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_router is
     m_avalid_10 : in STD_LOGIC;
     m_select_enc_11 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_router : entity is "axi_crossbar_v2_1_12_wdata_router";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_router;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_wdata_router is
@@ -33053,8 +33031,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_crossbar is
     m_axi_rdata : in STD_LOGIC_VECTOR ( 191 downto 0 );
     m_axi_bvalid : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_crossbar : entity is "axi_crossbar_v2_1_12_crossbar";
 end b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_crossbar;
 
 architecture STRUCTURE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_crossbar is
@@ -34778,8 +34754,6 @@ entity b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "64'b0000000000000000000000000000001000000000000000000000000000000010";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "axi_crossbar_v2_1_12_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of b2000t_c2c_bram_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

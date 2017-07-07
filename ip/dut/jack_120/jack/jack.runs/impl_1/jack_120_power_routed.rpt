@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Jun 30 15:41:14 2017
+| Date             : Fri Jul  7 12:51:52 2017
 | Host             : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 | Command          : report_power -file jack_120_power_routed.rpt -pb jack_120_power_summary_routed.pb -rpx jack_120_power_routed.rpx
 | Design           : jack_120
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 37.301 |
-| Dynamic (W)              | 35.712 |
-| Device Static (W)        | 1.589  |
+| Total On-Chip Power (W)  | 35.463 |
+| Dynamic (W)              | 33.958 |
+| Device Static (W)        | 1.506  |
 | Effective TJA (C/W)      | 0.8    |
-| Max Ambient (C)          | 53.8   |
-| Junction Temperature (C) | 56.2   |
+| Max Ambient (C)          | 55.4   |
+| Junction Temperature (C) | 54.6   |
 | Confidence Level         | Low    |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,12 +49,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.002 |        2 |       --- |             --- |
-|   LUT as Logic |     0.002 |        2 |   1221600 |           <0.01 |
-| Signals        |     5.939 |      244 |       --- |             --- |
-| I/O            |    29.772 |      362 |      1200 |           30.17 |
-| Static Power   |     1.589 |          |           |                 |
-| Total          |    37.301 |          |           |                 |
+| Slice Logic    |     0.003 |        4 |       --- |             --- |
+|   LUT as Logic |     0.003 |        2 |   1221600 |           <0.01 |
+|   Others       |     0.000 |        2 |       --- |             --- |
+| Signals        |     4.679 |      240 |       --- |             --- |
+| I/O            |    29.276 |      358 |      1200 |           29.83 |
+| Static Power   |     1.506 |          |           |                 |
+| Total          |    35.463 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -64,16 +65,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     7.836 |       6.674 |      1.162 |
-| Vccaux    |       1.800 |     2.481 |       2.333 |      0.148 |
+| Vccint    |       1.000 |     6.492 |       5.404 |      1.088 |
+| Vccaux    |       1.800 |     2.438 |       2.294 |      0.144 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |    13.800 |      13.799 |      0.001 |
+| Vcco18    |       1.800 |    13.570 |      13.569 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.015 |       0.000 |      0.015 |
+| Vccbram   |       1.000 |     0.014 |       0.000 |      0.014 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -87,17 +88,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                                       |                                                                                                            |
-| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
-| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
-| Device models               | High       | Device models are Production                           |                                                                                                            |
-|                             |            |                                                        |                                                                                                            |
-| Overall confidence level    | Low        |                                                        |                                                                                                            |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                   |
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                          |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                          |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view |
+| Internal nodes activity     | High       | User specified more than 25% of internal nodes         |                                                                                                          |
+| Device models               | High       | Device models are Production                           |                                                                                                          |
+|                             |            |                                                        |                                                                                                          |
+| Overall confidence level    | Low        |                                                        |                                                                                                          |
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -135,127 +136,125 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| jack_120               |    35.712 |
-|   pin_a_IOBUF[0]_inst  |     0.127 |
-|   pin_a_IOBUF[10]_inst |     0.131 |
-|   pin_a_IOBUF[11]_inst |     0.131 |
-|   pin_a_IOBUF[12]_inst |     0.130 |
-|   pin_a_IOBUF[13]_inst |     0.130 |
-|   pin_a_IOBUF[14]_inst |     0.130 |
-|   pin_a_IOBUF[15]_inst |     0.130 |
-|   pin_a_IOBUF[16]_inst |     0.130 |
-|   pin_a_IOBUF[17]_inst |     0.131 |
-|   pin_a_IOBUF[18]_inst |     0.131 |
-|   pin_a_IOBUF[19]_inst |     0.131 |
-|   pin_a_IOBUF[1]_inst  |     0.127 |
-|   pin_a_IOBUF[20]_inst |     0.131 |
-|   pin_a_IOBUF[21]_inst |     0.131 |
-|   pin_a_IOBUF[22]_inst |     0.131 |
-|   pin_a_IOBUF[23]_inst |     0.131 |
-|   pin_a_IOBUF[24]_inst |     0.131 |
-|   pin_a_IOBUF[25]_inst |     0.131 |
-|   pin_a_IOBUF[26]_inst |     0.130 |
-|   pin_a_IOBUF[27]_inst |     0.130 |
-|   pin_a_IOBUF[28]_inst |     0.131 |
-|   pin_a_IOBUF[29]_inst |     0.131 |
-|   pin_a_IOBUF[2]_inst  |     0.127 |
-|   pin_a_IOBUF[30]_inst |     0.131 |
-|   pin_a_IOBUF[31]_inst |     0.131 |
-|   pin_a_IOBUF[32]_inst |     0.131 |
-|   pin_a_IOBUF[33]_inst |     0.131 |
-|   pin_a_IOBUF[34]_inst |     0.131 |
-|   pin_a_IOBUF[35]_inst |     0.131 |
-|   pin_a_IOBUF[36]_inst |     0.131 |
-|   pin_a_IOBUF[37]_inst |     0.131 |
-|   pin_a_IOBUF[38]_inst |     0.131 |
-|   pin_a_IOBUF[39]_inst |     0.131 |
-|   pin_a_IOBUF[3]_inst  |     0.127 |
-|   pin_a_IOBUF[40]_inst |     0.131 |
-|   pin_a_IOBUF[41]_inst |     0.131 |
-|   pin_a_IOBUF[42]_inst |     0.131 |
-|   pin_a_IOBUF[43]_inst |     0.131 |
-|   pin_a_IOBUF[44]_inst |     0.131 |
-|   pin_a_IOBUF[45]_inst |     0.131 |
-|   pin_a_IOBUF[46]_inst |     0.130 |
-|   pin_a_IOBUF[47]_inst |     0.130 |
-|   pin_a_IOBUF[48]_inst |     0.130 |
-|   pin_a_IOBUF[49]_inst |     0.130 |
-|   pin_a_IOBUF[4]_inst  |     0.127 |
-|   pin_a_IOBUF[50]_inst |     0.131 |
-|   pin_a_IOBUF[51]_inst |     0.130 |
-|   pin_a_IOBUF[52]_inst |     0.131 |
-|   pin_a_IOBUF[53]_inst |     0.131 |
-|   pin_a_IOBUF[54]_inst |     0.131 |
-|   pin_a_IOBUF[55]_inst |     0.131 |
-|   pin_a_IOBUF[56]_inst |     0.132 |
-|   pin_a_IOBUF[57]_inst |     0.131 |
-|   pin_a_IOBUF[58]_inst |     0.132 |
-|   pin_a_IOBUF[59]_inst |     0.131 |
-|   pin_a_IOBUF[5]_inst  |     0.127 |
-|   pin_a_IOBUF[6]_inst  |     0.127 |
-|   pin_a_IOBUF[7]_inst  |     0.127 |
-|   pin_a_IOBUF[8]_inst  |     0.126 |
-|   pin_a_IOBUF[9]_inst  |     0.126 |
-|   pin_b_IOBUF[0]_inst  |     0.138 |
-|   pin_b_IOBUF[10]_inst |     0.141 |
-|   pin_b_IOBUF[11]_inst |     0.141 |
-|   pin_b_IOBUF[12]_inst |     0.141 |
-|   pin_b_IOBUF[13]_inst |     0.141 |
-|   pin_b_IOBUF[14]_inst |     0.141 |
-|   pin_b_IOBUF[15]_inst |     0.141 |
-|   pin_b_IOBUF[16]_inst |     0.141 |
-|   pin_b_IOBUF[17]_inst |     0.141 |
-|   pin_b_IOBUF[18]_inst |     0.141 |
-|   pin_b_IOBUF[19]_inst |     0.141 |
-|   pin_b_IOBUF[1]_inst  |     0.138 |
-|   pin_b_IOBUF[20]_inst |     0.141 |
-|   pin_b_IOBUF[21]_inst |     0.141 |
-|   pin_b_IOBUF[22]_inst |     0.141 |
-|   pin_b_IOBUF[23]_inst |     0.141 |
-|   pin_b_IOBUF[24]_inst |     0.141 |
-|   pin_b_IOBUF[25]_inst |     0.141 |
-|   pin_b_IOBUF[26]_inst |     0.141 |
-|   pin_b_IOBUF[27]_inst |     0.141 |
-|   pin_b_IOBUF[28]_inst |     0.141 |
-|   pin_b_IOBUF[29]_inst |     0.141 |
-|   pin_b_IOBUF[2]_inst  |     0.138 |
-|   pin_b_IOBUF[30]_inst |     0.141 |
-|   pin_b_IOBUF[31]_inst |     0.141 |
-|   pin_b_IOBUF[32]_inst |     0.141 |
-|   pin_b_IOBUF[33]_inst |     0.141 |
-|   pin_b_IOBUF[34]_inst |     0.141 |
-|   pin_b_IOBUF[35]_inst |     0.141 |
-|   pin_b_IOBUF[36]_inst |     0.141 |
-|   pin_b_IOBUF[37]_inst |     0.141 |
-|   pin_b_IOBUF[38]_inst |     0.141 |
-|   pin_b_IOBUF[39]_inst |     0.141 |
-|   pin_b_IOBUF[3]_inst  |     0.138 |
-|   pin_b_IOBUF[40]_inst |     0.141 |
-|   pin_b_IOBUF[41]_inst |     0.141 |
-|   pin_b_IOBUF[42]_inst |     0.141 |
-|   pin_b_IOBUF[43]_inst |     0.141 |
-|   pin_b_IOBUF[44]_inst |     0.141 |
-|   pin_b_IOBUF[45]_inst |     0.141 |
-|   pin_b_IOBUF[46]_inst |     0.141 |
-|   pin_b_IOBUF[47]_inst |     0.141 |
-|   pin_b_IOBUF[48]_inst |     0.141 |
-|   pin_b_IOBUF[49]_inst |     0.141 |
-|   pin_b_IOBUF[4]_inst  |     0.138 |
-|   pin_b_IOBUF[50]_inst |     0.139 |
-|   pin_b_IOBUF[51]_inst |     0.139 |
-|   pin_b_IOBUF[52]_inst |     0.139 |
-|   pin_b_IOBUF[53]_inst |     0.139 |
-|   pin_b_IOBUF[54]_inst |     0.139 |
-|   pin_b_IOBUF[55]_inst |     0.139 |
-|   pin_b_IOBUF[56]_inst |     0.139 |
-|   pin_b_IOBUF[57]_inst |     0.139 |
-|   pin_b_IOBUF[58]_inst |     0.139 |
-|   pin_b_IOBUF[59]_inst |     0.139 |
-|   pin_b_IOBUF[5]_inst  |     0.138 |
-|   pin_b_IOBUF[6]_inst  |     0.138 |
-|   pin_b_IOBUF[7]_inst  |     0.138 |
-|   pin_b_IOBUF[8]_inst  |     0.138 |
-|   pin_b_IOBUF[9]_inst  |     0.138 |
+| jack_120               |    33.958 |
+|   iobuff_a[0].iobuffa  |     0.136 |
+|   iobuff_a[10].iobuffa |     0.136 |
+|   iobuff_a[11].iobuffa |     0.136 |
+|   iobuff_a[12].iobuffa |     0.136 |
+|   iobuff_a[13].iobuffa |     0.137 |
+|   iobuff_a[14].iobuffa |     0.136 |
+|   iobuff_a[15].iobuffa |     0.136 |
+|   iobuff_a[16].iobuffa |     0.137 |
+|   iobuff_a[17].iobuffa |     0.135 |
+|   iobuff_a[18].iobuffa |     0.137 |
+|   iobuff_a[19].iobuffa |     0.137 |
+|   iobuff_a[1].iobuffa  |     0.137 |
+|   iobuff_a[20].iobuffa |     0.137 |
+|   iobuff_a[21].iobuffa |     0.137 |
+|   iobuff_a[22].iobuffa |     0.136 |
+|   iobuff_a[23].iobuffa |     0.136 |
+|   iobuff_a[24].iobuffa |     0.136 |
+|   iobuff_a[25].iobuffa |     0.136 |
+|   iobuff_a[26].iobuffa |     0.136 |
+|   iobuff_a[27].iobuffa |     0.136 |
+|   iobuff_a[28].iobuffa |     0.136 |
+|   iobuff_a[29].iobuffa |     0.136 |
+|   iobuff_a[2].iobuffa  |     0.137 |
+|   iobuff_a[30].iobuffa |     0.136 |
+|   iobuff_a[31].iobuffa |     0.136 |
+|   iobuff_a[32].iobuffa |     0.136 |
+|   iobuff_a[33].iobuffa |     0.136 |
+|   iobuff_a[34].iobuffa |     0.136 |
+|   iobuff_a[35].iobuffa |     0.136 |
+|   iobuff_a[36].iobuffa |     0.135 |
+|   iobuff_a[37].iobuffa |     0.136 |
+|   iobuff_a[38].iobuffa |     0.136 |
+|   iobuff_a[39].iobuffa |     0.135 |
+|   iobuff_a[3].iobuffa  |     0.137 |
+|   iobuff_a[40].iobuffa |     0.135 |
+|   iobuff_a[41].iobuffa |     0.136 |
+|   iobuff_a[42].iobuffa |     0.137 |
+|   iobuff_a[43].iobuffa |     0.135 |
+|   iobuff_a[44].iobuffa |     0.136 |
+|   iobuff_a[45].iobuffa |     0.136 |
+|   iobuff_a[46].iobuffa |     0.136 |
+|   iobuff_a[47].iobuffa |     0.136 |
+|   iobuff_a[48].iobuffa |     0.136 |
+|   iobuff_a[49].iobuffa |     0.136 |
+|   iobuff_a[4].iobuffa  |     0.137 |
+|   iobuff_a[50].iobuffa |     0.131 |
+|   iobuff_a[51].iobuffa |     0.131 |
+|   iobuff_a[52].iobuffa |     0.131 |
+|   iobuff_a[53].iobuffa |     0.131 |
+|   iobuff_a[54].iobuffa |     0.132 |
+|   iobuff_a[55].iobuffa |     0.132 |
+|   iobuff_a[56].iobuffa |     0.132 |
+|   iobuff_a[57].iobuffa |     0.132 |
+|   iobuff_a[58].iobuffa |     0.132 |
+|   iobuff_a[5].iobuffa  |     0.137 |
+|   iobuff_a[6].iobuffa  |     0.137 |
+|   iobuff_a[7].iobuffa  |     0.135 |
+|   iobuff_a[8].iobuffa  |     0.136 |
+|   iobuff_a[9].iobuffa  |     0.136 |
+|   iobuff_b[0].iobuffb  |     0.133 |
+|   iobuff_b[10].iobuffb |     0.132 |
+|   iobuff_b[11].iobuffb |     0.131 |
+|   iobuff_b[12].iobuffb |     0.132 |
+|   iobuff_b[13].iobuffb |     0.132 |
+|   iobuff_b[14].iobuffb |     0.132 |
+|   iobuff_b[15].iobuffb |     0.132 |
+|   iobuff_b[16].iobuffb |     0.132 |
+|   iobuff_b[17].iobuffb |     0.132 |
+|   iobuff_b[18].iobuffb |     0.132 |
+|   iobuff_b[19].iobuffb |     0.132 |
+|   iobuff_b[1].iobuffb  |     0.133 |
+|   iobuff_b[20].iobuffb |     0.132 |
+|   iobuff_b[21].iobuffb |     0.132 |
+|   iobuff_b[22].iobuffb |     0.132 |
+|   iobuff_b[23].iobuffb |     0.132 |
+|   iobuff_b[24].iobuffb |     0.132 |
+|   iobuff_b[25].iobuffb |     0.132 |
+|   iobuff_b[26].iobuffb |     0.132 |
+|   iobuff_b[27].iobuffb |     0.132 |
+|   iobuff_b[28].iobuffb |     0.132 |
+|   iobuff_b[29].iobuffb |     0.132 |
+|   iobuff_b[2].iobuffb  |     0.134 |
+|   iobuff_b[30].iobuffb |     0.132 |
+|   iobuff_b[31].iobuffb |     0.132 |
+|   iobuff_b[32].iobuffb |     0.132 |
+|   iobuff_b[33].iobuffb |     0.132 |
+|   iobuff_b[34].iobuffb |     0.132 |
+|   iobuff_b[35].iobuffb |     0.132 |
+|   iobuff_b[36].iobuffb |     0.132 |
+|   iobuff_b[37].iobuffb |     0.132 |
+|   iobuff_b[38].iobuffb |     0.132 |
+|   iobuff_b[39].iobuffb |     0.131 |
+|   iobuff_b[3].iobuffb  |     0.133 |
+|   iobuff_b[40].iobuffb |     0.132 |
+|   iobuff_b[41].iobuffb |     0.132 |
+|   iobuff_b[42].iobuffb |     0.131 |
+|   iobuff_b[43].iobuffb |     0.131 |
+|   iobuff_b[44].iobuffb |     0.132 |
+|   iobuff_b[45].iobuffb |     0.131 |
+|   iobuff_b[46].iobuffb |     0.131 |
+|   iobuff_b[47].iobuffb |     0.131 |
+|   iobuff_b[48].iobuffb |     0.131 |
+|   iobuff_b[49].iobuffb |     0.131 |
+|   iobuff_b[4].iobuffb  |     0.132 |
+|   iobuff_b[50].iobuffb |     0.134 |
+|   iobuff_b[51].iobuffb |     0.134 |
+|   iobuff_b[52].iobuffb |     0.134 |
+|   iobuff_b[53].iobuffb |     0.134 |
+|   iobuff_b[54].iobuffb |     0.134 |
+|   iobuff_b[55].iobuffb |     0.134 |
+|   iobuff_b[56].iobuffb |     0.135 |
+|   iobuff_b[57].iobuffb |     0.135 |
+|   iobuff_b[58].iobuffb |     0.136 |
+|   iobuff_b[5].iobuffb  |     0.132 |
+|   iobuff_b[6].iobuffb  |     0.132 |
+|   iobuff_b[7].iobuffb  |     0.132 |
+|   iobuff_b[8].iobuffb  |     0.133 |
+|   iobuff_b[9].iobuffb  |     0.133 |
 +------------------------+-----------+
 
 

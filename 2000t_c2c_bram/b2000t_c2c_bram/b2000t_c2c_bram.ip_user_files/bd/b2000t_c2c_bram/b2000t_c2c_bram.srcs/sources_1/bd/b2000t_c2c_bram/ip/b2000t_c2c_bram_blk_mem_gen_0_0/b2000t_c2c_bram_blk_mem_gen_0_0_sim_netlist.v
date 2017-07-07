@@ -1,18 +1,18 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Fri Jun 30 18:50:38 2017
+// Date        : Fri Jun 30 18:50:36 2017
 // Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
-// Command     : write_verilog -force -mode funcsim
-//               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0_sim_netlist.v
-// Design      : b2000t_c2c_bram_blk_mem_gen_0_0
+// Command     : write_verilog -force -mode funcsim -rename_top b2000t_c2c_bram_blk_mem_gen_0_0 -prefix
+//               b2000t_c2c_bram_blk_mem_gen_0_0_ b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_sim_netlist.v
+// Design      : b2000t_c2c_bram_axi_bram_ctrl_1_bram_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7v2000tflg1925-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_blk_mem_gen_0_0,blk_mem_gen_v8_3_5,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_3_5,Vivado 2016.4" *) 
+(* CHECK_LICENSE_TYPE = "b2000t_c2c_bram_axi_bram_ctrl_1_bram_1,blk_mem_gen_v8_3_5,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_3_5,Vivado 2016.4" *) 
 (* NotValidForBitStream *)
 module b2000t_c2c_bram_blk_mem_gen_0_0
    (clka,
@@ -218,7 +218,6 @@ module b2000t_c2c_bram_blk_mem_gen_0_0
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
    (douta,
     doutb,
@@ -281,7 +280,6 @@ module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_prim_width
    (douta,
     doutb,
@@ -344,7 +342,6 @@ module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_prim_width
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper
    (douta,
     doutb,
@@ -618,7 +615,6 @@ module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper
         .WEBWE({1'b0,1'b0,1'b0,1'b0,web}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_top
    (douta,
     doutb,
@@ -705,7 +701,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) 
 (* C_WRITE_DEPTH_A = "1024" *) (* C_WRITE_DEPTH_B = "1024" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
-(* C_XDEVICEFAMILY = "virtex7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "virtex7" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_v8_3_5
    (clka,
     rsta,
@@ -989,7 +985,6 @@ module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_v8_3_5
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
 module b2000t_c2c_bram_blk_mem_gen_0_0_blk_mem_gen_v8_3_5_synth
    (douta,
     doutb,

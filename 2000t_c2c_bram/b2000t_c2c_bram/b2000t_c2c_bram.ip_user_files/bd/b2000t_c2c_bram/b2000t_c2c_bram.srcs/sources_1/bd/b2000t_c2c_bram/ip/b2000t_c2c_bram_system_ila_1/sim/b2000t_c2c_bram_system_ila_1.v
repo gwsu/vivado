@@ -58,7 +58,8 @@ module b2000t_c2c_bram_system_ila_1 (
   probe0,
   probe1,
   probe2,
-  probe3
+  probe3,
+  probe4
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
@@ -67,12 +68,14 @@ input wire [11 : 0] probe0;
 input wire [31 : 0] probe1;
 input wire [3 : 0] probe2;
 input wire [0 : 0] probe3;
+input wire [31 : 0] probe4;
 
   bd_ade5 inst (
     .clk(clk),
     .probe0(probe0),
     .probe1(probe1),
     .probe2(probe2),
-    .probe3(probe3)
+    .probe3(probe3),
+    .probe4(probe4)
   );
 endmodule

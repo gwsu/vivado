@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Fri Jun 30 18:50:37 2017
+-- Date        : Fri Jun 30 18:50:36 2017
 -- Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
--- Command     : write_vhdl -force -mode funcsim
---               /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/ip/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top b2000t_c2c_bram_axi_bram_ctrl_1_bram_1 -prefix
+--               b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_ b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_sim_netlist.vhdl
 -- Design      : b2000t_c2c_bram_axi_bram_ctrl_1_bram_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,8 +31,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_wrapper is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_wrapper is
@@ -302,8 +300,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_prim_width is
@@ -347,8 +343,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_generic_cstr is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_generic_cstr is
@@ -392,8 +386,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_top is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_top;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_top is
@@ -437,8 +429,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5_synth is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5_synth;
 
 architecture STRUCTURE of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5_synth is
@@ -677,8 +667,6 @@ entity b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5 is
   attribute C_WRITE_WIDTH_B of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5 : entity is "virtex7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5 : entity is "yes";
 end b2000t_c2c_bram_axi_bram_ctrl_1_bram_1_blk_mem_gen_v8_3_5;

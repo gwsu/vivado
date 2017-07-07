@@ -18,7 +18,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e95e1416</spirit:value>
+            <spirit:value>1849faec</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e95e1416</spirit:value>
+            <spirit:value>1849faec</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -207,7 +207,7 @@
       <spirit:file>
         <spirit:name>jack_120.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e95e1416</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_1849faec</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -244,8 +244,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>jack_120_v1_1</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-06-30T22:04:58Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-07-03T18:18:20Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:jack_120:1.0_ARCHIVE_LOCATION">/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1</xilinx:tag>
         <xilinx:tag xilinx:name="user.org:user:jack_120:1.1_ARCHIVE_LOCATION">/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1</xilinx:tag>
@@ -253,7 +253,7 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="50395dad"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fa574aa5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="45e61de5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b82de022"/>
     </xilinx:packagingInfo>

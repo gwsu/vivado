@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Fri Jun 30 11:03:34 2017
-# Process ID: 129233
+# Start of session at: Fri Jul  7 12:47:59 2017
+# Process ID: 131914
 # Current directory: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.runs/synth_1
 # Command line: vivado -log jack_120.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jack_120.tcl
 # Log file: /home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.runs/synth_1/jack_120.vds
@@ -15,12 +15,24 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 129263 
+INFO: Helper process launched with PID 131927 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.184 ; gain = 185.996 ; free physical = 74027 ; free virtual = 184164
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.176 ; gain = 185.996 ; free physical = 79231 ; free virtual = 191696
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'jack_120' [/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1/jack_120.v:1]
-INFO: [Synth 8-256] done synthesizing module 'jack_120' (1#1) [/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1/jack_120.v:1]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17333]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [/home/vivado/vivado201604/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17333]
+INFO: [Synth 8-256] done synthesizing module 'jack_120' (2#1) [/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.srcs/sources_1/imports/sources_1/jack_120.v:1]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port a_out[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port b_out[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port pin_a[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port pin_b[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port a_in[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port b_in[59]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[59]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[58]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[57]
@@ -82,22 +94,22 @@ WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[2]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[1]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1241.660 ; gain = 226.473 ; free physical = 73855 ; free virtual = 183991
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1241.652 ; gain = 226.473 ; free physical = 79188 ; free virtual = 191654
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1241.660 ; gain = 226.473 ; free physical = 73852 ; free virtual = 183989
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1241.652 ; gain = 226.473 ; free physical = 79188 ; free virtual = 191654
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.660 ; gain = 236.473 ; free physical = 73852 ; free virtual = 183989
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1259.668 ; gain = 244.480 ; free physical = 73844 ; free virtual = 183981
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.652 ; gain = 236.473 ; free physical = 79188 ; free virtual = 191654
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1259.660 ; gain = 244.480 ; free physical = 79180 ; free virtual = 191646
+---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -132,6 +144,12 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design jack_120 has unconnected port a_out[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port b_out[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port pin_a[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port pin_b[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port a_in[59]
+WARNING: [Synth 8-3331] design jack_120 has unconnected port b_in[59]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[59]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[58]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[57]
@@ -160,21 +178,9 @@ WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[35]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[34]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[33]
 WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[32]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[31]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[30]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[29]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[28]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[27]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[26]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[25]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[24]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[23]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[22]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[21]
-WARNING: [Synth 8-3331] design jack_120 has unconnected port mode[20]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1739.918 ; gain = 724.730 ; free physical = 73995 ; free virtual = 184115
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.922 ; gain = 750.742 ; free physical = 78677 ; free virtual = 191142
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -187,7 +193,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1739.918 ; gain = 724.730 ; free physical = 73995 ; free virtual = 184116
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191142
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -199,7 +205,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.922 ; gain = 732.734 ; free physical = 73987 ; free virtual = 184107
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191142
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,7 +229,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73986 ; free virtual = 184107
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -236,7 +242,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73986 ; free virtual = 184107
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,25 +254,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73986 ; free virtual = 184107
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73986 ; free virtual = 184107
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73986 ; free virtual = 184107
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73985 ; free virtual = 184106
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -283,36 +289,37 @@ Report Cell Usage:
 |      |Cell  |Count |
 +------+------+------+
 |1     |LUT1  |     2|
-|2     |IBUF  |   122|
-|3     |IOBUF |   120|
-|4     |OBUF  |   120|
+|2     |IBUF  |   120|
+|3     |IOBUF |   118|
+|4     |OBUF  |   118|
+|5     |OBUFT |     2|
 +------+------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   364|
+|1     |top      |       |   360|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.926 ; gain = 732.738 ; free physical = 73985 ; free virtual = 184106
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.926 ; gain = 750.746 ; free physical = 78677 ; free virtual = 191143
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 120 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1747.926 ; gain = 617.742 ; free physical = 73985 ; free virtual = 184106
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1747.930 ; gain = 732.742 ; free physical = 73986 ; free virtual = 184107
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1765.926 ; gain = 635.750 ; free physical = 78677 ; free virtual = 191143
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1765.930 ; gain = 750.750 ; free physical = 78677 ; free virtual = 191143
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 238 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 120 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 120 instances
+  A total of 118 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 118 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-13 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+15 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1859.449 ; gain = 774.758 ; free physical = 73561 ; free virtual = 183687
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1879.449 ; gain = 794.766 ; free physical = 78570 ; free virtual = 191035
 INFO: [Common 17-1381] The checkpoint '/home/wesleyguo/github/vivado/vivado/ip/dut/jack_120/jack/jack.runs/synth_1/jack_120.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1889.461 ; gain = 0.000 ; free physical = 73559 ; free virtual = 183685
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 11:04:22 2017...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1909.461 ; gain = 0.000 ; free physical = 78567 ; free virtual = 191033
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  7 12:48:46 2017...

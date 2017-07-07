@@ -4,11 +4,11 @@
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7v2000t_0" gui_info="dashboard1=dashboard_1[xc7v2000t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7v2000t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_1/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;],dashboard2=dashboard_2[xc7v2000t_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;xc7v2000t_0/hw_ila_2/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_2/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_2/Settings=ILA_SETTINGS_1;]"/>
+  <device name="xc7v2000t_0" gui_info="dashboard1=dashboard_1[xc7v2000t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7v2000t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_1/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;],dashboard2=dashboard_2[xc7v2000t_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;xc7v2000t_0/hw_ila_2/Waveform=ILA_WAVE_1;xc7v2000t_0/hw_ila_2/Status=ILA_STATUS_1;xc7v2000t_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7v2000t_0/hw_ila_2/Settings=ILA_SETTINGS_1;],dashboard3=dashboard_3[xc7v2000t_0/hw_vio_1=VIO_PROBES_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7v2000t_0" gui_info="">
       <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name__wrapper.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_4/top.bit"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_ila" gui_info="">
@@ -61,22 +61,22 @@
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
-    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_config_error_out" gui_info="hw_vios/hw_vio_1=2,dashboard_1/hw_vio_1=0"/>
-    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_link_status_out" gui_info="hw_vios/hw_vio_1=3,dashboard_1/hw_vio_1=1"/>
-    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_multi_bit_error_out" gui_info="hw_vios/hw_vio_1=4,dashboard_1/hw_vio_1=2"/>
+    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_config_error_out" gui_info="hw_vios/hw_vio_1=2,dashboard_1/hw_vio_1=0,dashboard_3/hw_vio_1=0"/>
+    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_link_status_out" gui_info="hw_vios/hw_vio_1=3,dashboard_1/hw_vio_1=1,dashboard_3/hw_vio_1=1"/>
+    <Object name="b2000t_c2c_bram_i/axi_chip2chip_0_axi_c2c_multi_bit_error_out" gui_info="hw_vios/hw_vio_1=4,dashboard_1/hw_vio_1=2,dashboard_3/hw_vio_1=2"/>
     <Object name="b2000t_c2c_bram_i/axi_chip2chip_1_axi_c2c_config_error_out" gui_info="hw_vios/hw_vio_1=5,dashboard_1/hw_vio_1=2"/>
     <Object name="b2000t_c2c_bram_i/axi_chip2chip_1_axi_c2c_link_status_out" gui_info="hw_vios/hw_vio_1=6_exp,dashboard_1/hw_vio_1=0"/>
     <Object name="b2000t_c2c_bram_i/axi_chip2chip_1_axi_c2c_multi_bit_error_out" gui_info="hw_vios/hw_vio_1=7,dashboard_1/hw_vio_1=7"/>
-    <Object name="b2000t_c2c_bram_i/clk_wiz_locked" gui_info="hw_vios/hw_vio_1=0,dashboard_1/hw_vio_1=3"/>
+    <Object name="b2000t_c2c_bram_i/clk_wiz_locked" gui_info="hw_vios/hw_vio_1=0,dashboard_1/hw_vio_1=3,dashboard_3/hw_vio_1=3"/>
     <Object name="b2000t_c2c_bram_i/reset_rtl_1" gui_info="hw_vios/hw_vio_1=2_exp"/>
     <Object name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arready" gui_info=""/>
     <Object name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_arvalid" gui_info=""/>
     <Object name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awready" gui_info=""/>
     <Object name="b2000t_c2c_bram_i/system_ila/inst/net_slot_0_axi_awvalid" gui_info=""/>
-    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe0_1[11:0]" gui_info=""/>
-    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe1_1[31:0]" gui_info=""/>
-    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe2_1[3:0]" gui_info=""/>
-    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe3_1" gui_info=""/>
+    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe0_1[11:0]" gui_info="Trigger Setup=0"/>
+    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe1_1[31:0]" gui_info="Trigger Setup=1"/>
+    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe2_1[3:0]" gui_info="Trigger Setup=2"/>
+    <Object name="b2000t_c2c_bram_i/system_ila/inst/probe3_1" gui_info="Trigger Setup=3"/>
     <Object name="b2000t_c2c_bram_i/system_ila/inst/probe3_1[3:0]" gui_info="Trigger Setup=0"/>
     <Object name="b2000t_c2c_bram_i/system_ila1/inst/probe0_1" gui_info="Trigger Setup=0"/>
     <Object name="b2000t_c2c_bram_i/system_ila1/inst/probe1_1" gui_info="Trigger Setup=1"/>
@@ -89,12 +89,12 @@
     <Object name="b2000t_c2c_bram_i/system_ila2/inst/probe9_1" gui_info=""/>
     <Object name="b2000t_c2c_bram_i/system_ila3/inst/probe0[0:0]" gui_info="Trigger Setup=0"/>
     <Object name="b2000t_c2c_bram_i/vio_0/probe_out0[0:0]" gui_info="hw_vios/hw_vio_1=4"/>
-    <Object name="b2000t_c2c_bram_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=1,dashboard_1/hw_vio_1=4"/>
-    <Object name="b2000t_c2c_bram_i/vio_0_probe_out1[25:0]" gui_info="hw_vios/hw_vio_1=8,dashboard_1/hw_vio_1=5"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=1,dashboard_1/hw_vio_1=4,dashboard_3/hw_vio_1=4"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out1[25:0]" gui_info="hw_vios/hw_vio_1=8,dashboard_1/hw_vio_1=5,dashboard_3/hw_vio_1=5"/>
     <Object name="b2000t_c2c_bram_i/vio_0_probe_out2" gui_info="hw_vios/hw_vio_1=6"/>
-    <Object name="b2000t_c2c_bram_i/vio_0_probe_out2[25:0]" gui_info="hw_vios/hw_vio_1=9,dashboard_1/hw_vio_1=6"/>
-    <Object name="b2000t_c2c_bram_i/vio_0_probe_out3[59:0]" gui_info="hw_vios/hw_vio_1=10,dashboard_1/hw_vio_1=7"/>
-    <Object name="b2000t_c2c_bram_i/vio_0_probe_out4[59:0]" gui_info="hw_vios/hw_vio_1=11,dashboard_1/hw_vio_1=8"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out2[25:0]" gui_info="hw_vios/hw_vio_1=9,dashboard_1/hw_vio_1=6,dashboard_3/hw_vio_1=6"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out3[59:0]" gui_info="hw_vios/hw_vio_1=10,dashboard_1/hw_vio_1=7,dashboard_3/hw_vio_1=7"/>
+    <Object name="b2000t_c2c_bram_i/vio_0_probe_out4[59:0]" gui_info="hw_vios/hw_vio_1=11,dashboard_1/hw_vio_1=8,dashboard_3/hw_vio_1=8"/>
   </ObjectList>
   <ObjectList object_type="hw_sysmon" gui_info="">
     <Object name="XADC" gui_info="dashboard_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
@@ -1326,7 +1326,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/probe0_1"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
@@ -1371,7 +1371,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/probe1_1"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -1436,7 +1436,7 @@
         <net name="b2000t_c2c_bram_i/system_ila/inst/probe2_1"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -1508,6 +1508,54 @@
       </probeOptions>
       <nets>
         <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="dut_120_0_data_out"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[31]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[30]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[29]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[28]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[27]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[26]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[25]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[24]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[23]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[22]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[21]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[20]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[19]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[18]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[17]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[16]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[15]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[14]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[13]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[12]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[11]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[10]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[9]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[8]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[7]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[6]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[5]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[4]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[3]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[2]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[1]"/>
+        <net name="b2000t_c2c_bram_i/system_ila/inst/probe4_1[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -1838,7 +1886,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_4"/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="MAP" value="probe0[0]"/>
         <Option Id="NAME.CUSTOM" value="dut_120_0_a_oe"/>
         <Option Id="NAME.SELECT" value="Custom"/>
@@ -1855,7 +1903,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_4"/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="MAP" value="probe1[0]"/>
         <Option Id="NAME.CUSTOM" value="dut_120_0_b_oe"/>
         <Option Id="NAME.SELECT" value="Custom"/>
@@ -1872,7 +1920,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq60&apos;hXXX_XXXX_XXXX_XXXX"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_4"/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="MAP" value="probe2[59:0]"/>
         <Option Id="NAME.CUSTOM" value="dut_120_0_a_out"/>
         <Option Id="NAME.SELECT" value="Custom"/>
@@ -1948,7 +1996,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq60&apos;hXXX_XXXX_XXXX_XXXX"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_4"/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="MAP" value="probe3[59:0]"/>
         <Option Id="NAME.CUSTOM" value="dut_120_0_b_out"/>
         <Option Id="NAME.SELECT" value="Custom"/>
@@ -2100,7 +2148,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq60&apos;hXXX_XXXX_XXXX_XXXX"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_4"/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="MAP" value="probe5[59:0]"/>
         <Option Id="NAME.CUSTOM" value="jack_120_1_a_out"/>
         <Option Id="NAME.SELECT" value="Custom"/>
@@ -2656,7 +2704,7 @@
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
@@ -2671,7 +2719,7 @@
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
@@ -2686,7 +2734,7 @@
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
@@ -2746,7 +2794,7 @@
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
@@ -2805,7 +2853,7 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="OUTPUT_VALUE" value="0"/>
@@ -2820,7 +2868,7 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="OUTPUT_VALUE" value="3FFFFFF"/>
@@ -2875,7 +2923,7 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="OUTPUT_VALUE" value="3FFFFFF"/>

@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: user.org:user:dut_120:1.1
-// IP Revision: 4
+// IP VLNV: user.org:user:dut_120:1.2
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -95,7 +95,7 @@ output wire [59 : 0] b_out;
     .B01A(4'B0110),
     .A10B(4'B0111),
     .B10A(4'B1000),
-    .ENDL(4'B0111)
+    .ENDL(4'B1001)
   ) inst (
     .clk(clk),
     .rst(rst),

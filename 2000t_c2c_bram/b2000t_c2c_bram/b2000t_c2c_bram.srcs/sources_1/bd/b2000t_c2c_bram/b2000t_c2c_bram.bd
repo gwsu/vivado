@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x2ED306050D8FFE4" bd:device="xc7v2000tflg1925-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="b2000t_c2c_bram" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x8BE6F8619388F3EA" bd:device="xc7v2000tflg1925-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="b2000t_c2c_bram" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -156,9 +156,21 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>pin_a</spirit:name>
+          <spirit:name>a_oe</spirit:name>
           <spirit:wire>
-            <spirit:direction>inout</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b_oe</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a_out</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>59</spirit:left>
               <spirit:right>0</spirit:right>
@@ -166,9 +178,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>pin_b</spirit:name>
+          <spirit:name>b_out</spirit:name>
           <spirit:wire>
-            <spirit:direction>inout</spirit:direction>
+            <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>59</spirit:left>
               <spirit:right>0</spirit:right>
@@ -176,9 +188,21 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>pin_a_1</spirit:name>
+          <spirit:name>a_oe_1</spirit:name>
           <spirit:wire>
-            <spirit:direction>inout</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b_oe_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a_out_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>59</spirit:left>
               <spirit:right>0</spirit:right>
@@ -186,9 +210,49 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>pin_b_1</spirit:name>
+          <spirit:name>b_out_1</spirit:name>
           <spirit:wire>
-            <spirit:direction>inout</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>59</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>59</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>59</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a_in_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>59</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b_in_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
             <spirit:vector>
               <spirit:left>59</spirit:left>
               <spirit:right>0</spirit:right>
@@ -400,11 +464,12 @@
         <spirit:componentRef spirit:library="ip" spirit:name="system_ila" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_system_ila_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE4_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE3_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE2_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE1_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE0_TYPE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">5</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">NATIVE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -433,29 +498,15 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>jack_120_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="jack_120" spirit:vendor="user.org" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_jack_120_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>jack_120_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="jack_120" spirit:vendor="user.org" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_jack_120_0_1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>dut_120_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.1"/>
+        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.2"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>dut_120_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.1"/>
+        <spirit:componentRef spirit:library="user" spirit:name="dut_120" spirit:vendor="user.org" spirit:version="1.2"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">b2000t_c2c_bram_dut_120_1_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -850,6 +901,11 @@
         <spirit:name>dut_120_0_data_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="data_out"/>
         <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_5" spirit:portRef="bram_rddata_a"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="probe4"/>
+        <bd:hdl_attributes>
+          <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
+          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
+        </bd:hdl_attributes>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_bram_ctrl_4_bram_clk_a</spirit:name>
@@ -890,7 +946,7 @@
         <spirit:name>dut_120_0_a_oe</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="a_oe"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe0"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="a_oe"/>
+        <spirit:externalPortReference spirit:portRef="a_oe"/>
         <bd:hdl_attributes>
           <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
           <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
@@ -900,7 +956,7 @@
         <spirit:name>dut_120_0_b_oe</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="b_oe"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe1"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="b_oe"/>
+        <spirit:externalPortReference spirit:portRef="b_oe"/>
         <bd:hdl_attributes>
           <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
           <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
@@ -910,8 +966,7 @@
         <spirit:name>dut_120_0_a_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="a_out"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe2"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="a_in"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="a_in"/>
+        <spirit:externalPortReference spirit:portRef="a_out"/>
         <bd:hdl_attributes>
           <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
           <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
@@ -921,8 +976,7 @@
         <spirit:name>dut_120_0_b_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="b_out"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe3"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="b_in"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="b_in"/>
+        <spirit:externalPortReference spirit:portRef="b_out"/>
         <bd:hdl_attributes>
           <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
           <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
@@ -930,7 +984,7 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>jack_120_1_b_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="b_out"/>
+        <spirit:externalPortReference spirit:portRef="b_in"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe4"/>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="b_in"/>
         <bd:hdl_attributes>
@@ -940,7 +994,7 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>jack_120_1_a_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="a_out"/>
+        <spirit:externalPortReference spirit:portRef="a_in"/>
         <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="probe5"/>
         <spirit:internalPortReference spirit:componentRef="dut_120_0" spirit:portRef="a_in"/>
         <bd:hdl_attributes>
@@ -951,52 +1005,32 @@
       <spirit:adHocConnection>
         <spirit:name>dut_120_1_a_oe</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="a_oe"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="a_oe"/>
+        <spirit:externalPortReference spirit:portRef="a_oe_1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dut_120_1_b_oe</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="b_oe"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="b_oe"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>vio_0_probe_out4</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out4"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="mode"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>vio_0_probe_out3</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="vio_0" spirit:portRef="probe_out3"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="mode"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pin_a"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="pin_a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net2</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pin_b"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_1" spirit:portRef="pin_b"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net3</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pin_a_1"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="pin_a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net4</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pin_b_1"/>
-        <spirit:internalPortReference spirit:componentRef="jack_120_0" spirit:portRef="pin_b"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>dut_120_1_b_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="b_out"/>
-        <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="b_in"/>
+        <spirit:externalPortReference spirit:portRef="b_oe_1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dut_120_1_a_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="a_out"/>
+        <spirit:externalPortReference spirit:portRef="a_out_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dut_120_1_b_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="b_out"/>
+        <spirit:externalPortReference spirit:portRef="b_out_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>a_in_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="a_in_1"/>
         <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="a_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>b_in_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="b_in_1"/>
+        <spirit:internalPortReference spirit:componentRef="dut_120_1" spirit:portRef="b_in"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

@@ -1,0 +1,335 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Thu Jul  6 15:32:04 2017
+| Host         : HyperSilicon running 64-bit CentOS release 6.4 (Final)
+| Command      : report_utilization -file b2000t_c2c_bram_wrapper_utilization_placed.rpt -pb b2000t_c2c_bram_wrapper_utilization_placed.pb
+| Design       : b2000t_c2c_bram_wrapper
+| Device       : 7v2000tflg1925-1
+| Design State : Fully Placed
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+11. SLR Connectivity and Clocking Utilization
+12. SLR Connectivity Matrix
+13. SLR Slice Logic and Dedicated Block Utilization
+14. SLR IO Utilization
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+| Slice LUTs                 | 11617 |     0 |   1221600 |  0.95 |
+|   LUT as Logic             | 10235 |     0 |   1221600 |  0.84 |
+|   LUT as Memory            |  1382 |     0 |    344800 |  0.40 |
+|     LUT as Distributed RAM |   376 |     0 |           |       |
+|     LUT as Shift Register  |  1006 |     0 |           |       |
+| Slice Registers            | 15949 |     0 |   2443200 |  0.65 |
+|   Register as Flip Flop    | 15949 |     0 |   2443200 |  0.65 |
+|   Register as Latch        |     0 |     0 |   2443200 |  0.00 |
+| F7 Muxes                   |   218 |     0 |    610800 |  0.04 |
+| F8 Muxes                   |    18 |     0 |    305400 | <0.01 |
++----------------------------+-------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 213   |          Yes |           - |          Set |
+| 2684  |          Yes |           - |        Reset |
+| 161   |          Yes |         Set |            - |
+| 12891 |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++-------------------------------------------+-------+-------+-----------+-------+
+|                 Site Type                 |  Used | Fixed | Available | Util% |
++-------------------------------------------+-------+-------+-----------+-------+
+| Slice                                     |  5495 |     0 |    305400 |  1.80 |
+|   SLICEL                                  |  3908 |     0 |           |       |
+|   SLICEM                                  |  1587 |     0 |           |       |
+| LUT as Logic                              | 10235 |     0 |   1221600 |  0.84 |
+|   using O5 output only                    |     0 |       |           |       |
+|   using O6 output only                    |  8614 |       |           |       |
+|   using O5 and O6                         |  1621 |       |           |       |
+| LUT as Memory                             |  1382 |     0 |    344800 |  0.40 |
+|   LUT as Distributed RAM                  |   376 |     0 |           |       |
+|     using O5 output only                  |     0 |       |           |       |
+|     using O6 output only                  |   352 |       |           |       |
+|     using O5 and O6                       |    24 |       |           |       |
+|   LUT as Shift Register                   |  1006 |     0 |           |       |
+|     using O5 output only                  |    18 |       |           |       |
+|     using O6 output only                  |   135 |       |           |       |
+|     using O5 and O6                       |   853 |       |           |       |
+| LUT Flip Flop Pairs                       |  5891 |     0 |   1221600 |  0.48 |
+|   fully used LUT-FF pairs                 |   978 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |  4606 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  4386 |       |           |       |
+| Unique Control Sets                       |   679 |       |           |       |
++-------------------------------------------+-------+-------+-----------+-------+
+* Note: Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   19 |     0 |      1292 |  1.47 |
+|   RAMB36/FIFO*    |   18 |     0 |      1292 |  1.39 |
+|     FIFO36E1 only |    1 |       |           |       |
+|     RAMB36E1 only |   17 |       |           |       |
+|   RAMB18          |    2 |     0 |      2584 |  0.08 |
+|     RAMB18E1 only |    2 |       |           |       |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |      2160 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |  250 |   250 |      1200 | 20.83 |
+|   IOB Master Pads           |  126 |       |           |       |
+|   IOB Slave Pads            |  124 |       |           |       |
+| Bonded IPADs                |    4 |     2 |        50 |  8.00 |
+| Bonded OPADs                |    2 |     2 |        32 |  6.25 |
+| PHY_CONTROL                 |    0 |     0 |        24 |  0.00 |
+| PHASER_REF                  |    0 |     0 |        24 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        96 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        96 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |        24 |  0.00 |
+| IBUFDS                      |    2 |     2 |      1152 |  0.17 |
+| GTXE2_COMMON                |    1 |     0 |         4 | 25.00 |
+| GTXE2_CHANNEL               |    1 |     1 |        16 |  6.25 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        96 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        96 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |      1200 |  0.00 |
+| ODELAYE2/ODELAYE2_FINEDELAY |    0 |     0 |      1200 |  0.00 |
+| IBUFDS_GTE2                 |    1 |     0 |         8 | 12.50 |
+| ILOGIC                      |    0 |     0 |      1200 |  0.00 |
+| OLOGIC                      |    0 |     0 |      1200 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    8 |     0 |       128 |  6.25 |
+| BUFIO      |    0 |     0 |        96 |  0.00 |
+| MMCME2_ADV |    2 |     0 |        24 |  8.33 |
+| PLLE2_ADV  |    0 |     0 |        24 |  0.00 |
+| BUFMRCE    |    0 |     0 |        48 |  0.00 |
+| BUFHCE     |    0 |     0 |       288 |  0.00 |
+| BUFR       |    0 |     0 |        96 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    1 |     0 |        16 |  6.25 |
+| CAPTUREE2   |    0 |     0 |         4 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         4 |  0.00 |
+| ICAPE2      |    0 |     0 |         8 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         4 |  0.00 |
+| STARTUPE2   |    0 |     0 |         4 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++---------------+-------+---------------------+
+|    Ref Name   |  Used | Functional Category |
++---------------+-------+---------------------+
+| FDRE          | 12891 |        Flop & Latch |
+| LUT6          |  4282 |                 LUT |
+| FDCE          |  2684 |        Flop & Latch |
+| LUT4          |  2136 |                 LUT |
+| LUT3          |  2056 |                 LUT |
+| LUT5          |  1854 |                 LUT |
+| LUT2          |  1315 |                 LUT |
+| SRL16E        |  1114 |  Distributed Memory |
+| SRLC32E       |   741 |  Distributed Memory |
+| CARRY4        |   364 |          CarryLogic |
+| RAMD64E       |   352 |  Distributed Memory |
+| OBUF          |   247 |                  IO |
+| MUXF7         |   218 |               MuxFx |
+| LUT1          |   213 |                 LUT |
+| FDPE          |   213 |        Flop & Latch |
+| FDSE          |   161 |        Flop & Latch |
+| RAMD32        |    36 |  Distributed Memory |
+| MUXF8         |    18 |               MuxFx |
+| RAMB36E1      |    17 |        Block Memory |
+| RAMS32        |    12 |  Distributed Memory |
+| BUFG          |     7 |               Clock |
+| IBUF          |     5 |                  IO |
+| SRLC16E       |     4 |  Distributed Memory |
+| RAMB18E1      |     2 |        Block Memory |
+| MMCME2_ADV    |     2 |               Clock |
+| IBUFDS        |     2 |                  IO |
+| IBUFDS_GTE2   |     1 |                  IO |
+| GTXE2_COMMON  |     1 |                  IO |
+| GTXE2_CHANNEL |     1 |                  IO |
+| FIFO36E1      |     1 |        Block Memory |
+| BUFGCTRL      |     1 |               Clock |
+| BSCANE2       |     1 |              Others |
++---------------+-------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------------------------------------+------+
+|                Ref Name                | Used |
++----------------------------------------+------+
+| dbg_hub_CV                             |    1 |
+| b2000t_c2c_bram_xlconstant_0_0         |    1 |
+| b2000t_c2c_bram_xbar_0                 |    1 |
+| b2000t_c2c_bram_vio_0_0                |    1 |
+| b2000t_c2c_bram_system_ila_1           |    1 |
+| b2000t_c2c_bram_system_ila1_2          |    1 |
+| b2000t_c2c_bram_rst_clk_wiz_100M_0     |    1 |
+| b2000t_c2c_bram_jtag_axi_0_0           |    1 |
+| b2000t_c2c_bram_jack_120_0_1           |    1 |
+| b2000t_c2c_bram_jack_120_0_0           |    1 |
+| b2000t_c2c_bram_jack_0_1               |    1 |
+| b2000t_c2c_bram_jack_0_0               |    1 |
+| b2000t_c2c_bram_dut_120_1_0            |    1 |
+| b2000t_c2c_bram_dut_120_0_0            |    1 |
+| b2000t_c2c_bram_dut_0_1                |    1 |
+| b2000t_c2c_bram_dut_0_0                |    1 |
+| b2000t_c2c_bram_clk_wiz_0              |    1 |
+| b2000t_c2c_bram_blk_mem_gen_0_0        |    1 |
+| b2000t_c2c_bram_axi_chip2chip_0_0      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_3_0      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_2_1      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_2_0      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_1_bram_1 |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_1_0      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_0_1      |    1 |
+| b2000t_c2c_bram_axi_bram_ctrl_0_0      |    1 |
+| b2000t_c2c_bram_aurora_64b66b_0_0      |    1 |
++----------------------------------------+------+
+
+
+11. SLR Connectivity and Clocking Utilization
+---------------------------------------------
+
++----------+-----------------+---------+-----------------+--------------+-------+-------+
+|          | Total SLLs Used | (%)SLLs | BUFGs/BUFGCTRLs | BUFH/BUFHCEs | BUFRs | MMCMs |
++----------+-----------------+---------+-----------------+--------------+-------+-------+
+| SLR3     |                 |         |               3 |            0 |     0 |     1 |
+| ||||||-> |             122 |    0.89 |                 |              |       |       |
+| SLR2     |                 |         |               0 |            0 |     0 |     0 |
+| ||||||-> |             243 |    1.77 |                 |              |       |       |
+| SLR1     |                 |         |               0 |            0 |     0 |     0 |
+| ||||||-> |             130 |    0.95 |                 |              |       |       |
+| SLR0     |                 |         |               5 |            0 |     0 |     1 |
++----------+-----------------+---------+-----------------+--------------+-------+-------+
+| Total    |             495 |         |               8 |            0 |     0 |     2 |
++----------+-----------------+---------+-----------------+--------------+-------+-------+
+
+
+12. SLR Connectivity Matrix
+---------------------------
+
++------+------+------+------+------+
+|      | SLR3 | SLR2 | SLR1 | SLR0 |
++------+------+------+------+------+
+| SLR3 |    0 |  122 |  122 |    0 |
+| SLR2 |  122 |    0 |  243 |    0 |
+| SLR1 |  122 |  243 |    0 |  130 |
+| SLR0 |    0 |    0 |  130 |    0 |
++------+------+------+------+------+
+
+
+13. SLR Slice Logic and Dedicated Block Utilization
+---------------------------------------------------
+
++-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
+| SLR Index | Slices | (%)Slices | Total LUTs | Memory LUTs | (%)Total LUTs | Registers | BRAMs | DSPs |
++-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
+| SLR3      |      0 |      0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |
+| SLR2      |      0 |      0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |
+| SLR1      |   5489 |      7.19 |      11609 |        1374 |          3.80 |     15933 |    19 |    0 |
+| SLR0      |      6 |     <0.01 |          8 |           8 |         <0.01 |        16 |     0 |    0 |
++-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
+| Total     |   5495 |           |      11617 |        1382 |               |     15949 |    19 |    0 |
++-----------+--------+-----------+------------+-------------+---------------+-----------+-------+------+
+
+
+14. SLR IO Utilization
+----------------------
+
++-----------+-------------+---------+--------------+----------+--------------+----------+-----+
+| SLR Index | Bonded IOBs | (%)IOBs | Bonded IPADs | (%)IPADs | Bonded OPADs | (%)OPADs | GTs |
++-----------+-------------+---------+--------------+----------+--------------+----------+-----+
+| SLR3      |         127 |   42.33 |            0 |     0.00 |            0 |     0.00 |   0 |
+| SLR2      |         121 |   40.33 |            0 |     0.00 |            0 |     0.00 |   0 |
+| SLR1      |           2 |    0.67 |            0 |     0.00 |            0 |     0.00 |   0 |
+| SLR0      |           0 |    0.00 |            4 |     0.00 |            2 |     0.00 |   1 |
++-----------+-------------+---------+--------------+----------+--------------+----------+-----+
+| Total     |         250 |         |            4 |          |            2 |          |   1 |
++-----------+-------------+---------+--------------+----------+--------------+----------+-----+
+
+

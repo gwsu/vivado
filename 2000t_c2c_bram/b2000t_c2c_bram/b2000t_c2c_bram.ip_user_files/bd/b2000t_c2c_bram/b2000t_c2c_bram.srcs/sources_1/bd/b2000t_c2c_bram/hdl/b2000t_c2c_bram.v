@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 30 19:15:40 2017
+//Date        : Fri Jul  7 13:03:26 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram.bd
 //Design      : b2000t_c2c_bram
@@ -383,7 +383,7 @@ module b2000t_c2c_bram
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]dut_120_0_a_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dut_120_0_b_oe;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]dut_120_0_b_out;
-  wire [31:0]dut_120_0_data_out;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]dut_120_0_data_out;
   wire dut_120_1_a_oe;
   wire [59:0]dut_120_1_a_out;
   wire dut_120_1_b_oe;
@@ -396,6 +396,8 @@ module b2000t_c2c_bram
   wire [31:0]dut_1_data_out;
   wire [25:0]jack_0_a_out;
   wire [25:0]jack_0_b_out;
+  wire [59:0]jack_120_0_a_out;
+  wire [59:0]jack_120_0_b_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]jack_120_1_a_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]jack_120_1_b_out;
   wire [25:0]jack_1_a_out;
@@ -1192,11 +1194,11 @@ module b2000t_c2c_bram
         .rst(axi_bram_ctrl_5_bram_rst_a),
         .we(axi_bram_ctrl_5_bram_we_a));
   b2000t_c2c_bram_dut_120_1_0 dut_120_1
-       (.a_in(dut_120_1_a_out),
+       (.a_in(jack_120_0_a_out),
         .a_oe(dut_120_1_a_oe),
         .a_out(dut_120_1_a_out),
         .addr(axi_bram_ctrl_4_bram_addr_a),
-        .b_in(dut_120_1_b_out),
+        .b_in(jack_120_0_b_out),
         .b_oe(dut_120_1_b_oe),
         .b_out(dut_120_1_b_out),
         .clk(axi_bram_ctrl_4_bram_clk_a),
@@ -1222,10 +1224,12 @@ module b2000t_c2c_bram
         .b_out(jack_1_b_out),
         .mode(vio_0_probe_out2));
   b2000t_c2c_bram_jack_120_0_0 jack_120_0
-       (.a_in(dut_120_0_a_out),
+       (.a_in(dut_120_1_a_out),
         .a_oe(dut_120_1_a_oe),
-        .b_in(dut_120_0_b_out),
+        .a_out(jack_120_0_a_out),
+        .b_in(dut_120_1_b_out),
         .b_oe(dut_120_1_b_oe),
+        .b_out(jack_120_0_b_out),
         .mode(vio_0_probe_out3),
         .pin_a(pin_a_1[59:0]),
         .pin_b(pin_b_1[59:0]));
@@ -1292,7 +1296,8 @@ module b2000t_c2c_bram
         .probe0(axi_bram_ctrl_5_bram_addr_a),
         .probe1(axi_bram_ctrl_5_bram_wrdata_a),
         .probe2(axi_bram_ctrl_5_bram_we_a),
-        .probe3(axi_bram_ctrl_5_bram_en_a));
+        .probe3(axi_bram_ctrl_5_bram_en_a),
+        .probe4(dut_120_0_data_out));
   b2000t_c2c_bram_system_ila1_2 system_ila1
        (.clk(axi_bram_ctrl_5_bram_clk_a),
         .probe0(dut_120_0_a_oe),

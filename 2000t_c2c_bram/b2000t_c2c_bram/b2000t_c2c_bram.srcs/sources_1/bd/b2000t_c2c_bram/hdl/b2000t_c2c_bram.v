@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Jun 30 19:15:40 2017
+//Date        : Fri Jul  7 13:58:35 2017
 //Host        : HyperSilicon running 64-bit CentOS release 6.4 (Final)
 //Command     : generate_target b2000t_c2c_bram.bd
 //Design      : b2000t_c2c_bram
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "b2000t_c2c_bram,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=b2000t_c2c_bram,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=26,numNonXlnxBlks=8,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_axi_chip2chip_cnt=3,da_board_cnt=4,da_bram_cntlr_cnt=11,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "b2000t_c2c_bram.hwdef" *) 
+(* CORE_GENERATION_INFO = "b2000t_c2c_bram,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=b2000t_c2c_bram,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=24,numNonXlnxBlks=6,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_axi_chip2chip_cnt=3,da_board_cnt=4,da_bram_cntlr_cnt=11,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "b2000t_c2c_bram.hwdef" *) 
 module b2000t_c2c_bram
    (CLK_IN1_D_clk_n,
     CLK_IN1_D_clk_p,
@@ -21,15 +21,23 @@ module b2000t_c2c_bram
     GT_SERIAL_TX_txp,
     INIT_DIFF_CLK_clk_n,
     INIT_DIFF_CLK_clk_p,
+    a_in,
+    a_in_1,
+    a_oe,
+    a_oe_1,
+    a_out,
+    a_out_1,
     axi_c2c_config_error_out,
     axi_c2c_link_status_out,
     axi_c2c_multi_bit_error_out,
+    b_in,
+    b_in_1,
+    b_oe,
+    b_oe_1,
+    b_out,
+    b_out_1,
     ext_reset_in,
     ext_reset_out,
-    pin_a,
-    pin_a_1,
-    pin_b,
-    pin_b_1,
     pma_init_out);
   input CLK_IN1_D_clk_n;
   input CLK_IN1_D_clk_p;
@@ -41,15 +49,23 @@ module b2000t_c2c_bram
   output [0:0]GT_SERIAL_TX_txp;
   input INIT_DIFF_CLK_clk_n;
   input INIT_DIFF_CLK_clk_p;
+  input [59:0]a_in;
+  input [59:0]a_in_1;
+  output a_oe;
+  output a_oe_1;
+  output [59:0]a_out;
+  output [59:0]a_out_1;
   output axi_c2c_config_error_out;
   output axi_c2c_link_status_out;
   output axi_c2c_multi_bit_error_out;
+  input [59:0]b_in;
+  input [59:0]b_in_1;
+  output b_oe;
+  output b_oe_1;
+  output [59:0]b_out;
+  output [59:0]b_out_1;
   input ext_reset_in;
   output ext_reset_out;
-  inout [59:0]pin_a;
-  inout [59:0]pin_a_1;
-  inout [59:0]pin_b;
-  inout [59:0]pin_b_1;
   output [0:0]pma_init_out;
 
   wire CLK_IN1_D_1_CLK_N;
@@ -61,10 +77,7 @@ module b2000t_c2c_bram
   wire INIT_DIFF_CLK_1_CLK_N;
   wire INIT_DIFF_CLK_1_CLK_P;
   wire Net;
-  wire [59:0]Net1;
-  wire [59:0]Net2;
-  wire [59:0]Net3;
-  wire [59:0]Net4;
+  wire [59:0]a_in_1_1;
   wire [0:0]aurora_64b66b_0_GT_SERIAL_TX_TXN;
   wire [0:0]aurora_64b66b_0_GT_SERIAL_TX_TXP;
   wire [0:63]aurora_64b66b_0_USER_DATA_M_AXIS_RX_TDATA;
@@ -372,6 +385,7 @@ module b2000t_c2c_bram
   wire axi_mem_intercon_M05_AXI_WREADY;
   wire [3:0]axi_mem_intercon_M05_AXI_WSTRB;
   wire axi_mem_intercon_M05_AXI_WVALID;
+  wire [59:0]b_in_1_1;
   wire clk_wiz_clk_out1;
   wire clk_wiz_locked;
   wire dut_0_a_oe;
@@ -383,7 +397,7 @@ module b2000t_c2c_bram
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]dut_120_0_a_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dut_120_0_b_oe;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [59:0]dut_120_0_b_out;
-  wire [31:0]dut_120_0_data_out;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]dut_120_0_data_out;
   wire dut_120_1_a_oe;
   wire [59:0]dut_120_1_a_out;
   wire dut_120_1_b_oe;
@@ -442,8 +456,6 @@ module b2000t_c2c_bram
   wire [0:0]vio_0_probe_out0;
   wire [25:0]vio_0_probe_out1;
   wire [25:0]vio_0_probe_out2;
-  wire [59:0]vio_0_probe_out3;
-  wire [59:0]vio_0_probe_out4;
   wire [0:0]xlconstant_0_dout;
 
   assign CLK_IN1_D_1_CLK_N = CLK_IN1_D_clk_n;
@@ -456,11 +468,23 @@ module b2000t_c2c_bram
   assign GT_SERIAL_TX_txp[0] = aurora_64b66b_0_GT_SERIAL_TX_TXP;
   assign INIT_DIFF_CLK_1_CLK_N = INIT_DIFF_CLK_clk_n;
   assign INIT_DIFF_CLK_1_CLK_P = INIT_DIFF_CLK_clk_p;
+  assign a_in_1_1 = a_in_1[59:0];
+  assign a_oe = dut_120_0_a_oe;
+  assign a_oe_1 = dut_120_1_a_oe;
+  assign a_out[59:0] = dut_120_0_a_out;
+  assign a_out_1[59:0] = dut_120_1_a_out;
   assign aux_reset_in_1 = ext_reset_in;
   assign axi_c2c_config_error_out = axi_chip2chip_0_axi_c2c_config_error_out;
   assign axi_c2c_link_status_out = axi_chip2chip_0_axi_c2c_link_status_out;
   assign axi_c2c_multi_bit_error_out = axi_chip2chip_0_axi_c2c_multi_bit_error_out;
+  assign b_in_1_1 = b_in_1[59:0];
+  assign b_oe = dut_120_0_b_oe;
+  assign b_oe_1 = dut_120_1_b_oe;
+  assign b_out[59:0] = dut_120_0_b_out;
+  assign b_out_1[59:0] = dut_120_1_b_out;
   assign ext_reset_out = aux_reset_in_1;
+  assign jack_120_1_a_out = a_in[59:0];
+  assign jack_120_1_b_out = b_in[59:0];
   assign pma_init_out[0] = vio_0_probe_out0;
   b2000t_c2c_bram_aurora_64b66b_0_0 aurora_64b66b_0
        (.channel_up(aurora_64b66b_0_channel_up),
@@ -1192,11 +1216,11 @@ module b2000t_c2c_bram
         .rst(axi_bram_ctrl_5_bram_rst_a),
         .we(axi_bram_ctrl_5_bram_we_a));
   b2000t_c2c_bram_dut_120_1_0 dut_120_1
-       (.a_in(dut_120_1_a_out),
+       (.a_in(a_in_1_1),
         .a_oe(dut_120_1_a_oe),
         .a_out(dut_120_1_a_out),
         .addr(axi_bram_ctrl_4_bram_addr_a),
-        .b_in(dut_120_1_b_out),
+        .b_in(b_in_1_1),
         .b_oe(dut_120_1_b_oe),
         .b_out(dut_120_1_b_out),
         .clk(axi_bram_ctrl_4_bram_clk_a),
@@ -1221,24 +1245,6 @@ module b2000t_c2c_bram
         .b_oe(dut_1_b_oe),
         .b_out(jack_1_b_out),
         .mode(vio_0_probe_out2));
-  b2000t_c2c_bram_jack_120_0_0 jack_120_0
-       (.a_in(dut_120_0_a_out),
-        .a_oe(dut_120_1_a_oe),
-        .b_in(dut_120_0_b_out),
-        .b_oe(dut_120_1_b_oe),
-        .mode(vio_0_probe_out3),
-        .pin_a(pin_a_1[59:0]),
-        .pin_b(pin_b_1[59:0]));
-  b2000t_c2c_bram_jack_120_0_1 jack_120_1
-       (.a_in(dut_120_0_a_out),
-        .a_oe(dut_120_0_a_oe),
-        .a_out(jack_120_1_a_out),
-        .b_in(dut_120_0_b_out),
-        .b_oe(dut_120_0_b_oe),
-        .b_out(jack_120_1_b_out),
-        .mode(vio_0_probe_out4),
-        .pin_a(pin_a[59:0]),
-        .pin_b(pin_b[59:0]));
   b2000t_c2c_bram_jtag_axi_0_0 jtag_axi_0
        (.aclk(clk_wiz_clk_out1),
         .aresetn(rst_clk_wiz_100M_peripheral_aresetn),
@@ -1292,7 +1298,8 @@ module b2000t_c2c_bram
         .probe0(axi_bram_ctrl_5_bram_addr_a),
         .probe1(axi_bram_ctrl_5_bram_wrdata_a),
         .probe2(axi_bram_ctrl_5_bram_we_a),
-        .probe3(axi_bram_ctrl_5_bram_en_a));
+        .probe3(axi_bram_ctrl_5_bram_en_a),
+        .probe4(dut_120_0_data_out));
   b2000t_c2c_bram_system_ila1_2 system_ila1
        (.clk(axi_bram_ctrl_5_bram_clk_a),
         .probe0(dut_120_0_a_oe),
@@ -1309,9 +1316,7 @@ module b2000t_c2c_bram
         .probe_in3(axi_chip2chip_0_axi_c2c_link_status_out),
         .probe_out0(vio_0_probe_out0),
         .probe_out1(vio_0_probe_out1),
-        .probe_out2(vio_0_probe_out2),
-        .probe_out3(vio_0_probe_out3),
-        .probe_out4(vio_0_probe_out4));
+        .probe_out2(vio_0_probe_out2));
   b2000t_c2c_bram_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
 endmodule
