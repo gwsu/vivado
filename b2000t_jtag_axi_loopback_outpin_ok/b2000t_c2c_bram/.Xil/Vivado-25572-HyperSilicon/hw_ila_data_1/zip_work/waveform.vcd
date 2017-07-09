@@ -1,0 +1,36 @@
+$date
+        2017-Jul-07 17:19:49
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 12 " b2000t_c2c_bram_i/system_ila/inst/probe0_1 [11:0] $end
+$var reg 32 . b2000t_c2c_bram_i/system_ila/inst/probe1_1 [31:0] $end
+$var reg 4 N b2000t_c2c_bram_i/system_ila/inst/probe2_1 [3:0] $end
+$var reg 1 R b2000t_c2c_bram_i/system_ila/inst/probe3_1 $end
+$var reg 32 S b2000t_c2c_bram_i/system_ila/inst/probe4_1 [31:0] $end
+$var reg 3 s Read_Address_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 v Read_Address_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 y Read_Data_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 | Read_Data_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 !" Stream_Channel__i2_s0___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 $" Stream_Channel__i2_s1___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 '" Stream_Channel__i3_s0___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 *" Stream_Channel__i3_s1___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 -" Stream_Channel__i4_s0___axi_chip2chip_0_AXIS_TX_ [2:0] $end
+$var reg 3 0" Stream_Channel__i4_s1___aurora_64b66b_0_USER_DATA_M_AXIS_RX_ [2:0] $end
+$var reg 3 3" Write_Address_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 6" Write_Address_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 9" Write_Data_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 <" Write_Data_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 ?" Write_Response_Channel__i1_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 3 B" Write_Response_Channel__i2_s0___axi_chip2chip_0_m_axi_ [2:0] $end
+$var reg 1 E" _TRIGGER $end
+$var reg 1 F" _WINDOW $end
+$var reg 1 G" _GAP $end
+$upscope $end
+$enddefinitions $end

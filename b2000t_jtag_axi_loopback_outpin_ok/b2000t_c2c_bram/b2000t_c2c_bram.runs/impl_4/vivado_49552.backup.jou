@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jul  7 16:53:11 2017
+# Process ID: 49552
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.vdi
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

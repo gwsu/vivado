@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jul  6 17:02:10 2017
+# Process ID: 25572
+# Current directory: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram
+# Command line: vivado b2000t_c2c_bram.xpr
+# Log file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project b2000t_c2c_bram.xpr
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode None [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_3
+launch_runs impl_3 -jobs 24
+wait_on_run impl_3
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode Hierarchical [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+set_property synth_checkpoint_mode Singular [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 b2000t_c2c_bram_synth_1
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 24
+wait_on_run impl_3
+open_run synth_3 -name synth_3
+create_run synth_4 -flow {Vivado Synthesis 2016} -strategy {Vivado Synthesis Defaults}
+current_run [get_runs synth_4]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_4]
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset b2000t_c2c_bram [get_ips  {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {b2000t_c2c_bram_jack_120_0_1 b2000t_c2c_bram_jack_120_0_0}] -no_script -sync -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset b2000t_c2c_bram] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+set_property synth_checkpoint_mode Hierarchical [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+generate_target all [get_files  /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_0] }
+catch { config_ip_cache -export [get_ips -all b2000t_c2c_bram_jack_120_0_1] }
+export_ip_user_files -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd]
+launch_runs -jobs 24 {b2000t_c2c_bram_jack_120_0_0_synth_1 b2000t_c2c_bram_jack_120_0_1_synth_1}
+export_simulation -of_objects [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -directory /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/sim_scripts -ip_user_files_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files -ipstatic_source_dir /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/modelsim} {questa=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/questa} {ies=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/ies} {vcs=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/vcs} {riviera=/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+delete_runs "synth_3"
+delete_bd_objs [get_bd_nets Net2] [get_bd_nets vio_0_probe_out4] [get_bd_nets Net1] [get_bd_cells jack_120_1]
+delete_bd_objs [get_bd_nets dut_120_1_a_out] [get_bd_nets dut_120_1_b_out] [get_bd_nets jack_120_0_a_out] [get_bd_nets jack_120_0_b_out] [get_bd_nets Net3] [get_bd_nets Net4] [get_bd_nets dut_120_1_a_oe] [get_bd_nets dut_120_1_b_oe] [get_bd_nets vio_0_probe_out3] [get_bd_cells jack_120_0]
+startgroup
+create_bd_port -dir O a_oe
+connect_bd_net [get_bd_pins /dut_120_0/a_oe] [get_bd_ports a_oe]
+endgroup
+delete_bd_objs [get_bd_ports pin_b]
+delete_bd_objs [get_bd_ports pin_a]
+delete_bd_objs [get_bd_ports pin_a_1]
+delete_bd_objs [get_bd_ports pin_b_1]
+startgroup
+create_bd_port -dir O b_oe
+connect_bd_net [get_bd_pins /dut_120_0/b_oe] [get_bd_ports b_oe]
+endgroup
+startgroup
+create_bd_port -dir O -from 59 -to 0 a_out
+connect_bd_net [get_bd_pins /dut_120_0/a_out] [get_bd_ports a_out]
+endgroup
+startgroup
+create_bd_port -dir O -from 59 -to 0 b_out
+connect_bd_net [get_bd_pins /dut_120_0/b_out] [get_bd_ports b_out]
+endgroup
+startgroup
+create_bd_port -dir O a_oe_1
+connect_bd_net [get_bd_pins /dut_120_1/a_oe] [get_bd_ports a_oe_1]
+endgroup
+startgroup
+create_bd_port -dir O b_oe_1
+connect_bd_net [get_bd_pins /dut_120_1/b_oe] [get_bd_ports b_oe_1]
+endgroup
+startgroup
+create_bd_port -dir O -from 59 -to 0 a_out_1
+connect_bd_net [get_bd_pins /dut_120_1/a_out] [get_bd_ports a_out_1]
+endgroup
+startgroup
+create_bd_port -dir O -from 59 -to 0 b_out_1
+connect_bd_net [get_bd_pins /dut_120_1/b_out] [get_bd_ports b_out_1]
+endgroup
+startgroup
+create_bd_port -dir I -from 59 -to 0 a_in
+connect_bd_net [get_bd_pins /dut_120_1/a_in] [get_bd_ports a_in]
+endgroup
+startgroup
+create_bd_port -dir I -from 59 -to 0 b_in
+connect_bd_net [get_bd_pins /dut_120_1/b_in] [get_bd_ports b_in]
+endgroup
+delete_bd_objs [get_bd_nets b_in_1] [get_bd_ports b_in]
+delete_bd_objs [get_bd_nets a_in_1] [get_bd_ports a_in]
+startgroup
+create_bd_port -dir I -from 59 -to 0 a_in
+connect_bd_net [get_bd_pins /dut_120_0/a_in] [get_bd_ports a_in]
+endgroup
+startgroup
+create_bd_port -dir I -from 59 -to 0 b_in
+connect_bd_net [get_bd_pins /dut_120_0/b_in] [get_bd_ports b_in]
+endgroup
+startgroup
+create_bd_port -dir I -from 59 -to 0 a_in_1
+connect_bd_net [get_bd_pins /dut_120_1/a_in] [get_bd_ports a_in_1]
+endgroup
+startgroup
+create_bd_port -dir I -from 59 -to 0 b_in_1
+connect_bd_net [get_bd_pins /dut_120_1/b_in] [get_bd_ports b_in_1]
+endgroup
+save_bd_design
+make_wrapper -files [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -top
+reset_run synth_4
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+reset_run synth_4
+make_wrapper -files [get_files /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd] -top
+import_files -force -norecurse /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/hdl/b2000t_c2c_bram_wrapper.v
+add_files -norecurse /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/imports/hdl/top.v
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+reset_run synth_4
+set_property name impl_4 [get_runs impl_1]
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+reset_run synth_4
+launch_runs impl_4 -to_step write_bitstream -jobs 24
+wait_on_run impl_4
+open_run impl_4
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target {192.168.0.44:3121/xilinx_tcf/Xilinx/00001894580501}
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+open_run synth_4 -name synth_4
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]
+report_ip_status -name ip_status 
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+open_bd_design {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.srcs/sources_1/bd/b2000t_c2c_bram/b2000t_c2c_bram.bd}
+set_property location {-454 -1968} [get_bd_ports a_in]
+undo
+save_bd_design
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+reset_run impl_4
+reset_run synth_4
+launch_runs impl_4 -jobs 24
+wait_on_run impl_4
+launch_runs impl_4 -to_step write_bitstream -jobs 24
+wait_on_run impl_4
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7v2000t_0] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.runs/impl_4/top.bit} [lindex [get_hw_devices xc7v2000t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7v2000t_0] -filter {CELL_NAME=~"b2000t_c2c_bram_i/system_ila1/inst/ila_lib"}]]

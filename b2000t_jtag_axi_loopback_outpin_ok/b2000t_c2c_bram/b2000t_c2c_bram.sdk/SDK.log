@@ -1,0 +1,18 @@
+14:15:59 INFO  : Registering command handlers for SDK TCF services
+14:16:01 INFO  : Launching XSCT server: xsct -n -interactive /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/temp_xsdb_launch_script.tcl
+14:16:02 INFO  : XSCT server has started successfully.
+14:16:02 INFO  : Successfully done setting XSCT server connection channel  
+14:16:02 INFO  : Successfully done setting SDK workspace  
+14:16:02 INFO  : Processing command line option -hwspec /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/b2000t_c2c_bram_wrapper.hdf.
+14:20:20 INFO  : Invoking Bootgen: bootgen -image FSBL.bif -arch zynq -o /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/BOOT.bin
+14:20:20 INFO  : Creating new bif file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/FSBL.bif
+14:20:20 INFO  : Bootgen command execution is done.
+14:29:35 INFO  : Invoking Bootgen: bootgen -image FSBL.bif -arch zynq -o /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/BOOT.bin
+14:29:35 INFO  : Overwriting existing bif file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/FSBL.bif
+14:29:36 INFO  : Bootgen command execution is done.
+14:35:51 INFO  : Invoking Bootgen: bootgen -image boot.bif -arch zynq -o /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/BOOT.bin
+14:35:51 INFO  : Creating new bif file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/FSBL/bootimage/boot.bif
+14:35:52 INFO  : Bootgen command execution is done.
+14:40:19 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/BOOT.bin
+14:40:19 INFO  : Creating new bif file /home/wesleyguo/github/vivado/vivado/2000t_c2c_bram/b2000t_c2c_bram/b2000t_c2c_bram.sdk/output.bif
+14:40:19 INFO  : Bootgen command execution is done.

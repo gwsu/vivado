@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="33">
+  <CompositeFile CompositeFileTopName="b2000t_c2c_bram" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1499450323"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1499450323"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1499450323"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="b2000t_c2c_bram_sim_netlist.vhdl" Type="VHDL">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="1499379019" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="b2000t_c2c_bram_sim_netlist.v" Type="Verilog">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="1499379016" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="b2000t_c2c_bram_stub.vhdl" Type="VHDL">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="1499379015" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTH_BLACKBOX_STUB"/>
+      </File>
+      <File Name="b2000t_c2c_bram_stub.v" Type="Verilog">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="1499379015" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTH_BLACKBOX_STUB"/>
+      </File>
+      <File Name="b2000t_c2c_bram.dcp" Type="DCP">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="1499379014" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_chip2chip_0_0/b2000t_c2c_bram_axi_chip2chip_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_chip2chip_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_aurora_64b66b_0_0/b2000t_c2c_bram_aurora_64b66b_0_0.xci" Type="IP">
+        <Instance HierarchyPath="aurora_64b66b_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_blk_mem_gen_0_0/b2000t_c2c_bram_blk_mem_gen_0_0.xci" Type="IP">
+        <Instance HierarchyPath="blk_mem_gen_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_0_0/b2000t_c2c_bram_axi_bram_ctrl_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_mem_intercon_0/b2000t_c2c_bram_axi_mem_intercon_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_clk_wiz_0/b2000t_c2c_bram_clk_wiz_0.xci" Type="IP">
+        <Instance HierarchyPath="clk_wiz"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_rst_clk_wiz_100M_0/b2000t_c2c_bram_rst_clk_wiz_100M_0.xci" Type="IP">
+        <Instance HierarchyPath="rst_clk_wiz_100M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_vio_0_0/b2000t_c2c_bram_vio_0_0.xci" Type="IP">
+        <Instance HierarchyPath="vio_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_jtag_axi_0_0/b2000t_c2c_bram_jtag_axi_0_0.xci" Type="IP">
+        <Instance HierarchyPath="jtag_axi_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_xbar_0/b2000t_c2c_bram_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_xlconstant_0_0/b2000t_c2c_bram_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_1_0/b2000t_c2c_bram_axi_bram_ctrl_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1/b2000t_c2c_bram_axi_bram_ctrl_1_bram_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_1_bram"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_dut_0_0/b2000t_c2c_bram_dut_0_0.xci" Type="IP">
+        <Instance HierarchyPath="dut_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_0_1/b2000t_c2c_bram_axi_bram_ctrl_0_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_jack_0_0/b2000t_c2c_bram_jack_0_0.xci" Type="IP">
+        <Instance HierarchyPath="jack_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl/b2000t_c2c_bram.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_2_0/b2000t_c2c_bram_axi_bram_ctrl_2_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_dut_0_1/b2000t_c2c_bram_dut_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dut_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_jack_0_1/b2000t_c2c_bram_jack_0_1.xci" Type="IP">
+        <Instance HierarchyPath="jack_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_3_0/b2000t_c2c_bram_axi_bram_ctrl_3_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_axi_bram_ctrl_2_1/b2000t_c2c_bram_axi_bram_ctrl_2_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_dut_120_0_0/b2000t_c2c_bram_dut_120_0_0.xci" Type="IP">
+        <Instance HierarchyPath="dut_120_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_dut_120_1_0/b2000t_c2c_bram_dut_120_1_0.xci" Type="IP">
+        <Instance HierarchyPath="dut_120_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_system_ila_1/b2000t_c2c_bram_system_ila_1.xci" Type="IP">
+        <Instance HierarchyPath="system_ila"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/b2000t_c2c_bram_system_ila1_2/b2000t_c2c_bram_system_ila1_2.xci" Type="IP">
+        <Instance HierarchyPath="system_ila1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="b2000t_c2c_bram_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff/b2000t_c2c_bram.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/b2000t_c2c_bram_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hdl/b2000t_c2c_bram.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>
