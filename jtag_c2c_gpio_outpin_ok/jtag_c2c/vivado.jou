@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Jun 16 10:11:32 2017
+# Process ID: 26469
+# Current directory: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c
+# Command line: vivado jtag_c2c.xpr
+# Log file: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/vivado.log
+# Journal file: /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project jtag_c2c.xpr
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+startgroup
+copy_bd_objs /  [get_bd_cells {axi_chip2chip_0}]
+set_property location {4 1191 428} [get_bd_cells axi_chip2chip_1]
+endgroup
+startgroup
+copy_bd_objs /  [get_bd_cells {aurora_64b66b_0}]
+set_property location {6 1955 466} [get_bd_cells aurora_64b66b_1]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi_chip2chip -config {PHY_TYPE "Aurora_64B66B" INIT_CLK "0" REF_CLK "0" SHARED_LOGIC "1" }  [get_bd_cells axi_chip2chip_1]
+undo
+undo
+undo
+startgroup
+set_property -dict [list CONFIG.C_LINE_RATE {6.25} CONFIG.C_REFCLK_FREQUENCY {125.000} CONFIG.C_INIT_CLK {100.0}] [get_bd_cells aurora_64b66b_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_AXI_ID_WIDTH.VALUE_SRC PROPAGATED CONFIG.C_AXI_WUSER_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells axi_chip2chip_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {150.00} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {19.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.625} CONFIG.CLKOUT1_JITTER {143.858} CONFIG.CLKOUT1_PHASE_ERROR {157.402}] [get_bd_cells clk_wiz]
+endgroup
+save_bd_design
+reset_run jtag_axi_clk_wiz_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M01_AXI] [get_bd_cells axi_perf_mon_0]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M02_AXI] [get_bd_cells axi_hwicap_0]
+startgroup
+set_property -dict [list CONFIG.DRP_FREQ {150.00}] [get_bd_cells aurora_64b66b_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_mem_intercon]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/jtag_axi_0/M_AXI" Clk "Auto" }  [get_bd_intf_pins axi_chip2chip_0/s_axi]
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+assign_bd_address
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7v2000t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7v2000t_0] 0]
+disconnect_hw_server 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000018938f9c01]
+open_hw_target
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROGRAM.FILE {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1/jtag_axi_wrapper.bit} [lindex [get_hw_devices xc7z045_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z045_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z045_1] -filter {CELL_NAME=~"jtag_axi_i/system_ila_0/inst/ila_lib"}]]
+create_hw_axi_txn rd_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -len 1  -type read -force
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x01234567 -len 1 -size 32 -type write -force
+run_hw_axi wr_txn_c2c
+run_hw_axi rd_txn_c2c
+create_hw_axi_txn rd_txn_ram [get_hw_axis hw_axi_1] -address c0000000 -len 1  -type read -force
+create_hw_axi_txn wr_txn_ram [get_hw_axis hw_axi_1] -address c0000000 -data 01230124 -len 1 -size 32 -type write -force
+run_hw_axi wr_txn_ram
+run_hw_axi rd_txn_ram
+create_hw_axi_txn rd_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -len 1  -type read -force
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x01234567 -len 1 -size 32 -type write -force
+run_hw_axi wr_txn_c2c
+run_hw_axi rd_txn_c2c
+create_hw_axi_txn rd_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -len 8\  -type read -force
+create_hw_axi_txn rd_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -len 8  -type read -force
+run_hw_axi rd_txn_c2c
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x012345670000123400005678 -len 3 -size 32 -type write -force
+run_hw_axi rd_txn_c2c
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x01234567 -len 3  -type write -force
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x01234567 -len 1  -type write -force
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x012345670000123400005678 -len 3 -size 32 -type write -force
+run_hw_axi wd_txn_c2c
+run_hw_axi wr_txn_c2c
+run_hw_axi rd_txn_c2c
+run_hw_axi rd_txn_c2c
+create_hw_axi_txn wr_txn_c2c [get_hw_axis hw_axi_1] -address 0x76000000 -data 0x012345670000123400005678 -len 3 -size 32 -type write -force
+run_hw_axi wr_txn_c2c
+run_hw_axi rd_txn_c2c
+close_project
+open_project /home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.xpr
+open_bd_design {/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.srcs/sources_1/bd/jtag_axi/jtag_axi.bd}
+startgroup
+copy_bd_objs /  [get_bd_cells {axi_chip2chip_0}]
+set_property location {3.5 853 235} [get_bd_cells axi_chip2chip_1]
+endgroup
+set_property location {5 1330 478} [get_bd_cells axi_chip2chip_1]
+startgroup
+copy_bd_objs /  [get_bd_cells {aurora_64b66b_0}]
+set_property location {6 2119 474} [get_bd_cells aurora_64b66b_1]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi_chip2chip -config {PHY_TYPE "Aurora_64B66B" INIT_CLK "0" REF_CLK "0" SHARED_LOGIC "1" }  [get_bd_cells axi_chip2chip_1]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/jtag_axi_0/M_AXI" Clk "Auto" }  [get_bd_intf_pins axi_chip2chip_1/s_axi]
+startgroup
+set_property -dict [list CONFIG.SupportLevel {0}] [get_bd_cells aurora_64b66b_1]
+delete_bd_objs [get_bd_nets aurora_64b66b_1_mmcm_not_locked_out] [get_bd_nets aurora_64b66b_1_user_clk_out] [get_bd_nets aurora_64b66b_1_init_clk_out] [get_bd_intf_nets GT_DIFF_REFCLK_1] [get_bd_intf_nets INIT_DIFF_CLK_1_1]
+endgroup
+connect_bd_net [get_bd_pins aurora_64b66b_0/sync_clk_out] [get_bd_pins aurora_64b66b_1/sync_clk]
+connect_bd_net [get_bd_pins aurora_64b66b_1/user_clk] [get_bd_pins aurora_64b66b_0/user_clk_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/gt_qpllrefclk_quad1_in] [get_bd_pins aurora_64b66b_0/gt_refclk1_out]
+save_bd_design
+delete_bd_objs [get_bd_nets aurora_64b66b_0_gt_refclk1_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/gt_qpllclk_quad1_in] [get_bd_pins aurora_64b66b_0/gt_qpllclk_quad1_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/gt_qpllrefclk_quad1_in] [get_bd_pins aurora_64b66b_0/gt_qpllrefclk_quad1_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/init_clk] [get_bd_pins aurora_64b66b_0/init_clk_out]
+connect_bd_net [get_bd_pins aurora_64b66b_1/drp_clk_in] [get_bd_pins clk_wiz/clk_out1]
+connect_bd_net [get_bd_pins aurora_64b66b_0/gt_refclk1_out] [get_bd_pins aurora_64b66b_1/refclk1_in]
+connect_bd_net [get_bd_pins axi_chip2chip_1/axi_c2c_phy_clk] [get_bd_pins aurora_64b66b_0/user_clk_out]
+connect_bd_net [get_bd_pins axi_chip2chip_1/aurora_mmcm_not_locked] [get_bd_pins aurora_64b66b_0/mmcm_not_locked_out]
+connect_bd_net [get_bd_pins axi_chip2chip_1/aurora_init_clk] [get_bd_pins aurora_64b66b_0/init_clk_out]
+connect_bd_net [get_bd_ports pma_init_in] [get_bd_pins axi_chip2chip_1/aurora_pma_init_in]
+save_bd_design
+set_property location {2643 473} [get_bd_intf_ports GT_SERIAL_TX_1]
+reset_run jtag_axi_xbar_0_synth_1
+reset_run jtag_axi_aurora_64b66b_0_0_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+set_property offset 0x70000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property offset 0x70010000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+validate_bd_design
+set_property location {-332 -807} [get_bd_ports ext_reset_in]
+set_property location {3.5 941 -561} [get_bd_cells jtag_axi_0]
+set_property location {4 882 -218} [get_bd_cells system_ila]
+set_property location {4 954 -355} [get_bd_cells system_ila]
+set_property location {3 721 219} [get_bd_cells axi_chip2chip_0]
+set_property location {3 674 671} [get_bd_cells axi_chip2chip_1]
+set_property location {4.5 1597 502} [get_bd_cells aurora_64b66b_1]
+set_property location {5 1534 -35} [get_bd_cells aurora_64b66b_0]
+set_property location {5 1492 -550} [get_bd_cells axi_mem_intercon]
+set_property location {2120 -65} [get_bd_intf_ports GT_SERIAL_TX]
+set_property location {2350 -116} [get_bd_intf_ports GT_SERIAL_TX]
+set_property location {2702 -82} [get_bd_intf_ports GT_SERIAL_TX]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_ports INIT_DIFF_CLK_1]
+delete_bd_objs [get_bd_intf_ports GT_DIFF_REFCLK]
+set_property location {7 2049 198} [get_bd_cells aurora_64b66b_0]
+set_property location {3 475 718} [get_bd_cells vio_0]
+set_property location {4 794 498} [get_bd_cells system_ila]
+set_property location {6 1505 274} [get_bd_cells axi_chip2chip_0]
+set_property location {6 1601 717} [get_bd_cells axi_chip2chip_1]
+set_property location {7 2133 689} [get_bd_cells aurora_64b66b_1]
+set_property location {5 1078 647} [get_bd_cells axi_mem_intercon]
+set_property location {6 1577 1053} [get_bd_cells axi_bram_ctrl_0]
+set_property location {7 2172 1015} [get_bd_cells blk_mem_gen_0]
+set_property location {5 1046 985} [get_bd_cells system_ila_0]
+set_property location {4 772 710} [get_bd_cells system_ila_0]
+set_property location {5 1145 1060} [get_bd_cells blk_mem_gen_0]
+set_property location {7 1970 1028} [get_bd_cells axi_bram_ctrl_0]
+set_property location {2 117 551} [get_bd_cells xlconstant_0]
+save_bd_design
+set_property location {-100 78} [get_bd_intf_ports INIT_DIFF_CLK]
+set_property location {-96 125} [get_bd_intf_ports GT_DIFF_REFCLK1]
+set_property location {-105 88} [get_bd_intf_ports INIT_DIFF_CLK]
+save_bd_design
+set_property range 8K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property range 16K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+set_property range 16K [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_0_Mem0}]
+set_property offset 0x76010000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_axi_chip2chip_1_Mem0}]
+save_bd_design
+set_property location {1 200 1069} [get_bd_cells clk_wiz]
+set_property location {2 507 1046} [get_bd_cells proc_sys_reset_0]
+set_property location {2 503 1092} [get_bd_cells proc_sys_reset_0]
+set_property location {1 150 916} [get_bd_cells xlconstant_0]
+set_property location {1 109 507} [get_bd_cells xlconstant_0]
+set_property location {1 152 724} [get_bd_cells xlconstant_0]
+set_property location {1 175 630} [get_bd_cells xlconstant_0]
+set_property location {1 176 542} [get_bd_cells xlconstant_0]
+set_property location {-89 416} [get_bd_intf_ports GT_SERIAL_RX_1]
+set_property location {-106 408} [get_bd_intf_ports GT_SERIAL_RX_1]
+set_property location {-95 325} [get_bd_ports pma_init_in]
+set_property location {-102 1136} [get_bd_ports ext_reset_in]
+set_property location {-101 1057} [get_bd_intf_ports diff_clock_rtl]
+save_bd_design
+reset_run synth_1
+reset_run jtag_axi_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_run impl_1
+place_ports {GT_SERIAL_TX_1_txp[0]} AE4
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_hw
+connect_hw_server -url 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121
+connect_hw_server -url 192.168.0.44:3121

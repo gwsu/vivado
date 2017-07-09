@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="jtag_axi_clk_wiz_0_synth_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="jtag_axi_xbar_0_synth_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="jtag_axi_aurora_64b66b_0_0_synth_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_aurora_64b66b_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="jtag_axi_s00_mmu_0_synth_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/jtag_axi_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="jtag_axi_clk_wiz_0_synth_1"/>
+		<Parent Id="jtag_axi_xbar_0_synth_1"/>
+		<Parent Id="jtag_axi_aurora_64b66b_0_0_synth_1"/>
+		<Parent Id="jtag_axi_s00_mmu_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/wesleyguo/github/vivado/vivado/jtag_c2c/jtag_c2c/jtag_c2c.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="jtag_axi_clk_wiz_0_synth_1"/>
+		<Parent Id="jtag_axi_xbar_0_synth_1"/>
+		<Parent Id="jtag_axi_aurora_64b66b_0_0_synth_1"/>
+		<Parent Id="jtag_axi_s00_mmu_0_synth_1"/>
+	</Run>
+</Runs>
+
